@@ -1,0 +1,47 @@
+$RXN
+
+
+
+  1  1  1
+$MOL
+
+     RDKit          2D
+
+  1  0  0  0  0  0  0  0  0  0999 V2000
+    0.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+$MOL
+
+     RDKit          2D
+
+  1  0  0  0  0  0  0  0  0  0999 V2000
+    0.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+$MOL
+
+                    3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 8 7 0 0 0
+M  V30 BEGIN ATOM
+M  V30 1 C 0 0 1 0
+M  V30 2 C 1.5 0 1 0
+M  V30 3 C -1 1 1 0
+M  V30 4 C -2 2 1 0
+M  V30 5 C -1 -1 1 0
+M  V30 6 C 2.5 1 1 0
+M  V30 7 C 2.5 -1 1 0
+M  V30 8 C -3 1 1 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 1 1 2
+M  V30 2 2 1 3
+M  V30 3 2 3 4
+M  V30 4 1 1 5 CFG=1
+M  V30 5 2 2 6 CFG=2
+M  V30 6 1 2 7
+M  V30 7 1 4 8
+M  V30 END BOND
+M  V30 END CTAB
+M  END
