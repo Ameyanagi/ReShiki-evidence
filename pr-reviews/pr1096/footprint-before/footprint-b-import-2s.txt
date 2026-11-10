@@ -1,0 +1,49 @@
+======================================================================
+reshiki [84016]: 64-bit    Footprint: 250561712 B (16384 bytes per page)
+======================================================================
+
+      Dirty         Clean   Reclaimable    Regions    Category
+        ---           ---           ---        ---    ---
+110821376 B           0 B           0 B        129    Owned physical footprint (unmapped) (graphics)
+ 43319296 B           0 B    36192256 B        724    IOAccelerator (graphics)
+ 36323328 B           0 B           0 B         18    Malloc Small
+ 34275328 B           0 B           0 B          5    IOSurface
+ 10616832 B           0 B           0 B         81    Owned physical footprint (unmapped)
+  4620288 B       65536 B           0 B       1056    __DATA_CONST
+  2082041 B           0 B           0 B        938    __DATA_DIRTY
+  1645730 B           0 B           0 B       1057    __DATA
+  1228800 B           0 B       32768 B         32    Stack
+   901120 B           0 B           0 B         11    Malloc Metadata
+   836784 B           0 B           0 B          1    page table
+   753664 B           0 B           0 B          6    CoreUI Image Data
+   594211 B           0 B           0 B       2850    unused dyld shared cache area
+   491520 B           0 B           0 B         52    Untagged
+   479754 B           0 B           0 B        698    __AUTH
+   393216 B           0 B           0 B         18    CoreAnimation
+   311296 B           0 B           0 B          7    IOAccelerator
+   294912 B           0 B           0 B          1    Malloc Tiny
+   131072 B           0 B           0 B          1    Accelerate Framework
+   131000 B           0 B           0 B          4    __TPRO_CONST
+    65536 B           0 B           0 B          8    IOKit
+    49152 B           0 B           0 B          2    Malloc Nano
+    49152 B           0 B           0 B          3    CoreGraphics
+    48000 B           0 B           0 B          1    __OBJC_RW
+    32768 B           0 B           0 B          1    Activity Tracing
+    16384 B           0 B       16384 B          2    Foundation
+    16384 B           0 B           0 B          1    Deferred Reclaim
+    16384 B           0 B           0 B          1    OS Alloc Once
+    16384 B           0 B           0 B          1    ColorSync
+        0 B    43286528 B           0 B       1143    __TEXT
+        0 B    17809408 B           0 B         34    mapped file
+        0 B      147456 B           0 B          4    __LINKEDIT
+        0 B           0 B           0 B          1    __OBJC_RO
+        0 B           0 B           0 B          1    __FONT_DATA
+        0 B           0 B           0 B          1    __CTF
+        0 B           0 B           0 B       1049    __AUTH_CONST
+        ---           ---           ---        ---    ---
+250561712 B    61308928 B    36241408 B       9944    TOTAL
+
+Auxiliary data:
+    phys_footprint: 250561712 B
+    phys_footprint_peak: 285164720 B
+
