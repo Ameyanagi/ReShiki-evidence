@@ -1,0 +1,26 @@
+[
+    {
+        "Build":  "base",
+        "Args":  "--ole-server",
+        "Pid":  8104,
+        "Awareness":  "Unaware"
+    },
+    {
+        "Build":  "base",
+        "Args":  "",
+        "Pid":  15532,
+        "Awareness":  "PerMonitorAware"
+    },
+    {
+        "Build":  "fix",
+        "Args":  "--ole-server",
+        "Pid":  8840,
+        "Awareness":  "PerMonitorAware"
+    },
+    {
+        "Build":  "fix",
+        "Args":  "",
+        "Pid":  16372,
+        "Awareness":  "PerMonitorAware"
+    }
+]
