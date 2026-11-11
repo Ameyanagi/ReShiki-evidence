@@ -1,0 +1,14 @@
+--- before (main 19f6dfd4)
+reshiki 0.14.0
+C[C@H](O)C(=O)O
+CC=C=C=CC
+errors: [] warnings: (no attribute)
+--- after (branch)
+/Users/ryuichi/dev/warn-corpus/demo.py:3: StructureWarning: The input marks a molecule's stereo configuration as relative (CXSMILES r); ReShiki drew it as the stated enantiomer
+  m = reshiki.Molecule.from_smiles("C[C@H](O)C(=O)O |r|")
+/Users/ryuichi/dev/warn-corpus/demo.py:5: StructureWarning: Extended double-bond stereochemistry (e.g. C=C=C=C) ignored
+  c = reshiki.parse("C/C=C=C=C/C")
+reshiki 0.14.0
+C[C@H](O)C(=O)O
+CC=C=C=CC
+errors: [] warnings: [(0, "The input marks a molecule's stereo configuration as relative (CXSMILES r); ReShiki drew it as the stated enantiomer")]
