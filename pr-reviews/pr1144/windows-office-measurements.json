@@ -1,0 +1,106 @@
+{
+ "powerpoint-main-pasted": {
+  "imgW_emu": 592671,
+  "imgH_emu": 729475,
+  "emf_frame_hmm": [
+   1448,
+   1806
+  ],
+  "szlDevice": [
+   3008,
+   1692
+  ],
+  "szlMillimeters": [
+   700,
+   399
+  ],
+  "emfplus_logical_dpi": [
+   96,
+   96
+  ]
+ },
+ "word-main-pasted": {
+  "shape_pt": [
+   46.9,
+   57.4
+  ]
+ },
+ "powerpoint-main-edited": {
+  "imgW_emu": 592671,
+  "imgH_emu": 729475,
+  "emf_frame_hmm": [
+   1448,
+   1806
+  ],
+  "szlDevice": [
+   3008,
+   1692
+  ],
+  "szlMillimeters": [
+   700,
+   399
+  ],
+  "emfplus_logical_dpi": [
+   96,
+   96
+  ]
+ },
+ "word-main-edited": {
+  "shape_pt": [
+   46.9,
+   57.4
+  ]
+ },
+ "powerpoint-fix-pasted": {
+  "imgW_emu": 521280,
+  "imgH_emu": 650160,
+  "emf_frame_hmm": [
+   1448,
+   1806
+  ],
+  "szlDevice": [
+   25400,
+   25400
+  ],
+  "szlMillimeters": [
+   254,
+   254
+  ],
+  "emfplus_logical_dpi": [
+   2540,
+   2540
+  ]
+ },
+ "word-fix-pasted": {
+  "shape_pt": [
+   40.9,
+   51.4
+  ]
+ },
+ "powerpoint-fix-edited": {
+  "imgW_emu": 521280,
+  "imgH_emu": 650160,
+  "emf_frame_hmm": [
+   1448,
+   1806
+  ],
+  "szlDevice": [
+   25400,
+   25400
+  ],
+  "szlMillimeters": [
+   254,
+   254
+  ],
+  "emfplus_logical_dpi": [
+   2540,
+   2540
+  ]
+ },
+ "word-fix-edited": {
+  "shape_pt": [
+   40.9,
+   51.4
+  ]
+ }
+}
