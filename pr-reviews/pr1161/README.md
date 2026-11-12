@@ -1,4 +1,4 @@
-# Linux Copy puts SMILES text on the clipboard (PR 1160), 2026-11-13
+# Linux Copy puts SMILES text on the clipboard (PR 1161), 2026-11-13
 
 Base: ReShiki main `fb116736` (0.14.0). Head: the PR branch. Debug builds on Arch Linux x64.
 
