@@ -1,0 +1,36 @@
+{
+ "browser": "Chrome/149.0.7827.200",
+ "waitedMs": 665,
+ "result": {
+  "types": [
+   "image/svg+xml",
+   "Files"
+  ],
+  "items": [
+   {
+    "kind": "file",
+    "type": "image/png",
+    "size": 98895
+   },
+   {
+    "kind": "string",
+    "type": "image/svg+xml",
+    "size": null
+   }
+  ],
+  "readVia": "navigator.clipboard.read",
+  "svg": {
+   "bytes": 13826,
+   "textElements": 0,
+   "pathElements": 10,
+   "width": "80.07648pt",
+   "height": "91.63602pt",
+   "viewBox": "0 0 106.76864 122.18136",
+   "carriesDrawing": true,
+   "rendered": {
+    "w": 107,
+    "h": 122
+   }
+  }
+ }
+}

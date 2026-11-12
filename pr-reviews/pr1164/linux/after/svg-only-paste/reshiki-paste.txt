@@ -1,0 +1,3 @@
+source: {'atoms': 14, 'bonds': 15, 'captions': ['Caffeine']}
+pasted: {'atoms': 14, 'bonds': 15, 'captions': ['Caffeine']}
+editable drawing restored from the SVG alone: True

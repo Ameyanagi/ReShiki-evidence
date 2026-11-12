@@ -1,0 +1,25 @@
+You are running local macOS UI verification for Claude. Use computer use. macOS 27 arm64.
+
+Artifact directory: ART (given below per run). Tools directory: /private/tmp/claude-502/clipsvg/tools
+App under test: the throwaway wrapper APP (given below). Launch it ONLY with `open -n APP` (never run the reshiki binary directly). It opens a caffeine drawing with a "Caffeine" caption. It uses a fresh temp data dir.
+
+Goal: capture what ReShiki puts on the macOS pasteboard for Copy Image, Copy, and Copy as -> SVG, and how Microsoft Word pastes Copy Image.
+
+Steps:
+1. `open -n APP`. Wait until the ReShiki window shows the caffeine drawing (up to 60 s; a debug build is slow). Screenshot: ART/01-app.png.
+2. Click once on an empty area of the drawing canvas, press Cmd+A to select everything, then press Cmd+Shift+C (Copy Image). Wait 5 s. Screenshot ART/02-copy-image.png (the status bar shows the copy result). Then run in a shell:
+   `/private/tmp/claude-502/clipsvg/tools/pbdump ART/copy-image > ART/copy-image/types.txt; osascript -e 'clipboard info' > ART/copy-image/clipboard-info.txt; python3 -I /private/tmp/claude-502/clipsvg/tools/svgsum.py ART/copy-image/*public.svg-image.bin > ART/copy-image/svg-summary.txt`
+   (pbdump creates the folder.)
+3. Open Microsoft Word, create a new Blank Document (do not open or modify any existing document), press Cmd+V. Wait until the picture appears. Screenshot ART/03-word-paste.png, showing the pasted picture. Then right-click the picture and screenshot the context menu if it shows the picture type (ART/03b-word-menu.png), press Escape. Close that new document WITHOUT saving (Don't Save). Leave Word running otherwise as it was; do not touch other Word documents.
+4. Back in the ReShiki window (the one APP opened; there may be other ReShiki windows from the user - use the one showing caffeine that you launched), make sure everything is still selected (Cmd+A), press Cmd+C (Copy). Wait 5 s. Screenshot ART/04-copy.png. Run:
+   `/private/tmp/claude-502/clipsvg/tools/pbdump ART/copy > ART/copy/types.txt; python3 -I /private/tmp/claude-502/clipsvg/tools/svgsum.py ART/copy/*public.svg-image.bin > ART/copy/svg-summary.txt`
+5. Right-click on a selected atom/bond in the ReShiki drawing, open "Copy as" (or "Copy as…"), choose "SVG". Screenshot the open submenu before clicking SVG: ART/05-copy-as-menu.png; after clicking wait 5 s and screenshot ART/05b-copy-as-done.png. Run:
+   `/private/tmp/claude-502/clipsvg/tools/pbdump ART/copy-as-svg > ART/copy-as-svg/types.txt; python3 -I /private/tmp/claude-502/clipsvg/tools/svgsum.py ART/copy-as-svg/*public.svg-image.bin > ART/copy-as-svg/svg-summary.txt`
+6. SVG-only paste back: run
+   `mkdir -p ART/svg-only && cp ART/copy-image/*public.svg-image.bin "ART/svg-only/item0-0-public.svg-image.bin" && /private/tmp/claude-502/clipsvg/tools/pbwrite ART/svg-only > ART/svg-only/pbwrite.txt && /private/tmp/claude-502/clipsvg/tools/pbdump ART/svg-only/check > ART/svg-only/types.txt`
+   Then in the ReShiki window press Cmd+N (new drawing; if that opens a new window or tab, use it), click the empty canvas, press Cmd+V. Wait 5 s. Screenshot ART/06-svg-only-paste.png; the status bar should say whether an editable drawing was restored. Zoom into the status bar text in your report verbatim.
+7. Quit the ReShiki instance you launched (Cmd+Q in it; choose "Don't Save"/discard if asked). Do not quit any other app.
+
+Constraints: do not close other apps or windows you did not open, do not change system settings, do not save any Word document, do not edit repository files. Only write inside ART.
+
+Write ART/report.md: for each step, what you did, what you observed (quote the ReShiki status bar text exactly), screenshot filenames, and the contents of each svg-summary.txt and types.txt. End with anything you could not do and why.

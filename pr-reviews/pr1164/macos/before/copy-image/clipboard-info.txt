@@ -1,0 +1,1 @@
+«class PDF », 14098, «class CDIF», 99137, «class CHMS», 99137, «class PNGf», 99041, «class svg », 6123, «class AVIF», 27209, «class 8BPS», 362706, GIF picture, 15217, «class jp2 », 99825, JPEG picture, 104003, TIFF picture, 8147418, «class BMP », 8143638, «class TPIC», 170469

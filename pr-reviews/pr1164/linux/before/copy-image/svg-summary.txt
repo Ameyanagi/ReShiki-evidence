@@ -1,0 +1,2 @@
+bytes 6122 text_elements 7 path_elements 1 width 80.07648pt height 91.63602pt viewBox -111.691864 -103.25537 233.55641 267.27173 carries_drawing True
+chromium Chrome/149.0.7827.200 {"bytes": 6140, "textElements": 7, "pathElements": 1, "width": "80.07648pt", "height": "91.63602pt", "viewBox": "-111.691864 -103.25537 233.55641 267.27173", "carriesDrawing": true, "rendered": {"w": 107, "h": 122}}

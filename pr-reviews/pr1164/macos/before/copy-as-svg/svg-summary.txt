@@ -1,0 +1,1 @@
+bytes 6123 text_elements 7 path_elements 1 width 80.07648pt height 91.49686pt viewBox -111.691864 -102.84949 233.55641 266.86584 carries_drawing True

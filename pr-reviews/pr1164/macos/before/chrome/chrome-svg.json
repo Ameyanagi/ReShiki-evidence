@@ -1,0 +1,30 @@
+{
+ "browser": "Chrome/157.0.8103.78",
+ "waitedMs": 723,
+ "result": {
+  "types": [
+   "image/svg+xml"
+  ],
+  "items": [
+   {
+    "kind": "string",
+    "type": "image/svg+xml",
+    "size": null
+   }
+  ],
+  "readVia": "navigator.clipboard.read",
+  "svg": {
+   "bytes": 6141,
+   "textElements": 7,
+   "pathElements": 1,
+   "width": "80.07648pt",
+   "height": "91.49686pt",
+   "viewBox": "-111.691864 -102.84949 233.55641 266.86584",
+   "carriesDrawing": true,
+   "rendered": {
+    "w": 107,
+    "h": 122
+   }
+  }
+ }
+}

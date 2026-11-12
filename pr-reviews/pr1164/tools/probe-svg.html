@@ -1,0 +1,33 @@
+<!doctype html><meta charset="utf-8"><title>svg paste probe</title>
+<h3 style="font:16px sans-serif">SVG paste probe: the pasted <code>image/svg+xml</code> flavor, drawn from its own bytes</h3>
+<div id="ed" contenteditable style="width:90%;min-height:30px;border:1px dashed #888"></div>
+<div id="out" style="display:inline-block;border:1px solid #c33;margin-top:8px"></div>
+<pre id="log" style="font:13px monospace;white-space:pre-wrap">waiting for paste…</pre>
+<script>
+window.__result = null;
+document.getElementById('ed').addEventListener('paste', async (e) => {
+  e.preventDefault();
+  const d = e.clipboardData, r = { types: Array.from(d.types), items: [] };
+  try {
+  let svgFile = null;
+  for (const it of d.items) { const f = it.kind === 'file' ? it.getAsFile() : null; r.items.push({ kind: it.kind, type: it.type, size: f ? f.size : null }); if (it.type === 'image/svg+xml') svgFile = f; }
+  let svgText = svgFile ? await svgFile.text() : d.getData('image/svg+xml');
+  if (!svgText) { // Chromium lists the SVG flavor in the paste event but serves it only through the async API.
+    for (const item of await navigator.clipboard.read()) if (item.types.includes('image/svg+xml')) svgText = await (await item.getType('image/svg+xml')).text();
+    r.readVia = 'navigator.clipboard.read';
+  }
+  if (svgText) {
+    const text = svgText;
+    const xml = new DOMParser().parseFromString(text, 'image/svg+xml');
+    const root = xml.documentElement;
+    r.svg = { bytes: text.length, textElements: xml.getElementsByTagName('text').length, pathElements: xml.getElementsByTagName('path').length,
+      width: root.getAttribute('width'), height: root.getAttribute('height'), viewBox: root.getAttribute('viewBox'), carriesDrawing: /reshiki/i.test(text.slice(0, 2000)) };
+    const img = new Image(); img.src = URL.createObjectURL(new Blob([text], { type: 'image/svg+xml' })); img.style.zoom = 3;
+    await Promise.race([img.decode().catch(() => {}), new Promise((ok) => setTimeout(ok, 2000))]); document.getElementById('out').appendChild(img);
+    r.svg.rendered = { w: img.naturalWidth, h: img.naturalHeight };
+  } else r.svg = null;
+  } catch (err) { r.error = String(err); }
+  document.getElementById('log').textContent = JSON.stringify(r, null, 1);
+  window.__result = r;
+});
+</script>

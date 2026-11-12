@@ -1,0 +1,348 @@
+{
+ "version": 1,
+ "atoms": [
+  {
+   "id": 1,
+   "element": "C",
+   "position": {
+    "x": 56.85428736539042,
+    "y": -75.22518021958034
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 2,
+   "element": "N",
+   "position": {
+    "x": 35.854181222054876,
+    "y": -38.85299637932319
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 3,
+   "element": "C",
+   "position": {
+    "x": -6.1460310646162,
+    "y": -38.85299637932319
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 4,
+   "element": "O",
+   "position": {
+    "x": -27.14613720795174,
+    "y": -75.22518021958034
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 5,
+   "element": "C",
+   "position": {
+    "x": -27.14613720795174,
+    "y": -2.478012524913593
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 6,
+   "element": "C",
+   "position": {
+    "x": -6.1460310646162,
+    "y": 33.894171315343556
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 7,
+   "element": "N",
+   "position": {
+    "x": -34.24977311270404,
+    "y": 65.10592907264505
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 8,
+   "element": "C",
+   "position": {
+    "x": -72.61836704365429,
+    "y": 48.02304272857971
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 9,
+   "element": "N",
+   "position": {
+    "x": -68.22794485262095,
+    "y": 6.252431602409101
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 10,
+   "element": "C",
+   "position": {
+    "x": -99.43970260992245,
+    "y": -21.851310445678738
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 11,
+   "element": "N",
+   "position": {
+    "x": 35.854181222054876,
+    "y": 33.894171315343556
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 12,
+   "element": "C",
+   "position": {
+    "x": 56.85428736539042,
+    "y": 70.2663551556007
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 13,
+   "element": "C",
+   "position": {
+    "x": 56.85428736539042,
+    "y": -2.478012524913593
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  },
+  {
+   "id": 14,
+   "element": "O",
+   "position": {
+    "x": 98.85449965206149,
+    "y": -2.478012524913593
+   },
+   "charge": 0,
+   "isotope": 0,
+   "explicit_h": 0,
+   "no_implicit": false,
+   "aromatic": false,
+   "stereo": null,
+   "map_num": 0
+  }
+ ],
+ "bonds": [
+  {
+   "a": 1,
+   "b": 2,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "order": 2,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 3,
+   "b": 5,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "order": 2,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "order": 2,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 9,
+   "b": 10,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 6,
+   "b": 11,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 11,
+   "b": 12,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 11,
+   "b": 13,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 13,
+   "b": 14,
+   "order": 2,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 13,
+   "b": 2,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  },
+  {
+   "a": 9,
+   "b": 5,
+   "order": 1,
+   "display": "plain",
+   "stereo": null,
+   "stereo_atoms": []
+  }
+ ],
+ "annotations": [
+  {
+   "id": 15,
+   "position": {
+    "x": 0,
+    "y": 120.2663551556007
+   },
+   "text": "Caffeine"
+  }
+ ],
+ "arrows": []
+}

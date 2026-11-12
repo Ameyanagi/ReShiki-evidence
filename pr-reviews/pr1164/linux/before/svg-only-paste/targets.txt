@@ -1,0 +1,2 @@
+TARGETS
+image/svg+xml
