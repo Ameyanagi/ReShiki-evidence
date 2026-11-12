@@ -1,0 +1,35 @@
+{
+ "browser": "Chrome/149.0.7827.200",
+ "waitedMs": 1248,
+ "result": {
+  "types": [
+   "text/plain",
+   "image/svg+xml",
+   "Files"
+  ],
+  "items": [
+   {
+    "kind": "string",
+    "type": "text/plain",
+    "size": null
+   },
+   {
+    "kind": "file",
+    "type": "image/png",
+    "size": 96785
+   },
+   {
+    "kind": "string",
+    "type": "image/svg+xml",
+    "size": null
+   }
+  ],
+  "html": null,
+  "text": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+  "inserted": {
+   "imgs": [],
+   "text": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+   "htmlLength": 0
+  }
+ }
+}

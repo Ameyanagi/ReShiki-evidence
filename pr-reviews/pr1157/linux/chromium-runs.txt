@@ -1,0 +1,23 @@
+=== copy-control
+TARGETS: application/pdf application/x-chemdraw application/x-reshiki-drawing+json chemical/x-cdx com.cambridgesoft.cdx com.perkinelmer.cdx com.perkinelmer.chemdraw.cdx-clipboard com.revvity.cdx com.revvity.chemdraw.cdx-clipboard dev.reshiki.drawing image/png image/svg+xml TARGETS TIMESTAMP MULTIPLE 
+LibreOffice sees flavors:
+   application/pdf | 
+   application/x-chemdraw | 
+   application/x-reshiki-drawing+json | 
+   chemical/x-cdx | 
+   image/png | 
+   image/svg+xml | 
+chromium-probe ['image/svg+xml', 'Files'] text= None inserted imgs 1 text ''
+chromium-probe-textarea ['image/svg+xml', 'Files'] text= None inserted imgs 0 text ''
+=== copy-text
+TARGETS: application/pdf application/x-chemdraw application/x-reshiki-drawing+json chemical/x-cdx com.cambridgesoft.cdx com.perkinelmer.cdx com.perkinelmer.chemdraw.cdx-clipboard com.revvity.cdx com.revvity.chemdraw.cdx-clipboard dev.reshiki.drawing image/png image/svg+xml UTF8_STRING text/plain text/plain;charset=utf-8 TARGETS TIMESTAMP MULTIPLE 
+chromium-probe ['text/plain', 'image/svg+xml', 'Files'] text= Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted imgs 1 text ''
+chromium-probe-textarea ['text/plain', 'image/svg+xml', 'Files'] text= Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted imgs 0 text 'Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+=== image-control
+TARGETS: application/pdf application/x-chemdraw application/x-reshiki-drawing+json chemical/x-cdx com.cambridgesoft.cdx com.perkinelmer.cdx com.perkinelmer.chemdraw.cdx-clipboard com.revvity.cdx com.revvity.chemdraw.cdx-clipboard dev.reshiki.drawing image/png image/svg+xml TARGETS TIMESTAMP MULTIPLE 
+chromium-probe ['image/svg+xml', 'Files'] text= None inserted imgs 1 text ''
+chromium-probe-textarea ['image/svg+xml', 'Files'] text= None inserted imgs 0 text ''
+=== image-text
+TARGETS: application/pdf application/x-chemdraw application/x-reshiki-drawing+json chemical/x-cdx com.cambridgesoft.cdx com.perkinelmer.cdx com.perkinelmer.chemdraw.cdx-clipboard com.revvity.cdx com.revvity.chemdraw.cdx-clipboard dev.reshiki.drawing image/png image/svg+xml UTF8_STRING text/plain text/plain;charset=utf-8 TARGETS TIMESTAMP MULTIPLE 
+chromium-probe ['text/plain', 'image/svg+xml', 'Files'] text= Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted imgs 1 text ''
+chromium-probe-textarea ['text/plain', 'image/svg+xml', 'Files'] text= Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted imgs 0 text 'Cn1c(=O)c2c(ncn2C)n(C)c1=O'

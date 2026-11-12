@@ -1,0 +1,23 @@
+=== copy-text
+LibreOffice sees flavors:
+=== copy-control
+LibreOffice sees flavors:
+com.sun.star.lang.DisposedException: Binary URP bridge disposed during call
+=== copy-text
+LibreOffice sees flavors:
+=== copy-control
+LibreOffice sees flavors:
+swriter shapes after paste: 1
+   FrameShape MimeType=application/pdf size=2752x2937 (1/100 mm)
+  text: ''
+simpress shapes after paste: 3
+   com.sun.star.drawing.GraphicObjectShape MimeType=application/pdf size=2751x2936 (1/100 mm)
+=== copy-text
+LibreOffice sees flavors:
+swriter shapes after paste: 1
+   FrameShape MimeType=application/pdf size=2752x2937 (1/100 mm)
+  text: ''
+simpress shapes after paste: 3
+   com.sun.star.drawing.GraphicObjectShape MimeType=application/pdf size=2751x2936 (1/100 mm)
+
+[exited with code 0]

@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><title>paste probe</title>
+<h3 style="font:16px sans-serif">Paste target (contenteditable). Below: what the paste event received.</h3>
+<div id="x" style="display:none"></div><textarea id="ed" style="width:90%;height:200px"></textarea>
+<script>
+window.__result = null;
+const ed = document.querySelector('textarea');
+ed.addEventListener('paste', (e) => {
+  const d = e.clipboardData, r = { types: Array.from(d.types), items: [], html: null, text: null };
+  for (const it of d.items) {
+    const f = it.kind === 'file' ? it.getAsFile() : null;
+    r.items.push({ kind: it.kind, type: it.type, size: f ? f.size : null });
+  }
+  const h = d.getData('text/html'); if (h) r.html = { length: h.length, head: h.slice(0, 300) };
+  const t = d.getData('text/plain'); if (t) r.text = t.slice(0, 200);
+  setTimeout(() => {
+    const imgs = Array.from(ed.querySelectorAll('img')).map(i => ({ src: i.src.slice(0, 40), w: i.width, h: i.height, reshiki: i.hasAttribute('data-reshiki') }));
+    r.inserted = { imgs, text: ed.value.slice(0, 120), htmlLength: ed.innerHTML.length };
+    window.__result = r; document.getElementById('log').textContent = 'paste event types: ' + JSON.stringify(r.types) + '\nitems: ' + JSON.stringify(r.items) + '\ntext/html: ' + (r.html ? r.html.length + ' chars' : 'none') + '\ninserted <img>: ' + r.inserted.imgs.length;
+  }, 800);
+});
+</script>
+<pre id="log" style="font:13px monospace;white-space:pre-wrap;border-top:1px solid #888;padding-top:6px">waiting for paste…</pre>

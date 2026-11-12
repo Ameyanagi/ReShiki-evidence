@@ -1,0 +1,17 @@
+=== Copy
+harness: test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.17s
+copied by pid owner pid 0
+Paint: paste=invoked copy=invoked paint-pids=5028 clipboard: owner pid 5028  3  49155 OwnerLink                                    35 5061696E742E5069  6      8 CF_DIB                                  7245824 2800000017050000
+=== Copy Image
+harness: test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.12s
+Paint: paste=invoked copy=invoked paint-pids=9404 clipboard: owner pid 9404  3  49155 OwnerLink                                    35 5061696E742E5069  6      8 CF_DIB                                  7245824 2800000017050000
+=== OneNote desktop
+window: 'Microsoft OneNote' class=OneNote::CFirstRunDialog
+   ControlType.Pane | OneNote
+   ControlType.Pane | 準備を行っています。
+   ControlType.Pane | サインインしてアプリにアクセスする
+   ControlType.Pane | 
+   ControlType.Pane | サインイン
+   ControlType.Pane | 
+   ControlType.Pane | 
+leftover: ONENOTE/12368

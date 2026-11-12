@@ -1,0 +1,42 @@
+{
+ "browser": "Chrome/157.0.8103.78",
+ "waitedMs": 1326,
+ "result": {
+  "types": [
+   "text/plain",
+   "image/svg+xml",
+   "Files"
+  ],
+  "items": [
+   {
+    "kind": "string",
+    "type": "text/plain",
+    "size": null
+   },
+   {
+    "kind": "string",
+    "type": "image/svg+xml",
+    "size": null
+   },
+   {
+    "kind": "file",
+    "type": "image/png",
+    "size": 96785
+   }
+  ],
+  "html": null,
+  "text": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+  "inserted": {
+   "imgs": [
+    {
+     "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",
+     "w": 1303,
+     "h": 1390,
+     "reshiki": false
+    }
+   ],
+   "text": "",
+   "htmlLength": 129089
+  }
+ }
+}

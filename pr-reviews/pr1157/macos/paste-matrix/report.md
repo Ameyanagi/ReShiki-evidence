@@ -1,0 +1,45 @@
+# ReShiki clipboard paste test
+
+Tested on 2026-11-12 on this Mac: macOS 27.0.1 (26A434), Retina. All interactions used computer use. The supplied `pbwrite` command for each variant was run immediately before its paste, followed by Cmd+V in the target app; nothing was copied between those steps. Each target used one new blank document, with pasted content removed between variants. ChemDraw required a repeated pass after a separate paste-formatting dialog was discovered.
+
+C0 = current Copy, no text. C1 = Copy plus the SMILES text in the same pasteboard item. C2 = Copy plus the SMILES text in a separate second item. I0 = current Copy Image, no text, tested only in Notes. The text was exactly `Cn1c(=O)c2c(ncn2C)n(C)c1=O`.
+
+The result labels below describe the observed pasted content. They do not identify which specific picture representation (PDF, PNG, or SVG) an app consumed. A dash means the variant was not applicable or the target was unavailable; it is not a “nothing” result.
+
+| Target | App version (short version; build) | C0 | C1 | C2 | I0 (Notes only) | Screenshot files |
+|---|---|---|---|---|---|---|
+| Microsoft Word | 16.115; 16.115.26110837 | picture | picture | picture | — | [01-word-C0.png](01-word-C0.png), [02-word-C1.png](02-word-C1.png), [03-word-C2.png](03-word-C2.png) |
+| Microsoft PowerPoint, blank slide | 16.115; 16.115.26110837 | picture | text | nothing | — | [04-powerpoint-C0.png](04-powerpoint-C0.png), [05-powerpoint-C1.png](05-powerpoint-C1.png), [06-powerpoint-C2.png](06-powerpoint-C2.png) |
+| Microsoft Excel, B2 selected | 16.115; 16.115.26110837 | picture | text | text | — | [07-excel-C0.png](07-excel-C0.png), [08-excel-C1.png](08-excel-C1.png), [09-excel-C2.png](09-excel-C2.png) |
+| TextEdit, rich text | 1.21; 419 | picture | picture | picture | — | [10-textedit-rich-C0.png](10-textedit-rich-C0.png), [11-textedit-rich-C1.png](11-textedit-rich-C1.png), [12-textedit-rich-C2.png](12-textedit-rich-C2.png) |
+| TextEdit, plain text | 1.21; 419 | nothing | text | text | — | [13-textedit-plain-C0.png](13-textedit-plain-C0.png), [14-textedit-plain-C1.png](14-textedit-plain-C1.png), [15-textedit-plain-C2.png](15-textedit-plain-C2.png) |
+| Notes, Google account → Notes folder | 4.13; 3195 | nothing | nothing | nothing | nothing | [17-notes-google-C0.png](17-notes-google-C0.png), [18-notes-google-C1.png](18-notes-google-C1.png), [19-notes-google-C2.png](19-notes-google-C2.png), [20-notes-google-I0.png](20-notes-google-I0.png) |
+| Notes, iCloud | 4.13; 3195 | — | — | — | — | Unavailable: no iCloud account/folder in the sidebar; [16-notes-accounts.png](16-notes-accounts.png) |
+| ChemDraw, new blank document | 26.1.0.6801; 26.1.0.6801 | editable structure | editable structure | editable structure | — | [23-chemdraw-C0.png](23-chemdraw-C0.png), [24-chemdraw-C1.png](24-chemdraw-C1.png), [25-chemdraw-C2.png](25-chemdraw-C2.png) |
+| ReShiki, exact isolated evidence app | 0.14.0 (About); wrapper has no version/build plist keys | editable structure | editable structure | editable structure | — | [26-reshiki-C0.png](26-reshiki-C0.png), [27-reshiki-C1.png](27-reshiki-C1.png), [28-reshiki-C2.png](28-reshiki-C2.png); [29-reshiki-about.png](29-reshiki-about.png) |
+| Mail | 16.0; 3901.100.1.1.12 | — | — | — | — | Not tested: initial Mail Privacy Protection choice blocked compose; [30-mail-startup.png](30-mail-startup.png) |
+
+Observed details and limitations:
+
+- Word identified each paste in its accessibility tree as an inline image, “Picture 1,” with zero words. The SMILES text was not inserted for C1 or C2.
+- PowerPoint C0 showed Picture Format and picture resize handles. C1 showed the exact SMILES in an editable text box, with a text cursor and Shape Format. C2 left the slide visibly blank, with no new object or text.
+- Excel C0 created a floating picture over the sheet, anchored around B2; the name box identified it as a Picture and the Picture Format tab appeared. C1 and C2 put the exact text into cell B2, also visible in the formula bar. No floating picture accompanied either text result.
+- TextEdit rich text exposed an attached image for every variant. The plain text document was changed with Cmd+Shift+T before its first paste; C0 inserted nothing visible, while C1 and C2 inserted the SMILES string.
+- Notes showed only a Google account and its Notes folder. All four pastes left the Google test note visually empty; this is an observation for this account type, not a claim about iCloud Notes. Edit showed “Undo Paste” despite the empty body. Selecting all also revealed no visible object or text. The disposable note was deleted, and the folder returned to zero notes: [21-notes-google-deleted.png](21-notes-google-deleted.png).
+- ChemDraw initially appeared blank because a separate “Change Settings” dialog was awaiting a decision about source versus current **document drawing formatting**. Its document menu commands appeared disabled until the dialog was selected through Window → Change Settings. “As Copied” completed the paste; no application or system settings were changed. See [31-chemdraw-blocker.png](31-chemdraw-blocker.png) and [31-chemdraw-paste-resolved.png](31-chemdraw-paste-resolved.png). The three variants were then repeated in C0, C1, C2 order on the same document, with content cleared between them. After each completed paste, Escape selected the selection tool and clicking an internal bond highlighted that bond separately from the remainder of the structure. The final screenshots show this localized selection. There were temporary UI/screenshot timeouts during the C2 check; the app subsequently responded and the final C2 screenshot was obtained. The earlier blank images are pending-dialog evidence, not the final paste outcomes.
+- ReShiki showed “Editable drawing pasted,” atom selection circles, 14 atoms, 15 bonds, and molecular properties for all three variants. The pre-launch process check found no matching evidence instance. It was launched only with the supplied `open -n` command and accessed only by the exact supplied app path. About showed 0.14.0. After undoing the final paste it quit with Cmd+Q; no save confirmation was offered. A final process check found no matching evidence process.
+- Mail opened an initial privacy setup screen with both options unselected and Continue disabled. Cmd+N did not open a compose window. Continuing would require choosing a setting, which was outside the test constraints, so Mail was quit. No account setup screen was reached, so “needs account” was not established. No message was created or sent.
+- No license or Not Activated dialog was observed.
+
+Version sources: `CFBundleShortVersionString` and `CFBundleVersion` were read from each installed app’s `Contents/Info.plist`: the three Microsoft apps and ChemDraw under `/Applications`, and TextEdit, Notes, and Mail under `/System/Applications`. ReShiki’s version came from its About screenshot because the exact wrapper plist lacks those keys.
+
+Cleanup: Word and PowerPoint test documents were closed after their contents were undone. Excel was closed with Don’t Save. Both TextEdit documents were closed without saving (Delete was chosen for the plain text document). The Google test note was deleted. The ChemDraw test document, initially named “Untitled ACS Document 1996-5” and later “ChemDraw Unsaved Document,” was closed and Delete was chosen in its save sheet; the pre-existing “Untitled ACS Document 1996-1” window remained open. The Finder window opened for the test was closed. Apps launched for this test were quit. ChemDraw, which was already running, was left running. No repository files, existing notes, or existing user documents were edited.
+
+Every saved PNG was visually reviewed before this report. The main table links the final result screenshots. Additional captures were retained rather than discarded:
+
+- `07-excel-C0-transient.png`: the first C0 capture had a transient overlay partly covering the picture. C0 was cleared and repeated, producing the clear canonical screenshot.
+- `16-notes-accounts.png`, `20-notes-google-I0-selection.png`, `21-notes-google-deleted.png`: account availability, empty selection check, and note cleanup.
+- `22-chemdraw-blank.png`: the new test document before pasting.
+- `23-chemdraw-C0-initial.png`, `23-chemdraw-C0-inspect.png`, `23-chemdraw-C0-selection.png`, `23-chemdraw-C0-foreground.png`, `23-chemdraw-C0-pending-dialog.png`, `24-chemdraw-C1-pending-dialog.png`, `25-chemdraw-C2-pending-dialog.png`: blank document captures made while the separate formatting dialog was still pending. These cannot establish a “nothing” paste result.
+- `23-chemdraw-C0-before-bond.png`: completed C0 paste before selecting its bond. `23-chemdraw-C0-cleared.png` and `24-chemdraw-C1-cleared.png`: blank canvas after clearing between final trials.
+- `29-reshiki-about.png`, `30-mail-startup.png`, `31-chemdraw-blocker.png`, `31-chemdraw-paste-resolved.png`: version, startup blocker, formatting prompt, and resolved structure selection evidence.

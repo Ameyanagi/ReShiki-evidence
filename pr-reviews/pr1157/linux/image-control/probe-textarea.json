@@ -1,0 +1,29 @@
+{
+ "browser": "Chrome/149.0.7827.200",
+ "waitedMs": 1235,
+ "result": {
+  "types": [
+   "image/svg+xml",
+   "Files"
+  ],
+  "items": [
+   {
+    "kind": "file",
+    "type": "image/png",
+    "size": 96785
+   },
+   {
+    "kind": "string",
+    "type": "image/svg+xml",
+    "size": null
+   }
+  ],
+  "html": null,
+  "text": null,
+  "inserted": {
+   "imgs": [],
+   "text": "",
+   "htmlLength": 0
+  }
+ }
+}

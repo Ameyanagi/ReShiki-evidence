@@ -1,0 +1,1 @@
+TARGETS: application/pdf application/x-chemdraw application/x-reshiki-drawing+json chemical/x-cdx com.cambridgesoft.cdx com.perkinelmer.cdx com.perkinelmer.chemdraw.cdx-clipboard com.revvity.cdx com.revvity.chemdraw.cdx-clipboard dev.reshiki.drawing image/png image/svg+xml UTF8_STRING text/plain text/plain;charset=utf-8 TARGETS TIMESTAMP MULTIPLE 

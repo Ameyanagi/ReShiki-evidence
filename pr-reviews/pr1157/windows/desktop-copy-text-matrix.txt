@@ -1,0 +1,88 @@
+LocalServer32 before: "C:\Users\<user>\AppData\Local\Programs\ReShiki\reshiki.exe" --ole-server
+PowerPoint processes (not touched): 11472@11/12/2026 07:16:02
+harness: test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.17s
+harness: test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.11s
+=== copy-control
+published: DataObject; Embed Source; Native; OwnerLink; Object Descriptor; 14; 8; PDF; ChemDraw Interchange Format; dev.reshiki.drawing; 
+owner pid 0
+ 0  49161 DataObject                                    8 0000000000000000
+ 1  49163 Embed Source                             138752 D0CF11E0A1B11AE1
+ 2  49156 Native                                   138752 D0CF11E0A1B11AE1
+ 3  49155 OwnerLink                                    44 52655368696B692E
+ 4  49166 Object Descriptor                            84 540000007E2BAC3B
+ 5     14 CF_ENHMETAFILE                            14280 
+ 6      8 CF_DIB                                  5437720 2800000017050000
+ 7  49264 PDF                                       15470 255044462D312E37
+ 8  49695 ChemDraw Interchange Format                2166 566A434430313030
+ 9  49902 dev.reshiki.drawing                        5297 7B2261746F6D5F6C
+10      3 CF_METAFILEPICT                              -2 
+11      2 CF_BITMAP                                    -2 
+12     17 CF_DIBV5                                5437804 7C00000017050000
+Word: inline=1 floating=0 chars=1 type=1 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.4pt
+Excel: shapes=1 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1
+Edge contenteditable: types=[Files] text= inserted: imgs=1 text=''
+Edge textarea: types=[Files] text= inserted: imgs=0 text=''
+Paint: ERROR "1" 個の引数を指定して "Dump" を呼び出し中に例外が発生しました: "パス 'C:\WINDOWS\system32\00-DataObject.bin' へのアクセスが拒否されました。"
+=== copy+text
+published: DataObject; Embed Source; Native; OwnerLink; Object Descriptor; 14; 8; PDF; ChemDraw Interchange Format; dev.reshiki.drawing; +CF_UNICODETEXT; 
+owner pid 0
+ 0  49161 DataObject                                    8 0000000000000000
+ 1  49163 Embed Source                             138752 D0CF11E0A1B11AE1
+ 2  49156 Native                                   138752 D0CF11E0A1B11AE1
+ 3  49155 OwnerLink                                    44 52655368696B692E
+ 4  49166 Object Descriptor                            84 540000007E2BAC3B
+ 5     14 CF_ENHMETAFILE                            14280 
+ 6      8 CF_DIB                                  5437720 2800000017050000
+ 7  49264 PDF                                       15470 255044462D312E37
+ 8  49695 ChemDraw Interchange Format                2166 566A434430313030
+ 9  49902 dev.reshiki.drawing                        5297 7B2261746F6D5F6C
+10     13 CF_UNICODETEXT                               54 43006E0031006300
+11     16 CF_LOCALE                                     4 11040000
+12      1 CF_TEXT                                      27 436E3163283D4F29
+13      7 CF_OEMTEXT                                   27 436E3163283D4F29
+14      3 CF_METAFILEPICT                              -2 
+15      2 CF_BITMAP                                    -2 
+16     17 CF_DIBV5                                5437804 7C00000017050000
+Word: inline=1 floating=0 chars=1 type=1 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.4pt
+Excel: shapes=0 B2='Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+Edge contenteditable: types=[text/plain,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=1 text=''
+Edge textarea: types=[text/plain,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=0 text='Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+Paint: ERROR "1" 個の引数を指定して "Dump" を呼び出し中に例外が発生しました: "パス 'C:\WINDOWS\system32\00-DataObject.bin' へのアクセスが拒否されました。"
+=== image-control
+published: 8; PDF; PNG; image/svg+xml; ChemDraw Interchange Format; dev.reshiki.drawing; 
+owner pid 0
+ 0      8 CF_DIB                                  5437720 2800000017050000
+ 1  49264 PDF                                       15470 255044462D312E37
+ 2  49414 PNG                                       96785 89504E470D0A1A0A
+ 3  49482 image/svg+xml                             12959 3C73766720786D6C
+ 4  49695 ChemDraw Interchange Format               96881 566A434430313030
+ 5  49902 dev.reshiki.drawing                      108757 7B2261746F6D5F6C
+ 6      2 CF_BITMAP                                    -2 
+ 7     17 CF_DIBV5                                5437804 7C00000017050000
+Word: inline=1 floating=0 chars=1 type=17 progid= size=78x83.2pt
+Excel: shapes=1 type=28 (graphic (SVG)) progid=
+Edge contenteditable: types=[image/svg+xml,Files] text= inserted: imgs=1 text=''
+Edge textarea: types=[image/svg+xml,Files] text= inserted: imgs=0 text=''
+Paint: ERROR "1" 個の引数を指定して "Dump" を呼び出し中に例外が発生しました: "パス 'C:\WINDOWS\system32\00-CF_DIB.bin' へのアクセスが拒否されました。"
+=== image+text
+published: 8; PDF; PNG; image/svg+xml; ChemDraw Interchange Format; dev.reshiki.drawing; +CF_UNICODETEXT; 
+owner pid 0
+ 0      8 CF_DIB                                  5437720 2800000017050000
+ 1  49264 PDF                                       15470 255044462D312E37
+ 2  49414 PNG                                       96785 89504E470D0A1A0A
+ 3  49482 image/svg+xml                             12959 3C73766720786D6C
+ 4  49695 ChemDraw Interchange Format               96881 566A434430313030
+ 5  49902 dev.reshiki.drawing                      108757 7B2261746F6D5F6C
+ 6     13 CF_UNICODETEXT                               54 43006E0031006300
+ 7     16 CF_LOCALE                                     4 11040000
+ 8      1 CF_TEXT                                      27 436E3163283D4F29
+ 9      7 CF_OEMTEXT                                   27 436E3163283D4F29
+10      2 CF_BITMAP                                    -2 
+11     17 CF_DIBV5                                5437804 7C00000017050000
+Word: inline=1 floating=0 chars=1 type=17 progid= size=78x83.2pt
+Excel: shapes=0 B2='Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+Edge contenteditable: types=[text/plain,image/svg+xml,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=1 text=''
+Edge textarea: types=[text/plain,image/svg+xml,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=0 text='Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+Paint: ERROR "1" 個の引数を指定して "Dump" を呼び出し中に例外が発生しました: "パス 'C:\WINDOWS\system32\00-CF_DIB.bin' へのアクセスが拒否されました。"
+LocalServer32 restored: "C:\Users\<user>\AppData\Local\Programs\ReShiki\reshiki.exe" --ole-server
+leftover: 

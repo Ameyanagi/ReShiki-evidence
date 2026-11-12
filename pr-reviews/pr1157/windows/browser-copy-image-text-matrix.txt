@@ -1,0 +1,57 @@
+=== b-copy
+{"browser":"Edg/157.0.4341.46","wrote":"text/html, image/png, image/svg+xml, text/plain"}
+owner pid 0
+ 0  49414 PNG                                       90901 89504E470D0A1A0A
+ 1     17 CF_DIBV5                                7244804 7C00000017050000
+ 2  49284 HTML Format                              136461 56657273696F6E3A
+ 3     13 CF_UNICODETEXT                               54 43006E0031006300
+ 4  49482 image/svg+xml                              4958 3C73766720786D6C
+ 5  49595 Chromium internal source RFH token           24 1400000005000000
+ 6  49266 Chromium internal source URL                 23 687474703A2F2F31
+ 7     16 CF_LOCALE                                     4 11040000
+ 8      1 CF_TEXT                                      27 436E3163283D4F29
+ 9      7 CF_OEMTEXT                                   27 436E3163283D4F29
+10      2 CF_BITMAP                                    -2 
+11      8 CF_DIB                                  7244720 2800000017050000
+Word: inline=1 floating=0 chars=1 type=3 (picture) progid= size=78x83.2pt
+Excel: shapes=1 type=13 (picture) progid=
+Edge contenteditable: types=[text/plain,text/html,image/svg+xml,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=1 reshiki=True text=''
+Edge textarea: types=[text/plain,text/html,image/svg+xml,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=0 reshiki= text='Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+desktop ReShiki: paste native=false atoms=14 bonds=15 warnings=[]
+=== b-image
+{"browser":"Edg/157.0.4341.46","wrote":"text/html, image/png, image/svg+xml"}
+owner pid 0
+ 0  49414 PNG                                       90901 89504E470D0A1A0A
+ 1     17 CF_DIBV5                                7244804 7C00000017050000
+ 2  49284 HTML Format                              274409 56657273696F6E3A
+ 3  49482 image/svg+xml                              4958 3C73766720786D6C
+ 4  49595 Chromium internal source RFH token           24 1400000005000000
+ 5  49266 Chromium internal source URL                 23 687474703A2F2F31
+ 6      2 CF_BITMAP                                    -2 
+ 7      8 CF_DIB                                  7244720 2800000017050000
+Word: inline=1 floating=0 chars=1 type=3 (picture) progid= size=78x83.2pt
+Excel: shapes=1 type=13 (picture) progid=
+Edge contenteditable: types=[text/html,image/svg+xml,Files] text= inserted: imgs=1 reshiki=True text=''
+Edge textarea: types=[text/html,image/svg+xml,Files] text= inserted: imgs=0 reshiki= text=''
+desktop ReShiki: paste native=false atoms=0 bonds=0 warnings=[]
+=== b-image-text
+{"browser":"Edg/157.0.4341.46","wrote":"text/html, image/png, image/svg+xml, text/plain"}
+owner pid 0
+ 0  49414 PNG                                       90901 89504E470D0A1A0A
+ 1     17 CF_DIBV5                                7244804 7C00000017050000
+ 2  49284 HTML Format                              274409 56657273696F6E3A
+ 3     13 CF_UNICODETEXT                               54 43006E0031006300
+ 4  49482 image/svg+xml                              4958 3C73766720786D6C
+ 5  49595 Chromium internal source RFH token           24 1400000005000000
+ 6  49266 Chromium internal source URL                 23 687474703A2F2F31
+ 7     16 CF_LOCALE                                     4 11040000
+ 8      1 CF_TEXT                                      27 436E3163283D4F29
+ 9      7 CF_OEMTEXT                                   27 436E3163283D4F29
+10      2 CF_BITMAP                                    -2 
+11      8 CF_DIB                                  7244720 2800000017050000
+Word: inline=1 floating=0 chars=1 type=3 (picture) progid= size=78x83.2pt
+Excel: shapes=1 type=13 (picture) progid=
+Edge contenteditable: types=[text/plain,text/html,image/svg+xml,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=1 reshiki=True text=''
+Edge textarea: types=[text/plain,text/html,image/svg+xml,Files] text=Cn1c(=O)c2c(ncn2C)n(C)c1=O inserted: imgs=0 reshiki= text='Cn1c(=O)c2c(ncn2C)n(C)c1=O'
+desktop ReShiki: paste native=false atoms=14 bonds=15 warnings=[]
+leftover: EXCEL/15364
