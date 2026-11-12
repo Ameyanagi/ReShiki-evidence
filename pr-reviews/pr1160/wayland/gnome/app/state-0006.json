@@ -1,0 +1,16 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": false,
+  "document": "state-0006-copy_as_written.rsk",
+  "error": false,
+  "event": "copy_as_written",
+  "revision": 1,
+  "selected": [
+    1,
+    2,
+    3
+  ],
+  "sequence": 6,
+  "status": "Selection copied as SMILES"
+}

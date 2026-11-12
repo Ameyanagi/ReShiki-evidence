@@ -1,0 +1,16 @@
+{
+  "atoms": 6,
+  "bonds": 4,
+  "busy": false,
+  "document": "state-0033-clipboard_read.rsk",
+  "error": false,
+  "event": "clipboard_read",
+  "revision": 4,
+  "selected": [
+    4,
+    5,
+    6
+  ],
+  "sequence": 33,
+  "status": "Editable drawing pasted"
+}

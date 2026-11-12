@@ -1,0 +1,72 @@
+{
+  "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
+  "publisher_pid": 318,
+  "expected_sha256": {
+    "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
+    "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+    "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9": "330c078f7fbb9efa0b678501d39401e5b7bf2e7f9c999b1f010ecef19c0e956d"
+  },
+  "queued": {
+    "id": 11,
+    "formats": [
+      "UTF8_STRING",
+      "application/pdf",
+      "application/x-chemdraw",
+      "application/x-reshiki-drawing+json",
+      "chemical/x-cdx",
+      "com.cambridgesoft.cdx",
+      "com.perkinelmer.cdx",
+      "com.perkinelmer.chemdraw.cdx-clipboard",
+      "com.revvity.cdx",
+      "com.revvity.chemdraw.cdx-clipboard",
+      "dev.reshiki.drawing",
+      "image/png",
+      "image/svg+xml",
+      "text/plain",
+      "text/plain;charset=utf-8",
+      "application/x-reshiki-clipboard-receipt-7b4ec939c7d8ac6ac0812fcf1dcc947b"
+    ],
+    "active": true,
+    "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
+    "queued": true
+  },
+  "selection_receipt": {
+    "device": "29",
+    "source": "46",
+    "serial": 219,
+    "offer": "4278190081",
+    "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9"
+  },
+  "independent_read": {
+    "id": 12,
+    "formats": [
+      "application/x-reshiki-drawing+json",
+      "image/png",
+      "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9"
+    ],
+    "active": true,
+    "application/x-reshiki-drawing+json": {
+      "mime": "application/x-reshiki-drawing+json",
+      "file": "/tmp/qa/sway/publication-reader-11/received-12-application_x-reshiki-drawing+json.bin",
+      "bytes": 1150,
+      "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+    },
+    "image/png": {
+      "mime": "image/png",
+      "file": "/tmp/qa/sway/publication-reader-11/received-12-image_png.bin",
+      "bytes": 14234,
+      "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+      "dimensions": [
+        737,
+        349
+      ]
+    },
+    "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9": {
+      "mime": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
+      "file": "/tmp/qa/sway/publication-reader-11/received-12-application_x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9.bin",
+      "bytes": 69,
+      "sha256": "330c078f7fbb9efa0b678501d39401e5b7bf2e7f9c999b1f010ecef19c0e956d"
+    }
+  },
+  "verified": true
+}

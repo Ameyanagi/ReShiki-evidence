@@ -1,0 +1,16 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": false,
+  "document": "state-0015-saved.rsk",
+  "error": false,
+  "event": "saved",
+  "revision": 1,
+  "selected": [
+    1,
+    2,
+    3
+  ],
+  "sequence": 15,
+  "status": "Document saved"
+}

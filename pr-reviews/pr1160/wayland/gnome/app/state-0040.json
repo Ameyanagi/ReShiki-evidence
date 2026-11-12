@@ -1,0 +1,19 @@
+{
+  "atoms": 6,
+  "bonds": 4,
+  "busy": false,
+  "document": "state-0040-selected.rsk",
+  "error": false,
+  "event": "selected",
+  "revision": 4,
+  "selected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sequence": 40,
+  "status": "Image copied"
+}

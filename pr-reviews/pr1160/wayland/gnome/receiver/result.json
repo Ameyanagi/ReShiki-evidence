@@ -1,0 +1,14 @@
+{
+  "id": 3,
+  "formats": [
+    "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+    "text/plain;charset=utf-8",
+    "text/plain",
+    "org.opensmiles.smiles",
+    "chemical/x-daylight-smiles",
+    "UTF8_STRING"
+  ],
+  "active": true,
+  "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+  "queued": true
+}

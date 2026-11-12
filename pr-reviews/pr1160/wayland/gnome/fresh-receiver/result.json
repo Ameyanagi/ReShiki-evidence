@@ -1,0 +1,34 @@
+{
+  "id": 19,
+  "formats": [
+    "text/plain;charset=utf-8"
+  ],
+  "active": true,
+  "application/x-reshiki-drawing+json": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  },
+  "chemical/x-cdx": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  },
+  "application/pdf": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  },
+  "image/png": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  },
+  "image/svg+xml": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  },
+  "text/plain;charset=utf-8": {
+    "mime": "text/plain;charset=utf-8",
+    "file": "/tmp/qa/gnome/fresh-receiver/received-19-text_plain;charset=utf-8.bin",
+    "bytes": 7,
+    "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+  },
+  "text/plain": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  },
+  "UTF8_STRING": {
+    "error": "g-io-error-quark: No compatible transfer format found (15)"
+  }
+}

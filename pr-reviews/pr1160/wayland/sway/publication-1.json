@@ -1,0 +1,50 @@
+{
+  "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
+  "publisher_pid": 206,
+  "expected_sha256": {
+    "text/plain;charset=utf-8": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9",
+    "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118": "cdb63341c26fe551edae24a222a84de965068e520f6e7f8131db821ba356b3c9"
+  },
+  "queued": {
+    "id": 3,
+    "formats": [
+      "UTF8_STRING",
+      "chemical/x-daylight-smiles",
+      "org.opensmiles.smiles",
+      "text/plain",
+      "text/plain;charset=utf-8",
+      "application/x-reshiki-clipboard-receipt-9724f992b731337ceef2216ba79bf351"
+    ],
+    "active": true,
+    "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
+    "queued": true
+  },
+  "selection_receipt": {
+    "device": "29",
+    "source": "46",
+    "serial": 64,
+    "offer": "4278190080",
+    "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118"
+  },
+  "independent_read": {
+    "id": 4,
+    "formats": [
+      "text/plain;charset=utf-8",
+      "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118"
+    ],
+    "active": true,
+    "text/plain;charset=utf-8": {
+      "mime": "text/plain;charset=utf-8",
+      "file": "/tmp/qa/sway/publication-reader-3/received-4-text_plain;charset=utf-8.bin",
+      "bytes": 24,
+      "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
+    },
+    "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118": {
+      "mime": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
+      "file": "/tmp/qa/sway/publication-reader-3/received-4-application_x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118.bin",
+      "bytes": 69,
+      "sha256": "cdb63341c26fe551edae24a222a84de965068e520f6e7f8131db821ba356b3c9"
+    }
+  },
+  "verified": true
+}

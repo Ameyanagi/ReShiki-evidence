@@ -1,0 +1,16 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": false,
+  "document": "state-0002-selected.rsk",
+  "error": false,
+  "event": "selected",
+  "revision": 1,
+  "selected": [
+    1,
+    2,
+    3
+  ],
+  "sequence": 2,
+  "status": "Document opened"
+}

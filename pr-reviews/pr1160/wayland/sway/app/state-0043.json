@@ -1,0 +1,19 @@
+{
+  "atoms": 6,
+  "bonds": 4,
+  "busy": false,
+  "document": "state-0043-clipboard_written.rsk",
+  "error": false,
+  "event": "clipboard_written",
+  "revision": 4,
+  "selected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sequence": 43,
+  "status": "Editable drawing and images copied"
+}

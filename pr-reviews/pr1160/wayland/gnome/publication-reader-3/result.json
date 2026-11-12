@@ -1,0 +1,24 @@
+{
+  "id": 6,
+  "formats": [
+    "application/x-reshiki-clipboard-receipt-d0c15c51f4ef0df660a567c7f1bbbff7",
+    "text/plain;charset=utf-8",
+    "text/plain",
+    "image/svg+xml",
+    "image/png",
+    "dev.reshiki.drawing",
+    "com.revvity.chemdraw.cdx-clipboard",
+    "com.revvity.cdx",
+    "com.perkinelmer.chemdraw.cdx-clipboard",
+    "com.perkinelmer.cdx",
+    "com.cambridgesoft.cdx",
+    "chemical/x-cdx",
+    "application/x-reshiki-drawing+json",
+    "application/x-chemdraw",
+    "application/pdf",
+    "UTF8_STRING"
+  ],
+  "active": true,
+  "marker": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+  "queued": true
+}

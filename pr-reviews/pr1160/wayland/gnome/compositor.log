@@ -1,0 +1,31 @@
+libmutter-Message: 20:15:38.176: Running GNOME Shell (using mutter 46.2) as a Wayland display server
+
+(gnome-shell:70): dbind-WARNING **: 20:15:40.368: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+libmutter-Message: 20:15:40.383: Using Wayland display name 'wayland-reshiki'
+Window manager warning: Failed to set environment variable WAYLAND_DISPLAY for gnome-session: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.SessionManager" does not exist
+
+(gnome-shell:70): libmutter-WARNING **: 20:15:41.236: There is no colord server available
+GNOME Shell-Message: 20:15:42.446: Failed to launch ibus-daemon: Failed to execute child process “ibus-daemon” (No such file or directory)
+GNOME Shell-Message: 20:15:42.454: Error connecting to the screencast service
+GNOME Shell-Message: 20:15:42.477: Failed to register AuthenticationAgent
+
+(gnome-shell:70): St-WARNING **: 20:15:42.562: Failed to load image: Unrecognized image file format
+
+(gnome-shell:70): GNOME Shell-WARNING **: 20:15:42.589: Missing required core component Settings, expect trouble…
+** Message: 20:15:43.197: Failed to start camera monitor
+GNOME Shell-Message: 20:15:43.348: Error loading calendars: Error calling StartServiceByName for org.gnome.Shell.CalendarServer: Process org.gnome.Shell.CalendarServer exited with status 1
+GNOME Shell-Message: 20:15:43.353: No permission to control network connections: Polkit.Error: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Action org.freedesktop.NetworkManager.network-control is not registered
+GNOME Shell-Message: 20:15:43.354: Failed to get PolKit permission: Polkit.Error: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Action org.freedesktop.bolt.enroll is not registered
+
+(gnome-shell:70): accountsservice-WARNING **: 20:15:43.369: ActUserManager: user (null) has no username (uid: -1)
+
+(gnome-shell:70): libmutter-WARNING **: 20:15:43.528: (../src/backends/meta-barrier.c:258):init_barrier_impl: runtime check failed: (priv->impl)
+
+(gnome-shell:70): libmutter-WARNING **: 20:15:43.528: (../src/backends/meta-barrier.c:258):init_barrier_impl: runtime check failed: (priv->impl)
+
+(gnome-shell:70): libmutter-WARNING **: 20:15:43.528: (../src/backends/meta-barrier.c:258):init_barrier_impl: runtime check failed: (priv->impl)
+GNOME Shell-Message: 20:15:45.504: GNOME Shell started at Thu Nov 12 2026 20:15:42 GMT+0000 (Coordinated Universal Time)
+GNOME Shell-Message: 20:15:45.599: Registering session with GDM
+GNOME Shell-Message: 20:15:45.709: Error registering session with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+Window manager warning: Tried to ping window W0 with a bad serial! Not allowed.
+** Message: 20:16:10.287: Shutting down GNOME Shell

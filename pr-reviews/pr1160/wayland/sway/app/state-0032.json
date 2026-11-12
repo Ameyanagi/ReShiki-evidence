@@ -1,0 +1,12 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": true,
+  "document": "state-0032-paste.rsk",
+  "error": false,
+  "event": "paste",
+  "revision": 3,
+  "selected": [],
+  "sequence": 32,
+  "status": "Reading clipboard…"
+}

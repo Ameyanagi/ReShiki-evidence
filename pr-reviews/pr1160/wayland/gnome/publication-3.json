@@ -1,0 +1,72 @@
+{
+  "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+  "publisher_pid": 735,
+  "expected_sha256": {
+    "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
+    "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+    "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+  },
+  "queued": {
+    "id": 11,
+    "formats": [
+      "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+      "text/plain;charset=utf-8",
+      "text/plain",
+      "image/svg+xml",
+      "image/png",
+      "dev.reshiki.drawing",
+      "com.revvity.chemdraw.cdx-clipboard",
+      "com.revvity.cdx",
+      "com.perkinelmer.chemdraw.cdx-clipboard",
+      "com.perkinelmer.cdx",
+      "com.cambridgesoft.cdx",
+      "chemical/x-cdx",
+      "application/x-reshiki-drawing+json",
+      "application/x-chemdraw",
+      "application/pdf",
+      "UTF8_STRING"
+    ],
+    "active": true,
+    "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+    "queued": true
+  },
+  "selection_receipt": {
+    "device": "29",
+    "source": "50",
+    "serial": 107,
+    "offer": "4278190080",
+    "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3"
+  },
+  "independent_read": {
+    "id": 12,
+    "formats": [
+      "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "image/png",
+      "application/x-reshiki-drawing+json"
+    ],
+    "active": true,
+    "application/x-reshiki-drawing+json": {
+      "mime": "application/x-reshiki-drawing+json",
+      "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-drawing+json.bin",
+      "bytes": 1150,
+      "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+    },
+    "image/png": {
+      "mime": "image/png",
+      "file": "/tmp/qa/gnome/publication-reader-11/received-12-image_png.bin",
+      "bytes": 14234,
+      "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+      "dimensions": [
+        737,
+        349
+      ]
+    },
+    "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": {
+      "mime": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3.bin",
+      "bytes": 69,
+      "sha256": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+    }
+  },
+  "verified": true
+}

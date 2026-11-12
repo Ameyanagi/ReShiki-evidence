@@ -1,0 +1,50 @@
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'a', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'c', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-M', 'alt', '-k', 'c', '-m', 'alt', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'c', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'x', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'x', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'x', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'x', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'z', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'v', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-M', 'shift', '-k', 'c', '-m', 'shift', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'a', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 'c', '-m', 'ctrl', '-s', '100']
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
+['swaymsg', '[pid=70] kill']
+[
+  {
+    "success": true
+  }
+]
+['wtype', '-s', '100', '-k', 'F12', '-s', '100']
+['dpkg-query', '-W', 'sway', 'libwlroots12t64', 'libgtk-4-1', 'libwayland-client0', 'mesa-vulkan-drivers']
+libgtk-4-1:amd64	4.14.5+ds-0ubuntu0.10
+libwayland-client0:amd64	1.22.0-2.1build1
+libwlroots12t64:amd64	0.17.1-2.1build1
+mesa-vulkan-drivers:amd64	25.2.8-0ubuntu0.24.04.4
+sway	1.9-1build2

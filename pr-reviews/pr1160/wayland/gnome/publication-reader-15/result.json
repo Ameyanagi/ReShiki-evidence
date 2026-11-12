@@ -1,0 +1,74 @@
+{
+  "id": 18,
+  "formats": [
+    "application/x-reshiki-clipboard-receipt-7e59e48286bd290e60ba0cd67135cc5c",
+    "text/plain;charset=utf-8",
+    "text/plain",
+    "image/svg+xml",
+    "image/png",
+    "dev.reshiki.drawing",
+    "com.revvity.chemdraw.cdx-clipboard",
+    "com.revvity.cdx",
+    "com.perkinelmer.chemdraw.cdx-clipboard",
+    "com.perkinelmer.cdx",
+    "com.cambridgesoft.cdx",
+    "chemical/x-cdx",
+    "application/x-reshiki-drawing+json",
+    "application/x-chemdraw",
+    "application/pdf",
+    "UTF8_STRING"
+  ],
+  "active": true,
+  "application/x-reshiki-drawing+json": {
+    "mime": "application/x-reshiki-drawing+json",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-application_x-reshiki-drawing+json.bin",
+    "bytes": 2291,
+    "sha256": "4272522a1971a05c7614a6a3b32b2af355a991348b31c63a9ed222e3273920c3"
+  },
+  "chemical/x-cdx": {
+    "mime": "chemical/x-cdx",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-chemical_x-cdx.bin",
+    "bytes": 869,
+    "sha256": "f9ac0eeff07cdd284bec93b5b03dc644d32545729db43ea91562ba3ae8d72487"
+  },
+  "application/pdf": {
+    "mime": "application/pdf",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-application_pdf.bin",
+    "bytes": 7862,
+    "sha256": "112d2aafa4b9166d8af7398932173ea92795451f130ca361772df5002289c1f5"
+  },
+  "image/png": {
+    "mime": "image/png",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-image_png.bin",
+    "bytes": 27745,
+    "sha256": "8c0c0876000b3bfffb99e924bd1da3283f36513184be2fd9b053f11d87c55335",
+    "dimensions": [
+      1110,
+      523
+    ]
+  },
+  "image/svg+xml": {
+    "mime": "image/svg+xml",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-image_svg+xml.bin",
+    "bytes": 2313,
+    "sha256": "709624e9f735ec943c7c83888f89ba390664d794303cb81952686ad156f3dc8d"
+  },
+  "text/plain;charset=utf-8": {
+    "mime": "text/plain;charset=utf-8",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-text_plain;charset=utf-8.bin",
+    "bytes": 7,
+    "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+  },
+  "text/plain": {
+    "mime": "text/plain",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-text_plain.bin",
+    "bytes": 7,
+    "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+  },
+  "UTF8_STRING": {
+    "mime": "UTF8_STRING",
+    "file": "/tmp/qa/gnome/publication-reader-15/received-18-UTF8_STRING.bin",
+    "bytes": 7,
+    "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+  }
+}

@@ -1,0 +1,18 @@
+LibreOffice sees flavors:
+   text/plain;charset=utf-8
+   application/pdf
+   application/x-chemdraw
+   application/x-reshiki-drawing+json
+   chemical/x-cdx
+   image/png
+   image/svg+xml
+   text/plain
+   text/plain;charset=utf-8
+   text/plain;charset=utf-16
+swriter shapes after paste: 1
+   FrameShape MimeType=application/pdf size=2831x3228 (1/100 mm)
+  text: ''
+simpress shapes after paste: 3
+   com.sun.star.presentation.TitleTextShape size=25199x2629 (1/100 mm)
+   com.sun.star.presentation.SubtitleShape size=25199x9134 (1/100 mm)
+   com.sun.star.drawing.GraphicObjectShape MimeType=application/pdf size=2830x3227 (1/100 mm)

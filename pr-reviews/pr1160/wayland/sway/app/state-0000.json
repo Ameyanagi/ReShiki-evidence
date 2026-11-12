@@ -1,0 +1,12 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": false,
+  "document": "state-0000-opened.rsk",
+  "error": false,
+  "event": "opened",
+  "revision": 1,
+  "selected": [],
+  "sequence": 0,
+  "status": "Document opened"
+}

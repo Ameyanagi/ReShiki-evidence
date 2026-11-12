@@ -1,0 +1,16 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": false,
+  "document": "state-0020-clipboard_written.rsk",
+  "error": true,
+  "event": "clipboard_written",
+  "revision": 1,
+  "selected": [
+    1,
+    2,
+    3
+  ],
+  "sequence": 20,
+  "status": "Could not copy: clipboard request cancelled by QA"
+}

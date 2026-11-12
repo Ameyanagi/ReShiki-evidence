@@ -1,0 +1,82 @@
+[
+  {
+    "phase": "request",
+    "matched_marker": "",
+    "pending_state": {
+      "atoms": 3,
+      "bonds": 2,
+      "busy": true,
+      "document": "state-0011-cut.rsk",
+      "error": false,
+      "event": "cut",
+      "revision": 1,
+      "selected": [
+        1,
+        2,
+        3
+      ],
+      "sequence": 11,
+      "status": "Preparing clipboard\u2026"
+    }
+  },
+  {
+    "phase": "receipt",
+    "matched_marker": "application/x-reshiki-clipboard-receipt-6ce2b12b14b54146ea2a0de6a37a194b",
+    "pending_state": {
+      "atoms": 3,
+      "bonds": 2,
+      "busy": true,
+      "document": "state-0016-cut.rsk",
+      "error": false,
+      "event": "cut",
+      "revision": 1,
+      "selected": [
+        1,
+        2,
+        3
+      ],
+      "sequence": 16,
+      "status": "Preparing clipboard\u2026"
+    }
+  },
+  {
+    "phase": "receipt",
+    "matched_marker": "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+    "pending_state": {
+      "atoms": 3,
+      "bonds": 2,
+      "busy": true,
+      "document": "state-0019-cut.rsk",
+      "error": false,
+      "event": "cut",
+      "revision": 1,
+      "selected": [
+        1,
+        2,
+        3
+      ],
+      "sequence": 19,
+      "status": "Preparing clipboard\u2026"
+    }
+  },
+  {
+    "phase": "receipt",
+    "matched_marker": "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+    "pending_state": {
+      "atoms": 3,
+      "bonds": 2,
+      "busy": true,
+      "document": "state-0022-cut.rsk",
+      "error": false,
+      "event": "cut",
+      "revision": 1,
+      "selected": [
+        1,
+        2,
+        3
+      ],
+      "sequence": 22,
+      "status": "Preparing clipboard\u2026"
+    }
+  }
+]

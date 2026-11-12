@@ -1,0 +1,16 @@
+{
+  "atoms": 3,
+  "bonds": 2,
+  "busy": false,
+  "document": "state-0012-clipboard_written.rsk",
+  "error": true,
+  "event": "clipboard_written",
+  "revision": 1,
+  "selected": [
+    1,
+    2,
+    3
+  ],
+  "sequence": 12,
+  "status": "Could not copy: focus ReShiki and try the clipboard command again"
+}

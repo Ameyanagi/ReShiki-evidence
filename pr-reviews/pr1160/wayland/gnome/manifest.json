@@ -1,0 +1,1196 @@
+{
+  "compositor": "gnome",
+  "source_head": "local",
+  "binary_sha256": "480f76365b3f2aed4b460b687f372c5cc4ee0f5f6d44859e5ed88822a9b6f834",
+  "source_sha256": {
+    "Cargo.toml": "68aca403590670073a2e2ca2c89b8023ec01cac9e324432eb65d44c0c642e5e8",
+    "Cargo.lock": "fb3c53a562601f3348ec7a66f5bf82cfd4720168ee282ba9c0fc0d6ecd093772",
+    "src/app.rs": "bd3f74de7170740bf0254ca55de290113086fe1a97ee74cd265dbbc265b96bf1",
+    "src/app/gates.rs": "9e5d4233317831834a70638527da85f041134c0cfd102f7ac951c0eeec197bac",
+    "src/app/dispatch.rs": "a79a27f6f890560f46e1b24a180017468082ffa1a0d69eb738515d861c4d66f8",
+    "src/app/canvas_edit.rs": "eea4acc03bf0ea8b734d386743a20c5baac8601dada720ce56be56e2998a473b",
+    "src/app/canvas_edit/placement.rs": "74c7b4b946eae6398ef7bcbc3d3110d52fb48c46340c910814cf98017f9b691a",
+    "src/app/canvas_edit/click.rs": "08afde9288c34b0dbce4e6302a7e2c2930b115d97ae1f95038974829cd9a05d7",
+    "src/app/wayland_qa.rs": "87b6ee77b02c32f6155e45034323c2b83906a2351ee5c2684d82fdf9682c6574",
+    "native/linux/Cargo.toml": "8d6900d6ff5970c1df05c8e41432e7e402b07579bd45c50762a06cfe4c81d8d6",
+    "native/linux/src/gui.rs": "ffa4d11525b2e25bc552a3e0ed454c8da00084934c4c257b72e97d99b9c8b942",
+    "native/linux/src/wayland_qa.rs": "8ceaa28f4fce2aa1f6af3df0a89cefa0ee0506b14055333b825e09d97aaf5cbf",
+    "native/linux/tests/gtk_receiver.py": "7bfaf741909aa7eeb27a4855376146a42da7b5f0c7f57b837761c46da74c7f4a",
+    "native/linux/tests/wayland_session.py": "138d1a2baf8fa064a2e363e01354a90caa3edff19cdbefaa671e2d2f633e6979",
+    "vendor/smithay-clipboard/Cargo.toml": "cbf1c534a6e538256127b03c4b46b89cb68a442bd51eccebb43aefe3180c1aec",
+    "vendor/smithay-clipboard/src/qa.rs": "ec6e8e78abee1aa224fcad44226ba1c8c8b3b80b6f77ad95d949ffe6ee3b6ae5",
+    "vendor/smithay-clipboard/src/state/binary.rs": "e7bcc154b7873d125f582c55725d165b3ac44479ce636936336b6ef7803309b3",
+    "tests/fixtures/ui-ethanol.reshiki": "e8af8dc9ffee735e60852ee9c0953c3d1e700e67a6e6e712a415f8154f37c046"
+  },
+  "packages": "gnome-shell\t46.0-0ubuntu6~24.04.17\nlibgtk-4-1:amd64\t4.14.5+ds-0ubuntu0.10\nlibmutter-14-0:amd64\t46.2-1ubuntu0.24.04.18\nlibwayland-client0:amd64\t1.22.0-2.1build1\nmesa-vulkan-drivers:amd64\t25.2.8-0ubuntu0.24.04.4\nmutter-common\t46.2-1ubuntu0.24.04.18",
+  "receipts": [
+    {
+      "id": 1,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-93a0b22b6ece568f3e7a76a1dcfa529b",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/receiver/received-1-application_x-reshiki-drawing+json.bin",
+        "bytes": 1011,
+        "sha256": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3"
+      },
+      "chemical/x-cdx": {
+        "mime": "chemical/x-cdx",
+        "file": "/tmp/qa/gnome/receiver/received-1-chemical_x-cdx.bin",
+        "bytes": 540,
+        "sha256": "e158a27143818f203f67b77a38bfdc7cc58de92382710e710f487dcf2de2e5b7"
+      },
+      "application/pdf": {
+        "mime": "application/pdf",
+        "file": "/tmp/qa/gnome/receiver/received-1-application_pdf.bin",
+        "bytes": 7578,
+        "sha256": "7d701ac76af7a0d39b97e2d265c47c97c439104317c6daacd03934d1f367b050"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/receiver/received-1-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "mime": "image/svg+xml",
+        "file": "/tmp/qa/gnome/receiver/received-1-image_svg+xml.bin",
+        "bytes": 1510,
+        "sha256": "5b397a62f03b24c4fab9988985f09fdc9f5dece2129a902b53b4843202dfe88f"
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/receiver/received-1-text_plain;charset=utf-8.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "text/plain": {
+        "mime": "text/plain",
+        "file": "/tmp/qa/gnome/receiver/received-1-text_plain.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "UTF8_STRING": {
+        "mime": "UTF8_STRING",
+        "file": "/tmp/qa/gnome/receiver/received-1-UTF8_STRING.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      }
+    },
+    {
+      "id": 2,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "org.opensmiles.smiles",
+        "chemical/x-daylight-smiles",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/receiver/received-2-text_plain;charset=utf-8.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      }
+    },
+    {
+      "id": 3,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "org.opensmiles.smiles",
+        "chemical/x-daylight-smiles",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+      "queued": true
+    },
+    {
+      "id": 4,
+      "formats": [
+        "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+        "text/plain;charset=utf-8"
+      ],
+      "active": true,
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-4-text_plain;charset=utf-8.bin",
+        "bytes": 24,
+        "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
+      },
+      "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2": {
+        "mime": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-4-application_x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2.bin",
+        "bytes": 69,
+        "sha256": "482901e19394078ef6e1c82ec36fe57dce03c2e4d9775ae3fe56383afd19648d"
+      }
+    },
+    {
+      "id": 5,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-d0c15c51f4ef0df660a567c7f1bbbff7",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-application_x-reshiki-drawing+json.bin",
+        "bytes": 1011,
+        "sha256": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3"
+      },
+      "chemical/x-cdx": {
+        "mime": "chemical/x-cdx",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-chemical_x-cdx.bin",
+        "bytes": 540,
+        "sha256": "e158a27143818f203f67b77a38bfdc7cc58de92382710e710f487dcf2de2e5b7"
+      },
+      "application/pdf": {
+        "mime": "application/pdf",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-application_pdf.bin",
+        "bytes": 7578,
+        "sha256": "7d701ac76af7a0d39b97e2d265c47c97c439104317c6daacd03934d1f367b050"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "mime": "image/svg+xml",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-image_svg+xml.bin",
+        "bytes": 1510,
+        "sha256": "5b397a62f03b24c4fab9988985f09fdc9f5dece2129a902b53b4843202dfe88f"
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-text_plain;charset=utf-8.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "text/plain": {
+        "mime": "text/plain",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-text_plain.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "UTF8_STRING": {
+        "mime": "UTF8_STRING",
+        "file": "/tmp/qa/gnome/publication-reader-3/received-5-UTF8_STRING.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      }
+    },
+    {
+      "id": 6,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-d0c15c51f4ef0df660a567c7f1bbbff7",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "marker": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+      "queued": true
+    },
+    {
+      "id": 7,
+      "formats": [
+        "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+        "image/png",
+        "application/x-reshiki-drawing+json"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-7-application_x-reshiki-drawing+json.bin",
+        "bytes": 1150,
+        "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-7-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e": {
+        "mime": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-7-application_x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e.bin",
+        "bytes": 69,
+        "sha256": "1f2aa6f6b0d41da6a544965fbdbf2684aa030042d2ffbdccbb3a12b70209d81c"
+      }
+    },
+    {
+      "id": 8,
+      "formats": [
+        "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+        "image/png",
+        "application/x-reshiki-drawing+json"
+      ],
+      "active": true
+    },
+    {
+      "id": 9,
+      "formats": [
+        "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+        "image/png",
+        "application/x-reshiki-drawing+json"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-9-application_x-reshiki-drawing+json.bin",
+        "bytes": 1150,
+        "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+      },
+      "chemical/x-cdx": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "application/pdf": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-9-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "text/plain;charset=utf-8": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "text/plain": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "UTF8_STRING": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      }
+    },
+    {
+      "id": 10,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-6ce2b12b14b54146ea2a0de6a37a194b",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-application_x-reshiki-drawing+json.bin",
+        "bytes": 1011,
+        "sha256": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3"
+      },
+      "chemical/x-cdx": {
+        "mime": "chemical/x-cdx",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-chemical_x-cdx.bin",
+        "bytes": 540,
+        "sha256": "e158a27143818f203f67b77a38bfdc7cc58de92382710e710f487dcf2de2e5b7"
+      },
+      "application/pdf": {
+        "mime": "application/pdf",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-application_pdf.bin",
+        "bytes": 7578,
+        "sha256": "7d701ac76af7a0d39b97e2d265c47c97c439104317c6daacd03934d1f367b050"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "mime": "image/svg+xml",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-image_svg+xml.bin",
+        "bytes": 1510,
+        "sha256": "5b397a62f03b24c4fab9988985f09fdc9f5dece2129a902b53b4843202dfe88f"
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-text_plain;charset=utf-8.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "text/plain": {
+        "mime": "text/plain",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-text_plain.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "UTF8_STRING": {
+        "mime": "UTF8_STRING",
+        "file": "/tmp/qa/gnome/publication-reader-6/received-10-UTF8_STRING.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      }
+    },
+    {
+      "id": 11,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "queued": true
+    },
+    {
+      "id": 12,
+      "formats": [
+        "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+        "image/png",
+        "application/x-reshiki-drawing+json"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-drawing+json.bin",
+        "bytes": 1150,
+        "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-12-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": {
+        "mime": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3.bin",
+        "bytes": 69,
+        "sha256": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+      }
+    },
+    {
+      "id": 13,
+      "formats": [
+        "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+        "image/png",
+        "application/x-reshiki-drawing+json"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-13-application_x-reshiki-drawing+json.bin",
+        "bytes": 1150,
+        "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+      },
+      "chemical/x-cdx": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "application/pdf": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-13-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "text/plain;charset=utf-8": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "text/plain": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "UTF8_STRING": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      }
+    },
+    {
+      "id": 14,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-application_x-reshiki-drawing+json.bin",
+        "bytes": 1011,
+        "sha256": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3"
+      },
+      "chemical/x-cdx": {
+        "mime": "chemical/x-cdx",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-chemical_x-cdx.bin",
+        "bytes": 540,
+        "sha256": "e158a27143818f203f67b77a38bfdc7cc58de92382710e710f487dcf2de2e5b7"
+      },
+      "application/pdf": {
+        "mime": "application/pdf",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-application_pdf.bin",
+        "bytes": 7578,
+        "sha256": "7d701ac76af7a0d39b97e2d265c47c97c439104317c6daacd03934d1f367b050"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "mime": "image/svg+xml",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-image_svg+xml.bin",
+        "bytes": 1510,
+        "sha256": "5b397a62f03b24c4fab9988985f09fdc9f5dece2129a902b53b4843202dfe88f"
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-text_plain;charset=utf-8.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "text/plain": {
+        "mime": "text/plain",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-text_plain.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      },
+      "UTF8_STRING": {
+        "mime": "UTF8_STRING",
+        "file": "/tmp/qa/gnome/publication-reader-11/received-14-UTF8_STRING.bin",
+        "bytes": 3,
+        "sha256": "ab1de819ede91df490e6441934decfa9041b49f91d6bbadbba4df634ccff57fa"
+      }
+    },
+    {
+      "id": 15,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+      "queued": true
+    },
+    {
+      "id": 16,
+      "formats": [
+        "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+        "text/plain;charset=utf-8",
+        "image/png",
+        "application/x-reshiki-drawing+json"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-drawing+json.bin",
+        "bytes": 1011,
+        "sha256": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-16-image_png.bin",
+        "bytes": 14234,
+        "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-16-text_plain;charset=utf-8.bin",
+        "bytes": 1,
+        "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
+      },
+      "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f": {
+        "mime": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f.bin",
+        "bytes": 69,
+        "sha256": "58f7445094267a3146af29441592e93e9d1888f62322b4447c55d14ccce6414f"
+      }
+    },
+    {
+      "id": 17,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-ab7c743a543d440d3c889eb4f8c62046",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-17-application_x-reshiki-drawing+json.bin",
+        "bytes": 1438,
+        "sha256": "acee7d752154d857e4929ae0a7d64e3341de9349959de72b23d48b5d6a48d185"
+      },
+      "chemical/x-cdx": {
+        "mime": "chemical/x-cdx",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-17-chemical_x-cdx.bin",
+        "bytes": 14422,
+        "sha256": "299bba7018ef969e7e789876fdd3ec74e7f8416b04b6a4b0cb9ff461c8a8a23b"
+      },
+      "application/pdf": {
+        "mime": "application/pdf",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-17-application_pdf.bin",
+        "bytes": 7675,
+        "sha256": "8be076f8c8c27d303a2402a3d5523d9cf6a3ecd6e75814db8f1a0efff6be900e"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-17-image_png.bin",
+        "bytes": 14330,
+        "sha256": "e2259e10de56c17acd7839d04e4157bf3678456bda55e3510a14feedfe3f9f10",
+        "dimensions": [
+          737,
+          349
+        ]
+      },
+      "image/svg+xml": {
+        "mime": "image/svg+xml",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-17-image_svg+xml.bin",
+        "bytes": 1594,
+        "sha256": "7742c121e8e62f7edc7dc899672494fdf9f612731582c10b24d278bddb99c0bd"
+      },
+      "text/plain;charset=utf-8": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "text/plain": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "UTF8_STRING": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      }
+    },
+    {
+      "id": 18,
+      "formats": [
+        "application/x-reshiki-clipboard-receipt-7e59e48286bd290e60ba0cd67135cc5c",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "image/svg+xml",
+        "image/png",
+        "dev.reshiki.drawing",
+        "com.revvity.chemdraw.cdx-clipboard",
+        "com.revvity.cdx",
+        "com.perkinelmer.chemdraw.cdx-clipboard",
+        "com.perkinelmer.cdx",
+        "com.cambridgesoft.cdx",
+        "chemical/x-cdx",
+        "application/x-reshiki-drawing+json",
+        "application/x-chemdraw",
+        "application/pdf",
+        "UTF8_STRING"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "mime": "application/x-reshiki-drawing+json",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-application_x-reshiki-drawing+json.bin",
+        "bytes": 2291,
+        "sha256": "4272522a1971a05c7614a6a3b32b2af355a991348b31c63a9ed222e3273920c3"
+      },
+      "chemical/x-cdx": {
+        "mime": "chemical/x-cdx",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-chemical_x-cdx.bin",
+        "bytes": 869,
+        "sha256": "f9ac0eeff07cdd284bec93b5b03dc644d32545729db43ea91562ba3ae8d72487"
+      },
+      "application/pdf": {
+        "mime": "application/pdf",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-application_pdf.bin",
+        "bytes": 7862,
+        "sha256": "112d2aafa4b9166d8af7398932173ea92795451f130ca361772df5002289c1f5"
+      },
+      "image/png": {
+        "mime": "image/png",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-image_png.bin",
+        "bytes": 27745,
+        "sha256": "8c0c0876000b3bfffb99e924bd1da3283f36513184be2fd9b053f11d87c55335",
+        "dimensions": [
+          1110,
+          523
+        ]
+      },
+      "image/svg+xml": {
+        "mime": "image/svg+xml",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-image_svg+xml.bin",
+        "bytes": 2313,
+        "sha256": "709624e9f735ec943c7c83888f89ba390664d794303cb81952686ad156f3dc8d"
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-text_plain;charset=utf-8.bin",
+        "bytes": 7,
+        "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+      },
+      "text/plain": {
+        "mime": "text/plain",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-text_plain.bin",
+        "bytes": 7,
+        "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+      },
+      "UTF8_STRING": {
+        "mime": "UTF8_STRING",
+        "file": "/tmp/qa/gnome/publication-reader-15/received-18-UTF8_STRING.bin",
+        "bytes": 7,
+        "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+      }
+    },
+    {
+      "id": 19,
+      "formats": [
+        "text/plain;charset=utf-8"
+      ],
+      "active": true,
+      "application/x-reshiki-drawing+json": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "chemical/x-cdx": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "application/pdf": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "image/png": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "image/svg+xml": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "text/plain;charset=utf-8": {
+        "mime": "text/plain;charset=utf-8",
+        "file": "/tmp/qa/gnome/fresh-receiver/received-19-text_plain;charset=utf-8.bin",
+        "bytes": 7,
+        "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+      },
+      "text/plain": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      },
+      "UTF8_STRING": {
+        "error": "g-io-error-quark: No compatible transfer format found (15)"
+      }
+    }
+  ],
+  "gates": [
+    {
+      "phase": "request",
+      "matched_marker": "",
+      "pending_state": {
+        "atoms": 3,
+        "bonds": 2,
+        "busy": true,
+        "document": "state-0011-cut.rsk",
+        "error": false,
+        "event": "cut",
+        "revision": 1,
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "sequence": 11,
+        "status": "Preparing clipboard\u2026"
+      }
+    },
+    {
+      "phase": "receipt",
+      "matched_marker": "application/x-reshiki-clipboard-receipt-6ce2b12b14b54146ea2a0de6a37a194b",
+      "pending_state": {
+        "atoms": 3,
+        "bonds": 2,
+        "busy": true,
+        "document": "state-0016-cut.rsk",
+        "error": false,
+        "event": "cut",
+        "revision": 1,
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "sequence": 16,
+        "status": "Preparing clipboard\u2026"
+      }
+    },
+    {
+      "phase": "receipt",
+      "matched_marker": "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+      "pending_state": {
+        "atoms": 3,
+        "bonds": 2,
+        "busy": true,
+        "document": "state-0019-cut.rsk",
+        "error": false,
+        "event": "cut",
+        "revision": 1,
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "sequence": 19,
+        "status": "Preparing clipboard\u2026"
+      }
+    },
+    {
+      "phase": "receipt",
+      "matched_marker": "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+      "pending_state": {
+        "atoms": 3,
+        "bonds": 2,
+        "busy": true,
+        "document": "state-0022-cut.rsk",
+        "error": false,
+        "event": "cut",
+        "revision": 1,
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "sequence": 22,
+        "status": "Preparing clipboard\u2026"
+      }
+    }
+  ],
+  "fixture_publications": [
+    {
+      "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+      "publisher_pid": 581,
+      "expected_sha256": {
+        "text/plain;charset=utf-8": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9",
+        "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2": "482901e19394078ef6e1c82ec36fe57dce03c2e4d9775ae3fe56383afd19648d"
+      },
+      "queued": {
+        "id": 3,
+        "formats": [
+          "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+          "text/plain;charset=utf-8",
+          "text/plain",
+          "org.opensmiles.smiles",
+          "chemical/x-daylight-smiles",
+          "UTF8_STRING"
+        ],
+        "active": true,
+        "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+        "queued": true
+      },
+      "selection_receipt": {
+        "device": "29",
+        "source": "51",
+        "serial": 36,
+        "offer": "4278190081",
+        "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2"
+      },
+      "independent_read": {
+        "id": 4,
+        "formats": [
+          "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+          "text/plain;charset=utf-8"
+        ],
+        "active": true,
+        "text/plain;charset=utf-8": {
+          "mime": "text/plain;charset=utf-8",
+          "file": "/tmp/qa/gnome/publication-reader-3/received-4-text_plain;charset=utf-8.bin",
+          "bytes": 24,
+          "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
+        },
+        "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2": {
+          "mime": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+          "file": "/tmp/qa/gnome/publication-reader-3/received-4-application_x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2.bin",
+          "bytes": 69,
+          "sha256": "482901e19394078ef6e1c82ec36fe57dce03c2e4d9775ae3fe56383afd19648d"
+        }
+      },
+      "verified": true
+    },
+    {
+      "marker": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+      "publisher_pid": 658,
+      "expected_sha256": {
+        "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
+        "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e": "1f2aa6f6b0d41da6a544965fbdbf2684aa030042d2ffbdccbb3a12b70209d81c"
+      },
+      "queued": {
+        "id": 6,
+        "formats": [
+          "application/x-reshiki-clipboard-receipt-d0c15c51f4ef0df660a567c7f1bbbff7",
+          "text/plain;charset=utf-8",
+          "text/plain",
+          "image/svg+xml",
+          "image/png",
+          "dev.reshiki.drawing",
+          "com.revvity.chemdraw.cdx-clipboard",
+          "com.revvity.cdx",
+          "com.perkinelmer.chemdraw.cdx-clipboard",
+          "com.perkinelmer.cdx",
+          "com.cambridgesoft.cdx",
+          "chemical/x-cdx",
+          "application/x-reshiki-drawing+json",
+          "application/x-chemdraw",
+          "application/pdf",
+          "UTF8_STRING"
+        ],
+        "active": true,
+        "marker": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+        "queued": true
+      },
+      "selection_receipt": {
+        "device": "29",
+        "source": "51",
+        "serial": 54,
+        "offer": "4278190081",
+        "marker": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e"
+      },
+      "independent_read": {
+        "id": 7,
+        "formats": [
+          "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+          "image/png",
+          "application/x-reshiki-drawing+json"
+        ],
+        "active": true,
+        "application/x-reshiki-drawing+json": {
+          "mime": "application/x-reshiki-drawing+json",
+          "file": "/tmp/qa/gnome/publication-reader-6/received-7-application_x-reshiki-drawing+json.bin",
+          "bytes": 1150,
+          "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+        },
+        "image/png": {
+          "mime": "image/png",
+          "file": "/tmp/qa/gnome/publication-reader-6/received-7-image_png.bin",
+          "bytes": 14234,
+          "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+          "dimensions": [
+            737,
+            349
+          ]
+        },
+        "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e": {
+          "mime": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+          "file": "/tmp/qa/gnome/publication-reader-6/received-7-application_x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e.bin",
+          "bytes": 69,
+          "sha256": "1f2aa6f6b0d41da6a544965fbdbf2684aa030042d2ffbdccbb3a12b70209d81c"
+        }
+      },
+      "verified": true
+    },
+    {
+      "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "publisher_pid": 735,
+      "expected_sha256": {
+        "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
+        "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+      },
+      "queued": {
+        "id": 11,
+        "formats": [
+          "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+          "text/plain;charset=utf-8",
+          "text/plain",
+          "image/svg+xml",
+          "image/png",
+          "dev.reshiki.drawing",
+          "com.revvity.chemdraw.cdx-clipboard",
+          "com.revvity.cdx",
+          "com.perkinelmer.chemdraw.cdx-clipboard",
+          "com.perkinelmer.cdx",
+          "com.cambridgesoft.cdx",
+          "chemical/x-cdx",
+          "application/x-reshiki-drawing+json",
+          "application/x-chemdraw",
+          "application/pdf",
+          "UTF8_STRING"
+        ],
+        "active": true,
+        "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+        "queued": true
+      },
+      "selection_receipt": {
+        "device": "29",
+        "source": "50",
+        "serial": 107,
+        "offer": "4278190080",
+        "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3"
+      },
+      "independent_read": {
+        "id": 12,
+        "formats": [
+          "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+          "image/png",
+          "application/x-reshiki-drawing+json"
+        ],
+        "active": true,
+        "application/x-reshiki-drawing+json": {
+          "mime": "application/x-reshiki-drawing+json",
+          "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-drawing+json.bin",
+          "bytes": 1150,
+          "sha256": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96"
+        },
+        "image/png": {
+          "mime": "image/png",
+          "file": "/tmp/qa/gnome/publication-reader-11/received-12-image_png.bin",
+          "bytes": 14234,
+          "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+          "dimensions": [
+            737,
+            349
+          ]
+        },
+        "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": {
+          "mime": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+          "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3.bin",
+          "bytes": 69,
+          "sha256": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+        }
+      },
+      "verified": true
+    },
+    {
+      "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+      "publisher_pid": 858,
+      "expected_sha256": {
+        "application/x-reshiki-drawing+json": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3",
+        "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+        "text/plain;charset=utf-8": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+        "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f": "58f7445094267a3146af29441592e93e9d1888f62322b4447c55d14ccce6414f"
+      },
+      "queued": {
+        "id": 15,
+        "formats": [
+          "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+          "text/plain;charset=utf-8",
+          "text/plain",
+          "image/svg+xml",
+          "image/png",
+          "dev.reshiki.drawing",
+          "com.revvity.chemdraw.cdx-clipboard",
+          "com.revvity.cdx",
+          "com.perkinelmer.chemdraw.cdx-clipboard",
+          "com.perkinelmer.cdx",
+          "com.cambridgesoft.cdx",
+          "chemical/x-cdx",
+          "application/x-reshiki-drawing+json",
+          "application/x-chemdraw",
+          "application/pdf",
+          "UTF8_STRING"
+        ],
+        "active": true,
+        "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+        "queued": true
+      },
+      "selection_receipt": {
+        "device": "29",
+        "source": "52",
+        "serial": 154,
+        "offer": "4278190080",
+        "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f"
+      },
+      "independent_read": {
+        "id": 16,
+        "formats": [
+          "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+          "text/plain;charset=utf-8",
+          "image/png",
+          "application/x-reshiki-drawing+json"
+        ],
+        "active": true,
+        "application/x-reshiki-drawing+json": {
+          "mime": "application/x-reshiki-drawing+json",
+          "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-drawing+json.bin",
+          "bytes": 1011,
+          "sha256": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3"
+        },
+        "image/png": {
+          "mime": "image/png",
+          "file": "/tmp/qa/gnome/publication-reader-15/received-16-image_png.bin",
+          "bytes": 14234,
+          "sha256": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
+          "dimensions": [
+            737,
+            349
+          ]
+        },
+        "text/plain;charset=utf-8": {
+          "mime": "text/plain;charset=utf-8",
+          "file": "/tmp/qa/gnome/publication-reader-15/received-16-text_plain;charset=utf-8.bin",
+          "bytes": 1,
+          "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
+        },
+        "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f": {
+          "mime": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+          "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f.bin",
+          "bytes": 69,
+          "sha256": "58f7445094267a3146af29441592e93e9d1888f62322b4447c55d14ccce6414f"
+        }
+      },
+      "verified": true
+    }
+  ],
+  "publication_serials": [
+    15,
+    31,
+    49,
+    91,
+    103,
+    121,
+    183,
+    201
+  ],
+  "checks": [
+    "real_keyboard_copy",
+    "drawing_copy_with_smiles_plain_text",
+    "chemical_text_copy_smiles",
+    "foreign_owner_replacement",
+    "focus_loss_cut_preserved",
+    "cancelled_source_retained",
+    "cancelled_cleanup_preserves_foreign_owner",
+    "cut_waits_for_real_receipt",
+    "cut_saved_graph",
+    "undo_saved_graph",
+    "native_paste_saved_graph",
+    "copy_image_png",
+    "fresh_receiver_after_exit"
+  ]
+}

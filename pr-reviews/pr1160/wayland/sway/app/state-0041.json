@@ -1,0 +1,19 @@
+{
+  "atoms": 6,
+  "bonds": 4,
+  "busy": true,
+  "document": "state-0041-copy.rsk",
+  "error": false,
+  "event": "copy",
+  "revision": 4,
+  "selected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sequence": 41,
+  "status": "Preparing clipboard…"
+}
