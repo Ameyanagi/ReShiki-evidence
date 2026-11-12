@@ -1,0 +1,9 @@
+changeCount 2515
+item 0
+   0 dev.reshiki.drawing       5297  7b2261746f6d5f6c
+   1 com.revvity.chemdraw.cdx-clipboard       2166  566a434430313030
+   2 com.perkinelmer.chemdraw.cdx-clipboard       2166  566a434430313030
+   3 com.cambridgesoft.cdx       2166  566a434430313030
+   4 com.adobe.pdf      12600  255044462d312e37
+   5 public.png      96785  89504e470d0a1a0a
+   6 public.svg-image       4958  3c73766720786d6c

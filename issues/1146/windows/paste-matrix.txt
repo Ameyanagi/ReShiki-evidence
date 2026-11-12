@@ -1,0 +1,57 @@
+Windows 11 x64 25H2, Microsoft 365 16.0.20625.20076, Edge 157.0.4341.46, ReShiki 11df00d5 release.
+Run 1: PowerPoint, Excel, Edge. Run 2: Word only (run 1 Word automation had a script error; fixed).
+The InChI-helper notice is from the test harness binary, not from ReShiki itself.
+
+##### Run 1
+LocalServer32 before: "%LOCALAPPDATA%\Programs\ReShiki\reshiki.exe" --ole-server
+=== 1. Copy (Ctrl+C path: clipboard::copy image_only=false)
+harness: image_only=false external_editable=true notices=["Chemistry could not be refreshed: InChI helper exited with code Some(101): error: Unrecognized option: 'inchi-worker'\n"] | test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+--- formats after copy (enumeration order: index, id, name, bytes, head)
+PowerPoint: shapes=2 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.5pt
+Excel: shapes=1 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 944,  "result": {   "types": [],   "items": [],   "html": null,   "text": null,   "inserted": {    "imgs": [],    "text": "",    "htmlLength": 0   }  } }
+=== 2. Copy Image (Ctrl+Shift+C path: image_only=true)
+harness: image_only=true external_editable=false notices=["Chemistry could not be refreshed: InChI helper exited with code Some(101): error: Unrecognized option: 'inchi-worker'\n"] | test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+--- formats after image (enumeration order: index, id, name, bytes, head)
+PowerPoint: shapes=1 type=28 (graphic (SVG)) progid= size=78x83.2pt
+Excel: shapes=1 type=28 (graphic (SVG)) progid=
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 989,  "result": {   "types": [    "image/svg+xml",    "Files"   ],   "items": [    {     "kind": "string",     "type": "image/svg+xml",     "size": null    },    {     "kind": "file",     "type": "image/png",     "size": 96785    }   ],   "html": null,   "text": null,   "inserted": {    "imgs": [     {      "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",      "w": 1303,      "h": 1390,      "reshiki": false     }    ],    "text": "",    "htmlLength": 129089   }  } }
+=== 3. Experiments: the Copy formats re-published, plus one extra format
+--- control (Copy formats only)
+published: DataObject; Embed Source; Native; OwnerLink; Object Descriptor; 14; PDF; ChemDraw Interchange Format; dev.reshiki.drawing; 
+PowerPoint: shapes=2 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.5pt
+Excel: shapes=1 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 1223,  "result": {   "types": [],   "items": [],   "html": null,   "text": null,   "inserted": {    "imgs": [],    "text": "",    "htmlLength": 0   }  } }
+--- + HTML Format (img data URI)
+published: DataObject; Embed Source; Native; OwnerLink; Object Descriptor; 14; PDF; ChemDraw Interchange Format; dev.reshiki.drawing; +HTML Format; 
+PowerPoint: shapes=1 type=13 (picture) progid= size=78.2x83.4pt
+Excel: shapes=1 type=13 (picture) progid=
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 693,  "result": {   "types": [    "text/html"   ],   "items": [    {     "kind": "string",     "type": "text/html",     "size": null    }   ],   "html": {    "length": 129169,    "head": "<html><body><!--StartFragment--><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABRcAAAVuCAYAAADvaAtMAAAACXBIWXMAALiMAAC4jAHM9rsvAAF5w0lEQVR4Ae3AA6AkWZbG8f937o3IzKdyS2Oubdu2bdu2bdu2bWmMnpZKr54yMyLu+Xa3anqmhztr1U9cddVVV1111VVXXXXVVVddddVVV1111VVX/esAIK666qqrrrrqqquuuuqqq6666qqrrrrqqqv+dQAQV111"   },   "text": null,   "inserted": {    "imgs": [     {      "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",      "w": 1303,      "h": 1390,      "reshiki": false     }    ],    "text": "",    "htmlLength": 129105   }  } }
+--- + CF_DIB
+published: DataObject; Embed Source; Native; OwnerLink; Object Descriptor; 14; PDF; ChemDraw Interchange Format; dev.reshiki.drawing; +CF_DIB; 
+PowerPoint: shapes=2 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.5pt
+Excel: shapes=1 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 312,  "result": {   "types": [    "Files"   ],   "items": [    {     "kind": "file",     "type": "image/png",     "size": 83245    }   ],   "html": null,   "text": null,   "inserted": {    "imgs": [     {      "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",      "w": 1303,      "h": 1390,      "reshiki": false     }    ],    "text": "",    "htmlLength": 111037   }  } }
+--- + PNG
+published: DataObject; Embed Source; Native; OwnerLink; Object Descriptor; 14; PDF; ChemDraw Interchange Format; dev.reshiki.drawing; +PNG; 
+PowerPoint: shapes=2 type=7 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.5pt
+Excel: shapes=1 type=13 (picture) progid=
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 388,  "result": {   "types": [],   "items": [],   "html": null,   "text": null,   "inserted": {    "imgs": [     {      "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",      "w": 1303,      "h": 1390,      "reshiki": false     }    ],    "text": "",    "htmlLength": 129089   }  } }
+LocalServer32 restored: "%LOCALAPPDATA%\Programs\ReShiki\reshiki.exe" --ole-server
+
+##### Run 2 (Word)
+=== 1. Copy (Ctrl+C path: clipboard::copy image_only=false)
+--- formats after copy (enumeration order: index, id, name, bytes, head)
+Word: inline=1 floating=0 chars=1 type=1 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.4pt
+=== 2. Copy Image (Ctrl+Shift+C path: image_only=true)
+--- formats after image (enumeration order: index, id, name, bytes, head)
+Word: inline=1 floating=0 chars=1 type=17 progid= size=78x83.2pt
+=== 3. Experiments: the Copy formats re-published, plus one extra format
+--- control (Copy formats only)
+Word: inline=1 floating=0 chars=1 type=1 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.4pt
+--- + HTML Format (img data URI)
+Word: inline=1 floating=0 chars=1 type=3 (picture) progid= size=78.4x83.2pt
+--- + CF_DIB
+Word: inline=1 floating=0 chars=1 type=1 (embedded OLE object) progid=ReShiki.EmbeddedDrawing.1 size=88.9x93.4pt
+--- + PNG
+Word: inline=1 floating=0 chars=1 type=3 (picture) progid= size=78.2x83.4pt

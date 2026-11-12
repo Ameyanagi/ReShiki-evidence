@@ -1,0 +1,10 @@
+--- formats after image (enumeration order: index, id, name, bytes, head)
+owner pid 0
+ 0      8 CF_DIB                                  5437720 2800000017050000
+ 1  49264 PDF                                       15470 255044462D312E37
+ 2  49414 PNG                                       96785 89504E470D0A1A0A
+ 3  49482 image/svg+xml                             12959 3C73766720786D6C
+ 4  49695 ChemDraw Interchange Format               96881 566A434430313030
+ 5  49902 dev.reshiki.drawing                      108757 7B2261746F6D5F6C
+ 6      2 CF_BITMAP                                    -2 
+ 7     17 CF_DIBV5                                5437804 7C00000017050000

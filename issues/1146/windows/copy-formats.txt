@@ -1,0 +1,13 @@
+--- formats after copy (enumeration order: index, id, name, bytes, head)
+owner pid 0
+ 0  49161 DataObject                                    8 0000000000000000
+ 1  49163 Embed Source                             138752 D0CF11E0A1B11AE1
+ 2  49156 Native                                   138752 D0CF11E0A1B11AE1
+ 3  49155 OwnerLink                                    44 52655368696B692E
+ 4  49166 Object Descriptor                            84 540000007E2BAC3B
+ 5     14 CF_ENHMETAFILE                            14280 
+ 6  49264 PDF                                       15470 255044462D312E37
+ 7  49695 ChemDraw Interchange Format                2166 566A434430313030
+ 8  49902 dev.reshiki.drawing                        5297 7B2261746F6D5F6C
+ 9  49171 Ole Private Data                            360 0000000068010000
+10      3 CF_METAFILEPICT                              -2 

@@ -1,0 +1,35 @@
+{
+ "browser": "Chrome/156.0.8078.80",
+ "result": {
+  "types": [
+   "image/svg+xml",
+   "Files"
+  ],
+  "items": [
+   {
+    "kind": "string",
+    "type": "image/svg+xml",
+    "size": null
+   },
+   {
+    "kind": "file",
+    "type": "image/png",
+    "size": 96785
+   }
+  ],
+  "html": null,
+  "text": null,
+  "inserted": {
+   "imgs": [
+    {
+     "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",
+     "w": 1303,
+     "h": 1390,
+     "reshiki": false
+    }
+   ],
+   "text": "",
+   "htmlLength": 129089
+  }
+ }
+}
