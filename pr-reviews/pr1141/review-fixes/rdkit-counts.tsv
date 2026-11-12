@@ -1,0 +1,46 @@
+in/and-span.mol	2	&:1,5
+in/and-two.mol	4	&:1 &:5
+in/or-span.mol	2	o:1,5
+in/two-fragments-and.cdxml	2 fragment(s)	4	&:1 &:5
+before/and-span.cdxml	1 fragment(s)	2	&:1,5
+before/and-span.mol	4	&:1 &:5
+before/and-span.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+before/and-two.cdxml	1 fragment(s)	4	&:1 &:5
+before/and-two.mol	4	&:1 &:5
+before/and-two.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+before/or-span.cdxml	1 fragment(s)	2	o:1,5
+before/or-span.mol	4	o:1 o:5
+before/or-span.smiles	C[C@H](O)Cl.C[C@H](O)F |o1:5,o2:1|	4	o:5 o:1
+before/smi1.cdxml	1 fragment(s)	2	&:1,5
+before/smi1.mol	4	&:1 &:5
+before/smi1.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+before/smi2.cdxml	1 fragment(s)	2	o:1,5
+before/smi2.mol	4	o:1 o:5
+before/smi2.smiles	C[C@H](O)Cl.C[C@H](O)F |o1:5,o2:1|	4	o:5 o:1
+before/smi3.cdxml	1 fragment(s)	4	&:1 &:5
+before/smi3.mol	4	&:1 &:5
+before/smi3.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+before/two-fragments-and.cdxml	1 fragment(s)	2	&:1,5
+before/two-fragments-and.mol	4	&:1 &:5
+before/two-fragments-and.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+after/and-span.cdxml	1 fragment(s)	2	&:1,5
+after/and-span.mol	2	&:1,5
+after/and-span.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:1,5|	2	&:1,5
+after/and-two.cdxml	1 fragment(s)	4	&:1 &:5
+after/and-two.mol	4	&:1 &:5
+after/and-two.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+after/or-span.cdxml	1 fragment(s)	2	o:1,5
+after/or-span.mol	2	o:1,5
+after/or-span.smiles	C[C@H](O)Cl.C[C@H](O)F |o1:1,5|	2	o:1,5
+after/smi1.cdxml	1 fragment(s)	2	&:1,5
+after/smi1.mol	2	&:1,5
+after/smi1.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:1,5|	2	&:1,5
+after/smi2.cdxml	1 fragment(s)	2	o:1,5
+after/smi2.mol	2	o:1,5
+after/smi2.smiles	C[C@H](O)Cl.C[C@H](O)F |o1:1,5|	2	o:1,5
+after/smi3.cdxml	1 fragment(s)	4	&:1 &:5
+after/smi3.mol	4	&:1 &:5
+after/smi3.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
+after/two-fragments-and.cdxml	1 fragment(s)	4	&:1 &:5
+after/two-fragments-and.mol	4	&:1 &:5
+after/two-fragments-and.smiles	C[C@H](O)Cl.C[C@H](O)F |&1:5,&2:1|	4	&:5 &:1
