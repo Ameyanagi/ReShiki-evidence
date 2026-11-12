@@ -1,0 +1,6 @@
+leftover: 
+harness: test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.17s
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 1352,  "result": {   "types": [    "image/svg+xml",    "Files"   ],   "items": [    {     "kind": "string",     "type": "image/svg+xml",     "size": null    },    {     "kind": "file",     "type": "image/png",     "size": 96785    }   ],   "html": null,   "text": null,   "inserted": {    "imgs": [     {      "src": "data:image/png;base64,iVBORw0KGgoAAAANSU",      "w": 1303,      "h": 1390,      "reshiki": false     }    ],    "text": "",    "htmlLength": 129089   }  } }
+harness: test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.19s
+Edge (Chromium, as WebView2 / new Outlook / Outlook on the web): {  "browser": "Edg/157.0.4341.46",  "waitedMs": 31262,  "result": "no paste event" }
+LocalServer32: "%LOCALAPPDATA%\Programs\ReShiki\reshiki.exe" --ole-server
