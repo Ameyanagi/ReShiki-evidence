@@ -1,0 +1,92 @@
+{
+  "atom_labels": {
+    "carbons": "skeletal",
+    "hydrogens": true,
+    "stereo": false
+  },
+  "version": 35,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [],
+  "arrows": [
+    {
+      "id": 1,
+      "start": {
+        "x": -202.0,
+        "y": -59.0
+      },
+      "end": {
+        "x": 78.0,
+        "y": -59.0
+      },
+      "kind": "curved",
+      "cubic": [
+        {
+          "x": -171.01118,
+          "y": -28.011187
+        },
+        {
+          "x": 47.011086,
+          "y": -28.011086
+        }
+      ],
+      "nodes": [
+        {
+          "point": {
+            "x": -109.033554,
+            "y": -56.900555
+          },
+          "controls": [
+            {
+              "x": -140.02237,
+              "y": -67.31137
+            },
+            {
+              "x": -59.677948,
+              "y": -66.366516
+            }
+          ],
+          "kind": "corner"
+        },
+        {
+          "point": {
+            "x": -14.966736,
+            "y": 63.099545
+          },
+          "controls": [
+            {
+              "x": -46.138996,
+              "y": 73.57192
+            },
+            {
+              "x": 16.205523,
+              "y": 52.627167
+            }
+          ],
+          "kind": "symmetric"
+        }
+      ],
+      "style": {
+        "head": "full",
+        "tail": "none",
+        "shape": "solid",
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "width_pt": 0.6,
+        "pattern": "solid",
+        "head_length_pt": 6.0,
+        "head_width_pt": 1.5,
+        "equilibrium_ratio": 1.0,
+        "head_notch": 0.125,
+        "gap_pt": 2.0,
+        "no_go": "none",
+        "dipole": false
+      }
+    }
+  ],
+  "graphics": [],
+  "groups": []
+}
