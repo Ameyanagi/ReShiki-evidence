@@ -1,0 +1,14 @@
+0 com.microsoft.Excel-2007-Internal-Shape 16159
+0 com.microsoft.Art--GVML-ClipFormat 16090
+0 com.adobe.pdf 11605
+0 public.tiff 89166
+0 com.microsoft.ole.source.14804.0x749bf5c370 0
+0 com.microsoft.DataObject 16
+0 com.microsoft.appbundleid 19
+runs/e462vector/excel-copyback/0-com.adobe.pdf.bin: 11605B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15
+runs/e462vector/excel-copyback/0-com.microsoft.Art--GVML-ClipFormat.bin: 16090B payload=none
+runs/e462vector/excel-copyback/0-com.microsoft.DataObject.bin: 16B payload=none
+runs/e462vector/excel-copyback/0-com.microsoft.Excel-2007-Internal-Shape.bin: 16159B payload=none
+runs/e462vector/excel-copyback/0-com.microsoft.appbundleid.bin: 19B payload=none
+runs/e462vector/excel-copyback/0-com.microsoft.ole.source.14804.0x749bf5c370.bin: 0B payload=none
+runs/e462vector/excel-copyback/0-public.tiff.bin: 89166B payload=none

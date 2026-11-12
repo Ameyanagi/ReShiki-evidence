@@ -1,0 +1,276 @@
+
+test clipboard::tests::failed_native_read_is_bounded_and_does_not_fetch_lower_priority_data ... ok
+test clipboard::tests::failed_png_transfer_keeps_secondary_png_and_dib_available_for_retry ... ok
+test result: ok. 49 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.22s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test 
+clipboard::copy_as::chemdoodle::aromatic_tests::failed_kekule_unknown_dummy_and_nonaromatic_normalization_keep_source 
+... ok
+test clipboard::tests::failed_office_drawing_retries_standalone_native_without_repeating_office ... ok
+test clipboard::tests::failed_transport_alias_is_consumed_once_before_the_next_alias ... ok
+test clipboard::tests::failed_native_cdx_and_cdxml_fall_through_and_newer_drawing_error_is_retained ... ok
+test result: ok. 84 passed; 0 failed; 1 ignored; 0 measured; 283 filtered out; finished in 1.85s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 360 filtered out; finished in 0.41s
+leftover before: 
+LocalServer32 before: "C:\Users\USER\AppData\Local\Programs\ReShiki\reshiki.exe" --ole-server
+=== Sizes (Copy and Copy Image for each drawing)
+--- caffeine image_only=0
+  copy: image_only=false external_editable=true notices=[]
+  formats (caffeine-0): total=9200931 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                             100864 D0CF11E0A1B11AE1
+     2  49156 Native                                   100864 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                             7760 
+     6      8 CF_DIB                                  4484992 2800000037050000
+     7  49264 PDF                                       13898 255044462D312E37
+     8  49695 ChemDraw Interchange Format                2074 566A434430313030
+     9  49902 dev.reshiki.drawing                        4859 7B2261746F6D5F6C
+    10  49171 Ole Private Data                            408 0000000098010000
+    11      3 CF_METAFILEPICT                              -2 
+    12      2 CF_BITMAP                                    -2 
+    13     17 CF_DIBV5                                4485076 7C00000037050000
+    payload: file 06-CF_DIB.bin bytes=4484992 payload=none
+    payload: file 07-PDF.bin bytes=13898 payload=drawing atoms=14 bonds=15
+    payload: file 13-CF_DIBV5.bin bytes=4485076 payload=none
+--- caffeine image_only=1
+  copy: image_only=true external_editable=false notices=[]
+  formats (caffeine-1): total=9143168 bytes
+    owner pid 0
+     0      8 CF_DIB                                  4484992 2800000037050000
+     1  49264 PDF                                       13898 255044462D312E37
+     2  49414 PNG                                       73225 89504E470D0A1A0A
+     3  49482 image/svg+xml                              7797 3C73766720786D6C
+     4  49695 ChemDraw Interchange Format               73321 566A434430313030
+     5  49902 dev.reshiki.drawing                        4859 7B2261746F6D5F6C
+     6      2 CF_BITMAP                                    -2 
+     7     17 CF_DIBV5                                4485076 7C00000037050000
+    payload: file 00-CF_DIB.bin bytes=4484992 payload=none
+    payload: file 01-PDF.bin bytes=13898 payload=drawing atoms=14 bonds=15
+    payload: file 02-PNG.bin bytes=73225 payload=drawing atoms=14 bonds=15
+    payload: file 03-image_svg+xml.bin bytes=7797 payload=drawing atoms=14 bonds=15
+    payload: file 07-CF_DIBV5.bin bytes=4485076 payload=none
+--- reaction image_only=0
+  copy: image_only=false external_editable=true notices=[]
+  formats (reaction-0): total=17396749 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                             141824 D0CF11E0A1B11AE1
+     2  49156 Native                                   141824 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                            13764 
+     6      8 CF_DIB                                  8538364 280000006C100000
+     7  49264 PDF                                       14622 255044462D312E37
+     8  49695 ChemDraw Interchange Format                2089 566A434430313030
+     9  49902 dev.reshiki.drawing                        5270 7B2261746F6D5F6C
+    10  49171 Ole Private Data                            408 0000000098010000
+    11      3 CF_METAFILEPICT                              -2 
+    12      2 CF_BITMAP                                    -2 
+    13     17 CF_DIBV5                                8538448 7C0000006C100000
+    payload: file 06-CF_DIB.bin bytes=8538364 payload=none
+    payload: file 07-PDF.bin bytes=14622 payload=drawing atoms=14 bonds=10
+    payload: file 13-CF_DIBV5.bin bytes=8538448 payload=none
+--- reaction image_only=1
+  copy: image_only=true external_editable=false notices=[]
+  formats (reaction-1): total=17308307 bytes
+    owner pid 0
+     0      8 CF_DIB                                  8538364 280000006C100000
+     1  49264 PDF                                       14622 255044462D312E37
+     2  49414 PNG                                       99381 89504E470D0A1A0A
+     3  49482 image/svg+xml                             12745 3C73766720786D6C
+     4  49695 ChemDraw Interchange Format               99477 566A434430313030
+     5  49902 dev.reshiki.drawing                        5270 7B2261746F6D5F6C
+     6      2 CF_BITMAP                                    -2 
+     7     17 CF_DIBV5                                8538448 7C0000006C100000
+    payload: file 00-CF_DIB.bin bytes=8538364 payload=none
+    payload: file 01-PDF.bin bytes=14622 payload=drawing atoms=14 bonds=10
+    payload: file 02-PNG.bin bytes=99381 payload=drawing atoms=14 bonds=10
+    payload: file 03-image_svg+xml.bin bytes=12745 payload=drawing atoms=14 bonds=10
+    payload: file 07-CF_DIBV5.bin bytes=8538448 payload=none
+--- atorvastatin-x5 image_only=0
+  copy: image_only=false external_editable=true notices=["Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality"]
+  formats (atorvastatin-x5-0): total=57219681 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                             781312 D0CF11E0A1B11AE1
+     2  49156 Native                                   781312 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                            87532 
+     6      8 CF_DIB                                 27721480 28000000101D0000
+     7  49264 PDF                                       29074 255044462D312E37
+     8  49695 ChemDraw Interchange Format               26441 566A434430313030
+     9  49902 dev.reshiki.drawing                       70422 7B2261746F6D5F6C
+    10  49171 Ole Private Data                            408 0000000098010000
+    11      3 CF_METAFILEPICT                              -2 
+    12      2 CF_BITMAP                                    -2 
+    13     17 CF_DIBV5                               27721564 7C000000101D0000
+    payload: file 06-CF_DIB.bin bytes=27721480 payload=none
+    payload: file 07-PDF.bin bytes=29074 payload=drawing atoms=205 bonds=220
+    payload: file 13-CF_DIBV5.bin bytes=27721564 payload=none
+--- atorvastatin-x5 image_only=1
+  copy: image_only=true external_editable=false notices=["Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality"]
+  formats (atorvastatin-x5-1): total=56625217 bytes
+    owner pid 0
+     0      8 CF_DIB                                 27721480 28000000101D0000
+     1  49264 PDF                                       29074 255044462D312E37
+     2  49414 PNG                                      499873 89504E470D0A1A0A
+     3  49482 image/svg+xml                             82835 3C73766720786D6C
+     4  49695 ChemDraw Interchange Format              499969 566A434430313030
+     5  49902 dev.reshiki.drawing                       70422 7B2261746F6D5F6C
+     6      2 CF_BITMAP                                    -2 
+     7     17 CF_DIBV5                               27721564 7C000000101D0000
+    payload: file 00-CF_DIB.bin bytes=27721480 payload=none
+    payload: file 01-PDF.bin bytes=29074 payload=drawing atoms=205 bonds=220
+    payload: file 02-PNG.bin bytes=499873 payload=drawing atoms=205 bonds=220
+    payload: file 03-image_svg+xml.bin bytes=82835 payload=drawing atoms=205 bonds=220
+    payload: file 07-CF_DIBV5.bin bytes=27721564 payload=none
+--- caffeine-photo image_only=0
+  copy: image_only=false external_editable=true notices=["Pictures copied without the editable drawing (too large); pasting into ReShiki still keeps it", "Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality"]
+  formats (caffeine-photo-0): total=138548993 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                           54253568 D0CF11E0A1B11AE1
+     2  49156 Native                                 54253568 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                          9172652 
+     6  49264 PDF                                     5083721 255044462D312E37
+     7  49695 ChemDraw Interchange Format             6764007 566A434430313030
+     8  49902 dev.reshiki.drawing                     9020981 7B2261746F6D5F6C
+     9  49171 Ole Private Data                            360 0000000068010000
+    10      3 CF_METAFILEPICT                              -2 
+    payload: file 06-PDF.bin bytes=5083721 payload=none
+--- caffeine-photo image_only=1
+  copy: image_only=true external_editable=false notices=["Picture copied without the editable drawing (too large)", "Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality", "Sized image unavailable: Sized clipboard image exceeds 16 MB"]
+  formats (caffeine-photo-1): total=70846536 bytes
+    owner pid 0
+     0      8 CF_DIB                                 17702592 280000007D090000
+     1  49264 PDF                                     5083721 255044462D312E37
+     2  49414 PNG                                    21334567 89504E470D0A1A0A
+     3  49482 image/svg+xml                           9022980 3C73766720786D6C
+     4      2 CF_BITMAP                                    -2 
+     5     17 CF_DIBV5                               17702676 7C0000007D090000
+    payload: file 00-CF_DIB.bin bytes=17702592 payload=none
+    payload: file 01-PDF.bin bytes=5083721 payload=none
+    payload: file 02-PNG.bin bytes=21334567 payload=none
+    payload: file 03-image_svg+xml.bin bytes=9022980 payload=none
+    payload: file 05-CF_DIBV5.bin bytes=17702676 payload=none
+=== Copy Image -> ReShiki directly
+  copy: image_only=true external_editable=false notices=[]
+  ReShiki paste image_only=false native=true atoms=14 bonds=15 pictures=0 warnings=[]
+  ReShiki paste image_only=true native=false atoms=0 bonds=0 pictures=1 warnings=[]
+=== Copy Image -> Word -> copy back
+  copy: image_only=true external_editable=false notices=[]
+  Word pasted: inline=1 floating=0 type=17
+  formats (image-word-copyback): total=110929 bytes
+    owner pid 12316
+     0  49161 DataObject                                    8 B206E60000000000
+     1  49816 Art::GVML ClipFormat                      13497 504B030414000600
+     2  49482 image/svg+xml                              7797 3C73766720786D6C
+     3  49412 GIF                                         496 4749463839616B00
+     4     14 CF_ENHMETAFILE                             5936 
+     5      3 CF_METAFILEPICT                              -2 
+     6      2 CF_BITMAP                                    -2 
+     7  49414 PNG                                        2336 89504E470D0A1A0A
+     8  49413 JFIF                                       3859 FFD8FFE000104A46
+     9  49166 Object Descriptor                           124 7C0000009B4C75F4
+    10  49171 Ole Private Data                            504 00000000F8010000
+    11      8 CF_DIB                                    38144 280000006B000000
+    12     17 CF_DIBV5                                  38228 7C0000006B000000
+    payload: file 02-image_svg+xml.bin bytes=7797 payload=drawing atoms=14 bonds=15
+    payload: file 07-PNG.bin bytes=2336 payload=none
+    payload: file 11-CF_DIB.bin bytes=38144 payload=none
+    payload: file 12-CF_DIBV5.bin bytes=38228 payload=none
+  ReShiki paste image_only=false native=true atoms=14 bonds=15 pictures=0 warnings=["Restored the editable drawing from the picture · Paste picture inserts the image instead"]
+  ReShiki paste image_only=true native=false atoms=0 bonds=0 pictures=1 warnings=[]
+  saved media: file image.docx-image1.png bytes=4087 payload=none
+  saved media: file image.docx-image2.svg bytes=5409 payload=none
+=== Copy Image -> Excel -> copy back
+  copy: image_only=true external_editable=false notices=[]
+  Excel pasted: shapes=1 type=28
+  formats (image-excel-copyback): total=128322 bytes
+    owner pid 7560
+     0  49161 DataObject                                    8 AA088D0000000000
+     1  49316 Preferred DropEffect                          4 00000000
+     2  49321 InShellDragLoop                               4 00000000
+     3  50064 Excel 2007 Internal Shape                 13652 504B030414000600
+     4  49816 Art::GVML ClipFormat                      13569 504B030414000600
+     5  49482 image/svg+xml                              7797 3C73766720786D6C
+     6  49414 PNG                                        2336 89504E470D0A1A0A
+     7  49413 JFIF                                       3820 FFD8FFE000104A46
+     8  49412 GIF                                         496 4749463839616B00
+     9      2 CF_BITMAP                                    -2 
+    10     14 CF_ENHMETAFILE                             9616 
+    11      3 CF_METAFILEPICT                              -2 
+    12  49171 Ole Private Data                            648 0000000088020000
+    13      8 CF_DIB                                    38144 280000006B000000
+    14     17 CF_DIBV5                                  38228 7C0000006B000000
+    payload: file 05-image_svg+xml.bin bytes=7797 payload=drawing atoms=14 bonds=15
+    payload: file 06-PNG.bin bytes=2336 payload=none
+    payload: file 13-CF_DIB.bin bytes=38144 payload=none
+    payload: file 14-CF_DIBV5.bin bytes=38228 payload=none
+  ReShiki paste image_only=false native=true atoms=14 bonds=15 pictures=0 warnings=["Restored the editable drawing from the picture · Paste picture inserts the image instead"]
+  ReShiki paste image_only=true native=false atoms=0 bonds=0 pictures=1 warnings=[]
+  saved media: file image.xlsx-image1.png bytes=4087 payload=none
+  saved media: file image.xlsx-image2.svg bytes=5409 payload=none
+=== Copy Image -> Edge -> copy back
+  copy: image_only=true external_editable=false notices=[]
+  Edge: {"browser":"Edg/157.0.4341.46","pasted":{"types":["image/svg+xml","Files"],"items":[{"kind":"string","type":"image/svg+xml","size":null},{"kind":"file","type":"image/png","size":73225}],"html":null,"text":null,"inserted":{"imgs":[{"src":"data:image/png;base64,iVBORw0KGgoAAAANSU","w":1335,"h":1119,"reshiki":false}],"text":"","htmlLength":97677}},"insertedImg":{"scheme":"data","length":97658,"reshiki":false,"payloadInSrc":true}}
+  formats (image-edge-copyback): total=98414 bytes
+    owner pid 0
+     0  49284 HTML Format                               98359 56657273696F6E3A
+     1  49595 Chromium internal source RFH token           24 1400000005000000
+     2  49266 Chromium internal source URL                 31 66696C653A2F2F2F
+    payload: file 00-HTML Format.bin bytes=98359 payload=none
+  ReShiki paste image_only=false error=No supported drawing on the clipboard
+  ReShiki paste image_only=true error=No picture on the clipboard
+=== Copy -> Word (OLE object) -> copy back
+  copy: image_only=false external_editable=true notices=[]
+  Word pasted: inline=1 floating=0 type=1
+  formats (copy-word-copyback): total=647924 bytes
+    owner pid 16180
+     0  49161 DataObject                                    8 F008250000000000
+     1  49166 Object Descriptor                            94 5E0000007E2BAC3B
+     2  49281 Rich Text Format                         321939 7B5C727466315C61
+     3  49284 HTML Format                               44215 56657273696F6E3A
+     4     14 CF_ENHMETAFILE                            11504 
+     5      3 CF_METAFILEPICT                              -2 
+     6  49414 PNG                                        1803 89504E470D0A1A0A
+     7  49413 JFIF                                        957 FFD8FFE000104A46
+     8  49412 GIF                                         806 4749463839616C00
+     9  49815 ActiveClipBoard                            6896 01000000780D0000
+    10      8 CF_DIB                                       -1 
+    11      2 CF_BITMAP                                    -2 
+    12  49162 Embedded Object                          109568 D0CF11E0A1B11AE1
+    13  49156 Native                                   109568 D0CF11E0A1B11AE1
+    14  49155 OwnerLink                                    35 52655368696B692E
+    15  49165 Link Source                                 143 0903000000000000
+    16  49167 Link Source Descriptor                      114 720000007E2BAC3B
+    17  49154 ObjectLink                                   34 576F72642E446F63
+    18  49171 Ole Private Data                            792 0000000018030000
+    19     17 CF_DIBV5                                  39448 7C0000006C000000
+    payload: file 03-HTML Format.bin bytes=44215 payload=none
+    payload: file 06-PNG.bin bytes=1803 payload=none
+    payload: file 19-CF_DIBV5.bin bytes=39448 payload=none
+  ReShiki paste image_only=false native=true atoms=14 bonds=15 pictures=0 warnings=[]
+  ReShiki paste image_only=true native=false atoms=0 bonds=0 pictures=1 warnings=[]
+  saved media: file copy.docx-image1.emf bytes=7760 payload=none
+=== Copy -> Edge -> copy back
+  copy: image_only=false external_editable=true notices=[]
+  Edge: {"browser":"Edg/157.0.4341.46","pasted":{"types":["Files"],"items":[{"kind":"file","type":"image/png","size":63731}],"html":null,"text":null,"inserted":{"imgs":[{"src":"data:image/png;base64,iVBORw0KGgoAAAANSU","w":1335,"h":1119,"reshiki":false}],"text":"","htmlLength":85017}},"insertedImg":{"scheme":"data","length":84998,"reshiki":false,"payloadInSrc":false}}
+  formats (copy-edge-copyback): total=85754 bytes
+    owner pid 0
+     0  49284 HTML Format                               85699 56657273696F6E3A
+     1  49595 Chromium internal source RFH token           24 1400000005000000
+     2  49266 Chromium internal source URL                 31 66696C653A2F2F2F
+    payload: file 00-HTML Format.bin bytes=85699 payload=none
+  ReShiki paste image_only=false error=No supported drawing on the clipboard
+  ReShiki paste image_only=true error=No picture on the clipboard
+LocalServer32 restored: "C:\Users\USER\AppData\Local\Programs\ReShiki\reshiki.exe" --ole-server
+leftover after: EXCEL/7560
+
+

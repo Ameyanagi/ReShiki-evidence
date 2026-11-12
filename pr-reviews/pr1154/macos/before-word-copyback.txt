@@ -1,0 +1,14 @@
+0 com.microsoft.Art--GVML-ClipFormat 14815
+0 com.adobe.pdf 10105
+0 public.tiff 89166
+0 public.png 4262
+0 public.jpeg 5326
+0 com.microsoft.Object-Descriptor 148
+0 com.microsoft.image-svg-xml 0
+0 com.microsoft.ole.source.78550.0x105569a30 0
+0 com.microsoft.DataObject 16
+0 com.microsoft.appbundleid 18
+runs/e462vector/before-word-copyback/0-public.png.bin: 4262B payload=none
+runs/e462vector/before-word-copyback/0-com.adobe.pdf.bin: 10105B payload=none
+runs/e462vector/before-word-copyback/0-com.microsoft.image-svg-xml.bin: 0B payload=none
+runs/e462vector/before-word-copyback/0-public.tiff.bin: 89166B payload=none

@@ -1,0 +1,11 @@
+/Applications/Microsoft Word.app: version=16.115 build=16.115.26110837 (installed plist at final audit)
+/Applications/Microsoft PowerPoint.app: version=16.115 build=16.115.26110837 (installed plist at final audit)
+/Applications/Microsoft Excel.app: version=16.115 build=16.115.26110837 (installed plist at final audit)
+/Applications/Google Chrome.app: version=157.0.8103.78 build=8103.78 (installed plist at final audit)
+/System/Applications/Preview.app: version=11.0 build=1147 (installed plist at final audit)
+/System/Applications/TextEdit.app: version=1.21 build=419 (installed plist at final audit)
+Chrome test process 20510 loaded framework evidence:
+/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/156.0.8078.80/Google Chrome Framework
+/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/156.0.8078.80/Libraries/libchromecompaneros.dylib
+/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/156.0.8078.80/Libraries/liboptimization_guide_internal.dylib
+/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/156.0.8078.80/Resources/chrome_100_percent.pak

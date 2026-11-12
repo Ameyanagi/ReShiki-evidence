@@ -1,0 +1,2 @@
+runs/e462vector/word-picture.png: 1942B payload=none
+runs/e462vector/word-saved/word/media/image1.emf: 33456B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15

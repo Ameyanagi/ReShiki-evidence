@@ -1,0 +1,20 @@
+0 com.microsoft.Art--GVML-ClipFormat 15974
+0 com.adobe.pdf 11605
+0 public.tiff 89166
+0 public.png 4257
+0 public.jpeg 5326
+0 com.microsoft.Object-Descriptor 148
+0 com.microsoft.image-svg-xml 3350
+0 com.microsoft.ole.source.78550.0x105569a30 0
+0 com.microsoft.DataObject 16
+0 com.microsoft.appbundleid 18
+runs/e462vector/word-copyback/0-com.adobe.pdf.bin: 11605B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15
+runs/e462vector/word-copyback/0-com.microsoft.Art--GVML-ClipFormat.bin: 15974B payload=none
+runs/e462vector/word-copyback/0-com.microsoft.DataObject.bin: 16B payload=none
+runs/e462vector/word-copyback/0-com.microsoft.Object-Descriptor.bin: 148B payload=none
+runs/e462vector/word-copyback/0-com.microsoft.appbundleid.bin: 18B payload=none
+runs/e462vector/word-copyback/0-com.microsoft.image-svg-xml.bin: 3350B payload=none
+runs/e462vector/word-copyback/0-com.microsoft.ole.source.78550.0x105569a30.bin: 0B payload=none
+runs/e462vector/word-copyback/0-public.jpeg.bin: 5326B payload=none
+runs/e462vector/word-copyback/0-public.png.bin: 4257B payload=none
+runs/e462vector/word-copyback/0-public.tiff.bin: 89166B payload=none

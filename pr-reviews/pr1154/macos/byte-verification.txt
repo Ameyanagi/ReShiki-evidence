@@ -1,0 +1,11 @@
+after-word-copyback: PDF byte-identical to canonical source = True
+word-copyback: PDF byte-identical to canonical source = True
+powerpoint-copyback: PDF byte-identical to canonical source = True
+excel-copyback: PDF byte-identical to canonical source = True
+00-com.adobe.pdf.bin: exact source bytes = True
+01-com.revvity.chemdraw.cdx-clipboard.bin: exact source bytes = True
+02-com.perkinelmer.chemdraw.cdx-clipboard.bin: exact source bytes = True
+03-com.cambridgesoft.cdx.bin: exact source bytes = True
+04-public.png.bin: exact source bytes = True
+05-public.svg-image.bin: exact source bytes = True
+06-dev.reshiki.drawing.bin: exact source bytes = True

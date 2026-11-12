@@ -1,0 +1,20 @@
+0 com.microsoft.PowerPoint-12.0-Internal-Shapes 8
+0 com.microsoft.Object-Descriptor 106
+0 com.microsoft.PowerPoint-12.0-Internal-Theme 8
+0 com.microsoft.PowerPoint-12.0-Internal-Color-Scheme 8
+0 com.microsoft.Art--GVML-ClipFormat 16114
+0 com.adobe.pdf 11605
+0 public.tiff 90446
+0 com.microsoft.ole.source.11937.0x7509b99500 0
+0 com.microsoft.DataObject 16
+0 com.microsoft.appbundleid 24
+runs/e462vector/powerpoint-copyback/0-com.adobe.pdf.bin: 11605B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15
+runs/e462vector/powerpoint-copyback/0-com.microsoft.Art--GVML-ClipFormat.bin: 16114B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.DataObject.bin: 16B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.Object-Descriptor.bin: 106B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.PowerPoint-12.0-Internal-Color-Scheme.bin: 8B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.PowerPoint-12.0-Internal-Shapes.bin: 8B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.PowerPoint-12.0-Internal-Theme.bin: 8B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.appbundleid.bin: 24B payload=none
+runs/e462vector/powerpoint-copyback/0-com.microsoft.ole.source.11937.0x7509b99500.bin: 0B payload=none
+runs/e462vector/powerpoint-copyback/0-public.tiff.bin: 90446B payload=none

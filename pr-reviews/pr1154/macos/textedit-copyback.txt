@@ -1,0 +1,8 @@
+0 com.apple.flat-rtfd 89609
+0 public.rtf 311
+0 public.utf8-plain-text 3
+0 public.utf16-external-plain-text 2
+runs/e462vector/textedit-copyback/0-com.apple.flat-rtfd.bin: 89609B payload=none
+runs/e462vector/textedit-copyback/0-public.rtf.bin: 311B payload=none
+runs/e462vector/textedit-copyback/0-public.utf16-external-plain-text.bin: 2B payload=none
+runs/e462vector/textedit-copyback/0-public.utf8-plain-text.bin: 3B payload=none

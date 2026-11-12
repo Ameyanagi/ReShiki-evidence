@@ -1,0 +1,6 @@
+0 public.html 98142
+0 org.chromium.internal.source-rfh-token 24
+0 org.chromium.source-url 134
+chrome-copyback/0-org.chromium.internal.source-rfh-token.bin: 24B payload=none
+chrome-copyback/0-org.chromium.source-url.bin: 134B payload=none
+chrome-copyback/0-public.html.bin: 98142B payload=none

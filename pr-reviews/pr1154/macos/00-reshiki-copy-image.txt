@@ -1,0 +1,10 @@
+0 com.adobe.pdf 11605
+0 com.revvity.chemdraw.cdx-clipboard 73321
+0 com.perkinelmer.chemdraw.cdx-clipboard 73321
+0 com.cambridgesoft.cdx 73321
+0 public.png 73225
+0 public.svg-image 5702
+0 dev.reshiki.drawing 4859
+runs/e462vector/00-reshiki-copy-image/0-com.adobe.pdf.bin: 11605B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15
+runs/e462vector/00-reshiki-copy-image/0-public.png.bin: 73225B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15
+runs/e462vector/00-reshiki-copy-image/0-public.svg-image.bin: 5702B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15

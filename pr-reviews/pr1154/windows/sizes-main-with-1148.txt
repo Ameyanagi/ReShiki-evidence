@@ -1,0 +1,120 @@
+leftover before: 
+LocalServer32 before: "C:\Users\USER\AppData\Local\Programs\ReShiki\reshiki.exe" --ole-server
+=== Sizes (Copy and Copy Image for each drawing)
+--- caffeine image_only=0
+  copy: image_only=false external_editable=true notices=[]
+  formats (caffeine-0): total=9196360 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                              99328 D0CF11E0A1B11AE1
+     2  49156 Native                                    99328 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                             7760 
+     6      8 CF_DIB                                  4484992 2800000037050000
+     7  49264 PDF                                       12399 255044462D312E37
+     8  49695 ChemDraw Interchange Format                2074 566A434430313030
+     9  49902 dev.reshiki.drawing                        4859 7B2261746F6D5F6C
+    10  49171 Ole Private Data                            408 0000000098010000
+    11      3 CF_METAFILEPICT                              -2 
+    12      2 CF_BITMAP                                    -2 
+    13     17 CF_DIBV5                                4485076 7C00000037050000
+--- caffeine image_only=1
+  copy: image_only=true external_editable=false notices=[]
+  formats (caffeine-1): total=9219040 bytes
+    owner pid 0
+     0      8 CF_DIB                                  4484992 2800000037050000
+     1  49264 PDF                                       12399 255044462D312E37
+     2  49414 PNG                                       72349 89504E470D0A1A0A
+     3  49482 image/svg+xml                              6851 3C73766720786D6C
+     4  49695 ChemDraw Interchange Format               72445 566A434430313030
+     5  49902 dev.reshiki.drawing                       84928 7B2261746F6D5F6C
+     6      2 CF_BITMAP                                    -2 
+     7     17 CF_DIBV5                                4485076 7C00000037050000
+--- reaction image_only=0
+  copy: image_only=false external_editable=true notices=[]
+  formats (reaction-0): total=17388744 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                             138752 D0CF11E0A1B11AE1
+     2  49156 Native                                   138752 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                            13764 
+     6      8 CF_DIB                                  8538364 280000006C100000
+     7  49264 PDF                                       12761 255044462D312E37
+     8  49695 ChemDraw Interchange Format                2089 566A434430313030
+     9  49902 dev.reshiki.drawing                        5270 7B2261746F6D5F6C
+    10  49171 Ole Private Data                            408 0000000098010000
+    11      3 CF_METAFILEPICT                              -2 
+    12      2 CF_BITMAP                                    -2 
+    13     17 CF_DIBV5                                8538448 7C0000006C100000
+--- reaction image_only=1
+  copy: image_only=true external_editable=false notices=[]
+  formats (reaction-1): total=17416399 bytes
+    owner pid 0
+     0      8 CF_DIB                                  8538364 280000006C100000
+     1  49264 PDF                                       12761 255044462D312E37
+     2  49414 PNG                                       98141 89504E470D0A1A0A
+     3  49482 image/svg+xml                             11435 3C73766720786D6C
+     4  49695 ChemDraw Interchange Format               98237 566A434430313030
+     5  49902 dev.reshiki.drawing                      119013 7B2261746F6D5F6C
+     6      2 CF_BITMAP                                    -2 
+     7     17 CF_DIBV5                                8538448 7C0000006C100000
+--- atorvastatin-x5 image_only=0
+  copy: image_only=false external_editable=true notices=["Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality"]
+  formats (atorvastatin-x5-0): total=57206631 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                             776192 D0CF11E0A1B11AE1
+     2  49156 Native                                   776192 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                            91420 
+     6      8 CF_DIB                                 27721480 28000000101D0000
+     7  49264 PDF                                       22376 255044462D312E37
+     8  49695 ChemDraw Interchange Format               26441 566A434430313030
+     9  49902 dev.reshiki.drawing                       70422 7B2261746F6D5F6C
+    10  49171 Ole Private Data                            408 0000000098010000
+    11      3 CF_METAFILEPICT                              -2 
+    12      2 CF_BITMAP                                    -2 
+    13     17 CF_DIBV5                               27721564 7C000000101D0000
+--- atorvastatin-x5 image_only=1
+  copy: image_only=true external_editable=false notices=["Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality"]
+  formats (atorvastatin-x5-1): total=57109271 bytes
+    owner pid 0
+     0      8 CF_DIB                                 27721480 28000000101D0000
+     1  49264 PDF                                       22376 255044462D312E37
+     2  49414 PNG                                      493801 89504E470D0A1A0A
+     3  49482 image/svg+xml                             76693 3C73766720786D6C
+     4  49695 ChemDraw Interchange Format              493897 566A434430313030
+     5  49902 dev.reshiki.drawing                      579460 7B2261746F6D5F6C
+     6      2 CF_BITMAP                                    -2 
+     7     17 CF_DIBV5                               27721564 7C000000101D0000
+--- caffeine-photo image_only=0
+  copy: image_only=false external_editable=true notices=["Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality"]
+  formats (caffeine-photo-0): total=138547765 bytes
+    owner pid 0
+     0  49161 DataObject                                    8 0000000000000000
+     1  49163 Embed Source                           54253056 D0CF11E0A1B11AE1
+     2  49156 Native                                 54253056 D0CF11E0A1B11AE1
+     3  49155 OwnerLink                                    44 52655368696B692E
+     4  49166 Object Descriptor                            84 540000007E2BAC3B
+     5     14 CF_ENHMETAFILE                          9172652 
+     6  49264 PDF                                     5083517 255044462D312E37
+     7  49695 ChemDraw Interchange Format             6764007 566A434430313030
+     8  49902 dev.reshiki.drawing                     9020981 7B2261746F6D5F6C
+     9  49171 Ole Private Data                            360 0000000068010000
+    10      3 CF_METAFILEPICT                              -2 
+--- caffeine-photo image_only=1
+  copy: image_only=true external_editable=false notices=["Raster preview uses 600 dpi to fit the clipboard; vector formats retain full quality", "Sized image unavailable: Sized clipboard image exceeds 16 MB", "NATIVE PICTURE unavailable: Picture exceeds 16 MB"]
+  formats (caffeine-photo-1): total=70846332 bytes
+    owner pid 0
+     0      8 CF_DIB                                 17702592 280000007D090000
+     1  49264 PDF                                     5083517 255044462D312E37
+     2  49414 PNG                                    21334567 89504E470D0A1A0A
+     3  49482 image/svg+xml                           9022980 3C73766720786D6C
+     4      2 CF_BITMAP                                    -2 
+     5     17 CF_DIBV5                               17702676 7C0000007D090000
+LocalServer32 restored: "C:\Users\USER\AppData\Local\Programs\ReShiki\reshiki.exe" --ole-server
+leftover after: 
