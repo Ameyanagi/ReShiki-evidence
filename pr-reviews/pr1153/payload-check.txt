@@ -1,0 +1,2 @@
+before-caffeine.png: 111626B payload=none
+after-caffeine.png: 112502B payload=v1 json=4859B env=628B hash=ok atoms=14 bonds=15
