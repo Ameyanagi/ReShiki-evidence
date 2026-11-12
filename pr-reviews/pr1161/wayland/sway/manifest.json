@@ -1,7 +1,7 @@
 {
   "compositor": "sway",
   "source_head": "local",
-  "binary_sha256": "480f76365b3f2aed4b460b687f372c5cc4ee0f5f6d44859e5ed88822a9b6f834",
+  "binary_sha256": "3942fba68de4361a85ddaaeef5ddaf2ab40708c202792e63fb88650a7d23102f",
   "source_sha256": {
     "Cargo.toml": "68aca403590670073a2e2ca2c89b8023ec01cac9e324432eb65d44c0c642e5e8",
     "Cargo.lock": "fb3c53a562601f3348ec7a66f5bf82cfd4720168ee282ba9c0fc0d6ecd093772",
@@ -13,13 +13,13 @@
     "src/app/canvas_edit/click.rs": "08afde9288c34b0dbce4e6302a7e2c2930b115d97ae1f95038974829cd9a05d7",
     "src/app/wayland_qa.rs": "87b6ee77b02c32f6155e45034323c2b83906a2351ee5c2684d82fdf9682c6574",
     "native/linux/Cargo.toml": "8d6900d6ff5970c1df05c8e41432e7e402b07579bd45c50762a06cfe4c81d8d6",
-    "native/linux/src/gui.rs": "ffa4d11525b2e25bc552a3e0ed454c8da00084934c4c257b72e97d99b9c8b942",
+    "native/linux/src/gui.rs": "01bae378b0606196b449c94b7b8e0146c88a4463126a0d739ca96e9962772070",
     "native/linux/src/wayland_qa.rs": "8ceaa28f4fce2aa1f6af3df0a89cefa0ee0506b14055333b825e09d97aaf5cbf",
     "native/linux/tests/gtk_receiver.py": "7bfaf741909aa7eeb27a4855376146a42da7b5f0c7f57b837761c46da74c7f4a",
-    "native/linux/tests/wayland_session.py": "138d1a2baf8fa064a2e363e01354a90caa3edff19cdbefaa671e2d2f633e6979",
+    "native/linux/tests/wayland_session.py": "5e121d6b21018e9e638c3abec659edafe8415c421c5bbc4aeaf6ee6970dafc84",
     "vendor/smithay-clipboard/Cargo.toml": "cbf1c534a6e538256127b03c4b46b89cb68a442bd51eccebb43aefe3180c1aec",
     "vendor/smithay-clipboard/src/qa.rs": "ec6e8e78abee1aa224fcad44226ba1c8c8b3b80b6f77ad95d949ffe6ee3b6ae5",
-    "vendor/smithay-clipboard/src/state/binary.rs": "e7bcc154b7873d125f582c55725d165b3ac44479ce636936336b6ef7803309b3",
+    "vendor/smithay-clipboard/src/state/binary.rs": "9629d96bfd95d7649db00248a0f995a5f612eae773e4ea9325cc8d27ddb34e7a",
     "tests/fixtures/ui-ethanol.reshiki": "e8af8dc9ffee735e60852ee9c0953c3d1e700e67a6e6e712a415f8154f37c046"
   },
   "packages": "libgtk-4-1:amd64\t4.14.5+ds-0ubuntu0.10\nlibwayland-client0:amd64\t1.22.0-2.1build1\nlibwlroots12t64:amd64\t0.17.1-2.1build1\nmesa-vulkan-drivers:amd64\t25.2.8-0ubuntu0.24.04.4\nsway\t1.9-1build2",
@@ -42,7 +42,7 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-cbc5749ba6babdc269d2712edd3f96d9"
+        "application/x-reshiki-clipboard-receipt-68cdce8c3777f85aba672b3e4c46e802"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -106,7 +106,7 @@
         "org.opensmiles.smiles",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-9724f992b731337ceef2216ba79bf351"
+        "application/x-reshiki-clipboard-receipt-ec6e64ba7a621f7518da3897b2cab5b1"
       ],
       "active": true,
       "text/plain;charset=utf-8": {
@@ -124,17 +124,17 @@
         "org.opensmiles.smiles",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-9724f992b731337ceef2216ba79bf351"
+        "application/x-reshiki-clipboard-receipt-ec6e64ba7a621f7518da3897b2cab5b1"
       ],
       "active": true,
-      "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
+      "marker": "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78",
       "queued": true
     },
     {
       "id": 4,
       "formats": [
         "text/plain;charset=utf-8",
-        "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118"
+        "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78"
       ],
       "active": true,
       "text/plain;charset=utf-8": {
@@ -143,11 +143,11 @@
         "bytes": 24,
         "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
       },
-      "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118": {
-        "mime": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
-        "file": "/tmp/qa/sway/publication-reader-3/received-4-application_x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118.bin",
+      "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78": {
+        "mime": "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78",
+        "file": "/tmp/qa/sway/publication-reader-3/received-4-application_x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78.bin",
         "bytes": 69,
-        "sha256": "cdb63341c26fe551edae24a222a84de965068e520f6e7f8131db821ba356b3c9"
+        "sha256": "3bf9dcd462aa47b9c3383147e102e52f8c900f4c25df0d013a92d4ed67879287"
       }
     },
     {
@@ -168,7 +168,7 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-7dfc4ef37b2f8ac90f5f1f4ab2d43f89"
+        "application/x-reshiki-clipboard-receipt-04854477429c75188c8ee753ac1e53d7"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -242,10 +242,10 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-7dfc4ef37b2f8ac90f5f1f4ab2d43f89"
+        "application/x-reshiki-clipboard-receipt-04854477429c75188c8ee753ac1e53d7"
       ],
       "active": true,
-      "marker": "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7",
+      "marker": "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3",
       "queued": true
     },
     {
@@ -253,7 +253,7 @@
       "formats": [
         "application/x-reshiki-drawing+json",
         "image/png",
-        "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7"
+        "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -272,11 +272,11 @@
           349
         ]
       },
-      "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7": {
-        "mime": "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7",
-        "file": "/tmp/qa/sway/publication-reader-6/received-7-application_x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7.bin",
+      "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3": {
+        "mime": "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3",
+        "file": "/tmp/qa/sway/publication-reader-6/received-7-application_x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3.bin",
         "bytes": 69,
-        "sha256": "b31fe318d9bf8020928e784b53705f719c0daa8b0189411943655a63c546f238"
+        "sha256": "1ece382022a76902717a6675ebb3f8bd1eb78a07de661077ed5a4404e9b96a00"
       }
     },
     {
@@ -284,7 +284,7 @@
       "formats": [
         "application/x-reshiki-drawing+json",
         "image/png",
-        "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7"
+        "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3"
       ],
       "active": true
     },
@@ -293,7 +293,7 @@
       "formats": [
         "application/x-reshiki-drawing+json",
         "image/png",
-        "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7"
+        "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -349,7 +349,7 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-14f34085df2623ea5b27bb4d1002f297"
+        "application/x-reshiki-clipboard-receipt-b969a898cc726bb45255ada2f33e4457"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -423,10 +423,10 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-7b4ec939c7d8ac6ac0812fcf1dcc947b"
+        "application/x-reshiki-clipboard-receipt-fe028d6807c992d8e7ecf9a2f1206469"
       ],
       "active": true,
-      "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
+      "marker": "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9",
       "queued": true
     },
     {
@@ -434,7 +434,7 @@
       "formats": [
         "application/x-reshiki-drawing+json",
         "image/png",
-        "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9"
+        "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -453,11 +453,11 @@
           349
         ]
       },
-      "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9": {
-        "mime": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
-        "file": "/tmp/qa/sway/publication-reader-11/received-12-application_x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9.bin",
+      "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9": {
+        "mime": "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9",
+        "file": "/tmp/qa/sway/publication-reader-11/received-12-application_x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9.bin",
         "bytes": 69,
-        "sha256": "330c078f7fbb9efa0b678501d39401e5b7bf2e7f9c999b1f010ecef19c0e956d"
+        "sha256": "e8d5dcbe2e9450111c73f4b662ebd405004e8113d5f9810135999cf55fef37ab"
       }
     },
     {
@@ -465,7 +465,7 @@
       "formats": [
         "application/x-reshiki-drawing+json",
         "image/png",
-        "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9"
+        "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -521,7 +521,7 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-e8c5ca1fb1e8f1f2b30e90bd5016ac38"
+        "application/x-reshiki-clipboard-receipt-ae719815b7d9013d50a4580d8a927ffe"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -595,10 +595,10 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-e8c5ca1fb1e8f1f2b30e90bd5016ac38"
+        "application/x-reshiki-clipboard-receipt-ae719815b7d9013d50a4580d8a927ffe"
       ],
       "active": true,
-      "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
+      "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
       "queued": true
     },
     {
@@ -607,7 +607,7 @@
         "application/x-reshiki-drawing+json",
         "image/png",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5"
+        "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -632,11 +632,11 @@
         "bytes": 1,
         "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
       },
-      "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5": {
-        "mime": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
-        "file": "/tmp/qa/sway/publication-reader-15/received-16-application_x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5.bin",
+      "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819": {
+        "mime": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
+        "file": "/tmp/qa/sway/publication-reader-15/received-16-application_x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819.bin",
         "bytes": 69,
-        "sha256": "0494e2f0fe65f001641942c29b63352c38078affb303f46471b778266388c5b8"
+        "sha256": "414b0e4f14c85101af871d856eed39640d022e1eab20ac209b5b11c7f7558f78"
       }
     },
     {
@@ -654,7 +654,7 @@
         "dev.reshiki.drawing",
         "image/png",
         "image/svg+xml",
-        "application/x-reshiki-clipboard-receipt-67cbdd4233c46547452019e58de1eecb"
+        "application/x-reshiki-clipboard-receipt-9eb621a7309346027bab9dcc3531bbf1"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -719,7 +719,7 @@
         "image/svg+xml",
         "text/plain",
         "text/plain;charset=utf-8",
-        "application/x-reshiki-clipboard-receipt-301022c85f986c660b323e470a1708d7"
+        "application/x-reshiki-clipboard-receipt-0785ce4d1ac216555dea3efc7c11315d"
       ],
       "active": true,
       "application/x-reshiki-drawing+json": {
@@ -828,7 +828,7 @@
     },
     {
       "phase": "receipt",
-      "matched_marker": "application/x-reshiki-clipboard-receipt-14f34085df2623ea5b27bb4d1002f297",
+      "matched_marker": "application/x-reshiki-clipboard-receipt-b969a898cc726bb45255ada2f33e4457",
       "pending_state": {
         "atoms": 3,
         "bonds": 2,
@@ -848,7 +848,7 @@
     },
     {
       "phase": "receipt",
-      "matched_marker": "application/x-reshiki-clipboard-receipt-7b4ec939c7d8ac6ac0812fcf1dcc947b",
+      "matched_marker": "application/x-reshiki-clipboard-receipt-fe028d6807c992d8e7ecf9a2f1206469",
       "pending_state": {
         "atoms": 3,
         "bonds": 2,
@@ -868,7 +868,7 @@
     },
     {
       "phase": "receipt",
-      "matched_marker": "application/x-reshiki-clipboard-receipt-e8c5ca1fb1e8f1f2b30e90bd5016ac38",
+      "matched_marker": "application/x-reshiki-clipboard-receipt-ae719815b7d9013d50a4580d8a927ffe",
       "pending_state": {
         "atoms": 3,
         "bonds": 2,
@@ -889,11 +889,11 @@
   ],
   "fixture_publications": [
     {
-      "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
+      "marker": "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78",
       "publisher_pid": 206,
       "expected_sha256": {
         "text/plain;charset=utf-8": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9",
-        "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118": "cdb63341c26fe551edae24a222a84de965068e520f6e7f8131db821ba356b3c9"
+        "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78": "3bf9dcd462aa47b9c3383147e102e52f8c900f4c25df0d013a92d4ed67879287"
       },
       "queued": {
         "id": 3,
@@ -903,10 +903,10 @@
           "org.opensmiles.smiles",
           "text/plain",
           "text/plain;charset=utf-8",
-          "application/x-reshiki-clipboard-receipt-9724f992b731337ceef2216ba79bf351"
+          "application/x-reshiki-clipboard-receipt-ec6e64ba7a621f7518da3897b2cab5b1"
         ],
         "active": true,
-        "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
+        "marker": "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78",
         "queued": true
       },
       "selection_receipt": {
@@ -914,13 +914,13 @@
         "source": "46",
         "serial": 64,
         "offer": "4278190080",
-        "marker": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118"
+        "marker": "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78"
       },
       "independent_read": {
         "id": 4,
         "formats": [
           "text/plain;charset=utf-8",
-          "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118"
+          "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78"
         ],
         "active": true,
         "text/plain;charset=utf-8": {
@@ -929,22 +929,22 @@
           "bytes": 24,
           "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
         },
-        "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118": {
-          "mime": "application/x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118",
-          "file": "/tmp/qa/sway/publication-reader-3/received-4-application_x-reshiki-qa-publication-e382407a6ae741f08492449cf16e4118.bin",
+        "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78": {
+          "mime": "application/x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78",
+          "file": "/tmp/qa/sway/publication-reader-3/received-4-application_x-reshiki-qa-publication-d4436e450eaa46db9096c8178eacdc78.bin",
           "bytes": 69,
-          "sha256": "cdb63341c26fe551edae24a222a84de965068e520f6e7f8131db821ba356b3c9"
+          "sha256": "3bf9dcd462aa47b9c3383147e102e52f8c900f4c25df0d013a92d4ed67879287"
         }
       },
       "verified": true
     },
     {
-      "marker": "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7",
-      "publisher_pid": 262,
+      "marker": "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3",
+      "publisher_pid": 259,
       "expected_sha256": {
         "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
         "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
-        "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7": "b31fe318d9bf8020928e784b53705f719c0daa8b0189411943655a63c546f238"
+        "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3": "1ece382022a76902717a6675ebb3f8bd1eb78a07de661077ed5a4404e9b96a00"
       },
       "queued": {
         "id": 6,
@@ -964,10 +964,10 @@
           "image/svg+xml",
           "text/plain",
           "text/plain;charset=utf-8",
-          "application/x-reshiki-clipboard-receipt-7dfc4ef37b2f8ac90f5f1f4ab2d43f89"
+          "application/x-reshiki-clipboard-receipt-04854477429c75188c8ee753ac1e53d7"
         ],
         "active": true,
-        "marker": "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7",
+        "marker": "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3",
         "queued": true
       },
       "selection_receipt": {
@@ -975,14 +975,14 @@
         "source": "46",
         "serial": 108,
         "offer": "4278190080",
-        "marker": "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7"
+        "marker": "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3"
       },
       "independent_read": {
         "id": 7,
         "formats": [
           "application/x-reshiki-drawing+json",
           "image/png",
-          "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7"
+          "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3"
         ],
         "active": true,
         "application/x-reshiki-drawing+json": {
@@ -1001,22 +1001,22 @@
             349
           ]
         },
-        "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7": {
-          "mime": "application/x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7",
-          "file": "/tmp/qa/sway/publication-reader-6/received-7-application_x-reshiki-qa-publication-5d1e9e6e8e184dbda82c437aa6d109b7.bin",
+        "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3": {
+          "mime": "application/x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3",
+          "file": "/tmp/qa/sway/publication-reader-6/received-7-application_x-reshiki-qa-publication-f3957640d5104f638b15f267f384dbb3.bin",
           "bytes": 69,
-          "sha256": "b31fe318d9bf8020928e784b53705f719c0daa8b0189411943655a63c546f238"
+          "sha256": "1ece382022a76902717a6675ebb3f8bd1eb78a07de661077ed5a4404e9b96a00"
         }
       },
       "verified": true
     },
     {
-      "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
-      "publisher_pid": 318,
+      "marker": "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9",
+      "publisher_pid": 314,
       "expected_sha256": {
         "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
         "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
-        "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9": "330c078f7fbb9efa0b678501d39401e5b7bf2e7f9c999b1f010ecef19c0e956d"
+        "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9": "e8d5dcbe2e9450111c73f4b662ebd405004e8113d5f9810135999cf55fef37ab"
       },
       "queued": {
         "id": 11,
@@ -1036,10 +1036,10 @@
           "image/svg+xml",
           "text/plain",
           "text/plain;charset=utf-8",
-          "application/x-reshiki-clipboard-receipt-7b4ec939c7d8ac6ac0812fcf1dcc947b"
+          "application/x-reshiki-clipboard-receipt-fe028d6807c992d8e7ecf9a2f1206469"
         ],
         "active": true,
-        "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
+        "marker": "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9",
         "queued": true
       },
       "selection_receipt": {
@@ -1047,14 +1047,14 @@
         "source": "46",
         "serial": 219,
         "offer": "4278190081",
-        "marker": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9"
+        "marker": "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9"
       },
       "independent_read": {
         "id": 12,
         "formats": [
           "application/x-reshiki-drawing+json",
           "image/png",
-          "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9"
+          "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9"
         ],
         "active": true,
         "application/x-reshiki-drawing+json": {
@@ -1073,23 +1073,23 @@
             349
           ]
         },
-        "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9": {
-          "mime": "application/x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9",
-          "file": "/tmp/qa/sway/publication-reader-11/received-12-application_x-reshiki-qa-publication-2ffddb3ebf1c4f18aae9f405ce0160a9.bin",
+        "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9": {
+          "mime": "application/x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9",
+          "file": "/tmp/qa/sway/publication-reader-11/received-12-application_x-reshiki-qa-publication-b7d3934119d741e1857c6078e78d22b9.bin",
           "bytes": 69,
-          "sha256": "330c078f7fbb9efa0b678501d39401e5b7bf2e7f9c999b1f010ecef19c0e956d"
+          "sha256": "e8d5dcbe2e9450111c73f4b662ebd405004e8113d5f9810135999cf55fef37ab"
         }
       },
       "verified": true
     },
     {
-      "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
-      "publisher_pid": 395,
+      "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
+      "publisher_pid": 391,
       "expected_sha256": {
         "application/x-reshiki-drawing+json": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3",
         "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
         "text/plain;charset=utf-8": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
-        "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5": "0494e2f0fe65f001641942c29b63352c38078affb303f46471b778266388c5b8"
+        "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819": "414b0e4f14c85101af871d856eed39640d022e1eab20ac209b5b11c7f7558f78"
       },
       "queued": {
         "id": 15,
@@ -1109,10 +1109,10 @@
           "image/svg+xml",
           "text/plain",
           "text/plain;charset=utf-8",
-          "application/x-reshiki-clipboard-receipt-e8c5ca1fb1e8f1f2b30e90bd5016ac38"
+          "application/x-reshiki-clipboard-receipt-ae719815b7d9013d50a4580d8a927ffe"
         ],
         "active": true,
-        "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
+        "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
         "queued": true
       },
       "selection_receipt": {
@@ -1120,7 +1120,7 @@
         "source": "46",
         "serial": 313,
         "offer": "4278190080",
-        "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5"
+        "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819"
       },
       "independent_read": {
         "id": 16,
@@ -1128,7 +1128,7 @@
           "application/x-reshiki-drawing+json",
           "image/png",
           "text/plain;charset=utf-8",
-          "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5"
+          "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819"
         ],
         "active": true,
         "application/x-reshiki-drawing+json": {
@@ -1153,25 +1153,26 @@
           "bytes": 1,
           "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
         },
-        "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5": {
-          "mime": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
-          "file": "/tmp/qa/sway/publication-reader-15/received-16-application_x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5.bin",
+        "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819": {
+          "mime": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
+          "file": "/tmp/qa/sway/publication-reader-15/received-16-application_x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819.bin",
           "bytes": 69,
-          "sha256": "0494e2f0fe65f001641942c29b63352c38078affb303f46471b778266388c5b8"
+          "sha256": "414b0e4f14c85101af871d856eed39640d022e1eab20ac209b5b11c7f7558f78"
         }
       },
       "verified": true
     }
   ],
   "publication_serials": [
-    19,
+    20,
     48,
     92,
     185,
     209,
     255,
     362,
-    394
+    394,
+    418
   ],
   "checks": [
     "real_keyboard_copy",

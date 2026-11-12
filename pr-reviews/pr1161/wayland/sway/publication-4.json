@@ -1,11 +1,11 @@
 {
-  "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
-  "publisher_pid": 395,
+  "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
+  "publisher_pid": 391,
   "expected_sha256": {
     "application/x-reshiki-drawing+json": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3",
     "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
     "text/plain;charset=utf-8": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
-    "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5": "0494e2f0fe65f001641942c29b63352c38078affb303f46471b778266388c5b8"
+    "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819": "414b0e4f14c85101af871d856eed39640d022e1eab20ac209b5b11c7f7558f78"
   },
   "queued": {
     "id": 15,
@@ -25,10 +25,10 @@
       "image/svg+xml",
       "text/plain",
       "text/plain;charset=utf-8",
-      "application/x-reshiki-clipboard-receipt-e8c5ca1fb1e8f1f2b30e90bd5016ac38"
+      "application/x-reshiki-clipboard-receipt-ae719815b7d9013d50a4580d8a927ffe"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
+    "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
     "queued": true
   },
   "selection_receipt": {
@@ -36,7 +36,7 @@
     "source": "46",
     "serial": 313,
     "offer": "4278190080",
-    "marker": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5"
+    "marker": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819"
   },
   "independent_read": {
     "id": 16,
@@ -44,7 +44,7 @@
       "application/x-reshiki-drawing+json",
       "image/png",
       "text/plain;charset=utf-8",
-      "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5"
+      "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819"
     ],
     "active": true,
     "application/x-reshiki-drawing+json": {
@@ -69,11 +69,11 @@
       "bytes": 1,
       "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
     },
-    "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5": {
-      "mime": "application/x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5",
-      "file": "/tmp/qa/sway/publication-reader-15/received-16-application_x-reshiki-qa-publication-42bf28112e1b4046a9200ca99a1aa4d5.bin",
+    "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819": {
+      "mime": "application/x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819",
+      "file": "/tmp/qa/sway/publication-reader-15/received-16-application_x-reshiki-qa-publication-c138ae8931a84d3d938944bb7f3df819.bin",
       "bytes": 69,
-      "sha256": "0494e2f0fe65f001641942c29b63352c38078affb303f46471b778266388c5b8"
+      "sha256": "414b0e4f14c85101af871d856eed39640d022e1eab20ac209b5b11c7f7558f78"
     }
   },
   "verified": true

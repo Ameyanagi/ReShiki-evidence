@@ -35,7 +35,7 @@
 ['wtype', '-s', '100', '-M', 'ctrl', '-k', 'c', '-m', 'ctrl', '-s', '100']
 ['wtype', '-s', '100', '-k', 'F12', '-s', '100']
 ['wtype', '-s', '100', '-M', 'ctrl', '-k', 's', '-m', 'ctrl', '-s', '100']
-['swaymsg', '[pid=70] kill']
+['swaymsg', '[pid=72] kill']
 [
   {
     "success": true

@@ -1,588 +1,591 @@
-00:00:00.001 [INFO] [sway/main.c:338] Sway version 1.9
-00:00:00.001 [INFO] [sway/main.c:339] wlroots version 0.17.1
-00:00:00.070 [INFO] [sway/main.c:120] Linux 6246d7957616 7.0.14-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 27 Jun 2026 16:15:10 +0000 x86_64 x86_64 x86_64 GNU/Linux
-00:00:00.070 [INFO] [sway/main.c:136] Contents of /etc/lsb-release:
-00:00:00.072 [INFO] [sway/main.c:120] DISTRIB_ID=Ubuntu
-00:00:00.072 [INFO] [sway/main.c:120] DISTRIB_RELEASE=24.04
-00:00:00.072 [INFO] [sway/main.c:120] DISTRIB_CODENAME=noble
-00:00:00.072 [INFO] [sway/main.c:120] DISTRIB_DESCRIPTION="Ubuntu 24.04.5 LTS"
-00:00:00.072 [INFO] [sway/main.c:136] Contents of /etc/os-release:
-00:00:00.073 [INFO] [sway/main.c:120] PRETTY_NAME="Ubuntu 24.04.5 LTS"
-00:00:00.073 [INFO] [sway/main.c:120] NAME="Ubuntu"
-00:00:00.073 [INFO] [sway/main.c:120] VERSION_ID="24.04"
-00:00:00.073 [INFO] [sway/main.c:120] VERSION="24.04.5 LTS (Noble Numbat)"
-00:00:00.073 [INFO] [sway/main.c:120] VERSION_CODENAME=noble
-00:00:00.073 [INFO] [sway/main.c:120] ID=ubuntu
-00:00:00.073 [INFO] [sway/main.c:120] ID_LIKE=debian
-00:00:00.073 [INFO] [sway/main.c:120] HOME_URL="https://www.ubuntu.com/"
-00:00:00.073 [INFO] [sway/main.c:120] SUPPORT_URL="https://help.ubuntu.com/"
-00:00:00.073 [INFO] [sway/main.c:120] BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-00:00:00.073 [INFO] [sway/main.c:120] PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-00:00:00.073 [INFO] [sway/main.c:120] UBUNTU_CODENAME=noble
-00:00:00.073 [INFO] [sway/main.c:120] LOGO=ubuntu-logo
-00:00:00.073 [INFO] [sway/main.c:136] Contents of /etc/debian_version:
-00:00:00.073 [INFO] [sway/main.c:120] trixie/sid
-00:00:00.073 [INFO] [sway/main.c:108] LD_LIBRARY_PATH=
-00:00:00.073 [INFO] [sway/main.c:108] LD_PRELOAD=
-00:00:00.073 [INFO] [sway/main.c:108] PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-00:00:00.073 [INFO] [sway/main.c:108] SWAYSOCK=
-00:00:00.074 [INFO] [sway/main.c:376] Starting sway version 1.9
-00:00:00.075 [DEBUG] [sway/server.c:129] Initializing Wayland server
-00:00:00.077 [INFO] [wlr] [backend/backend.c:309] Loading user-specified backends due to WLR_BACKENDS: headless
-00:00:00.078 [INFO] [wlr] [backend/headless/backend.c:67] Creating headless backend
-00:00:00.080 [INFO] [wlr] [util/env.c:25] Loading WLR_RENDERER option: pixman
-00:00:00.080 [INFO] [wlr] [render/pixman/renderer.c:537] Creating pixman renderer
-00:00:00.081 [DEBUG] [wlr] [render/allocator/allocator.c:124] Trying to create shm allocator
-00:00:00.081 [DEBUG] [wlr] [render/allocator/shm.c:118] Created shm allocator
-00:00:00.083 [DEBUG] [wlr] [types/wlr_drm_lease_v1.c:710] No DRM backend supplied, failed to create wlr_drm_lease_v1_manager
-00:00:00.083 [DEBUG] [sway/server.c:264] Failed to create wlr_drm_lease_device_v1
-00:00:00.083 [INFO] [sway/server.c:265] VR will not be available
-00:00:00.084 [INFO] [wlr] [backend/headless/backend.c:67] Creating headless backend
-00:00:00.114 [INFO] [sway/config.c:416] Loading config from /tmp/qa/sway/sway.conf
-00:00:00.114 [DEBUG] [sway/config.c:838] Read line 1: xwayland disable
-00:00:00.114 [INFO] [sway/commands.c:381] Config command: xwayland disable
-00:00:00.114 [INFO] [sway/commands.c:404] After replacement: xwayland disable
-00:00:00.114 [DEBUG] [sway/config.c:838] Read line 2: output HEADLESS-1 mode 1600x1000
-00:00:00.114 [INFO] [sway/commands.c:381] Config command: output HEADLESS-1 mode 1600x1000
-00:00:00.115 [INFO] [sway/commands.c:404] After replacement: output HEADLESS-1 mode 1600x1000
-00:00:00.115 [DEBUG] [sway/commands.c:436] Subcommand: mode 1600x1000
-00:00:00.115 [DEBUG] [sway/config/output.c:218] Adding non-wildcard output config
-00:00:00.115 [DEBUG] [sway/config/output.c:235] Config stored for output HEADLESS-1 (enabled: -1) (1600x1000@-1.000000Hz position -1,-1 scale -1.000000 subpixel unknown transform -1) (bg (null) (null)) (power -1) (max render time: -1)
-00:00:00.115 [DEBUG] [sway/config.c:838] Read line 3: seat seat0 fallback true
-00:00:00.115 [INFO] [sway/commands.c:381] Config command: seat seat0 fallback true
-00:00:00.115 [INFO] [sway/commands.c:404] After replacement: seat seat0 fallback true
-00:00:00.115 [DEBUG] [sway/commands.c:436] Subcommand: fallback true
-00:00:00.115 [DEBUG] [sway/config/seat.c:66] Adding non-wildcard seat config
-00:00:00.115 [DEBUG] [sway/config/seat.c:83] Config stored for seat seat0
-00:00:00.227 [INFO] [sway/realtime.c:35] Failed to set scheduling priority to 1
-00:00:00.227 [INFO] [sway/server.c:384] Starting backend on wayland display 'wayland-1'
-00:00:00.227 [INFO] [wlr] [backend/headless/backend.c:17] Starting headless backend
-00:00:00.227 [DEBUG] [sway/desktop/output.c:1019] New output 0x5583135253f0: HEADLESS-1 (non-desktop: 0)
-00:00:00.228 [DEBUG] [sway/config/output.c:401] Turning on output HEADLESS-1
-00:00:00.228 [DEBUG] [sway/config/output.c:409] Set HEADLESS-1 mode to 1600x1000 (-1.000000 Hz)
-00:00:00.228 [DEBUG] [sway/config/output.c:256] Assigning custom mode to HEADLESS-1
-00:00:00.228 [DEBUG] [sway/config/output.c:473] Auto-detected output scale: 1.000000
-00:00:00.228 [DEBUG] [sway/config/output.c:520] Committing output HEADLESS-1
-00:00:00.228 [DEBUG] [wlr] [types/output/render.c:168] Attaching empty buffer to output for modeset
-00:00:00.228 [DEBUG] [wlr] [types/output/swapchain.c:27] Choosing primary buffer format XR24 (0x34325258) for output 'HEADLESS-1'
-00:00:00.228 [DEBUG] [wlr] [types/output/swapchain.c:96] Testing swapchain for output 'HEADLESS-1'
-00:00:00.228 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
-00:00:00.228 [DEBUG] [wlr] [render/pixman/renderer.c:152] Created pixman buffer 1600x1000
-00:00:00.235 [DEBUG] [wlr] [types/output/cursor.c:458] Falling back to software cursor on output 'HEADLESS-1'
-00:00:00.235 [DEBUG] [sway/tree/workspace.c:277] Workspace: Generating new workspace name for output HEADLESS-1
-00:00:00.235 [DEBUG] [sway/tree/output.c:127] Creating default workspace 1
-00:00:00.235 [DEBUG] [sway/tree/workspace.c:65] Adding workspace 1 for output HEADLESS-1
-00:00:00.295 [DEBUG] [wlr] [xcursor/wlr_xcursor.c:225] Loaded cursor theme 'default' at size 24 (59 available cursors)
-00:00:00.295 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
-00:00:00.295 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:00.295 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:00.295 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:00.295 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:00.295 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313550c80 committing with 2 instructions
-00:00:00.295 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313550c80
-00:00:00.295 [INFO] [wlr] [backend/headless/backend.c:17] Starting headless backend
-00:00:00.295 [INFO] [sway/server.c:396] Running compositor on wayland display 'wayland-1'
-00:00:00.296 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:00.296 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:00.564 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55831363c6f0 (res 0x5583135b8d30)
-00:00:00.564 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x558313642910 (res 0x55831364cf30)
-00:00:00.564 [DEBUG] [wlr] [types/wlr_xdg_decoration_v1.c:219] new xdg_toplevel_decoration 0x558313642a30 (res 0x55831364d170)
-00:00:00.564 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='Untitled — ReShiki' app_id='reshiki'
-00:00:03.139 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:03.139 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:03.139 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:03.139 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313575410 committing with 3 instructions
-00:00:03.193 [DEBUG] [sway/ipc-server.c:197] New client: fd 19
-00:00:03.194 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:03.194 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:03.194 [INFO] [sway/ipc-server.c:571] IPC Client 19 disconnected
-00:00:03.200 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:03.200 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:03.339 [DEBUG] [sway/desktop/transaction.c:356] Transaction 0x558313575410 timed out (1 waiting)
-00:00:03.339 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313575410
-00:00:03.339 [DEBUG] [sway/tree/container.c:1320] Container 0x558313667650 entered output 0x558313590260
-00:00:03.414 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:03.414 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:03.873 [DEBUG] [sway/ipc-server.c:197] New client: fd 21
-00:00:03.873 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:03.873 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:03.873 [INFO] [sway/ipc-server.c:571] IPC Client 21 disconnected
-00:00:03.878 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:03.878 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:04.102 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:04.102 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:05.220 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55831368fb30 (res 0x55831365a460)
-00:00:05.285 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x5583136910f0 (res 0x558313651500)
-00:00:06.758 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x558313667c70 (res 0x55831365a8e0)
-00:00:06.758 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x558313692880 (res 0x558313660e80)
-00:00:06.758 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
-00:00:06.758 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
-00:00:06.760 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
-00:00:06.957 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:06.957 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:06.957 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:06.957 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313578fb0 committing with 4 instructions
-00:00:06.994 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
-00:00:06.995 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
-00:00:06.995 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:06.995 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
-00:00:06.997 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
-00:00:06.997 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
-00:00:06.997 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:06.997 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
-00:00:07.000 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:07.000 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:07.154 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x558313578fb0 is ready
-00:00:07.154 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313578fb0
-00:00:07.156 [DEBUG] [sway/tree/container.c:1320] Container 0x558313686cd0 entered output 0x558313590260
-00:00:07.216 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:07.216 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:07.218 [DEBUG] [sway/ipc-server.c:197] New client: fd 20
-00:00:07.218 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:07.218 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:07.218 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x5583135799d0 committing with 4 instructions
-00:00:07.219 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x5583135799d0
-00:00:07.221 [INFO] [sway/ipc-server.c:571] IPC Client 20 disconnected
-00:00:07.274 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:07.274 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:07.490 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:07.490 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:08.419 [DEBUG] [sway/ipc-server.c:197] New client: fd 23
-00:00:08.419 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
-00:00:08.419 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:08.420 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313571930 committing with 4 instructions
-00:00:08.420 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313571930
-00:00:08.422 [INFO] [sway/ipc-server.c:571] IPC Client 23 disconnected
-00:00:08.475 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:08.475 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:08.692 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:08.692 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:08.703 [DEBUG] [sway/ipc-server.c:197] New client: fd 23
-00:00:08.703 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
-00:00:08.703 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:08.703 [INFO] [sway/ipc-server.c:571] IPC Client 23 disconnected
-00:00:08.707 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:08.707 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:08.993 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:08.993 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:09.144 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x558313688200 (res 0x558313660a00)
-00:00:09.362 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x558313681a10 (res 0x5583135befa0)
-00:00:09.960 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55831366ec10 (res 0x55831365fb60)
-00:00:09.960 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x5583136817b0 (res 0x5583135bee80)
-00:00:09.960 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
-00:00:09.960 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
-00:00:09.961 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
-00:00:10.005 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:10.005 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:10.005 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:10.005 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831357a090 committing with 5 instructions
-00:00:10.052 [DEBUG] [sway/ipc-server.c:197] New client: fd 34
-00:00:10.053 [DEBUG] [sway/criteria.c:726] Found pair: pid=262
-00:00:10.053 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:10.053 [INFO] [sway/ipc-server.c:571] IPC Client 34 disconnected
-00:00:10.064 [DEBUG] [sway/ipc-server.c:197] New client: fd 34
-00:00:10.065 [DEBUG] [sway/criteria.c:726] Found pair: pid=262
-00:00:10.065 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:10.065 [INFO] [sway/ipc-server.c:571] IPC Client 34 disconnected
-00:00:10.068 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:10.068 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:10.196 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55831357a090 is ready
-00:00:10.196 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831357a090
-00:00:10.197 [DEBUG] [sway/tree/container.c:1320] Container 0x558313655120 entered output 0x558313590260
-00:00:10.312 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:10.312 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:10.330 [DEBUG] [sway/ipc-server.c:197] New client: fd 30
-00:00:10.330 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:10.330 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:10.330 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831357a090 committing with 4 instructions
-00:00:10.330 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831357a090
-00:00:10.336 [INFO] [sway/ipc-server.c:571] IPC Client 30 disconnected
-00:00:10.339 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:10.339 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:10.561 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:10.561 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:11.028 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
-00:00:11.029 [DEBUG] [sway/criteria.c:726] Found pair: pid=262
-00:00:11.029 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:11.029 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313575410 committing with 4 instructions
-00:00:11.029 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313575410
-00:00:11.030 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
-00:00:11.033 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:11.033 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:11.245 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:11.245 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:11.249 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
-00:00:11.249 [DEBUG] [sway/criteria.c:726] Found pair: pid=262
-00:00:11.249 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:11.249 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
-00:00:11.252 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:11.252 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:11.475 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:11.475 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:11.626 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x558313687d40 (res 0x55831365c560)
-00:00:11.711 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x5583136996d0 (res 0x558313659920)
-00:00:12.191 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x558313658600 (res 0x55831364e600)
-00:00:12.191 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55831366c290 (res 0x558313657400)
-00:00:12.191 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
-00:00:12.192 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
-00:00:12.192 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
-00:00:12.229 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:12.229 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:12.229 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:12.229 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831356e210 committing with 6 instructions
-00:00:12.257 [DEBUG] [sway/ipc-server.c:197] New client: fd 35
-00:00:12.257 [DEBUG] [sway/criteria.c:726] Found pair: pid=318
-00:00:12.257 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:12.258 [INFO] [sway/ipc-server.c:571] IPC Client 35 disconnected
-00:00:12.259 [DEBUG] [sway/ipc-server.c:197] New client: fd 35
-00:00:12.259 [DEBUG] [sway/criteria.c:726] Found pair: pid=318
-00:00:12.259 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:12.259 [INFO] [sway/ipc-server.c:571] IPC Client 35 disconnected
-00:00:12.264 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:12.264 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:12.375 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55831356e210 is ready
-00:00:12.375 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831356e210
-00:00:12.376 [DEBUG] [sway/tree/container.c:1320] Container 0x55831366f320 entered output 0x558313590260
-00:00:12.490 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:12.490 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:12.495 [DEBUG] [sway/ipc-server.c:197] New client: fd 35
-00:00:12.496 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:12.496 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:12.496 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831356e210 committing with 4 instructions
-00:00:12.496 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831356e210
-00:00:12.498 [INFO] [sway/ipc-server.c:571] IPC Client 35 disconnected
-00:00:12.501 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:12.501 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:12.714 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:12.714 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:12.922 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:12.922 [DEBUG] [sway/criteria.c:726] Found pair: pid=318
-00:00:12.922 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:12.922 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313649f00 committing with 4 instructions
-00:00:12.922 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313649f00
-00:00:12.925 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:12.982 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:12.982 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:13.206 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:13.206 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:13.298 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:13.298 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:13.298 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:13.298 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831365a5d0 committing with 4 instructions
-00:00:13.298 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831365a5d0
-00:00:13.302 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:13.307 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:13.307 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:13.533 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:13.533 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:13.640 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:13.640 [DEBUG] [sway/criteria.c:726] Found pair: pid=318
-00:00:13.640 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:13.640 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313648f10 committing with 4 instructions
-00:00:13.640 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313648f10
-00:00:13.641 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:13.648 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:13.648 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:13.870 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:13.870 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:13.874 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:13.874 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:13.874 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:13.874 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831365b5d0 committing with 4 instructions
-00:00:13.874 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831365b5d0
-00:00:13.876 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:13.880 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:13.880 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:14.094 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:14.094 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:14.450 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:14.450 [DEBUG] [sway/criteria.c:726] Found pair: pid=318
-00:00:14.450 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:14.450 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831357a750 committing with 4 instructions
-00:00:14.450 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831357a750
-00:00:14.455 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:14.461 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:14.461 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:14.673 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:14.673 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:14.676 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:14.676 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:14.676 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:14.676 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x5583135bc300 committing with 4 instructions
-00:00:14.676 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x5583135bc300
-00:00:14.679 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:14.688 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:14.688 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:14.913 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:14.913 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:15.269 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
-00:00:15.270 [DEBUG] [sway/criteria.c:726] Found pair: pid=318
-00:00:15.270 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:15.270 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831365b710 committing with 4 instructions
-00:00:15.270 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831365b710
-00:00:15.273 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
-00:00:15.275 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:15.275 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:15.489 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:15.489 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:15.630 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x5583136981f0 (res 0x558313655a20)
-00:00:15.696 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x5583136bd820 (res 0x55831365bea0)
-00:00:16.056 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x5583136941d0 (res 0x55831365fa40)
-00:00:16.056 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x558313689390 (res 0x55831364fa90)
-00:00:16.056 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
-00:00:16.056 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
-00:00:16.057 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
-00:00:16.118 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:16.118 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:16.118 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:16.118 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313568dc0 committing with 7 instructions
-00:00:16.149 [DEBUG] [sway/ipc-server.c:197] New client: fd 40
-00:00:16.150 [DEBUG] [sway/criteria.c:726] Found pair: pid=395
-00:00:16.150 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:16.150 [INFO] [sway/ipc-server.c:571] IPC Client 40 disconnected
-00:00:16.154 [DEBUG] [sway/ipc-server.c:197] New client: fd 40
-00:00:16.155 [DEBUG] [sway/criteria.c:726] Found pair: pid=395
-00:00:16.155 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:16.155 [INFO] [sway/ipc-server.c:571] IPC Client 40 disconnected
-00:00:16.159 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:16.159 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:16.211 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x558313568dc0 is ready
-00:00:16.211 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313568dc0
-00:00:16.212 [DEBUG] [sway/tree/container.c:1320] Container 0x55831366de50 entered output 0x558313590260
-00:00:16.373 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:16.373 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:16.378 [DEBUG] [sway/ipc-server.c:197] New client: fd 40
-00:00:16.378 [DEBUG] [sway/criteria.c:726] Found pair: pid=395
-00:00:16.378 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:16.378 [INFO] [sway/ipc-server.c:571] IPC Client 40 disconnected
-00:00:16.384 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:16.385 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:16.597 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:16.597 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:16.601 [DEBUG] [sway/ipc-server.c:197] New client: fd 40
-00:00:16.602 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:16.602 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:16.602 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313661a10 committing with 4 instructions
-00:00:16.602 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313661a10
-00:00:16.607 [INFO] [sway/ipc-server.c:571] IPC Client 40 disconnected
-00:00:16.611 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:16.611 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:16.836 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:16.837 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:17.095 [DEBUG] [sway/ipc-server.c:197] New client: fd 38
-00:00:17.096 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:17.096 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:17.096 [INFO] [sway/ipc-server.c:571] IPC Client 38 disconnected
-00:00:17.099 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.099 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:17.311 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.311 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:17.417 [DEBUG] [sway/ipc-server.c:197] New client: fd 38
-00:00:17.418 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:17.418 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:17.418 [INFO] [sway/ipc-server.c:571] IPC Client 38 disconnected
-00:00:17.422 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.422 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:17.636 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.636 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:17.690 [DEBUG] [sway/ipc-server.c:197] New client: fd 38
-00:00:17.691 [DEBUG] [sway/criteria.c:726] Found pair: pid=395
-00:00:17.691 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:17.691 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313576df0 committing with 4 instructions
-00:00:17.691 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313576df0
-00:00:17.691 [INFO] [sway/ipc-server.c:571] IPC Client 38 disconnected
-00:00:17.695 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.695 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:17.932 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.932 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:17.941 [DEBUG] [sway/ipc-server.c:197] New client: fd 38
-00:00:17.941 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:17.941 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:17.941 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313557910 committing with 4 instructions
-00:00:17.941 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313557910
-00:00:17.943 [INFO] [sway/ipc-server.c:571] IPC Client 38 disconnected
-00:00:17.948 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:17.948 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:18.172 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:18.172 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:18.281 [DEBUG] [sway/ipc-server.c:197] New client: fd 38
-00:00:18.282 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:18.282 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:18.282 [INFO] [sway/ipc-server.c:571] IPC Client 38 disconnected
-00:00:18.285 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:18.285 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:18.501 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:18.501 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:18.505 [DEBUG] [sway/ipc-server.c:197] New client: fd 38
-00:00:18.505 [DEBUG] [sway/criteria.c:726] Found pair: pid=395
-00:00:18.505 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:18.506 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x5583136bdbd0 committing with 4 instructions
-00:00:18.506 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x5583136bdbd0
-00:00:18.507 [INFO] [sway/ipc-server.c:571] IPC Client 38 disconnected
-00:00:18.515 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:18.515 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:18.730 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:18.730 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:18.947 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x558313699f50 (res 0x55831365f920)
-00:00:19.029 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55831369cd70 (res 0x55831370b070)
-00:00:19.589 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x558313681fb0 (res 0x55831363af10)
-00:00:19.589 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x558313698fe0 (res 0x558313659c80)
-00:00:19.589 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
-00:00:19.589 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
-00:00:19.590 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
-00:00:19.632 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:19.632 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:19.632 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:19.632 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313575770 committing with 8 instructions
-00:00:19.645 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
-00:00:19.645 [DEBUG] [sway/criteria.c:726] Found pair: pid=462
-00:00:19.645 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:19.645 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
-00:00:19.647 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
-00:00:19.651 [DEBUG] [sway/criteria.c:726] Found pair: pid=462
-00:00:19.652 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:19.658 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
-00:00:19.669 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:19.669 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:19.832 [DEBUG] [sway/desktop/transaction.c:356] Transaction 0x558313575770 timed out (2 waiting)
-00:00:19.832 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313575770
-00:00:19.832 [DEBUG] [sway/tree/container.c:1320] Container 0x558313717b80 entered output 0x558313590260
-00:00:19.891 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:19.891 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:19.896 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:19.896 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:19.896 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:19.896 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313557440 committing with 4 instructions
-00:00:19.896 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313557440
-00:00:19.898 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:19.904 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:19.904 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:20.129 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:20.129 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:20.341 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:20.342 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:20.342 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:20.342 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:20.347 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:20.347 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:20.570 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:20.570 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:20.626 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:20.627 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:20.627 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:20.627 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:20.633 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:20.633 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:20.849 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:20.849 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:21.011 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:21.011 [DEBUG] [sway/criteria.c:726] Found pair: pid=462
-00:00:21.011 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:21.011 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313749dd0 committing with 4 instructions
-00:00:21.011 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313749dd0
-00:00:21.015 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:21.018 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:21.018 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:21.234 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:21.234 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:21.241 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:21.241 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:21.241 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:21.241 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x5583136bb6d0 committing with 4 instructions
-00:00:21.241 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x5583136bb6d0
-00:00:21.241 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:21.431 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:21.431 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:21.644 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:21.645 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:21.648 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:21.648 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:21.648 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:21.648 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:21.653 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:21.653 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:21.867 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:21.867 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:22.236 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:22.237 [DEBUG] [sway/criteria.c:726] Found pair: pid=462
-00:00:22.237 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:22.237 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831364b770 committing with 4 instructions
-00:00:22.237 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831364b770
-00:00:22.241 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:22.274 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:22.274 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:22.490 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:22.490 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:22.495 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:22.495 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:22.495 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:22.495 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313685b70 committing with 4 instructions
-00:00:22.495 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313685b70
-00:00:22.497 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:22.564 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:22.564 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:22.778 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:22.778 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:22.781 [DEBUG] [sway/ipc-server.c:197] New client: fd 32
-00:00:22.782 [DEBUG] [sway/criteria.c:726] Found pair: pid=70
-00:00:22.782 [INFO] [sway/commands.c:261] Handling command 'kill'
-00:00:22.782 [INFO] [sway/ipc-server.c:571] IPC Client 32 disconnected
-00:00:22.948 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:22.948 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:22.948 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4df0 horizontally
-00:00:22.948 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x5583136edbc0 committing with 8 instructions
-00:00:22.970 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x5583136edbc0 is ready
-00:00:22.970 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x5583136edbc0
-00:00:23.120 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:23.120 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:23.120 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea5150 horizontally
-00:00:23.120 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313685b70 committing with 7 instructions
-00:00:23.137 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x558313685b70 is ready
-00:00:23.137 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x558313685b70
-00:00:23.269 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x558313699f50 (res 0x55831365ea80)
-00:00:23.354 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55831374a8d0 (res 0x55831365d880)
-00:00:23.593 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x5583135570b0 (res 0x558313654dc0)
-00:00:23.593 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x558313748e80 (res 0x558313653ea0)
-00:00:23.593 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
-00:00:23.593 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
-00:00:23.594 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
-00:00:23.639 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:23.639 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:23.639 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea4d40 horizontally
-00:00:23.639 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55831356b490 committing with 7 instructions
-00:00:23.658 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55831356b490 is ready
-00:00:23.658 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55831356b490
-00:00:23.658 [DEBUG] [sway/tree/container.c:1320] Container 0x5583136b21c0 entered output 0x558313590260
-00:00:23.686 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
-00:00:23.686 [DEBUG] [sway/criteria.c:726] Found pair: pid=534
-00:00:23.686 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:23.687 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
-00:00:23.689 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
-00:00:23.689 [DEBUG] [sway/criteria.c:726] Found pair: pid=534
-00:00:23.689 [INFO] [sway/commands.c:261] Handling command 'focus'
-00:00:23.690 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
-00:00:23.693 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
-00:00:23.693 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
-00:00:23.913 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:23.913 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:23.971 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:23.972 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:23.972 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea5150 horizontally
-00:00:23.972 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x558313569a20 committing with 7 instructions
-00:00:24.005 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:24.005 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:24.005 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea5150 horizontally
-00:00:24.032 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:24.032 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:24.032 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea5150 horizontally
-00:00:24.060 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:24.060 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:24.060 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffd96ea5150 horizontally
-00:00:24.102 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
-00:00:24.102 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
-00:00:24.134 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
-00:00:24.134 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
-00:00:24.135 [INFO] [sway/main.c:418] Shutting down sway
-00:00:24.135 [DEBUG] [sway/tree/output.c:264] Disabling output 'HEADLESS-1'
-00:00:24.135 [DEBUG] [sway/tree/workspace.c:145] Destroying workspace '1'
-00:00:24.135 [DEBUG] [sway/tree/output.c:287] Destroying output 'HEADLESS-1'
+00:00:00.000 [INFO] [sway/main.c:338] Sway version 1.9
+00:00:00.000 [INFO] [sway/main.c:339] wlroots version 0.17.1
+00:00:00.001 [INFO] [sway/main.c:120] Linux 0b1eafad5ff5 7.0.14-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 27 Jun 2026 16:15:10 +0000 x86_64 x86_64 x86_64 GNU/Linux
+00:00:00.001 [INFO] [sway/main.c:136] Contents of /etc/lsb-release:
+00:00:00.002 [INFO] [sway/main.c:120] DISTRIB_ID=Ubuntu
+00:00:00.002 [INFO] [sway/main.c:120] DISTRIB_RELEASE=24.04
+00:00:00.002 [INFO] [sway/main.c:120] DISTRIB_CODENAME=noble
+00:00:00.002 [INFO] [sway/main.c:120] DISTRIB_DESCRIPTION="Ubuntu 24.04.5 LTS"
+00:00:00.002 [INFO] [sway/main.c:136] Contents of /etc/os-release:
+00:00:00.002 [INFO] [sway/main.c:120] PRETTY_NAME="Ubuntu 24.04.5 LTS"
+00:00:00.002 [INFO] [sway/main.c:120] NAME="Ubuntu"
+00:00:00.002 [INFO] [sway/main.c:120] VERSION_ID="24.04"
+00:00:00.002 [INFO] [sway/main.c:120] VERSION="24.04.5 LTS (Noble Numbat)"
+00:00:00.002 [INFO] [sway/main.c:120] VERSION_CODENAME=noble
+00:00:00.002 [INFO] [sway/main.c:120] ID=ubuntu
+00:00:00.002 [INFO] [sway/main.c:120] ID_LIKE=debian
+00:00:00.002 [INFO] [sway/main.c:120] HOME_URL="https://www.ubuntu.com/"
+00:00:00.002 [INFO] [sway/main.c:120] SUPPORT_URL="https://help.ubuntu.com/"
+00:00:00.002 [INFO] [sway/main.c:120] BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+00:00:00.002 [INFO] [sway/main.c:120] PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+00:00:00.002 [INFO] [sway/main.c:120] UBUNTU_CODENAME=noble
+00:00:00.002 [INFO] [sway/main.c:120] LOGO=ubuntu-logo
+00:00:00.002 [INFO] [sway/main.c:136] Contents of /etc/debian_version:
+00:00:00.002 [INFO] [sway/main.c:120] trixie/sid
+00:00:00.002 [INFO] [sway/main.c:108] LD_LIBRARY_PATH=
+00:00:00.002 [INFO] [sway/main.c:108] LD_PRELOAD=
+00:00:00.002 [INFO] [sway/main.c:108] PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+00:00:00.002 [INFO] [sway/main.c:108] SWAYSOCK=
+00:00:00.002 [INFO] [sway/main.c:376] Starting sway version 1.9
+00:00:00.003 [DEBUG] [sway/server.c:129] Initializing Wayland server
+00:00:00.003 [INFO] [wlr] [backend/backend.c:309] Loading user-specified backends due to WLR_BACKENDS: headless
+00:00:00.003 [INFO] [wlr] [backend/headless/backend.c:67] Creating headless backend
+00:00:00.004 [INFO] [wlr] [util/env.c:25] Loading WLR_RENDERER option: pixman
+00:00:00.004 [INFO] [wlr] [render/pixman/renderer.c:537] Creating pixman renderer
+00:00:00.004 [DEBUG] [wlr] [render/allocator/allocator.c:124] Trying to create shm allocator
+00:00:00.004 [DEBUG] [wlr] [render/allocator/shm.c:118] Created shm allocator
+00:00:00.005 [DEBUG] [wlr] [types/wlr_drm_lease_v1.c:710] No DRM backend supplied, failed to create wlr_drm_lease_v1_manager
+00:00:00.005 [DEBUG] [sway/server.c:264] Failed to create wlr_drm_lease_device_v1
+00:00:00.005 [INFO] [sway/server.c:265] VR will not be available
+00:00:00.005 [INFO] [wlr] [backend/headless/backend.c:67] Creating headless backend
+00:00:00.009 [INFO] [sway/config.c:416] Loading config from /tmp/qa/sway/sway.conf
+00:00:00.009 [DEBUG] [sway/config.c:838] Read line 1: xwayland disable
+00:00:00.009 [INFO] [sway/commands.c:381] Config command: xwayland disable
+00:00:00.009 [INFO] [sway/commands.c:404] After replacement: xwayland disable
+00:00:00.009 [DEBUG] [sway/config.c:838] Read line 2: output HEADLESS-1 mode 1600x1000
+00:00:00.009 [INFO] [sway/commands.c:381] Config command: output HEADLESS-1 mode 1600x1000
+00:00:00.009 [INFO] [sway/commands.c:404] After replacement: output HEADLESS-1 mode 1600x1000
+00:00:00.009 [DEBUG] [sway/commands.c:436] Subcommand: mode 1600x1000
+00:00:00.009 [DEBUG] [sway/config/output.c:218] Adding non-wildcard output config
+00:00:00.009 [DEBUG] [sway/config/output.c:235] Config stored for output HEADLESS-1 (enabled: -1) (1600x1000@-1.000000Hz position -1,-1 scale -1.000000 subpixel unknown transform -1) (bg (null) (null)) (power -1) (max render time: -1)
+00:00:00.009 [DEBUG] [sway/config.c:838] Read line 3: seat seat0 fallback true
+00:00:00.009 [INFO] [sway/commands.c:381] Config command: seat seat0 fallback true
+00:00:00.010 [INFO] [sway/commands.c:404] After replacement: seat seat0 fallback true
+00:00:00.010 [DEBUG] [sway/commands.c:436] Subcommand: fallback true
+00:00:00.010 [DEBUG] [sway/config/seat.c:66] Adding non-wildcard seat config
+00:00:00.010 [DEBUG] [sway/config/seat.c:83] Config stored for seat seat0
+00:00:00.018 [INFO] [sway/realtime.c:35] Failed to set scheduling priority to 1
+00:00:00.018 [INFO] [sway/server.c:384] Starting backend on wayland display 'wayland-1'
+00:00:00.018 [INFO] [wlr] [backend/headless/backend.c:17] Starting headless backend
+00:00:00.018 [DEBUG] [sway/desktop/output.c:1019] New output 0x55d8f9a9b3f0: HEADLESS-1 (non-desktop: 0)
+00:00:00.018 [DEBUG] [sway/config/output.c:401] Turning on output HEADLESS-1
+00:00:00.018 [DEBUG] [sway/config/output.c:409] Set HEADLESS-1 mode to 1600x1000 (-1.000000 Hz)
+00:00:00.018 [DEBUG] [sway/config/output.c:256] Assigning custom mode to HEADLESS-1
+00:00:00.018 [DEBUG] [sway/config/output.c:473] Auto-detected output scale: 1.000000
+00:00:00.018 [DEBUG] [sway/config/output.c:520] Committing output HEADLESS-1
+00:00:00.018 [DEBUG] [wlr] [types/output/render.c:168] Attaching empty buffer to output for modeset
+00:00:00.018 [DEBUG] [wlr] [types/output/swapchain.c:27] Choosing primary buffer format XR24 (0x34325258) for output 'HEADLESS-1'
+00:00:00.018 [DEBUG] [wlr] [types/output/swapchain.c:96] Testing swapchain for output 'HEADLESS-1'
+00:00:00.018 [DEBUG] [wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+00:00:00.018 [DEBUG] [wlr] [render/pixman/renderer.c:152] Created pixman buffer 1600x1000
+00:00:00.023 [DEBUG] [wlr] [types/output/cursor.c:458] Falling back to software cursor on output 'HEADLESS-1'
+00:00:00.023 [DEBUG] [sway/tree/workspace.c:277] Workspace: Generating new workspace name for output HEADLESS-1
+00:00:00.023 [DEBUG] [sway/tree/output.c:127] Creating default workspace 1
+00:00:00.023 [DEBUG] [sway/tree/workspace.c:65] Adding workspace 1 for output HEADLESS-1
+00:00:00.039 [DEBUG] [wlr] [xcursor/wlr_xcursor.c:225] Loaded cursor theme 'default' at size 24 (59 available cursors)
+00:00:00.039 [DEBUG] [sway/desktop/layer_shell.c:229] Usable area changed, rearranging output
+00:00:00.039 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:00.039 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.039 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:00.039 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:00.039 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9acce50 committing with 2 instructions
+00:00:00.039 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9acce50
+00:00:00.039 [INFO] [wlr] [backend/headless/backend.c:17] Starting headless backend
+00:00:00.039 [INFO] [sway/server.c:396] Running compositor on wayland display 'wayland-1'
+00:00:00.040 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:00.040 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:00.299 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9bb9560 (res 0x55d8f9bb55c0)
+00:00:00.299 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9bb8d90 (res 0x55d8f9bb56e0)
+00:00:00.299 [DEBUG] [wlr] [types/wlr_xdg_decoration_v1.c:219] new xdg_toplevel_decoration 0x55d8f9b34bc0 (res 0x55d8f9bb5920)
+00:00:00.299 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='Untitled — ReShiki' app_id='reshiki'
+00:00:01.204 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:01.204 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:01.204 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:01.204 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae29f0 committing with 3 instructions
+00:00:01.244 [DEBUG] [sway/ipc-server.c:197] New client: fd 19
+00:00:01.244 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:01.244 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:01.244 [INFO] [sway/ipc-server.c:571] IPC Client 19 disconnected
+00:00:01.247 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:01.247 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:01.371 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9ae29f0 is ready
+00:00:01.371 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae29f0
+00:00:01.371 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9bde5e0 entered output 0x55d8f9b05e40
+00:00:01.467 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:01.467 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:01.469 [DEBUG] [sway/ipc-server.c:197] New client: fd 19
+00:00:01.469 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:01.470 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:01.470 [INFO] [sway/ipc-server.c:571] IPC Client 19 disconnected
+00:00:01.473 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:01.473 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:01.689 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:01.689 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:02.158 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c00250 (res 0x55d8f9bd6a30)
+00:00:02.210 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9bfd830 (res 0x55d8f9bb1d90)
+00:00:02.925 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55d8f9ace2e0 (res 0x55d8f9bc4570)
+00:00:02.925 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9bb1200 (res 0x55d8f9bd2a10)
+00:00:02.925 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
+00:00:02.925 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
+00:00:02.926 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:03.065 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:03.065 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:03.065 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:03.065 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae1fd0 committing with 4 instructions
+00:00:03.103 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
+00:00:03.103 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
+00:00:03.103 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:03.103 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
+00:00:03.105 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
+00:00:03.105 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
+00:00:03.105 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:03.105 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
+00:00:03.108 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.108 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:03.173 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9ae1fd0 is ready
+00:00:03.173 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae1fd0
+00:00:03.175 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9be5350 entered output 0x55d8f9b05e40
+00:00:03.320 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.320 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:03.322 [DEBUG] [sway/ipc-server.c:197] New client: fd 24
+00:00:03.323 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:03.323 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:03.323 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae1fd0 committing with 4 instructions
+00:00:03.323 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae1fd0
+00:00:03.323 [INFO] [sway/ipc-server.c:571] IPC Client 24 disconnected
+00:00:03.326 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.326 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:03.540 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.540 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:03.749 [DEBUG] [sway/ipc-server.c:197] New client: fd 24
+00:00:03.749 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
+00:00:03.749 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:03.749 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9af0510 committing with 4 instructions
+00:00:03.749 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9af0510
+00:00:03.752 [INFO] [sway/ipc-server.c:571] IPC Client 24 disconnected
+00:00:03.755 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.755 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:03.966 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.966 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:03.968 [DEBUG] [sway/ipc-server.c:197] New client: fd 24
+00:00:03.968 [DEBUG] [sway/criteria.c:726] Found pair: pid=206
+00:00:03.968 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:03.969 [INFO] [sway/ipc-server.c:571] IPC Client 24 disconnected
+00:00:03.971 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:03.971 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:04.183 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:04.183 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:04.274 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c29150 (res 0x55d8f9bd1330)
+00:00:04.320 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9be62d0 (res 0x55d8f9bcfdd0)
+00:00:04.476 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55d8f9bd42d0 (res 0x55d8f9b2e850)
+00:00:04.476 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9c1ac40 (res 0x55d8f9bc7f50)
+00:00:04.476 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
+00:00:04.476 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
+00:00:04.477 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:04.503 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:04.503 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:04.503 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:04.503 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae3fd0 committing with 5 instructions
+00:00:04.538 [DEBUG] [sway/ipc-server.c:197] New client: fd 34
+00:00:04.538 [DEBUG] [sway/criteria.c:726] Found pair: pid=259
+00:00:04.538 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:04.539 [INFO] [sway/ipc-server.c:571] IPC Client 34 disconnected
+00:00:04.540 [DEBUG] [sway/ipc-server.c:197] New client: fd 34
+00:00:04.540 [DEBUG] [sway/criteria.c:726] Found pair: pid=259
+00:00:04.540 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:04.541 [INFO] [sway/ipc-server.c:571] IPC Client 34 disconnected
+00:00:04.544 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:04.544 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:04.574 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9ae3fd0 is ready
+00:00:04.574 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae3fd0
+00:00:04.575 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9c5f6d0 entered output 0x55d8f9b05e40
+00:00:04.754 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:04.754 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:04.757 [DEBUG] [sway/ipc-server.c:197] New client: fd 30
+00:00:04.757 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:04.757 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:04.757 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bc4260 committing with 4 instructions
+00:00:04.757 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bc4260
+00:00:04.758 [INFO] [sway/ipc-server.c:571] IPC Client 30 disconnected
+00:00:04.761 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:04.761 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:04.974 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:04.974 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:05.181 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
+00:00:05.181 [DEBUG] [sway/criteria.c:726] Found pair: pid=259
+00:00:05.181 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:05.181 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bc7d60 committing with 4 instructions
+00:00:05.181 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bc7d60
+00:00:05.184 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
+00:00:05.186 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:05.186 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:05.399 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:05.399 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:05.401 [DEBUG] [sway/ipc-server.c:197] New client: fd 28
+00:00:05.401 [DEBUG] [sway/criteria.c:726] Found pair: pid=259
+00:00:05.401 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:05.402 [INFO] [sway/ipc-server.c:571] IPC Client 28 disconnected
+00:00:05.404 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:05.404 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:05.614 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:05.614 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:05.713 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c618f0 (res 0x55d8f9bc9270)
+00:00:05.774 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c63d00 (res 0x55d8f9bd4870)
+00:00:05.945 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55d8f9bc8610 (res 0x55d8f9bcab30)
+00:00:05.945 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9c11970 (res 0x55d8f9bd0c70)
+00:00:05.945 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
+00:00:05.945 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
+00:00:05.946 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:05.976 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:05.976 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:05.976 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:05.976 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae15b0 committing with 6 instructions
+00:00:06.018 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9ae15b0 is ready
+00:00:06.018 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae15b0
+00:00:06.019 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9c1ad60 entered output 0x55d8f9b05e40
+00:00:06.021 [DEBUG] [sway/ipc-server.c:197] New client: fd 36
+00:00:06.021 [DEBUG] [sway/criteria.c:726] Found pair: pid=314
+00:00:06.021 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:06.022 [INFO] [sway/ipc-server.c:571] IPC Client 36 disconnected
+00:00:06.023 [DEBUG] [sway/ipc-server.c:197] New client: fd 36
+00:00:06.023 [DEBUG] [sway/criteria.c:726] Found pair: pid=314
+00:00:06.023 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:06.023 [INFO] [sway/ipc-server.c:571] IPC Client 36 disconnected
+00:00:06.025 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:06.025 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:06.236 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:06.236 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:06.239 [DEBUG] [sway/ipc-server.c:197] New client: fd 36
+00:00:06.239 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:06.239 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:06.239 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bb4d40 committing with 4 instructions
+00:00:06.239 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bb4d40
+00:00:06.241 [INFO] [sway/ipc-server.c:571] IPC Client 36 disconnected
+00:00:06.244 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:06.244 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:06.455 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:06.455 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:06.557 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:06.557 [DEBUG] [sway/criteria.c:726] Found pair: pid=314
+00:00:06.557 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:06.557 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae32c0 committing with 4 instructions
+00:00:06.557 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae32c0
+00:00:06.559 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:06.765 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:06.765 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:06.976 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:06.976 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:07.585 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:07.585 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:07.585 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:07.586 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aec850 committing with 4 instructions
+00:00:07.586 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aec850
+00:00:07.587 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:07.590 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:07.590 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:07.801 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:07.801 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:07.854 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:07.854 [DEBUG] [sway/criteria.c:726] Found pair: pid=314
+00:00:07.854 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:07.854 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9adeb80 committing with 4 instructions
+00:00:07.854 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9adeb80
+00:00:07.854 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:07.856 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:07.856 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:08.066 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.066 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:08.068 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:08.068 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:08.068 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:08.069 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae32c0 committing with 4 instructions
+00:00:08.069 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae32c0
+00:00:08.070 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:08.073 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.073 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:08.285 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.285 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:08.439 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:08.439 [DEBUG] [sway/criteria.c:726] Found pair: pid=314
+00:00:08.439 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:08.439 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bd5d00 committing with 4 instructions
+00:00:08.439 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bd5d00
+00:00:08.440 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:08.443 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.443 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:08.654 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.654 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:08.657 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:08.657 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:08.657 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:08.657 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae3fd0 committing with 4 instructions
+00:00:08.657 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae3fd0
+00:00:08.658 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:08.661 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.661 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:08.871 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:08.871 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:09.026 [DEBUG] [sway/ipc-server.c:197] New client: fd 33
+00:00:09.026 [DEBUG] [sway/criteria.c:726] Found pair: pid=314
+00:00:09.026 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:09.026 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aebf50 committing with 4 instructions
+00:00:09.026 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aebf50
+00:00:09.028 [INFO] [sway/ipc-server.c:571] IPC Client 33 disconnected
+00:00:09.031 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:09.031 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:09.243 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:09.243 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:09.335 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c65380 (res 0x55d8f9bd3af0)
+00:00:09.396 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c60aa0 (res 0x55d8f9bd0910)
+00:00:09.586 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55d8f9bc4450 (res 0x55d8f9bc6de0)
+00:00:09.586 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9c145d0 (res 0x55d8f9bd80b0)
+00:00:09.586 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
+00:00:09.586 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
+00:00:09.587 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:09.625 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:09.625 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:09.625 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:09.625 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae5530 committing with 7 instructions
+00:00:09.648 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
+00:00:09.648 [DEBUG] [sway/criteria.c:726] Found pair: pid=391
+00:00:09.648 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:09.648 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
+00:00:09.649 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
+00:00:09.649 [DEBUG] [sway/criteria.c:726] Found pair: pid=391
+00:00:09.649 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:09.650 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
+00:00:09.652 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:09.652 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:09.676 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9ae5530 is ready
+00:00:09.676 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae5530
+00:00:09.676 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9c64ff0 entered output 0x55d8f9b05e40
+00:00:09.865 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:09.865 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:09.868 [DEBUG] [sway/ipc-server.c:197] New client: fd 35
+00:00:09.868 [DEBUG] [sway/criteria.c:726] Found pair: pid=391
+00:00:09.868 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:09.868 [INFO] [sway/ipc-server.c:571] IPC Client 35 disconnected
+00:00:09.870 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:09.870 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:10.081 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.081 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:10.083 [DEBUG] [sway/ipc-server.c:197] New client: fd 35
+00:00:10.084 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:10.084 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:10.084 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aef790 committing with 4 instructions
+00:00:10.084 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aef790
+00:00:10.085 [INFO] [sway/ipc-server.c:571] IPC Client 35 disconnected
+00:00:10.088 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.088 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:10.298 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.298 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:10.400 [DEBUG] [sway/ipc-server.c:197] New client: fd 39
+00:00:10.400 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:10.400 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:10.401 [INFO] [sway/ipc-server.c:571] IPC Client 39 disconnected
+00:00:10.403 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.404 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:10.615 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.615 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:10.670 [DEBUG] [sway/ipc-server.c:197] New client: fd 39
+00:00:10.670 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:10.670 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:10.670 [INFO] [sway/ipc-server.c:571] IPC Client 39 disconnected
+00:00:10.673 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.673 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:10.889 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.889 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:10.891 [DEBUG] [sway/ipc-server.c:197] New client: fd 39
+00:00:10.891 [DEBUG] [sway/criteria.c:726] Found pair: pid=391
+00:00:10.891 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:10.891 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9af0870 committing with 4 instructions
+00:00:10.891 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9af0870
+00:00:10.892 [INFO] [sway/ipc-server.c:571] IPC Client 39 disconnected
+00:00:10.895 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:10.895 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:11.106 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.106 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:11.109 [DEBUG] [sway/ipc-server.c:197] New client: fd 39
+00:00:11.109 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:11.109 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:11.109 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9adfea0 committing with 4 instructions
+00:00:11.109 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9adfea0
+00:00:11.110 [INFO] [sway/ipc-server.c:571] IPC Client 39 disconnected
+00:00:11.113 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.113 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:11.323 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.323 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:11.325 [DEBUG] [sway/ipc-server.c:197] New client: fd 39
+00:00:11.325 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:11.325 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:11.325 [INFO] [sway/ipc-server.c:571] IPC Client 39 disconnected
+00:00:11.328 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.328 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:11.539 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.539 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:11.542 [DEBUG] [sway/ipc-server.c:197] New client: fd 39
+00:00:11.543 [DEBUG] [sway/criteria.c:726] Found pair: pid=391
+00:00:11.543 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:11.543 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bc23f0 committing with 4 instructions
+00:00:11.543 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bc23f0
+00:00:11.544 [INFO] [sway/ipc-server.c:571] IPC Client 39 disconnected
+00:00:11.547 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.547 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:11.762 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:11.762 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:11.857 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c1d720 (res 0x55d8f9bd2110)
+00:00:11.906 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9cacb40 (res 0x55d8f9c6aa60)
+00:00:12.057 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55d8f9c64250 (res 0x55d8f9bcb390)
+00:00:12.057 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9be8670 (res 0x55d8f9bcb150)
+00:00:12.057 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
+00:00:12.057 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
+00:00:12.058 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:12.083 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:12.083 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:12.083 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:12.083 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aebf50 committing with 8 instructions
+00:00:12.117 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
+00:00:12.118 [DEBUG] [sway/criteria.c:726] Found pair: pid=458
+00:00:12.118 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:12.118 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
+00:00:12.122 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
+00:00:12.122 [DEBUG] [sway/criteria.c:726] Found pair: pid=458
+00:00:12.122 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:12.122 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
+00:00:12.125 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.125 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:12.188 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9aebf50 is ready
+00:00:12.188 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aebf50
+00:00:12.188 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9c0d330 entered output 0x55d8f9b05e40
+00:00:12.345 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.345 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:12.347 [DEBUG] [sway/ipc-server.c:197] New client: fd 44
+00:00:12.347 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:12.347 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:12.348 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aec850 committing with 4 instructions
+00:00:12.348 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aec850
+00:00:12.349 [INFO] [sway/ipc-server.c:571] IPC Client 44 disconnected
+00:00:12.352 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.352 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:12.563 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.563 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:12.565 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:12.565 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:12.565 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:12.565 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:12.568 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.568 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:12.779 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.779 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:12.781 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:12.781 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:12.781 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:12.781 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:12.784 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.784 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:12.996 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:12.996 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:13.102 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:13.102 [DEBUG] [sway/criteria.c:726] Found pair: pid=458
+00:00:13.102 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:13.102 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9af2010 committing with 4 instructions
+00:00:13.102 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9af2010
+00:00:13.104 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:13.106 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.106 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:13.318 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.318 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:13.320 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:13.320 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:13.320 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:13.320 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bbea90 committing with 4 instructions
+00:00:13.320 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bbea90
+00:00:13.321 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:13.325 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.325 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:13.537 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.537 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:13.538 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:13.538 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:13.539 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:13.539 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:13.542 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.542 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:13.754 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.754 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:13.965 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:13.965 [DEBUG] [sway/criteria.c:726] Found pair: pid=458
+00:00:13.965 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:13.965 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae3fd0 committing with 4 instructions
+00:00:13.965 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae3fd0
+00:00:13.965 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:13.967 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:13.968 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:14.182 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:14.182 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:14.184 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:14.184 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:14.184 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:14.184 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9b62d10 committing with 4 instructions
+00:00:14.184 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9b62d10
+00:00:14.186 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:14.189 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:14.189 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:14.401 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:14.401 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:14.403 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:14.403 [DEBUG] [sway/criteria.c:726] Found pair: pid=72
+00:00:14.403 [INFO] [sway/commands.c:261] Handling command 'kill'
+00:00:14.403 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:14.715 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:14.716 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:14.716 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6cb00 horizontally
+00:00:14.716 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aee6b0 committing with 8 instructions
+00:00:14.722 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9aee6b0 is ready
+00:00:14.722 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aee6b0
+00:00:14.835 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:14.835 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:14.835 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ce60 horizontally
+00:00:14.835 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae4d50 committing with 7 instructions
+00:00:14.844 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9ae4d50 is ready
+00:00:14.844 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9ae4d50
+00:00:14.942 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c27740 (res 0x55d8f9bc9c90)
+00:00:14.986 [DEBUG] [wlr] [types/wlr_compositor.c:692] New wlr_surface 0x55d8f9c71070 (res 0x55d8f9bfb080)
+00:00:15.135 [DEBUG] [wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x55d8f9c2e9b0 (res 0x55d8f9b34860)
+00:00:15.135 [DEBUG] [wlr] [types/xdg_shell/wlr_xdg_surface.c:388] new xdg_surface 0x55d8f9c61d20 (res 0x55d8f9b34620)
+00:00:15.135 [DEBUG] [sway/desktop/xdg_shell.c:530] New xdg_shell toplevel title='ReShiki Wayland receiver' app_id='GTK Application'
+00:00:15.135 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:112] Rejecting token commit request: serial 0 was never given to client
+00:00:15.136 [DEBUG] [wlr] [types/wlr_xdg_activation_v1.c:306] Rejecting activate request: unknown token
+00:00:15.160 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:15.160 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:15.160 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ca50 horizontally
+00:00:15.160 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9bb4d40 committing with 7 instructions
+00:00:15.173 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9bb4d40 is ready
+00:00:15.173 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9bb4d40
+00:00:15.173 [DEBUG] [sway/tree/container.c:1320] Container 0x55d8f9c3a0e0 entered output 0x55d8f9b05e40
+00:00:15.203 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:15.203 [DEBUG] [sway/criteria.c:726] Found pair: pid=530
+00:00:15.203 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:15.203 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:15.204 [DEBUG] [sway/ipc-server.c:197] New client: fd 42
+00:00:15.204 [DEBUG] [sway/criteria.c:726] Found pair: pid=530
+00:00:15.205 [INFO] [sway/commands.c:261] Handling command 'focus'
+00:00:15.205 [INFO] [sway/ipc-server.c:571] IPC Client 42 disconnected
+00:00:15.206 [DEBUG] [sway/input/input-manager.c:411] adding virtual keyboard: '0:0:wlr_virtual_keyboard_v1'
+00:00:15.206 [DEBUG] [sway/input/seat.c:974] adding device 0:0:wlr_virtual_keyboard_v1 to seat seat0
+00:00:15.417 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:15.417 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:15.448 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:15.448 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:15.448 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ce60 horizontally
+00:00:15.448 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9aec850 committing with 7 instructions
+00:00:15.455 [DEBUG] [sway/desktop/transaction.c:494] Transaction 0x55d8f9aec850 is ready
+00:00:15.455 [DEBUG] [sway/desktop/transaction.c:294] Applying transaction 0x55d8f9aec850
+00:00:15.476 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:15.476 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:15.476 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ce60 horizontally
+00:00:15.476 [DEBUG] [sway/desktop/transaction.c:398] Transaction 0x55d8f9ae3fd0 committing with 6 instructions
+00:00:15.499 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:15.499 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:15.499 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ce60 horizontally
+00:00:15.527 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:15.527 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:15.527 [DEBUG] [sway/tree/arrange.c:77] Arranging 0x7ffc7bd6ce60 horizontally
+00:00:15.564 [DEBUG] [sway/tree/arrange.c:263] Usable area for ws: 1600x1000@0,0
+00:00:15.564 [DEBUG] [sway/tree/arrange.c:297] Arranging workspace '1' at 0.000000, 0.000000
+00:00:15.574 [DEBUG] [sway/input/input-manager.c:202] removing device: '0:0:wlr_virtual_keyboard_v1'
+00:00:15.574 [DEBUG] [sway/input/seat.c:994] removing device 0:0:wlr_virtual_keyboard_v1 from seat seat0
+00:00:15.575 [INFO] [sway/main.c:418] Shutting down sway
+00:00:15.575 [DEBUG] [sway/tree/output.c:264] Disabling output 'HEADLESS-1'
+00:00:15.575 [DEBUG] [sway/tree/workspace.c:145] Destroying workspace '1'
+00:00:15.575 [DEBUG] [sway/tree/output.c:287] Destroying output 'HEADLESS-1'

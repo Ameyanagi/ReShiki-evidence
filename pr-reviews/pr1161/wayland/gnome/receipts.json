@@ -2,7 +2,7 @@
   {
     "id": 1,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-93a0b22b6ece568f3e7a76a1dcfa529b",
+      "application/x-reshiki-clipboard-receipt-2f22bd0be71c2bc6bd286d921e5aa230",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -76,7 +76,7 @@
   {
     "id": 2,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+      "application/x-reshiki-clipboard-receipt-a779e13b0072ec405ce0b66ab6efe6a5",
       "text/plain;charset=utf-8",
       "text/plain",
       "org.opensmiles.smiles",
@@ -94,7 +94,7 @@
   {
     "id": 3,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+      "application/x-reshiki-clipboard-receipt-a779e13b0072ec405ce0b66ab6efe6a5",
       "text/plain;charset=utf-8",
       "text/plain",
       "org.opensmiles.smiles",
@@ -102,13 +102,13 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+    "marker": "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
     "queued": true
   },
   {
     "id": 4,
     "formats": [
-      "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+      "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
       "text/plain;charset=utf-8"
     ],
     "active": true,
@@ -118,17 +118,17 @@
       "bytes": 24,
       "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
     },
-    "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2": {
-      "mime": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
-      "file": "/tmp/qa/gnome/publication-reader-3/received-4-application_x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2.bin",
+    "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311": {
+      "mime": "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
+      "file": "/tmp/qa/gnome/publication-reader-3/received-4-application_x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311.bin",
       "bytes": 69,
-      "sha256": "482901e19394078ef6e1c82ec36fe57dce03c2e4d9775ae3fe56383afd19648d"
+      "sha256": "60085a894933418e46757092b9cff24c810c1f5c10f4ec0cf8b837d95d1538ff"
     }
   },
   {
     "id": 5,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-d0c15c51f4ef0df660a567c7f1bbbff7",
+      "application/x-reshiki-clipboard-receipt-8f2fc264a3c256953bbc75c365b5d8df",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -202,7 +202,7 @@
   {
     "id": 6,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-d0c15c51f4ef0df660a567c7f1bbbff7",
+      "application/x-reshiki-clipboard-receipt-8f2fc264a3c256953bbc75c365b5d8df",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -220,13 +220,13 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+    "marker": "application/x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0",
     "queued": true
   },
   {
     "id": 7,
     "formats": [
-      "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+      "application/x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0",
       "image/png",
       "application/x-reshiki-drawing+json"
     ],
@@ -247,17 +247,17 @@
         349
       ]
     },
-    "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e": {
-      "mime": "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
-      "file": "/tmp/qa/gnome/publication-reader-6/received-7-application_x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e.bin",
+    "application/x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0": {
+      "mime": "application/x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0",
+      "file": "/tmp/qa/gnome/publication-reader-6/received-7-application_x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0.bin",
       "bytes": 69,
-      "sha256": "1f2aa6f6b0d41da6a544965fbdbf2684aa030042d2ffbdccbb3a12b70209d81c"
+      "sha256": "89d16cde2e31f229bc393193c952671af92e89e562629f19b093f50e1808fd28"
     }
   },
   {
     "id": 8,
     "formats": [
-      "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+      "application/x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0",
       "image/png",
       "application/x-reshiki-drawing+json"
     ],
@@ -266,7 +266,7 @@
   {
     "id": 9,
     "formats": [
-      "application/x-reshiki-qa-publication-ba8cdb97e5b64588b5cbae9250641e4e",
+      "application/x-reshiki-qa-publication-1e424e2cfa35452a97bdc041f23a53a0",
       "image/png",
       "application/x-reshiki-drawing+json"
     ],
@@ -309,7 +309,7 @@
   {
     "id": 10,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-6ce2b12b14b54146ea2a0de6a37a194b",
+      "application/x-reshiki-clipboard-receipt-46213abec8d47981f09eef53c85a049e",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -383,7 +383,7 @@
   {
     "id": 11,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+      "application/x-reshiki-clipboard-receipt-ad333b42afc3f483e304bd70d9394215",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -401,13 +401,13 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+    "marker": "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
     "queued": true
   },
   {
     "id": 12,
     "formats": [
-      "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
       "image/png",
       "application/x-reshiki-drawing+json"
     ],
@@ -428,17 +428,17 @@
         349
       ]
     },
-    "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": {
-      "mime": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
-      "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3.bin",
+    "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42": {
+      "mime": "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
+      "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42.bin",
       "bytes": 69,
-      "sha256": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+      "sha256": "7f61451887526a70250eff791d91595be94ae5dfdc05227c5738bdcefd87a91c"
     }
   },
   {
     "id": 13,
     "formats": [
-      "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
       "image/png",
       "application/x-reshiki-drawing+json"
     ],
@@ -481,7 +481,7 @@
   {
     "id": 14,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+      "application/x-reshiki-clipboard-receipt-924f75be0665e07108315730fa7bd25b",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -555,7 +555,7 @@
   {
     "id": 15,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+      "application/x-reshiki-clipboard-receipt-924f75be0665e07108315730fa7bd25b",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -573,13 +573,13 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+    "marker": "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
     "queued": true
   },
   {
     "id": 16,
     "formats": [
-      "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+      "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
       "text/plain;charset=utf-8",
       "image/png",
       "application/x-reshiki-drawing+json"
@@ -607,17 +607,17 @@
       "bytes": 1,
       "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
     },
-    "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f": {
-      "mime": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
-      "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f.bin",
+    "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba": {
+      "mime": "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
+      "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba.bin",
       "bytes": 69,
-      "sha256": "58f7445094267a3146af29441592e93e9d1888f62322b4447c55d14ccce6414f"
+      "sha256": "78f5ac017e5f3634cac9f9f701d41786e4c07c6fe086d9024d5dbc1f14a82f41"
     }
   },
   {
     "id": 17,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-ab7c743a543d440d3c889eb4f8c62046",
+      "application/x-reshiki-clipboard-receipt-bf7bcb16f4b70e34a4987d38407803bc",
       "image/svg+xml",
       "image/png",
       "dev.reshiki.drawing",
@@ -679,7 +679,7 @@
   {
     "id": 18,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-7e59e48286bd290e60ba0cd67135cc5c",
+      "application/x-reshiki-clipboard-receipt-da89839903b6aaf16cd9d91ee30af58f",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -753,7 +753,7 @@
   {
     "id": 19,
     "formats": [
-      "text/plain;charset=utf-8"
+      "image/svg+xml"
     ],
     "active": true,
     "application/x-reshiki-drawing+json": {
@@ -769,13 +769,13 @@
       "error": "g-io-error-quark: No compatible transfer format found (15)"
     },
     "image/svg+xml": {
-      "error": "g-io-error-quark: No compatible transfer format found (15)"
+      "mime": "image/svg+xml",
+      "file": "/tmp/qa/gnome/fresh-receiver/received-19-image_svg+xml.bin",
+      "bytes": 2313,
+      "sha256": "709624e9f735ec943c7c83888f89ba390664d794303cb81952686ad156f3dc8d"
     },
     "text/plain;charset=utf-8": {
-      "mime": "text/plain;charset=utf-8",
-      "file": "/tmp/qa/gnome/fresh-receiver/received-19-text_plain;charset=utf-8.bin",
-      "bytes": 7,
-      "sha256": "c23d7a05b30ddcec3d87364ac60641a818159fbe12792f9886597f2599edceb8"
+      "error": "g-io-error-quark: No compatible transfer format found (15)"
     },
     "text/plain": {
       "error": "g-io-error-quark: No compatible transfer format found (15)"

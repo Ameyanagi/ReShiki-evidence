@@ -1,15 +1,15 @@
 {
-  "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
-  "publisher_pid": 735,
+  "marker": "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
+  "publisher_pid": 592,
   "expected_sha256": {
     "application/x-reshiki-drawing+json": "cc4d9c0094534002d76fd57b04d8163f67a1cab28820ee3ae3ec1e1e9627fc96",
     "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
-    "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+    "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42": "7f61451887526a70250eff791d91595be94ae5dfdc05227c5738bdcefd87a91c"
   },
   "queued": {
     "id": 11,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-b84848c4bfa74b8ddfa44a9133d5cdfc",
+      "application/x-reshiki-clipboard-receipt-ad333b42afc3f483e304bd70d9394215",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -27,20 +27,20 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+    "marker": "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
     "queued": true
   },
   "selection_receipt": {
     "device": "29",
-    "source": "50",
-    "serial": 107,
+    "source": "52",
+    "serial": 106,
     "offer": "4278190080",
-    "marker": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3"
+    "marker": "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42"
   },
   "independent_read": {
     "id": 12,
     "formats": [
-      "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
+      "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
       "image/png",
       "application/x-reshiki-drawing+json"
     ],
@@ -61,11 +61,11 @@
         349
       ]
     },
-    "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3": {
-      "mime": "application/x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3",
-      "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-20078c7ed1194965a6a3d7fa83c188d3.bin",
+    "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42": {
+      "mime": "application/x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42",
+      "file": "/tmp/qa/gnome/publication-reader-11/received-12-application_x-reshiki-qa-publication-82cb771e7b7649caaf4105e9cdcb6f42.bin",
       "bytes": 69,
-      "sha256": "7610a267271f1f4d7ad021db299928addf6f3f426afdcb6030c01951a0505855"
+      "sha256": "7f61451887526a70250eff791d91595be94ae5dfdc05227c5738bdcefd87a91c"
     }
   },
   "verified": true

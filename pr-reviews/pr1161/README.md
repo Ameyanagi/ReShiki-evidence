@@ -38,8 +38,15 @@ fresh profile, and the kept result is the completed run.
 ordinary Copy offers the three text aliases with `CCO`, and that Paste of a published drawing
 next to different text (`C`) inserts the drawing. Results: `wayland/`.
 
-Results: `wayland/gnome` and `wayland/sway`, 13 real compositor checks passed on each
-(`manifest.json`). GNOME's clipboard manager keeps one MIME type after ReShiki exits and ranks
-`text/plain;charset=utf-8` above every image type (mutter `meta-clipboard-manager.c`), so after
-exit it now keeps the SMILES (`fresh-receiver`), where it used to keep a picture. The harness
-asserts exactly that.
+GNOME's clipboard manager (mutter `meta-clipboard-manager.c`) reads one MIME type on every
+owner change, ranking `text/plain;charset=utf-8` above every image type, and keeps it after the
+owner exits only if that read has finished. So at exit the GUI owner re-offers an ordinary Copy
+without its text aliases and waits (bounded at 1.5 s) until a reader has read it, plus 250 ms.
+
+Results (head with that exit handoff): `wayland/gnome` and `wayland/sway`, 13 real compositor
+checks each (`manifest.json`). While ReShiki runs, Copy offers the SMILES text. After exit, GNOME's
+fresh reader gets only `image/svg+xml`, byte-identical to the final copy's SVG
+(`wayland/gnome/fresh-receiver`); Sway keeps nothing, as before. The GNOME QA passed in 5 of 5
+runs on the handoff code, and Sway in 2 of 2. Without the handoff, GNOME kept only the SMILES text.
+
+`linux-x11/after-quit-handoff/` repeats the X11 real-app run on that head: identical to `after/`.

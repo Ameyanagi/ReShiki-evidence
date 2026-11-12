@@ -77,7 +77,7 @@
 ['xdotool', 'key', '--clearmodifiers', 'F12']
 ['xdotool', 'windowfocus', '--sync', '2097157']
 ['xdotool', 'key', '--clearmodifiers', 'ctrl+s']
-['gdbus', 'call', '--session', '--dest', 'org.gnome.Shell', '--object-path', '/org/gnome/Shell', '--method', 'org.gnome.Shell.Eval', 'global.get_window_actors().find(a => a.meta_window.get_pid() === 424).meta_window.delete(global.get_current_time())']
+['gdbus', 'call', '--session', '--dest', 'org.gnome.Shell', '--object-path', '/org/gnome/Shell', '--method', 'org.gnome.Shell.Eval', 'global.get_window_actors().find(a => a.meta_window.get_pid() === 280).meta_window.delete(global.get_current_time())']
 (true, '')
 ['xdotool', 'windowfocus', '--sync', '2097157']
 ['xdotool', 'windowfocus', '--sync', '2097157']

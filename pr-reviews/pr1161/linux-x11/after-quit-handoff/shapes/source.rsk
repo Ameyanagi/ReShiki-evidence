@@ -1,0 +1,16 @@
+{
+ "version": 1,
+ "atoms": [],
+ "bonds": [],
+ "annotations": [
+  {
+   "id": 1,
+   "position": {
+    "x": 0,
+    "y": 0
+   },
+   "text": "Caption only, no chemistry"
+  }
+ ],
+ "arrows": []
+}

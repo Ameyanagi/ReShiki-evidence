@@ -1,0 +1,6 @@
+LibreOffice sees flavors:
+Traceback (most recent call last):
+  File "/home/ryuichi/linux-copy-text-qa/lo_paste.py", line 15, in <module>
+    for f in clip.getContents().getTransferDataFlavors():
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+com.sun.star.lang.DisposedException: Binary URP bridge disposed during call

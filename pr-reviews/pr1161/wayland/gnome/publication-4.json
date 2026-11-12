@@ -1,16 +1,16 @@
 {
-  "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
-  "publisher_pid": 858,
+  "marker": "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
+  "publisher_pid": 711,
   "expected_sha256": {
     "application/x-reshiki-drawing+json": "128805cfa1159f645aa96437cc5a03f633be209ea29e4c176aa0694da2a76bd3",
     "image/png": "f417e53fca162d6a1e860ea6c99f9f509aa4b7ad57db8a8d84264efc7a7d6489",
     "text/plain;charset=utf-8": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
-    "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f": "58f7445094267a3146af29441592e93e9d1888f62322b4447c55d14ccce6414f"
+    "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba": "78f5ac017e5f3634cac9f9f701d41786e4c07c6fe086d9024d5dbc1f14a82f41"
   },
   "queued": {
     "id": 15,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-5729c839c7111ae3589690af25d299f8",
+      "application/x-reshiki-clipboard-receipt-924f75be0665e07108315730fa7bd25b",
       "text/plain;charset=utf-8",
       "text/plain",
       "image/svg+xml",
@@ -28,20 +28,20 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+    "marker": "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
     "queued": true
   },
   "selection_receipt": {
     "device": "29",
-    "source": "52",
+    "source": "51",
     "serial": 154,
     "offer": "4278190080",
-    "marker": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f"
+    "marker": "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba"
   },
   "independent_read": {
     "id": 16,
     "formats": [
-      "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
+      "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
       "text/plain;charset=utf-8",
       "image/png",
       "application/x-reshiki-drawing+json"
@@ -69,11 +69,11 @@
       "bytes": 1,
       "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
     },
-    "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f": {
-      "mime": "application/x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f",
-      "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-qa-publication-b4ed67f2c5f44283b5117bf5cb2a409f.bin",
+    "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba": {
+      "mime": "application/x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba",
+      "file": "/tmp/qa/gnome/publication-reader-15/received-16-application_x-reshiki-qa-publication-8b624f36d44541a5a74208dddd7946ba.bin",
       "bytes": 69,
-      "sha256": "58f7445094267a3146af29441592e93e9d1888f62322b4447c55d14ccce6414f"
+      "sha256": "78f5ac017e5f3634cac9f9f701d41786e4c07c6fe086d9024d5dbc1f14a82f41"
     }
   },
   "verified": true

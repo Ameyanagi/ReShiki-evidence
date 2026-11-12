@@ -1,14 +1,14 @@
 {
-  "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
-  "publisher_pid": 581,
+  "marker": "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
+  "publisher_pid": 441,
   "expected_sha256": {
     "text/plain;charset=utf-8": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9",
-    "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2": "482901e19394078ef6e1c82ec36fe57dce03c2e4d9775ae3fe56383afd19648d"
+    "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311": "60085a894933418e46757092b9cff24c810c1f5c10f4ec0cf8b837d95d1538ff"
   },
   "queued": {
     "id": 3,
     "formats": [
-      "application/x-reshiki-clipboard-receipt-27e30332ecaa0d971961b94fcd851e39",
+      "application/x-reshiki-clipboard-receipt-a779e13b0072ec405ce0b66ab6efe6a5",
       "text/plain;charset=utf-8",
       "text/plain",
       "org.opensmiles.smiles",
@@ -16,7 +16,7 @@
       "UTF8_STRING"
     ],
     "active": true,
-    "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+    "marker": "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
     "queued": true
   },
   "selection_receipt": {
@@ -24,12 +24,12 @@
     "source": "51",
     "serial": 36,
     "offer": "4278190081",
-    "marker": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2"
+    "marker": "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311"
   },
   "independent_read": {
     "id": 4,
     "formats": [
-      "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
+      "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
       "text/plain;charset=utf-8"
     ],
     "active": true,
@@ -39,11 +39,11 @@
       "bytes": 24,
       "sha256": "6521b98d93ab22814d2b8f9a102c6170438d7a9a14c5ffdd4c80e3040f95f4c9"
     },
-    "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2": {
-      "mime": "application/x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2",
-      "file": "/tmp/qa/gnome/publication-reader-3/received-4-application_x-reshiki-qa-publication-6390a5d5db3b40a7bbc7e3daa26fbfa2.bin",
+    "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311": {
+      "mime": "application/x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311",
+      "file": "/tmp/qa/gnome/publication-reader-3/received-4-application_x-reshiki-qa-publication-26bdec4b7e9140be960a81cd22880311.bin",
       "bytes": 69,
-      "sha256": "482901e19394078ef6e1c82ec36fe57dce03c2e4d9775ae3fe56383afd19648d"
+      "sha256": "60085a894933418e46757092b9cff24c810c1f5c10f4ec0cf8b837d95d1538ff"
     }
   },
   "verified": true
