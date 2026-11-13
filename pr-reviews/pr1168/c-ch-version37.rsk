@@ -1,0 +1,4 @@
+{"version": 37, "atoms": [
+ {"id": 1, "element": "C", "position": {"x": 0, "y": 0}, "no_implicit": true, "radical_electrons": 4},
+ {"id": 2, "element": "C", "position": {"x": 84, "y": 0}, "no_implicit": true, "explicit_h": 1, "radical_electrons": 3}
+], "bonds": []}

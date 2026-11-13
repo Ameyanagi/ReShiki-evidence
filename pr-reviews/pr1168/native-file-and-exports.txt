@@ -1,0 +1,21 @@
+# before (831466972dc2), main 95bcf628:
+$ reshiki --cli convert c-ch-version37.rsk --to smiles
+reshiki: error: Could not open document: This drawing was made with a newer version of ReShiki (document version 37). Update ReShiki to open it.
+
+# after (cdd067dce4ee), 3a07d2f8:
+$ reshiki --cli convert c-ch-version37.rsk --to smiles
+[CH].[C]
+$ reshiki --cli convert c-ch-version37.rsk --to mol
+
+     RDKit          2D
+
+  2  0  0  0  0  0  0  0  0  0999 V2000
+    0.0000   -0.0000    0.0000 C   0  0  0  0  0 15  0  0  0  0  0  0
+    3.0000   -0.0000    0.0000 C   0  0  0  0  0  1  0  0  0  0  0  0
+M  RAD  1   2   2
+M  END
+$ reshiki --cli convert c-ch-version37.rsk --to cdxml
+<n id="3" p="30.000000 30.000000" Element="6" Radical="Triplet" NumHydrogens="0" LabelDisplay="Auto" ShowAtomStereo="no" Z="1">
+<n id="4" p="58.800000 30.000000" Element="6" Radical="Doublet" NumHydrogens="1" LabelDisplay="Auto" ShowAtomStereo="no" Z="1">
+$ reshiki --cli name --smiles '[C]'
+reshiki: error: Naming does not support query atoms, radicals, exotic bonds or relative stereo groups
