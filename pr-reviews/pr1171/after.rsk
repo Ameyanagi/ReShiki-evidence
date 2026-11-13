@@ -1,0 +1,63 @@
+{
+  "drawing_style": {
+    "name": "JACS / ACS",
+    "font_family": "Arial",
+    "bond_length_world": 42.0,
+    "bond_length_pt": 14.4,
+    "font_size_pt": 10.0,
+    "line_width_pt": 0.6,
+    "bold_width_pt": 2.0,
+    "margin_width_pt": 1.6,
+    "hash_spacing_pt": 2.5,
+    "bond_spacing_ratio": 0.18,
+    "crossing_clearance_pt": 0.4,
+    "png_dpi": 1200
+  },
+  "atom_labels": {
+    "carbons": "skeletal",
+    "hydrogens": true,
+    "stereo": false
+  },
+  "version": 35,
+  "atoms": [
+    {
+      "id": 1,
+      "element": "C",
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "charge": 0,
+      "radical_electrons": 0,
+      "isotope": 0,
+      "explicit_h": 0,
+      "no_implicit": false,
+      "aromatic": false,
+      "stereo": null,
+      "map_num": 0,
+      "label_h": 0
+    },
+    {
+      "id": 2,
+      "element": "O",
+      "position": {
+        "x": 42.0,
+        "y": 0.0
+      },
+      "charge": 0,
+      "radical_electrons": 0,
+      "isotope": 0,
+      "explicit_h": 0,
+      "no_implicit": false,
+      "aromatic": false,
+      "stereo": null,
+      "map_num": 0,
+      "label_h": 0
+    }
+  ],
+  "bonds": [],
+  "annotations": [],
+  "arrows": [],
+  "graphics": [],
+  "groups": []
+}

@@ -1,0 +1,6 @@
+== before.rsk (version 30)
+reshiki: error: Could not open document: unknown field `crossing_clearance_pt`, expected one of `name`, `font_family`, `bond_length_world`, `bond_length_pt`, `font_size_pt`, `line_width_pt`, `bold_width_pt`, `margin_width_pt`, `hash_spacing_pt`, `bond_spacing_ratio`, `center_chain_double_bonds`, `two_wedge_stereocentres`, `ring_fusion_hydrogens`, `wavy_unknown_alkenes`, `png_dpi`, `charge_before_radical`, `hydrogen_isotopes` at line 13 column 27
+exit 0
+== after.rsk (version 35)
+reshiki: error: Could not open document: This drawing was made with a newer version of ReShiki (document version 35). Update ReShiki to open it.
+exit 0
