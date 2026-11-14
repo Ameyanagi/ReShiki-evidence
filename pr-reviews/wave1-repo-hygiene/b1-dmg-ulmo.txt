@@ -1,32 +1,70 @@
-# macOS 27.0.1 arm64. Input: ReShiki.app from the released reshiki-0.15.0-macos-arm64.zip (ditto).
-# s3/ = the layout scripts/installers.py stages: ReShiki.app, Applications -> /Applications, Install ReShiki.txt
-# s2/ = ReShiki.app alone
+# macOS arm64 (macOS 27.0.1). Branch wave1/repo-hygiene 8382c4ff.
+# Input: ReShiki.app from the released reshiki-0.15.0-macos-arm64.zip.
+# A small driver stages the folder exactly as mac_disk_image() does (ReShiki.app,
+# Applications -> /Applications, Install ReShiki.txt), then calls
+# scripts/installers.py create_disk_image(staging, "ReShiki-ULMO.dmg") with every run() command echoed.
+# It then runs main's command (hdiutil create -format UDZO) on the same staged folder for the size comparison.
+# Temporary folders are shown as $TMPDIR/ReShiki disk image XXXX; hdiutil convert's per-partition
+# "Reading ..." lines are left out.
 
-## Release layout: main (UDZO) vs this branch (ULMO)
-$ hdiutil create -volname ReShiki -srcfolder s3 -format UDZO -ov release-UDZO.dmg
+## create_disk_image: UDZO into a temporary folder, then hdiutil convert to ULMO
+$ ditto reshiki-0.15.0-macos-arm64/ReShiki.app '$TMPDIR/ReShiki disk image XXXX/contents/ReShiki.app'
+$ hdiutil create -volname ReShiki -srcfolder '$TMPDIR/ReShiki disk image XXXX/contents' -format UDZO -ov '$TMPDIR/ReShiki disk image XXXX/zlib.dmg'
+created: $TMPDIR/ReShiki disk image XXXX/zlib.dmg
+hdiutil: WARNING: 'hdiutil create -volname -format ...' is deprecated. Please use 'diskutil image create from/blank --volumeName --format ...' instead.
+$ hdiutil convert '$TMPDIR/ReShiki disk image XXXX/zlib.dmg' -format ULMO -ov -o ReShiki-ULMO.dmg
+Preparing imaging engine…
+Adding resources…
+Elapsed Time:  4.483s
+File size: 25716372 bytes, Checksum: CRC32 $18A6D579
+Sectors processed: 248897, 210099 compressed
+Speed: 22.9MB/s
+Savings: 79.8%
+created: ReShiki-ULMO.dmg
+hdiutil: WARNING: 'hdiutil convert -format ...' is deprecated. Please use 'diskutil image create from --format ...' instead.
+$ hdiutil create -volname ReShiki -srcfolder '$TMPDIR/ReShiki disk image XXXX/contents' -format UDZO -ov ReShiki-UDZO.dmg
+created: ReShiki-UDZO.dmg
+hdiutil: WARNING: 'hdiutil create -volname -format ...' is deprecated. Please use 'diskutil image create from/blank --volumeName --format ...' instead.
 
+## Checks on the result
+$ stat -f '%z %N' ReShiki-UDZO.dmg ReShiki-ULMO.dmg
+42557850 ReShiki-UDZO.dmg
+25716372 ReShiki-ULMO.dmg
 exit 0
-$ hdiutil create -volname ReShiki -srcfolder s3 -format ULMO -ov release-ULMO.dmg
-
+$ hdiutil imageinfo ReShiki-ULMO.dmg 2>/dev/null | grep -E '^Format'
+Format Description: UDIF read-only compressed (lzma)
+Format: ULMO
 exit 0
-$ stat -f '%z %N' release-*.dmg
-42563362 release-UDZO.dmg
-27675753 release-ULMO.dmg
-$ hdiutil verify release-ULMO.dmg
-hdiutil: verify: checksum of "release-ULMO.dmg" is VALID
-
-## ULMO without -fs fails on other staging contents (APFS default; repeatable, 4/4 attempts each)
-$ hdiutil create -volname ReShiki -srcfolder s2 -format ULMO -ov app-only-ULMO.dmg
-hdiutil: create failed - No space left on device
-
-exit 1
-$ hdiutil create -volname ReShiki -srcfolder s2 -format UDZO -ov app-only-UDZO.dmg
-
+$ hdiutil imageinfo ReShiki-UDZO.dmg 2>/dev/null | grep -E '^Format'
+Format Description: UDIF read-only compressed (zlib)
+Format: UDZO
+exit 0
+$ hdiutil verify ReShiki-ULMO.dmg 2>&1 | tail -1
+hdiutil: verify: checksum of "ReShiki-ULMO.dmg" is VALID
+exit 0
+$ hdiutil attach -readonly -nobrowse -mountpoint mnt ReShiki-ULMO.dmg 2>/dev/null >/dev/null
+exit 0
+$ /bin/ls -1F mnt
+Applications@
+Install ReShiki.txt
+ReShiki.app/
+exit 0
+$ readlink mnt/Applications
+/Applications
+exit 0
+$ codesign --verify --deep --strict mnt/ReShiki.app
+exit 0
+$ hdiutil detach mnt 2>/dev/null
+"disk7" ejected.
 exit 0
 
-## Same app-only folder with -fs HFS+
-$ hdiutil create -volname ReShiki -srcfolder s2 -fs HFS+ -format ULMO -ov app-only-HFS-ULMO.dmg
+## Earlier runs of the same create_disk_image on the released 0.15.0 app in the release layout
+# 5 of 5 succeeded: 25,742,502 to 25,742,526 bytes, against 42,563,468 bytes for UDZO of the same folder (-40%).
+# Each image: hdiutil imageinfo Format ULMO (lzma), hdiutil verify VALID, the mount shows the Applications link
+# and ReShiki.app, codesign --verify --deep --strict passes on the mounted app.
 
-exit 0
-26843777 app-only-HFS-ULMO.dmg
-42562704 app-only-UDZO.dmg
+## Why not hdiutil create -format ULMO directly (the first version of this branch)
+# On macOS 27.0.1 arm64, hdiutil create -srcfolder ... -format ULMO failed with
+# "hdiutil: create failed - No space left on device" for the 0.15.0 app alone (6 of 6 attempts)
+# and for the app with only the Applications link (8 of 8). The release layout passed 8 of 8.
+# UDZO never failed. The failure depends on folder contents, so retries do not help.

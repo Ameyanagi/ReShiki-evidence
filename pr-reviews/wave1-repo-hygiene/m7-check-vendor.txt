@@ -1,10 +1,18 @@
+# macOS arm64 (macOS 27.0.1). Branch wave1/repo-hygiene.
 $ git rev-parse --short HEAD
-e1a99203
+8382c4ff
+
+# Empty Cargo home: no registry source and no cached .crate files,
+# so the script downloads all 8 crates from static.crates.io and checks their sha256.
+$ export CARGO_HOME=$(mktemp -d)
+$ find "$CARGO_HOME" -type f | wc -l
+0
 $ uv run --locked python scripts/check_vendor.py
 8 vendored crates match their upstream source and patch
 exit 0
 
-# Scratch copy of e1a99203 (scripts/ + vendor/)
+# Each case below runs on a fresh scratch copy of scripts/ and vendor/ at the same commit,
+# with an empty Cargo home. <copy> stands for the scratch copy's path.
 $ echo '// local edit' >> vendor/usvg/src/lib.rs && python scripts/check_vendor.py
 usvg: src/lib.rs differs from the patched upstream
 exit 1
@@ -13,5 +21,16 @@ usvg: the patched upstream has different files from vendor/usvg
 exit 1
 $ rm vendor/patches/svg2pdf.diff && python scripts/check_vendor.py
 svg2pdf: no vendor/patches/svg2pdf.diff
-usvg: the patched upstream has different files from vendor/usvg
+exit 1
+$ sed -i '' 's/80be9b06/00000000/' vendor/README.md && python scripts/check_vendor.py
+Traceback (most recent call last):
+  File "<copy>/scripts/check_vendor.py", line 136, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "<copy>/scripts/check_vendor.py", line 117, in main
+    upstream = upstream_source(
+               ^^^^^^^^^^^^^^^^
+  File "<copy>/scripts/check_vendor.py", line 52, in upstream_source
+    raise ValueError(f"{package}.crate does not match the sha256 in vendor/README.md")
+ValueError: usvg-0.45.1.crate does not match the sha256 in vendor/README.md
 exit 1

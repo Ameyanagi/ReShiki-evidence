@@ -1,9 +1,16 @@
-$ uv run --locked python -m unittest tests.test_assemble_changelog tests.test_release tests.test_windows_signing_workflows
+$ git rev-parse --short HEAD
+8382c4ff
+$ uv run --locked python scripts/assemble_changelog.py --check
+1 changelog fragments are valid
+exit 0
+$ uv run --locked python -m unittest tests.test_assemble_changelog tests.test_release tests.test_windows_signing_workflows tests.test_download_tls
 ----------------------------------------------------------------------
-Ran 36 tests in 0.798s
+Ran 40 tests in 1.399s
 
 OK
-$ ruff check scripts/assemble_changelog.py scripts/check_vendor.py scripts/build_release.py scripts/installers.py tests/test_assemble_changelog.py
+$ uv run --locked ruff check scripts/assemble_changelog.py scripts/check_vendor.py scripts/build_release.py scripts/installers.py tests/test_assemble_changelog.py tests/test_release.py tests/test_download_tls.py
 All checks passed!
-$ ruff format --check (same files)
-5 files already formatted
+exit 0
+$ uv run --locked ruff format --check (same files)
+7 files already formatted
+exit 0
