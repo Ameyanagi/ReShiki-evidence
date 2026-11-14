@@ -1,0 +1,366 @@
+Ubuntu arm64 (aarch64 Linux, unsigned c_char), RDKit 2026.09.1, wave1/model-io-fixes e209b156
+cargo test --locked --no-fail-fast --features rdkit-reference --test smiles_parse --test smiles_prepare --test smiles_read --test smarts --test reaction_smiles --test engine_migration --test native_import --test molfile_import --test molfile_drawing --test reaction_import
+Branch: 94 passed, 13 failed. main e80cbf4f on the same host, same command: 107 passed, 0 failed.
+Per-target libtest results (branch):
+     Running reference/engine_migration.rs
+test rust_mol_import_preserves_complete_reference_responses ... FAILED
+test rust_smiles_import_preserves_complete_reference_responses ... FAILED
+test rust_reaction_smiles_import_preserves_complete_reference_responses ... FAILED
+test result: FAILED. 47 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; finished in 183.90s
+     Running reference/molfile_drawing.rs
+test imported_drawings_match_native_coordinates_wedges_and_labels ... FAILED
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 38.21s
+     Running reference/molfile_import.rs
+test molecular_file_import_matches_native_reader ... FAILED
+test result: FAILED. 4 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.38s
+     Running reference/native_import.rs
+test mol_import_retains_original_responses_with_source_xyz ... FAILED
+test result: FAILED. 35 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 63.34s
+     Running reference/reaction_import.rs
+test reaction_participants_match_native_reader ... FAILED
+test result: FAILED. 3 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 29.61s
+     Running reference/reaction_smiles.rs
+test mutated_reaction_smiles_preserves_native_framing ... FAILED
+test reaction_smiles_preserves_native_participant_states ... FAILED
+test result: FAILED. 2 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 74.49s
+     Running reference/smarts.rs
+test smarts_validation_matches_native_parser ... FAILED
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.51s
+     Running reference/smiles_parse.rs
+test smiles_graph_matches_native_reader ... FAILED
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.62s
+     Running reference/smiles_prepare.rs
+test smiles_chemistry_matches_native_import ... FAILED
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.63s
+     Running reference/smiles_read.rs
+test extended_smiles_matches_native_import ... FAILED
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.43s
+
+Failing case records per test (name :: mismatch :: input). OK = non-ASCII character at an end of the SMILES/SMARTS text, of a reaction participant, of a dot-separated reaction component, or of a molfile SMARTSQ field.
+Direction: SMILES/SMARTS/reaction SMILES = ReShiki accepts (trims), RDKit here rejects. Molfile/RXN SMARTSQ = RDKit here fails to read the non-ASCII-prefixed SMARTS and leniently accepts the file; ReShiki trims, reads a real query and rejects it as an unsupported substance-group query.
+
+=== --test smiles_parse :: smiles_graph_matches_native_reader  (smiles-parse-failures.txt)
+  OK edge/'C酸' :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='C酸' 
+  OK edge/'酸C' :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='酸C' 
+  OK mutation/577 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='c1ccc/2c=ccc2c1酸' 
+  OK mutation/631 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='N->[Cu]<-N酸' 
+  OK mutation/1140 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='BrN->[Cu]<-N酸' 
+  OK mutation/1766 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='CC(C)(O)C酸' 
+  OK mutation/2056 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='酸F/BrC=C/F' 
+  OK mutation/2174 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='F[C@]1(Cl)=CC1酸' 
+  OK mutation/3025 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='N->[Cu]<-N酸' 
+  OK mutation/3058 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='F/C=C/F酸' 
+  OK mutation/3387 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='酸FN/C=C/F' 
+  OK mutation/3461 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='酸F/CC=C/F' 
+  OK mutation/3479 :: Accepted invalid input: Some("Native reader rejected SMILES") :: input='[13CH3:1][NH3+:2]酸' 
+  -> 13 failing cases
+
+=== --test smiles_prepare :: smiles_chemistry_matches_native_import  (smiles-prepare-failures.txt)
+  OK edge/'C酸' :: Accepted invalid input: Some("Invalid or query SMILES") :: input='C酸' 
+  OK edge/'酸C' :: Accepted invalid input: Some("Invalid or query SMILES") :: input='酸C' 
+  OK mutation/631 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='N->[Cu]<-N酸' 
+  OK mutation/1140 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='BrN->[Cu]<-N酸' 
+  OK mutation/1766 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='CC(C)(O)C酸' 
+  OK mutation/3025 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='N->[Cu]<-N酸' 
+  OK mutation/3058 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='F/C=C/F酸' 
+  OK mutation/3387 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='酸FN/C=C/F' 
+  OK mutation/3461 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='酸F/CC=C/F' 
+  OK mutation/3479 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='[13CH3:1][NH3+:2]酸' 
+  -> 10 failing cases
+
+=== --test smiles_read :: extended_smiles_matches_native_import  (smiles-read-failures.txt)
+  OK edge/'C酸' :: Accepted invalid input: Some("Invalid or query SMILES") :: input='C酸' 
+  OK edge/'酸C' :: Accepted invalid input: Some("Invalid or query SMILES") :: input='酸C' 
+  OK mutation/631 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='N->[Cu]<-N酸' 
+  OK mutation/1140 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='BrN->[Cu]<-N酸' 
+  OK mutation/1766 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='CC(C)(O)C酸' 
+  OK mutation/3025 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='N->[Cu]<-N酸' 
+  OK mutation/3058 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='F/C=C/F酸' 
+  OK mutation/3387 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='酸FN/C=C/F' 
+  OK mutation/3461 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='酸F/CC=C/F' 
+  OK mutation/3479 :: Accepted invalid input: Some("Invalid or query SMILES") :: input='[13CH3:1][NH3+:2]酸' 
+  -> 10 failing cases
+
+=== --test smarts :: smarts_validation_matches_native_parser  (smarts-failures.txt)
+  OK "酸C" :: Some(1) != None :: input='酸C' 
+  OK "🧪C" :: Some(1) != None :: input='🧪C' 
+  OK "酸[C]" :: Some(1) != None :: input='酸[C]' 
+  OK "🧪[C]" :: Some(1) != None :: input='🧪[C]' 
+  OK "酸C name" :: Some(1) != None :: input='酸C name' 
+  OK "🧪C name" :: Some(1) != None :: input='🧪C name' 
+  OK "酸C\nN" :: Some(1) != None :: input='酸C\nN' 
+  OK "🧪C\nN" :: Some(1) != None :: input='🧪C\nN' 
+  OK "酸C(N.O)" :: Some(3) != None :: input='酸C(N.O)' 
+  OK "🧪C(N.O)" :: Some(3) != None :: input='🧪C(N.O)' 
+  OK "酸[$(C)_1]" :: Some(1) != None :: input='酸[$(C)_1]' 
+  OK "🧪[$(C)_1]" :: Some(1) != None :: input='🧪[$(C)_1]' 
+  OK "酸[$(C)_100]" :: Some(1) != None :: input='酸[$(C)_100]' 
+  OK "🧪[$(C)_100]" :: Some(1) != None :: input='🧪[$(C)_100]' 
+  OK "酸[Uut]" :: Some(1) != None :: input='酸[Uut]' 
+  OK "酸[Uut]" :: atomic-number query Some(113) != None :: input='酸[Uut]' 
+  OK "🧪[Uut]" :: Some(1) != None :: input='🧪[Uut]' 
+  OK "🧪[Uut]" :: atomic-number query Some(113) != None :: input='🧪[Uut]' 
+  OK "酸[Uup]" :: Some(1) != None :: input='酸[Uup]' 
+  OK "酸[Uup]" :: atomic-number query Some(115) != None :: input='酸[Uup]' 
+  OK "🧪[Uup]" :: Some(1) != None :: input='🧪[Uup]' 
+  OK "🧪[Uup]" :: atomic-number query Some(115) != None :: input='🧪[Uup]' 
+  OK "酸[C@@@]" :: Some(1) != None :: input='酸[C@@@]' 
+  OK "🧪[C@@@]" :: Some(1) != None :: input='🧪[C@@@]' 
+  OK "酸[C@'TH1]" :: Some(1) != None :: input="酸[C@'TH1]" 
+  OK "🧪[C@'TH1]" :: Some(1) != None :: input="🧪[C@'TH1]" 
+  OK "酸C ||" :: Some(1) != None :: input='酸C ||' 
+  OK "🧪C ||" :: Some(1) != None :: input='🧪C ||' 
+  OK "酸C |$hello$|" :: Some(1) != None :: input='酸C |$hello$|' 
+  OK "🧪C |$hello$|" :: Some(1) != None :: input='🧪C |$hello$|' 
+  -> 30 failing cases
+
+=== --test reaction_smiles :: reaction_smiles_preserves_native_participant_states  (reaction-smiles-bare-failures.txt)
+  OK molecule/edge/'C酸'/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='C酸>>O' 
+  OK molecule/edge/'C酸'/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: C酸") :: input='O>C酸>O' 
+  OK molecule/edge/'C酸'/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: C酸") :: input='O>>C酸' 
+  OK molecule/edge/'酸C'/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸C") :: input='酸C>>O' 
+  OK molecule/edge/'酸C'/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸C") :: input='O>酸C>O' 
+  OK molecule/edge/'酸C'/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸C") :: input='O>>酸C' 
+  OK molecule/mutation/631/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: N->[Cu]<-N酸") :: input='N->[Cu]<-N酸>>O' 
+  OK molecule/mutation/631/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: N->[Cu]<-N酸") :: input='O>N->[Cu]<-N酸>O' 
+  OK molecule/mutation/631/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: N->[Cu]<-N酸") :: input='O>>N->[Cu]<-N酸' 
+  OK molecule/mutation/1140/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: BrN->[Cu]<-N酸") :: input='BrN->[Cu]<-N酸>>O' 
+  OK molecule/mutation/1140/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: BrN->[Cu]<-N酸") :: input='O>BrN->[Cu]<-N酸>O' 
+  OK molecule/mutation/1140/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: BrN->[Cu]<-N酸") :: input='O>>BrN->[Cu]<-N酸' 
+  OK molecule/mutation/1766/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: CC(C)(O)C酸") :: input='CC(C)(O)C酸>>O' 
+  OK molecule/mutation/1766/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: CC(C)(O)C酸") :: input='O>CC(C)(O)C酸>O' 
+  OK molecule/mutation/1766/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: CC(C)(O)C酸") :: input='O>>CC(C)(O)C酸' 
+  OK molecule/mutation/3025/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: N->[Cu]<-N酸") :: input='N->[Cu]<-N酸>>O' 
+  OK molecule/mutation/3025/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: N->[Cu]<-N酸") :: input='O>N->[Cu]<-N酸>O' 
+  OK molecule/mutation/3025/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: N->[Cu]<-N酸") :: input='O>>N->[Cu]<-N酸' 
+  OK molecule/mutation/3058/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: F/C=C/F酸") :: input='F/C=C/F酸>>O' 
+  OK molecule/mutation/3058/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: F/C=C/F酸") :: input='O>F/C=C/F酸>O' 
+  OK molecule/mutation/3058/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: F/C=C/F酸") :: input='O>>F/C=C/F酸' 
+  OK molecule/mutation/3250/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸N->[Cu]") :: input='O>>酸N->[Cu]\x00<-(' 
+  OK molecule/mutation/3387/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸FN/C=C/F") :: input='酸FN/C=C/F>>O' 
+  OK molecule/mutation/3387/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸FN/C=C/F") :: input='O>酸FN/C=C/F>O' 
+  OK molecule/mutation/3387/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸FN/C=C/F") :: input='O>>酸FN/C=C/F' 
+  OK molecule/mutation/3461/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸F/CC=C/F") :: input='酸F/CC=C/F>>O' 
+  OK molecule/mutation/3461/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸F/CC=C/F") :: input='O>酸F/CC=C/F>O' 
+  OK molecule/mutation/3461/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸F/CC=C/F") :: input='O>>酸F/CC=C/F' 
+  OK molecule/mutation/3479/0 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: [13CH3:1][NH3+:2]酸") :: input='[13CH3:1][NH3+:2]酸>>O' 
+  OK molecule/mutation/3479/1 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: [13CH3:1][NH3+:2]酸") :: input='O>[13CH3:1][NH3+:2]酸>O' 
+  OK molecule/mutation/3479/2 :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: [13CH3:1][NH3+:2]酸") :: input='O>>[13CH3:1][NH3+:2]酸' 
+  OK spaces/''/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/''/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/''/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/''/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/''/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/''/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/''/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/''/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='C\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/' '/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/' '/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/' '/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/' '/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/' '/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/' '/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/' '/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/' '/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input=' C\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\t'/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/'\t'/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/'\t'/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/'\t'/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/'\t'/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/'\t'/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/'\t'/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/'\t'/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\n'/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/'\n'/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/'\n'/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/'\n'/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/'\n'/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/'\n'/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/'\n'/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/'\n'/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\nC\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\r'/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/'\r'/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/'\r'/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/'\r'/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/'\r'/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/'\r'/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/'\r'/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/'\r'/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\rC\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\x0b'/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/'\x0b'/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/'\x0b'/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/'\x0b'/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/'\x0b'/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/'\x0b'/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/'\x0b'/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/'\x0b'/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0bC\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\x0c'/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/'\x0c'/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/'\x0c'/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/'\x0c'/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/'\x0c'/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/'\x0c'/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/'\x0c'/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/'\x0c'/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\u3000'/''/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N' 
+  OK spaces/'\u3000'/' '/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N ' 
+  OK spaces/'\u3000'/'\t'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N\t' 
+  OK spaces/'\u3000'/'\n'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N\n' 
+  OK spaces/'\u3000'/'\r'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N\r' 
+  OK spaces/'\u3000'/'\x0b'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N\x0b' 
+  OK spaces/'\u3000'/'\x0c'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK spaces/'\u3000'/'\u3000'/'\u3000' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\u3000C\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK framing/'C>>O酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: O酸") :: input='C>>O酸' 
+  OK framing/'C>>酸O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸O") :: input='C>>酸O' 
+  OK framing/'酸C>>O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸C") :: input='酸C>>O' 
+  -> 98 failing cases
+
+=== --test reaction_smiles :: mutated_reaction_smiles_preserves_native_framing  (reaction-smiles-mutations-failures.txt)
+  OK mutation/103/'(C酸)>N->[Cu]>C1CC1' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='(C酸)>N->[Cu]>C1CC1' 
+  OK mutation/117/'CCO.O酸>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: O酸") :: input='CCO.O酸>O>CC=O' 
+  OK mutation/184/'C>C1.C1.O酸>O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: C1.C1.O酸") :: input='C>C1.C1.O酸>O' 
+  OK mutation/188/'(C1.C1)>>N酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: N酸") :: input='(C1.C1)>>N酸' 
+  OK mutation/274/' O酸>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: O酸") :: input=' O酸>O>CC=O' 
+  OK mutation/329/'(C酸)>N->[Cu]>C1CC1' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='(C酸)>N->[Cu]>C1CC1' 
+  OK mutation/476/'CCO.O>O>CC=O酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: CC=O酸") :: input='CCO.O>O>CC=O酸' 
+  OK mutation/500/'C> C1.C1.O>酸O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸O") :: input='C> C1.C1.O>酸O' 
+  OK mutation/624/'(C.O)>N->[Cu]>C1CC1酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: C1CC1酸") :: input='(C.O)>N->[Cu]>C1CC1酸' 
+  OK mutation/729/'C>C1.C1酸>O\r' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: C1.C1酸") :: input='C>C1.C1酸>O\r' 
+  OK mutation/769/'CCO.O>O> CC酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: CC酸") :: input='CCO.O>O> CC酸' 
+  OK mutation/807/'酸CO.O>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸CO") :: input='酸CO.O>O>CC=O' 
+  OK mutation/870/'C酸.O>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='C酸.O>O>CC=O' 
+  OK mutation/912/'CCO.O酸>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: O酸") :: input='CCO.O酸>O>CC=O' 
+  OK mutation/1008/'CCO.酸O>>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸O") :: input='CCO.酸O>>CC=O' 
+  OK mutation/1139/'\n(C酸)>N->[Cu]>C1CC1' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='\n(C酸)>N->[Cu]>C1CC1' 
+  OK mutation/1253/'CCO酸.O>O>CC\x00=酸O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: CCO酸") :: input='CCO酸.O>O>CC\x00=酸O' 
+  OK mutation/1308/'(C1.C1酸)>>N' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C1.C1酸") :: input='(C1.C1酸)>>N' 
+  OK mutation/1377/'C酸.O>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='C酸.O>O>CC=O' 
+  OK mutation/1524/'CCO.>酸O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸O") :: input='CCO.>酸O>CC=O' 
+  OK mutation/1709/'C>C1.C1.O>酸O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸O") :: input='C>C1.C1.O>酸O' 
+  OK mutation/1731/'CCO.O>酸O\n>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸O\n") :: input='CCO.O>酸O\n>CC=O' 
+  OK mutation/1751/'CCO.O>O>CC=O酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: CC=O酸") :: input='CCO.O>O>CC=O酸' 
+  OK mutation/1774/'酸酸O.O>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸酸O") :: input='酸酸O.O>O>CC=O' 
+  OK mutation/1803/'CCO.O>酸O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸O") :: input='CCO.O>酸O>CC=O' 
+  OK mutation/1912/'C>C1.C1.O>O酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: O酸") :: input='C>C1.C1.O>O酸' 
+  OK mutation/1920/'C酸.O>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C酸") :: input='C酸.O>O>CC=O' 
+  OK mutation/2014/'C>C1.C1酸>O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: C1.C1酸") :: input='C>C1.C1酸>O' 
+  OK mutation/2137/'CCO酸>O>CC O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: CCO酸") :: input='CCO酸>O>CC O' 
+  OK mutation/2225/'(C1.C1酸)>>N' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C1.C1酸") :: input='(C1.C1酸)>>N' 
+  OK mutation/2334/'(C1.C1酸)>>N' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C1.C1酸") :: input='(C1.C1酸)>>N' 
+  OK mutation/2419/'C.CO酸>O>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: CO酸") :: input='C.CO酸>O>CC=O' 
+  OK mutation/2433/'\nCCO. O>O>CC酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: CC酸") :: input='\nCCO. O>O>CC酸' 
+  OK mutation/2446/'CCO.O>O>CC酸\t=(O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: CC酸") :: input='CCO.O>O>CC酸\t=(O' 
+  OK mutation/2459/'C>酸C1.C1.O>O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing agent from SMARTS: 酸C1.C1.O") :: input='C>酸C1.C1.O>O' 
+  OK mutation/2619/'(C1.C1)>>N酸' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: N酸") :: input='(C1.C1)>>N酸' 
+  OK mutation/2822/'[H][C@](F)(Cl)B酸>\t>C' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: [H][C@](F)(Cl)B酸") :: input='[H][C@](F)(Cl)B酸>\t>C' 
+  OK mutation/2843/'酸O.O>>CC=O' :: Accepted rejected input: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸O") :: input='酸O.O>>CC=O' 
+  -> 38 failing cases
+
+=== --test engine_migration :: rust_smiles_import_preserves_complete_reference_responses  (smiles-engine-failures.txt)
+  [summary/unmatched] 1 failed comparisons; categories={"uncategorized": 1}
+  OK edge/'酸C' :: Accepted reference rejection: Some("Could not parse this structure") :: input='酸C' 
+  -> 1 failing cases
+
+=== --test engine_migration :: rust_reaction_smiles_import_preserves_complete_reference_responses  (rsmi-engine-failures.txt)
+  [summary/unmatched] 6 failed comparisons; categories={"uncategorized": 6}
+  OK molecule/edge/'酸C'/0 :: Accepted reference rejection: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸C") :: input='酸C>>O' 
+  OK spaces/'\t'/'\u3000'/'\u3000' :: Accepted reference rejection: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\tC\u3000>\u3000O\u3000>\u3000N\u3000' 
+  OK spaces/'\x0c'/'\x0c'/'\u3000' :: Accepted reference rejection: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: C\u{3000}") :: input='\x0cC\u3000>\u3000O\u3000>\u3000N\x0c' 
+  OK framing/'C>>O酸' :: Accepted reference rejection: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: O酸") :: input='C>>O酸' 
+  OK framing/'C>>酸O' :: Accepted reference rejection: Some("ChemicalReactionParserException: Problems constructing product from SMARTS: 酸O") :: input='C>>酸O' 
+  OK framing/'酸C>>O' :: Accepted reference rejection: Some("ChemicalReactionParserException: Problems constructing reactant from SMARTS: 酸C") :: input='酸C>>O' 
+  -> 6 failing cases
+
+=== --test engine_migration :: rust_mol_import_preserves_complete_reference_responses  (mol-engine-failures.txt)
+  [summary/unmatched] 2 failed comparisons; categories={"uncategorized": 2}
+  OK substance group/SMARTS grammar/20492 :: Unexpected rejection: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C name"' RDKit accepts
+  OK substance group/SMARTS grammar/20624 :: Unexpected rejection: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C ||"' RDKit accepts
+  -> 2 failing cases
+
+=== --test native_import :: mol_import_retains_original_responses_with_source_xyz  (native-import-mol-failures.log)
+  OK substance group/SMARTS grammar/20492 :: Unexpected rejection: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C name"' RDKit accepts
+  OK substance group/SMARTS grammar/20624 :: Unexpected rejection: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C ||"' RDKit accepts
+  -> 2 failing cases
+
+=== --test molfile_import :: molecular_file_import_matches_native_reader  (molfile-import-failures.txt)
+  OK substance groups/SMARTS grammar/20478 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C"' RDKit accepts
+  OK substance groups/SMARTS grammar/20479 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C"' RDKit accepts
+  OK substance groups/SMARTS grammar/20484 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20485 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20491 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C name"' RDKit accepts
+  OK substance groups/SMARTS grammar/20492 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C name"' RDKit accepts
+  OK substance groups/SMARTS grammar/20526 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C(N.O)"' RDKit accepts
+  OK substance groups/SMARTS grammar/20527 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C(N.O)"' RDKit accepts
+  OK substance groups/SMARTS grammar/20568 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[$(C)_1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20569 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[$(C)_1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20582 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[$(C)_100]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20583 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[$(C)_100]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20589 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[Uut]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20590 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[Uut]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20596 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[Uup]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20597 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[Uup]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20603 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C@@@]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20604 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C@@@]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20617 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C@\'TH1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20618 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C@\'TH1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20623 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C ||"' RDKit accepts
+  OK substance groups/SMARTS grammar/20624 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C ||"' RDKit accepts
+  OK substance groups/SMARTS grammar/20635 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C |$hello$|"' RDKit accepts
+  OK substance groups/SMARTS grammar/20636 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C |$hello$|"' RDKit accepts
+  -> 24 failing cases
+
+=== --test molfile_drawing :: imported_drawings_match_native_coordinates_wedges_and_labels  (molfile-drawing-failures.txt)
+  OK substance groups/SMARTS grammar/20478 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C"' RDKit accepts
+  OK substance groups/SMARTS grammar/20479 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C"' RDKit accepts
+  OK substance groups/SMARTS grammar/20484 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20485 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20491 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C name"' RDKit accepts
+  OK substance groups/SMARTS grammar/20492 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C name"' RDKit accepts
+  OK substance groups/SMARTS grammar/20526 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C(N.O)"' RDKit accepts
+  OK substance groups/SMARTS grammar/20527 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C(N.O)"' RDKit accepts
+  OK substance groups/SMARTS grammar/20568 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[$(C)_1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20569 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[$(C)_1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20582 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[$(C)_100]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20583 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[$(C)_100]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20589 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[Uut]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20590 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[Uut]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20596 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[Uup]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20597 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[Uup]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20603 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C@@@]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20604 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C@@@]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20617 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C@\'TH1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20618 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C@\'TH1]"' RDKit accepts
+  OK substance groups/SMARTS grammar/20623 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C ||"' RDKit accepts
+  OK substance groups/SMARTS grammar/20624 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C ||"' RDKit accepts
+  OK substance groups/SMARTS grammar/20635 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C |$hello$|"' RDKit accepts
+  OK substance groups/SMARTS grammar/20636 :: Rejected supported drawing: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C |$hello$|"' RDKit accepts
+  -> 24 failing cases
+
+=== --test reaction_import :: reaction_participants_match_native_reader  (reaction-import-false-failures.txt)
+  OK molecule/2/substance groups/SMARTS grammar/20478 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C"' RDKit accepts
+  OK molecule/0/substance groups/SMARTS grammar/20479 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20484 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20485 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C]"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20491 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C name"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20492 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C name"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20526 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C(N.O)"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20527 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C(N.O)"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20568 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[$(C)_1]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20569 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[$(C)_1]"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20582 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[$(C)_100]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20583 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[$(C)_100]"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20589 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[Uut]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20590 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[Uut]"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20596 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[Uup]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20597 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[Uup]"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20603 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C@@@]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20604 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C@@@]"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20617 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸[C@\'TH1]"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20618 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪[C@\'TH1]"' RDKit accepts
+  OK molecule/0/substance groups/SMARTS grammar/20623 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C ||"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20624 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C ||"' RDKit accepts
+  OK molecule/1/substance groups/SMARTS grammar/20635 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="酸C |$hello$|"' RDKit accepts
+  OK molecule/2/substance groups/SMARTS grammar/20636 :: Rejected supported input: MOL input contains unsupported chemistry: substance-group query :: input='M  V30 1 DAT 0 ATOMS=(1 1) QUERYTYPE=SMARTSQ QUERYOP="=" FIELDDATA="🧪C |$hello$|"' RDKit accepts
+  -> 24 failing cases
+
+TOTAL failing case records: 282; not of the non-ASCII-at-end class: 0
