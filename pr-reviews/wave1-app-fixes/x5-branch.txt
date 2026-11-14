@@ -1,0 +1,65 @@
+ReShiki branch build (5fe512af), macOS arm64, debug build
+RESHIKI_DATA_DIR is a fresh mktemp -d folder
+
+$ ls $RESHIKI_DATA_DIR (size, name)  (before launch: two preference files this build cannot read)
+57  appearance.json
+65  assistant-preferences.json
+--- appearance.json
+{"mode":"a-mode-from-a-newer-build","smart_guides":false}
+--- assistant-preferences.json
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+
+$ ls $RESHIKI_DATA_DIR (size, name)  (after launch, before any setting changes)
+57  appearance.json
+57  appearance.json.bad
+65  assistant-preferences.json
+65  assistant-preferences.json.bad
+64  recovery
+62  update-cache.json
+--- appearance.json
+{"mode":"a-mode-from-a-newer-build","smart_guides":false}
+--- appearance.json.bad
+{"mode":"a-mode-from-a-newer-build","smart_guides":false}
+--- assistant-preferences.json
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+--- assistant-preferences.json.bad
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+--- update-cache.json
+{"checked_at":1794640931,"result":{"Ok":{"version":"0.15.0"}}}
+
+$ ls $RESHIKI_DATA_DIR (size, name)  (after clicking the light/dark button once (appearance.json saved))
+280  appearance.json
+57   appearance.json.bad
+65   assistant-preferences.json
+65   assistant-preferences.json.bad
+64   recovery
+62   update-cache.json
+--- appearance.json
+{"mode":"match_canvas","canvas_theme":"dark","arrange_controls":true,"smart_guides":true,"iupac_style_notes":false,"two_decimal_weight":false,"name_typography":true,"write_unknown_stereo":false,"export_editable_drawing":true,"export_svg_live_text":false,"drawing_style_unit":"pt"}
+--- appearance.json.bad
+{"mode":"a-mode-from-a-newer-build","smart_guides":false}
+--- assistant-preferences.json
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+--- assistant-preferences.json.bad
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+--- update-cache.json
+{"checked_at":1794640931,"result":{"Ok":{"version":"0.15.0"}}}
+
+$ ls $RESHIKI_DATA_DIR (size, name)  (after quitting)
+280  appearance.json
+57   appearance.json.bad
+65   assistant-preferences.json
+65   assistant-preferences.json.bad
+64   recovery
+62   update-cache.json
+--- appearance.json
+{"mode":"match_canvas","canvas_theme":"dark","arrange_controls":true,"smart_guides":true,"iupac_style_notes":false,"two_decimal_weight":false,"name_typography":true,"write_unknown_stereo":false,"export_editable_drawing":true,"export_svg_live_text":false,"drawing_style_unit":"pt"}
+--- appearance.json.bad
+{"mode":"a-mode-from-a-newer-build","smart_guides":false}
+--- assistant-preferences.json
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+--- assistant-preferences.json.bad
+{"auto_apply":"a-value-from-a-newer-build","model":"gpt-6-astra"}
+--- update-cache.json
+{"checked_at":1794640931,"result":{"Ok":{"version":"0.15.0"}}}
+

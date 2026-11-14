@@ -1,0 +1,25 @@
+macOS arm64. Branch wave1/app-fixes at 5fe512af.
+RESHIKI_INCHI_HELPER/RESHIKI_NAMING_HELPER=$CARGO_TARGET_DIR/debug/reshiki, RESHIKI_DATA_DIR=$(mktemp -d)
+
+$ cargo test --locked --bin reshiki -- foreign_paste_follows_the_drawings_label_settings_in_one_undo_step inserted_structures_follow_the_drawings_label_settings closing_the_print_panel_returns_focus_to_the_editor_window expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending a_new_file_epoch_releases_an_import_that_can_no_longer_finish rejected_edit_deselects_the_objects_it_rolled_back invalid_edit_rolls_back_with_edit_cancelled_status unreadable_preferences_are_set_aside_before_a_save_replaces_them
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.51s
+     Running unittests src/main.rs ($CARGO_TARGET_DIR/debug/deps/reshiki-91f8097e70c501fd)
+running 8 tests
+test appearance::settings_tests::unreadable_preferences_are_set_aside_before_a_save_replaces_them ... ok
+test app::transaction_tests::rejected_edit_deselects_the_objects_it_rolled_back ... ok
+test app::transaction_tests::invalid_edit_rolls_back_with_edit_cancelled_status ... ok
+test app::import::tests::a_new_file_epoch_releases_an_import_that_can_no_longer_finish ... ok
+test app::printing::tests::closing_the_print_panel_returns_focus_to_the_editor_window ... ok
+test app::engine_jobs::tests::inserted_structures_follow_the_drawings_label_settings ... ok
+test app::clipboard::tests::foreign_paste_follows_the_drawings_label_settings_in_one_undo_step ... ok
+test app::generic::tests::expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 1752 filtered out; finished in 0.69s
+
+$ cargo test --locked --lib -- assistant::settings::tests::unreadable_preferences_are_set_aside_before_a_save_replaces_them
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 36.93s
+     Running unittests src/lib.rs ($CARGO_TARGET_DIR/debug/deps/reshiki-e773fbfac4fb5e7f)
+running 1 test
+test assistant::settings::tests::unreadable_preferences_are_set_aside_before_a_save_replaces_them ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 398 filtered out; finished in 0.05s

@@ -1,0 +1,57 @@
+macOS arm64. Base e80cbf4f source with only the branch's new and changed tests applied
+(src/app/{clipboard,engine_jobs,generic,import,printing}/tests.rs, src/app/transaction_tests.rs from 5fe512af).
+RESHIKI_INCHI_HELPER/RESHIKI_NAMING_HELPER=$CARGO_TARGET_DIR/debug/reshiki, RESHIKI_DATA_DIR=$(mktemp -d)
+
+$ cargo test --locked --bin reshiki -- foreign_paste_follows_the_drawings_label_settings_in_one_undo_step inserted_structures_follow_the_drawings_label_settings closing_the_print_panel_returns_focus_to_the_editor_window expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending a_new_file_epoch_releases_an_import_that_can_no_longer_finish rejected_edit_deselects_the_objects_it_rolled_back invalid_edit_rolls_back_with_edit_cancelled_status
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 08s
+     Running unittests src/main.rs ($CARGO_TARGET_DIR/debug/deps/reshiki-91f8097e70c501fd)
+running 7 tests
+test app::transaction_tests::rejected_edit_deselects_the_objects_it_rolled_back ... FAILED
+test app::engine_jobs::tests::inserted_structures_follow_the_drawings_label_settings ... FAILED
+test app::clipboard::tests::foreign_paste_follows_the_drawings_label_settings_in_one_undo_step ... FAILED
+test app::import::tests::a_new_file_epoch_releases_an_import_that_can_no_longer_finish ... FAILED
+test app::transaction_tests::invalid_edit_rolls_back_with_edit_cancelled_status ... FAILED
+test app::printing::tests::closing_the_print_panel_returns_focus_to_the_editor_window ... FAILED
+test app::generic::tests::expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending ... FAILED
+failures:
+---- app::transaction_tests::rejected_edit_deselects_the_objects_it_rolled_back stdout ----
+thread 'app::transaction_tests::rejected_edit_deselects_the_objects_it_rolled_back' panicked at src/app/transaction_tests.rs:935:5:
+assertion `left == right` failed
+  left: [1, 3]
+ right: [1]
+---- app::engine_jobs::tests::inserted_structures_follow_the_drawings_label_settings stdout ----
+thread 'app::engine_jobs::tests::inserted_structures_follow_the_drawings_label_settings' panicked at src/app/engine_jobs/tests.rs:135:5:
+assertion failed: selected.iter().all(|id|
+        app.tab.doc.atom(*id).unwrap().display.stereo.show.is_none())
+---- app::clipboard::tests::foreign_paste_follows_the_drawings_label_settings_in_one_undo_step stdout ----
+thread 'app::clipboard::tests::foreign_paste_follows_the_drawings_label_settings_in_one_undo_step' panicked at src/app/clipboard/tests.rs:875:5:
+assertion `left == right` failed
+  left: [Some(false), Some(false)]
+ right: [None, None]
+---- app::import::tests::a_new_file_epoch_releases_an_import_that_can_no_longer_finish stdout ----
+thread 'app::import::tests::a_new_file_epoch_releases_an_import_that_can_no_longer_finish' panicked at src/app/import/tests.rs:855:5:
+assertion failed: !app.tab.busy
+---- app::transaction_tests::invalid_edit_rolls_back_with_edit_cancelled_status stdout ----
+thread 'app::transaction_tests::invalid_edit_rolls_back_with_edit_cancelled_status' panicked at src/app/transaction_tests.rs:253:5:
+assertion `left == right` failed
+  left: [1, 999999]
+ right: [1]
+---- app::printing::tests::closing_the_print_panel_returns_focus_to_the_editor_window stdout ----
+thread 'app::printing::tests::closing_the_print_panel_returns_focus_to_the_editor_window' panicked at src/app/printing/tests.rs:135:9:
+Ok(Outcome { completed: false })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+---- app::generic::tests::expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending stdout ----
+thread 'app::generic::tests::expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending' panicked at src/app/generic/tests.rs:971:5:
+assertion failed: app.generic.pending.is_none()
+failures:
+    app::clipboard::tests::foreign_paste_follows_the_drawings_label_settings_in_one_undo_step
+    app::engine_jobs::tests::inserted_structures_follow_the_drawings_label_settings
+    app::generic::tests::expansion_finishing_under_the_recovery_dialog_is_discarded_not_left_pending
+    app::import::tests::a_new_file_epoch_releases_an_import_that_can_no_longer_finish
+    app::printing::tests::closing_the_print_panel_returns_focus_to_the_editor_window
+    app::transaction_tests::invalid_edit_rolls_back_with_edit_cancelled_status
+    app::transaction_tests::rejected_edit_deselects_the_objects_it_rolled_back
+test result: FAILED. 0 passed; 7 failed; 0 ignored; 0 measured; 1752 filtered out; finished in 0.44s
+error: test failed, to rerun pass `-p reshiki --bin reshiki`
+exit=101
