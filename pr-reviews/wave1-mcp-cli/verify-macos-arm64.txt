@@ -1,0 +1,41 @@
+macOS arm64 · branch 6ca4080b · debug · 2026-11-14
+
+fmt 0
+clippy 0
+test-crates 0
+test-reshiki 0
+DONE
+
+## cargo test --locked -p reshiki-agent -p reshiki-mcp --no-fail-fast
+     Running unittests src/lib.rs (deps/reshiki_agent-fe186aae0321e42f)
+test result: ok. 303 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 2.33s
+     Running tests/contract.rs (deps/contract-ca241c18207c50de)
+test result: ok. 34 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+     Running tests/headless.rs (deps/headless-5be84505de919b3f)
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+     Running unittests src/lib.rs (deps/reshiki_mcp-626105b742101828)
+test result: ok. 57 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+     Running tests/panic_hook.rs (deps/panic_hook-aad5f4b67c431506)
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+     Running tests/transcripts.rs (deps/transcripts-a7b4baa0369df590)
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.01s
+   Doc-tests reshiki_agent
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+   Doc-tests reshiki_mcp
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+## cargo test --locked -p reshiki --no-fail-fast --lib --test agent_api_labels --test agent_api_grants --test cli --test mcp_stdio --test mcp_tools --test headless_parity
+     Running unittests src/lib.rs (deps/reshiki-e773fbfac4fb5e7f)
+test result: ok. 389 passed; 0 failed; 10 ignored; 0 measured; 0 filtered out; finished in 393.86s
+     Running tests/agent_api_grants.rs (deps/agent_api_grants-61f1c674aa6f2c80)
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+     Running tests/agent_api_labels.rs (deps/agent_api_labels-7020a87f1bccef0e)
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+     Running tests/cli.rs (deps/cli-a6789476d7213269)
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.70s
+     Running tests/headless_parity.rs (deps/headless_parity-11e33136c1a7fd08)
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.85s
+     Running tests/mcp_stdio.rs (deps/mcp_stdio-836e201bdd28a5c5)
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.58s
+     Running tests/mcp_tools.rs (deps/mcp_tools-a62288b5bfcc830a)
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.45s

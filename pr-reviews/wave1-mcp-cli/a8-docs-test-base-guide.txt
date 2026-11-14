@@ -1,0 +1,21 @@
+$ git show e80cbf4f:docs/agent-cli.md > docs/agent-cli.md
+$ cargo test --locked --lib -- cli::reference::tests::the_cli_guide_states_every_usage_and_option   # branch 6ca4080b test, base e80cbf4f guide
+running 1 test
+test cli::reference::tests::the_cli_guide_states_every_usage_and_option ... FAILED
+
+failures:
+
+---- cli::reference::tests::the_cli_guide_states_every_usage_and_option stdout ----
+
+thread 'cli::reference::tests::the_cli_guide_states_every_usage_and_option' (128055770) panicked at src/cli/reference/tests.rs:163:5:
+docs/agent-cli.md lacks:
+usage: reshiki --cli name (INPUT | - | --smiles TEXT) [--from FORMAT] [--isotope-style STYLE] [--json] [--locants]
+option row: | `--isotope-style STYLE` | … name … |
+usage: reshiki --cli schema NAME
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    cli::reference::tests::the_cli_guide_states_every_usage_and_option
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 398 filtered out; finished in 0.06s

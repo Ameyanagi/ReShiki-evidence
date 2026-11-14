@@ -1,0 +1,22 @@
+ReShiki base e80cbf4f · reshiki --mcp over stdio · protocol 2025-11-25 · macOS arm64 debug build
+
+$ reshiki --mcp
+> tools/list
+Size = characters of the result's tools array as compact JSON.
+
+tool              whole tool  inputSchema  description
+info                     422           62          187
+document_new             675           62          429
+document_list            358           62          111
+document_close           453          148          119
+import                   938          218          538
+inspect                1,047          278          588
+analyze                  951          278          491
+render                 1,389          627          584
+export                 1,270          399          696
+file_open              1,029          235          616
+file_save              1,587          529          881
+compose               15,155       14,271          703
+apply                  2,028          660        1,191
+
+13 tools, total 27,316 characters

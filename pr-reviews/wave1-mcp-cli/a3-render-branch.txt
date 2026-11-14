@@ -1,0 +1,41 @@
+ReShiki branch 6ca4080b · reshiki --mcp over stdio · protocol 2025-11-25 · macOS arm64 debug build
+
+$ reshiki --mcp
+> {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "import", "arguments": {"format": "smiles", "text": "CC(=O)Oc1ccccc1C(=O)O"}}}
+< result.structuredContent.value.document = "doc_a5d3a604180e2f9285254756165b6be4"
+
+Render with only the required non-null arguments; max_width, max_height, ids and svg_text left out:
+
+> {"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "render", "arguments": {"document": "doc_a5d3a604180e2f9285254756165b6be4", "format": "png"}}}
+< result:
+{
+ "content": [
+  {
+   "type": "text",
+   "text": "{\"validation\":{\"status\":\"valid\"},\"value\":{\"byte_len\":22040,\"height\":257,\"width\":327},\"versions\":{\"app\":\"0.15.0\",\"document\":37,\"engine_protocol\":1,\"operation_api\":1},\"warnings\":[]}"
+  },
+  {
+   "type": "image",
+   "data": "iVBORw0KGgoAAAANSUhEUgAA… (29,388 base64 characters)",
+   "mimeType": "image/png"
+  }
+ ],
+ "structuredContent": {
+  "validation": {
+   "status": "valid"
+  },
+  "value": {
+   "byte_len": 22040,
+   "height": 257,
+   "width": 327
+  },
+  "versions": {
+   "app": "0.15.0",
+   "document": 37,
+   "engine_protocol": 1,
+   "operation_api": 1
+  },
+  "warnings": []
+ },
+ "isError": false
+}

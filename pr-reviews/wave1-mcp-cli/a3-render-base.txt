@@ -1,0 +1,31 @@
+ReShiki base e80cbf4f · reshiki --mcp over stdio · protocol 2025-11-25 · macOS arm64 debug build
+
+$ reshiki --mcp
+> {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "import", "arguments": {"format": "smiles", "text": "CC(=O)Oc1ccccc1C(=O)O"}}}
+< result.structuredContent.value.document = "doc_c925598308853a9ed7376a835747a5bd"
+
+Render with only the required non-null arguments; max_width, max_height, ids and svg_text left out:
+
+> {"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "render", "arguments": {"document": "doc_c925598308853a9ed7376a835747a5bd", "format": "png"}}}
+< isError:
+{
+ "content": [
+  {
+   "type": "text",
+   "text": "{\"error\":{\"code\":\"invalid_arguments\",\"message\":\"missing field `max_width`\"},\"versions\":{\"app\":\"0.15.0\",\"document\":37,\"engine_protocol\":1,\"operation_api\":1}}"
+  }
+ ],
+ "structuredContent": {
+  "error": {
+   "code": "invalid_arguments",
+   "message": "missing field `max_width`"
+  },
+  "versions": {
+   "app": "0.15.0",
+   "document": 37,
+   "engine_protocol": 1,
+   "operation_api": 1
+  }
+ },
+ "isError": true
+}

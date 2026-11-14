@@ -1,0 +1,10 @@
+ReShiki base e80cbf4f · macOS arm64 debug build
+
+$ reshiki --cli name --smiles CCO --json
+{"api":{"operation_api":1,"stability":"experimental"},"experimental":true,"value":{"aliases":["ethanol","ethyl alcohol"],"alternatives":[],"detail":"This name's path is in an audited family, and no rule on it is known to depart from the preferred IUPAC name (IUPAC 2013).","name":"ethanol","preferred":true,"reason":null,"status":"preferred"}}
+exit 0
+
+$ reshiki --cli name --smiles CCO --locants
+{"api":{"operation_api":1,"stability":"experimental"},"experimental":true,"value":{"aliases":["ethanol","ethyl alcohol"],"alternatives":[],"detail":"This name's path is in an audited family, and no rule on it is known to depart from the preferred IUPAC name (IUPAC 2013).","locants":["2","1",null],"name":"ethanol","preferred":true,"reason":null,"status":"preferred"}}
+exit 0
+
