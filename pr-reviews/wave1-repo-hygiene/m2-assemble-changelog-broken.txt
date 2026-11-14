@@ -1,0 +1,26 @@
+# Scratch copy of e1a99203 (scripts/ + docs/) with two broken fragments
+$ cat docs/changes/unreleased/fix-paste-bond.md
+---
+section: Fixed
+issues: 1151
+---
+
+- Pasting a bond keeps its stereo.
+$ cat docs/changes/unreleased/fix-empty.md
+---
+section: Fixes
+issues: [1151]
+---
+
+
+$ python3 scripts/assemble_changelog.py --check
+Changelog fragment error: fix-empty.md: write the change as '- ' bullets
+exit 1
+
+$ rm docs/changes/unreleased/fix-empty.md && python3 scripts/assemble_changelog.py --check
+Changelog fragment error: fix-paste-bond.md: section must be one of Changes, Fixes, Developer
+exit 1
+
+$ sed -i '' 's/^section: Fixed/section: Fixes/' docs/changes/unreleased/fix-paste-bond.md && python3 scripts/assemble_changelog.py --check
+Changelog fragment error: fix-paste-bond.md: expected a [list], got '1151'
+exit 1

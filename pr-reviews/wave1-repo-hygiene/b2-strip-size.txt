@@ -1,0 +1,14 @@
+# Released ReShiki 0.15.0 macOS arm64 executable, ReShiki.app/Contents/MacOS/reshiki from reshiki-0.15.0-macos-arm64.zip
+$ stat -f '%z %N' reshiki-0.15.0
+100855808 reshiki-0.15.0
+$ nm reshiki-0.15.0 | wc -l
+  160118
+$ strip -x -o reshiki-0.15.0-stripped reshiki-0.15.0
+$ stat -f '%z %N' reshiki-0.15.0-stripped
+83492432 reshiki-0.15.0-stripped
+$ nm reshiki-0.15.0-stripped | wc -l
+   14138
+
+# rustc's strip = "symbols" on Apple targets runs `strip -x`, the command above.
+# Linux x64, measured earlier from the released reshiki-0.15.0-linux-x64.tar.gz
+# (not rerun here): reshiki 128,392,536 bytes -> 100,258,128 bytes without symbols.

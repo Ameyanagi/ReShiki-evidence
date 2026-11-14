@@ -1,0 +1,17 @@
+$ git rev-parse --short HEAD
+e1a99203
+$ uv run --locked python scripts/check_vendor.py
+8 vendored crates match their upstream source and patch
+exit 0
+
+# Scratch copy of e1a99203 (scripts/ + vendor/)
+$ echo '// local edit' >> vendor/usvg/src/lib.rs && python scripts/check_vendor.py
+usvg: src/lib.rs differs from the patched upstream
+exit 1
+$ touch vendor/usvg/src/extra.rs && python scripts/check_vendor.py
+usvg: the patched upstream has different files from vendor/usvg
+exit 1
+$ rm vendor/patches/svg2pdf.diff && python scripts/check_vendor.py
+svg2pdf: no vendor/patches/svg2pdf.diff
+usvg: the patched upstream has different files from vendor/usvg
+exit 1

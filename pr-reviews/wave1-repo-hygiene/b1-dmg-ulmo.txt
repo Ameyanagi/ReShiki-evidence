@@ -1,0 +1,32 @@
+# macOS 27.0.1 arm64. Input: ReShiki.app from the released reshiki-0.15.0-macos-arm64.zip (ditto).
+# s3/ = the layout scripts/installers.py stages: ReShiki.app, Applications -> /Applications, Install ReShiki.txt
+# s2/ = ReShiki.app alone
+
+## Release layout: main (UDZO) vs this branch (ULMO)
+$ hdiutil create -volname ReShiki -srcfolder s3 -format UDZO -ov release-UDZO.dmg
+
+exit 0
+$ hdiutil create -volname ReShiki -srcfolder s3 -format ULMO -ov release-ULMO.dmg
+
+exit 0
+$ stat -f '%z %N' release-*.dmg
+42563362 release-UDZO.dmg
+27675753 release-ULMO.dmg
+$ hdiutil verify release-ULMO.dmg
+hdiutil: verify: checksum of "release-ULMO.dmg" is VALID
+
+## ULMO without -fs fails on other staging contents (APFS default; repeatable, 4/4 attempts each)
+$ hdiutil create -volname ReShiki -srcfolder s2 -format ULMO -ov app-only-ULMO.dmg
+hdiutil: create failed - No space left on device
+
+exit 1
+$ hdiutil create -volname ReShiki -srcfolder s2 -format UDZO -ov app-only-UDZO.dmg
+
+exit 0
+
+## Same app-only folder with -fs HFS+
+$ hdiutil create -volname ReShiki -srcfolder s2 -fs HFS+ -format ULMO -ov app-only-HFS-ULMO.dmg
+
+exit 0
+26843777 app-only-HFS-ULMO.dmg
+42562704 app-only-UDZO.dmg

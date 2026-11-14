@@ -1,0 +1,33 @@
+$ git rev-parse --short HEAD
+e1a99203
+$ uv run --locked python scripts/assemble_changelog.py --check
+1 changelog fragments are valid
+exit 0
+
+$ uv run --locked python scripts/assemble_changelog.py
+# Unreleased changes
+
+See [ReShiki 0.15.0](changes-0.15.md) for the prepared release notes and
+[release validation](release-0.15.0-validation.md) for publication status.
+
+Changes merged since then are one file each in
+[`changes/unreleased/`](changes/unreleased/README.md). This page lists them
+below on the website.
+
+## Developer
+
+- Each pull request adds its release note as one file in
+  [`changes/unreleased/`](changes/unreleased/README.md) instead of editing this
+  page or the contributor list. `scripts/assemble_changelog.py` checks the
+  files, assembles this page and moves them into the release notes.
+- macOS disk images use LZMA compression and are about a third smaller.
+- Release executables and the Python package carry no symbols. The Release
+  builds workflow keeps them as a separate symbol file for crash reports.
+- `vendor/README.md` lists every vendored crate with its upstream version, its
+  reason and its patch; `scripts/check_vendor.py` checks each one against its
+  crates.io source.
+- `AGENTS.md` tells coding agents and contributors which checks to run.
+- The old getting-started page redirects to the
+  [install guide](https://reshiki.com/guide/install/). The development,
+  architecture and roadmap notes match the current toolchain, CI and crates.
+exit 0

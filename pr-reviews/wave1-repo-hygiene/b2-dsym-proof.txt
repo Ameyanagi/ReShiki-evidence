@@ -1,0 +1,61 @@
+# Scratch crate with the branch's [profile.release] (rustc 1.99.0, macOS arm64)
+$ cat Cargo.toml
+[package]
+name = "symdemo"
+version = "0.1.0"
+edition = "2021"
+
+# Copied from the branch's root Cargo.toml
+[profile.release]
+debug = "line-tables-only"
+split-debuginfo = "packed"
+strip = "symbols"
+$ cat src/main.rs
+#[inline(never)]
+fn crash_here(n: usize) -> usize {
+    let v: Vec<usize> = (0..n).collect();
+    v[n] // index out of bounds: panics at src/main.rs:4
+}
+fn main() {
+    println!("{}", crash_here(std::env::args().count() + 2));
+}
+$ cargo build --release -q
+exit 0
+$ ls target/release
+symdemo
+symdemo.d
+symdemo.dSYM -> deps/symdemo-75fd2a785a4b0eda.dSYM
+$ nm target/release/symdemo | grep -c crash_here   # executable has no function symbols
+0
+$ dwarfdump --uuid target/release/symdemo target/release/symdemo.dSYM
+UUID: 57C995AB-3F88-35A9-BE5A-38EC38F9B7B6 (arm64) target/release/symdemo
+UUID: 57C995AB-3F88-35A9-BE5A-38EC38F9B7B6 (arm64) target/release/symdemo.dSYM/Contents/Resources/DWARF/symdemo-75fd2a785a4b0eda
+$ dwarfdump --debug-line target/release/symdemo.dSYM | grep -c main.rs
+1
+$ RUST_BACKTRACE=1 target/release/symdemo
+
+thread 'main' (127914299) panicked at src/main.rs:4:6:
+index out of bounds: the len is 3 but the index is 3
+stack backtrace:
+   0: __rustc::rust_begin_unwind
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library/std/src/panicking.rs:679:5
+   1: core::panicking::panic_fmt
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library/core/src/panicking.rs:80:14
+   2: core::panicking::panic_bounds_check
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library/core/src/panicking.rs:271:5
+   3: index<usize>
+             at /rustc/b940084d7eb6a299eb4bfeb8e34901bc051e7ac4/library/core/src/slice/index.rs:238:10
+
+# Without the dSYM next to it, the shipped executable has no names or lines:
+$ mkdir shipped && cp target/release/symdemo shipped/ && RUST_BACKTRACE=1 shipped/symdemo
+
+thread 'main' (127915497) panicked at src/main.rs:4:6:
+index out of bounds: the len is 3 but the index is 3
+stack backtrace:
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+
+# The dSYM restores them for a crash address:
+$ addr=$(nm target/release/symdemo.dSYM/Contents/Resources/DWARF/symdemo-* | grep crash_here | cut -d" " -f1)
+addr=000000010000090c
+$ atos -o target/release/symdemo.dSYM/Contents/Resources/DWARF/symdemo-* -arch arm64 -l 0x100000000 0x$addr
+_RNvCs76zrxM7ygTX_7symdemo10crash_here (in symdemo-75fd2a785a4b0eda) (main.rs:2)
