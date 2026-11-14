@@ -1,0 +1,13 @@
+# branch e209b156, macOS arm64 debug build
+$ head -c 8 ethanol-oxidation-bom.rxn | xxd
+00000000: efbb bf24 5258 4e0a                      ...$RXN.
+
+$ reshiki --cli convert ethanol-oxidation.rxn -o out.smiles; echo "exit $?"; cat out.smiles
+reshiki: warning: This drawing or molecule format does not retain reaction roles. Use RXN/reaction SMILES for reaction data, or .rsk for the complete scheme.
+exit 0
+CC=O.CCO
+
+$ reshiki --cli convert ethanol-oxidation-bom.rxn -o out.smiles; echo "exit $?"; cat out.smiles
+reshiki: warning: This drawing or molecule format does not retain reaction roles. Use RXN/reaction SMILES for reaction data, or .rsk for the complete scheme.
+exit 0
+CC=O.CCO

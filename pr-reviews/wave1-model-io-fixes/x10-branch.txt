@@ -1,0 +1,10 @@
+# branch e209b156, macOS arm64 debug build
+$ grep ZCH zch-out-of-range.mol
+M  V30 1 DAT 0 ATOMS=(1 1) FIELDNAME=ZCH FIELDDATA=256
+M  V30 2 DAT 0 ATOMS=(1 3) FIELDNAME=ZCH FIELDDATA=200
+
+$ reshiki --cli convert zch-out-of-range.mol -o out.smiles; echo "exit $?"; cat out.smiles
+reshiki: warning: Ignored the charge 256 in the ZCH data group: it is outside -128 to 127
+reshiki: warning: Ignored the charge 200 in the ZCH data group: it is outside -128 to 127
+exit 0
+CCO

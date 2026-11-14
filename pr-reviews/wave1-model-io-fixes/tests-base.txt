@@ -1,0 +1,40 @@
+# base e80cbf4f, macOS arm64, test profile. The branch's new tests for X2, R1, X3, R2 and X6
+# were copied onto the base source unchanged. evidence_dump_* are throwaway tests
+# that write the drawings shown in the PR; they are not part of the branch.
+
+$ cargo test --locked -p reshiki-model --lib -- joining::companion_tests joining::evidence_dump \
+      editing::tests::ring_snap_refuses_ring_atoms_with_state_it_would_delete --nocapture
+snapped: true, atoms: 10, radical atoms: []
+thread 'editing::tests::ring_snap_refuses_ring_atoms_with_state_it_would_delete' (128395077) panicked at crates/model/src/editing/tests.rs:938:13:
+assertion failed: snap_ring(&mut doc, &moving, delta, 5.0).is_none()
+test editing::tests::ring_snap_refuses_ring_atoms_with_state_it_would_delete ... FAILED
+test joining::evidence_dump::evidence_dump_ring_snap ... ok
+thread 'joining::companion_tests::move_and_attach_keeps_depth_appearance_on_the_moved_atoms' (128395081) panicked at crates/model/src/joining/companion_tests.rs:46:10:
+called `Result::unwrap()` on an `Err` value: "Invalid depth appearance scope"
+thread 'joining::companion_tests::move_and_attach_keeps_a_named_molecule_caption' (128395079) panicked at crates/model/src/joining/companion_tests.rs:46:10:
+called `Result::unwrap()` on an `Err` value: "Invalid molecule-name caption association"
+thread 'joining::companion_tests::sharing_an_atom_keeps_the_name_and_depth_scope_of_the_moved_molecule' (128395082) panicked at crates/model/src/joining/companion_tests.rs:46:10:
+called `Result::unwrap()` on an `Err` value: "No compatible attachment: match elements and an eligible bond, with room for the new bonds."
+thread 'joining::companion_tests::move_and_attach_keeps_an_arrow_condition_label' (128395080) panicked at crates/model/src/joining/companion_tests.rs:46:10:
+called `Result::unwrap()` on an `Err` value: "Duplicate or zero object ID"
+test joining::companion_tests::move_and_attach_keeps_a_named_molecule_caption ... FAILED
+test joining::companion_tests::move_and_attach_keeps_depth_appearance_on_the_moved_atoms ... FAILED
+test joining::companion_tests::sharing_an_atom_keeps_the_name_and_depth_scope_of_the_moved_molecule ... FAILED
+test joining::companion_tests::move_and_attach_keeps_an_arrow_condition_label ... FAILED
+connect: error: Invalid molecule-name caption association
+share: error: No compatible attachment: match elements and an eligible bond, with room for the new bonds.
+test joining::evidence_dump::evidence_dump_move_and_attach ... ok
+thread 'joining::companion_tests::move_and_attach_keeps_a_model_linked_to_the_moved_atoms' (128395078) panicked at crates/model/src/joining/companion_tests.rs:121:5:
+assertion `left == right` failed
+  left: []
+ right: [1, 2]
+test joining::companion_tests::move_and_attach_keeps_a_model_linked_to_the_moved_atoms ... FAILED
+test result: FAILED. 2 passed; 6 failed; 0 ignored; 0 measured; 1429 filtered out; finished in 0.04s
+
+$ cargo test --locked -p reshiki-io --lib -- chemistry::cleanup::tests::cleanup_with_keep_orientation_keeps_the_handedness_of_the_drawing \
+      chemistry::cleanup::tests::evidence_dump_keep_orientation
+thread 'chemistry::cleanup::tests::cleanup_with_keep_orientation_keeps_the_handedness_of_the_drawing' (128398354) panicked at crates/io/src/chemistry/cleanup/tests.rs:836:9:
+mirror -1: ring area 7.742147855570487 became -7.742148302650348
+test chemistry::cleanup::tests::cleanup_with_keep_orientation_keeps_the_handedness_of_the_drawing ... FAILED
+test chemistry::cleanup::tests::evidence_dump_keep_orientation ... ok
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 641 filtered out; finished in 0.12s

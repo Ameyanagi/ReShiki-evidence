@@ -1,0 +1,24 @@
+# branch e209b156, macOS arm64 debug build, umask 022
+# Listing: stat -f '%Sp %6z  %N%SY' (mode, size, name, link target)
+
+$ stat -f '%Sp %6z  %N%SY' plain.rsk link.rsk target.rsk    # before
+-rw-r--r--    302  plain.rsk
+lrwxr-xr-x     10  link.rsk -> target.rsk
+-rw-r--r--    302  target.rsk
+
+# 1. reshiki --open link.rsk, then Import > Examples > Benzene
+#    Before saving, the data folder holds the recovery draft of the change:
+$ cd "$RESHIKI_DATA_DIR" && find . -type f -exec stat -f '%Sp %6z  %N' {} \;
+-rw-------     62  ./update-cache.json
+-rw-------   3110  ./recovery/<pid>-<time>-0.json
+#    then Save
+# 2. reshiki --open plain.rsk, then Import > Examples > Benzene, then Save
+
+$ stat -f '%Sp %6z  %N%SY' plain.rsk link.rsk target.rsk    # after
+-rw-r--r--   5126  plain.rsk
+lrwxr-xr-x     10  link.rsk -> target.rsk
+-rw-r--r--   5126  target.rsk
+
+# plain.rsk keeps its 0644 mode.
+# link.rsk is still a link, and the save went to target.rsk (now 5126 bytes,
+# still 0644). The recovery draft and the update cache stay owner-only (0600).

@@ -1,0 +1,19 @@
+# base e80cbf4f, macOS arm64 debug build, umask 022
+# Listing: stat -f '%Sp %6z  %N%SY' (mode, size, name, link target)
+
+$ stat -f '%Sp %6z  %N%SY' plain.rsk link.rsk target.rsk    # before
+-rw-r--r--    302  plain.rsk
+lrwxr-xr-x     10  link.rsk -> target.rsk
+-rw-r--r--    302  target.rsk
+
+# 1. reshiki --open link.rsk, then Import > Examples > Benzene, then Save
+# 2. reshiki --open plain.rsk, then Import > Examples > Benzene, then Save
+
+$ stat -f '%Sp %6z  %N%SY' plain.rsk link.rsk target.rsk    # after
+-rw-------   5126  plain.rsk
+-rw-------   5126  link.rsk
+-rw-r--r--    302  target.rsk
+
+# plain.rsk lost its 0644 mode and became owner-only (0600).
+# link.rsk is no longer a link: the save replaced it with a new 0600 file,
+# and target.rsk still holds the old drawing (302 bytes).

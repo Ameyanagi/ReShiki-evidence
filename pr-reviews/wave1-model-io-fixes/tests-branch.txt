@@ -1,0 +1,24 @@
+# branch e209b156, macOS arm64, test profile. The branch's new tests for X2, R1, X3, R2 and X6
+# are run as committed. evidence_dump_* are throwaway tests
+# that write the drawings shown in the PR; they are not part of the branch.
+
+$ cargo test --locked -p reshiki-model --lib -- joining::companion_tests joining::evidence_dump \
+      editing::tests::ring_snap_refuses_ring_atoms_with_state_it_would_delete --nocapture
+snapped: false, atoms: 12, radical atoms: [9]
+test editing::tests::ring_snap_refuses_ring_atoms_with_state_it_would_delete ... ok
+test joining::companion_tests::move_and_attach_keeps_an_arrow_condition_label ... ok
+test joining::companion_tests::move_and_attach_keeps_a_named_molecule_caption ... ok
+test joining::evidence_dump::evidence_dump_ring_snap ... ok
+test joining::companion_tests::sharing_an_atom_keeps_the_name_and_depth_scope_of_the_moved_molecule ... ok
+test joining::companion_tests::move_and_attach_keeps_depth_appearance_on_the_moved_atoms ... ok
+connect: ok, names [MoleculeName { annotation: 4, atoms: [1, 2, 3], smiles: "CCO", text: "ethanol" }]
+share: ok, names [MoleculeName { annotation: 4, atoms: [10, 2, 3], smiles: "CCO", text: "ethanol" }]
+test joining::evidence_dump::evidence_dump_move_and_attach ... ok
+test joining::companion_tests::move_and_attach_keeps_a_model_linked_to_the_moved_atoms ... ok
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 1430 filtered out; finished in 0.04s
+
+$ cargo test --locked -p reshiki-io --lib -- chemistry::cleanup::tests::cleanup_with_keep_orientation_keeps_the_handedness_of_the_drawing \
+      chemistry::cleanup::tests::evidence_dump_keep_orientation
+test chemistry::cleanup::tests::cleanup_with_keep_orientation_keeps_the_handedness_of_the_drawing ... ok
+test chemistry::cleanup::tests::evidence_dump_keep_orientation ... ok
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 644 filtered out; finished in 0.12s

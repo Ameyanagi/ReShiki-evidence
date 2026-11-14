@@ -1,0 +1,8 @@
+# base e80cbf4f, macOS arm64 debug build
+$ grep ZCH zch-out-of-range.mol
+M  V30 1 DAT 0 ATOMS=(1 1) FIELDNAME=ZCH FIELDDATA=256
+M  V30 2 DAT 0 ATOMS=(1 3) FIELDNAME=ZCH FIELDDATA=200
+
+$ reshiki --cli convert zch-out-of-range.mol -o out.smiles; echo "exit $?"; cat out.smiles
+exit 0
+CC[O-56]
