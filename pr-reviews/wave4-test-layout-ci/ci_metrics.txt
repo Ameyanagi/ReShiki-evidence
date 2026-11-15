@@ -1,0 +1,14 @@
+# Checks runs on base fcd2cde61. Minutes. 'nomac' leaves out macOS legs (only the main push run has them).
+# run|scope	jobs	wall	runner_all	runner_rust	rust_jobs	longest job
+main push (fcd2cde61)|all [run 43678477374]	25	32.2	218.9	180.8	9	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 1/2) 31.5
+main push (fcd2cde61)|nomac [run 43678477374]	21	32.2	147.2	117.2	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 1/2) 31.5
+PR feat/github-sync|all [run 43693790281]	22	28.5	156.9	126.7	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2) 27.6
+PR feat/github-sync|nomac [run 43693790281]	22	28.5	156.9	126.7	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2) 27.6
+PR feat/settings-page|all [run 43693534764]	22	26.3	145.3	114.8	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2) 25.4
+PR feat/settings-page|nomac [run 43693534764]	22	26.3	145.3	114.8	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2) 25.4
+PR wave3/palette-help-a11y|all [run 43687965486]	22	27.7	144.4	115.8	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 1/2) 26.8
+PR wave3/palette-help-a11y|nomac [run 43687965486]	22	27.7	144.4	115.8	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 1/2) 26.8
+PR feat/linked-properties|all [run 43686049418]	22	25.9	136.2	106.4	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2) 25.1
+PR feat/linked-properties|nomac [run 43686049418]	22	25.9	136.2	106.4	6	rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2) 25.1
+this PR (da335033f)|all [run 43696986530]	26	18.4	125.7	96.3	10	rust lint+goldens (ubuntu-24.04, x86_64-unknown-linux-gnu) 17.7
+this PR (da335033f)|nomac [run 43696986530]	26	18.4	125.7	96.3	10	rust lint+goldens (ubuntu-24.04, x86_64-unknown-linux-gnu) 17.7

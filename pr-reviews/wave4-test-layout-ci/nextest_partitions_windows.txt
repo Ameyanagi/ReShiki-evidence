@@ -1,0 +1,11 @@
+# 'Starting … tests across N binaries' and 'Summary' lines of the Windows nextest partitions
+## main run 43678477374 (rust (windows, 1/2) and 2/2)
+    Starting 2769 tests across 130 binaries (3027 tests and 2 binaries skipped)
+     Summary [ 365.729s] 2769 tests run: 2769 passed (2 slow), 3027 skipped
+    Starting 2775 tests across 130 binaries (3021 tests and 2 binaries skipped)
+     Summary [ 402.959s] 2775 tests run: 2775 passed (2 slow), 3021 skipped
+## PR run 43696986530 (rust (windows, 1/2) and 2/2)
+    Starting 2793 tests across 31 binaries (3001 tests and 2 binaries skipped)
+     Summary [ 292.427s] 2793 tests run: 2793 passed (1 slow), 3001 skipped
+    Starting 2752 tests across 31 binaries (3042 tests and 2 binaries skipped)
+     Summary [ 363.561s] 2752 tests run: 2752 passed (2 slow), 3042 skipped

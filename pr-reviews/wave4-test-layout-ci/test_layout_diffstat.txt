@@ -1,0 +1,20 @@
+ .config/nextest.toml          |   4 +---
+ Cargo.toml                    |  19 ++++++++++++++++++-
+ tests/agent_api_cli_files.rs  |   3 +--
+ tests/agent_api_grants.rs     |   3 +--
+ tests/agent_api_labels.rs     |   3 +--
+ tests/agent_api_malformed.rs  |   3 +--
+ tests/agent_api_runtime.rs    |   3 +--
+ tests/cli.rs                  |   3 +--
+ tests/headless_launch.rs      |   3 +--
+ tests/headless_parity.rs      |   3 +--
+ tests/inchi_input.rs          |   3 +--
+ tests/inchi_output.rs         |   6 ++----
+ tests/inchi_rust.rs           |   6 ++----
+ tests/it.rs                   | 136 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/mcp_shutdown.rs         |   3 +--
+ tests/mcp_stdio.rs            |   3 +--
+ tests/mcp_tools.rs            |   3 +--
+ tests/test_agent_api_gates.py |  13 +++++++------
+ tests/test_module_index.py    |  35 +++++++++++++++++++++++++++++++++++
+ 19 files changed, 213 insertions(+), 42 deletions(-)

@@ -1,0 +1,40 @@
+# Checks run 43695541196 (head 859950233, before da335033f), job "rust extra (windows)" 132755318659, step "Test with the real renderer on Windows" (excerpt)
+        SKIP [         ] (───────) reshiki::bin/reshiki app::document_styles::tests::unfinished_input_blocks_switch_and_apply_without_accepting_a_prefix
+        SKIP [         ] (───────) reshiki::bin/reshiki app::document_tab::tests::a_replaced_tab_keeps_its_document_selection_view_and_undo
+        SKIP [         ] (───────) reshiki::bin/reshiki app::document_tab::tests::hue_previews_show_the_unsaved_dot_until_cancelled
+        SKIP [         ] (───────) reshiki::bin/reshiki app::document_tab::tests::pending_per_file_work_prevents_reuse_until_it_is_cleared
+        SKIP [         ] (───────) reshiki::bin/reshiki app::document_tab::tests::preferred_canvas_initializes_a_clean_reusable_drawing
+        SKIP [         ] (───────) reshiki::bin/reshiki app::document_tab::tests::unsaved_changes_follow_save_edit_undo_and_redo
+        SKIP [         ] (───────) reshiki::bin/reshiki app::drawing_panel_capture::manual_drawing_panel_state_renderer_evidence
+        PASS [   1.062s] ( 31/145) reshiki::bin/reshiki app::document_styles::tests::drawing_style_fields_keep_focus_through_incomplete_units
+        PASS [   6.168s] ( 32/145) reshiki::bin/reshiki app::drawing_polish_qa::drawing_polish_renderer_palette
+        FAIL [  24.808s] ( 33/145) reshiki::bin/reshiki app::atom_text::presentation_tests::delayed_editor_real_pointer_focus_keyboard_and_ime
+  stdout ───
+
+    running 1 test
+    test app::atom_text::presentation_tests::delayed_editor_real_pointer_focus_keyboard_and_ime ... FAILED
+
+    failures:
+
+    failures:
+        app::atom_text::presentation_tests::delayed_editor_real_pointer_focus_keyboard_and_ime
+
+    test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 1813 filtered out; finished in 24.72s
+
+  stderr ───
+
+    thread 'app::atom_text::presentation_tests::delayed_editor_real_pointer_focus_keyboard_and_ime' (1516) panicked at src\app\atom_text\presentation_tests.rs:127:5:
+    Invisible dialog must not capture the second click
+    note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+        SKIP [         ] (───────) reshiki::bin/reshiki app::drawing_polish_qa::manual_prepare_rotation_polish_fixture
+        SKIP [         ] (───────) reshiki::bin/reshiki app::engine_jobs::cancel_tests::cancel_drops_the_active_future_and_preserves_the_drawing
+        SKIP [         ] (───────) reshiki::bin/reshiki app::engine_jobs::cancel_tests::cancel_remains_available_while_rerunning_a_cleanup_preview
+        PASS [   3.994s] (144/145) reshiki::bin/reshiki canvas::tests::pointer_hover_redraw_reuses_scene_geometry_at_fit
+        SLOW [> 60.000s] (───────) reshiki::bin/reshiki canvas::render_parity_tests::off_screen_culling_matches_unculled_pixels
+        PASS [  77.591s] (145/145) reshiki::bin/reshiki canvas::render_parity_tests::off_screen_culling_matches_unculled_pixels
+────────────
+     Summary [ 189.848s] 145 tests run: 144 passed (1 slow), 1 failed, 2050 skipped
+        FAIL [  24.808s] ( 33/145) reshiki::bin/reshiki app::atom_text::presentation_tests::delayed_editor_real_pointer_focus_keyboard_and_ime
+error: test run failed
+##[error]Process completed with exit code 1.

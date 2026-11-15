@@ -1,0 +1,141 @@
+# main run 43678477374, job 'rust (windows, 1/2)' 132706441510: ignored renderer tests that passed (69)
+app::context_menu::cascade_tests::closed_cascade_forwards_real_cursor_mouse_and_widget_operations	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::command_shortcuts_close_the_menu_and_dispatch_copy_undo_and_redo_once	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::compact_menu_pins_copy_and_delete_with_keyboard_and_accessibility_order	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::grabbed_scrollbar_keeps_scrolling_outside_panel_and_releases_there	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::hover_cascades_keep_parent_and_follow_rows_at_both_window_edges	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::keyboard_navigation_reveals_rows_and_escape_closes_the_whole_cascade	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::menu_boundaries_keep_caches_but_not_stale_pointer_or_released_modifiers	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::scrollable_bond_menu_reserves_gutter_for_text_and_shortcuts	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::submenu_clicks_recheck_disabled_commands_and_preserve_selection_and_undo	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::submenu_hover_requires_rest_and_pointer_highlight_does_not_wait_for_app_state	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::touch_uses_finger_position_for_submenu_clicks_and_outside_dismissal	[app::context_menu::cascade_tests:: -- --ignored]
+app::context_menu::cascade_tests::typing_ime_and_unbound_shortcuts_stay_inside_the_menu	[app::context_menu::cascade_tests:: -- --ignored]
+app::help::tests::help_renderer_evidence	[app::help::tests::help_renderer_evidence -- --exact --ignored]
+app::inspector::tests::figure_export_buttons_publish_readable_labels	[app::inspector::tests::figure_export_buttons_publish_readable_labels -- --exact --ignored]
+app::naming::aliases::tests::alternative_names_render_with_accessible_copy_actions_without_font_snapshots	[app::naming:: -- --ignored]
+app::naming::aliases::tests::expanded_details_resolve_action_is_accessible_and_disabled_while_pending	[app::naming:: -- --ignored]
+app::naming::aliases::tests::import_details_publish_distinct_alias_and_systematic_actions	[app::naming:: -- --ignored]
+app::naming::import_dock::tests::default_dock_exposes_one_insert_and_collapses_preview_and_details	[app::naming:: -- --ignored]
+app::naming::online::tests::confirmation_controls_are_visible_and_dispatch_the_displayed_consent	[app::naming:: -- --ignored]
+app::naming::tests::controls_publish_named_native_actions_and_editable_values	[app::naming:: -- --ignored]
+app::naming::tests::scrolled_insert_click_reaches_button_instead_of_preview	[app::naming:: -- --ignored]
+app::nmr::panel::tests::row_measurement_skips_later_rows_in_a_column	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::plot::tests::actual_plot_has_four_teal_sticks_separate_labels_and_preserves_history	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::plot::tests::dense_marker_keeps_all_distinct_original_atoms_accessible_and_cycleable	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::plot::tests::maximum_dense_report_preserves_native_accessibility_and_all_marker_actions	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::compact_nmr_scrolls_to_later_sites_without_scrolling_the_drawing	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::default_and_reset_palette_clear_fixture_drawing_without_moving_camera	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::default_palette_shows_every_row_that_fits_beside_the_scrollbar	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::docked_report_is_always_full_and_undock_restores_the_floating_collapse	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::drawing_gesture_ending_over_nmr_stops_without_erasing_after_release	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::floating_nmr_preserves_canvas_and_owns_only_its_pointer_input	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::hybrid_nmr_docks_drags_resizes_and_links_plot_labels_without_canvas_edits	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::label_checkbox_and_popup_use_real_checked_actions_and_own_batched_clicks	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::label_menu_dismissal_and_foreign_canvas_release_keep_pointer_ownership	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::mock_aligned_panel_measures_rows_and_recovers_small_viewport_scrolling	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::native_batched_palette_buttons_use_ordered_press_and_release_targets	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::native_batched_palette_drags_keep_press_position_and_release_ownership	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::nmr_surfaces_partial_redraws_preserve_unchanged_pixels	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::opening_and_resetting_palette_preserve_origin_when_resizing_visible_corner	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::rendered_nmr_controls_publish_values_and_live_native_actions	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::tab_switch_restores_dock_and_never_duplicates_floating_nmr_controls	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::visible_resize_glyph_drags_without_stealing_footer_controls	[app::nmr:: -- --include-ignored --test-threads=1]
+app::nmr::tests::wheel_over_the_docked_report_scrolls_the_inspector	[app::nmr:: -- --include-ignored --test-threads=1]
+app::numeric_transforms::focus::tests::handle_shortcut_focuses_selects_and_reveals_the_field_in_both_window_sizes	[app::numeric_transforms::focus::tests::handle_shortcut_focuses_selects_and_reveals_the_field_in_both_window_sizes -- --exact --ignored]
+app::shortcut_focus_tests::command_palette_rows_are_named_buttons	[app::shortcut_focus_tests::context_row_rotation_field_applies_a_typed_angle -- --exact --ignored]
+app::shortcut_focus_tests::command_palette_unavailable_row_click_keeps_typing_in_the_search_field	[app::shortcut_focus_tests::context_row_rotation_field_applies_a_typed_angle -- --exact --ignored]
+app::shortcut_focus_tests::context_row_rotation_field_applies_a_typed_angle	[app::shortcut_focus_tests::context_row_rotation_field_applies_a_typed_angle -- --exact --ignored]
+app::shortcut_focus_tests::join_chord_stays_in_real_fields_and_coordinates_selected_en_after_blur	[app::shortcut_focus_tests::context_row_rotation_field_applies_a_typed_angle -- --exact --ignored]
+app::shortcut_focus_tests::review_close::assistant::review_close_returns_focus_assistant_apply_pointer	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::assistant::review_close_returns_focus_assistant_discard_pointer	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::proposals::review_close_returns_focus_mapping_apply	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::proposals::review_close_returns_focus_mapping_discard	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_atom_label	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_cleanup	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_cleanup_apply_with_import_focused	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_failed_structure_insert_keeps_editor	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_name_import	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_optimization	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_preview_buttons	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_structure_import_escape	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_structure_import_insert	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::review_close::review_close_returns_focus_tab_without_preview_keeps_drawing	[app::shortcut_focus_tests::review_close -- --ignored]
+app::shortcut_focus_tests::tool_palette_pointer_gestures_and_keyboard_activation_have_one_owner	[app::shortcut_focus_tests::tool_palette_pointer_gestures_and_keyboard_activation_have_one_owner -- --exact --ignored]
+app::shortcut_focus_tests::updates_automatic_check_supports_modal_keyboard_traversal_and_activation	[app::shortcut_focus_tests::updates_ -- --ignored]
+app::shortcut_focus_tests::updates_dialog_captures_keys_before_editors_file_commands_and_canvas	[app::shortcut_focus_tests::updates_ -- --ignored]
+app::workspace::inspector_motion_qa::a_new_drawing_shows_selected_properties_from_the_top	[app::workspace::inspector_motion_qa::a_new_drawing_shows_selected_properties_from_the_top -- --exact --ignored]
+appearance::tests::escape_closes_an_open_pick_list	[appearance::tests::escape_closes_an_open_pick_list -- --exact --ignored]
+canvas::nmr::tests::actual_nmr_selection_is_a_filled_halo_and_ordinary_selection_is_unchanged	[app::nmr:: -- --include-ignored --test-threads=1]
+canvas::nmr::tests::assignment_ink_is_legible_on_light_and_dark_pages_and_independent_of_chrome	[app::nmr:: -- --include-ignored --test-threads=1]
+
+# ordinary (not ignored) tests the same NMR step also ran with --include-ignored (69); all pass in the PR's Windows partitions
+app::nmr::palette::tests::pointer_history_preserves_masks_and_invalidates_left_entry_and_unfocus
+app::nmr::palette::tests::pointer_history_uses_ordered_motion_and_never_resyncs_from_redraw
+app::nmr::panel::tests::every_measured_row_sets_the_preferred_height
+app::nmr::panel::tests::floating_height_is_capped_by_available_height
+app::nmr::panel::tests::floating_height_is_capped_by_maximum_content_height
+app::nmr::panel::tests::no_requested_height_uses_preferred_height
+app::nmr::panel::tests::no_rows_use_natural_body_height
+app::nmr::panel::tests::one_row_sets_minimum_and_preferred_height
+app::nmr::panel::tests::requested_height_below_minimum_uses_minimum
+app::nmr::panel::tests::row_measurement_stops_once_a_row_reaches_the_height_cap
+app::nmr::panel::tests::several_rows_use_the_last_row
+app::nmr::plot::tests::broad_match_notes_keep_plot_markers_and_accessible_predictions
+app::nmr::plot::tests::cached_plot_widths_and_names_preserve_every_group
+app::nmr::plot::tests::carbon_labels_stay_individual_and_stagger_close_real_shifts
+app::nmr::plot::tests::dense_coincident_and_long_id_reports_keep_every_owner_in_cycleable_groups
+app::nmr::plot::tests::extreme_finite_shifts_keep_axis_and_packed_positions_finite
+app::nmr::plot::tests::missing_data_and_nonfinite_values_never_become_zero_shift_markers
+app::nmr::presentation::tests::broad_match_notes_preserve_numeric_presentation_and_supported_owners
+app::nmr::presentation::tests::direct_result_assignment_uses_fallback_instead_of_another_arcs_cache
+app::nmr::presentation::tests::presentation_distinguishes_supported_rows_from_finite_unique_owners
+app::nmr::presentation::tests::row_presentation_preserves_proton_and_carbon_text_bytes
+app::nmr::style::tests::nmr_surfaces_keep_the_platform_shadow_policy_and_theme
+app::nmr::tests::assignment_labels_survive_geometry_but_close_and_chemical_edits_clear_them
+app::nmr::tests::assignment_labels_survive_nucleus_switches
+app::nmr::tests::background_engine_chemistry_change_clears_accepted_report
+app::nmr::tests::cached_validation_observes_direct_job_input_changes
+app::nmr::tests::cached_validation_observes_same_document_file_epoch_change
+app::nmr::tests::cancelled_export_status_text_preserves_sentinels
+app::nmr::tests::continuing_drag_preserves_report_and_one_undo_step
+app::nmr::tests::element_change_clears_accepted_report
+app::nmr::tests::empty_selection_is_a_neutral_empty_state_and_real_failures_stay_red
+app::nmr::tests::failed_export_status_text_pins_error_and_retains_notice
+app::nmr::tests::failed_prediction_status_text_pins_error_and_notice
+app::nmr::tests::file_epoch_clears_nmr_pending_but_keeps_report_and_notice
+app::nmr::tests::finished_prediction_status_text_pins_both_supported_ethyl_acetate_reports
+app::nmr::tests::foreground_or_background_result_never_lands_in_another_tab
+app::nmr::tests::generic_definition_blocks_pending_and_completed_nmr_and_old_delivery_after_clear
+app::nmr::tests::generic_edit_clears_accepted_report
+app::nmr::tests::geometry_move_keeps_accepted_report
+app::nmr::tests::hybrid_docking_preserves_report_and_camera_and_restores_a_hidden_inspector
+app::nmr::tests::nearby_plot_markers_cycle_distinct_original_atoms_without_editing
+app::nmr::tests::nmr_row_and_marker_selection_refresh_caption_and_atom_controls
+app::nmr::tests::open_and_restore_keep_source_report_in_its_epoch
+app::nmr::tests::panel_description_pins_no_result_pending_and_notice_text
+app::nmr::tests::pending_prediction_survives_move_but_chemical_edits_reject_stale_result
+app::nmr::tests::reopening_from_properties_predicts_the_newly_selected_molecule
+app::nmr::tests::repeated_idle_messages_preserve_accepted_state
+app::nmr::tests::restore_during_prediction_keeps_source_work_and_allows_prediction_in_the_recovered_tab
+app::nmr::tests::selected_carbon_status_text_pins_linked_atom
+app::nmr::tests::selected_proton_status_text_pins_atom_hydrogen_count_and_shift
+app::nmr::tests::successful_export_status_text_pins_relative_tsv_path
+app::nmr::tests::undo_and_redo_validate_accepted_reports
+app::nmr::tests::unrelated_generic_definition_keeps_pending_result_and_nmr_labels_through_history
+app::nmr::tests::update_accepts_prediction_under_atom_text_and_cleanup_without_editing
+app::nmr::tests::update_reports_nmr_export_under_atom_text_and_cleanup_without_editing
+app::nmr::worker::tests::busy_admission_rejects_without_running_a_second_job
+app::nmr::worker::tests::inner_error_is_preserved_and_releases_the_permit
+app::nmr::worker::tests::panic_maps_the_join_error_and_releases_the_permit
+app::nmr::worker::tests::timeout_keeps_the_permit_until_the_blocking_job_finishes
+canvas::nmr::tests::assignment_numbers_use_original_atoms_and_avoid_fixture_symbols_and_each_other
+canvas::nmr::tests::assignment_width_memo_is_bounded_and_matches_uncached_measurements
+canvas::nmr::tests::cleaned_carvone_assignments_avoid_every_drawn_bond_line
+canvas::nmr::tests::collapsed_assignments_retain_original_owners_at_the_visible_group_anchor
+canvas::nmr::tests::crowded_label_uses_a_leader_only_when_displaced_from_its_real_owner
+canvas::nmr::tests::missing_or_nonfinite_predictions_do_not_gain_labels_or_selected_halos
+canvas::nmr::tests::offscreen_owners_do_not_leave_clamped_labels_on_empty_canvas
+canvas::nmr::tests::proton_assignments_name_the_parent_and_unresolved_group_not_individual_protons
+canvas::nmr::tests::shift_and_combined_modes_follow_moved_atom_without_changing_predictions_or_export
+canvas::nmr::tests::supported_owners_keep_report_order_and_borrow_sorted_marker_membership

@@ -1,0 +1,317 @@
+# Checks run 43678477374, push to main fcd2cde61 (latest green Checks run on main; merge base of this PR)
+# job	conclusion	started	minutes; then non-skipped steps with seconds
+Office add-in JavaScript regressions	success	2026-11-15T05:02:29Z	0.6
+scope	success	2026-11-15T05:02:29Z	0.3
+web	success	2026-11-15T05:02:29Z	0.3
+Changed fixture rows	skipped
+capture-aromatic	skipped
+Browser build (wasm32)	success	2026-11-15T05:02:48Z	2.0
+Python package (headless wheel)	success	2026-11-15T05:02:47Z	1.3
+python (windows-2022, cpython-3.12.15-windows-x86_64-none)	success	2026-11-15T05:02:48Z	3.9
+python (ubuntu-22.04, 3.12.15)	success	2026-11-15T05:02:48Z	1.7
+Rust geometry (x86_64-apple-darwin)	success	2026-11-15T05:02:51Z	8.2
+    1	Set up job	3s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	17s
+    4	Select the matching native Rust host	0s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --target x86_64-apple-darwin	27s
+    6	Run rustup default 1.99.1	0s
+    9	Test native heap allocation and panic unwinding	31s
+    10	Test panic unwinding through the measured application heap	2s
+    11	Test the Rust geometry crate with the locked COSMolKit source	225s
+    12	Compare abbreviation layouts with the frozen RDKit captures	176s
+    13	Check native process portability	2s
+    14	Test native process limits on the matching host	1s
+    28	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	1s
+    29	Complete job	0s
+Rust geometry (aarch64-unknown-linux-gnu)	success	2026-11-15T05:02:50Z	3.6
+    1	Set up job	1s
+    2	Patch the Actions Node runtime when needed	5s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	6s
+    4	Select the matching native Rust host	0s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --target aarch64-unknown-linux-gnu	5s
+    6	Run rustup default 1.99.1	0s
+    9	Test native heap allocation and panic unwinding	9s
+    10	Test panic unwinding through the measured application heap	1s
+    11	Test the Rust geometry crate with the locked COSMolKit source	105s
+    12	Compare abbreviation layouts with the frozen RDKit captures	78s
+    13	Check native process portability	1s
+    14	Test native process limits on the matching host	1s
+    28	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	0s
+    29	Complete job	0s
+Rust geometry (x86_64-unknown-linux-gnu)	success	2026-11-15T05:02:48Z	3.2
+    1	Set up job	2s
+    2	Patch the Actions Node runtime when needed	3s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	5s
+    4	Select the matching native Rust host	0s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --target x86_64-unknown-linux-gnu	7s
+    6	Run rustup default 1.99.1	0s
+    9	Test native heap allocation and panic unwinding	8s
+    10	Test panic unwinding through the measured application heap	0s
+    11	Test the Rust geometry crate with the locked COSMolKit source	96s
+    12	Compare abbreviation layouts with the frozen RDKit captures	69s
+    13	Check native process portability	0s
+    14	Test native process limits on the matching host	0s
+    28	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	1s
+    29	Complete job	0s
+Rust geometry (x86_64-pc-windows-msvc)	success	2026-11-15T05:02:48Z	4.5
+    1	Set up job	1s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	11s
+    4	Select the matching native Rust host	1s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --target x86_64-pc-windows-msvc	10s
+    6	Run rustup default 1.99.1	0s
+    7	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	32s
+    8	Select the native Windows compiler	6s
+    9	Test native heap allocation and panic unwinding	6s
+    10	Test panic unwinding through the measured application heap	2s
+    11	Test the Rust geometry crate with the locked COSMolKit source	69s
+    12	Compare abbreviation layouts with the frozen RDKit captures	77s
+    13	Check native process portability	2s
+    14	Test native process limits on the matching host	1s
+    27	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	47s
+    28	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	3s
+    29	Complete job	0s
+Rust geometry (aarch64-pc-windows-msvc)	success	2026-11-15T05:02:48Z	6.3
+    1	Set up job	1s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	35s
+    4	Select the matching native Rust host	1s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --target aarch64-pc-windows-msvc	12s
+    6	Run rustup default 1.99.1	0s
+    8	Select the native Windows compiler	4s
+    9	Test native heap allocation and panic unwinding	23s
+    10	Test panic unwinding through the measured application heap	2s
+    11	Test the Rust geometry crate with the locked COSMolKit source	137s
+    12	Compare abbreviation layouts with the frozen RDKit captures	135s
+    13	Check native process portability	12s
+    14	Test native process limits on the matching host	7s
+    28	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	5s
+    29	Complete job	0s
+images / CI images	success	2026-11-15T05:02:48Z	0.2
+reference	skipped
+rust lint+goldens (macos-15, aarch64-apple-darwin)	success	2026-11-15T05:03:06Z	14.8
+    1	Set up job	2s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	12s
+    4	Run rustup toolchain install 1.99.1 --profile minimal --component rustfmt --component clippy	7s
+    5	Run rustup default 1.99.1	0s
+    6	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	45s
+    7	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	6s
+    10	Check the native application without reference dependencies	83s
+    11	Check all optional reference tests compile cleanly	81s
+    12	Build the Rust helper and test executable	71s
+    13	Select the helper for runtime integration tests	0s
+    14	Install fixture reader dependencies	1s
+    15	Replay independently captured chemistry fixtures	192s
+    16	Replay complete aromatic response fixtures	95s
+    18	Check and test Python on macOS	68s
+    19	Test the geometry, heap and process crates for the packaged macOS target	221s
+    36	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	0s
+    37	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	1s
+    38	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	0s
+    39	Complete job	2s
+LibreOffice UNO regressions	success	2026-11-15T05:03:05Z	0.9
+rust lint+goldens (ubuntu-24.04, x86_64-unknown-linux-gnu)	success	2026-11-15T05:03:06Z	17.7
+    1	Set up job	3s
+    2	Initialize containers	13s
+    3	Patch the Actions Node runtime when needed	2s
+    4	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	9s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --component rustfmt --component clippy	8s
+    6	Run rustup default 1.99.1	0s
+    7	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	45s
+    8	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	4s
+    10	Run cargo fmt --all --check	6s
+    11	Check the native application without reference dependencies	46s
+    12	Check all optional reference tests compile cleanly	43s
+    13	Build the Rust helper and test executable	33s
+    14	Select the helper for runtime integration tests	0s
+    15	Install fixture reader dependencies	0s
+    16	Replay independently captured chemistry fixtures	99s
+    17	Replay complete aromatic response fixtures	78s
+    18	Build the release test executable for the performance harnesses	668s
+    37	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	0s
+    38	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	0s
+    39	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	0s
+    40	Stop containers	1s
+    41	Complete job	0s
+rust (ubuntu-24.04, x86_64-unknown-linux-gnu, 3.12.15, 1/2)	success	2026-11-15T05:03:05Z	19.8
+    1	Set up job	1s
+    2	Initialize containers	15s
+    3	Patch the Actions Node runtime when needed	1s
+    4	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	8s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --component clippy	9s
+    6	Run rustup default 1.99.1	0s
+    7	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	32s
+    8	Run taiki-e/install-action@5488ac5a951645ce95062214902ac4b6bc1a1037	11s
+    9	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	6s
+    11	Build the Rust helper and test executable	46s
+    12	Select the helper for runtime integration tests	1s
+    13	Check Rust heap and byte protocol boundaries	3s
+    14	Build the exact application for local naming worker tests	23s
+    28	Test the native workspace partition	722s
+    29	Keep the JUnit report of the workspace partition	2s
+    31	Test the custom metafile worker harness	36s
+    32	Test the custom native print harness	0s
+    33	Test workspace documentation	4s
+    34	Test the isolated font export probe	24s
+    35	Test public SciFinder fixtures on a one-megabyte stack	3s
+    36	Verify public SciFinder handoff fixtures	3s
+    37	Warm the shared Rust cache	192s
+    71	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	0s
+    72	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	41s
+    73	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	0s
+    74	Stop containers	2s
+    75	Complete job	0s
+rust (macos-15, aarch64-apple-darwin, 3.12.15, 1/2)	success	2026-11-15T05:03:06Z	24.8
+    1	Set up job	3s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	11s
+    4	Run rustup toolchain install 1.99.1 --profile minimal --component clippy	8s
+    5	Run rustup default 1.99.1	0s
+    6	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	44s
+    7	Run taiki-e/install-action@5488ac5a951645ce95062214902ac4b6bc1a1037	4s
+    8	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	4s
+    10	Build the Rust helper and test executable	62s
+    11	Select the helper for runtime integration tests	1s
+    12	Check Rust heap and byte protocol boundaries	5s
+    13	Build the exact application for local naming worker tests	28s
+    14	Audit agent API dependencies for every release target	9s
+    27	Test the native workspace partition	821s
+    28	Keep the JUnit report of the workspace partition	2s
+    30	Test the custom metafile worker harness	68s
+    31	Test the custom native print harness	6s
+    32	Test workspace documentation	7s
+    33	Test the isolated font export probe	36s
+    34	Test public SciFinder fixtures on a one-megabyte stack	5s
+    35	Verify public SciFinder handoff fixtures	4s
+    36	Warm the shared Rust cache	291s
+    70	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	1s
+    71	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	60s
+    72	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2s
+    73	Complete job	2s
+rust (ubuntu-24.04, x86_64-unknown-linux-gnu, 3.12.15, 2/2)	success	2026-11-15T05:03:05Z	17.8
+    1	Set up job	1s
+    2	Initialize containers	12s
+    3	Patch the Actions Node runtime when needed	1s
+    4	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	6s
+    5	Run rustup toolchain install 1.99.1 --profile minimal --component clippy	9s
+    6	Run rustup default 1.99.1	0s
+    7	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	27s
+    8	Run taiki-e/install-action@5488ac5a951645ce95062214902ac4b6bc1a1037	11s
+    9	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	4s
+    11	Build the Rust helper and test executable	45s
+    12	Select the helper for runtime integration tests	0s
+    14	Build the exact application for local naming worker tests	22s
+    28	Test the native workspace partition	670s
+    29	Keep the JUnit report of the workspace partition	1s
+    30	Test the shared naming corpus in one libtest process	251s
+    71	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	0s
+    72	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	1s
+    73	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	0s
+    74	Stop containers	3s
+    75	Complete job	0s
+rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 2/2)	success	2026-11-15T05:03:06Z	21.8
+    1	Set up job	1s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	14s
+    4	Run rustup toolchain install 1.99.1 --profile minimal --component clippy	10s
+    5	Run rustup default 1.99.1	1s
+    6	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	67s
+    7	Run taiki-e/install-action@5488ac5a951645ce95062214902ac4b6bc1a1037	3s
+    8	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	7s
+    9	Select the native Windows compiler	4s
+    10	Build the Rust helper and test executable	80s
+    11	Select the helper for runtime integration tests	0s
+    13	Build the exact application for local naming worker tests	33s
+    27	Test the native workspace partition	864s
+    28	Keep the JUnit report of the workspace partition	3s
+    29	Test the shared naming corpus in one libtest process	215s
+    70	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	0s
+    71	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	0s
+    72	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2s
+    73	Complete job	0s
+rust lint+goldens (windows-2022, x86_64-pc-windows-msvc)	success	2026-11-15T05:03:05Z	8.5
+    1	Set up job	2s
+    2	Patch the Actions Node runtime when needed	0s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	9s
+    4	Run rustup toolchain install 1.99.1 --profile minimal --component rustfmt --component clippy	9s
+    5	Run rustup default 1.99.1	0s
+    6	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	53s
+    7	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	6s
+    8	Select the native Windows compiler	3s
+    10	Check the native application without reference dependencies	62s
+    11	Check all optional reference tests compile cleanly	52s
+    12	Build the Rust helper and test executable	41s
+    13	Select the helper for runtime integration tests	0s
+    14	Install fixture reader dependencies	0s
+    15	Replay independently captured chemistry fixtures	147s
+    16	Replay complete aromatic response fixtures	121s
+    36	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	0s
+    37	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	0s
+    38	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	1s
+    39	Complete job	0s
+Linux X11 clipboard regressions	success	2026-11-15T05:03:05Z	1.2
+rust (windows-2022, x86_64-pc-windows-msvc, cpython-3.12.15-windows-x86_64-none, 1/2)	success	2026-11-15T05:03:05Z	31.5
+    1	Set up job	2s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	12s
+    4	Run rustup toolchain install 1.99.1 --profile minimal --component clippy	13s
+    5	Run rustup default 1.99.1	0s
+    6	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	66s
+    7	Run taiki-e/install-action@5488ac5a951645ce95062214902ac4b6bc1a1037	5s
+    8	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	6s
+    9	Select the native Windows compiler	5s
+    10	Build the Rust helper and test executable	85s
+    11	Select the helper for runtime integration tests	0s
+    12	Check Rust heap and byte protocol boundaries	6s
+    13	Build the exact application for local naming worker tests	37s
+    15	Test rendered numeric-field focus on Windows	106s
+    16	Capture rendered Help QA on Windows	6s
+    17	Test rendered cascading menus on Windows	4s
+    18	Test rendered Updates modal keyboard input on Windows	1s
+    19	Test that closing review panels returns keyboard focus to the drawing on Windows	7s
+    20	Test rendered tool flyout input ownership on Windows	1s
+    21	Test rendered shortcut and command palette focus on Windows	7s
+    22	Test rendered drop-down Escape on Windows	1s
+    23	Test rendered figure export labels on Windows	2s
+    24	Test rendered new drawing inspector scroll on Windows	1s
+    25	Test rendered hybrid NMR controls on Windows	17s
+    26	Test rendered local naming accessibility and scrolled insertion on Windows	2s
+    27	Test the native workspace partition	879s
+    28	Keep the JUnit report of the workspace partition	2s
+    30	Test the custom metafile worker harness	89s
+    31	Test the custom native print harness	1s
+    32	Test workspace documentation	6s
+    33	Test the isolated font export probe	37s
+    34	Test public SciFinder fixtures on a one-megabyte stack	9s
+    35	Verify public SciFinder handoff fixtures	9s
+    36	Warm the shared Rust cache	265s
+    70	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	1s
+    71	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	195s
+    72	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2s
+    73	Complete job	0s
+rust (macos-15, aarch64-apple-darwin, 3.12.15, 2/2)	success	2026-11-15T05:03:06Z	24.0
+    1	Set up job	3s
+    2	Patch the Actions Node runtime when needed	2s
+    3	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	11s
+    4	Run rustup toolchain install 1.99.1 --profile minimal --component clippy	7s
+    5	Run rustup default 1.99.1	0s
+    6	Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	46s
+    7	Run taiki-e/install-action@5488ac5a951645ce95062214902ac4b6bc1a1037	4s
+    8	Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	5s
+    10	Build the Rust helper and test executable	69s
+    11	Select the helper for runtime integration tests	0s
+    13	Build the exact application for local naming worker tests	45s
+    27	Test the native workspace partition	920s
+    28	Keep the JUnit report of the workspace partition	3s
+    29	Test the shared naming corpus in one libtest process	314s
+    70	Post Run astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e	1s
+    71	Post Run Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6	0s
+    72	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	1s
+    73	Complete job	4s
+Rust checks	success	2026-11-15T05:34:39Z	0.1
+    1	Set up job	1s
+    2	Patch the Actions Node runtime when needed	1s
+    3	Require successful Rust lanes for native changes	0s
+    4	Complete job	0s

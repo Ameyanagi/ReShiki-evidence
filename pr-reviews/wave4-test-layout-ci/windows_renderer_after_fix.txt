@@ -1,0 +1,4 @@
+# Run 43696986530 (head da335033f), job 'rust extra (windows)' 132759832420, same step
+    Starting 145 tests across 2 binaries (2050 tests and 5 binaries skipped)
+        PASS [  58.446s] ( 42/145) reshiki::bin/reshiki app::atom_text::presentation_tests::delayed_editor_real_pointer_focus_keyboard_and_ime
+     Summary [ 220.364s] 145 tests run: 145 passed (1 slow), 2050 skipped
