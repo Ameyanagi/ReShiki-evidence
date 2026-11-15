@@ -1,0 +1,38 @@
+== main (main.log): scripts/build_release.py --target aarch64-apple-darwin --installer, then maturin build --release
+    Finished `release` profile [optimized + debuginfo] target(s) in 6m 49s
+Native chemistry passed twice with Python, uv, and the checkout unavailable.
+Packaged MCP server and CLI passed; listening sockets: none.
+Rust MMFF94 and UFF passed from the sole relocated executable without Python or RDKit libraries.
+Packaged clipboard and print worker entry points passed.
+Extracted application and native chemistry verified without Python or uv.
+<main checkout>/dist/releases/reshiki-0.15.0-macos-arm64.zip
+created: <main checkout>/dist/releases/reshiki-0.15.0-macos-arm64.dmg
+Native chemistry passed twice with Python, uv, and the checkout unavailable.
+Packaged clipboard and print worker entry points passed.
+Packaged MCP server and CLI passed; listening sockets: none.
+macOS disk image and drag-to-install copy verified.
+<main checkout>/dist/releases/reshiki-0.15.0-macos-arm64.dmg
+      454.57 real      1764.65 user        57.95 sys
+          2618818560  maximum resident set size
+BUILD_RELEASE_EXIT=0 SECONDS=454
+    Finished `release` profile [optimized + debuginfo] target(s) in 6m 07s
+WHEEL_EXIT=0 SECONDS=370
+== branch (branch.log): scripts/build_release.py --target aarch64-apple-darwin --installer, then maturin build --release
+    Finished `dist` profile [optimized + debuginfo] target(s) in 22m 24s
+created: <branch checkout>/dist/releases/reshiki-0.15.0-macos-arm64.dmg
+Native chemistry passed twice with Python, uv, and the checkout unavailable.
+Packaged MCP server and CLI passed; listening sockets: none.
+Rust MMFF94 and UFF passed from the sole relocated executable without Python or RDKit libraries.
+Packaged clipboard and print worker entry points passed.
+Extracted application and native chemistry verified without Python or uv.
+<branch checkout>/dist/releases/reshiki-0.15.0-macos-arm64.zip
+Native chemistry passed twice with Python, uv, and the checkout unavailable.
+Packaged clipboard and print worker entry points passed.
+Packaged MCP server and CLI passed; listening sockets: none.
+macOS disk image and drag-to-install copy verified.
+<branch checkout>/dist/releases/reshiki-0.15.0-macos-arm64.dmg
+     1433.66 real      1909.17 user        88.18 sys
+          8248573952  maximum resident set size
+BUILD_RELEASE_EXIT=0 SECONDS=1434
+    Finished `release` profile [optimized + debuginfo] target(s) in 6m 45s
+WHEEL_EXIT=0 SECONDS=408

@@ -1,0 +1,43 @@
+Release download sizes, PR #1202 (wave4/release-size)
+
+Before: main fcd2cde6 (the branch's merge base). After: branch 45fc6d63.
+Built on macOS arm64 (Apple M4) on 2026-11-15, both sides the same way:
+  scripts/build_release.py --target aarch64-apple-darwin --installer   (as release.yml, unsigned)
+  with MACOSX_DEPLOYMENT_TARGET=14.0 and the workflow's CARGO_PROFILE_{RELEASE,DIST}_STRIP=symbols / _SPLIT_DEBUGINFO=packed
+  uvx maturin@1.15.0 build --release --locked --manifest-path crates/python/Cargo.toml --target aarch64-apple-darwin
+  scripts/build_wasm.sh, then bun pm pack in each package folder
+Both native builds ran at the same time with CARGO_BUILD_JOBS=5 each, so build times are rough.
+
+macOS arm64                          before (bytes)   after (bytes)   change
+  reshiki-0.15.0-macos-arm64.dmg         23,457,485      22,037,873    -6.1%
+  reshiki-0.15.0-macos-arm64.zip         33,810,636      31,279,558    -7.5%
+  ReShiki.app/Contents/MacOS/reshiki     81,435,168      67,348,944   -17.3%
+    gzip -9 of that executable           31,439,444      28,973,434    -7.8%
+    Mach-O __TEXT,__text                 52,530,684      48,073,196    -8.5%
+    Mach-O __TEXT,__const                15,769,960      12,511,560   -20.7%
+  Python wheel cp310-abi3 arm64          14,276,104      14,269,392    -0.05%
+  Symbol file reshiki.dSYM (not shipped)          -     381 MB (DWARF 384,335,143)
+
+npm (scripts/build_wasm.sh + bun pm pack)
+  @ameyanagi/reshiki .tgz                20,605,633      15,054,042   -26.9%
+    unpacked / files                     61.23 MB / 31   44.27 MB / 25
+  @ameyanagi/reshiki-headless .tgz       (new)            6,374,759
+    unpacked / files                                     17.40 MB / 13
+  Both packages together                 20,605,633      21,428,801    +4.0%
+WebAssembly modules (raw / gzip -9)
+  reshiki_bg.wasm (editor)          26,920,329 / 9,911,222  ->  24,749,135 / 9,971,319  (gzip +0.6%)
+  reshiki_web_bg.wasm (headless)    14,633,638 / 5,554,271  ->  13,449,749 / 5,560,485  (gzip +0.1%)
+  reshiki_web_worker_bg.wasm        15,356,162 / 4,235,485  ->  15,356,294 / 4,235,491  (unchanged)
+
+Build cost (macOS arm64, /usr/bin/time -l around build_release.py)
+  main   release profile: cargo 6m 49s, whole script 455 s, peak RSS 2.62 GB
+  branch dist profile:    cargo 22m 24s, whole script 1434 s, peak RSS 8.25 GB
+
+Not built here (gh release view v0.15.0, published assets, for scale only;
+v0.15.0 predates main's stripped binaries and LZMA disk image, so it is not a "before" for this branch)
+  reshiki-0.15.0-windows-x64-setup.exe   26,165,479
+  reshiki-0.15.0-windows-x64.zip         36,779,419
+  reshiki-0.15.0-linux-x64.tar.gz        41,722,446
+  reshiki-0.15.0-linux-arm64.tar.gz      41,789,273
+  reshiki-0.15.0-macos-arm64.dmg         42,573,452  (UDZO, signed)
+  reshiki-0.15.0-macos-arm64.zip         37,280,511  (signed)

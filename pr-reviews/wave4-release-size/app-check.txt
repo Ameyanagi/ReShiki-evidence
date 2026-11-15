@@ -1,0 +1,29 @@
+== main: ReShiki.app/Contents/MacOS/reshiki, 81435168 bytes
+$ reshiki --version
+reshiki 0.15.0
+$ reshiki --cli convert --smiles "CN1C=NC2=C1C(=O)N(C(=O)N2C)C" -o caffeine-main.mol
+(exit 0)
+$ reshiki --cli convert caffeine-main.mol --to inchi
+InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
+$ reshiki --cli convert --smiles "C1CC2CCC1CC2" -o bicyclooctane-main.svg
+(exit 0)
+$ reshiki --cli name --smiles "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+1,3,7-trimethyl-3,7-dihydro-1H-purine-2,6-dione
+
+== branch: ReShiki.app/Contents/MacOS/reshiki, 67348944 bytes
+$ reshiki --version
+reshiki 0.15.0
+$ reshiki --cli convert --smiles "CN1C=NC2=C1C(=O)N(C(=O)N2C)C" -o caffeine-branch.mol
+(exit 0)
+$ reshiki --cli convert caffeine-branch.mol --to inchi
+InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3
+$ reshiki --cli convert --smiles "C1CC2CCC1CC2" -o bicyclooctane-branch.svg
+(exit 0)
+$ reshiki --cli name --smiles "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+1,3,7-trimethyl-3,7-dihydro-1H-purine-2,6-dione
+
+== same output files on both sides (shasum -a 256)
+5a66ca039d994450c897a3618352f65ac4e19cfb6fcd32abdd8b41b0b6910b7c  caffeine-branch.mol
+5a66ca039d994450c897a3618352f65ac4e19cfb6fcd32abdd8b41b0b6910b7c  caffeine-main.mol
+5c50f3659d1a47a7118974eeee4ef235769d4690f23ce6dd6448544afeda6cac  bicyclooctane-branch.svg
+5c50f3659d1a47a7118974eeee4ef235769d4690f23ce6dd6448544afeda6cac  bicyclooctane-main.svg

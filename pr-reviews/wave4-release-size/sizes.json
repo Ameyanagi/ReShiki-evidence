@@ -1,0 +1,23 @@
+{
+ "table_title": "Release downloads: main fcd2cde6 (before) vs wave4/release-size 45fc6d63 (after)",
+ "table": [
+  {"platform": "macOS arm64", "item": "Disk image (.dmg)", "before": 23457485, "after": 22037873, "source": "built here, as release.yml builds it"},
+  {"platform": "macOS arm64", "item": "Portable archive (.zip)", "before": 33810636, "after": 31279558, "source": "built here, as release.yml builds it"},
+  {"platform": "macOS arm64", "item": "App executable (installed)", "before": 81435168, "after": 67348944, "source": "built here"},
+  {"platform": "macOS arm64", "item": "Python wheel (.whl)", "before": 14276104, "after": 14269392, "source": "built here, maturin --release"},
+  {"platform": "npm", "item": "@ameyanagi/reshiki (.tgz)", "before": 20605633, "after": 15054042, "source": "built here, build_wasm.sh + bun pm pack"},
+  {"platform": "npm", "item": "@ameyanagi/reshiki-headless (.tgz)", "before": null, "after": 6374759, "source": "new package, built here"},
+  {"platform": "Windows x64", "item": "Installer (setup.exe)", "before": 26165479, "after": null, "source": "v0.15.0 published asset; after not measured"},
+  {"platform": "Windows x64", "item": "Portable archive (.zip)", "before": 36779419, "after": null, "source": "v0.15.0 published asset; after not measured"},
+  {"platform": "Linux x64", "item": "Archive (.tar.gz)", "before": 41722446, "after": null, "source": "v0.15.0 published asset; after not measured"},
+  {"platform": "Linux arm64", "item": "Archive (.tar.gz)", "before": 41789273, "after": null, "source": "v0.15.0 published asset; after not measured"}
+ ],
+ "chart_title": "Measured download sizes, macOS arm64 and npm (main fcd2cde6 vs branch 45fc6d63)",
+ "chart": [
+  {"label": "macOS .zip", "before": 33810636, "after": 31279558},
+  {"label": "macOS .dmg", "before": 23457485, "after": 22037873},
+  {"label": "npm @ameyanagi/reshiki", "before": 20605633, "after": 15054042},
+  {"label": "Python wheel (macOS)", "before": 14276104, "after": 14269392},
+  {"label": "npm reshiki-headless (new)", "before": null, "after": 6374759}
+ ]
+}
