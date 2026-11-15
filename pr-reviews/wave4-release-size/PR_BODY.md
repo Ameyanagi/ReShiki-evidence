@@ -63,7 +63,7 @@ Windows x64 and Linux were not built for this PR. Their rows show the published 
 
 ### The smaller app still starts and works
 
-![Terminal: main and branch apps both print reshiki 0.15.0, convert caffeine SMILES to a Molfile, print the same InChI, convert bicyclo[2.2.2]octane to SVG and name caffeine 1,3,7-trimethyl-3,7-dihydro-1H-purine-2,6-dione. The output files have the same SHA-256 on both sides](app-check.png)
+![Terminal: main and branch apps both print reshiki 0.15.0, convert caffeine SMILES to a Molfile, print the same InChI, convert bicyclo-2.2.2-octane to SVG and name caffeine 1,3,7-trimethyl-3,7-dihydro-1H-purine-2,6-dione. The output files have the same SHA-256 on both sides](app-check.png)
 
 The `ReShiki.app` executables from the two builds above, each run with an empty data folder. Both write byte-identical `.mol` and `.svg` files ([`app-check.txt`](app-check.txt)). The branch build also passed `build_release.py`'s own packaged-app checks: native chemistry without Python, the MCP server and CLI, MMFF94/UFF geometry, clipboard and print workers, and the disk-image install copy ([`build-log-excerpts.txt`](build-log-excerpts.txt)).
 
