@@ -1,0 +1,32 @@
+Thin-LTO macOS build, branch 45fc6d63 with CARGO_PROFILE_DIST_LTO=thin (as release.yml now sets for macOS)
+macOS arm64 (Apple M4), CARGO_BUILD_JOBS=3 (the arm64 runner has 3 CPUs), MACOSX_DEPLOYMENT_TARGET=14.0,
+CARGO_PROFILE_DIST_STRIP=symbols, CARGO_PROFILE_DIST_SPLIT_DEBUGINFO=packed
+
+Peak RSS of the fat-LTO build (sizes.txt, whole build_release.py, CARGO_BUILD_JOBS=5): 8248573952 bytes.
+
+1. /usr/bin/time -l uv run ... python scripts/build_release.py --target aarch64-apple-darwin --installer
+    Finished `dist` profile [optimized + debuginfo] target(s) in 9m 03s
+      576.16 real      1269.42 user        33.16 sys
+          7272595456  maximum resident set size
+
+Outputs (bytes):
+      72645120  ReShiki.app/Contents/MacOS/reshiki   (fat LTO 67348944, main 81435168)
+      32702845  reshiki-0.15.0-macos-arm64.zip       (fat LTO 31279558, main 33810636)
+      23065767  reshiki-0.15.0-macos-arm64.dmg       (fat LTO 22037873, main 23457485)
+  gzip -9 of the executable: 30389628 (fat LTO 28973434, main 31439444)
+  Mach-O __TEXT,__text:  51307312 (fat LTO 48073196, main 52530684)
+  Mach-O __TEXT,__const: 12998984 (fat LTO 12511560, main 15769960)
+
+2. Clean rebuild of target/aarch64-apple-darwin/dist with a rustc wrapper logging each rustc process peak RSS
+   (cargo build --profile dist --locked --bin reshiki --target aarch64-apple-darwin; same settings). Top 8:
+      7226376192 bytes  reshiki
+      3958063104 bytes  nazuchem_s2n
+      3278061568 bytes  reshiki_model
+      2439790592 bytes  cosmolkit_inchi
+      2391965696 bytes  reshiki_io
+      1437990912 bytes  reshiki_chemistry
+      1386053632 bytes  reshiki
+      1211203584 bytes  nazuchem_n2s
+   The peak is the final reshiki binary rustc process, which performs the LTO link.
+The 87.5 MB binary from run 2 is not a size result: SIP's /usr/bin/time between cargo and rustc drops
+rustup's DYLD path, so rustc's strip step could not load libLLVM. Sizes above come from run 1.

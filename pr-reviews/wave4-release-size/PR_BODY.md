@@ -1,8 +1,8 @@
 ## Summary
 
-Release downloads get smaller. Published builds use a new `dist` Cargo profile (fat link-time optimization, one codegen unit). TLS uses ring instead of aws-lc. Three large data files that ReShiki embeds are stored compressed. The npm package is split in two, so an editor install no longer downloads the headless library's WebAssembly.
+Release downloads get smaller. Published builds use a new `dist` Cargo profile (fat link-time optimization, one codegen unit; thin link-time optimization on macOS). TLS uses ring instead of aws-lc. Three large data files that ReShiki embeds are stored compressed. The npm package is split in two, so an editor install no longer downloads the headless library's WebAssembly.
 
-On macOS arm64, built the way the release workflow builds it, the app executable goes from 81.4 MB to 67.3 MB (−17.3%). The disk image goes from 23.5 MB to 22.0 MB (−6.1%) and the portable archive from 33.8 MB to 31.3 MB (−7.5%). `@ameyanagi/reshiki` on npm goes from 20.6 MB to 15.1 MB (−26.9%). The Python wheel does not change.
+On macOS arm64, built the way the release workflow now builds it (thin LTO), the app executable goes from 81.4 MB to 72.6 MB (−10.8%). The disk image goes from 23.5 MB to 23.1 MB (−1.7%) and the portable archive from 33.8 MB to 32.7 MB (−3.3%). With fat LTO, which Linux and Windows keep, the same macOS executable is 67.3 MB (−17.3%). `@ameyanagi/reshiki` on npm goes from 20.6 MB to 15.1 MB (−26.9%). The Python wheel does not change.
 
 **Breaking (npm):** the headless library moves to a new package, `@ameyanagi/reshiki-headless`, and `@ameyanagi/reshiki` loses its `.` and `./reshiki_web_bg.wasm` exports.
 
@@ -18,11 +18,14 @@ On macOS arm64, built the way the release workflow builds it, the app executable
 - **B3: `dist` profile** (`Cargo.toml`, `scripts/build_release.py`, `release.yml`). `[profile.dist]` inherits `release` and adds `lto = "fat"` and `codegen-units = 1`. `build_release.py` builds with `--profile dist` and reads `target/<target>/dist/`. The workflow takes the binary, symbol files and test helpers from there, and its strip and split-debuginfo overrides become `CARGO_PROFILE_DIST_*`. `cargo build --release`, `cargo test --release` and development bundles keep the `release` profile.
   - `panic = "abort"` is not set: the app recovers from panics.
   - Rejected: fat LTO in the `release` profile itself. Every local release build and test build would then pay the long link.
+  - **Owner decision (2026-11-16): thin LTO for macOS release builds only.** The fat-LTO link peaks at 8.25 GB, above the 7 GB of GitHub's macOS arm64 runner. The Release builds job sets `CARGO_PROFILE_DIST_LTO: ${{ startsWith(matrix.artifact, 'macos') && 'thin' || 'fat' }}`, so both Mac builds (arm64 and Intel) link with thin LTO and Linux and Windows keep fat. Nightly builds call the same workflow, and the signing and disk-image jobs repackage that job's build, so no other workflow builds a macOS release binary. `tests/test_release.py` checks the setting.
 - **B7: ring for TLS** (`Cargo.toml`, new `src/http.rs`). reqwest uses `rustls-no-provider`. `http::client()` installs ring's provider before building a client, and the update check, update download and online name lookup all start there. `Cargo.lock` drops 14 packages, including `aws-lc-rs`, `aws-lc-sys` and `cmake`.
   - Trade-off: these connections no longer offer the post-quantum hybrid key exchange, which rustls provides only with aws-lc.
 - **B6: compressed embedded data** (`build.rs` in `reshiki-chemistry`, `reshiki-model`, `reshiki-io`). The layout template catalog, the bundled drawing templates and the NMR shift index are deflated at build time with `miniz_oxide` (already in the tree). They are inflated once, on first use. Embedded data goes from 2.66 MB to 0.50 MB. Source files and their regeneration scripts are unchanged.
 - **B9: npm package split** (`packages/headless`, `scripts/build_wasm.sh`, `checks.yml`, `release.yml`). The headless library moves to `@ameyanagi/reshiki-headless`. `@ameyanagi/reshiki` keeps `./editor`, `./element`, `./embed`, `./frame.html` and `./reshiki_bg.wasm`. The release job tests and publishes both packages. A refused credential for one package leaves a notice and goes on to the next. `packages/headless/README.md` has a "Moving from 0.15" table.
   - Rejected: keeping `.` on `@ameyanagi/reshiki` as an alias. The editor package would then still ship the headless module.
+  - **Owner decision (2026-11-16): keep the split.** The changelog fragment marks it as breaking, with the migration in one line: `bun add @ameyanagi/reshiki-headless` and import from `"@ameyanagi/reshiki-headless"`.
+  - **First publish on the tag.** npm trusted publishing cannot create a package, and this repository publishes through trusted publishing. When npm does not have a package yet and the `NPM_TOKEN` secret is set, the npm job publishes that package with the token. Every other publish keeps OIDC. The next version tag therefore publishes `@ameyanagi/reshiki-headless` with no manual step, as long as npm accepts the token.
 
 ## Evidence
 
@@ -33,6 +36,24 @@ All builds: macOS arm64 (Apple M4), main `fcd2cde6` (the merge base) and the bra
 ![Table: macOS arm64 disk image 23.46 to 22.04 MB (−6.1%), portable zip 33.81 to 31.28 MB (−7.5%), app executable 81.44 to 67.35 MB (−17.3%), Python wheel 14.28 to 14.27 MB (−0.05%), npm @ameyanagi/reshiki 20.61 to 15.05 MB (−26.9%), new @ameyanagi/reshiki-headless 6.37 MB. Windows x64 and Linux rows show v0.15.0 published sizes only, after not measured](size_table.png)
 
 ![Bar chart of the measured downloads, before in gray and after in blue: macOS zip, macOS dmg, npm @ameyanagi/reshiki, Python wheel, and the new headless package](size_chart.png)
+
+#### macOS with thin LTO (what the release workflow now ships)
+
+Branch `45fc6d63` built the same way, with `CARGO_PROFILE_DIST_LTO=thin` as the workflow now sets it for macOS, and `CARGO_BUILD_JOBS=3` (the arm64 runner has 3 CPUs). The fat-LTO column is the table above.
+
+| macOS arm64                   |     main |  fat LTO |                  thin LTO (shipped) |
+| ----------------------------- | -------: | -------: | ----------------------------------: |
+| App executable                | 81.44 MB | 67.35 MB |                 **72.65 MB** (−10.8%) |
+| Portable archive (.zip)       | 33.81 MB | 31.28 MB |                 **32.70 MB** (−3.3%) |
+| Disk image (.dmg)             | 23.46 MB | 22.04 MB |                 **23.07 MB** (−1.7%) |
+| Executable, gzip -9           | 31.44 MB | 28.97 MB |                         30.39 MB |
+| Peak memory of the build      |  2.62 GB |  8.25 GB |                          7.27 GB |
+| Peak memory of the final link |        – |        – |                          7.23 GB |
+| `cargo build` time            |    6m 49s |  22m 24s |                            9m 03s |
+
+Peak memory is `/usr/bin/time -l` maximum resident set size. A second, clean `dist` build logged every rustc process: the largest is the final `reshiki` binary at 7.23 GB, which does the LTO link. The next is `nazuchem_s2n` at 3.96 GB. Build times are rough: the fat build shared the machine with another build. Log: [`thin-lto.txt`](thin-lto.txt).
+
+Thin LTO gives back 5.3 MB of the executable's 14.1 MB saving, and the link still needs 7.23 GB.
 
 Windows x64 and Linux were not built for this PR. Their rows show the published v0.15.0 assets only for scale. v0.15.0 predates main's stripped binaries and LZMA disk image, so it is not a "before" for this branch. Raw numbers, Mach-O sections and WebAssembly module sizes: [`sizes.txt`](sizes.txt). Chart data and script: [`sizes.json`](sizes.json), [`plot.py`](plot.py).
 
@@ -57,8 +78,9 @@ macOS arm64, from the implementation lane:
 - `uv run --locked python -m unittest discover -s tests`: 254 tests OK. `-s reference`: 185 OK. `ruff check`, `ty check`: pass.
 - `scripts/build_wasm.sh --test`: headless 16 pass, editor 23 pass. `bun run check`: pass.
 - `scripts/check_agent_dependencies.py`: passes for all 6 release targets.
+- Owner-decision follow-up: `cargo fmt --all --check`, actionlint 1.7.12 on `release.yml`, `bun fmt --check .`, `scripts/assemble_changelog.py --check` and `tests.test_release` (23 tests) pass. A Codex adversarial review of the follow-up diff (thin LTO, npm first publish, changelog) found no functional issues. Its one documentation finding, that the changelog still described macOS builds as fat LTO, is fixed.
 
-macOS arm64, for this description: both release builds, both wheels and both npm builds above, and the app check.
+macOS arm64, for this description: both release builds, the thin-LTO build, both wheels and both npm builds above, and the app check.
 
 Linux x64, Ubuntu arm64 (wheel) and Windows x64: the 35 PR checks pass, including the Rust test partitions on Linux x64 and Windows x64 and the wheel builds for Linux x64, Linux arm64, Windows x64 and Windows arm64.
 
@@ -66,19 +88,18 @@ VERIFICATION_TABLE
 
 ## Risk
 
-- **The full Release builds workflow has not run on this branch.** PR checks do not build with the `dist` profile. Before the next tag, run it by hand on all six targets. Check that Windows writes `reshiki.pdb` and Linux splits `reshiki.debug` under `target/<target>/dist/`, and that the Linux x64 fat-LTO link works in the jammy container.
-- **Memory and time.** The fat-LTO link peaked at 8.25 GB here (main's release build: 2.6 GB). GitHub's macOS arm64 runner has 7 GB, so that job may swap or fail. Each release job now also compiles dependencies twice: `dist` for the package, `release` for the cargo test steps. The `dist` build took 22 minutes against 7 for main's `release` build, with two builds sharing the machine.
+- **The full Release builds workflow has not run on this branch.** PR checks do not build with the `dist` profile. Before the next tag, run it by hand on all six targets. Check that Windows writes `reshiki.pdb` and Linux splits `reshiki.debug` under `target/<target>/dist/`, that the Linux x64 fat-LTO link works in the jammy container, and that the macOS arm64 thin-LTO job finishes.
+- **Memory and time.** The fat-LTO link peaked at 8.25 GB here (main's release build: 2.6 GB). Following the owner's decision, macOS builds use thin LTO, whose link peaked at 7.23 GB. That is about 1 GB less, but still slightly above the arm64 runner's 7 GB, so the job relies on macOS memory compression and swap and may be slower. If it fails or runs too long, the fallback is no LTO on macOS (main's 2.6 GB build, a larger executable). Linux x64 and both Windows runners have 16 GB for the fat link. Each release job also compiles dependencies twice: `dist` for the package, `release` for the cargo test steps.
 - **Download sizes on Windows and Linux are not measured.** The relative change should be similar, but the first release run is the first measurement.
 - **B6 leaves the largest file undone.** nazuchem's `automata.bin` (5.37 MB) and `retained_fused_graph_templates.json` (0.72 MB) are still embedded uncompressed. They live in the nazuchem repository. A local, unpushed nazuchem commit adds an opt-in compressed form for `automata.bin`. It needs a nazuchem merge and a rev bump here.
 - **B6 makes browser downloads slightly larger.** The editor module is 0.6% larger gzipped (about 2% with LZMA, a stand-in for brotli). Limiting B6 to native targets would avoid that.
 - **B9 is not done.** The package split here only stops each install from downloading modules it does not use. The editor and worker modules still each embed their own copy of the shared data, and installing both packages is 4% larger than the one package was.
-- **npm migration.** Code that imports `@ameyanagi/reshiki` or `@ameyanagi/reshiki/reshiki_web_bg.wasm` breaks and must move to `@ameyanagi/reshiki-headless`. That package does not exist on npm yet. It needs a first publish with a token and its own trusted publisher (see `docs/releasing.md`). Until then a release publishes only `@ameyanagi/reshiki` and leaves a notice.
+- **npm migration (breaking, owner decision to keep).** Code that imports `@ameyanagi/reshiki` or `@ameyanagi/reshiki/reshiki_web_bg.wasm` breaks and must move to `@ameyanagi/reshiki-headless`. That package does not exist on npm yet. The next tag publishes it with `NPM_TOKEN`, which only works if the token is still valid, can write the `@ameyanagi` scope (not only `@ameyanagi/reshiki`) and is allowed to publish without two-factor authentication. Otherwise the job leaves a notice, and the first version needs a manual publish. After the first version, add the package's trusted publisher on npmjs.com before the following release; without it, later tags leave a notice for the headless package.
 - **TLS.** The update check and online name lookup lose the post-quantum hybrid key exchange. A real handshake through ring has been checked on macOS arm64 only.
-- The changelog fragment's macOS numbers (77.9 to 67.8 MB) measure B3 alone. Against main the executable goes from 81.4 to 67.3 MB.
 
 ## Changelog
 
-`docs/changes/unreleased/wave4-release-size.md` (section Changes): the npm split with migration steps (breaking), the `dist` profile, the compressed embedded data, and ring for TLS.
+`docs/changes/unreleased/wave4-release-size.md` (section Changes): the npm split, marked as breaking with a one-line migration; the `dist` profile with thin LTO on macOS (81.4 to 72.6 MB executable); the compressed embedded data; and ring for TLS.
 
 ## Contribution license
 
