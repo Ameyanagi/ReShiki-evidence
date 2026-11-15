@@ -1,0 +1,45 @@
+{
+  "last_input_utc": "2026-11-15T01:34:47.637Z",
+  "captures": [
+    {
+      "file": "31-dark-idle-start-desktop.png",
+      "capture_started_utc": "2026-11-15T01:34:59.617421+00:00",
+      "seconds_after_input": 11.98
+    },
+    {
+      "file": "32-dark-idle-25s.png",
+      "capture_started_utc": "2026-11-15T01:35:12.640761+00:00",
+      "seconds_after_input": 25.004
+    },
+    {
+      "file": "33-dark-idle-30s.png",
+      "capture_started_utc": "2026-11-15T01:35:17.639587+00:00",
+      "seconds_after_input": 30.003
+    },
+    {
+      "file": "34-dark-idle-35s.png",
+      "capture_started_utc": "2026-11-15T01:35:22.638075+00:00",
+      "seconds_after_input": 35.001
+    },
+    {
+      "file": "35-dark-idle-40s-desktop.png",
+      "capture_started_utc": "2026-11-15T01:35:27.639206+00:00",
+      "seconds_after_input": 40.002
+    },
+    {
+      "file": "36-dark-idle-whole-window.png",
+      "capture_started_utc": "2026-11-15T01:35:28.640614+00:00",
+      "seconds_after_input": 41.004
+    }
+  ],
+  "record_after_idle": {
+    "first_launch_day": "2026-11-14",
+    "uses": 5,
+    "state": {
+      "asked": {
+        "version": "0.15.0",
+        "day": "2026-11-15"
+      }
+    }
+  }
+}

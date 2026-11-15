@@ -1,0 +1,35 @@
+{
+  "last_input_utc": "2026-11-15T01:26:45.141Z",
+  "captures": [
+    {
+      "file": "11-idle-light-25s.png",
+      "capture_started_utc": "2026-11-15T01:27:10.142370+00:00",
+      "seconds_after_input": 25.001
+    },
+    {
+      "file": "12-idle-light-30s.png",
+      "capture_started_utc": "2026-11-15T01:27:15.146148+00:00",
+      "seconds_after_input": 30.005
+    },
+    {
+      "file": "13-idle-light-35s.png",
+      "capture_started_utc": "2026-11-15T01:27:20.143141+00:00",
+      "seconds_after_input": 35.002
+    },
+    {
+      "file": "14-idle-light-40s.png",
+      "capture_started_utc": "2026-11-15T01:27:25.146117+00:00",
+      "seconds_after_input": 40.005
+    }
+  ],
+  "record_after_40s": {
+    "first_launch_day": "2026-11-14",
+    "uses": 5,
+    "state": {
+      "asked": {
+        "version": "0.15.0",
+        "day": "2026-11-15"
+      }
+    }
+  }
+}

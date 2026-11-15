@@ -1,0 +1,83 @@
+Window: "aspirin.mol • — ReShiki", App: ReShiki.
+0 standard window aspirin.mol • — ReShiki, Secondary Actions: Raise
+	1 container
+		2 button About ReShiki; check for updates, ID: header-about
+		3 button New · ⌘N, ID: header-new
+		4 button Open · ⌘O, ID: header-open
+		5 button Save · ⌘S, ID: header-save
+		6 button Save as · ⇧⌘S, ID: header-save-as
+		7 button Undo · ⌘Z, ID: header-undo
+		8 button Redo · ⇧⌘Z, ID: header-redo
+		9 button Assistant, ID: header-assistant
+		10 button Import, ID: header-import
+		11 button Check drawing, ID: header-check
+		12 button Clean up…, ID: header-cleanup
+		13 button Export, ID: header-export
+		14 button Settings · ⌘,, ID: header-settings
+		15 button Show or hide inspector, ID: header-inspector
+		16 button Text and object color, ID: style-color-menu
+		17 toggle button (settable, boolean) Select / move · Escape or toolbar, Value: on, ID: tool-Select
+		18 toggle button (settable, boolean) Lasso select · Toolbar, Value: off, ID: tool-Lasso
+		19 toggle button (settable, boolean) 3D tilt, Value: off, ID: tool-Tilt
+		20 toggle button (settable, boolean) Eraser, Value: off, ID: tool-Erase
+		21 toggle button (settable, boolean) Atom label · C · c, Value: off, ID: tool-Atom
+		22 toggle button (settable, boolean) Single bond · 1, Value: off, ID: tool-Bond(1)
+		23 toggle button (settable, boolean) Double bond · 2, Value: off, ID: tool-Bond(2)
+		24 toggle button (settable, boolean) Triple bond · 3, Value: off, ID: tool-Bond(3)
+		25 toggle button (settable, boolean) Solid wedge, Value: off, ID: tool-Wedge
+		26 toggle button (settable, boolean) 6-membered · ⇧6, Value: off, ID: tool-Ring
+		27 toggle button (settable, boolean) Straight chain · ⇧X · Drag a regular zigzag toward the pointer, Value: off, ID: tool-Chain(Straight)
+		28 toggle button (settable, boolean) Snaking chain · Steer while dragging · Retrace to shorten, Value: off, ID: tool-Chain(Snaking)
+		29 toggle button (settable, boolean) Forward · e, Value: off, ID: tool-Arrow
+		30 toggle button (settable, boolean) Text label · t, Value: off, ID: tool-Text
+		31 toggle button (settable, boolean) Rectangle, Value: off, ID: tool-Graphic(Rectangle)
+		32 toggle button (settable, boolean) Ellipse, Value: off, ID: tool-Graphic(Ellipse)
+		33 toggle button (settable, boolean) Brackets · ⇧T, Value: off, ID: tool-Graphic(Brackets)
+		34 toggle button (settable, boolean) Graphic line, Value: off, ID: tool-Graphic(Line)
+		35 toggle button (settable, boolean) Bézier curve, Value: off, ID: tool-Graphic(Curve)
+		36 toggle button (settable, boolean) Pen path, Value: off, ID: tool-Graphic(Path)
+		37 toggle button (settable, boolean) Arc, Value: off, ID: tool-Graphic(Arc)
+		38 toggle button (settable, boolean) Circled plus · ⇧E, Value: off, ID: tool-Graphic(Symbol(CirclePlus))
+		39 toggle button (settable, boolean) p orbital · ⇧G, Value: off, ID: tool-Graphic(Orbital(P))
+		40 toggle button (settable, boolean) H · h, Value: off, ID: element-H
+		41 toggle button (settable, boolean) C · c, Value: off, ID: element-C
+		42 toggle button (settable, boolean) N · n, Value: off, ID: element-N
+		43 toggle button (settable, boolean) O · o, Value: off, ID: element-O
+		44 toggle button (settable, boolean) *, Value: off, ID: element-*
+		45 button Help and keyboard shortcuts, ID: help-open
+		46 toggle button (settable, boolean) Leave keyboard drawing · F8 · Active Empty drawing position, Value: on, ID: keyboard-done
+		47 button (disabled) Choose an atom with arrows or the mouse before marking · [, ID: keyboard-mark
+		48 button (disabled) Mark an atom with [ before connecting · ], ID: keyboard-connect
+		49 button (disabled) Mark a donor N/O/S/P with [, choose a metal, then } for a directed dative contact in place, ID: keyboard-coordinate
+		50 button More: 3D optimize…, ID: context-overflow
+		51 button (disabled) Align, ID: arrange-menu-AlignObjects
+		52 button (disabled) Distribute, ID: arrange-menu-Distribute
+		53 button (disabled) Order, ID: arrange-menu-Order
+		54 button (disabled) Flip horizontal, ID: arrange-flip-horizontal
+		55 button (disabled) Flip vertical, ID: arrange-flip-vertical
+		56 button (disabled) Rotate 180°, ID: arrange-rotate
+		57 text field (disabled, settable) Rotation (°), Value: 0, ID: arrange-rotation
+		58 button Figure: expanded, ID: inspector-section-ExportFigure
+		59 button Figure format: PNG, ID: export-figure-format
+		60 button PNG resolution: 1200 dpi · 2.9 × 2.3 cm · 1361 × 1071 px, ID: export-resolution
+		61 toggle button (settable, boolean) Transparent, Value: off, ID: export-background-transparent
+		62 toggle button (settable, boolean) Canvas, Value: off, ID: export-background-canvas
+		63 toggle button (settable, boolean) White, Value: off, ID: export-background-white
+		64 toggle button (settable, boolean) Black, Value: off, ID: export-background-black
+		65 toggle button (settable, boolean) Custom, #1F4E79, Value: on, ID: export-background-custom
+		66 button Open Settings at Copy & export, ID: export-background-settings
+		67 button Export PNG figure, ID: export-figure
+		68 button Copy image, ID: export-copy-image
+		69 button Structure & exchange: collapsed, ID: inspector-section-ExportChemical
+		70 button Pages & printing: collapsed, ID: inspector-section-ExportPages
+		71 button Editable document: expanded, ID: inspector-section-ExportNative
+		72 button Drawing view options, ID: status-view
+		73 button Zoom out, ID: status-zoom-out
+		74 button Zoom in, ID: status-zoom-in
+		75 button Fit drawing in view, ID: status-fit
+	76 close button
+	77 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	78 minimize button
+	79 text aspirin.mol • — ReShiki
+80 menu bar
+	81 ReShiki

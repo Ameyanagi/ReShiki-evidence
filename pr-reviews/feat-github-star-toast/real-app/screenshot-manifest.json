@@ -1,0 +1,338 @@
+[
+  {
+    "file": "01-launch.png",
+    "bytes": 1873780,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "bf4e5538fdfc4955033edb8656a9c0ba273a5c8fe5fbf016ea2b342b8e13dcaa",
+    "saved_at_jst": "2026-11-15T10:21:59.692204+09:00"
+  },
+  {
+    "file": "02-text-field-focused-start.png",
+    "bytes": 840914,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "cfb22066dddd7e820648ef4379398ed550c1472755b4122f07e35f2263623f2a",
+    "saved_at_jst": "2026-11-15T10:22:23.391493+09:00"
+  },
+  {
+    "file": "03-text-field-after-45s.png",
+    "bytes": 840981,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "816c66716a0ea80f854bd5cea222ca6e5ab5d8d28f5e02085d34b0e8e5c7dfdf",
+    "saved_at_jst": "2026-11-15T10:23:15.690241+09:00"
+  },
+  {
+    "file": "04-context-menu-start.png",
+    "bytes": 872584,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "a0772f95d27c295a6688a9b5ce393e2d95054198d89b5f7878aa500045a729ed",
+    "saved_at_jst": "2026-11-15T10:23:37.599279+09:00"
+  },
+  {
+    "file": "05-context-menu-after-45s.png",
+    "bytes": 872584,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "a0772f95d27c295a6688a9b5ce393e2d95054198d89b5f7878aa500045a729ed",
+    "saved_at_jst": "2026-11-15T10:24:30.851758+09:00"
+  },
+  {
+    "file": "06-background-start.png",
+    "bytes": 1639941,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "5f3144b182d0d8c69887f55b6f838a306d1cc768ad59af1c0617cdd0bf1b0348",
+    "saved_at_jst": "2026-11-15T10:24:46.257308+09:00"
+  },
+  {
+    "file": "07-background-after-45s.png",
+    "bytes": 1786045,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "0f7165e41f7a6c2f481de8f73ec2ebfbb39d69d791cfddb978d626aadc1facfa",
+    "saved_at_jst": "2026-11-15T10:25:42.303124+09:00"
+  },
+  {
+    "file": "08-background-window-after-45s.png",
+    "bytes": 597233,
+    "width": 2652,
+    "height": 1796,
+    "sha256": "7683fadad36e9dfe51f514c4a02ec2d9319e60bce7916fdb85e36fab924b9a2f",
+    "saved_at_jst": "2026-11-15T10:25:42.805050+09:00"
+  },
+  {
+    "file": "09-return-titlebar-immediate.png",
+    "bytes": 1800979,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "049e734891e6c15376f19326d60209dbe8e8c05a0365a2a2e7d9ece3f284174c",
+    "saved_at_jst": "2026-11-15T10:25:56.304293+09:00"
+  },
+  {
+    "file": "10-return-foreground-immediate.png",
+    "bytes": 836866,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "3495c6fbdf6bef5018d27c42f733d0f94c8bad99f1f301a0e77c42250c363aeb",
+    "saved_at_jst": "2026-11-15T10:26:29.679641+09:00"
+  },
+  {
+    "file": "11-idle-light-25s.png",
+    "bytes": 836866,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "3495c6fbdf6bef5018d27c42f733d0f94c8bad99f1f301a0e77c42250c363aeb",
+    "saved_at_jst": "2026-11-15T10:27:10.546820+09:00"
+  },
+  {
+    "file": "12-idle-light-30s.png",
+    "bytes": 836866,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "3495c6fbdf6bef5018d27c42f733d0f94c8bad99f1f301a0e77c42250c363aeb",
+    "saved_at_jst": "2026-11-15T10:27:15.520844+09:00"
+  },
+  {
+    "file": "13-idle-light-35s.png",
+    "bytes": 896361,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "c02eafdbd8ac5ac26c882f879c6bf1e8d23a6f001640feebe9380b87f040db65",
+    "saved_at_jst": "2026-11-15T10:27:20.519562+09:00"
+  },
+  {
+    "file": "14-idle-light-40s.png",
+    "bytes": 896361,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "c02eafdbd8ac5ac26c882f879c6bf1e8d23a6f001640feebe9380b87f040db65",
+    "saved_at_jst": "2026-11-15T10:27:25.532603+09:00"
+  },
+  {
+    "file": "15-card-light-closeup.png",
+    "bytes": 53802,
+    "width": 700,
+    "height": 320,
+    "sha256": "d5e9a577a53dd204d323b7b81873a4206fcb0b6b7e45032998bdf8b777bb824e",
+    "saved_at_jst": "2026-11-15T10:27:54.615098+09:00"
+  },
+  {
+    "file": "16-not-now-dismissed.png",
+    "bytes": 836866,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "3495c6fbdf6bef5018d27c42f733d0f94c8bad99f1f301a0e77c42250c363aeb",
+    "saved_at_jst": "2026-11-15T10:28:13.290250+09:00"
+  },
+  {
+    "file": "17-not-now-cmd-a-selected.png",
+    "bytes": 872406,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "e8a7bbe3f1a3c61b0b510720730fb004f781d280ce84e5a188bd94c02812db46",
+    "saved_at_jst": "2026-11-15T10:28:24.997153+09:00"
+  },
+  {
+    "file": "18-escape-selection-retained.png",
+    "bytes": 872406,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "e8a7bbe3f1a3c61b0b510720730fb004f781d280ce84e5a188bd94c02812db46",
+    "saved_at_jst": "2026-11-15T10:28:44.118202+09:00"
+  },
+  {
+    "file": "19-updates-panel-header.png",
+    "bytes": 967260,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "ee67846f21a5d24628ff415550d5f33d7279d44be99d940687489122fea6f78a",
+    "saved_at_jst": "2026-11-15T10:29:00.758785+09:00"
+  },
+  {
+    "file": "20-panel-focus-baseline-unselected.png",
+    "bytes": 836866,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "3495c6fbdf6bef5018d27c42f733d0f94c8bad99f1f301a0e77c42250c363aeb",
+    "saved_at_jst": "2026-11-15T10:29:19.019172+09:00"
+  },
+  {
+    "file": "21-updates-closed-cmd-a-selected.png",
+    "bytes": 881233,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "ef8b2a04e1706349fae90fa052efda82b17477a84bee7114ec6e5b2bdd2cdb7e",
+    "saved_at_jst": "2026-11-15T10:29:36.635964+09:00"
+  },
+  {
+    "file": "22-help-about-entry.png",
+    "bytes": 1072981,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "0482ce843bc15c04d23234305a819b2e38a94f2ace1171aa82a1fa66406e91ec",
+    "saved_at_jst": "2026-11-15T10:29:51.996920+09:00"
+  },
+  {
+    "file": "23-updates-panel-via-help-about.png",
+    "bytes": 937968,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "e735aaecee5f11820666f14a9d287c9dce6b470c2da1a2e21a908a1d40939671",
+    "saved_at_jst": "2026-11-15T10:30:03.857965+09:00"
+  },
+  {
+    "file": "24-dark-theme-selected.png",
+    "bytes": 852312,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "85082eaba3ad9505269929af9ac3fa97e7cc1392b7438b1fc2bbe2394bdcc70e",
+    "saved_at_jst": "2026-11-15T10:30:27.542629+09:00"
+  },
+  {
+    "file": "25-dismissed-no-repeat-dark-idle.png",
+    "bytes": 852312,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "85082eaba3ad9505269929af9ac3fa97e7cc1392b7438b1fc2bbe2394bdcc70e",
+    "saved_at_jst": "2026-11-15T10:31:39.331175+09:00"
+  },
+  {
+    "file": "26-dark-idle-desktop.png",
+    "bytes": 1909280,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "96265805917aeae0d4e50f0d204c9e8c781f180285fc7d2fb09bf675113518b8",
+    "saved_at_jst": "2026-11-15T10:31:55.243120+09:00"
+  },
+  {
+    "file": "27-before-restart-foreground.png",
+    "bytes": 1893183,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "d30b30d29c78a4fc0a121730704a50b4ff12d5990b248ff603035934328aeb2a",
+    "saved_at_jst": "2026-11-15T10:32:38.848536+09:00"
+  },
+  {
+    "file": "28-after-hiding-textedit.png",
+    "bytes": 1866295,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "452014951f313102e4d1dcbcdf97861510672d0412e0a94f2fec5860f025ef25",
+    "saved_at_jst": "2026-11-15T10:33:26.962720+09:00"
+  },
+  {
+    "file": "29-restart-quit-request.png",
+    "bytes": 1805535,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "6b07279fc969b2fd583dbfae434317800be61d7deafec9687b7ba25a0723d979",
+    "saved_at_jst": "2026-11-15T10:34:03.737001+09:00"
+  },
+  {
+    "file": "30-dark-relaunch-desktop.png",
+    "bytes": 1884126,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "7d182bef14a36373291da6711d2d81a318ec8fc8b1e4090eb34290a826aff25c",
+    "saved_at_jst": "2026-11-15T10:34:31.523696+09:00"
+  },
+  {
+    "file": "31-dark-idle-start-desktop.png",
+    "bytes": 1801191,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "dae6078ca48a9e7a9e90b57173b27c0ac11d0b17d504a5cafee540141b7cbcfd",
+    "saved_at_jst": "2026-11-15T10:34:59.942489+09:00"
+  },
+  {
+    "file": "32-dark-idle-25s.png",
+    "bytes": 837514,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "0f333a79422c9afdc83e1ebfd1c4cff20c69ca1e55ce740b3cf48eecd2d2d792",
+    "saved_at_jst": "2026-11-15T10:35:12.893445+09:00"
+  },
+  {
+    "file": "33-dark-idle-30s.png",
+    "bytes": 837514,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "0f333a79422c9afdc83e1ebfd1c4cff20c69ca1e55ce740b3cf48eecd2d2d792",
+    "saved_at_jst": "2026-11-15T10:35:17.864142+09:00"
+  },
+  {
+    "file": "34-dark-idle-35s.png",
+    "bytes": 894323,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "5b6ee6b54026126bae16dc7729110c667530e9f3e6077d711ac4b52f6c4ff440",
+    "saved_at_jst": "2026-11-15T10:35:22.867208+09:00"
+  },
+  {
+    "file": "35-dark-idle-40s-desktop.png",
+    "bytes": 1862220,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "5071e02918eceb1277af33b68fcb5397d83567269e82308a7be050d2c28a9d5c",
+    "saved_at_jst": "2026-11-15T10:35:27.898736+09:00"
+  },
+  {
+    "file": "36-dark-idle-whole-window.png",
+    "bytes": 894323,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "5b6ee6b54026126bae16dc7729110c667530e9f3e6077d711ac4b52f6c4ff440",
+    "saved_at_jst": "2026-11-15T10:35:28.841399+09:00"
+  },
+  {
+    "file": "37-card-dark-closeup.png",
+    "bytes": 52309,
+    "width": 700,
+    "height": 320,
+    "sha256": "9ff1c48b420278fed8be71613472386a50d2275ccd8df0cbc6603445e09b8e5b",
+    "saved_at_jst": "2026-11-15T10:35:44.593090+09:00"
+  },
+  {
+    "file": "38-dark-x-closed-cmd-a-selected.png",
+    "bytes": 872778,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "f42b3a934e91f8c24057afa06f84a7d778b6c98747877dcc5b84ac58921895f9",
+    "saved_at_jst": "2026-11-15T10:36:32.774341+09:00"
+  },
+  {
+    "file": "39-updates-panel-dark.png",
+    "bytes": 966665,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "4eaccbab026b8b557b1a1f935e3e84eefe04c1bba9501056ada9243b4662d02c",
+    "saved_at_jst": "2026-11-15T10:36:54.282228+09:00"
+  },
+  {
+    "file": "40-light-theme-restored.png",
+    "bytes": 852317,
+    "width": 2784,
+    "height": 1928,
+    "sha256": "78c366e75410efebece316faf833a408ed3d8399d8d697d4f540dc7bc48fafcc",
+    "saved_at_jst": "2026-11-15T10:37:21.521291+09:00"
+  },
+  {
+    "file": "41-dismissed-no-repeat-after-40s-desktop.png",
+    "bytes": 1905852,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "830162d62be3f93f34ddb36022d10012895a3abf90042f1e972bd442477e001c",
+    "saved_at_jst": "2026-11-15T10:37:50.245741+09:00"
+  },
+  {
+    "file": "42-final-quit-desktop.png",
+    "bytes": 1805748,
+    "width": 3360,
+    "height": 2100,
+    "sha256": "1167ac42a9feddbfadd0912349a6c4a97d0f895509dd0bf2737bd96de0f2f1cb",
+    "saved_at_jst": "2026-11-15T10:38:19.405819+09:00"
+  }
+]

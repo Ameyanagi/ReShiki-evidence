@@ -1,0 +1,15 @@
+{
+  "last_input_utc": "2026-11-15T01:37:09.778Z",
+  "capture_utc": "2026-11-15T01:37:49.784801+00:00",
+  "elapsed_seconds": 40.007,
+  "record": {
+    "first_launch_day": "2026-11-14",
+    "uses": 5,
+    "state": {
+      "asked": {
+        "version": "0.15.0",
+        "day": "2026-11-15"
+      }
+    }
+  }
+}

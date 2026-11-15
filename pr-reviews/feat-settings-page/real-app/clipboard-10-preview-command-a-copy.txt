@@ -1,0 +1,1 @@
+«class rtfd», 485, «class HTML», 582, «class RTF », 394, «class utf8», 9, «class ut16», 20, string, 9, Unicode text, 18
