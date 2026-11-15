@@ -1,0 +1,47 @@
+base-copy.png: 76696 bytes, 1361 x 1071 px
+   0 IHDR 13
+   1 iTXt 768  keyword dev.reshiki.drawing
+   2 pHYs 9  47244 px/m = 1200 dpi
+   3 IDAT 75838
+   4 IEND 0
+b-transparent.png: 14128 bytes, 341 x 268 px
+   0 IHDR 13
+   1 pHYs 9  11811 px/m = 300 dpi
+   2 IDAT 13270
+   3 iTXt 768  keyword dev.reshiki.drawing
+   4 IEND 0
+b-canvas.png: 24806 bytes, 341 x 268 px
+   0 IHDR 13
+   1 pHYs 9  11811 px/m = 300 dpi
+   2 IDAT 23948
+   3 iTXt 768  keyword dev.reshiki.drawing
+   4 IEND 0
+b-white.png: 24806 bytes, 341 x 268 px
+   0 IHDR 13
+   1 pHYs 9  11811 px/m = 300 dpi
+   2 IDAT 23948
+   3 iTXt 768  keyword dev.reshiki.drawing
+   4 IEND 0
+b-black.png: 24719 bytes, 341 x 268 px
+   0 IHDR 13
+   1 pHYs 9  11811 px/m = 300 dpi
+   2 IDAT 23861
+   3 iTXt 768  keyword dev.reshiki.drawing
+   4 IEND 0
+b-custom.png: 25686 bytes, 341 x 268 px
+   0 IHDR 13
+   1 pHYs 9  11811 px/m = 300 dpi
+   2 IDAT 24828
+   3 iTXt 768  keyword dev.reshiki.drawing
+   4 IEND 0
+b-noedit.png: 13348 bytes, 341 x 268 px
+   0 IHDR 13
+   1 pHYs 9  11811 px/m = 300 dpi
+   2 IDAT 13270
+   3 IEND 0
+b-1200.png: 76696 bytes, 1361 x 1071 px
+   0 IHDR 13
+   1 pHYs 9  47244 px/m = 1200 dpi
+   2 IDAT 75838
+   3 iTXt 768  keyword dev.reshiki.drawing
+   4 IEND 0
