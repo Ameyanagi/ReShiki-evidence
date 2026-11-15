@@ -100,7 +100,7 @@ Each conflict: a bond added and saved in ReShiki, then a commit on the mock chan
 
 | | |
 | --- | --- |
-| <img src="light-30-star-card.png" width="420"><br>The "Enjoying ReShiki?" card (data folder seeded so the card is due), signed in. | <img src="light-31-starred.png" width="420"><br>After Star on GitHub: no browser, the card closes, status "Starred on GitHub. Thank you!". The mock now reports ReShiki as starred. |
+| <img src="light-30-star-card.png" width="420"><br>The "Enjoying ReShiki?" card at the canvas's bottom right (data folder seeded so the card is due); status "Signed in to GitHub". | <img src="light-31-starred.png" width="420"><br>After Star on GitHub: no browser, the card closes, status "Starred on GitHub. Thank you!". The mock now reports ReShiki as starred. |
 | <img src="light-32-about-starred.png" width="420"><br>About (click the ReShiki wordmark): the star link reads "★ Starred". | <img src="dark-32-about-signed-in-not-starred.png" width="420"><br>About while signed in and not starred, dark: "Star ReShiki on GitHub" without ↗, because a click stars through the API instead of opening the browser. |
 
 ### Keyboard focus after each dialog
@@ -136,6 +136,7 @@ VERIFICATION_TABLE
   5. Star from the card while signed in, and sign out/in once to check the Keychain entry (macOS), Credential Manager (Windows x64) and Secret Service (Linux).
 - **Credential stores.** The evidence runs used the in-memory store (any address override forces it). A Keychain round trip was run once on macOS arm64 during development; Windows Credential Manager and Linux Secret Service were not exercised in this evidence run.
 - **Found in this evidence run (not fixed here):** the status bar says "Sent · 1 drawing changed on GitHub and was left out" in red even when that one drawing was the only one and nothing was sent; the star card can open while the GitHub toolbar menu is open; the GitHub menu items and the account dialog's signed-in buttons are not in the accessibility tree until another action refreshes it.
+- **Star card after sign-in not confirmed in the GUI.** In the light run the card was already open when sign-in finished (it likely opened while the GitHub menu was open, before signing in), so the star click went through the API but the "ask GitHub first" path before showing the card was not seen. A second, dark run saw no card within 3 minutes of idling after sign-in, with another agent's pointer activity on the shared desktop as a possible cause. The unit tests cover that path; the owner check above (star from the card while signed in) covers it on real GitHub.
 - Scope: default branch only, `.rsk` and `.svg` only, desktop only.
 
 ## Changelog
