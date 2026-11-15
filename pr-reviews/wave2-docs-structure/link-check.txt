@@ -1,0 +1,65 @@
+Website build (bun run docs:build: astro build, check-links.mjs, check-llms.mjs, check-palette-downloads.mjs)
+macOS arm64, bun 1.4.4, fresh worktrees, bun install --frozen-lockfile
+
+== Before: main 1d94f392
+11:40:17 [starlight:pagefind] Found 172 HTML files.
+11:40:18 [build] 134 page(s) built in 48.09s
+Verified 14885 local documentation links and assets.
+Verified llms.txt and agent-api.txt (190724 bytes, 13 tools).
+Verified 1360 colors in the JSON, CSV and CSS downloads.
+exit 0
+/developer/ pages: 113 (+1 redirect)   dist/doc-images: 291 files, 60M
+manual screenshots: 54 PNG, 18,152,869 bytes
+dist size: 132M
+
+== After: wave2/docs-structure eaaceda6
+11:40:12 [starlight:pagefind] Found 173 HTML files.
+11:40:14 [build] 104 page(s) built in 44.51s
+Verified 12768 local documentation links and assets.
+Verified llms.txt and agent-api.txt (190877 bytes, 13 tools).
+Verified 1360 colors in the JSON, CSV and CSS downloads.
+exit 0
+/developer/ pages: 83 (+32 redirects)   dist/doc-images: 108 files, 23M
+manual screenshots: 48 WebP + 6 PNG, 4,548,191 bytes
+dist size: 80M
+
+---
+
+Redirect pages under /developer/ in the branch build: 32 (29 to GitHub records, 3 to site pages)
+
+/developer/assistant-setup/ -> /guide/assistant-setup/
+/developer/contextual-shortcuts/ -> /guide/shortcuts/
+/developer/getting-started/ -> /guide/install/
+
+/developer/adaptive-chemistry-limits-validation/ -> github: docs/changes/adaptive-chemistry-limits-validation.md
+/developer/agent-api-p1-validation/ -> github: docs/changes/agent-api-p1-validation.md
+/developer/capabilities/ -> github: docs/changes/capabilities.md
+/developer/changes-pr17/ -> github: docs/changes/changes-pr17.md
+/developer/chemdraw-attachment-comparison/ -> github: docs/changes/chemdraw-attachment-comparison.md
+/developer/coordination-desktop-validation/ -> github: docs/changes/coordination-desktop-validation.md
+/developer/drawing-tool-defaults-review/ -> github: docs/changes/drawing-tool-defaults-review.md
+/developer/drawing-tools-validation/ -> github: docs/changes/drawing-tools-validation.md
+/developer/nmr-compact-validation/ -> github: docs/changes/nmr-compact-validation.md
+/developer/nmr-visual-review/ -> github: docs/changes/nmr-visual-review.md
+/developer/projected-double-bonds-review/ -> github: docs/changes/projected-double-bonds-review.md
+/developer/reaction-atom-mapping-validation/ -> github: docs/changes/reaction-atom-mapping-validation.md
+/developer/rear-opacity-review/ -> github: docs/changes/rear-opacity-review.md
+/developer/release-0.10.0-validation/ -> github: docs/changes/release-0.10.0-validation.md
+/developer/release-0.11.0-validation/ -> github: docs/changes/release-0.11.0-validation.md
+/developer/release-0.12.0-validation/ -> github: docs/changes/release-0.12.0-validation.md
+/developer/release-0.12.0-windows-security/ -> github: docs/changes/release-0.12.0-windows-security.md
+/developer/release-0.13.0-validation/ -> github: docs/changes/release-0.13.0-validation.md
+/developer/release-0.13.1-validation/ -> github: docs/changes/release-0.13.1-validation.md
+/developer/release-0.14.0-validation/ -> github: docs/changes/release-0.14.0-validation.md
+/developer/release-0.15.0-validation/ -> github: docs/changes/release-0.15.0-validation.md
+/developer/release-0.6-validation/ -> github: docs/changes/release-0.6-validation.md
+/developer/release-0.7-validation/ -> github: docs/changes/release-0.7-validation.md
+/developer/release-0.7.1-validation/ -> github: docs/changes/release-0.7.1-validation.md
+/developer/release-0.8.0-validation/ -> github: docs/changes/release-0.8.0-validation.md
+/developer/release-0.9.0-validation/ -> github: docs/changes/release-0.9.0-validation.md
+/developer/windows-gpu-validation/ -> github: docs/changes/windows-gpu-validation.md
+/developer/windows-security-evidence/ -> github: docs/changes/windows-security-evidence.md
+/developer/workspace-review/ -> github: docs/changes/workspace-review.md
+
+Old URLs: 171 HTML routes on main; 0 of them have no page or redirect on the branch: []
+New routes on the branch: ['developer/npm-package']
