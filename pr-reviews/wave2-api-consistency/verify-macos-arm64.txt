@@ -1,0 +1,46 @@
+wave2/api-consistency · macOS arm64 · results reported by the lane (implementation, then review fixes)
+
+Branch head 35ca456d (base main 1d94f392). Each lane run used its own CARGO_TARGET_DIR,
+RESHIKI_INCHI_HELPER and RESHIKI_NAMING_HELPER set to the built binary, and a fresh RESHIKI_DATA_DIR.
+
+After the review fixes (final tree):
+  cargo fmt --all --check                                                     pass
+  cargo clippy --workspace --lib --bins --all-features --locked -- -D warnings   pass
+  cargo clippy -p reshiki -p reshiki-agent -p reshiki-mcp -p reshiki-python
+        --all-targets --all-features --locked -- -D warnings                  pass
+  cargo test --locked -p reshiki-agent -p reshiki-mcp                         agent 310 + 34 + 4 passed (2 ignored); mcp 57 + 2 + 18 passed
+  cargo test --locked -p reshiki --lib naming::                               130 passed, 2 ignored (see note 1)
+  cargo test --locked -p reshiki --test cli --test agent_api_runtime
+        --test agent_api_cli_files --test agent_api_labels
+        --test agent_api_malformed --test agent_api_grants                    19, 6, 5, 5, 5, 10 passed
+  cargo test --locked --bin reshiki                                           1580 passed, 182 ignored
+  maturin debug wheel + pytest crates/python/tests (with rdkit)              153 passed, 3 skipped
+  ruff check, ruff format --check, ty check (crates/python)                  pass
+  bun fmt --check .                                                           pass (510 files)
+  bun run docs:check                                                          0 errors, 0 warnings
+  lefthook pre-commit on each commit                                          pass
+
+Before the review fixes (implementation round):
+  cargo clippy -p reshiki-web -p reshiki-web-worker --lib
+        --target wasm32-unknown-unknown --locked -- -D warnings               pass (only compile check of the browser crate)
+  cargo test --locked -p reshiki-io                                           lib 643 passed, 5 ignored; 10 + 3 + 1 integration
+  cargo test --locked -p reshiki --lib                                        391 passed, 10 ignored
+  cargo test --locked -p reshiki --test mcp_tools --test mcp_stdio
+        --test mcp_shutdown --test headless_parity --test headless_launch
+        --test assistant_contract (and others)                                all passed
+  uv run ruff/ty + python -m unittest (reference, scripts, tests)            pass; 244 OK, 12 skipped
+  bun run lint:js                                                             oxlint clean
+  uv run python scripts/assemble_changelog.py --check                        pass
+
+Not run on macOS arm64:
+  bun test in packages/editor (no wasm-bindgen CLI on this Mac): parity.test.ts and
+  editor.test.ts run only in CI.
+
+Note 1: a second copy of the naming tests, started by mistake at the same time, had one failure in
+naming::reverse::tests::native_worker_then_local_opsin_verifies_supported_names. Run alone, it
+passed. That test does not call the changed code.
+
+Evidence binaries for this PR (debug, built fresh with CARGO_BUILD_JOBS=2 CARGO_INCREMENTAL=0
+CARGO_PROFILE_DEV_DEBUG=0, each in a new target folder):
+  base   1d94f392  sha256 d851719f3fce7e0db2b1a4a06ce352880f892597d56722e3ad2995eb9667695b
+  branch 35ca456d  sha256 f677a91671f8d66a3d29da354b33d66e34d0fdc5b1a34c1bfb40e166dd6ed978

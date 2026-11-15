@@ -1,0 +1,40 @@
+ReShiki base 1d94f392 · tool errors · macOS arm64 debug build
+
+> tools/call render {"document": "<doc#2>", "format": "png", "max_width": 0}
+  isError: true
+  {
+    "error": {
+      "code": "invalid_arguments",
+      "message": "max_width must be from 1 to 8192 pixels"
+    }
+  }
+
+> tools/call apply insert at base_revision "0" → isError false
+
+> tools/call apply {"document": "<doc#2>", "edit": "insert", "source": "<doc#3>", "ids": null, "base_revision": "0", "idempotency_key": "second-try"}
+  isError: true
+  {
+    "error": {
+      "code": "stale",
+      "message": "base_revision 0 is not the current revision 1; inspect the document and retry with a new idempotency_key"
+    }
+  }
+
+$ reshiki --mcp --allow-write out   (out/ethanol.mol exists)
+> tools/call file_save {"document": "<doc#4>", "path": "<dir>/ethanol.mol", "format": "mol", "overwrite": false}
+  isError: true
+  {
+    "error": {
+      "code": "access_denied",
+      "message": "path_not_granted: \"<dir>/ethanol.mol\" is not inside a folder granted for writing; granted folders: <dir>/out. Folders are granted by the user when the server starts, with --allow-read and --allow-writ… (268 chars)"
+    }
+  }
+
+> tools/call file_save {"document": "<doc#4>", "path": "<dir>/out/ethanol.mol", "format": "mol", "overwrite": false}
+  isError: true
+  {
+    "error": {
+      "code": "failed",
+      "message": "file_exists: \"<dir>/out/ethanol.mol\" already exists"
+    }
+  }

@@ -1,0 +1,45 @@
+ReShiki base 1d94f392 · format names over MCP · macOS arm64 debug build
+
+tools/list import.format: auto, smiles, mol, rxn, rsmi, inchi, cdxml, cdx, reshiki
+tools/list export.format: svg, pdf, png, cdxml, mol, smiles, inchi
+tools/list file_save.format: reshiki, svg, pdf, png, cdxml, mol, smiles, inchi
+
+import rsmi CCO>>CC=O, then:
+
+> tools/call export {"document": "<doc#7>", "format": "cdx"}
+  isError: true
+  {
+    "error": {
+      "code": "invalid_arguments",
+      "message": "unknown variant `cdx`, expected one of `svg`, `pdf`, `png`, `cdxml`, `mol`, `smiles`, `inchi`"
+    }
+  }
+
+> tools/call export {"document": "<doc#7>", "format": "rxn"}
+  isError: true
+  {
+    "error": {
+      "code": "invalid_arguments",
+      "message": "unknown variant `rxn`, expected one of `svg`, `pdf`, `png`, `cdxml`, `mol`, `smiles`, `inchi`"
+    }
+  }
+
+> tools/call export {"document": "<doc#7>", "format": "rsmi"}
+  isError: true
+  {
+    "error": {
+      "code": "invalid_arguments",
+      "message": "unknown variant `rsmi`, expected one of `svg`, `pdf`, `png`, `cdxml`, `mol`, `smiles`, `inchi`"
+    }
+  }
+
+(file_save format reshiki → out/r.rsk, 3,736 characters)
+
+> tools/call import {"format": "rsk", "text": "<contents of out/r.rsk>"}
+  isError: true
+  {
+    "error": {
+      "code": "invalid_arguments",
+      "message": "unknown variant `rsk`, expected one of `auto`, `smiles`, `mol`, `rxn`, `rsmi`, `inchi`, `cdxml`, `cdx`, `reshiki`"
+    }
+  }

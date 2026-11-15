@@ -1,0 +1,12 @@
+ReShiki base 1d94f392 · a PNG preview of a SMILES · macOS arm64 debug build
+
+aspirin CC(=O)Oc1ccccc1C(=O)O
+
+1. import → document <doc#6>
+2. render png → 22,040 bytes, sha256 453a37b9626fe225…
+   document_list before close: 1 document(s)
+3. document_close
+→ 3 calls
+
+> tools/call convert {"input": {"format": "smiles", "text": "CC(=O)Oc1ccccc1C(=O)O"}, "to": "preview"}
+  protocol error {"code": -32602, "message": "Unknown tool: convert"}

@@ -1,0 +1,15 @@
+ReShiki branch 35ca456d · a PNG preview of a SMILES · macOS arm64 debug build
+
+aspirin CC(=O)Oc1ccccc1C(=O)O
+
+1. import → document <doc#6>
+2. render png → 22,040 bytes, sha256 453a37b9626fe225…
+   document_list before close: 1 document(s)
+3. document_close
+→ 3 calls
+
+> tools/call convert {"input": {"format": "smiles", "text": "CC(=O)Oc1ccccc1C(=O)O"}, "to": "preview"}
+  isError: false; value.width 327, value.height 257, value.receipt {"byte_len": 22040, "detail": null, "format": "png"}
+  image 22,040 bytes, sha256 453a37b9626fe225…  same bytes as render: True
+  document_list after convert: 0 document(s)
+→ 1 call

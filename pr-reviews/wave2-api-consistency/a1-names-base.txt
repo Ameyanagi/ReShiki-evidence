@@ -1,0 +1,16 @@
+ReShiki base 1d94f392 · chemical names · macOS arm64 debug build
+
+> tools/call import {"format": "name", "text": "caffeine"}
+  isError: true  error: {"code": "invalid_arguments", "message": "unknown variant `name`, expected one of `auto`, `smiles`, `mol`, `rxn`, `rsmi`, `inchi`, `cdxml`, `cdx`, `reshiki`"}
+
+> tools/call name {"document": "<doc#5>"}
+  protocol error {"code": -32602, "message": "Unknown tool: name"}
+
+> tools/call convert {"input": {"format": "name", "text": "(1M)-[1,1'-binaphthalene]-2,2'-diol"}, "to": "mol"}
+  protocol error {"code": -32602, "message": "Unknown tool: convert"}
+
+> tools/call convert {"input": {"format": "name", "text": "(1P)-[1,1'-binaphthalene]-2,2'-diol"}, "to": "mol"}
+  protocol error {"code": -32602, "message": "Unknown tool: convert"}
+
+> tools/call convert {"input": {"format": "name", "text": "(R)-(+)-lactic acid"}, "to": "smiles"}
+  protocol error {"code": -32602, "message": "Unknown tool: convert"}

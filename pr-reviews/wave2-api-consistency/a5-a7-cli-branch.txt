@@ -1,0 +1,20 @@
+ReShiki branch 35ca456d · reshiki --cli · macOS arm64 debug build
+
+$ reshiki --cli convert --smiles C( --to mol
+  reshiki: error[failed]: Invalid SMILES at byte 2
+  exit 1
+
+$ reshiki --cli render --smiles CCO --to png --width 9000 -o big.png
+  reshiki: error[invalid_arguments]: max_width must be from 1 to 8192 pixels
+  exit 1
+
+$ echo caffeine | reshiki --cli convert - --from name --to smiles
+  Cn1c(=O)c2c(ncn2C)n(C)c1=O
+  exit 0
+
+$ reshiki --cli convert --smiles CCO --to cdx -o ethanol.cdx
+  exit 0
+  ethanol.cdx: 540 bytes, starts 'VjCD0100'
+
+$ reshiki --cli info   (top-level keys of the JSON line)
+  api, cli, experimental, validation, value, versions, warnings

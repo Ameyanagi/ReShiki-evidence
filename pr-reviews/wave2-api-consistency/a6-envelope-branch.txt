@@ -1,0 +1,28 @@
+ReShiki branch 35ca456d · result shapes (operation API envelope) · macOS arm64 debug build
+
+> tools/call info {}
+  isError: false
+  structuredContent keys: validation, value, versions, warnings
+  value keys: budgets, files, formats, grants, operation_api, stability
+
+> tools/call document_new {}
+  isError: false
+  structuredContent keys: validation, value, versions, warnings
+  value keys: document, revision
+
+> tools/call document_list {}
+  isError: false
+  structuredContent keys: validation, value, versions, warnings
+  value keys: documents
+
+> tools/call inspect {"document": "<doc#1>"}
+  isError: false
+  structuredContent keys: validation, value, versions, warnings
+  value keys: abbreviations, annotations, arrows, atoms, bonds, bounds, counts, document, expanded_ids, graphics, groups, note, reactions, revision, truncated
+
+> tools/call document_close {"document": "<doc#1>"}
+  isError: false
+  structuredContent keys: validation, value, versions, warnings
+  value keys: closed, document
+
+handle of the new document read from: value.document

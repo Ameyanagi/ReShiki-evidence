@@ -1,0 +1,23 @@
+ReShiki base 1d94f392 · result shapes (operation API envelope) · macOS arm64 debug build
+
+> tools/call info {}
+  isError: false
+  structuredContent keys: budgets, files, formats, grants, operation_api, stability, versions
+
+> tools/call document_new {}
+  isError: false
+  structuredContent keys: document, revision, versions
+
+> tools/call document_list {}
+  isError: false
+  structuredContent keys: documents, versions
+
+> tools/call inspect {"document": "<doc#1>"}
+  isError: false
+  structuredContent keys: abbreviations, annotations, arrows, atoms, bonds, bounds, counts, document, expanded_ids, graphics, groups, note, reactions, revision, truncated, versions
+
+> tools/call document_close {"document": "<doc#1>"}
+  isError: false
+  structuredContent keys: closed, document, versions
+
+handle of the new document read from: document (top level)
