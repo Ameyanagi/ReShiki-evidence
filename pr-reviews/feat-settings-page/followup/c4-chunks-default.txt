@@ -1,0 +1,8 @@
+$ png_chunks.py  (Copy image (Cmd+Shift+C), default on)
+clipboard PNG: 14,128 bytes
+  IHDR  341 x 268 px
+  pHYs  300 dpi
+  IDAT  x1
+  iTXt  keyword 'dev.reshiki.drawing', 768 bytes
+  IEND  
+editable drawing chunk: PRESENT

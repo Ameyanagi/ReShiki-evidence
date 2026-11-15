@@ -1,0 +1,7 @@
+$ png_chunks.py  (Copy image on > Transparent, Editable drawing off)
+clipboard PNG: 13,348 bytes
+  IHDR  341 x 268 px
+  pHYs  300 dpi
+  IDAT  x1
+  IEND  
+editable drawing chunk: NONE
