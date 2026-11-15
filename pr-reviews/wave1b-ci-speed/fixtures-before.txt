@@ -1,0 +1,11 @@
+$ git log --oneline -1   # main 1d94f392 + one fixture change
+6f24dd154 demo: one naming baseline row drops from 21 to 20
+$ git diff --stat 1d94f392 HEAD
+ tests/fixtures/s2n/baseline.tsv | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ ls scripts/baseline_summary.py
+ls: scripts/baseline_summary.py: No such file or directory
+$ grep -c "Changed fixture rows" .github/workflows/checks.yml
+0
+# No CI job lists the changed rows. A reviewer reads the raw file diff;
+# for the 60 gzipped fixtures it only says a binary file changed.

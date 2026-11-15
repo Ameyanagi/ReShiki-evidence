@@ -1,0 +1,3 @@
+001359c4c276d964833aa3fa8fa43d61ded3b43b  reshiki (debug, base main 1d94f392)
+001359c4c276d964833aa3fa8fa43d61ded3b43b  reshiki (debug, branch 3f88d65e): identical, the branch changes no Rust code
+ef45895365511fcb806e86fedb30b3b2d759cd02  reshiki-inchi-helper (debug, branch 3f88d65e), copied by scripts/build_inchi_helper.py from target/debug

@@ -1,0 +1,26 @@
+$ gh api repos/Ameyanagi/ReShiki/actions/cache/usage      # 2026-11-15 03:15 UTC
+{"active_caches_size_in_bytes":13171826940,"active_caches_count":25}    # limit: 10 GB
+$ gh api repos/Ameyanagi/ReShiki/actions/caches  (summed by job)
+ 4.90 GB  12 caches  Rust geometry: 6 targets x 2 Cargo.lock keys
+ 4.66 GB   3 caches  rust test jobs (macOS arm64, Linux x64, Windows x64)
+ 1.00 GB   2 caches  wasm32
+ 0.88 GB   2 caches  python-package
+ 0.65 GB   1 cache   wayland-qa
+ 0.52 GB   2 caches  linux-x11
+ 0.42 GB   6 caches  setup-uv, bun
+13.03 GB in total: GitHub evicts the oldest caches, pull request runs build cold
+
+$ gh run view <id> --json jobs    # Checks on main, last 5 green runs (minutes)
+run            91ced4c1  c51a564e  81d2d051  1d94f392  621e7ab1
+python macOS        2.6       2.5       2.3       2.5       2.2   own macOS runner
+geometry arm64 mac  3.4       6.0       3.1       2.9       5.9   own macOS runner
+lint+goldens macOS  9.8       9.9       9.8       9.9      17.2
+longest job        39.6      32.6      28.3      34.7      35.3   (Windows/macOS rust)
+macOS runners         6         6         6         6         6
+
+rust jobs, "Build the exact application for local naming worker tests" (s):
+  Windows x64  56-102 warm     macOS arm64  53-94 warm, 203 and 398 cold (621e7ab1)
+  (the step after "Build the Rust helper", which compiled into target/<triple>/)
+rust jobs, "Test the native workspace partition" (s):
+  Windows x64  689-1201        macOS arm64  644-1072        Linux x64  513-853
+  naming-worker tests: one at a time; no per-test time limit (job runs to 6 h)

@@ -1,0 +1,22 @@
+# Branch 3f88d65e has not run CI yet. These are expected effects, unmeasured
+# until the pull request runs.
+
+caches saved on main (expected steady state, about 7.3 GB, under 10 GB):
+  Rust geometry      1 cache (Windows x64, about 0.44 GB) instead of 6 targets
+  linux-x11          none (cold build 1.5 min vs warm 0.9 to 1.3 min)
+  release, nightly   none (were 3.7 GB before they were evicted)
+  s2n daily          none
+  rust test jobs     smaller: the InChI helper no longer fills target/<triple>/
+
+macOS runners per full run: 4 instead of 6
+  python macOS and geometry arm64 become two steps of lint+goldens macOS
+  lint+goldens macOS: about 16 to 18 min warm (+2.5 Python, +4 to 5 geometry,
+  cold because it keeps --target), still under the 20 to 35 min rust jobs
+
+rust jobs:
+  "Build the exact application ..." should drop to link time only
+  (helper and app share target/debug; local cold build 826 s -> 409 s)
+  naming-worker tests two at a time: about 4 to 5 min less nextest time on
+  Windows x64 and macOS arm64 (local macOS arm64 group: 1455 s -> 845 s)
+  a hung test fails after 15 min, not at the 6 h job limit
+  each workspace partition uploads nextest-junit-<target>-<partition>

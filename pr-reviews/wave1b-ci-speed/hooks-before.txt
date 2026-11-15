@@ -1,0 +1,21 @@
+# main 1d94f392: a commit that touches Cargo.toml
+$ lefthook dump --format yaml   (hook: command)
+  pre-commit: bun-fmt:
+  pre-commit: cargo-clippy:
+  pre-commit: cargo-fmt:
+  pre-commit: oxlint:
+  pre-commit: ruff:
+  pre-commit: ruff-format:
+  pre-commit: ty:
+$ lefthook run pre-commit --file Cargo.toml --command ruff --command ruff-format --command ty
+┃  ruff ❯ 
+All checks passed!
+┃  ruff-format ❯ 
+318 files already formatted
+┃  ty ❯ 
+All checks passed!
+  ────────────────────────────────────
+summary: (done in 2.26 seconds)
+✔️ ruff (0.18 seconds)
+✔️ ruff-format (0.10 seconds)
+✔️ ty (1.72 seconds)

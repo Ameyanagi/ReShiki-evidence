@@ -1,0 +1,20 @@
+# branch 3f88d65e: a commit that touches Cargo.toml
+$ lefthook dump --format yaml   (hook: command)
+  pre-commit: bun-fmt:
+  pre-commit: cargo-fmt:
+  pre-commit: oxlint:
+  pre-commit: ruff:
+  pre-commit: ruff-format:
+  pre-commit: ty:
+  pre-push: cargo-clippy:
+$ lefthook run pre-commit -v --file Cargo.toml --command ruff --command ruff-format --command ty
+│  ruff (skip) no matching staged files
+│  ruff-format (skip) no matching staged files
+│  ty (skip) no matching staged files
+Error: failed to run the hook: no job matching ruff, ruff-format, ty found in hook "pre-commit"
+# the same three still run for pyproject.toml (and uv.lock, *.py):
+$ lefthook run pre-commit --file pyproject.toml --command ruff --command ruff-format --command ty
+summary: (done in 1.79 seconds)
+✔️ ruff (0.21 seconds)
+✔️ ruff-format (0.09 seconds)
+✔️ ty (1.32 seconds)

@@ -1,0 +1,13 @@
+# main 1d94f392, target dir already holds target/debug/reshiki (the app build)
+$ uv run --locked python scripts/build_inchi_helper.py --jobs 2 --target aarch64-apple-darwin --output helper-base
+   Compiling ... 337 crates, into target/aarch64-apple-darwin/debug
+real 1958.36
+helper-base/reshiki-inchi-helper
+$ jq .command helper-base/build.json
+["cargo","build","--locked","--bin","reshiki-inchi-helper","--target","aarch64-apple-darwin","--jobs","2"]
+$ shasum helper-base/reshiki-inchi-helper target/aarch64-apple-darwin/debug/reshiki-inchi-helper
+e3290a2aff73e2587fc0cfd9b01e83b696bf2453  helper-base/reshiki-inchi-helper
+e3290a2aff73e2587fc0cfd9b01e83b696bf2453  target/aarch64-apple-darwin/debug/reshiki-inchi-helper
+$ du -sh target/debug target/aarch64-apple-darwin
+2.2G  target/debug                 # app: cargo build --bin reshiki
+1.5G  target/aarch64-apple-darwin  # helper: the same crates compiled a second time

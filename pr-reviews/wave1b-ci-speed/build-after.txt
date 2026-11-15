@@ -1,0 +1,22 @@
+# branch 3f88d65e, empty target dir
+$ uv run --locked python scripts/build_inchi_helper.py --jobs 2 --output helper-branch
+   Compiling ... 374 crates, into target/debug
+real 2133.74
+helper-branch/reshiki-inchi-helper
+$ cargo build --locked --jobs 2 --bin reshiki          # the app, next step in CI
+   Compiling reshiki v0.15.0                           # 1 crate: the rest is shared
+real 130.80
+$ uv run --locked python scripts/build_inchi_helper.py --jobs 2 --target aarch64-apple-darwin --output helper-branch-ci
+    Finished `dev` profile [unoptimized] target(s) in 2.69s   # as CI calls it: --target = host
+real 5.48
+$ jq .command helper-branch-ci/build.json
+["cargo","build","--locked","--bin","reshiki-inchi-helper","--jobs","2"]
+$ cargo build ... --message-format=json | jq 'select(.target.name=="reshiki-inchi-helper").executable'
+"/Users/.../evidence-ci/debug/reshiki-inchi-helper"     # the path the script copies
+$ shasum target/debug/reshiki-inchi-helper helper-branch/reshiki-inchi-helper helper-branch-ci/reshiki-inchi-helper
+ef45895365511fcb806e86fedb30b3b2d759cd02  target/debug/reshiki-inchi-helper
+ef45895365511fcb806e86fedb30b3b2d759cd02  helper-branch/reshiki-inchi-helper
+ef45895365511fcb806e86fedb30b3b2d759cd02  helper-branch-ci/reshiki-inchi-helper
+$ ls target; du -sh target/debug
+debug
+2.3G  target/debug                 # app and helper together

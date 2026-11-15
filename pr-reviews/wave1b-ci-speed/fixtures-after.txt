@@ -1,0 +1,14 @@
+$ git log --oneline -1   # branch 3f88d65e + the same fixture change
+d1d272534 demo: one naming baseline row drops from 21 to 20
+$ GITHUB_STEP_SUMMARY=summary.md python3 scripts/baseline_summary.py 3f88d65e
+### 1 changed fixture files
+
+- `tests/fixtures/s2n/baseline.tsv`: 1 removed, 1 added
+
+```diff
+- generated	acid	21	21
++ generated	acid	20	21
+```
+
+$ wc -c < summary.md   # appended to the "Changed fixture rows" job summary
+144
