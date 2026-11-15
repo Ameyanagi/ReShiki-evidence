@@ -1,0 +1,13 @@
+# Repeated timings, debug builds, macOS arm64, runs alternated before/after; machine shared with other builds (1-min load average shown)
+# before = main 1d94f392, after = wave1b/import-limits 0f3c65c4
+svg 1 after [after] exit 1 in 10.60 s, no file written (load 7.79)
+svg 1 before [before] exit 1 in 15.89 s, no file written (load 8.00)
+svg 2 after [after] exit 1 in 9.43 s, no file written (load 7.38)
+svg 2 before [before] exit 1 in 10.11 s, no file written (load 6.47)
+svg 3 after [after] exit 1 in 9.39 s, no file written (load 5.78)
+svg 3 before [before] exit 1 in 10.12 s, no file written (load 5.19)
+png 1 after [after] exit 1 in 35.53 s, no file written (load 5.23)
+png 1 before [before] exit 1 in 83.47 s, no file written (load 5.88)
+png 2 after [after] exit 1 in 40.65 s, no file written (load 5.69)
+png 2 before [before] exit 1 in 137.30 s, no file written (load 14.69)
+

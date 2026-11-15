@@ -1,0 +1,23 @@
+$ reshiki --cli convert deep_3000.cdxml --to svg -o deep.svg
+reshiki: error: Drawing conversion failed: Invalid molecular CDXML: XML elements are nested more than 64 levels deep
+[after] exit 1 in 0.02 s, no file written
+
+$ reshiki --cli convert attr_20000.cdxml --to svg -o attr.svg
+reshiki: error: Drawing conversion failed: Invalid molecular CDXML: an XML element has more than 256 attributes
+[after] exit 1 in 0.02 s, no file written
+
+$ reshiki --cli convert text_200k.rsk --to svg -o text.svg
+reshiki: error: Could not open document: A text box can hold at most 64 KB of text
+[after] exit 1 in 0.03 s, no file written
+
+$ reshiki --cli convert pics_30.rsk --to png -o pics.png
+reshiki: error: Could not open document: Drawing pictures exceed 64 MB or 64 million pixels
+[after] exit 1 in 0.06 s, no file written
+
+$ reshiki --cli convert x64.rsk --to png -o png.png
+reshiki: error: Drawing is too large for a PNG even at 72 dpi; use SVG or PDF.
+[after] exit 1 in 73.27 s, no file written
+
+$ reshiki --cli convert x16.rsk --to svg -o svg.svg
+reshiki: error: The svg file is more than 16777216 bytes; max_output_bytes allows at most 16777216. Use live text or pdf, or reduce the drawing
+[after] exit 1 in 17.88 s, no file written
