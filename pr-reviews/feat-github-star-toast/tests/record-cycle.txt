@@ -1,0 +1,128 @@
+# star-prompt.json through the ask / close / re-ask cycle
+# Branch c09e7a4b, macOS 27.0.1 arm64 (Apple M4). Temporary test appended to src/app/star_prompt/tests.rs (not committed); source below the output.
+# cargo test --locked --bin reshiki star_prompt::tests::evidence_record_file_through_the_cycle -- --nocapture
+
+running 1 test
+today = 2026-11-15, CURRENT_VERSION = 0.15.0
+0. before the first launch                                 (no file)   [data folder: ]
+1. first launch                                            {"first_launch_day":"2026-11-15","uses":0,"state":"asking"}   [data folder: star-prompt.json]
+2. export #1 (App::receive)                                {"first_launch_day":"2026-11-15","uses":1,"state":"asking"}   [data folder: star-prompt.json]
+2. export #2 (App::receive)                                {"first_launch_day":"2026-11-15","uses":2,"state":"asking"}   [data folder: star-prompt.json]
+2. export #3 (App::receive)                                {"first_launch_day":"2026-11-15","uses":3,"state":"asking"}   [data folder: star-prompt.json]
+2. export #4 (App::receive)                                {"first_launch_day":"2026-11-15","uses":4,"state":"asking"}   [data folder: star-prompt.json]
+2. export #5 (App::receive)                                {"first_launch_day":"2026-11-15","uses":5,"state":"asking"}   [data folder: star-prompt.json]
+2. export #6 (App::receive)                                {"first_launch_day":"2026-11-15","uses":5,"state":"asking"}   [data folder: star-prompt.json]
+   toast after 30 s idle on the first-launch day: false
+3. next day (first_launch_day moved back one day), relaunch {"first_launch_day":"2026-11-14","uses":5,"state":"asking"}   [data folder: star-prompt.json]
+   toast after 30 s idle: true
+4. toast shown (saved before it shows)                     {"first_launch_day":"2026-11-14","uses":5,"state":{"asked":{"version":"0.15.0","day":"2026-11-15"}}}   [data folder: star-prompt.json]
+5. Not now / x                                             {"first_launch_day":"2026-11-14","uses":5,"state":{"asked":{"version":"0.15.0","day":"2026-11-15"}}}   [data folder: star-prompt.json]
+   toast again in the same run: false
+   toast after a relaunch, same version: false
+6. relaunch, same version                                  {"first_launch_day":"2026-11-14","uses":5,"state":{"asked":{"version":"0.15.0","day":"2026-11-15"}}}   [data folder: star-prompt.json]
+7. seeded: asked in 0.14.0, 89 days ago; relaunch          {"first_launch_day":"2026-11-14","uses":5,"state":{"asked":{"version":"0.14.0","day":"2026-08-18"}}}   [data folder: star-prompt.json]
+   toast after 30 s idle: false
+8. seeded: asked in 0.14.0, 90 days ago; relaunch          {"first_launch_day":"2026-11-14","uses":5,"state":{"asked":{"version":"0.14.0","day":"2026-08-17"}}}   [data folder: star-prompt.json]
+   toast after 30 s idle: true
+9. second ask shown                                        {"first_launch_day":"2026-11-14","uses":5,"state":"done"}   [data folder: star-prompt.json]
+10. Not now / x                                            {"first_launch_day":"2026-11-14","uses":5,"state":"done"}   [data folder: star-prompt.json]
+   toast after a relaunch: false
+11. relaunch: never again                                  {"first_launch_day":"2026-11-14","uses":5,"state":"done"}   [data folder: star-prompt.json]
+12. seeded: asking again, relaunch                         {"first_launch_day":"2026-11-14","uses":5,"state":"asking"}   [data folder: star-prompt.json]
+13. Star ReShiki on GitHub (Updates link)                  {"first_launch_day":"2026-11-14","uses":5,"state":"starred"}   [data folder: star-prompt.json]
+   toast after 30 s idle: false
+test app::star_prompt::tests::evidence_record_file_through_the_cycle ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1776 filtered out; finished in 0.32s
+
+# ---- test source ----
+
+/// Evidence only (not committed): prints star-prompt.json through a whole
+/// first-ask, close, restart and re-ask cycle, using the app's own paths.
+#[test]
+fn evidence_record_file_through_the_cycle() {
+    let dir = tempfile::tempdir().unwrap();
+    let path = dir.path().join("star-prompt.json");
+    let show = |step: &str| {
+        let files: Vec<String> = std::fs::read_dir(dir.path())
+            .unwrap()
+            .map(|entry| entry.unwrap().file_name().to_string_lossy().into_owned())
+            .collect();
+        println!(
+            "{step:<58} {}   [data folder: {}]",
+            std::fs::read_to_string(&path).unwrap_or_else(|_| "(no file)".into()),
+            files.join(", ")
+        );
+    };
+    let start = |app: &mut App| app.star = State::at(Some(path.clone()));
+    let rewrite = |edit: &dyn Fn(&mut Record)| {
+        let mut record = Record::parse(&std::fs::read(&path).unwrap()).unwrap();
+        edit(&mut record);
+        save(&path, &record);
+    };
+    println!("today = {}, CURRENT_VERSION = {CURRENT_VERSION}", today());
+    show("0. before the first launch");
+    let (mut app, _) = App::new();
+    start(&mut app);
+    show("1. first launch");
+    let figure = || {
+        Message::FigureExported(Ok(Some(Saved {
+            path: "Molecule.png".into(),
+            details: vec![],
+        })))
+    };
+    for n in 1..=6 {
+        let _ = app.receive(figure());
+        show(&format!("2. export #{n} (App::receive)"));
+    }
+    println!("   toast after 30 s idle on the first-launch day: {}", tick(&mut app));
+    rewrite(&|record| record.first_launch_day = today() - Days::new(1));
+    let (mut app, _) = App::new();
+    start(&mut app);
+    show("3. next day (first_launch_day moved back one day), relaunch");
+    let opened = tick(&mut app);
+    println!("   toast after 30 s idle: {opened}");
+    show("4. toast shown (saved before it shows)");
+    let _ = app.update(Message::Star(Action::Dismiss));
+    show("5. Not now / x");
+    println!("   toast again in the same run: {}", tick(&mut app));
+    let (mut app, _) = App::new();
+    start(&mut app);
+    println!("   toast after a relaunch, same version: {}", tick(&mut app));
+    show("6. relaunch, same version");
+    rewrite(&|record| {
+        record.state = Answer::Asked {
+            version: "0.14.0".into(),
+            day: today() - Days::new(89),
+        }
+    });
+    let (mut app, _) = App::new();
+    start(&mut app);
+    show("7. seeded: asked in 0.14.0, 89 days ago; relaunch");
+    println!("   toast after 30 s idle: {}", tick(&mut app));
+    rewrite(&|record| {
+        record.state = Answer::Asked {
+            version: "0.14.0".into(),
+            day: today() - Days::new(90),
+        }
+    });
+    let (mut app, _) = App::new();
+    start(&mut app);
+    show("8. seeded: asked in 0.14.0, 90 days ago; relaunch");
+    println!("   toast after 30 s idle: {}", tick(&mut app));
+    show("9. second ask shown");
+    let _ = app.update(Message::Star(Action::Dismiss));
+    show("10. Not now / x");
+    let (mut app, _) = App::new();
+    start(&mut app);
+    println!("   toast after a relaunch: {}", tick(&mut app));
+    show("11. relaunch: never again");
+
+    rewrite(&|record| record.state = Answer::Asking);
+    let (mut app, _) = App::new();
+    start(&mut app);
+    show("12. seeded: asking again, relaunch");
+    let _ = app.update(Message::Star(Action::Star { toast: false }));
+    show("13. Star ReShiki on GitHub (Updates link)");
+    println!("   toast after 30 s idle: {}", tick(&mut app));
+}

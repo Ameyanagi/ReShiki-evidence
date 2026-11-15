@@ -1,0 +1,8 @@
+# main 1d94f392 with the same seeded record (real app, 2026-11-15): main never reads or writes star-prompt.json
+# Seed before launch: {"first_launch_day":"2026-11-14","uses":5,"state":"asking"}
+# After 40 s idle in light and dark, About and Help opened, and Quit:
+.rw-------@ 281 user 15 Nov 13:05 appearance.json
+drwxr-xr-x@   - user 15 Nov 13:05 recovery
+.rw-r--r--@  59 user 15 Nov 12:57 star-prompt.json
+.rw-------@  62 user 15 Nov 12:57 update-cache.json
+{"first_launch_day":"2026-11-14","uses":5,"state":"asking"}

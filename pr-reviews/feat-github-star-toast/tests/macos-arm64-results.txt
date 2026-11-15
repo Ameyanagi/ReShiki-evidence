@@ -1,0 +1,57 @@
+# macOS arm64 (Apple M4, macOS 27.0.1) lane checks, 2026-11-15
+# Head c09e7a4b20ea; separate CARGO_TARGET_DIR; RESHIKI_INCHI_HELPER/RESHIKI_NAMING_HELPER = that target's debug/reshiki; RESHIKI_REQUIRE_INCHI_HELPER=1; RESHIKI_DATA_DIR=$(mktemp -d)
+
+HEAD c09e7a4b20ea669b1a2edab754ec97fb7071ac2d 27.0.1 arm64
+DONE fmt exit=0 12:57:04
+DONE build-helper exit=0 13:00:01
+DONE clippy-workspace exit=0 13:01:13
+DONE clippy-root-all-targets exit=0 13:01:48
+DONE clippy-wasm exit=0 13:02:43
+DONE test-root exit=0 13:19:03
+DONE test-star-ignored exit=0 13:19:05
+DONE test-updates-ignored exit=0 13:19:06
+DONE test-help-ignored exit=101 13:19:08
+DONE test-cycle exit=0 13:19:19
+ALL DONE 13:19:19
+test-root: 106 test binaries, 2592 passed, 0 failed, 205 ignored
+test-star-ignored: 1 test binaries, 14 passed, 0 failed, 0 ignored
+test-updates-ignored: 1 test binaries, 32 passed, 0 failed, 0 ignored
+test-help-ignored-2: 1 test binaries, 23 passed, 0 failed, 0 ignored
+test-star-6af8: 1 test binaries, 14 passed, 0 failed, 0 ignored
+
+Commands:
+fmt                     cargo fmt --all --check
+build-helper            cargo build --locked --bin reshiki
+clippy-workspace        cargo clippy --workspace --lib --bins --all-features --locked -- -D warnings
+clippy-root-all-targets cargo clippy -p reshiki --all-targets --all-features --locked -- -D warnings
+clippy-wasm             cargo clippy -p reshiki-web -p reshiki -p reshiki-web-worker --lib --bin reshiki --target wasm32-unknown-unknown --locked -- -D warnings
+test-root               cargo test --locked -p reshiki --no-fail-fast
+test-star-ignored       cargo test --locked --bin reshiki star_prompt:: -- --include-ignored --test-threads=1
+test-updates-ignored    cargo test --locked --bin reshiki updates -- --include-ignored --test-threads=1
+test-help-ignored       cargo test --locked --bin reshiki help -- --include-ignored --test-threads=1
+                        (first run exit 101: help_renderer_evidence needs RESHIKI_HELP_QA_DIR; rerun with it set: test-help-ignored-2, all pass)
+test-cycle              temporary evidence test, see record-cycle.txt
+test-star-6af8          star_prompt tests again at 6af8faa4 (pushed head; adds only a test skip where folder permissions are not enforced)
+
+Star prompt tests (including opt-in renderer tests):
+test-star-ignored.log:test app::star_prompt::tests::a_record_that_stops_reading_or_saving_ends_the_asks_and_is_left_alone ... ok
+test-star-ignored.log:test app::star_prompt::tests::an_unanswered_toast_counts_as_an_ask_after_a_restart ... ok
+test-star-ignored.log:test app::star_prompt::tests::asks_only_when_every_rule_holds ... ok
+test-star-ignored.log:test app::star_prompt::tests::every_export_and_copy_counts_once_wherever_its_drawing_went ... ok
+test-star-ignored.log:test app::star_prompt::tests::focus_and_held_input_are_followed_before_the_count_is_reached ... ok
+test-star-ignored.log:test app::star_prompt::tests::help_about_leads_to_the_star_link ... ok
+test-star-ignored.log:test app::star_prompt::tests::menus_and_panels_keep_the_toast_away ... ok
+test-star-ignored.log:test app::star_prompt::tests::record_round_trips_and_leaves_a_newer_file_alone ... ok
+test-star-ignored.log:test app::star_prompt::tests::star_prompt_evidence ... ok
+test-star-ignored.log:test app::star_prompt::tests::the_second_ask_or_a_star_ends_the_asks ... ok
+test-star-ignored.log:test app::star_prompt::tests::the_toast_takes_no_focus_is_reached_by_tab_and_returns_focus_to_the_drawing ... ok
+test-star-ignored.log:test app::star_prompt::tests::the_toast_waits_for_a_quiet_moment_and_asks_once_per_run ... ok
+test-star-ignored.log:test app::star_prompt::tests::the_updates_link_stars_reshiki_on_github ... ok
+test-star-ignored.log:test app::star_prompt::tests::two_running_copies_keep_each_others_counts_and_answers ... ok
+test-updates-ignored.log:test app::shortcut_focus_tests::updates_automatic_check_supports_modal_keyboard_traversal_and_activation ... ok
+test-updates-ignored.log:test app::shortcut_focus_tests::updates_dialog_captures_keys_before_editors_file_commands_and_canvas ... ok
+test-updates-ignored.log:test app::star_prompt::tests::the_updates_link_stars_reshiki_on_github ... ok
+
+Docs checks (run on the branch worktree at c09e7a4b):
+bun fmt --check docs/privacy-policy.md docs/changes/unreleased/feat-github-star-toast.md   All 2 files are formatted.
+uv run --locked python scripts/assemble_changelog.py --check                                5 changelog fragments are valid

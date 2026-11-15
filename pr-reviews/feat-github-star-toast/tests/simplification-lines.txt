@@ -1,0 +1,21 @@
+# Line counts before and after the simplification (git, base main 1d94f392)
+# 0b756678 = last commit before the simplification; a2607c44 = the simplification;
+# b6593ce9 = Updates link (inlined star_link, wasm link removed); c09e7a4b = head (every copy counts, Help > About)
+
+commit                                            star_prompt.rs  tests.rs  branch +  branch -
+0b756678 docs: say when a closed or unanswered               634       899      1639        18
+a2607c44 refactor(app): drop the star prompt's               572       880      1554        18
+b6593ce9 feat(app): name the Updates star link               572       880      1543        15
+c09e7a4b fix(app): count every copy toward the               568       889      1545         9
+
+# git diff --stat 0b756678 a2607c44 (the simplification commit alone)
+ src/app/import.rs            |   4 --
+ src/app/star_prompt.rs       | 144 ++++++++++++-------------------------------
+ src/app/star_prompt/tests.rs | 135 +++++++++++++++++-----------------------
+ 3 files changed, 99 insertions(+), 184 deletions(-)
+
+# Files back to main at c09e7a4b (lines changed vs 1d94f392)
+src/app/import.rs                  0 (at 0b756678: 4)
+src/app/clipboard.rs               0 (at 0b756678: 13)
+src/app/clipboard/tests.rs         0 (at 0b756678: 2)
+src/app/gates/result_tests.rs      0 (at 0b756678: 2)
