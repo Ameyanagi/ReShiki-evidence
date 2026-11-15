@@ -1,0 +1,259 @@
+# base reshiki_model-cd8483b4ca730118 be07e0e6f722
+# head reshiki_model-cd8483b4ca730118 b6edb9374579
+RUN,base,1,model_scaling_workloads,load { 3.53 8.34 35.91 }
+SIZE,1x,483 atoms,429 bonds,16 abbreviations
+PERF,scene_primitives_1x,20,3.6794,3.9248,3.6973,4.3700
+PERF,crossing_gaps_1x,20,1.9783,2.2484,1.9785,2.0462
+PERF,selection_bounds_1x,20,0.8215,0.9969,0.8317,0.9042
+PERF,align_left_1x,20,2.8425,3.1142,2.8763,3.0017
+PERF,document_clone_1x,20,0.0956,0.0983,0.0959,0.1219
+PERF,render_copy_shared_1x,20,0.1092,0.1100,0.1093,0.1414
+PERF,render_copy_fresh_1x,20,0.1090,0.1113,0.1092,0.1115
+SIZE,4x,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x,20,18.4594,19.0315,18.4948,18.8337
+PERF,crossing_gaps_4x,20,8.7428,9.3191,8.7297,9.4375
+PERF,selection_bounds_4x,20,6.2748,6.5918,6.2966,6.4711
+PERF,align_left_4x,20,38.2502,41.4599,38.5920,37.7190
+PERF,document_clone_4x,20,0.3738,0.5113,0.3825,0.3880
+PERF,render_copy_shared_4x,20,0.4420,0.4458,0.4419,0.5021
+PERF,render_copy_fresh_4x,20,0.4414,0.5207,0.4487,0.4443
+SIZE,16x,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x,20,135.6648,149.5845,137.0380,160.0482
+PERF,crossing_gaps_16x,20,50.6984,51.8011,50.7507,212.1815
+PERF,selection_bounds_16x,20,73.5894,78.8411,74.1462,74.5251
+PERF,align_left_16x,20,566.3836,579.1594,566.5704,556.9928
+PERF,document_clone_16x,20,1.5608,3.5755,1.6748,1.5746
+PERF,render_copy_shared_16x,20,1.7948,1.9286,1.8125,2.1438
+PERF,render_copy_fresh_16x,20,1.7795,1.8869,1.7982,1.7894
+SIZE,4x_stacked,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x_stacked,20,18.4511,19.5463,18.5516,18.6210
+PERF,crossing_gaps_4x_stacked,20,8.6096,8.7541,8.5929,9.4484
+PERF,selection_bounds_4x_stacked,20,6.2966,6.3908,6.2956,6.2924
+PERF,align_left_4x_stacked,20,38.5261,40.4805,38.5437,38.3412
+PERF,document_clone_4x_stacked,20,0.3810,0.3847,0.3813,0.3948
+PERF,render_copy_shared_4x_stacked,20,0.4426,0.5050,0.4483,0.4496
+PERF,render_copy_fresh_4x_stacked,20,0.4410,0.4425,0.4411,0.4436
+SIZE,16x_stacked,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x_stacked,20,135.7291,144.7668,136.0556,138.1396
+PERF,crossing_gaps_16x_stacked,20,51.5712,51.9224,51.4618,54.4751
+PERF,selection_bounds_16x_stacked,20,73.0166,77.1255,73.5945,72.7221
+PERF,align_left_16x_stacked,20,566.0236,579.0961,566.5951,564.4044
+PERF,document_clone_16x_stacked,20,1.5482,1.6932,1.5572,1.5664
+PERF,render_copy_shared_16x_stacked,20,1.7923,2.0218,1.8240,1.7988
+PERF,render_copy_fresh_16x_stacked,20,1.7825,1.9841,1.8075,1.7989
+RUN,head,1,model_scaling_workloads,load { 3.46 7.66 34.24 }
+SIZE,1x,483 atoms,429 bonds,16 abbreviations
+PERF,scene_primitives_1x,20,2.2483,2.4025,2.2571,3.0596
+PERF,crossing_gaps_1x,20,0.4862,0.5544,0.4875,0.4899
+PERF,selection_bounds_1x,20,0.8339,0.9518,0.8387,0.8762
+PERF,align_left_1x,20,1.1076,1.2715,1.1325,1.2650
+PERF,document_clone_1x,20,0.0973,0.1008,0.0977,0.1012
+PERF,render_copy_shared_1x,20,0.0310,0.0316,0.0310,0.1598
+PERF,render_copy_fresh_1x,20,0.1440,0.1468,0.1441,0.1865
+SIZE,4x,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x,20,9.7929,10.4008,9.8524,9.8039
+PERF,crossing_gaps_4x,20,2.1324,2.3089,2.1481,2.2329
+PERF,selection_bounds_4x,20,3.4590,3.5649,3.4693,3.5315
+PERF,align_left_4x,20,4.6056,4.7526,4.5989,4.6858
+PERF,document_clone_4x,20,0.3840,0.4400,0.3883,0.3891
+PERF,render_copy_shared_4x,20,0.1226,0.1255,0.1228,0.5393
+PERF,render_copy_fresh_4x,20,0.5689,0.6621,0.5793,0.6744
+SIZE,16x,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x,20,53.3348,54.9314,53.4238,54.0255
+PERF,crossing_gaps_16x,20,12.4393,13.4802,12.5313,12.6937
+PERF,selection_bounds_16x,20,16.1258,16.7528,16.1502,16.4552
+PERF,align_left_16x,20,20.9370,21.3827,20.9545,21.0624
+PERF,document_clone_16x,20,1.5504,1.7625,1.5712,1.5952
+PERF,render_copy_shared_16x,20,0.5341,1.2198,0.5831,2.1512
+PERF,render_copy_fresh_16x,20,2.3259,2.6548,2.3651,2.7823
+SIZE,4x_stacked,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x_stacked,20,9.8172,10.3320,9.8239,9.8493
+PERF,crossing_gaps_4x_stacked,20,2.1614,2.3083,2.1716,2.1224
+PERF,selection_bounds_4x_stacked,20,3.4770,3.5960,3.4801,3.5816
+PERF,align_left_4x_stacked,20,4.6113,4.8696,4.6264,4.6562
+PERF,document_clone_4x_stacked,20,0.3858,0.4506,0.3919,0.3905
+PERF,render_copy_shared_4x_stacked,20,0.1225,0.1270,0.1227,0.9403
+PERF,render_copy_fresh_4x_stacked,20,0.5720,0.7114,0.5805,0.6318
+SIZE,16x_stacked,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x_stacked,20,53.3674,57.0628,53.6274,54.2520
+PERF,crossing_gaps_16x_stacked,20,12.4917,13.0119,12.5129,12.4410
+PERF,selection_bounds_16x_stacked,20,16.2918,16.7829,16.2936,15.9781
+PERF,align_left_16x_stacked,20,21.2043,22.5549,21.1948,20.6548
+PERF,document_clone_16x_stacked,20,1.5968,1.8848,1.6083,1.5633
+PERF,render_copy_shared_16x_stacked,20,0.5635,0.9812,0.5979,1.8690
+PERF,render_copy_fresh_16x_stacked,20,2.3644,2.6657,2.4056,2.4688
+RUN,base,1,column_and_large_group_workloads,load { 3.42 7.58 34.06 }
+PERF,ammonia_column_scene_256,20,0.7001,0.8022,0.7056,13.6658
+PERF,bond_column_crossing_gaps_256,20,0.1007,0.1021,0.0979,0.1076
+PERF,condensed_column_scene_256,20,1.9905,2.1511,2.0117,2.0912
+PERF,labelled_arrows_align_left_256,20,5.2034,5.2828,5.1947,5.2338
+PERF,large_group_scene_256,20,0.1772,0.1969,0.1809,0.2716
+PERF,large_group_align_left_256,20,0.1373,0.1486,0.1385,0.1796
+PERF,ammonia_column_scene_1024,20,4.3479,4.8194,4.3932,4.4778
+PERF,bond_column_crossing_gaps_1024,20,0.8389,0.9345,0.8498,0.8814
+PERF,condensed_column_scene_1024,20,13.6558,15.3953,13.7748,13.8400
+PERF,labelled_arrows_align_left_1024,20,81.7035,85.6168,82.1473,80.6344
+PERF,large_group_scene_1024,20,1.1771,1.2551,1.1690,1.1969
+PERF,large_group_align_left_1024,20,0.6407,0.6856,0.6362,0.7384
+PERF,ammonia_column_scene_4096,20,35.1677,36.4310,35.2732,35.9466
+PERF,bond_column_crossing_gaps_4096,20,11.2202,11.6860,11.2306,11.1367
+PERF,condensed_column_scene_4096,20,142.4215,153.9984,143.0287,141.7388
+PERF,labelled_arrows_align_left_4096,20,1278.0994,1285.6416,1278.9676,1283.4199
+PERF,large_group_scene_4096,20,9.8663,12.1374,10.3168,10.1222
+PERF,large_group_align_left_4096,20,3.6907,3.8422,3.6873,4.0325
+RUN,head,1,column_and_large_group_workloads,load { 3.42 7.12 32.82 }
+PERF,ammonia_column_scene_256,20,0.7375,0.8582,0.7430,19.6996
+PERF,bond_column_crossing_gaps_256,20,0.0752,0.0767,0.0751,0.0847
+PERF,condensed_column_scene_256,20,1.7300,1.8758,1.7478,1.8143
+PERF,labelled_arrows_align_left_256,20,0.4908,0.5566,0.4981,0.5498
+PERF,large_group_scene_256,20,0.2627,0.2745,0.2565,0.3316
+PERF,large_group_align_left_256,20,0.2021,0.2750,0.2103,0.2132
+PERF,ammonia_column_scene_1024,20,2.9448,3.0767,2.9653,3.0211
+PERF,bond_column_crossing_gaps_1024,20,0.3025,0.3112,0.2979,0.3032
+PERF,condensed_column_scene_1024,20,6.9684,7.5435,7.0653,7.0455
+PERF,labelled_arrows_align_left_1024,20,1.9842,2.1526,1.9896,2.0374
+PERF,large_group_scene_1024,20,1.1046,1.2110,1.0984,1.1557
+PERF,large_group_align_left_1024,20,0.8375,0.9208,0.8420,0.8768
+PERF,ammonia_column_scene_4096,20,12.5343,13.0484,12.4797,12.4780
+PERF,bond_column_crossing_gaps_4096,20,1.1706,1.3456,1.1633,1.5633
+PERF,condensed_column_scene_4096,20,33.1455,37.0099,33.4182,33.9010
+PERF,labelled_arrows_align_left_4096,20,8.1401,9.1316,8.1950,7.9992
+PERF,large_group_scene_4096,20,4.9811,5.3298,4.9875,5.1069
+PERF,large_group_align_left_4096,20,3.2817,3.5019,3.2760,3.2760
+RUN,base,1,imported_polyalanine_scene,load { 3.47 7.07 32.65 }
+SIZE,imported_polyalanine_200,1001 atoms,1000 bonds
+PERF,imported_polyalanine_200_scene,20,985.7088,999.8502,986.4490,998.4128
+PERF,imported_polyalanine_200_crossing_gaps,20,815.5294,827.2166,816.4644,811.8670
+RUN,head,1,imported_polyalanine_scene,load { 3.40 6.59 31.30 }
+SIZE,imported_polyalanine_200,1001 atoms,1000 bonds
+PERF,imported_polyalanine_200_scene,20,438.9853,452.8702,439.9884,457.3162
+PERF,imported_polyalanine_200_crossing_gaps,20,308.7226,449.2447,316.3459,309.3810
+RUN,base,2,model_scaling_workloads,load { 3.68 6.45 30.67 }
+SIZE,1x,483 atoms,429 bonds,16 abbreviations
+PERF,scene_primitives_1x,20,3.7430,3.9531,3.7441,4.0752
+PERF,crossing_gaps_1x,20,2.0585,2.1628,2.0204,2.0934
+PERF,selection_bounds_1x,20,0.8174,0.8868,0.8239,0.8768
+PERF,align_left_1x,20,2.8150,2.9251,2.8354,2.8829
+PERF,document_clone_1x,20,0.0967,0.0985,0.0968,0.1014
+PERF,render_copy_shared_1x,20,0.1118,0.1140,0.1118,0.1431
+PERF,render_copy_fresh_1x,20,0.1161,0.1348,0.1166,0.1134
+SIZE,4x,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x,20,18.5224,18.8355,18.5377,18.5658
+PERF,crossing_gaps_4x,20,8.7776,9.1341,8.7802,9.4442
+PERF,selection_bounds_4x,20,6.2884,6.4322,6.3039,6.3214
+PERF,align_left_4x,20,38.3612,38.5452,38.3512,38.3587
+PERF,document_clone_4x,20,0.3836,0.4310,0.3896,0.3960
+PERF,render_copy_shared_4x,20,0.4426,0.4935,0.4487,0.5142
+PERF,render_copy_fresh_4x,20,0.4410,0.4434,0.4411,0.4460
+SIZE,16x,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x,20,134.9627,150.0757,135.8653,135.6655
+PERF,crossing_gaps_16x,20,51.1055,52.1727,51.1118,53.3868
+PERF,selection_bounds_16x,20,71.1492,77.0000,71.5953,71.1336
+PERF,align_left_16x,20,565.5916,572.1331,565.0621,565.4309
+PERF,document_clone_16x,20,1.5618,1.6779,1.5715,1.5596
+PERF,render_copy_shared_16x,20,1.7948,1.9883,1.8233,2.1537
+PERF,render_copy_fresh_16x,20,1.7973,1.9809,1.8185,2.0650
+SIZE,4x_stacked,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x_stacked,20,18.5632,18.9781,18.5789,21.6060
+PERF,crossing_gaps_4x_stacked,20,8.8255,9.0712,8.7838,9.5605
+PERF,selection_bounds_4x_stacked,20,6.3256,6.4494,6.3280,6.3606
+PERF,align_left_4x_stacked,20,38.4624,39.2520,38.4231,38.5509
+PERF,document_clone_4x_stacked,20,0.3836,0.3925,0.3839,0.4311
+PERF,render_copy_shared_4x_stacked,20,0.4429,0.5067,0.4500,0.4490
+PERF,render_copy_fresh_4x_stacked,20,0.4409,0.4472,0.4414,0.4445
+SIZE,16x_stacked,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x_stacked,20,136.6900,151.4780,137.4274,135.6642
+PERF,crossing_gaps_16x_stacked,20,52.4224,53.0787,52.4319,55.0485
+PERF,selection_bounds_16x_stacked,20,71.4035,78.8103,72.0743,71.4100
+PERF,align_left_16x_stacked,20,563.2480,572.8319,563.6556,561.2579
+PERF,document_clone_16x_stacked,20,1.5469,1.7820,1.5718,1.5542
+PERF,render_copy_shared_16x_stacked,20,1.8032,2.1083,1.8462,2.1186
+PERF,render_copy_fresh_16x_stacked,20,1.7941,2.1002,1.8242,1.8019
+RUN,head,2,model_scaling_workloads,load { 3.15 5.97 29.38 }
+SIZE,1x,483 atoms,429 bonds,16 abbreviations
+PERF,scene_primitives_1x,20,2.2493,2.3919,2.2702,2.6282
+PERF,crossing_gaps_1x,20,0.4888,0.5141,0.4872,0.5128
+PERF,selection_bounds_1x,20,0.8258,0.9325,0.8340,0.8974
+PERF,align_left_1x,20,1.0976,1.2120,1.1079,1.2498
+PERF,document_clone_1x,20,0.0964,0.0984,0.0966,0.1007
+PERF,render_copy_shared_1x,20,0.0310,0.0320,0.0310,0.1417
+PERF,render_copy_fresh_1x,20,0.1441,0.1468,0.1441,0.1728
+SIZE,4x,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x,20,9.7467,9.9032,9.7341,9.6728
+PERF,crossing_gaps_4x,20,2.3473,2.7906,2.3590,2.2190
+PERF,selection_bounds_4x,20,3.5493,3.9461,3.5801,4.1849
+PERF,align_left_4x,20,4.5805,4.7500,4.6009,4.9669
+PERF,document_clone_4x,20,0.3813,0.3867,0.3819,0.3901
+PERF,render_copy_shared_4x,20,0.1226,0.1934,0.1282,0.5945
+PERF,render_copy_fresh_4x,20,0.5697,0.6039,0.5785,0.7083
+SIZE,16x,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x,20,53.8322,60.8122,54.3779,53.3489
+PERF,crossing_gaps_16x,20,12.2774,12.4967,12.2868,12.4920
+PERF,selection_bounds_16x,20,16.2285,16.7970,16.2701,15.9751
+PERF,align_left_16x,20,21.0660,22.2547,21.0101,22.0240
+PERF,document_clone_16x,20,1.5524,1.6724,1.5620,1.5755
+PERF,render_copy_shared_16x,20,0.5353,0.9153,0.5686,2.4076
+PERF,render_copy_fresh_16x,20,2.3190,2.5977,2.3539,2.8029
+SIZE,4x_stacked,1932 atoms,1716 bonds,64 abbreviations
+PERF,scene_primitives_4x_stacked,20,9.7569,11.9223,10.0936,9.8670
+PERF,crossing_gaps_4x_stacked,20,2.2491,2.6088,2.2816,2.2654
+PERF,selection_bounds_4x_stacked,20,3.4715,3.7369,3.4896,3.6723
+PERF,align_left_4x_stacked,20,4.5931,5.0126,4.6184,4.7613
+PERF,document_clone_4x_stacked,20,0.3847,0.3890,0.3851,0.4170
+PERF,render_copy_shared_4x_stacked,20,0.1225,0.1230,0.1226,1.0506
+PERF,render_copy_fresh_4x_stacked,20,0.5706,0.7406,0.5820,0.6424
+SIZE,16x_stacked,7728 atoms,6864 bonds,256 abbreviations
+PERF,scene_primitives_16x_stacked,20,54.0010,63.0499,54.5822,53.6949
+PERF,crossing_gaps_16x_stacked,20,12.3439,12.5383,12.3507,12.3559
+PERF,selection_bounds_16x_stacked,20,16.1367,16.3757,16.1118,15.9185
+PERF,align_left_16x_stacked,20,20.8597,22.7753,21.0642,20.8212
+PERF,document_clone_16x_stacked,20,1.5573,1.8382,1.5841,1.6763
+PERF,render_copy_shared_16x_stacked,20,0.5303,0.6081,0.5364,2.2523
+PERF,render_copy_fresh_16x_stacked,20,2.3870,3.0040,2.4415,2.4597
+RUN,base,2,column_and_large_group_workloads,load { 3.22 5.94 29.23 }
+PERF,ammonia_column_scene_256,20,0.7304,0.8352,0.7367,14.7948
+PERF,bond_column_crossing_gaps_256,20,0.1005,0.1059,0.1001,0.1093
+PERF,condensed_column_scene_256,20,2.0115,2.2000,2.0310,2.0754
+PERF,labelled_arrows_align_left_256,20,5.1807,5.3419,5.2007,5.1791
+PERF,large_group_scene_256,20,0.1801,0.1956,0.1800,0.2646
+PERF,large_group_align_left_256,20,0.1438,0.1849,0.1442,0.1648
+PERF,ammonia_column_scene_1024,20,4.1670,4.6554,4.2186,4.2352
+PERF,bond_column_crossing_gaps_1024,20,0.8405,1.0174,0.8635,0.9663
+PERF,condensed_column_scene_1024,20,13.6202,14.3613,13.6634,13.6636
+PERF,labelled_arrows_align_left_1024,20,80.4795,85.7153,80.9466,80.2398
+PERF,large_group_scene_1024,20,1.1349,1.1926,1.1228,1.1315
+PERF,large_group_align_left_1024,20,0.6520,0.7451,0.6583,0.6960
+PERF,ammonia_column_scene_4096,20,35.1928,38.1060,35.4237,35.8900
+PERF,bond_column_crossing_gaps_4096,20,11.0920,11.3289,11.0976,11.1774
+PERF,condensed_column_scene_4096,20,142.0695,281.8761,149.7508,142.3247
+PERF,labelled_arrows_align_left_4096,20,1278.7145,1299.4100,1280.4214,1280.3634
+PERF,large_group_scene_4096,20,10.0287,10.2858,9.9710,10.0332
+PERF,large_group_align_left_4096,20,3.7057,3.9310,3.7048,3.9857
+RUN,head,2,column_and_large_group_workloads,load { 3.06 5.55 28.02 }
+PERF,ammonia_column_scene_256,20,0.7359,0.8131,0.7429,19.6732
+PERF,bond_column_crossing_gaps_256,20,0.0643,0.0655,0.0644,0.0815
+PERF,condensed_column_scene_256,20,1.7284,1.9477,1.7510,1.9734
+PERF,labelled_arrows_align_left_256,20,0.4896,0.5007,0.4903,0.5492
+PERF,large_group_scene_256,20,0.2595,0.3070,0.2644,0.3412
+PERF,large_group_align_left_256,20,0.2137,0.2181,0.2076,0.2489
+PERF,ammonia_column_scene_1024,20,2.9307,3.1158,2.9585,3.1029
+PERF,bond_column_crossing_gaps_1024,20,0.3036,0.3381,0.2996,0.3352
+PERF,condensed_column_scene_1024,20,7.0600,8.0745,7.2258,7.2390
+PERF,labelled_arrows_align_left_1024,20,1.9653,2.0904,1.9670,1.9429
+PERF,large_group_scene_1024,20,1.0960,1.1604,1.0892,1.1422
+PERF,large_group_align_left_1024,20,0.8385,0.8930,0.8245,0.8775
+PERF,ammonia_column_scene_4096,20,12.4362,13.8307,12.6684,13.0311
+PERF,bond_column_crossing_gaps_4096,20,1.1783,1.2088,1.1685,1.3830
+PERF,condensed_column_scene_4096,20,33.4917,37.3412,33.8013,33.7652
+PERF,labelled_arrows_align_left_4096,20,8.0915,8.5980,8.1286,7.8450
+PERF,large_group_scene_4096,20,4.9813,5.5535,5.0394,5.3251
+PERF,large_group_align_left_4096,20,3.2412,3.5468,3.2771,3.5336
+RUN,base,2,imported_polyalanine_scene,load { 3.06 5.55 28.02 }
+SIZE,imported_polyalanine_200,1001 atoms,1000 bonds
+PERF,imported_polyalanine_200_scene,20,977.3633,989.7626,978.7355,992.5761
+PERF,imported_polyalanine_200_crossing_gaps,20,807.8762,930.8496,813.9838,802.3317
+RUN,head,2,imported_polyalanine_scene,load { 3.25 5.28 26.89 }
+SIZE,imported_polyalanine_200,1001 atoms,1000 bonds
+PERF,imported_polyalanine_200_scene,20,438.2154,447.8923,438.8828,462.3790
+PERF,imported_polyalanine_200_crossing_gaps,20,308.7334,316.6071,309.4666,310.4544
+DONE

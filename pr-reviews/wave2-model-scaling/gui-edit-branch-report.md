@@ -1,0 +1,37 @@
+# ReShiki local real-app check
+
+Date: 2026-11-15 (Asia/Tokyo). Build under test, as supplied: release build, branch `wave2/model-scaling`, commit `7154c93b` (after).
+
+Launched only `<branch build>/ReShiki.app`, with `gallery-64.rsk` as the input. After launch, `pgrep -fl pr-model-scaling/app` showed one wrapper process, PID 65553. Computer use then attached through the exact wrapper path. The window was not resized. No recovery, restore, or welcome prompt appeared. No repository files or system settings were changed.
+
+All GUI actions and window captures used computer use. The capture API returned JPEG image bytes; the saved captures were converted to actual PNG files without resizing or cropping. All seven final files were verified to have PNG signatures and dimensions of 2560 × 1704. They contain the ReShiki window only.
+
+## Timing and interpretation
+
+A shell timestamp was recorded immediately before the launch command and before each timed key command. Elapsed values below run from that timestamp to the first successful observation of the result. Screenshot/accessibility requests frequently returned `timeoutReached`; after each timeout, the check waited 20 seconds before retrying. Consequently, affected times are **observation upper bounds**, including tool overhead and retry waits, rather than precise application execution times. A timed-out observation alone does not establish that ReShiki was frozen.
+
+“PASS” means that the requested result was visibly present and the app returned state. “FAIL” means that the requested behavior was absent or could not be validated. The failed nudge also prevents the following nudge Undo/Redo checks from being validated independently.
+
+## Results
+
+| Step | What was observed | Screenshot | Observed elapsed | Draws correctly and responds |
+| --- | --- | --- | ---: | --- |
+| 0 — Launch/open | The document window opened and displayed the repeated gallery as a narrow horizontal row. Status: “Document opened.” Properties showed the unselected state. Keyboard drawing mode was already active, with “Empty position” in its toolbar. The zoom indicator read **0%**. | [01-open.png](01-open.png) | **23 s** | **PASS**, at the displayed scale. Individual chemical details were too small to inspect. |
+| 1 — Clear selection, Cmd+A | Clicked once on blank canvas well below the structures, then sent Cmd+A. A green selection overlay and bounding box appeared. Properties listed **30592 atoms · 320 points · 8512 objects · 27456 bonds**, plus an Arrow Properties section for 64 arrows. One screenshot request timed out before the successful retry. | [02-select-all.png](02-select-all.png) | **50 s** | **PASS**. Selection and the Properties summary were visible. |
+| 2 — Down once | The selected row showed no visible downward movement. Status changed to **“No drawing hotspot in that direction.”** Keyboard drawing mode remained active. Undo and Redo were still disabled, and there was no modified marker. Three observation attempts timed out before a successful capture. | [03-nudge.png](03-nudge.png) | **162 s** to confirm the response; the expected move was not observed | **FAIL** for the requested nudge. The app returned a navigation response instead. |
+| 3 — Cmd+Z | The row remained at the same visible position, the selection remained, and the previous navigation status remained. Undo and Redo were disabled. One observation timed out before the successful retry. | [04-undo.png](04-undo.png) | **49 s** | **FAIL / blocked by step 2**. There was no successful nudge to undo; this does not independently demonstrate an Undo defect. |
+| 4 — Shift+Cmd+Z | The row and selection remained unchanged; no downward movement appeared. Undo and Redo remained disabled. The requested additional Cmd+Z was subsequently sent, and an accessibility response was obtained before continuing. | [05-redo.png](05-redo.png) | **20 s** for Redo | **FAIL / blocked by step 2**. There was no successful nudge to redo; this does not independently demonstrate a Redo defect. |
+| 5 — Cmd+Option+Shift+H | The selection was still present. The row visibly changed its horizontal arrangement, the selection bounding box changed, status became **“Drawing changed,”** a modified marker appeared, and Undo became enabled. One observation timed out before the successful retry. The result was observed within the three-minute limit. | [06-distribute.png](06-distribute.png) | **66 s** | **PASS** for visible redistribution and response. Fine geometry could not be inspected at 0% displayed zoom. |
+| 5 — Distribution Undo | Cmd+Z restored the earlier visible arrangement and selection bounds. Status became **“History restored.”** The modified marker cleared, Undo became disabled, and Redo became enabled. One observation timed out before the successful retry. | [07-distribute-undo.png](07-distribute-undo.png) | **50 s** | **PASS**. The visible layout returned and history state updated. |
+| 6 — Quit | Sent Cmd+Q. The app process exited; a subsequent `pgrep -fl pr-model-scaling/app` returned no matching process. No save prompt was observed, and force termination was unnecessary. The app was not relaunched. | Not applicable: no screenshot requested after quit | **Within 10 s**, confirmed by process check | **PASS** for quitting normally. |
+
+## Friction
+
+- **Keyboard mode and arrow-key behavior:** Keyboard drawing mode was active immediately after opening. Clicking blank canvas and using Cmd+A did not leave it. With the whole drawing selected, Down produced “No drawing hotspot in that direction” and no edit history entry. This prevented the requested movement and its Undo/Redo checks. The observations are consistent with Down being handled as keyboard drawing navigation.
+- **Canvas scale and zoom feedback:** The gallery was compressed into a thin row, while the zoom indicator rounded to “0%.” The structures were visible, but individual atoms, bonds, and a small nudge could not be judged reliably at this scale. The window and zoom were left as opened, following the prescribed steps.
+- **Properties count presentation:** The input was described as containing 30,912 atoms, while Properties split the selection into 30,592 atoms and 320 points. Those two counts total 30,912, but the separate presentation makes a direct atom-count comparison less immediate.
+- **Observation workflow:** Repeated screenshot/accessibility timeouts required 20-second retry waits and substantially widened the timing bounds. Before the additional Undo after step 4, computer use also reported that the app had changed and required a fresh state query; state was refreshed before further input. The refreshed toolbar identified an active C atom, #21648. These are observed automation limitations; their cause was not established.
+
+## What could not be completed or verified
+
+The requested downward movement, its Undo, and its Redo could not be demonstrated: Down produced a keyboard-navigation status, no visible move, and no enabled history action. No extra mode changes or alternative movement commands were attempted because the task restricted actions to the stated steps. Precise application-only latency and detailed chemical rendering correctness could not be established because of intermittent observation timeouts and the very small opening scale. All seven requested screenshots were saved, distribution and its Undo were observed, and the wrapper was quit without saving.
