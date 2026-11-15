@@ -1,0 +1,57 @@
+benchmark,workload,base_median_ms,branch_median_ms,ratio_base_over_branch,base_spread_pct,branch_spread_pct,base_runs,branch_runs
+loaded_canvas_workloads,gallery_1x_unselected_draw,0.1722,0.1709,1.01,3,1,0.1697 0.1747,0.172 0.1698
+loaded_canvas_workloads,gallery_1x_selected_draw,0.1844,0.1836,1.00,2,5,0.1821 0.1866,0.1878 0.1795
+loaded_canvas_workloads,gallery_1x_pointer_hit,0.018,0.01755,1.03,2,9,0.0178 0.0182,0.0183 0.0168
+loaded_canvas_workloads,gallery_1x_drag_all,0.6466,0.2411,2.68,3,1,0.6369 0.6564,0.2426 0.2396
+loaded_canvas_workloads,gallery_1x_drag_partial,2.83,0.4141,6.84,1,1,2.811 2.849,0.4167 0.4114
+loaded_canvas_workloads,gallery_1x_pan,0.6896,0.2836,2.43,2,0,0.6815 0.6978,0.2839 0.2834
+loaded_canvas_workloads,gallery_1x_zoom,0.6968,0.6963,1.00,2,0,0.6886 0.7051,0.6947 0.6979
+loaded_canvas_workloads,gallery_4x_unselected_draw,0.7602,0.7619,1.00,3,2,0.7487 0.7717,0.7711 0.7526
+loaded_canvas_workloads,gallery_4x_selected_draw,0.7619,0.7719,0.99,1,3,0.7564 0.7675,0.7816 0.7622
+loaded_canvas_workloads,gallery_4x_pointer_hit,0.0703,0.07035,1.00,3,5,0.0693 0.0713,0.0721 0.0686
+loaded_canvas_workloads,gallery_4x_drag_all,1.821,1.314,1.39,10,7,1.728 1.913,1.357 1.27
+loaded_canvas_workloads,gallery_4x_drag_partial,13.04,1.748,7.46,0,4,13.06 13.03,1.716 1.78
+loaded_canvas_workloads,gallery_4x_pan,1.356,0.9072,1.49,0,4,1.355 1.356,0.9234 0.891
+loaded_canvas_workloads,gallery_4x_zoom,1.35,1.427,0.95,0,0,1.35 1.351,1.425 1.429
+preview_workloads,g1x_onscreen_idle,0.5033,0.498,1.01,61,1,0.7922 0.5033 0.4876,0.4964 0.5022 0.498
+preview_workloads,g1x_onscreen_ring_preset_hover,3.848,1.226,3.14,74,1,6.637 3.848 3.805,1.232 1.226 1.219
+preview_workloads,g1x_onscreen_ring_preset_hover_still,3.844,1.217,3.16,68,1,6.44 3.844 3.811,1.21 1.217 1.217
+preview_workloads,g1x_onscreen_template_hover,3.821,1.2,3.19,60,2,6.059 3.821 3.758,1.193 1.2 1.216
+preview_workloads,g1x_onscreen_bond_drag,3.955,1.554,2.55,56,3,6.142 3.955 3.92,1.528 1.554 1.571
+preview_workloads,g1x_onscreen_partial_move,2.892,0.4136,6.99,65,4,4.729 2.892 2.849,0.397 0.4136 0.4153
+preview_workloads,g1x_offscreen_idle,0.1284,0.1314,0.98,71,4,0.22 0.1284 0.1282,0.1266 0.1314 0.1318
+preview_workloads,g1x_offscreen_ring_preset_hover,3.263,1.018,3.21,56,2,5.044 3.263 3.22,0.9978 1.018 1.018
+preview_workloads,g1x_offscreen_ring_preset_hover_still,3.22,1.014,3.18,58,2,5.065 3.212 3.22,0.9985 1.014 1.016
+preview_workloads,g1x_offscreen_template_hover,3.19,1.001,3.19,60,2,5.098 3.19 3.185,0.9879 1.001 1.009
+preview_workloads,g1x_offscreen_bond_drag,3.539,1.523,2.32,57,3,5.509 3.491 3.539,1.523 1.518 1.557
+preview_workloads,g1x_offscreen_partial_move,2.502,0.3928,6.37,55,3,3.859 2.502 2.489,0.3911 0.3928 0.4038
+preview_workloads,g1x_fit_pan,5.381,0.0688,78.21,64,5,8.797 5.381 5.343,0.0677 0.0688 0.071
+preview_workloads,g1x_half_pan,1.422,0.0689,20.64,72,4,2.447 1.422 1.418,0.068 0.0689 0.071
+preview_workloads,g4x_onscreen_idle,3.239,3.219,1.01,70,1,5.502 3.238 3.239,3.196 3.219 3.237
+preview_workloads,g4x_onscreen_ring_preset_hover,17.91,5.889,3.04,69,6,30.13 17.91 17.79,5.889 5.865 6.244
+preview_workloads,g4x_onscreen_ring_preset_hover_still,17.74,5.879,3.02,66,5,29.41 17.74 17.7,5.879 5.875 6.184
+preview_workloads,g4x_onscreen_template_hover,17.32,5.484,3.16,68,2,29.09 17.32 17.25,5.483 5.484 5.569
+preview_workloads,g4x_onscreen_bond_drag,21.63,10.57,2.05,74,3,37.38 21.47 21.63,10.57 10.57 10.88
+preview_workloads,g4x_onscreen_partial_move,12.89,1.7,7.58,114,2,27.45 12.8 12.89,1.688 1.7 1.723
+preview_workloads,g4x_offscreen_idle,0.6755,0.6661,1.01,79,2,1.197 0.6637 0.6755,0.6661 0.6633 0.6775
+preview_workloads,g4x_offscreen_ring_preset_hover,15.98,4.611,3.47,113,1,34.05 15.94 15.98,4.603 4.611 4.647
+preview_workloads,g4x_offscreen_ring_preset_hover_still,16.03,4.592,3.49,109,1,33.29 16.03 15.88,4.592 4.571 4.628
+preview_workloads,g4x_offscreen_template_hover,15.5,4.16,3.73,102,3,31.26 15.5 15.39,4.146 4.16 4.25
+preview_workloads,g4x_offscreen_bond_drag,21.08,10.6,1.99,108,1,43.63 20.9 21.08,10.6 10.59 10.65
+preview_workloads,g4x_offscreen_partial_move,12.46,1.695,7.35,96,4,24.38 12.41 12.46,1.683 1.695 1.746
+preview_workloads,g4x_fit_pan,22.55,0.4132,54.57,92,2,42.48 22.55 21.79,0.4087 0.4153 0.4132
+preview_workloads,g4x_half_pan,1.813,0.4151,4.37,91,2,3.425 1.813 1.771,0.4088 0.4151 0.4162
+preview_workloads,g16x_onscreen_idle,16.41,16.19,1.01,100,2,32.58 16.41 16.18,16.35 16.06 16.19
+preview_workloads,g16x_onscreen_ring_preset_hover,146,54.19,2.69,78,2,253.4 146 140.2,54.35 53.06 54.19
+preview_workloads,g16x_onscreen_ring_preset_hover_still,148.9,54.3,2.74,67,3,238.8 148.9 139.8,54.3 53.04 54.91
+preview_workloads,g16x_onscreen_template_hover,115,29.12,3.95,69,5,194.2 115 115,29.12 28.23 29.57
+preview_workloads,g16x_onscreen_bond_drag,192.6,120.5,1.60,49,9,286.8 191.8 192.6,126.3 115.8 120.5
+preview_workloads,g16x_onscreen_partial_move,91.86,9.445,9.72,30,35,119.7 91.77 91.86,12.22 8.932 9.445
+preview_workloads,g16x_offscreen_idle,4.836,5.077,0.95,32,166,6.379 4.836 4.833,13.2 4.784 5.077
+preview_workloads,g16x_offscreen_ring_preset_hover,133.4,50.87,2.62,32,55,176.5 133.2 133.4,75.45 47.58 50.87
+preview_workloads,g16x_offscreen_ring_preset_hover_still,133.5,55.79,2.39,32,168,176.3 133.5 133.3,141.2 47.31 55.79
+preview_workloads,g16x_offscreen_template_hover,111.7,25.76,4.34,31,204,143.8 111.7 108.6,75.3 22.63 25.76
+preview_workloads,g16x_offscreen_bond_drag,193.8,119.1,1.63,34,28,255.8 193.8 190.6,150.1 116.7 119.1
+preview_workloads,g16x_offscreen_partial_move,95.34,9.789,9.74,32,11,120.9 95.34 90.37,9.789 8.903 9.997
+preview_workloads,g16x_fit_pan,102.3,3.958,25.85,33,8,128.8 102.3 94.65,4.028 3.722 3.958
+preview_workloads,g16x_half_pan,5.601,3.925,1.43,14,6,6.191 5.601 5.401,3.925 3.709 3.942

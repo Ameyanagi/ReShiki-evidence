@@ -1,0 +1,22 @@
+
+running 1 test
+test canvas::performance::loaded_canvas_workloads ... Renderer: wgpu
+PERF,workload,iterations,median_ms,p95_ms,mean_ms
+PERF,gallery_1x_unselected_draw,20,0.1697,0.1719,0.1697
+PERF,gallery_1x_selected_draw,20,0.1821,0.1850,0.1822
+PERF,gallery_1x_pointer_hit,20,0.0178,0.0181,0.0178
+PERF,gallery_1x_drag_all,20,0.6369,0.6473,0.6370
+PERF,gallery_1x_drag_partial,20,2.8113,2.8376,2.8119
+PERF,gallery_1x_pan,20,0.6815,0.6871,0.6821
+PERF,gallery_1x_zoom,20,0.6886,0.6947,0.6872
+PERF,gallery_4x_unselected_draw,20,0.7487,0.7663,0.7504
+PERF,gallery_4x_selected_draw,20,0.7564,0.7663,0.7566
+PERF,gallery_4x_pointer_hit,20,0.0693,0.0695,0.0693
+PERF,gallery_4x_drag_all,20,1.7278,1.7729,1.7357
+PERF,gallery_4x_drag_partial,20,13.0612,13.3580,13.0585
+PERF,gallery_4x_pan,20,1.3548,1.3680,1.3562
+PERF,gallery_4x_zoom,20,1.3498,1.3669,1.3519
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1779 filtered out; finished in 0.69s
+

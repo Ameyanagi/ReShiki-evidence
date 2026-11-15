@@ -1,0 +1,38 @@
+base: fcd2cde610265f597e006462bdc08973db60d8f5 + src/canvas/performance.rs from afaf9aa8e (blob 24d3cc530471bb5536c658c82211ef318e0ed388)
+branch: afaf9aa8e9a17ced0afb5d4daa0ae68bffabde8e
+machine: Apple M4, 32 GB, macOS 27.0.1
+rustc: rustc 1.99.1 (58cf8f9c3 2026-10-13)
+bf0e66173c1f28c82302fbdceb9d45242ae8684a458b5d14440dd80dd401df49  bench-base
+23d5b531d35da21d872c6db864c51bd4fd6558dd46967bd47b53158129facb7f  bench-branch
+command: <bin> <test> --ignored --exact --nocapture --test-threads=1 (RESHIKI_DATA_DIR=fresh temp dir)
+  waited 600 s for compilers; still running: 1
+base preview_workloads #1 start 2026-11-15T11:41:11Z load { 7.34 27.63 52.94 }
+base preview_workloads #1 end 2026-11-15T11:42:13Z exit 0 load { 6.81 23.54 49.54 }
+  waited 60 s for compilers; still running: 0
+branch preview_workloads #1 start 2026-11-15T11:43:14Z load { 8.24 20.82 46.75 }
+branch preview_workloads #1 end 2026-11-15T11:43:37Z exit 0 load { 9.24 20.23 45.94 }
+  waited 60 s for compilers; still running: 0
+base preview_workloads #2 start 2026-11-15T11:44:37Z load { 9.54 18.27 43.44 }
+base preview_workloads #2 end 2026-11-15T11:45:17Z exit 0 load { 8.94 16.98 41.67 }
+  waited 20 s for compilers; still running: 0
+branch preview_workloads #2 start 2026-11-15T11:45:38Z load { 7.12 16.04 40.76 }
+branch preview_workloads #2 end 2026-11-15T11:45:53Z exit 0 load { 6.27 15.41 40.11 }
+  waited 0 s for compilers; still running: 0
+base preview_workloads #3 start 2026-11-15T11:45:53Z load { 6.27 15.41 40.11 }
+base preview_workloads #3 end 2026-11-15T11:46:33Z exit 0 load { 5.25 14.00 38.45 }
+  waited 0 s for compilers; still running: 0
+branch preview_workloads #3 start 2026-11-15T11:46:33Z load { 5.25 14.00 38.45 }
+branch preview_workloads #3 end 2026-11-15T11:46:49Z exit 0 load { 5.12 13.54 37.86 }
+  waited 0 s for compilers; still running: 0
+base loaded_canvas_workloads #1 start 2026-11-15T11:46:49Z load { 5.12 13.54 37.86 }
+base loaded_canvas_workloads #1 end 2026-11-15T11:46:50Z exit 0 load { 5.12 13.54 37.86 }
+  waited 0 s for compilers; still running: 0
+branch loaded_canvas_workloads #1 start 2026-11-15T11:46:50Z load { 5.12 13.54 37.86 }
+branch loaded_canvas_workloads #1 end 2026-11-15T11:46:50Z exit 0 load { 5.12 13.54 37.86 }
+  waited 0 s for compilers; still running: 0
+base loaded_canvas_workloads #2 start 2026-11-15T11:46:50Z load { 5.12 13.54 37.86 }
+base loaded_canvas_workloads #2 end 2026-11-15T11:46:51Z exit 0 load { 5.12 13.54 37.86 }
+  waited 0 s for compilers; still running: 0
+branch loaded_canvas_workloads #2 start 2026-11-15T11:46:51Z load { 5.12 13.54 37.86 }
+branch loaded_canvas_workloads #2 end 2026-11-15T11:46:51Z exit 0 load { 5.12 13.54 37.86 }
+== bench done 2026-11-15T11:46:51Z
