@@ -121,6 +121,28 @@ After each dialog closed, with no click, `?` was pressed (Help opens, or the pro
 
 Unit tests on macOS arm64 (local): `github` backend tests in the library 68 passed; app-level `github` tests 47 passed; `star_prompt` tests 14 passed.
 
+## Fixes after evidence
+
+The evidence run above (commit 5d96de06d) found five bugs. They are fixed in 240f86c4c, cc3936168, da284f186, c72ff3b59 and 27dcbb238. Before: the screenshots above. After: macOS arm64 debug build of 27dcbb238, the same local mock and a fresh data folder.
+
+| Before | After |
+| --- | --- |
+| <img src="light-21-conflict-chip.png" width="420"><br>**1. Conflict status.** The only drawing changed on GitHub and nothing was sent, yet the status starts with "Sent · 1 drawing changed on GitHub and was left out". | <img src="fixes/light-41-not-sent.png" width="420"><br>Same flow, Escape on the compare: "Not sent · “ring.rsk” changed on GitHub" in red, chip "1 conflict" with Review. |
+| <img src="light-22-kept-mine.png" width="420"><br>**5. Keep mine.** The automatic send replaces the outcome: "Sent to GitHub". | <img src="fixes/light-42-kept-mine-sent.png" width="420"><br>"Kept yours · sent", chip "On GitHub". |
+| <img src="light-26-kept-both.png" width="420"><br>**5. Keep both.** The tab became ring (2).rsk, but the status only says "Sent to GitHub". | <img src="fixes/light-43-kept-both-sent.png" width="420"><br>"Kept both · yours is “ring (2).rsk” · sent", tab ring (2).rsk, chip "On GitHub". |
+| <img src="light-32-about-starred.png" width="420"><br>**3. About's star link.** Shows "★ Starred", but its accessible name stays "Star ReShiki on GitHub". | <img src="fixes/light-52-about-starred.png" width="420"><br>Starred from About while signed in: shows "★ Starred", accessible name "Starred" (accessibility tree: `updates-star`). Before the click (<a href="fixes/light-51-about-before-star.png">screenshot</a>) the name was "Star ReShiki on GitHub", without ↗. |
+
+**2. Star card over the GitHub menu.** The card could open while the GitHub toolbar menu was open. After: <img src="fixes/light-50-menu-open-no-card.png" width="420"><br>Card due (seeded data folder), menu left open with no input for 75 s: no card. After closing the menu and 45 s idle, the card appeared as usual.
+
+**4. Accessibility of the GitHub menu and account dialog.** GitHub's messages skipped the accessibility refresh that every other message gets. After, read from the accessibility tree in the real app:
+
+- Menu open: `Open from GitHub…`, `Send to GitHub`, `Versions` (disabled for an untitled drawing), `GitHub account…`, all as buttons (screenshot above).
+- Right after the device code is approved: `Close`, `Choose repositories ↗`, `Sign out`. The waiting state's `Open GitHub ↗`, `Copy code` and `Cancel` are gone at once.
+
+Tests added or extended: `a_drawing_changed_on_github_is_recorded_as_a_conflict` (status), `keep_mine_sends_yours_over_githubs` and `keep_both_saves_yours_beside_githubs_and_sends_it` (status after the send), `a_choice_whose_send_never_starts_keeps_no_outcome_for_later`, `menus_and_panels_keep_the_toast_away` (GitHub menu and account dialog), `a_one_click_star_thanks_and_a_failed_one_opens_the_page` (name and label), `the_github_menu_reaches_native_controls_when_it_opens`.
+
+Checks on macOS arm64: `cargo fmt --all --check`, `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`, and `cargo test --locked --no-default-features -p reshiki --lib --bins` (library 466 passed, 12 ignored; app 1649 passed, 186 ignored). `bun fmt --check .` and `bun run lint:js` passed.
+
 ## Verification
 
 VERIFICATION_TABLE
