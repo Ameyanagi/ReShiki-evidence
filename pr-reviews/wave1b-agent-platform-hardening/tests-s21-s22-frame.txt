@@ -1,0 +1,54 @@
+S21/S22: packages/editor/test/frame.test.ts against main's frame.html and fonts.js (before) and the branch (after). macOS arm64, bun 1.4.4.
+
+=== before: cd packages/editor && bun test test/frame.test.ts
+bun test v1.4.4 (38afee6c8)
+
+test/frame.test.ts:
+                      ^
+error: expect(received).toEqual(expected)
+
+@@ -5,3 +5,3 @@
+      },
+-     "origin": "https://app.test",
++     "origin": "*",
+    },
+
+- Expected  - 1
++ Received  + 1
+
+(fail) the frame posts only to the page that embeds it [54.72ms]
+                              ^
+error: expect(received).toEqual(expected)
+
+@@ -3,2 +3,3 @@
+    "https://frames.test/b.ttf",
++   "https://elsewhere.test/c.ttf",
+  ]
+
+- Expected  - 0
++ Received  + 1
+
+(fail) the frame loads fonts only from its own origin or the embedding page's [4.48ms]
+                             ^
+error: expect(received).toEqual(expected)
+
+@@ -2,2 +2,3 @@
+    "font",
++   "elsewhere",
+  ]
+
+- Expected  - 0
++ Received  + 1
+
+(fail) the frame does not follow a font that redirects to another origin [19.46ms]
+ 0 pass
+ 3 fail
+ 3 expect() calls
+Ran 3 tests across 1 file. [104.00ms]
+=== after: cd packages/editor && bun test test/frame.test.ts
+bun test v1.4.4 (38afee6c8)
+
+ 3 pass
+ 0 fail
+ 12 expect() calls
+Ran 3 tests across 1 file. [99.00ms]

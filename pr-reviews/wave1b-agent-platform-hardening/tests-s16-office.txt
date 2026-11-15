@@ -1,0 +1,18 @@
+S16: branch tests (integrations/office) against main's companion, setup and task pane files (before) and the branch (after). macOS arm64, node v26.12.1.
+
+=== before: cd integrations/office && node --test
+not ok 142 - Office launch metadata loads only task-pane HTML and cannot relax API or resource boundaries
+not ok 143 - the task pane token needs the one-time nonce of a served page
+not ok 145 - manifests declare only the relevant stable host requirement and local HTTPS
+not ok 146 - setup publishes complete outputs, reuses matching partial runs and refuses conflicting files
+# tests 159
+# pass 155
+# fail 4
+=== after: cd integrations/office && node --test
+# tests 159
+# pass 159
+# fail 0
+
+Failure of the anonymous-sequence test on the before side:
+  not ok - the task pane token needs the one-time nonce of a served page
+  AssertionError: route '/': 200 !== 403 (the page was served to a client with no launch key)

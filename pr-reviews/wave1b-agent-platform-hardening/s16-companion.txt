@@ -1,0 +1,33 @@
+S16: Office companion, anonymous local client (macOS arm64, node v26.12.1, 2026-11-15T01:11Z)
+Each companion runs from a scratch copy of integrations/office at that commit, set up with setup.js,
+a self-signed localhost certificate and a stand-in ReShiki executable that only logs that it was started.
+
+== BEFORE: main 1d94f392 companion on https://localhost:43201 (anonymous client: no manifest, no launch key) ==
+$ curl -k https://localhost:43201/taskpane.html
+HTTP 200  (task pane page served, 2395 bytes; nonce in page: none)
+$ curl -k -H 'X-ReShiki-Bootstrap: 1' https://localhost:43201/bootstrap.json
+HTTP 200  {"token":"dc8f3e27..."} (token issued)
+$ curl -k -X POST -H 'Origin: https://localhost:43201' -H 'X-ReShiki-Token: <token>' -H 'Content-Type: application/json' -d '{"host":"Word"}' https://localhost:43201/api/client
+HTTP 200  {"clientId":"eacd9923..."}
+$ curl -k -X POST -H 'Origin: https://localhost:43201' -H 'X-ReShiki-Token: <token>' -H 'Content-Type: application/json' -d '{"clientId":"<clientId>"}' https://localhost:43201/api/clipboard/read
+HTTP 400  {"error":"ReShiki worker failed: fake worker: reached with --libreoffice-clipboard\n"}
+ReShiki worker started 1 time(s):
+  10:11:08 fake ReShiki worker started with: --libreoffice-clipboard
+
+== AFTER: branch 7fb337fc companion on https://localhost:43202 (anonymous client: no manifest, no launch key) ==
+$ curl -k https://localhost:43202/taskpane.html
+HTTP 403  {"error":"Open the task pane from a manifest that setup.js generated"}
+$ curl -k -H 'X-ReShiki-Bootstrap: 1' https://localhost:43202/bootstrap.json
+HTTP 403  {"error":"Bootstrap requires the nonce of a served task pane page"}
+$ curl -k -X POST -H 'Origin: https://localhost:43202' -H 'X-ReShiki-Token: <token>' -H 'Content-Type: application/json' -d '{"host":"Word"}' https://localhost:43202/api/client
+HTTP 403  {"error":"Invalid origin or task pane token"}
+$ curl -k -X POST -H 'Origin: https://localhost:43202' -H 'X-ReShiki-Token: <token>' -H 'Content-Type: application/json' -d '{"clientId":"<clientId>"}' https://localhost:43202/api/clipboard/read
+HTTP 403  {"error":"Invalid origin or task pane token"}
+ReShiki worker started 0 times
+== AFTER: the real task pane path (address from the generated manifest word.xml) ==
+$ curl -k 'https://localhost:43202/taskpane.html?launch=<key from launch.key>&_host_Info=Word$Mac$16.01$en-US$$$$0'
+HTTP 200  (page served; one-time nonce 84df856a... in <meta name="reshiki-bootstrap">)
+$ curl -k -H 'X-ReShiki-Bootstrap: 84df856a...' https://localhost:43202/bootstrap.json   # use 1 of the same nonce
+HTTP 200  {"token":"b7791353..."}
+$ curl -k -H 'X-ReShiki-Bootstrap: 84df856a...' https://localhost:43202/bootstrap.json   # use 2 of the same nonce
+HTTP 403  {"error":"Bootstrap requires the nonce of a served task pane page"}

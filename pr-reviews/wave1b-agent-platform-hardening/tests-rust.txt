@@ -1,0 +1,150 @@
+Rust tests for S5, S6, S9-S15, S19, S20, S25 on macOS arm64 (debug, CARGO_BUILD_JOBS=2).
+BEFORE = branch 7fb337fc with each fix switched off (before-neutralized.patch: main's files where the tests compile against them, else the check removed); AFTER = branch 7fb337fc.
+Helpers: RESHIKI_INCHI_HELPER/RESHIKI_NAMING_HELPER set, RESHIKI_REQUIRE_INCHI_HELPER=1. Each tree has its own target folder.
+
+##### BEFORE: branch tests, fixes switched off (7fb337fc + fixes switched off, see before-neutralized.patch)
+
+$ cargo test --locked -p reshiki-agent --lib -- --exact ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file
+running 3 tests
+test ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit ... FAILED
+test ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file ... FAILED
+test ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time has been running for over 60 seconds
+test ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time ... FAILED
+failures:
+---- ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit stdout ----
+thread 'ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit' (131524476) panicked at crates/agent/src/ops/apply/tests.rs:1036:9:
+The drawing has 8 objects; the limit is 5
+---- ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file stdout ----
+thread 'ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file' (131524477) panicked at crates/agent/src/ops/export/tests.rs:89:5:
+{"validation": Object {"status": String("valid")}, "value": Object {"receipt": Object {"byte_len": Number(0), "detail": Null, "format": String("inchi")}}, "versions": Object {"app": String("9.8.7"), "document": Number(37), "engine_protocol": Number(1), "operation_api": Number(1)}, "warnings": Array []}
+---- ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time stdout ----
+thread 'ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time' (131524478) panicked at crates/agent/src/ops/inspect/tests.rs:585:5:
+8,000 and 32,000 atoms took [(664.181ms, 15.114363125s), (1.328827583s, 29.773968333s), (1.538996875s, 26.206239042s), (1.299636667s, 30.200833292s), (1.085629292s, 20.393705125s)]
+failures:
+    ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit
+    ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file
+    ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time
+test result: FAILED. 0 passed; 3 failed; 0 ignored; 0 measured; 305 filtered out; finished in 440.76s
+error: test failed, to rerun pass `-p reshiki-agent --lib`
+
+$ cargo test --locked -p reshiki --bin reshiki -- --exact app::import::tests::a_named_pipe_is_refused_without_blocking app::import::tests::oversized_structure_files_are_read_only_past_their_limit app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection
+running 3 tests
+test app::import::tests::oversized_structure_files_are_read_only_past_their_limit ... FAILED
+test app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection ... FAILED
+test app::import::tests::a_named_pipe_is_refused_without_blocking ... FAILED
+failures:
+---- app::import::tests::oversized_structure_files_are_read_only_past_their_limit stdout ----
+thread 'app::import::tests::oversized_structure_files_are_read_only_past_their_limit' (131569897) panicked at src/app/import/tests.rs:843:9:
+assertion `left == right` failed: mol
+  left: 16781312
+ right: 16777217
+---- app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection stdout ----
+thread 'app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection' (131569895) panicked at src/app/assistant/tests.rs:927:5:
+assertion failed: app.assistant.draft.is_some()
+---- app::import::tests::a_named_pipe_is_refused_without_blocking stdout ----
+thread 'app::import::tests::a_named_pipe_is_refused_without_blocking' (131569896) panicked at src/app/import/tests.rs:804:9:
+reading a named pipe must not block
+failures:
+    app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection
+    app::import::tests::a_named_pipe_is_refused_without_blocking
+    app::import::tests::oversized_structure_files_are_read_only_past_their_limit
+test result: FAILED. 0 passed; 3 failed; 0 ignored; 0 measured; 1762 filtered out; finished in 5.66s
+error: test failed, to rerun pass `-p reshiki --bin reshiki`
+
+$ cargo test --locked -p reshiki --test agent_api_cli_files -- --exact input_from_a_fifo_is_refused_and_standard_input_still_streams
+running 1 test
+test input_from_a_fifo_is_refused_and_standard_input_still_streams ... FAILED
+failures:
+---- input_from_a_fifo_is_refused_and_standard_input_still_streams stdout ----
+thread 'input_from_a_fifo_is_refused_and_standard_input_still_streams' (131574226) panicked at tests/common/headless.rs:51:13:
+reshiki did not exit and close its output within 20s
+failures:
+    input_from_a_fifo_is_refused_and_standard_input_still_streams
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 4 filtered out; finished in 20.03s
+error: test failed, to rerun pass `-p reshiki --test agent_api_cli_files`
+
+(the reshiki --lib run above first failed to compile on the before side, because the S10 test names Budgets; rerun with only that import added:)
+$ cargo test --locked -p reshiki --lib -- --exact updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher updates::install::tests::a_staged_program_that_changed_is_not_installed updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed updates::install::tests::archive_links_are_unsafe_entries assistant::codex::tests::a_turn_with_any_other_tool_fails assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering
+running 7 tests
+test updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher ... FAILED
+test updates::install::tests::archive_links_are_unsafe_entries ... FAILED
+test updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed ... FAILED
+test updates::install::tests::a_staged_program_that_changed_is_not_installed ... FAILED
+test assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr ... FAILED
+test assistant::codex::tests::a_turn_with_any_other_tool_fails ... FAILED
+test libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering has been running for over 60 seconds
+test libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering ... FAILED
+failures:
+---- updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher stdout ----
+thread 'updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher' (131617240) panicked at src/updates/install/tests.rs:469:17:
+assertion `left == right` failed: HashMismatch "CN=ReShiki Publisher, O=ReShiki, C=US" ["NotSigned", ""]
+  left: Ok(())
+ right: Err("The signature of this ReShiki is not valid, so the installer cannot be checked against it. Nothing was installed; download the installer from the releases page.")
+---- updates::install::tests::archive_links_are_unsafe_entries stdout ----
+thread 'updates::install::tests::archive_links_are_unsafe_entries' (131617243) panicked at src/updates/install/tests.rs:431:5:
+drwxr-xr-x  0 user  staff       0 Nov 15 10:40 package/
+lrwxr-xr-x  0 user  staff       0 Nov 15 10:40 package/escape -> /etc
+-rw-r--r--  0 user  staff       3 Nov 15 10:40 package/reshiki
+drwxr-xr-x  0 user  staff       0 Nov 15 10:40 package/Licenses/
+-rw-r--r--  0 user  staff       6 Nov 15 10:40 package/Licenses/NOTICE
+---- updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed stdout ----
+thread 'updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed' (131617241) panicked at src/updates/install/tests.rs:363:58:
+called `Result::unwrap_err()` on an `Ok` value: ()
+---- updates::install::tests::a_staged_program_that_changed_is_not_installed stdout ----
+thread 'updates::install::tests::a_staged_program_that_changed_is_not_installed' (131617242) panicked at src/updates/install/tests.rs:324:54:
+called `Result::unwrap_err()` on an `Ok` value: ()
+---- assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr stdout ----
+thread 'assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr' (131617238) panicked at src/assistant/codex/tests.rs:1012:9:
+Codex returned invalid structured output: key must be a string at line 1 column 2; reply: {private-reply-text
+Codex returned invalid structured output: key must be a string at line 1 column 2; reply: {private-reply-text
+---- assistant::codex::tests::a_turn_with_any_other_tool_fails stdout ----
+thread 'assistant::codex::tests::a_turn_with_any_other_tool_fails' (131617237) panicked at src/assistant/codex/tests.rs:965:14:
+called `Result::unwrap_err()` on an `Ok` value: Object {"edits": Array [], "issues": Array [], "summary": String("ok")}
+---- libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering stdout ----
+thread 'libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering' (131617239) panicked at src/libreoffice/tests.rs:44:5:
+assertion `left == right` failed
+  left: "Drawing is too large for a 1200 dpi PNG; use SVG or PDF."
+ right: "The drawing has 100001 objects; the limit is 100000"
+failures:
+    assistant::codex::tests::a_turn_with_any_other_tool_fails
+    assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr
+    libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering
+    updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher
+    updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed
+    updates::install::tests::a_staged_program_that_changed_is_not_installed
+    updates::install::tests::archive_links_are_unsafe_entries
+test result: FAILED. 0 passed; 7 failed; 0 ignored; 0 measured; 401 filtered out; finished in 137.25s
+error: test failed, to rerun pass `-p reshiki --lib`
+
+
+##### AFTER: branch (7fb337fc)
+
+$ cargo test --locked -p reshiki-agent --lib -- --exact ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file
+running 3 tests
+test ops::apply::tests::an_edit_over_a_budget_is_refused_before_the_commit ... ok
+test ops::export::tests::an_empty_inchi_is_an_error_not_an_empty_file ... ok
+test ops::inspect::tests::the_bounds_of_a_bonded_drawing_take_linear_time ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 305 filtered out; finished in 0.36s
+
+$ cargo test --locked -p reshiki --lib -- --exact updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher updates::install::tests::a_staged_program_that_changed_is_not_installed updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed updates::install::tests::archive_links_are_unsafe_entries assistant::codex::tests::a_turn_with_any_other_tool_fails assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering
+running 7 tests
+test updates::install::tests::a_signed_app_needs_an_installer_from_its_publisher ... ok
+test updates::install::tests::a_staged_program_that_changed_is_not_installed ... ok
+test updates::install::tests::a_staged_application_that_changed_outside_its_executable_is_not_installed ... ok
+test updates::install::tests::archive_links_are_unsafe_entries ... ok
+test assistant::codex::tests::an_unreadable_reply_is_not_written_to_stderr ... ok
+test assistant::codex::tests::a_turn_with_any_other_tool_fails ... ok
+test libreoffice::tests::a_drawing_over_the_object_limit_is_refused_before_rendering ... ok
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 401 filtered out; finished in 1.85s
+
+$ cargo test --locked -p reshiki --bin reshiki -- --exact app::import::tests::a_named_pipe_is_refused_without_blocking app::import::tests::oversized_structure_files_are_read_only_past_their_limit app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection
+running 3 tests
+test app::import::tests::a_named_pipe_is_refused_without_blocking ... ok
+test app::import::tests::oversized_structure_files_are_read_only_past_their_limit ... ok
+test app::assistant::tests::accept_all_reviews_a_replacement_outside_the_selection ... ok
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 1762 filtered out; finished in 0.25s
+
+$ cargo test --locked -p reshiki --test agent_api_cli_files -- --exact input_from_a_fifo_is_refused_and_standard_input_still_streams
+running 1 test
+test input_from_a_fifo_is_refused_and_standard_input_still_streams ... ok
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 3.87s

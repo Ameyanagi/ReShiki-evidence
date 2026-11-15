@@ -1,0 +1,28 @@
+S18: integrations/libreoffice/tests/test_executable.py with LibreOffice's UNO Python on Ubuntu arm64.
+Before = the branch's reshiki.py with main's lookup order (PATH first): main has no installed_executables(), so the test cannot patch it there.
+
+=== before: python3 -m unittest tests.test_executable -v
+FAIL: test_the_chosen_app_then_the_installed_app_come_before_path (tests.test_executable.ExecutableTests.test_the_chosen_app_then_the_installed_app_come_before_path)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "before/integrations/libreoffice/tests/test_executable.py", line 36, in test_the_chosen_app_then_the_installed_app_come_before_path
+    self.assertEqual(extension.executable(None), str(installed.resolve()))
+AssertionError: '/tmp/tmp15oq1yvu/on-path' != '/tmp/tmp15oq1yvu/installed'
+- /tmp/tmp15oq1yvu/on-path
+?                  ^ ^^ ^^
++ /tmp/tmp15oq1yvu/installed
+?                  ^ ^^ ^^^^
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+=== after: python3 -m unittest tests.test_executable -v
+test_the_chosen_app_then_the_installed_app_come_before_path (tests.test_executable.ExecutableTests.test_the_chosen_app_then_the_installed_app_come_before_path) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+host: Ubuntu 24.04.4 LTS aarch64, LibreOffice UNO python 3.12.3

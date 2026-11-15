@@ -1,0 +1,64 @@
+S17: cargo test -p reshiki-linux desktop::tests:: on Ubuntu arm64 (Linux-only crate), each tree in its own target folder.
+Before = the branch with base() returning main's /tmp parent when XDG_RUNTIME_DIR is unset:
+
+--- ../after/native/linux/src/desktop.rs	2026-11-14 22:38:12.000000000 +0000
++++ native/linux/src/desktop.rs	2026-11-15 01:20:51.496927285 +0000
+@@ -77,27 +77,9 @@
+             Err(denied())
+         };
+     }
+-    let runtime = run_user.join(uid.to_string());
+-    if private(&runtime) {
+-        return Ok(runtime);
+-    }
+-    let own = |cache: PathBuf| {
+-        DirBuilder::new()
+-            .recursive(true)
+-            .mode(0o700)
+-            .create(&cache)
+-            .ok()?;
+-        let cache = cache.canonicalize().ok()?;
+-        let meta = std::fs::metadata(&cache).ok()?;
+-        (meta.is_dir() && meta.uid() == uid && meta.mode() & 0o022 == 0).then_some(cache)
+-    };
+-    variable("XDG_CACHE_HOME")
+-        .map(PathBuf::from)
+-        .filter(|path| path.is_absolute())
+-        .into_iter()
+-        .chain(variable("HOME").map(|home| PathBuf::from(home).join(".cache")))
+-        .find_map(own)
+-        .ok_or_else(denied)
++    // main 1d94f392: without XDG_RUNTIME_DIR the endpoint went under /tmp.
++    let _ = run_user;
++    Ok(PathBuf::from("/tmp"))
+ }
+ 
+ #[derive(Clone)]
+=== before: cargo test --locked -p reshiki-linux desktop::tests::
+running 9 tests
+i.. 3/9
+desktop::tests::the_endpoint_folder_is_never_a_shared_temporary_folder --- FAILED
+desktop::tests::a_cache_folder_others_can_write_to_is_not_used --- FAILED
+....
+failures:
+---- desktop::tests::the_endpoint_folder_is_never_a_shared_temporary_folder stdout ----
+thread 'desktop::tests::the_endpoint_folder_is_never_a_shared_temporary_folder' (1821900) panicked at native/linux/src/desktop/tests.rs:312:5:
+assertion `left == right` failed
+  left: "/tmp"
+ right: "/tmp/reshiki-ipc-test-5a820634462bd19751ca587fa086a6ed/home/.cache"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+---- desktop::tests::a_cache_folder_others_can_write_to_is_not_used stdout ----
+thread 'desktop::tests::a_cache_folder_others_can_write_to_is_not_used' (1821894) panicked at native/linux/src/desktop/tests.rs:369:9:
+assertion `left == right` failed: 1777
+  left: "/tmp"
+ right: "/tmp/reshiki-ipc-test-bc6aae5a7267ad097af04154ae59ed56/home/.cache"
+failures:
+    desktop::tests::a_cache_folder_others_can_write_to_is_not_used
+    desktop::tests::the_endpoint_folder_is_never_a_shared_temporary_folder
+test result: FAILED. 6 passed; 2 failed; 1 ignored; 0 measured; 33 filtered out; finished in 2.03s
+error: test failed, to rerun pass `-p reshiki-linux --lib`
+=== after: cargo test --locked -p reshiki-linux desktop::tests::
+running 9 tests
+i........
+test result: ok. 8 passed; 0 failed; 1 ignored; 0 measured; 33 filtered out; finished in 2.03s
+host: Ubuntu 24.04.4 LTS aarch64, rustc 1.93.0 (254b59607 2026-01-19)

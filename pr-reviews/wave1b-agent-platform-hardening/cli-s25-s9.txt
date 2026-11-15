@@ -1,0 +1,32 @@
+== BEFORE: main 1d94f392 ==
+# S25: a named pipe with no writer as INPUT
+$ reshiki --cli convert input.fifo --from smiles -o e.mol
+(still waiting after 10 s with no output; killed by the watchdog)
+# S25: a folder as INPUT
+$ reshiki --cli convert folder --from smiles -o e.mol
+  reshiki: error: cannot read folder: Is a directory (os error 21)
+exit 1 after 0.13 s
+# S25: the same text through standard input still converts
+$ printf CCO | reshiki --cli convert - --from smiles -o e.mol
+exit 0; e.mol: 1 M END line
+# S9: a 17 MiB MOL file (the CLI already reads only 16 MiB + 1 byte; unchanged)
+$ reshiki --cli convert huge_17mb.mol -o huge.smi
+  reshiki: error: input exceeds 16777216 bytes
+exit 1 after 0.13 s
+
+== AFTER: branch 7fb337fc ==
+# S25: a named pipe with no writer as INPUT
+$ reshiki --cli convert input.fifo --from smiles -o e.mol
+  reshiki: error: cannot read input.fifo: not a regular file; use - to read standard input
+exit 1 after 0.13 s
+# S25: a folder as INPUT
+$ reshiki --cli convert folder --from smiles -o e.mol
+  reshiki: error: cannot read folder: not a regular file; use - to read standard input
+exit 1 after 0.13 s
+# S25: the same text through standard input still converts
+$ printf CCO | reshiki --cli convert - --from smiles -o e.mol
+exit 0; e.mol: 1 M END line
+# S9: a 17 MiB MOL file (the CLI already reads only 16 MiB + 1 byte; unchanged)
+$ reshiki --cli convert huge_17mb.mol -o huge.smi
+  reshiki: error: input exceeds 16777216 bytes
+exit 1 after 0.14 s
