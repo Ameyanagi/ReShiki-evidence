@@ -1,0 +1,25 @@
+
+running 1 test
+test app::performance::redraw::history_memory ... copy,allocations,allocated_mb
+document,49735,6.28
+atoms,31025,4.43
+bonds,13841,1.48
+state,live_mb,peak_mb,resident_mb,frames,allocations,allocated_mb
+empty,6.3,7.8,40.6,0,80240,12.8
+tab_1_opened,18.9,18.9,48.5,0,249606,67.8
+# one edit changes: atoms true, bonds true, annotations false, graphics false, arrows false
+tab_1_60_edits,147.2,163.9,227.8,20,40440530,3401.7
+tab_1_all_undone,147.2,153.8,227.9,20,5996812,395.8
+tab_1_all_redone,147.2,153.8,227.9,20,4009520,144.7
+tab_2_opened,159.8,159.8,232.4,20,249669,67.8
+tab_2_60_edits,285.3,302.0,377.9,40,40120263,3369.5
+tab_3_opened,297.9,297.9,382.5,40,249669,67.8
+tab_3_60_edits,423.4,440.1,540.3,60,40120263,3369.5
+tab_4_opened,436.0,436.0,544.7,60,249669,67.8
+tab_4_60_edits,561.6,578.3,657.8,80,40120263,3369.5
+tab_5_opened,574.1,574.1,636.8,80,249668,67.8
+tab_5_60_edits,699.7,716.4,737.7,100,40120263,3369.5
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1760 filtered out; finished in 72.60s
+

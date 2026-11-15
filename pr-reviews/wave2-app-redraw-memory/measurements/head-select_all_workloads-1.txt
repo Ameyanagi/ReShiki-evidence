@@ -1,0 +1,19 @@
+
+running 1 test
+test app::performance::redraw::select_all_workloads ... workload,median_ms,p95_ms
+gallery_1x_view_none_selected,0.3531,0.3802
+gallery_1x_undo_redo_none_selected,3.4200,17.9756
+gallery_1x_view_all_selected,1.7394,11.5780
+gallery_1x_undo_redo_all_selected,10.8514,26.0411
+gallery_4x_view_none_selected,0.8139,10.3405
+gallery_4x_undo_redo_none_selected,11.5313,34.3508
+gallery_4x_view_all_selected,10.9608,19.4459
+gallery_4x_undo_redo_all_selected,80.4490,108.6439
+gallery_16x_view_none_selected,12.0730,34.6987
+gallery_16x_undo_redo_none_selected,63.1692,83.9031
+gallery_16x_view_all_selected,53.6445,82.9665
+gallery_16x_undo_redo_all_selected,691.4584,817.3750
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1767 filtered out; finished in 33.82s
+

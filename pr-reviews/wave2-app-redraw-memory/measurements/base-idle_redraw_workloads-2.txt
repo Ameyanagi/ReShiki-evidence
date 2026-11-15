@@ -1,0 +1,14 @@
+
+running 1 test
+test canvas::performance::idle_redraw_workloads ... Renderer: wgpu
+PERF,workload,iterations,median_ms,p95_ms,mean_ms
+PERF,gallery_1x_onscreen_idle_draw,30,0.5794,0.8590,0.6510
+PERF,gallery_1x_offscreen_idle_draw,30,0.5247,0.5379,0.5111
+PERF,gallery_4x_onscreen_idle_draw,30,3.0717,9.2351,3.8398
+PERF,gallery_4x_offscreen_idle_draw,30,2.6167,8.3585,3.6498
+PERF,gallery_16x_onscreen_idle_draw,30,28.6270,47.9585,29.6176
+PERF,gallery_16x_offscreen_idle_draw,30,32.3519,57.6519,34.5445
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1760 filtered out; finished in 3.67s
+

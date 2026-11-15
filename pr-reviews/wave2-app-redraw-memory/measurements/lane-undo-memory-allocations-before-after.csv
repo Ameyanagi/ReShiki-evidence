@@ -1,0 +1,31 @@
+# debug test build, Apple M1, run alone with --test-threads=1. Requested bytes and allocation counts from the measuring allocator; resident_mb from ps.
+# Each state row covers the step since the row before: peak_mb is the peak of live bytes in it, allocations and allocated_mb are made in it.
+# before = 81efb8f4 (origin/main code + this workload), after = wave2/app-redraw-memory e77b8480
+# One copy of the 7,700-atom drawing: 49,735 allocations, 6.28 MB; atoms 31,025 / 4.43 MB; bonds 13,841 / 1.48 MB. One element edit changes atoms and bonds.
+build,state,live_mb,peak_mb,resident_mb,frames,allocations,allocated_mb
+before,empty,6.3,7.8,56.8,0,80345,12.8
+before,tab_1_opened,18.9,18.9,63.9,0,249638,67.8
+before,tab_1_60_edits,147.2,163.9,245.6,20,40456250,3401.8
+before,tab_1_all_undone,147.2,153.8,247.1,20,5996842,395.8
+before,tab_1_all_redone,147.2,153.8,247.1,20,4009550,144.7
+before,tab_2_opened,159.8,159.8,251.7,20,249701,67.8
+before,tab_2_60_edits,285.3,302.0,237.8,40,40135983,3369.6
+before,tab_3_opened,297.9,297.9,249.3,40,249701,67.8
+before,tab_3_60_edits,423.4,440.1,303.1,60,40135983,3369.6
+before,tab_4_opened,436.0,436.0,312.4,60,249701,67.8
+before,tab_4_60_edits,561.6,578.3,329.8,80,40135983,3369.6
+before,tab_5_opened,574.1,574.1,339.3,80,249700,67.8
+before,tab_5_60_edits,699.7,716.4,491.5,100,40135983,3369.6
+after,empty,6.3,7.8,55.7,0,80345,12.8
+after,tab_1_opened,18.9,18.9,64.4,0,249638,67.8
+after,tab_1_60_edits,147.2,163.9,234.0,20,40457390,3452.5
+after,tab_1_all_undone,147.2,153.8,234.0,20,5996882,395.8
+after,tab_1_all_redone,147.2,153.8,234.0,20,4009590,144.7
+after,tab_2_opened,159.8,159.8,239.7,20,249701,67.8
+after,tab_2_60_edits,285.3,302.0,391.7,40,40137183,3420.3
+after,tab_3_opened,297.9,297.9,397.5,40,249701,67.8
+after,tab_3_60_edits,297.9,314.6,415.3,40,40137243,3420.3
+after,tab_4_opened,310.5,310.5,421.1,40,249701,67.8
+after,tab_4_60_edits,310.5,327.2,432.7,40,40137243,3420.3
+after,tab_5_opened,323.1,323.1,437.2,40,249700,67.8
+after,tab_5_60_edits,323.1,339.8,229.0,40,40137243,3420.3

@@ -1,0 +1,13 @@
+
+running 1 test
+test app::performance::redraw::template_panel_workloads ... renderer,wgpu
+workload,median_ms,p95_ms
+inspector_closed_draw,2.8944,9.0552
+properties_draw,5.2332,11.9181
+template_categories_draw,17.4973,27.9198
+collection,Carbohydrates,50 templates
+template_largest_collection_draw,75.2250,91.5654
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1760 filtered out; finished in 3.78s
+

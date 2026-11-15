@@ -1,0 +1,13 @@
+panel,label,before,after
+"P7: Properties frame, 7,700-atom drawing (ms)",Everything selected,859.95,44.17
+"P7: Properties frame, 7,700-atom drawing (ms)",Nothing selected,36.74,11.45
+"P7: Properties frame, 7,700-atom drawing (ms)",Undo + Redo with everything selected,633.56,609.17
+"P7: select all in a 4,000-atom 3D model (ms)",Stored model: frame,473.46,205.93
+"P7: select all in a 4,000-atom 3D model (ms)",Crystal: frame,489.98,224.37
+"P4: whole-window frame, Templates tab (ms)",Carbohydrates (50 templates),75.22,3.68
+"P4: whole-window frame, Templates tab (ms)",Category list,17.50,4.15
+"P8: idle redraw of an unchanged 7,700-atom drawing (ms)",In view,28.63,4.56
+"P8: idle redraw of an unchanged 7,700-atom drawing (ms)",Scrolled out of view,26.95,4.86
+"P3: five tabs x 60 edits of the 7,700-atom drawing (MB)",Live allocations,699.7,323.1
+"P3: five tabs x 60 edits of the 7,700-atom drawing (MB)",Peak live allocations,716.4,339.8
+"P3: five tabs x 60 edits of the 7,700-atom drawing (MB)",Resident memory,737.7,426.1

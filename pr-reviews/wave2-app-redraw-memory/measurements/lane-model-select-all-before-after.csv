@@ -1,0 +1,20 @@
+# debug test build on a loaded Apple M1; compare growth with size, not absolute times. before = 81efb8f4 (origin/main code + this workload), after = wave2/app-redraw-memory e77b8480
+workload,before_median_ms,before_p95_ms,after_median_ms,after_p95_ms
+plain_250_selected_model,1.4800,4.9971,1.8315,3.3045
+plain_250_view_all_selected,60.0757,76.3003,34.8107,104.5570
+plain_1000_selected_model,12.8802,16.4763,8.8061,17.9766
+plain_1000_view_all_selected,335.4712,366.9709,196.5086,242.6954
+plain_4000_selected_model,184.9769,200.0735,58.9173,96.0401
+plain_4000_view_all_selected,2622.6258,3680.0863,1521.1987,1935.9834
+model_250_selected_model,1.5467,1.7664,0.9137,14.4054
+model_250_view_all_selected,55.0102,61.3670,34.6680,48.4763
+model_1000_selected_model,19.3492,20.2753,5.7148,18.3651
+model_1000_view_all_selected,463.2783,505.8010,223.1046,294.8562
+model_4000_selected_model,313.9503,332.8355,25.1010,33.8225
+model_4000_view_all_selected,4755.1596,4971.1960,1143.8985,1891.5679
+crystal_250_selected_model,1.5634,2.9872,0.9195,1.7754
+crystal_250_view_all_selected,55.4222,69.2738,27.0325,34.4390
+crystal_1000_selected_model,19.3581,24.6367,3.7648,6.9732
+crystal_1000_view_all_selected,427.9005,472.8697,135.9408,146.0795
+crystal_4000_selected_model,285.8447,370.9048,16.9031,24.0631
+crystal_4000_view_all_selected,6891.7410,14591.9555,1054.9175,1174.7596
