@@ -1,0 +1,3 @@
+$ reshiki --cli convert chemdraw-phenol-props.cdxml -o roundtrip.cdxml   # main fcd2cde6
+reshiki: error[failed]: CDXML contains unsupported drawing objects or multiple pages.
+exit 1

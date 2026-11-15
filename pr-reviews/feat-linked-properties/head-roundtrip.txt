@@ -1,0 +1,9 @@
+$ reshiki --cli convert chemdraw-phenol-props.cdxml -o roundtrip.cdxml   # branch
+exit 0
+$ grep -A0 "<chemicalproperty" roundtrip.cdxml
+<chemicalproperty id="19" ChemicalPropertyDisplayID="18" ChemicalPropertyIsActive="yes" ChemicalPropertyType="2 4 3 6" BasisObjects="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16" />
+$ caption text
+Formula: C6H6O
+Mol. Wt.: 94.11
+Exact Mass: 94.0419
+Anal. Calcd for C6H6O: C, 76.57; H, 6.43
