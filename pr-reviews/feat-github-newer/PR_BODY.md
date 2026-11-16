@@ -68,8 +68,8 @@ Checks on macOS arm64 (Apple M4), at the head:
 - `cargo fmt --all --check`
 - `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`
 - wasm32 clippy as in `checks.yml`
-- `cargo test --locked --no-default-features -p reshiki --lib --bins`: lib 482 passed, bins 1769 passed
-- the opt-in renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1921 passed
+- `cargo test --locked --no-default-features -p reshiki --lib --bins`: lib 482 passed, bins 1770 passed
+- the opt-in renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1922 passed
 - `uv run --locked python -m unittest discover -s tests -p 'test_*.py'`: 264, OK
 - `python3 scripts/module_index.py --check`
 - `scripts/copy_lint.py`
@@ -96,6 +96,8 @@ Adversarial review: four passes by an independent model on the full diff. Fixed:
 - an expired sign-in was swallowed;
 - the check used a stale branch name;
 - after merging main (where a listing can make a repository read only): a cached newer version, or a conflict found by the check, still offered Update or Review for a repository that had turned read only.
+
+Greptile (P2, both fixed with failing-first tests): Update could overlap a running Send (now off while the repository saves or sends); after a default-branch change, History still asked the old branch (a check now keeps GitHub's names and default branch).
 
 Rejected, with reason:
 
