@@ -6,13 +6,16 @@ The cause is memory. #1202 builds published binaries with the `dist` profile (fa
 
 ## Approach
 
-One expression in `release.yml`: Linux arm64 builds with thin LTO, as the macOS builds already do for the same reason.
+Two expressions in `release.yml`: Linux arm64 builds with the `release` profile's settings, `lto = false` (no LTO across crates) and 16 codegen units, which is what it built with before #1202.
 
 ```yaml
-CARGO_PROFILE_DIST_LTO: ${{ (startsWith(matrix.artifact, 'macos') || matrix.artifact == 'linux-arm64') && 'thin' || 'fat' }}
+CARGO_PROFILE_DIST_LTO: ${{ startsWith(matrix.artifact, 'macos') && 'thin' || matrix.artifact == 'linux-arm64' && 'false' || 'fat' }}
+CARGO_PROFILE_DIST_CODEGEN_UNITS: ${{ matrix.artifact == 'linux-arm64' && '16' || '1' }}
 ```
 
-Linux x64 and both Windows builds keep fat LTO; they passed in the same run. The `dist` profile in `Cargo.toml` is unchanged. The test that pins this line, the comments and `docs/releasing.md` follow.
+macOS stays on thin LTO; Linux x64 and both Windows builds keep fat LTO and one codegen unit, and passed in the same run. The `dist` profile in `Cargo.toml` is unchanged. The test that pins these lines, the comments and `docs/releasing.md` follow.
+
+Thin LTO, as on macOS, also fits the runner. It was the first version of this PR and was dropped: on this platform its archive is larger than without LTO, and it builds slower (table below).
 
 ## Evidence
 
@@ -31,17 +34,19 @@ taskset -c 0-3 /usr/bin/time -v uv run --no-project --isolated --python 3.12.15 
   python scripts/build_release.py --target aarch64-unknown-linux-gnu --installer
 ```
 
-| `CARGO_PROFILE_DIST_LTO` | Memory limit | Result | Peak RSS (largest process) | Wall time | Executable (stripped) | Portable archive |
-|---|---|---|---|---|---|---|
-| `fat` (main) | none | pass | 19,505,484 KiB (18.6 GiB) | 21:11 | 79.1 MB | 35.80 MB |
-| `fat` (main) | 16 GB, no swap | **killed by the OOM killer** 14.5 min into the link | – | 19:02 until killed | – | – |
-| `thin` (this PR) | none | pass | 8,928,572 KiB (8.5 GiB) | 13:09 | 84.8 MB | 37.27 MB |
-| `thin` (this PR) | 16 GB, no swap | **pass** | 8,960,020 KiB (8.5 GiB) | 13:47 | 84.8 MB | 37.27 MB |
-| `false`, 16 codegen units (the profile before #1202, same source) | none | pass | 2,886,420 KiB (2.8 GiB) | 9:46 | 89.8 MB | 36.66 MB |
+| `CARGO_PROFILE_DIST_LTO` | Codegen units | Memory limit | Result | Peak RSS (largest process) | Wall time | Executable (stripped) | Portable archive |
+|---|---|---|---|---|---|---|---|
+| `fat` (main) | 1 | none | pass | 19,505,484 KiB (18.6 GiB) | 21:11 | 79.1 MB | 35.80 MB |
+| `fat` (main) | 1 | 16 GB, no swap | **killed by the OOM killer** 14.5 min into the link | – | 19:02 until killed | – | – |
+| **`false` (this PR)** | **16** | none | **pass** | **2,886,420 KiB (2.8 GiB)** | **9:46** | **89.8 MB** | **36.66 MB** |
+| `thin` (considered) | 1 | none | pass | 8,928,572 KiB (8.5 GiB) | 13:09 | 84.8 MB | 37.27 MB |
+| `thin` (considered) | 1 | 16 GB, no swap | pass | 8,960,020 KiB (8.5 GiB) | 13:47 | 84.8 MB | 37.27 MB |
 
-The memory limit was a cgroup (`systemd-run --user --scope -p MemoryMax=16G -p MemorySwapMax=0`). Under it the fat-LTO build stops at the same place as the runner: after `Compiling semver`, silent, then killed. The whole cgroup (compiler plus file cache) peaked at 22.9 GB for fat and 12.4 GB for thin.
+The memory limit was a cgroup (`systemd-run --user --scope -p MemoryMax=16G -p MemorySwapMax=0`). Under it the fat-LTO build stops at the same place as the runner: after `Compiling semver`, silent, then killed. The whole cgroup (compilers plus file cache) peaked at 22.9 GB for fat, 12.4 GB for thin and 8.0 GB for the chosen settings, so the chosen build was not rerun under the limit: it uses half of it.
 
-What thin LTO costs on Linux arm64, against fat: the executable is 5.7 MB larger (84.8 MB instead of 79.1 MB) and the archive 1.5 MB larger. Against the profile before #1202, the executable is 5.0 MB smaller, but the compressed archive is 0.6 MB larger (37.27 MB against 36.66 MB): the thin-LTO binary compresses less well. So on this platform thin LTO keeps the installed-size win and not the download-size win. If the download size matters more, the alternative is no LTO for Linux arm64 (`'off'` for this artifact), which also builds 3.5 minutes faster.
+Cargo takes both values from the environment: with `CARGO_PROFILE_DIST_LTO=false CARGO_PROFILE_DIST_CODEGEN_UNITS=16`, `cargo rustc --profile dist -v` passes `-C embed-bitcode=no -C codegen-units=16`; with `fat`/`1` and `thin`/`1` it passes `-C linker-plugin-lto -C codegen-units=1` as before. Nothing else in the repository sets a `dist` profile value.
+
+What the chosen settings cost on Linux arm64, against a fat-LTO build that never published: the archive is 0.9 MB larger (36.66 MB instead of 35.80 MB) and the executable 10.7 MB larger. Against thin LTO the archive is 0.6 MB smaller, the build 3.5 minutes faster and the peak memory a third.
 
 ## Verification
 
@@ -49,20 +54,20 @@ VERIFICATION_TABLE
 
 Run on macOS arm64 for the touched files:
 - `python3 scripts/module_index.py --check`
-- `uv run --locked python -m unittest discover -s tests -p 'test_*.py'`: 264 tests pass (12 skipped); `tests.test_release` pins the new workflow line
+- `uv run --locked python -m unittest discover -s tests -p 'test_*.py'`: 264 tests pass (12 skipped); `tests.test_release` pins the new workflow lines
 - `uv run --locked python scripts/assemble_changelog.py --check`, `python3 scripts/copy_lint.py`, `bun scripts/check_docs_tree.mjs`
 - `uv run --locked ruff check reference scripts tests` and `ruff format --check`
 - actionlint on `release.yml`: no new diagnostics against main
 
-An independent review of the diff found nothing to change: the expression gives `thin` for `macos-arm64`, `macos-x64` and `linux-arm64` and `fat` for `linux-x64`, `windows-x64` and `windows-arm64`; nothing later in the job overrides it.
+An independent review of the diff confirmed the expressions for all six artifacts (`thin`/1 on both macOS, `fat`/1 on Linux x64 and both Windows, `false`/16 on Linux arm64; `'false'` is a non-empty string, so the expression yields it). It asked for one wording change, now made: `lto = false` drops LTO across crates and keeps it within a crate, unlike `off`.
 
 PR CI does not run the release build. The next nightly after merge is the real check of the runner.
 
 ## Risk
 
-- Low. Only the Linux arm64 published build changes, and only its LTO mode; the same setting already ships on macOS. The built archive passed `build_release.py`'s own checks of the extracted application in both thin runs.
+- Low. Only the Linux arm64 published build changes, and it goes back to the optimization settings it shipped with until #1202. The built archive passed `build_release.py`'s own checks of the extracted application.
 - Linux x64 was not measured here. It passed with fat LTO on a 16 GB runner in 16 minutes in the same nightly, but if its link needs anything near the 18.6 GiB that arm64 does, it is close to the limit. Worth measuring before the next release.
-- The Linux arm64 download grows by 1.5 MB against a fat-LTO build that never published.
+- The Linux arm64 download does not get #1202's LTO saving (0.9 MB); it keeps the rest of #1202 (the smaller TLS provider and templates).
 
 ## Changelog
 
