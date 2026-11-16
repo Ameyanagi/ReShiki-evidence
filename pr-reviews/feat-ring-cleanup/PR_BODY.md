@@ -94,6 +94,12 @@ Cages (norbornane, adamantane) keep their drawn orientation, as in ChemDraw. Cyc
 |---|---|
 | <img src="compare/depictions.png" width="440"> | <img src="compare/templates.png" width="440"> |
 
+All 25 changed templates, main vs this PR, at one scale. The owner reviewed them and kept the smallest-turn poses:
+
+<img src="compare/templates-all-1.png" width="900">
+
+<img src="compare/templates-all-2.png" width="900">
+
 ## Corpus summary
 
 This run uses the 62 ChemDraw-reference inputs: 31 molecules, each clean and messy (1.5x, turned 20°, jittered). The throwaway harness wrote `*-pr-cleanup.cdxml` beside the ChemDraw and main results, and was not committed. The full table is [compare/corpus-metrics.md](compare/corpus-metrics.md).
