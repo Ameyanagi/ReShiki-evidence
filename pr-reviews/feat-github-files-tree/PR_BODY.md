@@ -115,17 +115,17 @@ Other base captures: <a href="before/light-01-tiles-top.png">before/light-01-til
 
 VERIFICATION_TABLE
 
-Run on macOS arm64 (Apple M4) at the final head fe0118b31: `main` with #1209 (B1) and #1210 (B2) merged in, and the Greptile fixes:
+Run on macOS arm64 (Apple M4) at 54c0c058a: `main` with #1209 (B1) and #1210 (B2) merged in, plus the Greptile fixes. The head 66b1d6187 adds only a docs line:
 - `cargo fmt --all --check`
 - `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`
 - wasm32 clippy (`-p reshiki-web -p reshiki -p reshiki-web-worker --lib --bin reshiki --target wasm32-unknown-unknown`)
-- `cargo test --locked --no-default-features -p reshiki --lib --bins`: 483 lib + 1789 bin pass
-- renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1941 pass
+- `cargo test --locked --no-default-features -p reshiki --lib --bins`: 483 lib + 1792 bin pass
+- renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1944 pass
 - `uv run --locked python -m unittest discover -s tests -p 'test_*.py'`: 264 OK
 - `scripts/module_index.py --check`, `scripts/copy_lint.py`, `bun fmt --check` on the docs, `scripts/check_docs_tree.mjs`, `assemble_changelog.py --check`
 
 New tests:
-- `src/app/github/tests/files.rs` (19 tests):
+- `src/app/github/tests/files.rs` (22 tests):
   - labels and listing;
   - a `.mol` opening read only, then ⌘S to a `.rsk` copy with the original untouched;
   - This computer… naming;
@@ -160,7 +160,11 @@ A second pass found two more, both fixed (a listing error kept in either view; a
 Greptile (first pass, 4/5) found three, all fixed, each with a test that fails without its fix and passes with it:
 - an edit made while Insert downloads now cancels the Insert, as it cancels a paste;
 - a folder opened while the one left still waits for dates asks for its own;
-- a new tree folder shows under its opened folders, and the files it brings into view are asked about. One finding was kept on purpose: with a repository open, the search filters its files rather than the repository list, as the approved mockup does. The repository list stays clickable.
+- a new tree folder shows under its opened folders, and the files it brings into view are asked about.
+
+Greptile's second pass (5/5) found one more, fixed with tests that fail without it: tiles shown after the remembered Tree view now wait for their first dates and sort newest first, and a wait already running is kept across a trip to the tree.
+
+At the owner's request, an SD file whose records do not all fit one drawing now opens or inserts what fits. The status bar says so in amber, such as "Opened 2 of 3 structures · The rest don't fit", and keeps any import warnings after it (test `records_that_do_not_fit_are_left_out_and_said_so`). Joining tens of thousands of records is quadratic; that is a noted limit, not handled here. One finding was kept on purpose: with a repository open, the search filters its files rather than the repository list, as the approved mockup does. The repository list stays clickable.
 
 ## Risk
 
