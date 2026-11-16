@@ -1,6 +1,6 @@
 ## Summary
 
-B2 of three stacked PRs on #1209 (`feat/github-shared-repos`, B1): **Newer on GitHub**, the owner's decision 31 and the "Update from GitHub" palette row of decision 33.
+B2 of three GitHub PRs, after #1209 (B1, now merged; this targets `main` with main merged in): **Newer on GitHub**, the owner's decision 31 and the "Update from GitHub" palette row of decision 33.
 
 - **On window focus**, with B1's access re-check, at most every five minutes and only while GitHub drawings are open, ReShiki asks GitHub about the open drawings of each repository you may send to.
 - **No changes here:** the chip shows **● lab-notes · Newer on GitHub** with **Update**. The tab tooltip ends **· Newer on GitHub**, and the command palette has **Update from GitHub**.
@@ -15,10 +15,10 @@ Before this, you found out that a colleague had changed a drawing you have open 
 
 ## Approach
 
-- **One trigger, one throttle.** B1's `github_recheck` (window focus, 5 min) now asks read-only repositories about access, as before, and the others about newer versions. It counts as a check only while GitHub drawings are open, so a focus with nothing open does not use up the window.
+- **One trigger, one throttle.** B1's `Action::Focused` path (picker re-list plus `github_recheck`, at most every 5 min) now asks read-only repositories about access, as before, and the others about newer versions. It counts as a check only while GitHub drawings are open, so a focus with nothing open does not use up the window.
 - **One request round per repository**, in `send::newer` (`src/github/send.rs`). It finds the repository by id (as Send does, so a rename or a new default branch is followed), reads the branch head and looks up the open drawings' blobs through the same `Folders` walk Send uses. Only a changed drawing costs two more requests, its last commit (who and what) and its bytes. The result has the same shape as a Send conflict, so with changes here it becomes a conflict for the existing Review.
 - **Update reuses History's Restore path.** `App::replace_with_stored` gives the one undo step and the exact drawing, the guard is shared with Restore (`replaceable`), and `workcopy::checkout` makes GitHub's commit the new base. Undo brings yours back as unsaved edits; saving them makes them unsent, as usual.
-- **Stale answers cannot roll anything back.** A found version keeps the base commit it was asked against and counts only while the drawing is still on that commit. Every send, Keep mine and download moves it. Replies that land while the repository is saving or sending are dropped (the send finds out itself), as are replies from an earlier sign-in. A drawing a send has already marked in conflict is left to that conflict. Update re-reads the working copy first, so a save made elsewhere counts as a change. An expired sign-in found by the check signs out, as elsewhere.
+- **Stale answers cannot roll anything back.** A found version keeps the base commit it was asked against and counts only while the drawing is still on that commit. Every send, Keep mine and download moves it. Replies that land while the repository is saving or sending are dropped (the send finds out itself), as are replies from an earlier sign-in. A drawing a send has already marked in conflict is left to that conflict. Update re-reads the working copy first, so a save made elsewhere counts as a change. An expired sign-in found by the check signs out, as elsewhere. A repository that turns read only (main's listing can now take access away) offers no Update or Review, and late replies for it are dropped.
 - The app side is a new module, `src/app/github/newer.rs`, plus a `Chip::Newer`, two `github::Action` variants (`Newer`, `Update`) and one palette row. There is no new top-level `Message`, and the picker's listing and tree are untouched (B3 works there).
 - The mock (`src/github/mock.rs`) gains `Repo::commit_as(path, bytes, author, message)` for a change "by @alice" between two checks. `POST /_mock/commit` uses it and takes `author` and `message`.
 
@@ -29,7 +29,7 @@ Not done here: read-only repositories (someone else's, or signed out) are not ch
 Real app, macOS arm64 debug builds, window 1280 × 852 pt, against the **local mock GitHub** (`src/github/mock.rs` served with `RESHIKI_GITHUB_CLIENT_ID=mock` and the API/web overrides), each run with a fresh `RESHIKI_DATA_DIR`, driven by Codex computer use. Each image is a capture of the ReShiki window only. The mock's user is `@octo-test` with the private `lab-notes`. "@alice changes a drawing" is a `POST /_mock/commit` with `"author": "alice"`. "Coming back to the window" is another app brought to the front, then ReShiki again. In every run `scheme/route.rsk` has a saved, unsent bond, so the repository chip counts **1 unsent** while ring.rsk is in front.
 
 - **Before**: `feat/github-shared-repos` at `04bc41b84`.
-- **After**: this branch at `1ad4aedb4`. The head adds only the race guards from the review (base commit, saving/sending, conflict marks, repository by id, expired sign-in) and the B1 merge. None of them is visible in these flows; the unit tests cover them.
+- **After**: this branch at `1ad4aedb4`. The head adds only the race and read-only guards from the reviews (base commit, saving/sending, conflict marks, repository by id, expired sign-in, access taken away) and the merges of B1 and main. None of them is visible in these flows; the unit tests cover them.
 
 ### @alice changed ring.rsk, which you have open and have not changed
 
@@ -68,8 +68,8 @@ Checks on macOS arm64 (Apple M4), at the head:
 - `cargo fmt --all --check`
 - `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`
 - wasm32 clippy as in `checks.yml`
-- `cargo test --locked --no-default-features -p reshiki --lib --bins`: lib 482 passed, bins 1764 passed
-- the opt-in renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1916 passed
+- `cargo test --locked --no-default-features -p reshiki --lib --bins`: lib 482 passed, bins 1769 passed
+- the opt-in renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1921 passed
 - `uv run --locked python -m unittest discover -s tests -p 'test_*.py'`: 264, OK
 - `python3 scripts/module_index.py --check`
 - `scripts/copy_lint.py`
@@ -94,12 +94,14 @@ Adversarial review: four passes by an independent model on the full diff. Fixed:
 - a drawing in conflict could gain a second, stale conflict;
 - Update could overwrite a save made elsewhere;
 - an expired sign-in was swallowed;
-- the check used a stale branch name.
+- the check used a stale branch name;
+- after merging main (where a listing can make a repository read only): a cached newer version, or a conflict found by the check, still offered Update or Review for a repository that had turned read only.
 
 Rejected, with reason:
 
 - The base branch's `github_sent` replaces a repository's conflict list. A focus-found conflict for a drawing with only unsaved edits can drop from that list when a different drawing is sent from its close question. Nothing is lost: the edits stay in the tab, and the next Send of that drawing finds the conflict again. Changing `github_sent` belongs to B1.
 - Suppressing Review while a Send runs: that behaviour already exists in the base branch.
+- Closing a conflict dialog that is already open when access is taken away: a Send from it fails with "Not sent" and loses nothing, and main does the same for conflicts found by a Send.
 
 ## Risk
 
