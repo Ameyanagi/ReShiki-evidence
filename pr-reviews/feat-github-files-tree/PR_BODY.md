@@ -115,17 +115,17 @@ Other base captures: <a href="before/light-01-tiles-top.png">before/light-01-til
 
 VERIFICATION_TABLE
 
-Run on macOS arm64 (Apple M4) at 6e4244131. The head 0d4403857 only merges `main` after #1209 landed, and its tree is identical (`13d92652`):
+Run on macOS arm64 (Apple M4) at the final head fe0118b31: `main` with #1209 (B1) and #1210 (B2) merged in, and the Greptile fixes:
 - `cargo fmt --all --check`
 - `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`
 - wasm32 clippy (`-p reshiki-web -p reshiki -p reshiki-web-worker --lib --bin reshiki --target wasm32-unknown-unknown`)
-- `cargo test --locked --no-default-features -p reshiki --lib --bins`: 482 lib + 1780 bin pass
-- renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1932 pass
+- `cargo test --locked --no-default-features -p reshiki --lib --bins`: 483 lib + 1789 bin pass
+- renderer tests (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`): 1941 pass
 - `uv run --locked python -m unittest discover -s tests -p 'test_*.py'`: 264 OK
 - `scripts/module_index.py --check`, `scripts/copy_lint.py`, `bun fmt --check` on the docs, `scripts/check_docs_tree.mjs`, `assemble_changelog.py --check`
 
 New tests:
-- `src/app/github/tests/files.rs` (16 tests):
+- `src/app/github/tests/files.rs` (19 tests):
   - labels and listing;
   - a `.mol` opening read only, then ⌘S to a `.rsk` copy with the original untouched;
   - This computer… naming;
@@ -155,7 +155,12 @@ Review: an independent adversarial review (read-only) found 12 issues. Eleven ar
 - per-record copies;
 - Open on a tree folder.
 
-A second pass found two more, both fixed (a listing error kept in either view; a tree click ends a half-typed name). One finding was kept on purpose: with a repository open, the search filters its files rather than the repository list, as the approved mockup does. The repository list stays clickable.
+A second pass found two more, both fixed (a listing error kept in either view; a tree click ends a half-typed name).
+
+Greptile (first pass, 4/5) found three, all fixed, each with a test that fails without its fix and passes with it:
+- an edit made while Insert downloads now cancels the Insert, as it cancels a paste;
+- a folder opened while the one left still waits for dates asks for its own;
+- a new tree folder shows under its opened folders, and the files it brings into view are asked about. One finding was kept on purpose: with a repository open, the search filters its files rather than the repository list, as the approved mockup does. The repository list stays clickable.
 
 ## Risk
 
@@ -164,7 +169,7 @@ A second pass found two more, both fixed (a listing error kept in either view; a
 - **`.sdf` is not added to File › Open**: it opens and inserts from GitHub, and drops/Insert from disk now take every record. File › Open still refuses `.sdf` as before.
 - The tree's recursive request is one more call per repository opening; signed-out users have 60 an hour.
 - A chemistry file opened from GitHub gets the engine's default (light) canvas, as **File › Open** of a `.mol` does, even when new drawings are dark.
-- The read-only chip, tab hint and Send row now say **Read only** instead of **Old version** for a chemistry file that is not a drawing. These are small touches to the status chip, which B2 also edits; expect a trivial merge there.
+- The read-only chip, tab hint and Send row now say **Read only** instead of **Old version** for a chemistry file that is not a drawing. B2's merge overlapped only on the tab's spoken label, resolved in the merge. B2's Newer, Update and Review keep working: they key on working copies, and these files live outside them.
 
 ## Changelog
 
