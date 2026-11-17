@@ -1,19 +1,19 @@
 ## Why it matters
 
-Codex now offers GPT-6.2 Astra and GPT-6.2 Sol. ReShiki's built-in assistant still asked for GPT-6 Astra by default, and the assistant benchmark ran GPT-6.1 Sol by default.
+Codex now offers the GPT-6.2 models. ReShiki's built-in assistant still asked for GPT-6 Astra by default, and the assistant benchmark ran GPT-6.1 Sol by default. This makes GPT-6.2 Sol the assistant's default.
 
 ## Approach
 
-- The assistant's default model is `gpt-6.2-astra` (`src/assistant/settings.rs`). Resolution is unchanged: a model you chose yourself stays chosen; otherwise the default is used when the Codex catalog offers it, then the account default, then the newest model.
-- The model menu, Settings and the composer name **GPT-6.2 Astra**.
+- The assistant's default model is `gpt-6.2-sol` (`src/assistant/settings.rs`). Resolution is unchanged: a model you chose yourself stays chosen; otherwise the default is used when the Codex catalog offers it, then the account default, then the newest model.
+- The model menu, Settings and the composer name **GPT-6.2 Sol**.
 - The benchmark driver and example default to `gpt-6.2-sol`. The documented reproduction of the recorded baseline now passes `--model gpt-6.1-sol`, so it still measures the model that baseline used.
-- Docs (`docs/assistant.md`, `docs/assistant-setup.md`, the website guide) say GPT-6.2 Astra and name the newest-model fallback. A changelog fragment is added.
+- Docs (`docs/assistant.md`, `docs/assistant-setup.md`, the website guide) say GPT-6.2 Sol and name the newest-model fallback. A changelog fragment is added.
 
 ## Evidence
 
 The change only renames a model ID and its labels; the evidence is the tests.
 
-- The resolver test now checks literal IDs: with only `gpt-6-astra` in the catalog, Default resolves to the account default; once `gpt-6.2-astra` appears, Default resolves to it, and a newer generic model (`gpt-6.3`) does not take over. Before this change the test compared against the constant itself, so it could not catch a wrong default.
+- The resolver test now checks literal IDs: with GPT-6 Sol and GPT-6.2 Astra in the catalog, Default resolves to the account default; once `gpt-6.2-sol` appears, Default resolves to it, and a newer generic model (`gpt-6.3`) does not take over. Before this change the test compared against the constant itself, so it could not catch a wrong default.
 - The benchmark test asserts the driver passes `gpt-6.2-sol` when no model is given.
 
 [Check output](checks.txt)
@@ -28,15 +28,15 @@ Two independent Codex (GPT-6.2 Sol) reviews. The first found the UI labels, guid
 
 ## Risk
 
-Low. Someone whose Codex catalog lacks `gpt-6.2-astra` but offers `gpt-6-astra`, and who never chose a model, now gets the account default instead of GPT-6 Astra.
+Low. Someone who never chose a model and whose Codex catalog lacks `gpt-6.2-sol` gets the account default instead of GPT-6 Astra.
 
 Known and left as is:
-- The Default entry always reads "Default · GPT-6.2 Astra", even when the account lacks it and the composer shows the fallback. This was already so for GPT-6 Astra.
+- The Default entry always reads "Default · GPT-6.2 Sol", even when the account lacks it and the composer shows the fallback. This was already so for GPT-6 Astra.
 - Two guide screenshots still show older model names (GPT-6 Astra in setup, GPT-6 Sol in the website's model menu); they need a fresh capture with a signed-in Codex account.
 
 ## Changelog
 
-- The assistant now defaults to GPT-6.2 Astra when your Codex account offers it.
+- The assistant now defaults to GPT-6.2 Sol when your Codex account offers it.
 
 ## Contribution license
 
