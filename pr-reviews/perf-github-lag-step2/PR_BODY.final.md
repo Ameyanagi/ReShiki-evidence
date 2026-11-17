@@ -19,14 +19,17 @@ This is step 2 of the plan the owner approved on 2026-11-18. The disk cache with
 ### Why the order is safe
 
 - **A write finishes before Send reads the file.** `State::writes` counts writes in flight. A Send started meanwhile is marked as sending and queued (`deferred`); when the last write's result has been taken in (new base and hash applied), `github_wrote` starts the queued Sends, which only then clone the state and read the files (`send::outgoing`, still off the window's thread). A conflict choice that ends with a Send issues it after its own write.
-- **Quitting never drops a write in flight.** If the window is closed while a write runs, the close waits (`quit_after`) and starts again once the write has landed, so the Send question still sees what was written. Every write is atomic (temporary file, `fsync`, rename, folder `fsync`), as before: a crash mid-write leaves the old file or the new one.
-- **What did not change:** `send::outgoing` still reads and hashes every unsent file from disk when a Send starts, so what is sent is decided by the files, not by the cached hashes. The `state.json` write after a checkout is asynchronous, as it already was.
+- **Quitting never drops a write in flight.** A write counts as running until the `state.json` that records its new base is written too (`Persisted(true, _)`). If the window is closed meanwhile, the close waits (`quit_after`) and starts again once both have landed, so the Send question sees what was written. Every write is atomic (temporary file, `fsync`, rename, folder `fsync`), as before: a crash mid-write leaves the old file or the new one.
+- **A save that goes on with a close.** Answering **Save** when closing a GitHub drawing marks the file unread before the close continues (`github_unread`), so the close still asks whether to send it.
+- **An edit made while Update writes** keeps the tab unsaved: GitHub's version replaces it as one undo step, and closing asks.
+- **What did not change:** `send::outgoing` still reads and hashes every unsent file from disk when a Send starts, so what is sent is decided by the files, not by the cached hashes.
 
 ### 2. History lists first, reads previews as rows show
 
-- GitHub's versions are listed from the branch in one request (`commits?sha=<branch>&path=…`), instead of branch → commit → list. **Load more** counts pages from the branch too; a commit made in between shifts a page by one, and the duplicate is dropped.
+- GitHub's versions are listed from the branch in one request (`commits?sha=<branch>&path=…`), instead of branch → commit → list. **Load more** lists from the oldest commit shown, which no push moves, so a branch that moves (or is moved back) between pages neither skips nor repeats a version.
 - No version drawing is read when the list arrives. Each row without its drawing is wrapped in a `sensor`; the drawing is asked for once, when the row first comes into view (100 px ahead). `api::raw_at` asks by commit, so its reply is kept in the session cache.
-- A drawing's list and the drawings read so far are kept per drawing for the session (`Versions::kept`) and shown at once when its History opens again, while the list is asked again. Commit SHAs never change, so a kept drawing is never stale. Signing out forgets them, and only a list read while signed in is kept, so another account never sees them.
+- A drawing's list and the drawings read so far are kept per drawing for the session (`Versions::kept`) and shown at once when its History opens again, while the list is asked again. Commit SHAs never change, so a kept drawing is never stale. A drawing whose row left the first page while it was read is asked again when its row returns.
+- **Accounts.** Only a list read while signed in is kept. Signing out forgets every kept list, clears GitHub's versions on screen and drops late replies, so another account never sees them.
 
 ## Before/after timings
 
@@ -45,18 +48,29 @@ Release builds of `df1f03d4` (main, before) and this branch (after), each with t
 - The saving is on the window's thread, not in wall time: the network part of these flows is unchanged, so wall times move with the mock's random 80–150 ms per reply.
 - History's first open saves two round trips; both builds paid a new connection for its first request, because the connection had gone idle during the saves. The 12 rows all fit on screen, so all 12 previews were still read; a longer list now reads only the rows shown.
 - Going back to a drawing's History shows the remembered rows and previews in one frame. That frame drew all 12 previews at once (115 ms of drawing, two of them C60 drawings); before, the same drawing work was spread over the 0.5 s in which previews arrived.
-- Per-flow update, disk-span and request logs, the mock's logs and the runner's step reports: [before](https://github.com/Ameyanagi/ReShiki-evidence/blob/98f642beddd635492d988fe9cca56797f530b061/pr-reviews/perf-github-lag-step2/timing-before/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/98f642beddd635492d988fe9cca56797f530b061/pr-reviews/perf-github-lag-step2/timing-before/report.md)), [after](https://github.com/Ameyanagi/ReShiki-evidence/blob/98f642beddd635492d988fe9cca56797f530b061/pr-reviews/perf-github-lag-step2/timing-after/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/98f642beddd635492d988fe9cca56797f530b061/pr-reviews/perf-github-lag-step2/timing-after/report.md)), [protocol](https://github.com/Ameyanagi/ReShiki-evidence/blob/98f642beddd635492d988fe9cca56797f530b061/pr-reviews/perf-github-lag-step2/protocol.md), analysis script [analyze3.py](https://github.com/Ameyanagi/ReShiki-evidence/blob/98f642beddd635492d988fe9cca56797f530b061/pr-reviews/perf-github-lag-step2/analyze3.py).
+- Per-flow update, disk-span and request logs, the mock's logs and the runner's step reports: [before](https://github.com/Ameyanagi/ReShiki-evidence/blob/bd2eedd767246a97c236fe4741b0665ac962f251/pr-reviews/perf-github-lag-step2/timing-before/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/bd2eedd767246a97c236fe4741b0665ac962f251/pr-reviews/perf-github-lag-step2/timing-before/report.md)), [after](https://github.com/Ameyanagi/ReShiki-evidence/blob/bd2eedd767246a97c236fe4741b0665ac962f251/pr-reviews/perf-github-lag-step2/timing-after/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/bd2eedd767246a97c236fe4741b0665ac962f251/pr-reviews/perf-github-lag-step2/timing-after/report.md)), [protocol](https://github.com/Ameyanagi/ReShiki-evidence/blob/bd2eedd767246a97c236fe4741b0665ac962f251/pr-reviews/perf-github-lag-step2/protocol.md), analysis script [analyze3.py](https://github.com/Ameyanagi/ReShiki-evidence/blob/bd2eedd767246a97c236fe4741b0665ac962f251/pr-reviews/perf-github-lag-step2/analyze3.py).
 
 ## Verification
 
 | Platform | Result |
 |---|---|
-| macOS arm64 (Apple M4) | GitHub tests and fmt pass; full checks running |
+| macOS arm64 (Apple M4) | pass · fmt, workspace + wasm32 clippy, lib/bin and renderer tests, Python, docs checks |
 | PR CI | pending |
 
-macOS arm64: `cargo test --locked --no-default-features -p reshiki --lib --bins github` (86 lib + 148 app GitHub tests) and `cargo fmt --all --check` pass; the full check list (workspace and wasm32 clippy, all lib/bin tests, renderer tests, Python, docs) is running and this section is updated when it lands. Every run with a fresh `RESHIKI_DATA_DIR`.
+macOS arm64 (Apple M4), every run with a fresh `RESHIKI_DATA_DIR` and the InChI and naming helpers pointed at the built binary:
 
-New tests: the read begun last wins and a write beats older reads; a save reads back only its own drawing, counted unsent at once; opening from the picker writes off the window's thread and opens once written; Update never writes over a change made in another app and then shows Review; a Send and closing the window wait for Update's write; History lists without reading any drawing, reads one when its row shows and never twice; a drawing's History shows again at once with what was read, and a newer commit comes first; signing out forgets what History kept; listing from a branch is one request and a commit's drawing is asked once (counted with the mock's request log).
+- Before the rebase onto main, at `c929c8cf` (now `915e7764`): `cargo fmt --all --check`; workspace clippy `--all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml; Python unittest via `uv run --locked` (292 run, 9 skipped; the InChI helper protocol tests pointed at the built binary); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py --check`; `check_docs_tree.mjs`; `bun run docs:check`; the GitHub tests (86 lib + 149 app).
+- At `cb1bc7a3` (now `3c946f55`; the same code but for the History follow-up, whose tests are in the GitHub set above): `cargo test --locked --no-default-features -p reshiki --lib --bins` (497 lib + 1817 bin passed) and the renderer tests `--bin reshiki -- --include-ignored --test-threads=1 --skip manual_` (1974 passed).
+- After rebasing onto main (`4ffd8deb`, one conflict in `github_signed_out` beside the star reset): fmt, workspace clippy and the GitHub tests again (86 lib + 150 app).
+
+New tests: the read begun last wins and a write beats older reads; a save reads back only its own drawing, counted unsent at once; opening from the picker writes off the window's thread and opens once written; Update never writes over a change made in another app and then shows Review; a Send and closing the window wait for Update's write; History lists without reading any drawing, reads one when its row shows and never twice; a drawing's History shows again at once with what was read, and a newer commit comes first; signing out forgets what History kept and what it shows; a drawing whose row left the list is asked again when it shows; listing from a branch is one request and a commit's drawing is asked once (counted with the mock's request log).
+
+## Reviews
+
+Two adversarial passes by a second model (gpt-6.2-sol), focused on data loss, write ordering, stale cache and cross-account leaks.
+
+- First pass: an edit made while Update writes was marked saved; a save answering a close skipped the Send question; quit could beat the `state.json` write after a working-copy write. All three fixed with tests in `3c946f55`. It also raised races that need a second action within a write's milliseconds; see Risk.
+- Second pass: History could skip a version when the branch moved between pages, and leave a row's drawing unread if the row left the first page while it was read; the versions on screen stayed after signing out. Fixed with tests in `915e7764`. Its other points repeat the first pass's millisecond races or behaviour this change did not alter (listed under Risk).
 
 ## Risk
 
@@ -68,6 +82,8 @@ New tests: the read begun last wins and a write beats older reads; a save reads 
   - **Signing out and in as another account while a Send waits for a write.** A deferred Send that finds no sign-in is dropped; a new sign-in takes seconds.
 - An app changing the files in ReShiki's data folder while ReShiki stays in front: Send still reads and sends them, as it already did for a change made after the Send box opened; the Send box lists them after the next focus or open.
 - History reads each preview only when its row shows; a row scrolled past quickly is read once it is on screen.
+- Returning to a drawing's History draws its remembered previews in one frame (115 ms for 12 here, two of them C60 drawings).
+- Not handled, as before this change: quitting while a picker download is still on the network (not yet writing), and a `state.json` write that fails (its error shows; the close is not held for a retry).
 
 ## Changelog
 

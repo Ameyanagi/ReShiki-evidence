@@ -33,7 +33,7 @@ This is step 2 of the plan the owner approved on 2026-11-18. The disk cache with
 
 ## Before/after timings
 
-Release builds of `df1f03d4` (main, before) and this branch (after), each with the same throwaway timing probe (never pushed), run on macOS arm64 (Apple M4) against the same local mock of GitHub: 80–150 ms per reply, plus two more delays on a connection's first reply for TCP + TLS. The same protocol drove both builds through a second agent with computer use; the window-focus steps ran from a shell afterwards, as in step 1. "Window thread" is the time the window's own thread spent: the slowest `App::update` of the flow and its synchronous disk work. Times run from the input to the first frame after the flow's last reply or write.
+Release builds of `df1f03d4` (main, before) and this branch as of `3c946f55` (after), each with the same throwaway timing probe (never pushed), run on macOS arm64 (Apple M4) against the same local mock of GitHub: 80–150 ms per reply, plus two more delays on a connection's first reply for TCP + TLS. The same protocol drove both builds through a second agent with computer use; the window-focus steps ran from a shell afterwards, as in step 1. "Window thread" is the time the window's own thread spent: the slowest `App::update` of the flow and its synchronous disk work. Times run from the input to the first frame after the flow's last reply or write.
 
 | Flow | Window thread before | Window thread after | Before | After | Requests before → after |
 |---|---|---|---|---|---|
@@ -59,8 +59,9 @@ macOS arm64 (Apple M4), every run with a fresh `RESHIKI_DATA_DIR` and the InChI 
 - Before the rebase onto main, at `c929c8cf` (now `915e7764`): `cargo fmt --all --check`; workspace clippy `--all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml; Python unittest via `uv run --locked` (292 run, 9 skipped; the InChI helper protocol tests pointed at the built binary); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py --check`; `check_docs_tree.mjs`; `bun run docs:check`; the GitHub tests (86 lib + 149 app).
 - At `cb1bc7a3` (now `3c946f55`; the same code but for the History follow-up, whose tests are in the GitHub set above): `cargo test --locked --no-default-features -p reshiki --lib --bins` (497 lib + 1817 bin passed) and the renderer tests `--bin reshiki -- --include-ignored --test-threads=1 --skip manual_` (1974 passed).
 - After rebasing onto main (`4ffd8deb`, one conflict in `github_signed_out` beside the star reset): fmt, workspace clippy and the GitHub tests again (86 lib + 150 app).
+- At `532f9687` (the Greptile fix): fmt, workspace clippy and the GitHub tests (86 lib + 151 app); the new test failed before the fix.
 
-New tests: the read begun last wins and a write beats older reads; a save reads back only its own drawing, counted unsent at once; opening from the picker writes off the window's thread and opens once written; Update never writes over a change made in another app and then shows Review; a Send and closing the window wait for Update's write; History lists without reading any drawing, reads one when its row shows and never twice; a drawing's History shows again at once with what was read, and a newer commit comes first; signing out forgets what History kept and what it shows; a drawing whose row left the list is asked again when it shows; listing from a branch is one request and a commit's drawing is asked once (counted with the mock's request log).
+New tests: the read begun last wins and a write beats older reads; a save reads back only its own drawing, counted unsent at once; opening from the picker writes off the window's thread and opens once written; Update never writes over a change made in another app and then shows Review; a Send and closing the window wait for Update's write; History lists without reading any drawing, reads one when its row shows and never twice; a drawing's History shows again at once with what was read, and a newer commit comes first; signing out forgets what History kept and what it shows; a drawing whose row left the list is asked again when it shows; what a Send read counts as read when it began, so a later save still wins; listing from a branch is one request and a commit's drawing is asked once (counted with the mock's request log).
 
 ## Reviews
 
@@ -68,6 +69,7 @@ Two adversarial passes by a second model (gpt-6.2-sol), focused on data loss, wr
 
 - First pass: an edit made while Update writes was marked saved; a save answering a close skipped the Send question; quit could beat the `state.json` write after a working-copy write. All three fixed with tests in `3c946f55`. It also raised races that need a second action within a write's milliseconds; see Risk.
 - Second pass: History could skip a version when the branch moved between pages, and leave a row's drawing unread if the row left the first page while it was read; the versions on screen stayed after signing out. Fixed with tests in `915e7764`. Its other points repeat the first pass's millisecond races or behaviour this change did not alter (listed under Risk).
+- Greptile: a drawing changed in another app and sent along with others kept its old cached hash, so it still counted as unsent. Fixed in `532f9687` with a failing-first test: what a Send read counts as a read begun when the Send started, so a later save still wins.
 
 ## Risk
 
