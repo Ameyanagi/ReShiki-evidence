@@ -22,12 +22,12 @@ Five small, independent fixes from the open-issue triage, approved by the owner 
 
 **Evidence.**
 
-- New unit test `an_added_arial_is_used_instead_of_the_bundled_stand_in`: without an added Arial nothing changes; a condensed Arial does not displace the regular face; after adding Arial Regular the `Arial` query returns the added face; bold still resolves to the bundled bold face; a glyph the added face lacks still comes from the bundled face. Output: [`tests/e1-model-style-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/tests/e1-model-style-tests.txt).
+- New unit test `an_added_arial_is_used_instead_of_the_bundled_stand_in`: without an added Arial nothing changes; a condensed Arial does not displace the regular face; after adding Arial Regular the `Arial` query returns the added face; bold still resolves to the bundled bold face; a glyph the added face lacks still comes from the bundled face. Output: [`tests/e1-model-style-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/tests/e1-model-style-tests.txt).
 - Browser, before and after. A local page mounts the editor with `fonts: [Arial]` (which calls `addFont`) and opens five element labels. Editor builds of main and of this branch, same page, headless Chrome. The letter shapes differ: look at the leg of R, the spur of G, and the digits.
 
-  ![Before, on main: the labels RaH2, GaH3, AtH, RgH and TaH5 are drawn in Liberation Sans although the page added Arial. After, on this branch: the same labels are drawn in Arial](https://github.com/Ameyanagi/ReShiki-evidence/raw/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e1-before-after.png)
+  ![Before, on main: the labels RaH2, GaH3, AtH, RgH and TaH5 are drawn in Liberation Sans although the page added Arial. After, on this branch: the same labels are drawn in Arial](https://github.com/Ameyanagi/ReShiki-evidence/raw/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e1-before-after.png)
 
-  The Arial file came from the test computer and is not in the evidence folder. Page and script: [`browser/evidence.html`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/evidence.html), [`browser/run.mjs`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/run.mjs).
+  The Arial file came from the test computer and is not in the evidence folder. Page and script: [`browser/evidence.html`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/evidence.html), [`browser/run.mjs`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/run.mjs).
 
 ## E2: Python and the CLI read the drawing inside a picture (#1183, read side)
 
@@ -44,7 +44,7 @@ Five small, independent fixes from the open-issue triage, approved by the owner 
 
 **Evidence.** The three pictures are `tests/fixtures/editable-drawing/ethanol.{png,svg,pdf}`, written by the app's figure exporter with the editable drawing.
 
-CLI, before (nightly build of 2026-11-16) and after ([`e2/cli-before.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/e2/cli-before.txt), [`e2/cli-after.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/e2/cli-after.txt), script [`e2/cli_check.sh`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/e2/cli_check.sh)):
+CLI, before (nightly build of 2026-11-16) and after ([`e2/cli-before.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/e2/cli-before.txt), [`e2/cli-after.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/e2/cli-after.txt), script [`e2/cli_check.sh`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/e2/cli_check.sh)):
 
 | Command | Before | After |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ CLI, before (nightly build of 2026-11-16) and after ([`e2/cli-before.txt`](https
 | `name ethanol.pdf` | `error: The file is not valid UTF-8: …` (exit 1) | `ethanol` (exit 0) |
 | `convert - --from mol --to smiles < ethanol.svg` | `error[failed]: Invalid MOL input at line 4: …` | `CCO` (exit 0) |
 
-Python, before (`reshiki==0.15.0` from PyPI) and after (the wheel built from this branch) ([`e2/python-before.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/e2/python-before.txt), [`e2/python-after.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/e2/python-after.txt), script [`e2/python_check.py`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/e2/python_check.py)):
+Python, before (`reshiki==0.15.0` from PyPI) and after (the wheel built from this branch) ([`e2/python-before.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/e2/python-before.txt), [`e2/python-after.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/e2/python-after.txt), script [`e2/python_check.py`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/e2/python_check.py)):
 
 | `reshiki.Drawing.open(…)` | Before | After |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ Python, before (`reshiki==0.15.0` from PyPI) and after (the wheel built from thi
 | `ethanol.pdf` | `ValueError: The file is not valid UTF-8: …` | `Drawing CCO` |
 | `plain.png`, `plain.svg`, `plain.pdf` (no drawing inside) | the same UTF-8 and format errors | `ReShikiError: This picture has no ReShiki drawing inside` |
 
-Tests ([`tests/e2-cli-payload-python-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/tests/e2-cli-payload-python-tests.txt)): `pictures_convert_from_the_editable_drawing_inside_them` (CLI, all three formats, with and without a drawing, `convert` and `name`), `pictures_are_told_from_drawings_and_structure_text` (payload), and two parametrized Python tests (`Drawing.open`, `parse` with and without a format; with and without a drawing).
+Tests ([`tests/e2-cli-payload-python-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/tests/e2-cli-payload-python-tests.txt)): `pictures_convert_from_the_editable_drawing_inside_them` (CLI, all three formats, with and without a drawing, `convert` and `name`), `pictures_are_told_from_drawings_and_structure_text` (payload), and two parametrized Python tests (`Drawing.open`, `parse` with and without a format; with and without a drawing).
 
 ## E3: porphine round trip through CDX, with an N–H site check (#88, test only)
 
@@ -73,7 +73,7 @@ Tests ([`tests/e2-cli-payload-python-tests.txt`](https://github.com/Ameyanagi/Re
 
 **Approach.** `tests/porphine_core.rs` adds `cdx` to the round trip and a helper that finds the two N–H nitrogens (neutral, two single bonds) and measures their graph distance. Opposite sites are eight bonds apart; neighbouring ones would be four. The template and each reimported drawing must give eight.
 
-**Evidence.** [`tests/e3-porphine-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/tests/e3-porphine-tests.txt): both porphine tests pass. CDX keeps the graph and the N–H sites, so the new check found no defect.
+**Evidence.** [`tests/e3-porphine-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/tests/e3-porphine-tests.txt): both porphine tests pass. CDX keeps the graph and the N–H sites, so the new check found no defect.
 
 Left for #88: the manual check that a ReShiki copy pastes into ChemDraw with the same graph.
 
@@ -88,17 +88,17 @@ Left for #88: the manual check that a ReShiki copy pastes into ChemDraw with the
 - The event fires after the fetch, not before it, so `dirty` counts edits made while the file was on its way.
 - Of several changes in a row only the last one loads, and a superseded fetch that fails reports no error. Removing `src`, or removing the element, drops a load that is still on its way.
 - A `src` that cannot be loaded fires `error` and keeps the current drawing. If the editor never started because the first `src` failed, a changed `src` starts it.
-- The start now reads `src` and `format` together, before it waits for the file.
+- The start reads `src` and `format` together. A change made while the first file is still on its way stops that fetch, and the editor starts with the new pair.
 - Documented in `packages/editor/README.md` and `element.d.ts` (`BeforeLoadEvent`).
 
-**Evidence.** [`tests/e4-element-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/tests/e4-element-tests.txt): 7 pass. The same test file against main's element: 3 pass, 4 fail ([`tests/e4-element-tests-on-main.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/tests/e4-element-tests-on-main.txt)). The new tests cover:
+**Evidence.** [`tests/e4-element-tests.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/tests/e4-element-tests.txt): 7 pass. The same test file against main's element: 3 pass, 4 fail ([`tests/e4-element-tests-on-main.txt`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/tests/e4-element-tests-on-main.txt)). The new tests cover:
 
 | State | `beforeload` not prevented | `beforeload` prevented |
 | --- | --- | --- |
 | No unsaved changes | loads; `dirty: false` | keeps the drawing; `dirty: false` |
 | Unsaved changes | loads; `dirty: true` | keeps the drawing; `dirty: true` |
 
-They also cover a 404, two changes in a row answered out of order, an edit made during the fetch, a listener that removes `src`, `src` removed during the fetch, a change during the start, and a start that failed.
+They also cover a 404, two changes in a row answered out of order, an edit made during the fetch, a listener that removes `src`, `src` removed during the fetch, a change while the first file never arrives, and a start that failed.
 
 ## E5: the busy status shows before the page is held (#430, partial)
 
@@ -113,21 +113,21 @@ They also cover a 404, two changes in a row answered out of order, an edit made 
 
 **Evidence.**
 
-- Browser, opening a file. The evidence page drops a large native drawing on the editor (150 copies of a 100-residue peptide) and shows a clock that runs on the page's thread. Screenshots of the Chrome window taken while the page was held (Codex computer use; reports: [`before`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-before-computer-use-report.md), [`after`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-after-computer-use-report.md)):
+- Browser, opening a file. The evidence page drops a large native drawing on the editor (150 copies of a 100-residue peptide) and shows a clock that runs on the page's thread. Screenshots of the Chrome window taken while the page was held (Codex computer use; reports: [`before`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-before-computer-use-report.md), [`after`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-after-computer-use-report.md)):
 
   | Before (main) | After (this branch) |
   | --- | --- |
-  | ![Main build, 4 seconds into the freeze: the page clock stands at 0.1 s and the status line still says Document opened](https://github.com/Ameyanagi/ReShiki-evidence/raw/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-before-during-open.png) | ![Branch build, 6 seconds into the freeze: the page clock stands at 0.1 s and the status line says Opening…](https://github.com/Ameyanagi/ReShiki-evidence/raw/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-after-during-open.png) |
+  | ![Main build, 4 seconds into the freeze: the page clock stands at 0.1 s and the status line still says Document opened](https://github.com/Ameyanagi/ReShiki-evidence/raw/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-before-during-open.png) | ![Branch build, 6 seconds into the freeze: the page clock stands at 0.1 s and the status line says Opening…](https://github.com/Ameyanagi/ReShiki-evidence/raw/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-after-during-open.png) |
   | The status line keeps "Document opened" from the earlier drawing through the freeze (8 of 8 screenshots). | The status line says "Opening…" through the freeze (6 of 6 screenshots while the clock stood still). |
 
-- Browser, exporting a figure. The same page logs when the status is set, when a frame is painted with it, and each long task, for **Export PDF…** on a 10 020-atom drawing ([`before`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-before-export.txt), [`after`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-after-export.txt)):
+- Browser, exporting a figure. The same page logs when the status is set, when a frame is painted with it, and each long task, for **Export PDF…** on a 10 020-atom drawing ([`before`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-before-export.txt), [`after`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-after-export.txt)):
 
   | | Before (main) | After (this branch) |
   | --- | --- | --- |
   | "Preparing PDF export…" painted | after the long task (1390 ms) | before it (126 ms) |
   | Long task | 73 to 1364 ms | 127 to 1368 ms |
 
-  The same log for opening a file: [`before`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-before-open.txt), [`after`](https://github.com/Ameyanagi/ReShiki-evidence/blob/57774e7ee5d217c3ae7e7c05ad53874f303b5dfd/pr-reviews/fix-issue-triage-easy/browser/e5-after-open.txt).
+  The same log for opening a file: [`before`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-before-open.txt), [`after`](https://github.com/Ameyanagi/ReShiki-evidence/blob/ce044ba5456091523f5c2e6ba58063464ac5dd8c/pr-reviews/fix-issue-triage-easy/browser/e5-after-open.txt).
 - The first version of this fix waited one frame before preparing a file. The log showed the work starting 1 ms after the status was set, with no frame in between: the wait had begun before the app took the `Opening` message. Opening now waits two frames, and the screenshots above are from that build.
 - These are development builds of the editor (`opt-level = 1`), so the freezes are longer than in a release build.
 - No unit test: the code is wasm-only and the app's tests run natively. The wasm32 clippy check compiles it.
@@ -143,12 +143,12 @@ They also cover a 404, two changes in a row answered out of order, an edit made 
 - `scripts/module_index.py --check`, `scripts/copy_lint.py`, `scripts/assemble_changelog.py --check`, `scripts/check_docs_tree.mjs`, `bun run docs:check`: pass.
 - Repository Python tests (`python -m unittest discover -s tests`): 292 tests OK (11 skipped), with the InChI helper built.
 - Browser: editor builds of main and of this branch for wasm32, driven in Chrome (see E1 and E5).
-- Review: two adversarial review passes on the diff. The findings that were fixed are in the `fix: address …` commits. Not fixed, on purpose: see Risk.
+- Review: two adversarial review passes on the diff, then Greptile (one finding, fixed; 5/5 on the final head). The findings that were fixed are in the `fix: address …` commits. Not fixed, on purpose: see Risk.
 
 | Platform | Result |
 |---|---|
 | macOS arm64 (Apple M4) | pass · fmt, workspace clippy, wasm32 clippy, affected crate tests, Python package tests, editor tests, docs and changelog checks, browser before/after |
-| PR CI | pass on cac774f24 (Linux x64, Windows x64, wasm32, wheels); rerunning on the final head |
+| PR CI | Linux x64, Windows x64, wasm32 and the wheel builds; see the checks on the final head |
 
 ## Risk
 
