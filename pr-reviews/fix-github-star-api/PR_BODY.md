@@ -46,14 +46,60 @@ ReShiki, yet About did not say **Starred**.
 
 ## Evidence
 
-Pending: before/after window captures against the local mock (About with an
-existing star; the palette row).
+macOS arm64, debug builds of `dc6a5408` (main, before) and this branch
+(after), each wrapped as its own `.app` with a unique bundle id and a fresh
+data folder, signed in to a local mock of GitHub. Window-only captures.
+
+**About, signed in, ReShiki already starred on GitHub:**
+
+| Before (main)                                         | After                                                |
+| ----------------------------------------------------- | ---------------------------------------------------- |
+| <img src="before-about-starred.png" width="480" alt="About on main, signed in as @octo-test: the link reads Star on GitHub although the account has starred ReShiki"> | <img src="after-about-starred.png" width="480" alt="About after: the link reads Starred on GitHub"> |
+
+**Command palette, `star`, signed in and not yet starred:**
+
+| Before (main)                                         | After                                                |
+| ----------------------------------------------------- | ---------------------------------------------------- |
+| <img src="before-palette.png" width="480" alt="Palette on main: four results for star, none of them a GitHub star"> | <img src="after-palette.png" width="480" alt="Palette after: Star ReShiki on GitHub, File, with the detail As @octo-test"> |
+
+With the star already made, the row is gone, as on the left.
+
+**One click in About, not yet starred:** the link changes to **★ Starred on
+GitHub**, the status thanks, and no browser opens.
+
+<img src="after-about-clicked.png" width="480" alt="About after one click on the star link: Starred on GitHub, status bar: Starred ReShiki on GitHub as @octo-test. Thank you!">
 
 ## Verification
 
 VERIFICATION_TABLE
 
-Pending: full checks and review notes.
+macOS arm64: `cargo fmt --check`; workspace clippy `--all-targets
+--all-features -D warnings`; wasm32 clippy as in checks.yml; `cargo test
+--locked --no-default-features -p reshiki --lib --bins -- github star updates
+command_palette` (102 lib + 286 bin passed); the star, About and updates
+renderer tests with `--include-ignored --test-threads=1 --skip manual_` (36
+passed); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py
+--check`. InChI and naming helpers pointed at the built binary; every run used
+a fresh data folder.
+
+New tests:
+
+- `a_star_is_one_put` now requires `content-length: 0` and a second star to
+  succeed. With the client change reverted it fails with `Rejected("GitHub
+  refused the request.")`, because the mock answers 411.
+- About asks once per sign-in, again after an answer GitHub could not give,
+  and once more for the next account; a starred reply changes the label and
+  the link then opens the page without a request.
+- A failed star's status for no access, offline and no browser; an expired
+  sign-in signs out.
+- The palette row signed out, signed in, and gone once starred.
+
+Review: one adversarial pass by a second model found nothing serious. Its
+points were timing cases: a reply that arrives after a sign-out and a new
+sign-in within the same second or so, and a palette that is already open when
+About's answer arrives. Both need a sub-second race and at worst show a stale
+label until the next sign-in, so they are left as they are, like the star
+card's existing check.
 
 ## Risk
 
