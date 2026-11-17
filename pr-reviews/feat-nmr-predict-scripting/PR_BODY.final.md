@@ -21,7 +21,7 @@ One core function, three thin surfaces:
 - **Python**: `Drawing.predict_nmr("1H" | "13C") -> NmrPrediction` (frozen dataclasses; iterating yields `NmrShift` rows; `atom` and `hydrogens` are `int`). Errors are `ReShikiError` with `code` `invalid_arguments` or `failed`.
 - The nucleus is required on every surface and parsed explicitly: Rust's derived names `H1`/`C13` are rejected everywhere.
 - **Catalog cap**: the serialized catalog is 20,250 characters (was 19,418, cap 19,500). The cap is now 21,500, leaving about 1,250 for PR 2's `label_atoms`; the reason is commented at the assertion.
-- **`agent-api.txt` cap** (`website/scripts/check-llms.mjs`): main was at 204,140 of 204,800 bytes, so any new tool overflowed it. This PR adds 7.7 KB (tool reference, command help and the guide sections), giving 211,881 bytes; the cap is now 220 KiB with the reason commented. This one was not in the owner's decisions, so please confirm it.
+- **`agent-api.txt` cap** (`website/scripts/check-llms.mjs`): main was at 204,140 of 204,800 bytes, so any new tool overflowed it. This PR adds 7.9 KB (tool reference, command help and the guide sections), giving 212,078 bytes; the cap is now 220 KiB with the reason commented. This one was not in the owner's decisions, so please confirm it.
 
 ## Result schema
 
@@ -44,14 +44,14 @@ The MCP `value` and the CLI `value` (Python has the same fields without `revisio
 ## Atom numbering
 
 - `atom` is the drawing atom ID: the GUI's `#N`, and the ID `inspect` and `analyze` report. A ¹H row names the heavy atom carrying the H.
-- SMILES: atom `N` is the `N`th SMILES atom after default H removal, which is RDKit `Chem.MolFromSmiles` index `N − 1`.
+- SMILES: atom `N` is the `N`th atom after explicit H are removed as RDKit does by default, which is RDKit `Chem.MolFromSmiles` index `N − 1` (in `[H]C(=O)OC`, atom 1 is the carbonyl carbon).
 - MOL: the atom's position in the atom block, counting from 1, which is the V2000 atom number. V3000 record numbers are not kept (a test pins atoms numbered 10, 20, 30 becoming 1, 2, 3).
 - `.rsk`: the stored IDs, which can have gaps. `clean()` keeps them.
 - `crates/python/tests/test_nmr.py` pins the SMILES and MOL mappings against RDKit (H counts per ¹H row, carbons per ¹³C row), including a `[H]`-containing SMILES, and the V3000 case.
 
 ## Evidence
 
-Before, on `main` at 0d97885cb ([cli-before.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/b4695b617db0c548ab954b0aa3f1e53fd380f89c/pr-reviews/feat-nmr-predict-scripting/cli-before.txt)):
+Before, on `main` at 0d97885cb ([cli-before.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/29be66452813311ddd4d1bbd30d93c56bbf69cc9/pr-reviews/feat-nmr-predict-scripting/cli-before.txt)):
 
 ```text
 $ reshiki --cli predict-nmr --smiles CCOC(C)=O --nucleus 1H
@@ -59,7 +59,7 @@ reshiki: unknown command `predict-nmr`; run `reshiki --cli help`
 [exit 2]
 ```
 
-After ([cli-after.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/b4695b617db0c548ab954b0aa3f1e53fd380f89c/pr-reviews/feat-nmr-predict-scripting/cli-after.txt), full JSON lines), ethyl acetate:
+After ([cli-after.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/29be66452813311ddd4d1bbd30d93c56bbf69cc9/pr-reviews/feat-nmr-predict-scripting/cli-after.txt), full JSON lines), ethyl acetate:
 
 | Nucleus | atom | H | ppm | shell | refs | SD | min–max |
 | ------- | ---- | - | --- | ----- | ---- | -- | ------- |
@@ -71,9 +71,9 @@ After ([cli-after.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/b4695b
 | ¹³C | 4 | | 170.7 | 2 | 28 | 1.254 | 167.07–175.1 |
 | ¹³C | 5 | | 20.9 | 3 | 28 | 1.005 | 19.55–25.8 |
 
-- Python session for ethyl acetate ¹H and ¹³C, with the RDKit index check: [python-session.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/b4695b617db0c548ab954b0aa3f1e53fd380f89c/pr-reviews/feat-nmr-predict-scripting/python-session.txt).
-- MCP: the `tools/list` entry, both call results, an `ids` selection and the error cases: [mcp.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/b4695b617db0c548ab954b0aa3f1e53fd380f89c/pr-reviews/feat-nmr-predict-scripting/mcp.txt).
-- CLI usage and operation errors: [cli-errors.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/b4695b617db0c548ab954b0aa3f1e53fd380f89c/pr-reviews/feat-nmr-predict-scripting/cli-errors.txt).
+- Python session for ethyl acetate ¹H and ¹³C, with the RDKit index check: [python-session.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/29be66452813311ddd4d1bbd30d93c56bbf69cc9/pr-reviews/feat-nmr-predict-scripting/python-session.txt).
+- MCP: the `tools/list` entry, both call results, an `ids` selection and the error cases: [mcp.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/29be66452813311ddd4d1bbd30d93c56bbf69cc9/pr-reviews/feat-nmr-predict-scripting/mcp.txt).
+- CLI usage and operation errors: [cli-errors.txt](https://github.com/Ameyanagi/ReShiki-evidence/blob/29be66452813311ddd4d1bbd30d93c56bbf69cc9/pr-reviews/feat-nmr-predict-scripting/cli-errors.txt).
 
 Errors, the same on every surface:
 
@@ -91,7 +91,7 @@ Errors, the same on every surface:
 | Platform | Result |
 |---|---|
 | macOS arm64 (Apple M4) | pass · fmt, workspace clippy, wasm32 clippy, io/model/agent tests, reshiki lib+bins, CLI/MCP integration, wheel + pytest (rdkit), unittest, goldens, docs build, runtime agent API check |
-| PR CI | running |
+| PR CI | pass · 37 checks green (3 skipped) on 45749b30e |
 
 Run on macOS arm64 (Apple M4):
 
@@ -100,14 +100,14 @@ Run on macOS arm64 (Apple M4):
 - The Python wheel built as CI builds it (`maturin build --locked`), then `pytest crates/python/tests` with rdkit, ruff and ty.
 - `uv run --locked python -m unittest discover -s tests`, ruff and ty for scripts.
 - Goldens regenerated and verified: CLI help (`predict-nmr.txt`, `help.txt`), `ops-catalog.json`, `cli-tools.json`, `cli-help.json`, the Agent Skill folder, `docs/agent-reference.md`, `parity.json`, and the four MCP transcripts (tool lists; modern and legacy `tools-*` add a `predict_nmr` success and an invalid nucleus).
-- `module_index.py --check`, `copy_lint.py`, `assemble_changelog.py --check`, `check_docs_tree.mjs`, `bun run docs:check`, `bun run docs:build` (llms check: 211,881 bytes, 17 tools), and `check_runtime_dependencies.verify_agent_api` on the built binary (the packaged client's ordered tool list).
+- `module_index.py --check`, `copy_lint.py`, `assemble_changelog.py --check`, `check_docs_tree.mjs`, `bun run docs:check`, `bun run docs:build` (llms check: 212,078 bytes, 17 tools), and `check_runtime_dependencies.verify_agent_api` on the built binary (the packaged client's ordered tool list).
 
 Counts from the final runs: `reshiki-io` 764 (24 in `nmr::`), `reshiki-model` 1519, `reshiki-agent` 360 (unit, contract, headless), `reshiki --lib --bins` 499 + 1810, the `it` CLI/MCP modules 51, `pytest crates/python/tests` 160 passed and 3 skipped; no failures.
 
 ## Risk
 
 - Nothing in the GUI changes visibly. `Row` gains `broad`; the palette still prints the limitation text, and the TSV is byte-identical (goldens).
-- The MCP catalog grows by 832 characters; the cap rises to 21,500. `agent-api.txt` grows by 7.7 KB; its cap rises to 220 KiB.
+- The MCP catalog grows by 832 characters; the cap rises to 21,500. `agent-api.txt` grows by 7.9 KB; its cap rises to 220 KiB.
 - The Python wheel now uses the bundled NMR index (about 0.4 MB); its licence was already in the wheel.
 - The core's other error messages are written for the GUI (for example "Select a molecular structure…"); only the one-molecule case is reworded for scripts.
 - The 3-second engine deadline applies on slow machines, as in the app.
@@ -120,7 +120,7 @@ Counts from the final runs: `reshiki-io` 764 (24 in `nmr::`), `reshiki-model` 15
 ## Review
 
 - Codex (gpt-6.2-sol), adversarial, on the whole diff. Fixed: MOL atom IDs are atom-block positions, not V3000 record numbers (docs, help, docstring, test); the revision is now tested after an edit (`"1"`); the contract README's cap. Not changed, with reasons: non-atom IDs select nothing, as in `analyze`; `unknown_document` and `budget` are the standard ops codes for those cases; a non-string nucleus raises `TypeError` in Python, as every other argument type error does; the molecule count scans components once more than `prepare`, which is linear and small.
-- Second Codex pass on the fixes: see below.
+- Second Codex pass on the fixes. Fixed: the help said missing reference data is an error (it is a row with `null` values; only unsupported chemistry and a molecule without sites are errors); the SMILES numbering now says IDs count atoms after explicit H removal; the revision test now predicts the atom the edit inserted, so a stale snapshot cannot pass.
 
 ## Changelog
 
