@@ -1,0 +1,40 @@
+# Ubuntu arm64, build 77684ee9, throwaway HOME. No display on this host, so the window cannot open (exit 101 after the move, which runs first).
+77684ee9 fix(data): keep an old folder holding any link or an unreadable folder; leave .. paths alone
+io-tests exit=0
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 680 filtered out; finished in 0.02s
+build exit=0
+== before
+./.local/share/reshiki/appearance.json
+./.local/share/reshiki/github/octo/lab/files/ring.rsk
+./.local/share/reshiki/recovery/99999-1-0.json
+exit=101
+== after
+./.reshiki/appearance.json
+./.reshiki/github/octo/lab/files/ring.rsk
+./.reshiki/recovery/99999-1-0.json
+total 8
+drwxrwxr-x 2 user user 4096 Nov 17 00:21 .
+drwxrwxr-x 3 user user 4096 Nov 17 00:21 ..
+== log
+
+thread 'main' () panicked at vendor/iced_winit/src/lib.rs:84:10:
+Create event loop: Os(OsError { line: 765, file: "~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winit-0.30.13/src/platform_impl/linux/mod.rs", error: Misc("neither WAYLAND_DISPLAY nor WAYLAND_SOCKET nor DISPLAY is set.") })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+== second run (no old folder): nothing changes
+a60582acb81ed85a1ef2709ffe375881  -
+== both folders: old left alone
+keep
+appearance.json
+github
+recovery
+== override: no migration
+.
+..
+.local
+recovery
+== headless resolves without moving
+mcp exit=2
+reshiki --mcp: invalid grant configuration: $HOME/.local/share/reshiki/agent-access.json: unsupported version 9 (expected 1)
+.
+..
+.local

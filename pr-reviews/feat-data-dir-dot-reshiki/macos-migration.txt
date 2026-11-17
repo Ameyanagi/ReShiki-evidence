@@ -1,0 +1,11 @@
+# macOS arm64, after build 77684ee9, throwaway HOME
+## before launch
+./Library/Application Support/dev.reshiki.ReShiki/appearance.json
+./Library/Application Support/dev.reshiki.ReShiki/recovery/99999-1-0.json
+## after first launch
+./.reshiki/appearance.json
+./.reshiki/recovery/99999-1-0.json
+./.reshiki/star-prompt.json
+./.reshiki/update-cache.json
+## ~/Library/Application Support after launch
+(empty: dev.reshiki.ReShiki is gone)
