@@ -76,7 +76,7 @@ VERIFICATION_TABLE
 macOS arm64: `cargo fmt --check`; workspace clippy `--all-targets
 --all-features -D warnings`; wasm32 clippy as in checks.yml; `cargo test
 --locked --no-default-features -p reshiki --lib --bins -- github star updates
-command_palette` (102 lib + 286 bin passed); the star, About and updates
+command_palette` (109 lib + 288 bin passed after the rebase onto #1219 and #1221); the star, About and updates
 renderer tests with `--include-ignored --test-threads=1 --skip manual_` (36
 passed); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py
 --check`. InChI and naming helpers pointed at the built binary; every run used
@@ -100,6 +100,10 @@ sign-in within the same second or so, and a palette that is already open when
 About's answer arrives. Both need a sub-second race and at worst show a stale
 label until the next sign-in, so they are left as they are, like the star
 card's existing check.
+
+Greptile's one finding (an expired sign-in found by About's check was
+dropped instead of signing out) is fixed in `850be1f5`, rechecked with the
+same list.
 
 ## Risk
 
