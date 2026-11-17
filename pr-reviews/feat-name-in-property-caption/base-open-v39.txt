@@ -1,0 +1,1 @@
+reshiki: error[failed]: Could not open document: This drawing was made with a newer version of ReShiki (document version 39). Update ReShiki to open it.

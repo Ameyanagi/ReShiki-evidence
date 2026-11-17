@@ -1,0 +1,11 @@
+# CDXML written by the branch head d8f6e241 / 605c0d07 (binary c5d97e38) from the two drawings saved in the app
+
+## name-caption-auto.cdxml
+<chemicalproperty id="33" ChemicalPropertyDisplayID="32" ChemicalPropertyIsActive="yes" ChemicalPropertyType="4 3" BasisObjects="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30" />
+text id=31 p=112.802720 108.800001: '2-(acetyloxy)-4-methylbenzoic acid'
+text id=32 p=112.802720 120.800003: 'Mol. Wt.: 194.186\nExact Mass: 194.0579'
+
+## name-caption-custom.cdxml
+<chemicalproperty id="33" ChemicalPropertyDisplayID="32" ChemicalPropertyIsActive="yes" ChemicalPropertyType="4 3" BasisObjects="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30" />
+text id=31 p=79.472657 108.800001: 'Compound 3a'
+text id=32 p=79.472655 120.800003: 'Mol. Wt.: 194.186\nExact Mass: 194.0579'
