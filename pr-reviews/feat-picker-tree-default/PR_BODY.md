@@ -18,7 +18,7 @@ The tree lists the whole repository, searches all of it and previews the selecte
 
 ## Evidence
 
-Real app on macOS arm64 (debug builds), one build at a time. Each launch used a fresh `RESHIKI_DATA_DIR` and the local mock of GitHub (`RESHIKI_GITHUB_CLIENT_ID=mock`, user @octo-test); nothing reached github.com. Steps, the same on both builds: launch, GitHub → **Sign in…**, GitHub → **Open from GitHub…** (the first time the picker opens in that data folder), one click on **lab-notes**. Neither view button was clicked. Window 1280 × 852 pt, light appearance. Driven by Codex computer use; the captures are of the ReShiki window only.
+Real app on macOS arm64 (debug builds), one build at a time. Each launch used a fresh `RESHIKI_DATA_DIR` and the local mock of GitHub (`RESHIKI_GITHUB_CLIENT_ID=mock`, user `octo-test`); nothing reached github.com. Steps, the same on both builds: launch, GitHub → **Sign in…**, GitHub → **Open from GitHub…** (the first time the picker opens in that data folder), one click on **lab-notes**. Neither view button was clicked. Window 1280 × 852 pt, light appearance. Driven by Codex computer use; the captures are of the ReShiki window only.
 
 | Before: main `ff074126` | After: branch `947d3b76` |
 | --- | --- |
