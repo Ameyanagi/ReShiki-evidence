@@ -42,6 +42,8 @@ Release builds of `04e88c10` (main, before) and this branch at `4ebbb35b` (after
 
 VERIFICATION_TABLE
 
+macOS arm64 (Apple M4), at `6651d5c7`, with a fresh `RESHIKI_DATA_DIR` and the InChI and naming helpers pointed at the built binary: `cargo fmt --all --check`; workspace clippy `--all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml (the GitHub code, and so the cache, is not built for the browser); `cargo test --locked --no-default-features -p reshiki --lib --bins` (511 lib + 1823 bin passed); the renderer tests `--bin reshiki -- --include-ignored --test-threads=1 --skip manual_` (1980 passed); Python unittest via `uv run --locked` (292 run, 9 skipped); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py --check`; `check_docs_tree.mjs`; `bun run docs:check`.
+
 New tests (lib, against the mock and its request log):
 
 - after a restart (a new client and session over the same folder) choosing the repository, opening a folder, its dates and a drawing ask only for the branch head, which the mock answers 304;
