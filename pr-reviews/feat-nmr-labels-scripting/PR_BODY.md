@@ -116,6 +116,17 @@ reshiki: error[failed]: NMR prediction needs exactly one molecule; this drawing 
 
 VERIFICATION_TABLE
 
+Run on macOS arm64 (Apple M4):
+
+- `cargo fmt --all --check`; workspace `cargo clippy --all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml.
+- `cargo test -p reshiki-io` (714, including the new `nmr::` label tests), `-p reshiki-model` (1520), `-p reshiki-agent` (327 unit, 36 contract including the new `ops-label-atoms` corpus, 4 headless).
+- `cargo test --no-default-features -p reshiki --lib --bins` (505 + 1823) and the renderer suite (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`, filtered to nmr, canvas and label: 498). These ran before the last agent-only fixes; `cli::` (97) and the agent tests ran again on the head.
+- The `it` CLI/MCP modules `cli::`, `mcp_stdio::`, `mcp_tools::`, `mcp_shutdown::`, `headless_parity::` (51).
+- The Python wheel built as CI builds it (`maturin build --locked`), then `pytest crates/python/tests` with rdkit (169 passed, 3 skipped), ruff and ty; `python -m unittest discover -s tests` (288), ruff and ty for scripts.
+- Goldens regenerated from the built binary and verified: `ops-catalog.json`, `cli-tools.json`, `cli-help.json`, `cli-help/convert.txt`, the Agent Skill folder, `docs/agent-reference.md`, and the four MCP transcripts (`label_atoms` success and stale in the modern and legacy `tools-*`).
+- `module_index.py --check`, `copy_lint.py`, `assemble_changelog.py --check`, `check_docs_tree.mjs`, `bun run docs:check`, `bun run docs:build` (llms check: 217,225 bytes, 18 tools), `bun fmt --check`, and `check_runtime_dependencies.verify_agent_api` on the built binary (the packaged client's ordered tool list).
+- Failing first: with the no-op guard removed, `a_call_that_writes_nothing_changes_nothing_and_binds_its_key` fails (`recorded: true`).
+
 ## Risk
 
 - Overwrites the numbers of the listed atoms, including numbers a user typed. Only listed atoms change, and it is one undo step in MCP.
