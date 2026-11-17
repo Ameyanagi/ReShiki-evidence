@@ -15,17 +15,71 @@ This is C1 of two PRs: the core.
 
 ## Evidence
 
-_Pending: real window captures, before (main) and after, of History → Compare and the changed-on-GitHub dialog, for whole scheme moved, moved + NO₂ added, and cleanup/redraw; after in Everything, Chemistry and Layout, line-up on and off, light and dark._
+Real window captures from macOS arm64, of a debug build of `main` (before) and of this branch (after), driven against ReShiki's local mock GitHub with a fresh data folder. Scheme: acetic acid + ethanol → ethyl acetate + water. Each scenario has the original commit and a change; History compares the original with the drawing now, and the changed-on-GitHub dialog shows GitHub's original beside yours.
+
+### 1. Whole scheme moved
+
+| Before (`main`) | After |
+|---|---|
+| ![before](before/history-moved.png) | ![after](after/history-moved-everything.png) |
+
+Before: every atom, bond, label and the arrow are painted. After: **Chemically identical**, one **MOVED · Whole scheme moved** line (1.3 cm left, 0.5 cm down), nothing painted. [Chemistry](after/history-moved-chemistry.png) · [Layout](after/history-moved-layout.png) · [line-up off](after/history-moved-original-positions.png) · [changed-on-GitHub, after](after/conflict-moved-everything.png) · [before](before/conflict-moved.png)
+
+### 2. Moved, plus NO₂ added
+
+| Before (`main`) | After |
+|---|---|
+| ![before](before/history-nitro.png) | ![after](after/history-nitro-everything.png) |
+| ![before](before/conflict-nitro.png) | ![after](after/conflict-nitro-everything.png) |
+
+After: **1 chemical change**. The CHEM row says **NO₂ added** with SMILES before → after, and only the nitro group and its carbon are painted; the move is one line.
+
+| Chemistry | Layout | Line up off | Row clicked |
+|---|---|---|---|
+| ![](after/history-nitro-chemistry.png) | ![](after/history-nitro-layout.png) | ![](after/history-nitro-original-positions.png) | ![](after/history-nitro-pointed.png) |
+
+### 3. Clean up / redrawn
+
+| Before (`main`) | After |
+|---|---|
+| ![before](before/history-redrawn.png) | ![after](after/history-redrawn-everything.png) |
+
+After: **Chemically identical**; **MOVED · Molecule redrawn** (ethanol's shape changed) and **STYLE · Arrow style changed**. [Chemistry](after/history-redrawn-chemistry.png) · [Layout](after/history-redrawn-layout.png) · [changed-on-GitHub, after](after/conflict-redrawn-everything.png) · [before](before/conflict-redrawn.png)
+
+### Dark interface
+
+| History, moved + NO₂ | Changed on GitHub, redrawn |
+|---|---|
+| ![](after/history-nitro-everything-dark.png) | ![](after/conflict-redrawn-everything-dark.png) |
+
+Also: [moved](after/history-moved-everything-dark.png) · [moved, Chemistry](after/history-moved-chemistry-dark.png) · [NO₂, Chemistry](after/history-nitro-chemistry-dark.png) · [redrawn](after/history-redrawn-everything-dark.png) · [conflict moved](after/conflict-moved-everything-dark.png) · [conflict NO₂](after/conflict-nitro-everything-dark.png). Light contact sheet: [contact-sheet-light.png](contact-sheet-light.png).
+
+Captures are of the build at `5d57161`; the only later change (`b2994a9`, how a hydrogen bond's style counts) does not touch these drawings.
 
 ## Verification
 
 VERIFICATION_TABLE
 
+## Review
+
+Three adversarial passes (gpt-6.1-sol, read-only) on the model and the dialog, focused on false "equal" verdicts, stereo/aromaticity, matching and stale results. Fixed, each with a test:
+
+- Unresolved labels (`*` with a free label) and axial stereo are **Couldn't verify**; unpaired electrons and singlet spin are compared; AND/OR groups compare by membership, not number; a stereo group shared by two molecules is **Couldn't verify** per molecule.
+- Unknown stereo is keyed to its stereocentre or double bond, not the bond drawn wavy.
+- A molecule is fitted on its own atoms only; symmetric atoms pair as drawn (no false 180° turn), and only when every bond is kept.
+- An arrow given a bend is **redrawn**; a hydrogen bond added or removed between molecules is a chemical line.
+- A changed atom or bond hidden in a collapsed label is marked on the label; a comparison that stops says **Couldn't compare**.
+
+No stale-result race was found: each comparison has its own generation, and a result for another one is dropped (tested).
+
 ## Risk
 
-- Matching a molecule whose ids changed **and** whose chemistry changed is left to C2: it shows as removed and added.
-- A mirrored or scaled molecule shows as redrawn (C2 gives them their own kinds).
-- The verdict follows ReShiki's own chemistry model; drawings it cannot prepare are reported as unverified rather than guessed.
+Known limits, all reported as a change or as unverified rather than hidden:
+
+- A molecule whose ids changed **and** whose chemistry changed shows as removed and added (C2 matches by substructure). A re-created molecule's style is not compared, and a hydrogen bond between molecules with new ids is listed again.
+- Mirror and scale show as redrawn (C2 gives them kinds). Lone-pair and label offsets are not turned back when lined up, so a turned molecule with those may also list a style line.
+- Over-reporting in rare cases: inverting a whole AND group, a drawn H next to a radical, moving the wave on an unknown allene, or a control point added on a straight arrow.
+- The conflict dialog compares a snapshot of yours taken when it opens, as before.
 
 ## What C2 will add
 
