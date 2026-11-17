@@ -142,7 +142,11 @@ the warning being replaced by startup messages, a root-only test failure,
 in-use detection, unreadable folders, and reopen paths after an update.
 Greptile's two findings (the message lost when a drawing opens at startup;
 uninstall should name the folder About shows) are fixed in `a744efb8`, which
-was rechecked with fmt, both clippy runs, a build and the affected tests.
+was rechecked with fmt, both clippy runs, a build and the affected tests. PR
+CI on Windows then caught the About dialog's keyboard-focus test, which did not
+know the new **Open** button; `a34f99c6` adds it, and the full application test
+suite with ignored renderer tests (1952) passed on macOS arm64 before CI went
+green.
 
 ## Risk
 
