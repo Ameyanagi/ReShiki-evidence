@@ -1,0 +1,14 @@
+flow                    listed   dates  settled  req  kept conns  max upd
+01-picker-open               -       -      352    3     0     0      0.2
+02a-choose-repo            314       -      411    4     0     0      0.3
+02b-open-routes            146     664      664   13     0    11      0.2
+02c-up                     158       -      158    1     0     0      0.1
+02d-reopen-routes           91     280      280    7     0     0      0.1
+02e-repick-repo            368       -      455    4     0     0      0.1
+03a-bigfolder-open         510    1125     1125   30     0    12      0.8
+03b-scroll-1             20825   24285    24285   35     0     0      0.9
+04-open-drawing            652       -      665    5     0     0     17.4
+05-cmd-s                     -       -       94    0     0     0      1.0
+06a-send-open                -       -       39    0     0     0      1.3
+06b-send                  1455       -     1542   11     0     2     13.5
+scroll: settled 198 ms, req 24, kept 0

@@ -1,0 +1,369 @@
+
+== 01-picker-open
+     1 x GET /user
+     1 x GET /user/installations?per_page=100
+     1 x GET /user/installations/1/repositories?per_page=100&page=1
+   +    0.0 U    0.24 Accessibility(Dispatch(5, GitHub(Picker(Show(Open)))))
+   +  118.9 H  118.87 GET /user status=200 bytes=21
+   +  243.1 H  124.18 GET /user/installations?per_page=100 status=200 bytes=44
+   +  341.6 H   98.47 GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+   +  342.1 U    0.04 GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", rep
+
+== 02a-choose-repo
+     1 x GET /repos/<r>/git/ref/heads/main
+     1 x GET /repos/<r>/git/commits/<sha>
+     1 x GET /repos/<r>/git/trees/<sha>
+     1 x GET /repos/<r>/git/trees/<sha>?recursive=1
+   +    0.0 U    0.04 Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +  105.5 H  105.48 GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  217.2 H  111.64 GET /repos/octo-test/group-drawings/git/commits/098f0b5cd725c8e8f1dec8939c90ac26edf2c33a status=200 bytes=59
+   +  303.6 H   86.34 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b status=200 bytes=570
+   +  304.7 U    0.26 GitHub(Picker(Listing(2, Ok(("a6d3701e011a3523713d3bd214de3bff36342d9b", [Entry { name: "2026", sha: "94a5a751
+   +  395.6 H   90.88 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b?recursive=1 status=200 
+   +  396.5 U    0.20 GitHub(Picker(Whole(2, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "42d703a2a64ed0cf243878cbe4ce145f3076
+   +18354.5 U    0.05 Accessibility(Dispatch(6, GitHub(Picker(View(false)))))
+   +18356.2 U    0.02 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +18370.1 U    0.01 GitHub(Kept(Ok(())))
+
+== 02b-open-routes
+     6 x GET /repos/<r>/git/blobs/<sha>
+     6 x GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1
+     1 x GET /repos/<r>/git/trees/<sha>
+   +    0.0 U    0.11 GitHub(Picker(Select(4)))
+   +  137.7 H  137.67 GET /repos/octo-test/group-drawings/git/trees/7627f08cc76611aa9f4c11d0a6306513f808675c status=200 bytes=707
+   +  138.3 U    0.17 GitHub(Picker(Listing(4, Ok(("7627f08cc76611aa9f4c11d0a6306513f808675c", [Entry { name: "drawing-01.rsk", sha:
+   +  282.1 H  143.65 GET /repos/octo-test/group-drawings/git/blobs/a7ce7c9c21f7638210c4f7f84b26c8a84eb2fcbf status=200 bytes=17200
+   +  283.8 U    0.01 GitHub(Picker(Thumb("a7ce7c9c21f7638210c4f7f84b26c8a84eb2fcbf", Some(Document { generic: Generic { alternative
+   +  423.2 H  283.73 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-06.rsk&per_page=20&page=1 status=200 
+   +  424.3 U    0.14 GitHub(Picker(Changed(4, "routes/drawing-06.rsk", Some(("@alice", "2026-11-16T06:06:00Z")))))
+   +  465.8 H  326.19 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-11.rsk&per_page=20&page=1 status=200 
+   +  465.9 H  325.84 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-26.rsk&per_page=20&page=1 status=200 
+   +  466.2 U    0.02 GitHub(Picker(Changed(4, "routes/drawing-11.rsk", Some(("@bob", "2026-11-14T11:11:00Z")))))
+   +  478.9 U    0.02 GitHub(Picker(Changed(4, "routes/drawing-26.rsk", Some(("@bob", "2026-11-15T02:26:00Z")))))
+   +  480.4 H  340.62 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-16.rsk&per_page=20&page=1 status=200 
+   +  480.5 H  341.56 GET /repos/octo-test/group-drawings/git/blobs/14b8ce5c2a399b21a484f842445c60465ef66d8c status=200 bytes=73629
+   +  489.7 U    0.02 GitHub(Picker(Changed(4, "routes/drawing-16.rsk", Some(("You", "2026-11-12T16:16:00Z")))))
+   +  495.2 H  356.38 GET /repos/octo-test/group-drawings/git/blobs/a13e9f3a519057509f6aabd2fd8906d00bd6b011 status=200 bytes=43721
+   +  503.2 U    0.01 GitHub(Picker(Thumb("14b8ce5c2a399b21a484f842445c60465ef66d8c", Some(Document { generic: Generic { alternative
+   +  508.9 H  369.65 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-01.rsk&per_page=20&page=1 status=200 
+   +  516.9 U    0.02 GitHub(Picker(Thumb("a13e9f3a519057509f6aabd2fd8906d00bd6b011", Some(Document { generic: Generic { alternative
+   +  521.7 H  382.73 GET /repos/octo-test/group-drawings/git/blobs/4f14aa06a77bb0a5e6c2e3090bc603615a860a4b status=200 bytes=8322
+   +  521.9 H  382.66 GET /repos/octo-test/group-drawings/git/blobs/a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a status=200 bytes=2281
+   +  529.4 U    0.02 GitHub(Picker(Changed(4, "routes/drawing-01.rsk", Some(("You", "2026-11-11T01:01:00Z")))))
+   +  535.4 H  396.89 GET /repos/octo-test/group-drawings/git/blobs/fa350f2f71467edd420d17243985f40b287e237b status=200 bytes=5639
+   +  536.2 U    0.00 GitHub(Picker(Thumb("4f14aa06a77bb0a5e6c2e3090bc603615a860a4b", Some(Document { generic: Generic { alternative
+   +  536.2 U    0.01 GitHub(Picker(Thumb("a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a", Some(Document { generic: Generic { alternative
+   +  537.9 H  398.02 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-21.rsk&per_page=20&page=1 status=200 
+   +  579.1 U    0.01 GitHub(Picker(Thumb("fa350f2f71467edd420d17243985f40b287e237b", Some(Document { generic: Generic { alternative
+   +  586.6 U    0.02 GitHub(Picker(Changed(4, "routes/drawing-21.rsk", Some(("@alice", "2026-11-10T21:21:00Z")))))
+   +  588.1 U    0.03 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== 02c-up
+     1 x GET /repos/<r>/git/trees/<sha>
+   +    0.0 U    0.02 Accessibility(Dispatch(6, GitHub(Picker(Crumb(0)))))
+   +  148.7 H  148.69 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b status=200 bytes=570
+   +  149.4 U    0.06 GitHub(Picker(Listing(5, Ok(("a6d3701e011a3523713d3bd214de3bff36342d9b", [Entry { name: "2026", sha: "94a5a751
+   +  151.3 U    0.01 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== 02d-reopen-routes
+     6 x GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1
+     1 x GET /repos/<r>/git/trees/<sha>
+   +    0.0 U    0.07 GitHub(Picker(Select(4)))
+   +   83.1 H   83.04 GET /repos/octo-test/group-drawings/git/trees/7627f08cc76611aa9f4c11d0a6306513f808675c status=200 bytes=707
+   +   83.6 U    0.07 GitHub(Picker(Listing(6, Ok(("7627f08cc76611aa9f4c11d0a6306513f808675c", [Entry { name: "drawing-01.rsk", sha:
+   +  179.2 H   95.50 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-26.rsk&per_page=20&page=1 status=200 
+   +  179.9 U    0.02 GitHub(Picker(Changed(6, "routes/drawing-26.rsk", Some(("@bob", "2026-11-15T02:26:00Z")))))
+   +  198.6 H  114.66 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-01.rsk&per_page=20&page=1 status=200 
+   +  199.2 U    0.02 GitHub(Picker(Changed(6, "routes/drawing-01.rsk", Some(("You", "2026-11-11T01:01:00Z")))))
+   +  204.3 H  120.60 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-06.rsk&per_page=20&page=1 status=200 
+   +  212.6 H  128.63 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-21.rsk&per_page=20&page=1 status=200 
+   +  215.7 U    0.00 GitHub(Picker(Changed(6, "routes/drawing-21.rsk", Some(("@alice", "2026-11-10T21:21:00Z")))))
+   +  215.7 U    0.01 GitHub(Picker(Changed(6, "routes/drawing-06.rsk", Some(("@alice", "2026-11-16T06:06:00Z")))))
+   +  218.6 H  134.86 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-11.rsk&per_page=20&page=1 status=200 
+   +  223.5 H  139.66 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-16.rsk&per_page=20&page=1 status=200 
+   +  249.3 U    0.01 GitHub(Picker(Changed(6, "routes/drawing-16.rsk", Some(("You", "2026-11-12T16:16:00Z")))))
+   +  249.3 U    0.02 GitHub(Picker(Changed(6, "routes/drawing-11.rsk", Some(("@bob", "2026-11-14T11:11:00Z")))))
+   +  251.1 U    0.03 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== 02e-repick-repo
+     1 x GET /repos/<r>/git/ref/heads/main
+     1 x GET /repos/<r>/git/commits/<sha>
+     1 x GET /repos/<r>/git/trees/<sha>
+     1 x GET /repos/<r>/git/trees/<sha>?recursive=1
+   +    0.0 U    0.02 Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +  100.1 H  100.06 GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  207.2 H  107.11 GET /repos/octo-test/group-drawings/git/commits/098f0b5cd725c8e8f1dec8939c90ac26edf2c33a status=200 bytes=59
+   +  359.8 H  152.60 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b status=200 bytes=570
+   +  360.3 U    0.04 GitHub(Picker(Listing(7, Ok(("a6d3701e011a3523713d3bd214de3bff36342d9b", [Entry { name: "2026", sha: "94a5a751
+   +  362.1 U    0.01 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  447.6 H   87.27 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b?recursive=1 status=200 
+   +  448.1 U    0.04 GitHub(Picker(Whole(7, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "42d703a2a64ed0cf243878cbe4ce145f3076
+   +15622.6 U    0.01 GitHub(Picker(Search("htt")))
+   +15622.6 U    0.02 GitHub(Picker(Search("ht")))
+   +15622.6 U    0.04 GitHub(Picker(Search("h")))
+   +15622.7 U    0.01 GitHub(Picker(Search("http")))
+   +15622.7 U    0.01 GitHub(Picker(Search("http:/")))
+   +15622.7 U    0.01 GitHub(Picker(Search("http:")))
+   +15669.1 U    0.01 GitHub(Picker(Search("http://127")))
+   +15669.1 U    0.02 GitHub(Picker(Search("http://12")))
+   +15669.1 U    0.02 GitHub(Picker(Search("http://1")))
+   +15669.1 U    0.04 GitHub(Picker(Search("http://")))
+   +15669.2 U    0.01 GitHub(Picker(Search("http://127.0.")))
+   +15669.2 U    0.01 GitHub(Picker(Search("http://127.")))
+   +15669.2 U    0.02 GitHub(Picker(Search("http://127.0")))
+   +15686.1 U    0.01 GitHub(Picker(Search("http://127.0.0.")))
+   +15686.1 U    0.03 GitHub(Picker(Search("http://127.0.0")))
+   +15686.2 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47")))
+   +15686.2 U    0.01 GitHub(Picker(Search("http://127.0.0.1:471")))
+   +15686.2 U    0.01 GitHub(Picker(Search("http://127.0.0.1")))
+   +15686.2 U    0.01 GitHub(Picker(Search("http://127.0.0.1:")))
+   +15686.2 U    0.01 GitHub(Picker(Search("http://127.0.0.1:4")))
+   +15686.3 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191")))
+   +15686.3 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/a")))
+   +15686.3 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/al")))
+   +15686.3 U    0.01 GitHub(Picker(Search("http://127.0.0.1:4719")))
+   +15686.3 U    0.02 GitHub(Picker(Search("http://127.0.0.1:47191/")))
+   +15686.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/ali")))
+   +15686.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alic")))
+   +15702.4 U    0.03 GitHub(Picker(Search("http://127.0.0.1:47191/alice")))
+   +15702.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/li")))
+   +15702.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/lig")))
+   +15702.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/liga")))
+   +15702.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/l")))
+   +15702.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/")))
+   +15719.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands")))
+   +15719.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/")))
+   +15719.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligand")))
+   +15719.4 U    0.02 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligan")))
+   +15719.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/t")))
+   +15719.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tr")))
+   +15719.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tre")))
+   +15736.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/")))
+   +15736.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/m")))
+   +15736.4 U    0.02 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree")))
+   +15736.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main")))
+   +15736.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/ma")))
+   +15736.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/mai")))
+   +15736.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/")))
+   +15752.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/scre")))
+   +15752.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/scree")))
+   +15752.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/screen")))
+   +15752.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/scr")))
+   +15752.4 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/sc")))
+   +15752.4 U    0.03 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/s")))
+   +15752.5 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/screeni")))
+   +15768.8 U    0.01 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/screening")))
+   +15768.8 U    0.02 GitHub(Picker(Search("http://127.0.0.1:47191/alice/ligands/tree/main/screenin")))
+
+== 03a-bigfolder-open
+    12 x GET /repos/<r>/git/blobs/<sha>
+    12 x GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1
+     2 x GET /repos/<r>/git/trees/<sha>
+     1 x GET /repos/<r>
+     1 x GET /repos/<r>/git/ref/heads/main
+     1 x GET /repos/<r>/git/commits/<sha>
+     1 x GET /repos/<r>/git/trees/<sha>?recursive=1
+   +    0.0 U    0.02 GitHub(Picker(Enter))
+   +   93.6 H   93.49 GET /repos/alice/ligands status=200 bytes=120
+   +   94.1 U    0.06 GitHub(Picker(Resolved(8, Link { key: RepoKey { owner: "alice", repo: "ligands" }, reference: Some("main"), pa
+   +  114.4 U    0.01 GitHub(Kept(Ok(())))
+   +  148.9 U    0.01 GitHub(Kept(Ok(())))
+   +  233.7 H  139.37 GET /repos/alice/ligands/git/ref/heads/main status=200 bytes=61
+   +  378.4 H  144.66 GET /repos/alice/ligands/git/commits/33a6eed3aefc2a67e8d7268cbff2542057e68c6b status=200 bytes=59
+   +  499.7 H  121.26 GET /repos/alice/ligands/git/trees/18e49f0907f7c779a7550e54489a3179f11b6d5c status=200 bytes=877
+   +  500.6 U    0.04 GitHub(Picker(Listing(11, Ok(("18e49f0907f7c779a7550e54489a3179f11b6d5c", [Entry { name: "index.rsk", sha: "00
+   +  629.1 H  128.42 GET /repos/alice/ligands/git/trees/18e49f0907f7c779a7550e54489a3179f11b6d5c?recursive=1 status=200 bytes=28767
+   +  630.4 U    0.19 GitHub(Picker(Whole(11, Ok(([Entry { name: "aromatics/benzofuran.rsk", sha: "3386dabb35baf6de5f0fefc3213cb6515
+   +  636.6 H  135.81 GET /repos/alice/ligands/git/trees/bd177d991f2c018950c40a6ec1f94a42246a3ff7 status=200 bytes=24557
+   +  650.6 U    0.50 GitHub(Picker(Listing(12, Ok(("bd177d991f2c018950c40a6ec1f94a42246a3ff7", [Entry { name: "hit-000.mol", sha: "
+   +  735.9 H   84.87 GET /repos/alice/ligands/git/blobs/eee80ea2032e05d77c11636a6a5a2b7933a0d5f2 status=200 bytes=569
+   +  736.3 H   85.38 GET /repos/alice/ligands/git/blobs/cab05defc436ac969ea1a4bd9072177170eb508d status=200 bytes=569
+   +  743.4 H   92.61 GET /repos/alice/ligands/git/blobs/b087b47b3d7642050ea99f7378feeaf0c715aa7d status=200 bytes=569
+   +  748.2 H   97.34 GET /repos/alice/ligands/git/blobs/f1d0ca72435edf98f917ba844c3498786583d3ff status=200 bytes=569
+   +  759.1 H  108.30 GET /repos/alice/ligands/git/blobs/ed32697921f92edfca22700d7f85918640a8423c status=200 bytes=569
+   +  761.0 H  109.78 GET /repos/alice/ligands/git/blobs/e42b4feafa48f3a4ef9894c89a3b3dc097e25b6d status=200 bytes=569
+   +  763.6 H  112.83 GET /repos/alice/ligands/git/blobs/8a251d575ee7fd76d6725cd6e0ab9637e8761e3f status=200 bytes=569
+   +  780.8 H  129.59 GET /repos/alice/ligands/git/blobs/3131d5d50e353636f0204d454aa6f123b5e46317 status=200 bytes=569
+   +  781.3 U    0.01 GitHub(Picker(Thumb("cab05defc436ac969ea1a4bd9072177170eb508d", Some(Document { generic: Generic { alternative
+   +  781.4 U    0.00 GitHub(Picker(Thumb("b087b47b3d7642050ea99f7378feeaf0c715aa7d", Some(Document { generic: Generic { alternative
+   +  786.9 H  135.72 GET /repos/alice/ligands/git/blobs/0585927e34066fc038a3c4de96c6d57a5b180284 status=200 bytes=569
+   +  786.9 U    0.01 GitHub(Picker(Thumb("f1d0ca72435edf98f917ba844c3498786583d3ff", Some(Document { generic: Generic { alternative
+   +  794.4 H  143.55 GET /repos/alice/ligands/git/blobs/fd85a9245280fbb18ef1f1479eb573deea43cb70 status=200 bytes=569
+   +  795.0 U    0.00 GitHub(Picker(Thumb("e42b4feafa48f3a4ef9894c89a3b3dc097e25b6d", Some(Document { generic: Generic { alternative
+   +  795.0 U    0.01 GitHub(Picker(Thumb("eee80ea2032e05d77c11636a6a5a2b7933a0d5f2", Some(Document { generic: Generic { alternative
+   +  795.1 U    0.00 GitHub(Picker(Thumb("ed32697921f92edfca22700d7f85918640a8423c", Some(Document { generic: Generic { alternative
+   +  799.2 H  148.18 GET /repos/alice/ligands/git/blobs/98bda51e7e0c99e3f7839d5784a057b5155b2893 status=200 bytes=569
+   +  801.8 H  150.56 GET /repos/alice/ligands/git/blobs/e84c90badb50f84481cbf657dc0f8e7dcc01bff5 status=200 bytes=569
+   +  811.9 U    0.01 GitHub(Picker(Thumb("8a251d575ee7fd76d6725cd6e0ab9637e8761e3f", Some(Document { generic: Generic { alternative
+   +  828.1 U    0.00 GitHub(Picker(Thumb("0585927e34066fc038a3c4de96c6d57a5b180284", Some(Document { generic: Generic { alternative
+   +  828.1 U    0.01 GitHub(Picker(Thumb("3131d5d50e353636f0204d454aa6f123b5e46317", Some(Document { generic: Generic { alternative
+   +  828.2 U    0.00 GitHub(Picker(Thumb("98bda51e7e0c99e3f7839d5784a057b5155b2893", Some(Document { generic: Generic { alternative
+   +  828.2 U    0.00 GitHub(Picker(Thumb("fd85a9245280fbb18ef1f1479eb573deea43cb70", Some(Document { generic: Generic { alternative
+   +  845.3 U    0.00 GitHub(Picker(Thumb("e84c90badb50f84481cbf657dc0f8e7dcc01bff5", Some(Document { generic: Generic { alternative
+   +  946.6 H  294.57 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-007.mol&per_page=20&page=1 status=200 bytes=197
+   +  947.0 U    0.05 GitHub(Picker(Changed(12, "screening/hit-007.mol", Some(("@alice", "2026-11-10T00:07:00Z")))))
+   +  957.3 H  305.99 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-000.mol&per_page=20&page=1 status=200 bytes=197
+   +  957.4 H  305.82 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-002.mol&per_page=20&page=1 status=200 bytes=197
+   +  962.1 U    0.01 GitHub(Picker(Changed(12, "screening/hit-000.mol", Some(("@alice", "2026-11-10T00:00:00Z")))))
+   +  962.2 U    0.00 GitHub(Picker(Changed(12, "screening/hit-002.mol", Some(("@alice", "2026-11-10T00:02:00Z")))))
+   +  970.3 H  318.77 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-001.mol&per_page=20&page=1 status=200 bytes=197
+   +  975.4 H  323.18 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-009.mol&per_page=20&page=1 status=200 bytes=197
+   +  988.9 H  336.97 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-005.mol&per_page=20&page=1 status=200 bytes=197
+   +  999.9 H  348.03 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-004.mol&per_page=20&page=1 status=200 bytes=197
+   + 1004.8 H  352.67 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-008.mol&per_page=20&page=1 status=200 bytes=197
+   + 1013.2 H  361.50 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-003.mol&per_page=20&page=1 status=200 bytes=197
+   + 1014.7 H  362.41 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-011.mol&per_page=20&page=1 status=200 bytes=197
+   + 1026.6 U    0.02 GitHub(Picker(Changed(12, "screening/hit-001.mol", Some(("@alice", "2026-11-10T00:01:00Z")))))
+   + 1026.7 U    0.01 GitHub(Picker(Changed(12, "screening/hit-009.mol", Some(("@alice", "2026-11-10T00:09:00Z")))))
+   + 1039.7 U    0.02 GitHub(Picker(Changed(12, "screening/hit-005.mol", Some(("@alice", "2026-11-10T00:05:00Z")))))
+   + 1039.8 U    0.01 GitHub(Picker(Changed(12, "screening/hit-003.mol", Some(("@alice", "2026-11-10T00:03:00Z")))))
+   + 1039.8 U    0.01 GitHub(Picker(Changed(12, "screening/hit-004.mol", Some(("@alice", "2026-11-10T00:04:00Z")))))
+   + 1039.8 U    0.01 GitHub(Picker(Changed(12, "screening/hit-008.mol", Some(("@alice", "2026-11-10T00:08:00Z")))))
+   + 1039.9 U    0.01 GitHub(Picker(Changed(12, "screening/hit-011.mol", Some(("@alice", "2026-11-10T00:11:00Z")))))
+   + 1044.9 H  392.68 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-010.mol&per_page=20&page=1 status=200 bytes=197
+   + 1058.7 H  406.79 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-006.mol&per_page=20&page=1 status=200 bytes=197
+   + 1063.8 U    0.03 GitHub(Picker(Changed(12, "screening/hit-010.mol", Some(("@alice", "2026-11-10T00:10:00Z")))))
+   + 1078.3 U    0.84 GitHub(Picker(Changed(12, "screening/hit-006.mol", Some(("@alice", "2026-11-10T00:06:00Z")))))
+   + 1093.9 U    0.15 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== 03b-scroll-1
+    18 x GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1
+    12 x GET /repos/<r>/git/blobs/<sha>
+     2 x GET /repos/<r>/git/trees/<sha>
+     1 x GET /repos/<r>/git/ref/heads/main
+     1 x GET /repos/<r>/git/commits/<sha>
+     1 x GET /repos/<r>/git/trees/<sha>?recursive=1
+   +    0.0 U    0.12 GitHub(Picker(Scrolled(1704.0, 377.7, 400.0)))
+   +   89.0 H   87.81 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-043.mol&per_page=20&page=1 status=200 bytes=197
+   +   89.2 H   88.93 GET /repos/alice/ligands/git/blobs/9f9b097fcafcff07e6718fc8da1da21373d65175 status=200 bytes=569
+   +   89.8 U    0.01 GitHub(Picker(Changed(12, "screening/hit-043.mol", Some(("@alice", "2026-11-10T00:43:00Z")))))
+   +   94.0 H   93.25 GET /repos/alice/ligands/git/blobs/f98d21cbca98b43f5d655ab87c7a3ea74fc11bef status=200 bytes=569
+   +   94.1 H   93.61 GET /repos/alice/ligands/git/blobs/640d0231b56f34d0e6b7461a034690aa536a5bba status=200 bytes=569
+   +   99.4 H   98.50 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-036.mol&per_page=20&page=1 status=200 bytes=197
+   +  101.0 H  100.19 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-033.mol&per_page=20&page=1 status=200 bytes=197
+   +  107.9 U    0.02 GitHub(Picker(Changed(12, "screening/hit-036.mol", Some(("@alice", "2026-11-10T00:36:00Z")))))
+   +  108.0 U    0.01 GitHub(Picker(Changed(12, "screening/hit-033.mol", Some(("@alice", "2026-11-10T00:33:00Z")))))
+   +  109.4 H  108.39 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-038.mol&per_page=20&page=1 status=200 bytes=197
+   +  109.5 H  108.88 GET /repos/alice/ligands/git/blobs/a4faaef918240a282cfa980b156cc2286fd0ad9f status=200 bytes=569
+   +  109.7 H  109.61 GET /repos/alice/ligands/git/blobs/6a9037a290f830c7354687c59d0c57043aca80d6 status=200 bytes=569
+   +  110.4 H  109.44 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-035.mol&per_page=20&page=1 status=200 bytes=197
+   +  112.2 H  111.59 GET /repos/alice/ligands/git/blobs/cd2e79c03c47c66a8d0025562afb3ff8fe10ca3c status=200 bytes=569
+   +  114.7 H  114.41 GET /repos/alice/ligands/git/blobs/aba16a2c0b91728ab55ef073ac39abe705577659 status=200 bytes=569
+   +  115.2 U    0.01 GitHub(Picker(Changed(12, "screening/hit-038.mol", Some(("@alice", "2026-11-10T00:38:00Z")))))
+   +  119.2 H  118.34 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-034.mol&per_page=20&page=1 status=200 bytes=197
+   +  120.7 H  119.63 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-042.mol&per_page=20&page=1 status=200 bytes=197
+   +  125.2 H  124.64 GET /repos/alice/ligands/git/blobs/1b6b5456cc7c67b18636ad96815e2d346e05f2cc status=200 bytes=569
+   +  125.3 H  124.01 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-044.mol&per_page=20&page=1 status=200 bytes=197
+   +  132.2 H  131.57 GET /repos/alice/ligands/git/blobs/9a87c298692736d2e63115689988dab46879bea8 status=200 bytes=569
+   +  132.4 U    0.01 GitHub(Picker(Changed(12, "screening/hit-035.mol", Some(("@alice", "2026-11-10T00:35:00Z")))))
+   +  132.5 U    0.00 GitHub(Picker(Thumb("9f9b097fcafcff07e6718fc8da1da21373d65175", Some(Document { generic: Generic { alternative
+   +  133.6 H  132.50 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-041.mol&per_page=20&page=1 status=200 bytes=197
+   +  139.6 H  139.22 GET /repos/alice/ligands/git/blobs/1e0bac1b7504ca210ff58a6646596b9ee6b2c08a status=200 bytes=569
+   +  139.7 H  138.73 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-037.mol&per_page=20&page=1 status=200 bytes=197
+   +  145.6 H  144.51 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-040.mol&per_page=20&page=1 status=200 bytes=197
+   +  145.6 H  145.17 GET /repos/alice/ligands/git/blobs/5ed4aacf6bf22c67fbe3533d6decc21717b4cb4d status=200 bytes=569
+   +  149.1 U    0.00 GitHub(Picker(Changed(12, "screening/hit-042.mol", Some(("@alice", "2026-11-10T00:42:00Z")))))
+   +  149.1 U    0.00 GitHub(Picker(Changed(12, "screening/hit-044.mol", Some(("@alice", "2026-11-10T00:44:00Z")))))
+   +  149.1 U    0.00 GitHub(Picker(Thumb("6a9037a290f830c7354687c59d0c57043aca80d6", Some(Document { generic: Generic { alternative
+   +  149.1 U    0.00 GitHub(Picker(Thumb("a4faaef918240a282cfa980b156cc2286fd0ad9f", Some(Document { generic: Generic { alternative
+   +  149.1 U    0.00 GitHub(Picker(Thumb("aba16a2c0b91728ab55ef073ac39abe705577659", Some(Document { generic: Generic { alternative
+   +  149.1 U    0.00 GitHub(Picker(Thumb("cd2e79c03c47c66a8d0025562afb3ff8fe10ca3c", Some(Document { generic: Generic { alternative
+   +  149.1 U    0.00 GitHub(Picker(Thumb("f98d21cbca98b43f5d655ab87c7a3ea74fc11bef", Some(Document { generic: Generic { alternative
+   +  149.1 U    0.00 GitHub(Picker(Changed(12, "screening/hit-041.mol", Some(("@alice", "2026-11-10T00:41:00Z")))))
+   +  149.1 U    0.00 GitHub(Picker(Changed(12, "screening/hit-034.mol", Some(("@alice", "2026-11-10T00:34:00Z")))))
+   +  149.1 U    0.01 GitHub(Picker(Thumb("640d0231b56f34d0e6b7461a034690aa536a5bba", Some(Document { generic: Generic { alternative
+   +  150.5 H  149.97 GET /repos/alice/ligands/git/blobs/5968156060c83e367ed3c026108f471b70686c12 status=200 bytes=569
+   +  155.3 H  154.26 GET /repos/alice/ligands/commits?sha=main&path=screening/hit-039.mol&per_page=20&page=1 status=200 bytes=197
+   +  165.8 U    0.00 GitHub(Picker(Thumb("9a87c298692736d2e63115689988dab46879bea8", Some(Document { generic: Generic { alternative
+   +  165.8 U    0.00 GitHub(Picker(Changed(12, "screening/hit-040.mol", Some(("@alice", "2026-11-10T00:40:00Z")))))
+   +  165.8 U    0.00 GitHub(Picker(Thumb("1b6b5456cc7c67b18636ad96815e2d346e05f2cc", Some(Document { generic: Generic { alternative
+   +  165.8 U    0.01 GitHub(Picker(Changed(12, "screening/hit-037.mol", Some(("@alice", "2026-11-10T00:37:00Z")))))
+   +  182.1 U    0.00 GitHub(Picker(Thumb("5968156060c83e367ed3c026108f471b70686c12", Some(Document { generic: Generic { alternative
+   +  182.1 U    0.00 GitHub(Picker(Thumb("5ed4aacf6bf22c67fbe3533d6decc21717b4cb4d", Some(Document { generic: Generic { alternative
+   +  182.1 U    0.00 GitHub(Picker(Changed(12, "screening/hit-039.mol", Some(("@alice", "2026-11-10T00:39:00Z")))))
+   +  182.1 U    0.00 GitHub(Picker(Thumb("1e0bac1b7504ca210ff58a6646596b9ee6b2c08a", Some(Document { generic: Generic { alternative
+   +20529.9 U    0.10 Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +20638.9 H  109.03 GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +20723.2 H   84.20 GET /repos/octo-test/group-drawings/git/commits/098f0b5cd725c8e8f1dec8939c90ac26edf2c33a status=200 bytes=59
+   +20812.2 H   89.01 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b status=200 bytes=570
+   +20812.7 U    0.05 GitHub(Picker(Listing(13, Ok(("a6d3701e011a3523713d3bd214de3bff36342d9b", [Entry { name: "2026", sha: "94a5a75
+   +20814.1 U    0.02 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +20907.4 H   94.76 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b?recursive=1 status=200 
+   +20908.1 U    0.07 GitHub(Picker(Whole(13, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "42d703a2a64ed0cf243878cbe4ce145f307
+   +23659.5 U    0.01 GitHub(Picker(Scrolled(64.29999, 377.7, 400.0)))
+   +23831.4 U    0.01 GitHub(Picker(Select(4)))
+   +23931.5 U    0.02 GitHub(Picker(Select(4)))
+   +24073.1 H  141.49 GET /repos/octo-test/group-drawings/git/trees/7627f08cc76611aa9f4c11d0a6306513f808675c status=200 bytes=707
+   +24073.7 U    0.09 GitHub(Picker(Listing(14, Ok(("7627f08cc76611aa9f4c11d0a6306513f808675c", [Entry { name: "drawing-01.rsk", sha
+   +24182.6 H  108.56 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-21.rsk&per_page=20&page=1 status=200 
+   +24183.1 U    0.07 GitHub(Picker(Changed(14, "routes/drawing-21.rsk", Some(("@alice", "2026-11-10T21:21:00Z")))))
+   +24187.5 H  113.64 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-06.rsk&per_page=20&page=1 status=200 
+   +24194.8 H  120.83 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-11.rsk&per_page=20&page=1 status=200 
+   +24200.9 H  127.12 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-01.rsk&per_page=20&page=1 status=200 
+   +24201.9 U    0.02 GitHub(Picker(Changed(14, "routes/drawing-06.rsk", Some(("@alice", "2026-11-16T06:06:00Z")))))
+   +24207.0 H  132.96 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-26.rsk&per_page=20&page=1 status=200 
+   +24210.8 U    0.00 GitHub(Picker(Changed(14, "routes/drawing-01.rsk", Some(("You", "2026-11-11T01:01:00Z")))))
+   +24210.8 U    0.02 GitHub(Picker(Changed(14, "routes/drawing-11.rsk", Some(("@bob", "2026-11-14T11:11:00Z")))))
+   +24216.6 U    0.01 GitHub(Picker(Changed(14, "routes/drawing-26.rsk", Some(("@bob", "2026-11-15T02:26:00Z")))))
+   +24220.2 H  146.16 GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-16.rsk&per_page=20&page=1 status=200 
+   +24251.8 U    0.03 GitHub(Picker(Changed(14, "routes/drawing-16.rsk", Some(("You", "2026-11-12T16:16:00Z")))))
+   +24253.5 U    0.02 GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== 04-open-drawing
+     2 x GET /repos/<r>/git/trees/<sha>
+     1 x GET /repos/<r>/git/ref/heads/main
+     1 x GET /repos/<r>/git/commits/<sha>
+     1 x GET /repos/<r>/git/blobs/<sha>
+   +    0.0 U    1.15 GitHub(Picker(Select(4)))
+   +  118.8 H  118.81 GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  212.5 H   93.64 GET /repos/octo-test/group-drawings/git/commits/098f0b5cd725c8e8f1dec8939c90ac26edf2c33a status=200 bytes=59
+   +  312.5 H   99.94 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b status=200 bytes=570
+   +  457.2 H  144.66 GET /repos/octo-test/group-drawings/git/trees/7627f08cc76611aa9f4c11d0a6306513f808675c status=200 bytes=707
+   +  609.2 H  151.96 GET /repos/octo-test/group-drawings/git/blobs/a7ce7c9c21f7638210c4f7f84b26c8a84eb2fcbf status=200 bytes=17200
+   +  627.2 U   17.44 GitHub(Picker(Downloaded(15, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, privat
+   +  653.4 U    0.01 Tab(TabId(0), GitHub(Kept(Ok(()))))
+   +  653.4 U    0.44 GitHub(Persisted(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(())))
+
+== 05-cmd-s
+   +   78.2 U    0.36 Tab(TabId(0), GitHub(Recorded(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(Some(SaveMeta { id: "
+
+== 06a-send-open
+   +    0.0 U    1.33 Accessibility(Dispatch(11, GitHub(ShowSend)))
+
+== 06b-send
+     2 x GET /repos/<r>/git/trees/<sha>
+     2 x POST /repos/<r>/git/blobs
+     1 x GET /repositories/6
+     1 x GET /repos/<r>/git/ref/heads/main
+     1 x GET /repos/<r>/git/commits/<sha>
+     1 x GET /user/starred/Ameyanagi/ReShiki
+     1 x POST /repos/<r>/git/trees
+     1 x POST /repos/<r>/git/commits
+     1 x PATCH /repos/<r>/git/refs/heads/main
+   +    0.0 U    0.04 Accessibility(Dispatch(11, GitHub(Send)))
+   +  354.3 H  349.99 GET /repositories/6 status=200 bytes=129
+   +  465.7 H  111.37 GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  583.8 H  118.06 GET /repos/octo-test/group-drawings/git/commits/098f0b5cd725c8e8f1dec8939c90ac26edf2c33a status=200 bytes=59
+   +  707.2 H  123.37 GET /repos/octo-test/group-drawings/git/trees/a6d3701e011a3523713d3bd214de3bff36342d9b status=200 bytes=570
+   +  804.6 H   97.35 GET /repos/octo-test/group-drawings/git/trees/7627f08cc76611aa9f4c11d0a6306513f808675c status=200 bytes=707
+   +  895.9 H   90.90 POST /repos/octo-test/group-drawings/git/blobs status=201 bytes=50
+   + 1032.2 H  136.19 POST /repos/octo-test/group-drawings/git/blobs status=201 bytes=50
+   + 1053.7 H  293.61 GET /user/starred/Ameyanagi/ReShiki status=404
+   + 1174.9 H  141.60 POST /repos/octo-test/group-drawings/git/trees status=201 bytes=50
+   + 1323.7 H  148.77 POST /repos/octo-test/group-drawings/git/commits status=201 bytes=50
+   + 1445.3 H  121.53 PATCH /repos/octo-test/group-drawings/git/refs/heads/main status=200 bytes=61
+   + 1447.2 U    0.34 GitHub(Sent(RepoKey { owner: "octo-test", repo: "group-drawings" }, "1794932483647", Ok(SendOutcome { repo: Re
+   + 1496.4 U    0.30 GitHub(Persisted(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(())))
+flow                    listed   dates  settled  req  kept conns  max upd
+01-picker-open               -       -      352    3     0     0      0.2
+02a-choose-repo            314       -      411    4     0     0      0.3
+02b-open-routes            146     664      664   13     0    11      0.2
+02c-up                     158       -      158    1     0     0      0.1
+02d-reopen-routes           91     280      280    7     0     0      0.1
+02e-repick-repo            368       -      455    4     0     0      0.1
+03a-bigfolder-open         510    1125     1125   30     0    12      0.8
+03b-scroll-1             20825   24285    24285   35     0     0      0.9
+04-open-drawing            652       -      665    5     0     0     17.4
+05-cmd-s                     -       -       94    0     0     0      1.0
+06a-send-open                -       -       39    0     0     0      1.3
+06b-send                  1455       -     1542   11     0     2     13.5
