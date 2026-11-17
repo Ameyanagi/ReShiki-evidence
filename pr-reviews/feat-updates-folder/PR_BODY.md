@@ -39,11 +39,13 @@ package contents; on Windows the publisher). At restart:
 - **Updates folder on the app's volume** (the usual case): the helper works in
   `updates/<version>/`. It renames the running app into that folder and the
   new app into place, as before.
-- **Another volume** (`st_dev` differs: a data folder on another disk through
-  `RESHIKI_DATA_DIR`, or an app on an external disk): the verified app is
-  first copied (`cp -a`) into a hidden `.reshiki-update-<version>` beside the
-  app, and the helper works there, so the swap is still two renames on one
-  volume.
+- **Another volume** (a data folder on another disk through
+  `RESHIKI_DATA_DIR`, an app on an external disk, or two mounts of one disk):
+  the verified app is first copied (`cp -a`) into a hidden
+  `.reshiki-update-<version>` beside the app, and the helper works there, so
+  the swap is still two renames on one volume. Which case applies is found by
+  renaming an empty file from the update's folder to beside the app, not by
+  comparing device numbers, which two bind mounts of one disk share.
 - The digest of the whole payload (and on macOS the bundle's signature) is
   checked again **on what the helper installs, where it installs it from**:
   on the copy in the cross-volume case. A copy that differs installs nothing
@@ -67,8 +69,9 @@ package contents; on Windows the publisher). At restart:
 - **Startup** (`updates::install::clean`, on a background thread after the
   data folder is resolved) removes everything in `updates/` except the two
   check files, every `.reshiki-update-*` folder beside the app (also the ones
-  earlier versions left), and the two old check files. So `updates/` only ever
-  holds the check files and the version being installed.
+  earlier versions left, never the folder the app itself runs from), and the
+  two old check files. So `updates/` only ever holds the check files and the
+  version being installed.
 
 **Not deleting an update in use.** Two ReShiki windows can run at once, and one
 may launch while the other is downloading or its helper is mid-swap. Each
@@ -171,7 +174,8 @@ New and changed tests (`src/updates/install/tests.rs`):
 - `startup_removes_leftovers_but_not_an_update_in_use`: a finished update, a
   half download and a stray file go; the check files, an update a live process
   is using (in `updates/` and beside the app), the target of a symbolic link,
-  recovery drafts, other preferences and other apps stay; `claim` refuses a
+  recovery drafts, other preferences, other apps and a portable copy that
+  itself lives in a folder named `.reshiki-update-…` stay; `claim` refuses a
   folder another live process uses and takes it once that process is gone.
 - `an_update_given_up_before_it_installs_removes_its_folder`.
 - `helper_replaces_owned_files_and_rolls_back_an_interrupted_install` now also
@@ -191,9 +195,23 @@ re-check in `handoff` is covered by the refusal tests.
   end. `$stage` is always a folder this ReShiki created:
   `updates/<version>` (a validated stable `X.Y.Z`) or
   `.reshiki-update-<version>` beside the app.
-- **The failure log is no longer kept.** Before, `install.log` and the
-  previous app stayed beside the app forever; now they go with the stage. A
-  failed install still restores and reopens the previous app.
+- **The previous version and the failure log are no longer kept.** Before,
+  the previous app and `install.log` stayed beside the app forever; now they go
+  with the stage. A failed install still restores and reopens the previous app
+  (macOS, Linux). Two consequences of pruning by default:
+  - On Linux the helper starts the new app in the background and cannot see
+    whether it runs. If a new release does not start on this system (say, a
+    library it needs is missing), the previous version is no longer in a
+    hidden folder to copy back; it has to be downloaded again from the
+    releases page. That check was already missing; only the leftover copy is
+    gone.
+  - On Windows a failed installer and its log are removed at the next start,
+    where the helper's message used to name the folder that kept them (the
+    message only ever went to that log).
+- **A data folder that cannot be written now blocks "Update and restart"**
+  (the download needs `updates/<version>/`); checking for updates still
+  works. Before, the download went beside the app. Settings and recovery
+  drafts cannot be written in that state either.
 - **Startup deletes by name beside the app**: only entries of the app's own
   parent folder whose name starts with `.reshiki-update-`, and only for an
   installed or portable release (a development build has no install target
@@ -206,9 +224,16 @@ re-check in `handoff` is covered by the refusal tests.
     about one second in which an earlier version's helper is swapping, it
     could remove that helper's stage. Two differently named copies in one
     folder, one updating in that second, was judged too unlikely to guard.
-  - If the rollback's own rename fails, the previous app stays in the stage
-    (the helper does not remove it), but a later launch of another copy that
-    shares the data folder would. Before, it stayed until deleted by hand.
+  - If the helper is killed between its two renames (power loss in a window
+    of milliseconds), or the rollback's own rename fails, the previous app
+    stays in the stage: the helper does not remove it. The next ReShiki to
+    start with that data folder would, and by then the user has an app again.
+    Before, it stayed until deleted by hand.
+  - Two ReShiki windows that both pick the same version folder in the same
+    instant (one cleaning up or downloading exactly as the other claims it)
+    are not serialized by a lock; the `pid` file narrows this to the moment
+    between reading it and acting. The outcome is a failed download or a
+    refused install, except in the swap's own milliseconds.
   - A disk image still mounted in a version folder after a crash cannot be
     removed until it is unmounted; cleanup retries at each launch.
 - **Windows** is covered by PR CI only (build, clippy, unit tests). The helper
@@ -231,6 +256,27 @@ re-check in `handoff` is covered by the refusal tests.
   **Updates** says where the download goes, when it is removed, the
   cross-volume copy, and what happens when the install itself fails.
 - `docs/modules.md` is unchanged (`module_index.py --check` passes).
+
+## Review
+
+An independent adversarial review (a second model, read-only, on the diff)
+looked for ways to lose or corrupt the installed app, partial downloads,
+cross-volume renames, Windows file locking and deleting the wrong folder. Fixed
+from it:
+
+- startup cleanup could remove a portable copy that itself lives in a folder
+  named `.reshiki-update-…`: the app's own folder is now never a leftover;
+- equal device numbers do not promise a rename works (two bind mounts of one
+  disk on Linux), and `mv` would then silently copy during the swap: the code
+  now tries the rename with an empty file;
+- a stage that cannot be removed made the rollback exit before reopening the
+  restored app: removal there is now best effort;
+- the Python restart-argument tests cut the helpers at a line that now comes
+  after the `pid` write.
+
+Explained under Risk instead of handled: the unlocked claim/cleanup instant,
+an interrupted swap's backup, the Linux launch that is not confirmed, the
+Windows failure log, and a read-only data folder.
 
 ## Contribution license
 
