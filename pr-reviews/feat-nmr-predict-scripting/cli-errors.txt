@@ -1,0 +1,24 @@
+$ reshiki --cli predict-nmr --smiles CCOC(C)=O
+reshiki: predict-nmr needs --nucleus 1H or 13C
+[exit 2]
+
+$ reshiki --cli predict-nmr --smiles CCOC(C)=O --nucleus H1
+reshiki: --nucleus must be 1H or 13C
+[exit 2]
+
+$ reshiki --cli predict-nmr --smiles CCO.CC --nucleus 1H
+reshiki: error[failed]: NMR prediction needs exactly one molecule; this drawing has 2
+[exit 1]
+
+$ reshiki --cli predict-nmr --smiles O --nucleus 13C
+reshiki: error[failed]: This molecule has no supported ¹³C sites
+[exit 1]
+
+$ reshiki --cli predict-nmr --smiles [Fe] --nucleus 13C
+reshiki: error[failed]: NMR supports neutral closed-shell organic molecules with ordinary bonds (H, C, N, O, F, P, S, Cl, Br, I)
+[exit 1]
+
+$ reshiki --cli render --smiles C --to svg --nucleus 1H
+reshiki: render does not take --nucleus
+[exit 2]
+

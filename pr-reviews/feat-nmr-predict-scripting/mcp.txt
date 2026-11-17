@@ -1,0 +1,296 @@
+## tools/list names
+
+["info", "document_new", "document_list", "document_close", "import", "inspect", "analyze", "predict_nmr", "render", "export", "file_open", "file_save", "compose", "apply", "convert", "name", "schema"]
+
+## tools/list entry for predict_nmr
+
+{
+  "name": "predict_nmr",
+  "title": "Predict NMR shifts",
+  "description": "Predict ¹H or ¹³C NMR chemical shifts offline for one molecule of a session document, as the app's Predict NMR does. Cite the returned credit with published values.",
+  "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+      "document": {
+        "pattern": "^[A-Za-z0-9_-]{1,64}$",
+        "type": "string"
+      },
+      "ids": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "items": {
+              "pattern": "^[1-9][0-9]{0,19}$",
+              "type": "string"
+            },
+            "maxItems": 5000,
+            "minItems": 1,
+            "type": "array"
+          }
+        ],
+        "description": "null for the whole drawing, which must be one molecule; otherwise atoms of one molecule, which is predicted whole."
+      },
+      "nucleus": {
+        "enum": [
+          "1H",
+          "13C"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "document",
+      "nucleus",
+      "ids"
+    ],
+    "type": "object"
+  },
+  "annotations": {
+    "readOnlyHint": true,
+    "destructiveHint": false,
+    "idempotentHint": true,
+    "openWorldHint": false
+  }
+}
+
+## predict_nmr ethyl acetate 1H, ids null (structuredContent)
+
+{
+  "validation": {
+    "status": "valid"
+  },
+  "value": {
+    "conditions": "CDCl3; recorded temperature 273–323 K, pooled without temperature/concentration correction",
+    "credit": "Contains information from nmrshiftdb2 (https://nmrshiftdb.nmr.uni-koeln.de), available under the nmrshiftdb2 Database License (https://svn.code.sf.net/p/nmrshiftdb2/code/trunk/snapshots/nmrshiftdb2datalicense.txt).",
+    "data_access": "The derivative index and exact transformation method are available at https://github.com/Ameyanagi/ReShiki/tree/main/data/nmr and https://github.com/Ameyanagi/ReShiki/blob/main/crates/io/src/nmr/dataset.rs.",
+    "data_version": "nmrshiftdb2 2026-03-15 · measured CDCl3 subset v1",
+    "limitations": "Connectivity-only 2D environments do not distinguish E/Z or relative configurations, stereoisomers, or resolve diastereotopic H. Multiple attached H are an unresolved group median, not an assigned peak. Exchangeable H, charged/radical structures, metals and non-default isotope labels are unsupported. Reference spread is descriptive and is not a calibrated confidence interval.",
+    "method": "HOSE spherical environments · median · ReShiki v1",
+    "nucleus": "1H",
+    "revision": "0",
+    "rows": [
+      {
+        "atom": "1",
+        "broad": false,
+        "hydrogen_count": 3,
+        "hydrogens": [],
+        "max": 1.4,
+        "min": 1.17,
+        "note": "Unresolved attached-H group; not a stereospecific peak assignment",
+        "nucleus": "1H",
+        "ppm": 1.28,
+        "references": 17,
+        "sd": 0.064495611,
+        "shell": 4
+      },
+      {
+        "atom": "2",
+        "broad": false,
+        "hydrogen_count": 2,
+        "hydrogens": [],
+        "max": 4.45,
+        "min": 2.735,
+        "note": "Unresolved attached-H group; not a stereospecific peak assignment",
+        "nucleus": "1H",
+        "ppm": 4.16,
+        "references": 17,
+        "sd": 0.3745428,
+        "shell": 3
+      },
+      {
+        "atom": "5",
+        "broad": false,
+        "hydrogen_count": 3,
+        "hydrogens": [],
+        "max": 2.1,
+        "min": 2.05,
+        "note": "Unresolved attached-H group; not a stereospecific peak assignment",
+        "nucleus": "1H",
+        "ppm": 2.095,
+        "references": 4,
+        "sd": 0.023804761,
+        "shell": 4
+      }
+    ],
+    "solvent": "CDCl3"
+  },
+  "versions": {
+    "app": "0.15.0",
+    "document": 38,
+    "engine_protocol": 1,
+    "operation_api": 2
+  },
+  "warnings": []
+}
+
+## predict_nmr ethyl acetate 13C, ids null (structuredContent)
+
+{
+  "validation": {
+    "status": "valid"
+  },
+  "value": {
+    "conditions": "CDCl3; recorded temperature 273–323 K, pooled without temperature/concentration correction",
+    "credit": "Contains information from nmrshiftdb2 (https://nmrshiftdb.nmr.uni-koeln.de), available under the nmrshiftdb2 Database License (https://svn.code.sf.net/p/nmrshiftdb2/code/trunk/snapshots/nmrshiftdb2datalicense.txt).",
+    "data_access": "The derivative index and exact transformation method are available at https://github.com/Ameyanagi/ReShiki/tree/main/data/nmr and https://github.com/Ameyanagi/ReShiki/blob/main/crates/io/src/nmr/dataset.rs.",
+    "data_version": "nmrshiftdb2 2026-03-15 · measured CDCl3 subset v1",
+    "limitations": "Connectivity-only 2D environments do not distinguish E/Z or relative configurations, stereoisomers, or resolve diastereotopic H. Multiple attached H are an unresolved group median, not an assigned peak. Exchangeable H, charged/radical structures, metals and non-default isotope labels are unsupported. Reference spread is descriptive and is not a calibrated confidence interval.",
+    "method": "HOSE spherical environments · median · ReShiki v1",
+    "nucleus": "13C",
+    "revision": "0",
+    "rows": [
+      {
+        "atom": "1",
+        "broad": false,
+        "hydrogen_count": null,
+        "hydrogens": [],
+        "max": 16.927,
+        "min": 12.4,
+        "note": null,
+        "nucleus": "13C",
+        "ppm": 14.2,
+        "references": 58,
+        "sd": 0.504020137,
+        "shell": 3
+      },
+      {
+        "atom": "2",
+        "broad": false,
+        "hydrogen_count": null,
+        "hydrogens": [],
+        "max": 65.9,
+        "min": 57.1,
+        "note": null,
+        "nucleus": "13C",
+        "ppm": 61.05,
+        "references": 58,
+        "sd": 1.444256887,
+        "shell": 2
+      },
+      {
+        "atom": "4",
+        "broad": false,
+        "hydrogen_count": null,
+        "hydrogens": [],
+        "max": 175.1,
+        "min": 167.07,
+        "note": null,
+        "nucleus": "13C",
+        "ppm": 170.7,
+        "references": 28,
+        "sd": 1.253977199,
+        "shell": 2
+      },
+      {
+        "atom": "5",
+        "broad": false,
+        "hydrogen_count": null,
+        "hydrogens": [],
+        "max": 25.8,
+        "min": 19.55,
+        "note": null,
+        "nucleus": "13C",
+        "ppm": 20.9,
+        "references": 28,
+        "sd": 1.005444412,
+        "shell": 3
+      }
+    ],
+    "solvent": "CDCl3"
+  },
+  "versions": {
+    "app": "0.15.0",
+    "document": 38,
+    "engine_protocol": 1,
+    "operation_api": 2
+  },
+  "warnings": []
+}
+
+## predict_nmr with ids ["4"]: the carbonyl's molecule (rows only)
+
+[
+  {
+    "atom": "1",
+    "broad": false,
+    "hydrogen_count": null,
+    "hydrogens": [],
+    "max": 16.927,
+    "min": 12.4,
+    "note": null,
+    "nucleus": "13C",
+    "ppm": 14.2,
+    "references": 58,
+    "sd": 0.504020137,
+    "shell": 3
+  },
+  {
+    "atom": "2",
+    "broad": false,
+    "hydrogen_count": null,
+    "hydrogens": [],
+    "max": 65.9,
+    "min": 57.1,
+    "note": null,
+    "nucleus": "13C",
+    "ppm": 61.05,
+    "references": 58,
+    "sd": 1.444256887,
+    "shell": 2
+  },
+  {
+    "atom": "4",
+    "broad": false,
+    "hydrogen_count": null,
+    "hydrogens": [],
+    "max": 175.1,
+    "min": 167.07,
+    "note": null,
+    "nucleus": "13C",
+    "ppm": 170.7,
+    "references": 28,
+    "sd": 1.253977199,
+    "shell": 2
+  },
+  {
+    "atom": "5",
+    "broad": false,
+    "hydrogen_count": null,
+    "hydrogens": [],
+    "max": 25.8,
+    "min": 19.55,
+    "note": null,
+    "nucleus": "13C",
+    "ppm": 20.9,
+    "references": 28,
+    "sd": 1.005444412,
+    "shell": 3
+  }
+]
+
+## error: nucleus H1
+
+{"isError": true, "error": {"code": "invalid_arguments", "message": "nucleus must be 1H or 13C", "param": "nucleus", "retryable": false}}
+
+## error: ids []
+
+{"isError": true, "error": {"code": "invalid_arguments", "message": "ids must list at least one atom, or be null for the whole drawing", "param": "ids", "retryable": false}}
+
+## error: unknown id
+
+{"isError": true, "error": {"code": "unknown_object", "message": "Object 99 is not in the drawing", "param": "ids", "retryable": false}}
+
+## error: two molecules, ids null
+
+{"isError": true, "error": {"code": "failed", "message": "NMR prediction needs exactly one molecule; this drawing has 2", "retryable": false}}
+
+## error: two molecules, one ID from each
+
+{"isError": true, "error": {"code": "failed", "message": "NMR prediction needs exactly one molecule; the given IDs cover 2", "retryable": false}}
+
+## error: water, 13C: no sites
+
+{"isError": true, "error": {"code": "failed", "message": "This molecule has no supported ¹³C sites", "retryable": false}}
+

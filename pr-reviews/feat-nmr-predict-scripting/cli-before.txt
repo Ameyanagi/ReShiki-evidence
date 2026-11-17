@@ -1,0 +1,6 @@
+# main at 0d97885cb
+
+$ reshiki --cli predict-nmr --smiles CCOC(C)=O --nucleus 1H
+reshiki: unknown command `predict-nmr`; run `reshiki --cli help`
+[exit 2]
+
