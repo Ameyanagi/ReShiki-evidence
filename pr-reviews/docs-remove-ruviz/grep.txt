@@ -1,0 +1,16 @@
+$ git grep -n -i ruviz origin/main  (before)
+origin/main:docs/changes/capabilities.md:130:The recovery fixture was synthetic; this was not a forced termination of a user's document. The
+origin/main:docs/ruviz-integration.md:1:# ruviz integration requirements
+origin/main:docs/ruviz-integration.md:3:The molecular editor does not currently require changes to ruviz. Its scene contains atoms, bonds an
+origin/main:docs/ruviz-integration.md:5:Inspected the local `~/dev/ruviz` source on 2026-09-16. The existing `ruviz-iced` adapter targets Ic
+origin/main:docs/ruviz-integration.md:9:1. **Range gestures:** application-visible selection-start/change/end events with data-coordinate en
+origin/main:docs/ruviz-integration.md:14:ReShiki should own spectrum data, stable peak IDs, integration calculations and peak-to-atom assign
+origin/main:tests/fixtures/nmr/mock-alignment/evidence/build/source-manifest.json:1095:  "docs/ruviz-integration.md": "6fc702b1a87a47b497a87
+origin/main:website/astro.config.mjs:77:    "ruviz-integration",
+origin/main:website/astro.config.mjs:115:    "/reference/ruviz-integration": "/developer/ruviz-integration/",
+
+$ git grep -n -i ruviz HEAD -- ":!tests/fixtures"  (after)
+(none)
+
+$ git show origin/main:Cargo.lock | grep -c ruviz
+0
