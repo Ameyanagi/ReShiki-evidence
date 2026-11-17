@@ -1,5 +1,3 @@
-running 1 test
-
 ## linux, updates folder on the app's volume, install succeeds: before, as earlier versions left it
 data/update-cache-nightly.json
 data/update-cache.json
@@ -585,7 +583,6 @@ Applications/ReShiki.app
 Applications/ReShiki.app/Contents
 Applications/ReShiki.app/Contents/MacOS
 Applications/ReShiki.app/Contents/MacOS/reshiki
+
 test updates::install::tests::an_update_stays_in_its_version_folder_and_is_gone_after_the_next_launch ... ok
-
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 513 filtered out; finished in 0.29s
-
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 513 filtered out; finished in 0.27s
