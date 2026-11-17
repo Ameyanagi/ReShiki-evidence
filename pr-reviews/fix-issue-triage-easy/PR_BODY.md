@@ -88,7 +88,7 @@ Left for #88: the manual check that a ReShiki copy pastes into ChemDraw with the
 - The event fires after the fetch, not before it, so `dirty` counts edits made while the file was on its way.
 - Of several changes in a row only the last one loads, and a superseded fetch that fails reports no error. Removing `src`, or removing the element, drops a load that is still on its way.
 - A `src` that cannot be loaded fires `error` and keeps the current drawing. If the editor never started because the first `src` failed, a changed `src` starts it.
-- The start now reads `src` and `format` together, before it waits for the file.
+- The start reads `src` and `format` together. A change made while the first file is still on its way stops that fetch, and the editor starts with the new pair.
 - Documented in `packages/editor/README.md` and `element.d.ts` (`BeforeLoadEvent`).
 
 **Evidence.** [`tests/e4-element-tests.txt`](tests/e4-element-tests.txt): 7 pass. The same test file against main's element: 3 pass, 4 fail ([`tests/e4-element-tests-on-main.txt`](tests/e4-element-tests-on-main.txt)). The new tests cover:
@@ -98,7 +98,7 @@ Left for #88: the manual check that a ReShiki copy pastes into ChemDraw with the
 | No unsaved changes | loads; `dirty: false` | keeps the drawing; `dirty: false` |
 | Unsaved changes | loads; `dirty: true` | keeps the drawing; `dirty: true` |
 
-They also cover a 404, two changes in a row answered out of order, an edit made during the fetch, a listener that removes `src`, `src` removed during the fetch, a change during the start, and a start that failed.
+They also cover a 404, two changes in a row answered out of order, an edit made during the fetch, a listener that removes `src`, `src` removed during the fetch, a change while the first file never arrives, and a start that failed.
 
 ## E5: the busy status shows before the page is held (#430, partial)
 
@@ -143,7 +143,7 @@ They also cover a 404, two changes in a row answered out of order, an edit made 
 - `scripts/module_index.py --check`, `scripts/copy_lint.py`, `scripts/assemble_changelog.py --check`, `scripts/check_docs_tree.mjs`, `bun run docs:check`: pass.
 - Repository Python tests (`python -m unittest discover -s tests`): 292 tests OK (11 skipped), with the InChI helper built.
 - Browser: editor builds of main and of this branch for wasm32, driven in Chrome (see E1 and E5).
-- Review: two adversarial review passes on the diff. The findings that were fixed are in the `fix: address …` commits. Not fixed, on purpose: see Risk.
+- Review: two adversarial review passes on the diff, then Greptile (one finding, fixed; 5/5 on the final head). The findings that were fixed are in the `fix: address …` commits. Not fixed, on purpose: see Risk.
 
 VERIFICATION_TABLE
 
