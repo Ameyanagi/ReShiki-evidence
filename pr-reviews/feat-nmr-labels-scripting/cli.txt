@@ -1,0 +1,57 @@
+$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 13C --labels both -o cli-morphine-13C.png --force
+reshiki: warning: PNG: 3577 × 1454 pixels at 1200 dpi
+[exit 0]
+
+$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 1H --labels ppm -o cli-morphine-1H.svg --force
+[exit 0]
+
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --nucleus 13C --labels numbers -o cli-ibuprofen-13C.pdf --force
+[exit 0]
+
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --nucleus 13C --labels both -o cli-ibuprofen-13C.cdxml --force --receipt
+{"api":{"operation_api":2,"stability":"experimental"},"experimental":true,"receipt":{"byte_len":6781,"detail":null,"format":"cdxml"}}
+[exit 0]
+
+# AtomNumber attributes in cli-ibuprofen-13C.cdxml:
+AtomNumber="#1 · 22.375 ppm"
+AtomNumber="yes"
+AtomNumber="#2 · 28.895 ppm"
+AtomNumber="yes"
+AtomNumber="#3 · 22.375 ppm"
+AtomNumber="yes"
+AtomNumber="#5 · 136.800 ppm"
+AtomNumber="yes"
+AtomNumber="#6 · 129.370 ppm"
+AtomNumber="yes"
+AtomNumber="#7 · 127.484 ppm"
+AtomNumber="yes"
+AtomNumber="#9 · 127.484 ppm"
+AtomNumber="yes"
+AtomNumber="#10 · 129.370 ppm"
+AtomNumber="yes"
+
+# Usage errors (exit 2) and an operation error (exit 1):
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --labels both
+reshiki: --labels needs --nucleus 1H or 13C
+[exit 2]
+
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --nucleus 13C
+reshiki: --nucleus needs --labels numbers, ppm or both
+[exit 2]
+
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to mol --nucleus 13C --labels both
+reshiki: --labels needs an output that keeps atom numbers: svg, png, pdf, cdxml, cdx
+[exit 2]
+
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --nucleus 13C --labels Both
+reshiki: --labels must be numbers, ppm or both
+[exit 2]
+
+$ reshiki --cli render --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --nucleus 13C --labels both
+reshiki: render does not take --nucleus
+[exit 2]
+
+$ reshiki --cli convert --smiles CCO.CC --to svg --nucleus 1H --labels both
+reshiki: error[failed]: NMR prediction needs exactly one molecule; this drawing has 2
+[exit 1]
+

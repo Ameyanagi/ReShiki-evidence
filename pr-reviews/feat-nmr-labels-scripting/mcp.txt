@@ -1,0 +1,253 @@
+## tools/list names
+
+["info", "document_new", "document_list", "document_close", "import", "inspect", "analyze", "predict_nmr", "render", "export", "file_open", "file_save", "compose", "apply", "label_atoms", "convert", "name", "schema"]
+
+## tools/list entry for label_atoms
+
+{
+  "name": "label_atoms",
+  "title": "Label atoms",
+  "description": "Write predict_nmr rows onto a session document as atom numbers, replacing those atoms' numbers, as one undo step.",
+  "inputSchema": {
+    "additionalProperties": false,
+    "properties": {
+      "base_revision": {
+        "description": "The revision predict_nmr returned.",
+        "pattern": "^(0|[1-9][0-9]{0,19})$",
+        "type": "string"
+      },
+      "document": {
+        "pattern": "^[A-Za-z0-9_-]{1,64}$",
+        "type": "string"
+      },
+      "format": {
+        "description": "#3, 1.280 ppm or #3 · 1.280 ppm.",
+        "enum": [
+          "numbers",
+          "ppm",
+          "both"
+        ],
+        "type": "string"
+      },
+      "idempotency_key": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "maxLength": 128,
+            "type": "string"
+          }
+        ],
+        "description": "As in apply."
+      },
+      "rows": {
+        "description": "predict_nmr's rows; a null ppm is skipped.",
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "atom": {
+              "pattern": "^[1-9][0-9]{0,19}$",
+              "type": "string"
+            },
+            "ppm": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            }
+          },
+          "required": [
+            "atom",
+            "ppm"
+          ],
+          "type": "object"
+        },
+        "maxItems": 5000,
+        "type": "array"
+      }
+    },
+    "required": [
+      "document",
+      "rows",
+      "format",
+      "base_revision",
+      "idempotency_key"
+    ],
+    "type": "object"
+  },
+  "annotations": {
+    "readOnlyHint": false,
+    "destructiveHint": true,
+    "idempotentHint": true,
+    "openWorldHint": false
+  }
+}
+
+## predict_nmr ibuprofen 13C: revision 0, 13 rows
+
+## label_atoms arguments
+
+{
+  "document": "doc_0cd3d38baec3ed0fffe95a396bc38efe",
+  "rows": [
+    {
+      "atom": "1",
+      "ppm": 22.375
+    },
+    {
+      "atom": "2",
+      "ppm": 28.895
+    },
+    {
+      "atom": "3",
+      "ppm": 22.375
+    },
+    {
+      "atom": "4",
+      "ppm": null
+    },
+    {
+      "atom": "5",
+      "ppm": 136.8
+    },
+    {
+      "atom": "6",
+      "ppm": 129.37
+    },
+    {
+      "atom": "7",
+      "ppm": 127.484
+    },
+    {
+      "atom": "8",
+      "ppm": null
+    },
+    {
+      "atom": "9",
+      "ppm": 127.484
+    },
+    {
+      "atom": "10",
+      "ppm": 129.37
+    },
+    {
+      "atom": "11",
+      "ppm": null
+    },
+    {
+      "atom": "12",
+      "ppm": null
+    },
+    {
+      "atom": "13",
+      "ppm": null
+    }
+  ],
+  "format": "both",
+  "base_revision": "0",
+  "idempotency_key": "label-13c"
+}
+
+## label_atoms result (structuredContent)
+
+{
+  "validation": {
+    "status": "valid"
+  },
+  "value": {
+    "document": "doc_0cd3d38baec3ed0fffe95a396bc38efe",
+    "effect": "applied",
+    "labeled": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "7",
+      "9",
+      "10"
+    ],
+    "recorded": true,
+    "revision": "1"
+  },
+  "versions": {
+    "app": "0.15.0",
+    "document": 38,
+    "engine_protocol": 1,
+    "operation_api": 2
+  },
+  "warnings": []
+}
+
+## the same call with the same idempotency_key replays the receipt
+
+{
+  "document": "doc_0cd3d38baec3ed0fffe95a396bc38efe",
+  "effect": "applied",
+  "labeled": [
+    "1",
+    "2",
+    "3",
+    "5",
+    "6",
+    "7",
+    "9",
+    "10"
+  ],
+  "recorded": true,
+  "revision": "1"
+}
+
+## export svg_text live: the label text is in the SVG
+
+8 labels drawn as text
+
+## the same rows again without the key: stale (the document is at revision 1)
+
+{
+  "error": {
+    "code": "stale",
+    "current_revision": "1",
+    "message": "base_revision 0 is not the current revision 1; inspect the document and retry with a new idempotency_key",
+    "param": "base_revision",
+    "retryable": false
+  },
+  "versions": {
+    "app": "0.15.0",
+    "document": 38,
+    "engine_protocol": 1,
+    "operation_api": 2
+  }
+}
+
+## apply undo: one step removes every label
+
+{
+  "deleted": [],
+  "document": "doc_0cd3d38baec3ed0fffe95a396bc38efe",
+  "effect": "applied",
+  "id_remap": [],
+  "inserted": [],
+  "recorded": true,
+  "revision": "2"
+}
+
+## after undo the SVG has no label: True
+
+## error: unknown atom
+
+{"isError": true, "error": {"code": "unknown_object", "message": "Atom 99 is not in the drawing", "param": "rows", "retryable": false}}
+
+## error: label over 32 characters
+
+{"isError": true, "error": {"code": "invalid_arguments", "message": "The label of atom 1 is longer than 32 characters", "param": "rows", "retryable": false}}
+
+## error: format Both
+
+{"isError": true, "error": {"code": "invalid_arguments", "message": "format must be numbers, ppm or both", "param": "format", "retryable": false}}
+
