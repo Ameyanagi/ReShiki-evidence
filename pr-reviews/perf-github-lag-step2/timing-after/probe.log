@@ -1,0 +1,2690 @@
+1794945422432.1 D 11 UI prefs.json load
+1794945423412.6 V 2460 UI 
+1794945423413.5 B 3299 UI view=2494
+1794945423415.0 U 24 UI Accessibility(Window(Id(1), Opened { position: Some(Point { x: 200.0, y: 115.0 }), size: Size { width: 1280.0, height: 820.0 } }))
+1794945423415.0 U 24 UI GitHub(Loaded(0, Ok(None)))
+1794945423415.2 U 144 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945423415.4 V 144 UI 
+1794945423415.5 B 232 UI view=147
+1794945423534.6 F 119899 UI interact=1008 draw=1375 present=117515
+1794945423534.9 U 50 UI Canvas(Hover(None))
+1794945423535.2 V 292 UI 
+1794945423535.4 B 432 UI view=295
+1794945423548.2 F 4267 UI interact=59 draw=857 present=3350
+1794945423548.4 U 6 UI Accessibility(Snapshot(1, 1, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423548.5 U 115 UI Accessibility(Snapshot(1, 2, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423548.5 U 0 UI Star(Event(Window(Unfocused)))
+1794945423548.5 U 9 UI Accessibility(Window(Id(1), Resized(Size { width: 1280.0, height: 820.0 })))
+1794945423548.5 U 0 UI Accessibility(Window(Id(1), Rescaled(2.0)))
+1794945423548.5 U 1 UI Accessibility(Window(Id(1), Resized(Size { width: 1280.0, height: 820.0 })))
+1794945423548.5 U 0 UI Accessibility(Window(Id(1), Unfocused))
+1794945423548.8 V 198 UI 
+1794945423548.9 B 329 UI view=201
+1794945423569.7 F 2555 UI interact=52 draw=830 present=1673
+1794945423578.0 F 2889 UI interact=47 draw=783 present=2058
+1794945423578.1 U 6 UI Accessibility(Installed(1, Ok(Handle { key: 1, owner: ThreadId(1) })))
+1794945423578.2 U 4 UI Accessibility(Snapshot(1, 3, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423578.2 U 3 UI Accessibility(Snapshot(1, 4, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423578.2 U 2 UI Accessibility(Snapshot(1, 5, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423578.2 U 2 UI Accessibility(Snapshot(1, 6, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423578.4 V 169 UI 
+1794945423578.5 B 281 UI view=173
+1794945423599.2 F 1748 UI interact=46 draw=797 present=904
+1794945423599.3 U 5 UI Accessibility(Geometry(Id(1), Size { width: 1280.0, height: 820.0 }, 2.0))
+1794945423599.4 U 5 UI Accessibility(Snapshot(1, 7, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423599.6 V 167 UI 
+1794945423599.7 B 283 UI view=171
+1794945423608.0 F 3900 UI interact=44 draw=787 present=3069
+1794945423608.1 U 0 UI Star(Event(Window(Focused)))
+1794945423608.1 U 51 UI GitHub(Focused)
+1794945423608.2 U 1 UI Accessibility(Window(Id(1), Focused))
+1794945423608.2 U 4 UI Accessibility(Snapshot(1, 8, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423608.4 V 166 UI 
+1794945423608.5 B 281 UI view=169
+1794945423616.0 F 7292 UI interact=23 draw=778 present=6491
+1794945423616.1 U 7 UI Accessibility(Snapshot(1, 9, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled: 
+1794945423616.2 U 74 UI Accessibility(Snapshot(1, 10, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945423616.4 V 172 UI 
+1794945423616.5 B 293 UI view=175
+1794945423633.7 F 17008 UI interact=21 draw=775 present=16211
+1794945423633.9 U 2 UI Accessibility(Published(1, Ok(())))
+1794945423634.2 V 190 UI 
+1794945423634.3 B 307 UI view=193
+1794945423650.5 F 10866 UI interact=62 draw=914 present=9890
+1794945426884.1 U 29 UI Updates(Checked(1, Ok(Release { version: "0.15.0" })))
+1794945426884.6 V 428 UI 
+1794945426884.9 B 696 UI view=434
+1794945426889.7 F 4644 UI interact=43 draw=1884 present=2716
+1794945426890.1 U 170 UI Accessibility(Snapshot(1, 11, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945426890.5 V 310 UI 
+1794945426890.7 B 548 UI view=315
+1794945426918.8 F 28106 UI interact=45 draw=1288 present=26773
+1794945440431.4 U 5 UI Accessibility(Native(1, 1, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945440431.9 V 313 UI 
+1794945440432.1 B 550 UI view=317
+1794945440436.7 F 4231 UI interact=40 draw=1787 present=2403
+1794945440436.9 U 8 UI Accessibility(Refresh)
+1794945440437.3 V 302 UI 
+1794945440437.5 B 556 UI view=306
+1794945440451.3 F 13583 UI interact=21 draw=821 present=12741
+1794945440451.7 U 69 UI Accessibility(Snapshot(1, 12, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945440451.9 V 166 UI 
+1794945440452.0 B 283 UI view=169
+1794945440485.8 F 33800 UI interact=20 draw=739 present=33040
+1794945440518.9 U 7 UI Accessibility(Native(1, 1, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #81, data:
+1794945440519.3 V 347 UI 
+1794945440519.6 B 598 UI view=353
+1794945440523.6 F 3830 UI interact=45 draw=1836 present=1949
+1794945440523.9 U 57 UI Accessibility(Dispatch(1, GitHub(Menu(true))))
+1794945440524.3 V 363 UI 
+1794945440524.4 B 482 UI view=365
+1794945440536.7 F 12090 UI interact=25 draw=754 present=11311
+1794945440536.9 U 17 UI Accessibility(Snapshot(1, 13, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focused
+1794945440537.2 V 253 UI 
+1794945440537.3 B 376 UI view=257
+1794945440550.5 F 12739 UI interact=83 draw=805 present=11850
+1794945440550.6 U 2 UI Accessibility(Published(1, Ok(())))
+1794945440550.8 V 174 UI 
+1794945440550.9 B 282 UI view=177
+1794945440568.0 F 17037 UI interact=23 draw=770 present=16244
+1794945443129.8 U 6 UI Accessibility(Native(1, 2, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945443130.2 V 330 UI 
+1794945443130.5 B 561 UI view=336
+1794945443135.4 F 4756 UI interact=51 draw=2001 present=2704
+1794945443136.0 U 7 UI Accessibility(Refresh)
+1794945443136.2 V 186 UI 
+1794945443136.3 B 293 UI view=188
+1794945443151.5 F 15091 UI interact=23 draw=790 present=14278
+1794945443151.7 U 10 UI Accessibility(Snapshot(1, 14, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focused
+1794945443151.9 V 168 UI 
+1794945443152.1 B 277 UI view=171
+1794945443168.9 F 16852 UI interact=22 draw=784 present=16046
+1794945443178.6 U 3 UI Accessibility(Native(1, 2, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #91, data:
+1794945443178.8 V 161 UI 
+1794945443178.9 B 261 UI view=163
+1794945443184.5 F 5492 UI interact=20 draw=757 present=4715
+1794945443184.6 U 7 UI Accessibility(Dispatch(2, GitHub(SignIn)))
+1794945443184.7 C 12 UI new reqwest::Client
+1794945443185.1 V 214 UI 
+1794945443185.6 B 706 UI view=217
+1794945443185.7 U 6 UI Accessibility(Snapshot(1, 15, Snapshot { nodes: [Node { id: "github-cancel-sign-in", name: "Cancel", role: Button, enabled: true, focused: f
+1794945443185.7 U 10 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945443185.8 V 90 UI 
+1794945443185.9 B 174 UI view=92
+1794945443202.7 F 17107 UI interact=302 draw=895 present=15910
+1794945443202.9 U 7 UI Accessibility(Snapshot(1, 16, Snapshot { nodes: [Node { id: "github-cancel-sign-in", name: "Cancel", role: Button, enabled: true, focused: f
+1794945443203.1 V 156 UI 
+1794945443203.2 B 276 UI view=159
+1794945443218.6 F 15298 UI interact=18 draw=807 present=14473
+1794945443218.8 U 4 UI Accessibility(Published(1, Ok(())))
+1794945443219.3 V 378 UI 
+1794945443219.6 B 686 UI view=381
+1794945443235.2 F 15562 UI interact=41 draw=1280 present=14241
+1794945443525.1 U 25 UI GitHub(CodeReady(1, Ok(DeviceCode { verification_uri: "http://127.0.0.1:47191/login/device", interval: 5s, .. })))
+1794945443525.5 V 329 UI 
+1794945443528.6 B 3433 UI view=334
+1794945443535.4 F 4182 UI interact=103 draw=2136 present=1943
+1794945443535.5 U 11 UI Accessibility(Snapshot(1, 17, Snapshot { nodes: [Node { id: "github-code", name: "Code ABCD-1234, copy again", role: Button, enabled: true, 
+1794945443535.8 V 173 UI 
+1794945443535.9 B 299 UI view=176
+1794945443551.1 F 15033 UI interact=21 draw=818 present=14194
+1794945443551.2 U 2 UI Accessibility(Published(1, Ok(())))
+1794945443551.4 V 163 UI 
+1794945443551.5 B 282 UI view=166
+1794945443567.5 F 15985 UI interact=17 draw=774 present=15194
+1794945443599.4 B 676 UI view=383
+1794945443598.7 U 17 UI Canvas(Hover(None))
+1794945443599.1 V 380 UI 
+1794945443603.1 U 0 UI Star(Event(Window(Unfocused)))
+1794945443603.1 U 5 UI Accessibility(Window(Id(1), Unfocused))
+1794945443603.0 F 3527 UI interact=49 draw=1971 present=1507
+1794945443603.5 B 308 UI view=175
+1794945443603.4 V 172 UI 
+1794945443617.3 F 13518 UI interact=23 draw=820 present=12674
+1794945443617.5 U 12 UI Accessibility(Snapshot(1, 18, Snapshot { nodes: [Node { id: "github-code", name: "Code ABCD-1234, copy again", role: Button, enabled: true, 
+1794945443617.5 U 3 UI GitHub(Browser(Ok(())))
+1794945443617.7 V 174 UI 
+1794945443617.9 B 362 UI view=177
+1794945443634.4 F 16483 UI interact=20 draw=820 present=15642
+1794945443634.6 U 2 UI Accessibility(Published(1, Ok(())))
+1794945443634.6 U 12 UI Accessibility(Snapshot(1, 19, Snapshot { nodes: [Node { id: "github-code", name: "Code ABCD-1234, copy again", role: Button, enabled: true, 
+1794945443634.8 V 176 UI 
+1794945443634.9 B 310 UI view=179
+1794945443651.1 F 16195 UI interact=20 draw=815 present=15359
+1794945448526.9 U 9 UI GitHub(Poll(1))
+1794945448527.5 V 493 UI 
+1794945448528.1 B 1015 UI view=503
+1794945448533.7 F 5510 UI interact=64 draw=2760 present=2685
+1794945448534.5 B 586 UI view=315
+1794945448533.9 U 19 UI Accessibility(Snapshot(1, 20, Snapshot { nodes: [Node { id: "github-code", name: "Code ABCD-1234, copy again", role: Button, enabled: true, 
+1794945448534.3 V 313 UI 
+1794945448543.9 F 9293 UI interact=39 draw=1988 present=7266
+1794945448621.5 U 31 UI GitHub(Polled(1, Ok(Done(Tokens { login: "", access_expires_at: Some(1794974248), refresh_expires_at: Some(1810843048), .. }))))
+1794945448622.0 V 341 UI 
+1794945448622.3 B 701 UI view=346
+1794945448626.3 F 3937 UI interact=40 draw=1875 present=2022
+1794945448626.5 U 17 UI Accessibility(Snapshot(1, 21, Snapshot { nodes: [Node { id: "github-code", name: "Code ABCD-1234, copy again", role: Button, enabled: true, 
+1794945448626.9 V 331 UI 
+1794945448627.2 B 590 UI view=337
+1794945448635.6 F 8402 UI interact=37 draw=1867 present=6498
+1794945448722.3 H 100765 bg GET /user status=200 bytes=21
+1794945448868.1 H 145688 bg GET /user/installations?per_page=100 status=200 bytes=44
+1794945449019.9 H 151742 bg GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+1794945449032.3 U 12053 UI GitHub(SignedIn(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", repo: "lab-notes" }, private: t
+1794945449033.0 V 408 UI 
+1794945449034.5 B 1844 UI view=412
+1794945449035.5 B 494 UI view=293
+1794945449034.9 U 6 UI GitHub(Remembered(1, true))
+1794945449034.9 U 18 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945449035.3 V 290 UI 
+1794945449040.9 F 6145 UI interact=1065 draw=2234 present=2845
+1794945449041.2 U 10 UI Accessibility(Snapshot(1, 22, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945449041.2 U 12 UI Accessibility(Snapshot(1, 23, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945449042.0 B 572 UI view=333
+1794945449041.3 U 140 UI Accessibility(Snapshot(1, 24, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945449041.8 V 331 UI 
+1794945449044.2 D 9692 bg prefs.json save
+1794945449049.6 F 7374 UI interact=60 draw=1812 present=5501
+1794945449049.9 U 3 UI Accessibility(Published(1, Ok(())))
+1794945449049.9 U 7 UI GitHub(Kept(Ok(())))
+1794945449050.4 V 404 UI 
+1794945449050.6 B 647 UI view=407
+1794945449057.1 F 6292 UI interact=63 draw=1834 present=4394
+1794945449057.6 U 192 UI Accessibility(Snapshot(1, 25, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945449058.0 V 328 UI 
+1794945449058.2 B 574 UI view=333
+1794945449073.5 F 15196 UI interact=47 draw=1804 present=13344
+1794945454035.5 U 51 UI Star(Tick)
+1794945454035.9 V 325 UI 
+1794945454036.1 B 565 UI view=330
+1794945454040.4 F 4257 UI interact=47 draw=1824 present=2386
+1794945459035.0 U 42 UI Star(Tick)
+1794945459035.5 V 342 UI 
+1794945459035.7 B 583 UI view=348
+1794945459040.1 F 4321 UI interact=49 draw=1848 present=2424
+1794945464035.1 U 53 UI Star(Tick)
+1794945464035.5 V 377 UI 
+1794945464035.8 B 690 UI view=383
+1794945464040.1 F 4235 UI interact=49 draw=1852 present=2329
+1794945464430.2 U 6 UI Accessibility(Native(1, 4, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945464430.7 V 334 UI 
+1794945464430.9 B 569 UI view=340
+1794945464436.0 F 4830 UI interact=43 draw=2478 present=2309
+1794945464436.3 U 10 UI Accessibility(Refresh)
+1794945464436.8 V 346 UI 
+1794945464437.0 B 588 UI view=352
+1794945464445.6 F 8273 UI interact=57 draw=1951 present=6265
+1794945464446.0 U 174 UI Accessibility(Snapshot(1, 26, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945464446.4 V 322 UI 
+1794945464446.7 B 558 UI view=327
+1794945464453.5 F 6797 UI interact=64 draw=2199 present=4534
+1794945464464.7 U 7 UI Accessibility(Native(1, 4, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #174, data
+1794945464465.4 V 506 UI 
+1794945464465.8 B 904 UI view=514
+1794945464470.5 F 4500 UI interact=71 draw=2200 present=2228
+1794945464471.8 B 625 UI view=372
+1794945464471.1 U 52 UI Accessibility(Dispatch(4, GitHub(Menu(true))))
+1794945464471.6 V 370 UI 
+1794945464488.6 F 16448 UI interact=57 draw=2051 present=14340
+1794945464488.9 U 18 UI Accessibility(Snapshot(1, 27, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focused
+1794945464489.3 V 363 UI 
+1794945464489.6 B 636 UI view=368
+1794945464504.6 F 14293 UI interact=74 draw=1921 present=12298
+1794945464504.9 U 4 UI Accessibility(Published(1, Ok(())))
+1794945464505.3 V 343 UI 
+1794945464505.5 B 590 UI view=346
+1794945464520.9 F 15351 UI interact=58 draw=2003 present=13290
+1794945467105.1 U 6 UI Accessibility(Native(1, 5, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945467105.6 V 386 UI 
+1794945467105.8 B 621 UI view=390
+1794945467110.6 F 4374 UI interact=54 draw=1998 present=2322
+1794945467110.8 U 9 UI Accessibility(Refresh)
+1794945467111.2 V 327 UI 
+1794945467111.4 B 548 UI view=332
+1794945467120.0 F 8360 UI interact=49 draw=1949 present=6361
+1794945467120.3 U 20 UI Accessibility(Snapshot(1, 28, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focused
+1794945467120.7 V 336 UI 
+1794945467120.9 B 566 UI view=340
+1794945467144.6 F 23492 UI interact=58 draw=2025 present=21408
+1794945467164.3 U 5 UI Accessibility(Native(1, 5, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #182, data
+1794945467164.8 V 335 UI 
+1794945467165.0 B 562 UI view=341
+1794945467169.5 F 4381 UI interact=62 draw=2212 present=2107
+1794945467169.9 U 154 UI Accessibility(Dispatch(5, GitHub(Picker(Show(Open)))))
+1794945467170.6 V 540 UI 
+1794945467172.3 B 2237 UI view=548
+1794945467173.1 U 33 UI Accessibility(Snapshot(1, 29, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945467173.2 U 21 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945467173.6 V 376 UI 
+1794945467173.9 B 658 UI view=382
+1794945467182.4 F 9592 UI interact=1228 draw=2576 present=5788
+1794945467182.9 U 40 UI Accessibility(Snapshot(1, 30, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945467183.4 V 455 UI 
+1794945467183.7 B 770 UI view=458
+1794945467187.6 F 3802 UI interact=63 draw=1016 present=2723
+1794945467187.7 U 2 UI Accessibility(Published(1, Ok(())))
+1794945467187.9 V 192 UI 
+1794945467188.1 B 325 UI view=194
+1794945467221.6 F 33412 UI interact=21 draw=887 present=32504
+1794945467256.2 H 86274 bg GET /user status=200 bytes=21
+1794945467389.0 H 132775 bg GET /user/installations?per_page=100 status=200 bytes=44
+1794945467526.4 H 137333 bg GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+1794945467526.7 U 22 UI GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", repo: "lab-notes" }, private: tru
+1794945467527.2 V 408 UI 
+1794945467527.6 B 812 UI view=416
+1794945467532.8 F 5097 UI interact=67 draw=2520 present=2510
+1794945467533.1 U 45 UI Accessibility(Snapshot(1, 31, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945467533.7 V 394 UI 
+1794945467534.0 B 709 UI view=398
+1794945467541.3 F 7257 UI interact=64 draw=2575 present=4617
+1794945467678.3 F 4688 UI interact=132 draw=2267 present=2289
+1794945468178.7 F 5078 UI interact=122 draw=2188 present=2768
+1794945468678.2 F 4617 UI interact=121 draw=2243 present=2253
+1794945469034.6 U 51 UI Star(Tick)
+1794945469035.1 V 370 UI 
+1794945469035.4 B 656 UI view=375
+1794945469040.1 F 4693 UI interact=54 draw=2193 present=2445
+1794945469178.1 F 4561 UI interact=124 draw=2215 present=2222
+1794945469678.1 F 4539 UI interact=121 draw=2225 present=2193
+1794945469697.9 U 6 UI Accessibility(Native(1, 6, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945469698.4 V 421 UI 
+1794945469698.8 B 757 UI view=426
+1794945469704.1 F 5132 UI interact=54 draw=2660 present=2418
+1794945469704.4 U 9 UI Accessibility(Refresh)
+1794945469704.9 V 423 UI 
+1794945469705.2 B 760 UI view=430
+1794945469712.3 F 6981 UI interact=54 draw=2415 present=4512
+1794945469712.6 U 35 UI Accessibility(Snapshot(1, 32, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945469713.0 V 358 UI 
+1794945469713.3 B 628 UI view=363
+1794945469721.5 F 8014 UI interact=57 draw=2284 present=5673
+1794945469732.2 U 6 UI Accessibility(Native(1, 6, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #187, data
+1794945469732.7 V 412 UI 
+1794945469733.1 B 717 UI view=415
+1794945469738.0 F 4885 UI interact=54 draw=2379 present=2451
+1794945469738.7 U 18 UI Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+1794945469739.3 V 431 UI 
+1794945469739.8 B 872 UI view=438
+1794945469755.7 F 15824 UI interact=66 draw=2437 present=13320
+1794945469756.0 U 41 UI Accessibility(Snapshot(1, 33, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945469756.5 V 410 UI 
+1794945469756.8 B 707 UI view=415
+1794945469772.0 F 14948 UI interact=72 draw=2302 present=12574
+1794945469772.3 U 4 UI Accessibility(Published(1, Ok(())))
+1794945469772.9 V 493 UI 
+1794945469773.2 B 828 UI view=499
+1794945469788.2 F 14922 UI interact=61 draw=2288 present=12573
+1794945469882.2 H 143451 bg GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+1794945470000.9 H 118743 bg GET /repos/octo-test/group-drawings/git/commits/3ce9d132ac685992617503fa43864d68a6d935e2 status=200 bytes=59
+1794945470124.9 H 123942 bg GET /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c status=200 bytes=570
+1794945470125.3 U 26 UI GitHub(Picker(Listing(2, Ok((Some("3ce9d132ac685992617503fa43864d68a6d935e2"), "8721c1315a26ad73276b3f579db9024c94c1753c", [Entry { name: "2
+1794945470125.8 V 371 UI 
+1794945470126.1 B 653 UI view=376
+1794945470130.9 F 4605 UI interact=52 draw=2242 present=2311
+1794945470131.1 U 40 UI Accessibility(Snapshot(1, 34, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945470131.6 V 378 UI 
+1794945470131.9 B 663 UI view=381
+1794945470140.2 F 8278 UI interact=75 draw=2388 present=5814
+1794945470178.6 F 5011 UI interact=130 draw=2284 present=2596
+1794945470224.2 H 98841 bg GET /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c?recursive=1 status=200 bytes=4094
+1794945470224.6 U 79 UI GitHub(Picker(Whole(2, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "42d703a2a64ed0cf243878cbe4ce145f30763d37", folder: false }, Entry 
+1794945470225.1 V 410 UI 
+1794945470225.6 B 930 UI view=415
+1794945470235.0 F 9275 UI interact=52 draw=2838 present=6385
+1794945470235.3 U 57 UI Accessibility(Snapshot(1, 35, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945470235.9 V 435 UI 
+1794945470236.2 B 738 UI view=442
+1794945470243.3 F 7023 UI interact=60 draw=4079 present=2884
+1794945470243.6 U 4 UI Accessibility(Published(1, Ok(())))
+1794945470244.1 V 473 UI 
+1794945470244.5 B 796 UI view=478
+1794945470259.7 F 15152 UI interact=59 draw=3528 present=11565
+1794945470678.9 F 5292 UI interact=131 draw=2870 present=2291
+1794945471180.2 F 6527 UI interact=137 draw=3843 present=2547
+1794945471678.9 F 5292 UI interact=131 draw=2869 present=2291
+1794945472178.9 F 5313 UI interact=131 draw=2872 present=2310
+1794945472617.7 U 6 UI Accessibility(Native(1, 6, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945472618.2 V 422 UI 
+1794945472618.5 B 718 UI view=427
+1794945472624.1 F 5533 UI interact=54 draw=2950 present=2528
+1794945472624.5 U 8 UI Accessibility(Refresh)
+1794945472625.1 V 434 UI 
+1794945472625.4 B 773 UI view=440
+1794945472633.3 F 7803 UI interact=53 draw=2904 present=4846
+1794945472633.7 U 56 UI Accessibility(Snapshot(1, 36, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945472634.4 V 591 UI 
+1794945472634.7 B 886 UI view=594
+1794945472658.0 F 23076 UI interact=87 draw=3157 present=19831
+1794945472670.2 U 7 UI Accessibility(Native(1, 6, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #200, data
+1794945472670.8 V 438 UI 
+1794945472671.1 B 745 UI view=443
+1794945472676.6 F 5442 UI interact=56 draw=2942 present=2444
+1794945472693.4 F 16684 UI interact=130 draw=2926 present=13628
+1794945472693.6 U 21 UI Accessibility(Dispatch(6, GitHub(Picker(View(false)))))
+1794945472694.2 V 412 UI 
+1794945472694.7 B 913 UI view=418
+1794945472695.0 U 56 UI Accessibility(Snapshot(1, 37, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945472695.1 U 9 UI GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+1794945472695.6 B 496 UI view=274
+1794945472695.4 V 273 UI 
+1794945472704.6 D 10875 bg prefs.json save
+1794945472712.6 F 17737 UI interact=948 draw=2488 present=14301
+1794945472713.1 U 51 UI Accessibility(Snapshot(1, 38, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945472713.1 U 5 UI GitHub(Kept(Ok(())))
+1794945472713.6 V 410 UI 
+1794945472713.9 B 749 UI view=415
+1794945472728.7 F 14446 UI interact=64 draw=2480 present=11902
+1794945472728.9 U 4 UI Accessibility(Published(1, Ok(())))
+1794945472729.0 U 52 UI Accessibility(Snapshot(1, 39, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945472729.6 V 463 UI 
+1794945472729.9 B 789 UI view=469
+1794945472745.1 F 15122 UI interact=60 draw=2367 present=12695
+1794945473178.8 F 5131 UI interact=132 draw=2324 present=2675
+1794945473678.6 F 4972 UI interact=134 draw=2358 present=2479
+1794945474034.2 U 50 UI Star(Tick)
+1794945474034.7 V 391 UI 
+1794945474035.0 B 681 UI view=396
+1794945474040.1 F 5031 UI interact=55 draw=2324 present=2652
+1794945474180.1 F 6425 UI interact=130 draw=2447 present=3848
+1794945474679.0 F 5307 UI interact=146 draw=2398 present=2762
+1794945475178.8 F 5138 UI interact=141 draw=2327 present=2669
+1794945475678.7 F 5073 UI interact=139 draw=2335 present=2598
+1794945475698.1 U 6 UI Accessibility(Native(1, 6, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945475698.6 V 457 UI 
+1794945475699.0 B 814 UI view=463
+1794945475699.3 U 14 UI GitHub(Picker(Scrolled(64.29999, 377.7, 400.0)))
+1794945475699.8 V 420 UI 
+1794945475700.1 B 734 UI view=427
+1794945475705.5 F 6421 UI interact=1122 draw=2565 present=2734
+1794945475706.0 U 10 UI Accessibility(Refresh)
+1794945475706.1 U 4 UI Accessibility(Snapshot(1, 40, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475706.6 V 437 UI 
+1794945475706.9 B 742 UI view=443
+1794945475715.0 F 7713 UI interact=69 draw=2554 present=5090
+1794945475715.3 U 56 UI Accessibility(Snapshot(1, 41, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475715.8 V 435 UI 
+1794945475716.4 B 1018 UI view=440
+1794945475722.4 F 5727 UI interact=135 draw=2796 present=2796
+1794945475722.7 U 4 UI Accessibility(Published(1, Ok(())))
+1794945475723.2 V 438 UI 
+1794945475723.5 B 739 UI view=443
+1794945475738.9 F 14989 UI interact=71 draw=2081 present=12836
+1794945475801.8 F 5738 UI interact=51 draw=2714 present=2973
+1794945475803.9 B 800 UI view=450
+1794945475802.9 U 12 UI GitHub(Focused)
+1794945475802.9 U 11 UI Accessibility(Window(Id(1), Focused))
+1794945475803.0 U 0 UI Star(Event(Window(Focused)))
+1794945475803.5 V 447 UI 
+1794945475809.1 F 5103 UI interact=59 draw=1363 present=3680
+1794945475809.9 U 3 UI Accessibility(Snapshot(1, 42, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475810.0 U 24 UI Accessibility(Snapshot(1, 43, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475810.2 V 188 UI 
+1794945475810.3 B 310 UI view=190
+1794945475844.8 F 34462 UI interact=20 draw=951 present=33491
+1794945475845.1 U 10 UI Accessibility(Refresh)
+1794945475845.2 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945475845.2 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945475845.9 V 571 UI 
+1794945475846.3 B 1016 UI view=579
+1794945475854.0 F 5391 UI interact=147 draw=2584 present=2660
+1794945475854.2 U 4 UI Accessibility(Published(1, Ok(())))
+1794945475854.3 U 62 UI Accessibility(Snapshot(1, 44, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475854.8 V 436 UI 
+1794945475855.2 B 746 UI view=441
+1794945475870.9 F 14921 UI interact=45 draw=989 present=13887
+1794945475871.2 U 4 UI Accessibility(Published(1, Ok(())))
+1794945475871.7 V 435 UI 
+1794945475872.1 B 755 UI view=441
+1794945475886.9 F 11333 UI interact=73 draw=1014 present=10246
+1794945475887.1 U 6 UI GitHub(Picker(Select(4)))
+1794945475887.6 V 400 UI 
+1794945475887.9 B 734 UI view=408
+1794945475904.7 F 16532 UI interact=49 draw=2468 present=14015
+1794945475904.9 U 9 UI Accessibility(Refresh)
+1794945475905.0 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945475905.0 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945475905.0 U 4 UI Accessibility(Snapshot(1, 45, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475905.5 V 418 UI 
+1794945475905.8 B 722 UI view=423
+1794945475921.3 F 14500 UI interact=114 draw=2605 present=11781
+1794945475921.6 U 61 UI Accessibility(Snapshot(1, 46, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475922.1 V 393 UI 
+1794945475922.4 B 702 UI view=398
+1794945475938.1 F 14937 UI interact=48 draw=975 present=13913
+1794945475938.4 U 5 UI Accessibility(Published(1, Ok(())))
+1794945475939.0 V 452 UI 
+1794945475939.3 B 753 UI view=457
+1794945475954.8 F 15318 UI interact=59 draw=2482 present=12777
+1794945475955.1 U 8 UI Accessibility(Refresh)
+1794945475955.1 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945475955.1 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945475955.6 V 447 UI 
+1794945475956.0 B 800 UI view=452
+1794945475971.7 F 15526 UI interact=53 draw=2479 present=12994
+1794945475972.0 U 50 UI Accessibility(Snapshot(1, 47, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945475972.6 V 442 UI 
+1794945475972.9 B 750 UI view=448
+1794945475987.8 F 14384 UI interact=86 draw=2554 present=11743
+1794945475988.2 U 88 UI GitHub(Picker(Select(4)))
+1794945475989.0 V 552 UI 
+1794945475989.4 B 972 UI view=559
+1794945476004.7 F 14242 UI interact=120 draw=2576 present=11546
+1794945476005.0 U 9 UI Accessibility(Refresh)
+1794945476005.0 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945476005.0 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945476005.1 U 3 UI Accessibility(Snapshot(1, 48, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476005.6 V 471 UI 
+1794945476005.9 B 780 UI view=477
+1794945476021.3 F 14880 UI interact=51 draw=2426 present=12402
+1794945476021.6 U 52 UI Accessibility(Snapshot(1, 49, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476022.2 V 482 UI 
+1794945476022.6 B 857 UI view=488
+1794945476037.5 F 14668 UI interact=97 draw=2285 present=12285
+1794945476037.7 U 4 UI Accessibility(Published(1, Ok(())))
+1794945476038.2 V 378 UI 
+1794945476038.5 B 690 UI view=384
+1794945476054.5 F 15914 UI interact=50 draw=2288 present=13576
+1794945476093.8 H 105585 bg GET /repos/octo-test/group-drawings/git/trees/4486145be339e65be156be74aa779e12f22a2b18 status=200 bytes=707
+1794945476094.5 U 163 UI GitHub(Picker(Listing(4, Ok((None, "4486145be339e65be156be74aa779e12f22a2b18", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2a
+1794945476095.5 V 752 UI 
+1794945476096.1 B 1406 UI view=764
+1794945476096.5 U 66 UI Accessibility(Snapshot(1, 50, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476096.6 U 21 UI GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+1794945476097.0 V 351 UI 
+1794945476097.3 B 631 UI view=356
+1794945476102.9 F 6611 UI interact=1140 draw=2929 present=2542
+1794945476103.7 U 58 UI Accessibility(Snapshot(1, 51, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476104.3 V 462 UI 
+1794945476104.6 B 809 UI view=467
+1794945476111.9 F 7241 UI interact=51 draw=2594 present=4595
+1794945476112.3 U 5 UI Accessibility(Published(1, Ok(())))
+1794945476112.9 V 528 UI 
+1794945476113.3 B 877 UI view=534
+1794945476128.0 F 14631 UI interact=60 draw=3164 present=11407
+1794945476181.9 H 87024 bg GET /repos/octo-test/group-drawings/git/blobs/a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a status=200 bytes=2281
+1794945476182.7 U 9 UI GitHub(Picker(Thumb("a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945476183.5 V 700 UI 
+1794945476183.8 B 1027 UI view=703
+1794945476186.3 H 91506 bg GET /repos/octo-test/group-drawings/git/blobs/fa350f2f71467edd420d17243985f40b287e237b status=200 bytes=5639
+1794945476187.0 H 92037 bg GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-01.rsk&per_page=1 status=200 bytes=180
+1794945476190.7 F 6754 UI interact=52 draw=4071 present=2631
+1794945476191.1 U 60 UI Accessibility(Snapshot(1, 52, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476191.1 U 7 UI GitHub(Picker(Thumb("fa350f2f71467edd420d17243985f40b287e237b", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945476191.2 U 54 UI GitHub(Picker(Changed(2, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+1794945476191.7 V 415 UI 
+1794945476192.0 B 795 UI view=418
+1794945476202.1 F 9916 UI interact=51 draw=2984 present=6880
+1794945476202.5 U 8 UI Accessibility(Snapshot(1, 53, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476202.6 U 84 UI Accessibility(Snapshot(1, 54, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476203.9 B 1178 UI view=532
+1794945476203.2 V 529 UI 
+1794945476205.6 H 110460 bg GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-26.rsk&per_page=1 status=200 bytes=193
+1794945476205.7 H 110628 bg GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-21.rsk&per_page=1 status=200 bytes=197
+1794945476210.9 H 116197 bg GET /repos/octo-test/group-drawings/git/blobs/9bb40193ff31012d6dec2a68acd9ce6920715e4d status=200 bytes=43720
+1794945476219.2 H 124311 bg GET /repos/octo-test/group-drawings/git/blobs/4f14aa06a77bb0a5e6c2e3090bc603615a860a4b status=200 bytes=8322
+1794945476224.9 H 129790 bg GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-16.rsk&per_page=1 status=200 bytes=205
+1794945476227.4 F 23294 UI interact=88 draw=2980 present=20226
+1794945476227.6 U 5 UI Accessibility(Published(1, Ok(())))
+1794945476228.2 V 499 UI 
+1794945476228.6 B 851 UI view=505
+1794945476230.9 H 135829 bg GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-11.rsk&per_page=1 status=200 bytes=193
+1794945476231.2 H 136362 bg GET /repos/octo-test/group-drawings/git/blobs/a13e9f3a519057509f6aabd2fd8906d00bd6b011 status=200 bytes=43721
+1794945476239.7 H 144833 bg GET /repos/octo-test/group-drawings/git/blobs/14b8ce5c2a399b21a484f842445c60465ef66d8c status=200 bytes=73629
+1794945476243.6 F 14948 UI interact=59 draw=2802 present=12086
+1794945476243.6 H 148642 bg GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-06.rsk&per_page=1 status=200 bytes=197
+1794945476243.9 U 14 UI GitHub(Picker(Changed(2, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+1794945476243.9 U 3 UI GitHub(Picker(Changed(2, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+1794945476244.0 U 2 UI GitHub(Picker(Thumb("9bb40193ff31012d6dec2a68acd9ce6920715e4d", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945476244.0 U 2 UI GitHub(Picker(Thumb("4f14aa06a77bb0a5e6c2e3090bc603615a860a4b", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945476244.0 U 3 UI GitHub(Picker(Changed(2, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+1794945476244.6 V 511 UI 
+1794945476245.0 B 944 UI view=517
+1794945476258.0 F 12597 UI interact=79 draw=10776 present=1742
+1794945476258.1 U 8 UI GitHub(Picker(Changed(2, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+1794945476258.2 U 1 UI GitHub(Picker(Thumb("a13e9f3a519057509f6aabd2fd8906d00bd6b011", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945476258.2 U 0 UI GitHub(Picker(Thumb("14b8ce5c2a399b21a484f842445c60465ef66d8c", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945476258.2 U 1 UI GitHub(Picker(Changed(2, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+1794945476258.2 U 3 UI Accessibility(Snapshot(1, 55, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476258.2 U 0 UI Accessibility(Snapshot(1, 56, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476258.2 U 1 UI Accessibility(Snapshot(1, 57, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476258.2 U 0 UI Accessibility(Snapshot(1, 58, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476258.2 U 1 UI Accessibility(Snapshot(1, 59, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476258.4 V 217 UI 
+1794945476258.6 B 365 UI view=219
+1794945476271.8 F 13125 UI interact=27 draw=10355 present=2743
+1794945476272.0 U 3 UI Accessibility(Snapshot(1, 60, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476272.0 U 1 UI Accessibility(Snapshot(1, 61, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476272.0 U 1 UI Accessibility(Snapshot(1, 62, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476272.0 U 31 UI Accessibility(Snapshot(1, 63, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945476272.3 V 252 UI 
+1794945476272.5 B 392 UI view=254
+1794945476287.7 F 15138 UI interact=26 draw=1157 present=13954
+1794945476287.9 U 2 UI Accessibility(Published(1, Ok(())))
+1794945476288.1 V 221 UI 
+1794945476288.3 B 360 UI view=228
+1794945476304.7 F 16218 UI interact=28 draw=1184 present=15005
+1794945479034.4 U 52 UI Star(Tick)
+1794945479034.9 V 446 UI 
+1794945479035.3 B 770 UI view=451
+1794945479042.9 F 7577 UI interact=59 draw=2801 present=4716
+1794945484034.2 U 53 UI Star(Tick)
+1794945484034.8 V 501 UI 
+1794945484035.2 B 904 UI view=508
+1794945484043.5 F 8278 UI interact=64 draw=2966 present=5247
+1794945489034.7 U 36 UI Star(Tick)
+1794945489035.9 V 716 UI 
+1794945489036.3 B 1149 UI view=724
+1794945489046.1 F 9739 UI interact=74 draw=3607 present=6057
+1794945492518.2 U 8 UI Accessibility(Native(1, 6, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945492518.8 V 535 UI 
+1794945492519.2 B 887 UI view=541
+1794945492530.4 F 11020 UI interact=63 draw=2825 present=8132
+1794945492530.9 U 14 UI Accessibility(Refresh)
+1794945492531.9 V 822 UI 
+1794945492532.5 B 1450 UI view=835
+1794945492555.0 F 22256 UI interact=108 draw=4587 present=17561
+1794945492555.7 U 87 UI Accessibility(Snapshot(1, 64, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492556.3 V 540 UI 
+1794945492556.7 B 951 UI view=547
+1794945492598.5 F 41705 UI interact=118 draw=5302 present=36285
+1794945492631.2 F 7176 UI interact=103 draw=2920 present=4153
+1794945492631.8 U 10 UI Accessibility(Refresh)
+1794945492631.8 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 886.0, y: 306.4 } })))
+1794945492631.8 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945492632.5 V 578 UI 
+1794945492632.9 B 964 UI view=584
+1794945492641.3 F 8239 UI interact=78 draw=3118 present=5042
+1794945492641.7 U 73 UI Accessibility(Snapshot(1, 65, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492642.3 V 518 UI 
+1794945492642.7 B 886 UI view=525
+1794945492660.5 F 17616 UI interact=83 draw=3398 present=14137
+1794945492660.8 U 3 UI Accessibility(Published(1, Ok(())))
+1794945492661.4 V 516 UI 
+1794945492661.8 B 874 UI view=522
+1794945492678.2 F 16290 UI interact=77 draw=3490 present=12722
+1794945492679.1 U 12 UI GitHub(Picker(Select(0)))
+1794945492679.7 V 473 UI 
+1794945492680.1 B 810 UI view=481
+1794945492695.8 F 15617 UI interact=55 draw=3232 present=12330
+1794945492696.0 U 10 UI Accessibility(Refresh)
+1794945492696.1 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 886.0, y: 306.4 } })))
+1794945492696.1 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945492696.6 V 473 UI 
+1794945492697.0 B 782 UI view=479
+1794945492712.7 F 15657 UI interact=50 draw=3151 present=12456
+1794945492713.0 U 6 UI Accessibility(Snapshot(1, 66, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492713.6 V 470 UI 
+1794945492713.9 B 782 UI view=476
+1794945492729.4 F 15453 UI interact=56 draw=3203 present=12193
+1794945492729.7 U 71 UI Accessibility(Snapshot(1, 67, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492730.2 V 447 UI 
+1794945492730.6 B 762 UI view=454
+1794945492746.3 F 15623 UI interact=58 draw=3212 present=12352
+1794945492746.6 U 4 UI Accessibility(Published(1, Ok(())))
+1794945492747.0 V 407 UI 
+1794945492747.3 B 689 UI view=414
+1794945492753.8 F 5770 UI interact=58 draw=3147 present=2565
+1794945492770.8 F 16727 UI interact=61 draw=2572 present=14094
+1794945492771.0 U 6 UI Accessibility(Refresh)
+1794945492771.0 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 886.0, y: 306.4 } })))
+1794945492771.0 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945492771.4 V 378 UI 
+1794945492771.7 B 652 UI view=383
+1794945492787.4 F 15600 UI interact=43 draw=2586 present=12971
+1794945492787.7 U 53 UI Accessibility(Snapshot(1, 68, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492788.1 V 363 UI 
+1794945492788.4 B 630 UI view=368
+1794945492804.5 F 15596 UI interact=60 draw=2580 present=12956
+1794945492805.1 D 13 UI read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945492805.1 D 296 UI workcopy::folder (scan)
+1794945492805.1 D 4 UI read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945492805.1 D 2 UI read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945492805.1 D 4 UI picker_open_path read working copy
+1794945492805.1 U 363 UI GitHub(Picker(Select(0)))
+1794945492805.2 K 0 UI /repos/octo-test/group-drawings/git/blobs/9bb40193ff31012d6dec2a68acd9ce6920715e4d
+1794945492805.6 V 404 UI 
+1794945492805.9 B 689 UI view=409
+1794945492821.8 F 15762 UI interact=38 draw=2609 present=13115
+1794945492822.3 D 6 UI read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945492822.3 D 199 UI workcopy::folder (scan)
+1794945492822.3 D 3 UI read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945492822.3 U 219 UI GitHub(Picker(Downloaded(5, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, private: true, default_branch: "main"
+1794945492822.4 U 4 UI Accessibility(Refresh)
+1794945492822.4 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 886.0, y: 306.4 } })))
+1794945492822.5 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945492822.5 U 3 UI Accessibility(Snapshot(1, 69, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492822.9 V 395 UI 
+1794945492823.2 B 678 UI view=401
+1794945492834.0 D 11615 bg workcopy::checkout routes/drawing-01.rsk
+1794945492838.0 F 14640 UI interact=44 draw=2631 present=11964
+1794945492838.2 U 5 UI Accessibility(Snapshot(1, 70, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492838.2 U 59 UI Accessibility(Snapshot(1, 71, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945492838.7 V 369 UI 
+1794945492839.0 B 639 UI view=374
+1794945492854.7 F 15678 UI interact=55 draw=2607 present=13015
+1794945492855.3 U 303 UI GitHub(Picker(Written(5, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-01.rsk", Ok(("/private/tmp/claude-502/-User
+1794945492855.5 D 45 bg read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945492855.9 V 363 UI 
+1794945492857.0 B 1527 UI view=370
+1794945492857.5 U 3 UI Accessibility(Published(1, Ok(())))
+1794945492857.9 U 395 UI FilePrepared(Some(("/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-12
+1794945492858.1 U 8 UI Accessibility(Snapshot(1, 72, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492858.1 U 12 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945492858.4 D 412 bg workcopy::hashes octo-test/group-drawings files=1
+1794945492860.5 V 443 UI 
+1794945492861.1 B 1128 UI view=448
+1794945492863.5 D 8112 bg workcopy::persist write state.json
+1794945492872.6 D 14634 bg prefs.json save
+1794945492879.5 F 22155 UI interact=4255 draw=14694 present=3206
+1794945492881.8 U 16 UI Tab(TabId(0), Autosaved(Key { serial: 1, generation: 1, epoch: 1, revision: 1, clear: true }, Ok(None)))
+1794945492881.9 U 7 UI Tab(TabId(0), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 8, [("routes/drawing-01.rsk", Some("9bb40193ff31012d6de
+1794945492881.9 U 8 UI Accessibility(Snapshot(1, 73, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492881.9 U 6 UI Accessibility(Snapshot(1, 74, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492881.9 U 2 UI GitHub(Persisted(true, Ok(())))
+1794945492881.9 U 3 UI Tab(TabId(0), GitHub(Kept(Ok(()))))
+1794945492882.0 U 44 UI Tab(TabId(0), LabelsReady(Key { revision: 1, epoch: 1 }, Ok(Refresh { cache: {1: Entry { source: Document { generic: Generic { alternatives:
+1794945492882.3 V 282 UI 
+1794945492882.6 B 506 UI view=286
+1794945492886.7 F 3169 UI interact=51 draw=1782 present=1336
+1794945492886.8 U 10 UI Accessibility(Snapshot(1, 75, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.8 U 5 UI Accessibility(Snapshot(1, 76, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.8 U 6 UI Accessibility(Snapshot(1, 77, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.9 U 5 UI Accessibility(Snapshot(1, 78, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.9 U 4 UI Accessibility(Snapshot(1, 79, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.9 U 4 UI Accessibility(Snapshot(1, 80, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.9 U 5 UI Accessibility(Snapshot(1, 81, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492886.9 U 4 UI Accessibility(Snapshot(1, 82, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492887.0 U 103 UI Accessibility(Snapshot(1, 83, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945492887.3 V 272 UI 
+1794945492887.5 B 467 UI view=276
+1794945492904.3 F 16499 UI interact=46 draw=1560 present=14893
+1794945492904.4 U 3 UI Accessibility(Published(1, Ok(())))
+1794945492904.8 V 264 UI 
+1794945492905.0 B 466 UI view=267
+1794945492920.3 F 15258 UI interact=43 draw=1559 present=13655
+1794945493211.1 U 398 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 1, epoch: 1, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+1794945493211.9 V 503 UI 
+1794945493212.3 B 947 UI view=511
+1794945493219.3 F 6656 UI interact=90 draw=3992 present=2573
+1794945493219.9 U 292 UI Accessibility(Snapshot(1, 84, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945493220.6 V 524 UI 
+1794945493221.1 B 1012 UI view=528
+1794945493228.5 F 7337 UI interact=107 draw=3313 present=3917
+1794945493255.1 U 17 UI Tab(TabId(0), InspectorAction(PropertiesCalculated(PropertyKey { revision: 1, epoch: 1, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1
+1794945493257.1 V 1930 UI 
+1794945493257.5 B 2329 UI view=1934
+1794945493257.9 U 5 UI Accessibility(Snapshot(1, 85, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945493258.0 U 118 UI Accessibility(Snapshot(1, 86, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945493258.0 U 7 UI InspectorScroll(0.0)
+1794945493258.3 V 296 UI 
+1794945493258.5 B 442 UI view=299
+1794945493262.9 F 5177 UI interact=871 draw=1617 present=2689
+1794945493263.3 U 108 UI Accessibility(Snapshot(1, 87, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945493263.7 V 336 UI 
+1794945493263.8 B 510 UI view=339
+1794945493270.5 F 6696 UI interact=40 draw=1892 present=4763
+1794945493270.7 U 1 UI Accessibility(Published(1, Ok(())))
+1794945493271.1 V 355 UI 
+1794945493271.2 B 534 UI view=358
+1794945493287.2 F 15921 UI interact=42 draw=1782 present=14096
+1794945494034.6 U 60 UI Star(Tick)
+1794945494035.5 V 804 UI 
+1794945494036.0 B 1309 UI view=812
+1794945494041.7 F 5708 UI interact=115 draw=2984 present=2609
+1794945499034.3 U 60 UI Star(Tick)
+1794945499035.1 V 694 UI 
+1794945499035.5 B 1056 UI view=707
+1794945499042.1 F 6544 UI interact=86 draw=3054 present=3404
+1794945504034.1 U 73 UI Star(Tick)
+1794945504034.9 V 742 UI 
+1794945504035.3 B 1134 UI view=751
+1794945504043.0 F 7653 UI interact=94 draw=2919 present=4640
+1794945504636.8 U 10 UI Accessibility(Native(1, 8, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945504638.3 V 1314 UI 
+1794945504639.0 B 1991 UI view=1325
+1794945504650.5 F 10638 UI interact=156 draw=6054 present=4428
+1794945504650.9 U 12 UI Accessibility(Refresh)
+1794945504652.7 V 1462 UI 
+1794945504653.2 B 1969 UI view=1471
+1794945504660.5 F 6979 UI interact=99 draw=3386 present=3494
+1794945504661.1 U 225 UI Accessibility(Snapshot(1, 88, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled:
+1794945504662.1 V 814 UI 
+1794945504662.9 B 1650 UI view=831
+1794945504672.3 F 8942 UI interact=220 draw=5684 present=3050
+1794945504687.3 U 510 UI Accessibility(Native(1, 8, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #309, data
+1794945504688.2 V 723 UI 
+1794945504688.7 B 1183 UI view=731
+1794945504696.1 F 7185 UI interact=160 draw=3979 present=3046
+1794945504696.5 U 69 UI Accessibility(Dispatch(8, GitHub(Menu(true))))
+1794945504697.8 V 936 UI 
+1794945504698.3 B 1445 UI view=946
+1794945504707.0 F 8161 UI interact=274 draw=4575 present=3311
+1794945504707.4 U 48 UI Accessibility(Snapshot(1, 89, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focused
+1794945504708.4 V 792 UI 
+1794945504708.9 B 1272 UI view=804
+1794945504721.6 F 11753 UI interact=273 draw=6667 present=4814
+1794945504722.2 U 7 UI Accessibility(Published(1, Ok(())))
+1794945504723.9 V 1469 UI 
+1794945504724.7 B 2240 UI view=1486
+1794945504736.3 F 11198 UI interact=237 draw=6698 present=4263
+1794945505219.9 U 7 UI Accessibility(Native(1, 9, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #
+1794945505220.8 V 713 UI 
+1794945505221.2 B 1116 UI view=719
+1794945505227.1 F 5511 UI interact=92 draw=2907 present=2511
+1794945505227.4 U 13 UI Accessibility(Refresh)
+1794945505228.2 V 726 UI 
+1794945505228.6 B 1111 UI view=732
+1794945505268.0 F 39123 UI interact=95 draw=3209 present=35819
+1794945505268.5 U 33 UI Accessibility(Snapshot(1, 90, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focused
+1794945505269.4 V 773 UI 
+1794945505269.9 B 1223 UI view=779
+1794945505278.7 F 8842 UI interact=122 draw=5165 present=3555
+1794945505294.4 U 5 UI Accessibility(Native(1, 9, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #325, data
+1794945505295.3 V 694 UI 
+1794945505295.7 B 1060 UI view=702
+1794945505301.9 F 5712 UI interact=103 draw=2980 present=2628
+1794945505302.2 U 35 UI Accessibility(Dispatch(9, GitHub(Picker(Show(Open)))))
+1794945505303.5 V 1025 UI 
+1794945505306.6 B 4164 UI view=1035
+1794945505307.4 U 54 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945505307.5 U 5 UI InspectorScroll(0.0)
+1794945505308.5 V 845 UI 
+1794945505309.0 B 1371 UI view=855
+1794945505345.1 F 38316 UI interact=2397 draw=27884 present=8034
+1794945505345.9 U 11 UI Accessibility(Snapshot(1, 91, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505346.0 U 6 UI Accessibility(Snapshot(1, 92, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505346.2 U 208 UI Accessibility(Snapshot(1, 93, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505348.1 V 1607 UI 
+1794945505348.8 B 2286 UI view=1619
+1794945505361.2 F 12164 UI interact=92 draw=5130 present=6941
+1794945505361.6 U 5 UI Accessibility(Published(1, Ok(())))
+1794945505362.8 V 972 UI 
+1794945505363.4 B 1602 UI view=988
+1794945505370.6 F 7101 UI interact=92 draw=3517 present=3491
+1794945505398.3 H 95970 bg GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+1794945505398.3 K 0 bg /repos/octo-test/group-drawings/git/commits/3ce9d132ac685992617503fa43864d68a6d935e2
+1794945505398.3 K 0 bg /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c
+1794945505399.0 U 33 UI GitHub(Picker(Listing(10, Ok((Some("3ce9d132ac685992617503fa43864d68a6d935e2"), "8721c1315a26ad73276b3f579db9024c94c1753c", [Entry { name: "
+1794945505399.1 K 0 UI /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c?recursive=1
+1794945505400.2 V 957 UI 
+1794945505401.0 B 1679 UI view=965
+1794945505401.4 U 33 UI GitHub(Picker(Whole(10, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "42d703a2a64ed0cf243878cbe4ce145f30763d37", folder: false }, Entry
+1794945505401.4 U 4 UI Accessibility(Snapshot(1, 94, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505401.4 U 5 UI GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+1794945505402.3 V 698 UI 
+1794945505402.6 B 1068 UI view=704
+1794945505403.0 H 100777 bg GET /user status=200 bytes=21
+1794945505414.3 F 13183 UI interact=1676 draw=3524 present=7983
+1794945505415.0 U 10 UI Accessibility(Snapshot(1, 95, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505415.1 U 154 UI Accessibility(Snapshot(1, 96, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505417.0 V 1573 UI 
+1794945505417.5 B 2112 UI view=1584
+1794945505432.2 F 14509 UI interact=79 draw=8442 present=5987
+1794945505433.5 U 5 UI Accessibility(Published(1, Ok(())))
+1794945505434.7 V 996 UI 
+1794945505435.3 B 1600 UI view=1004
+1794945505445.5 F 10164 UI interact=84 draw=4012 present=6067
+1794945505549.7 H 146701 bg GET /user/installations?per_page=100 status=200 bytes=44
+1794945505702.7 H 152929 bg GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+1794945505703.4 U 40 UI GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", repo: "lab-notes" }, private: tru
+1794945505705.0 V 1451 UI 
+1794945505705.8 B 2265 UI view=1466
+1794945505720.5 F 14395 UI interact=109 draw=6883 present=7403
+1794945505721.3 U 115 UI Accessibility(Snapshot(1, 97, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945505722.9 V 1364 UI 
+1794945505723.5 B 1932 UI view=1375
+1794945505735.5 F 11919 UI interact=85 draw=4842 present=6992
+1794945505910.0 F 8476 UI interact=207 draw=3405 present=4863
+1794945506417.6 F 9253 UI interact=219 draw=3899 present=5135
+1794945506920.9 F 11306 UI interact=391 draw=6737 present=4178
+1794945507417.8 F 9423 UI interact=206 draw=3466 present=5751
+1794945507920.9 F 12578 UI interact=324 draw=4403 present=7852
+1794945508419.6 F 11307 UI interact=153 draw=6785 present=4368
+1794945508922.7 F 13906 UI interact=421 draw=7600 present=5885
+1794945509034.6 U 70 UI Star(Tick)
+1794945509035.8 V 1105 UI 
+1794945509036.5 B 1808 UI view=1115
+1794945509044.5 F 7893 UI interact=93 draw=3660 present=4139
+1794945509331.5 F 11781 UI interact=232 draw=4016 present=7533
+1794945509908.2 F 7357 UI interact=162 draw=3503 present=3691
+1794945510416.7 F 14867 UI interact=258 draw=7114 present=7494
+1794945510913.7 F 13018 UI interact=253 draw=7060 present=5705
+1794945511417.2 F 15456 UI interact=351 draw=7446 present=7658
+1794945511908.0 F 7173 UI interact=158 draw=3699 present=3315
+1794945512411.3 F 10679 UI interact=255 draw=5274 present=5149
+1794945512912.6 F 10430 UI interact=204 draw=4371 present=5854
+1794945513420.0 F 11718 UI interact=188 draw=5607 present=5922
+1794945513425.4 U 11 UI Accessibility(Native(1, 10, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945513427.3 V 1577 UI 
+1794945513428.2 B 2487 UI view=1591
+1794945513429.2 U 13 UI Accessibility(Refresh)
+1794945513429.3 U 21 UI GitHub(Picker(Scrolled(64.29999, 377.7, 400.0)))
+1794945513431.0 V 1514 UI 
+1794945513432.2 B 2646 UI view=1526
+1794945513440.7 F 11938 UI interact=3875 draw=4069 present=3993
+1794945513441.3 U 10 UI Accessibility(Snapshot(1, 98, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945513441.5 U 152 UI Accessibility(Snapshot(1, 99, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enabled
+1794945513443.1 V 1429 UI 
+1794945513444.0 B 2332 UI view=1443
+1794945513483.8 F 39223 UI interact=238 draw=4410 present=34575
+1794945513484.3 U 5 UI Accessibility(Published(1, Ok(())))
+1794945513485.6 V 1103 UI 
+1794945513486.2 B 1653 UI view=1112
+1794945513494.9 F 8650 UI interact=86 draw=3562 present=5001
+1794945513533.0 F 8445 UI interact=156 draw=3579 present=4710
+1794945513533.9 U 13 UI Accessibility(Refresh)
+1794945513533.9 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945513533.9 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945513535.0 V 939 UI 
+1794945513535.5 B 1467 UI view=948
+1794945513544.7 F 9022 UI interact=74 draw=4623 present=4326
+1794945513545.3 U 145 UI Accessibility(Snapshot(1, 100, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513546.4 V 968 UI 
+1794945513547.0 B 1561 UI view=977
+1794945513554.6 F 7339 UI interact=92 draw=4237 present=3010
+1794945513554.8 U 4 UI Accessibility(Published(1, Ok(())))
+1794945513555.9 V 895 UI 
+1794945513556.3 B 1353 UI view=903
+1794945513572.4 F 16012 UI interact=68 draw=3828 present=12116
+1794945513576.4 U 10 UI GitHub(Picker(Select(4)))
+1794945513577.3 V 755 UI 
+1794945513577.7 B 1181 UI view=764
+1794945513584.7 F 6847 UI interact=50 draw=3761 present=3036
+1794945513584.9 U 7 UI Accessibility(Refresh)
+1794945513584.9 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945513584.9 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945513585.7 V 677 UI 
+1794945513586.0 B 1016 UI view=682
+1794945513592.9 F 6802 UI interact=44 draw=3208 present=3549
+1794945513593.1 U 6 UI Accessibility(Snapshot(1, 101, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513593.2 U 76 UI Accessibility(Snapshot(1, 102, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513594.0 V 675 UI 
+1794945513594.3 B 1013 UI view=677
+1794945513610.2 F 15749 UI interact=50 draw=2904 present=12795
+1794945513610.4 U 4 UI Accessibility(Published(1, Ok(())))
+1794945513611.2 V 646 UI 
+1794945513611.5 B 971 UI view=652
+1794945513625.9 F 14309 UI interact=44 draw=2703 present=11562
+1794945513642.8 F 15612 UI interact=78 draw=2781 present=12753
+1794945513643.2 U 9 UI Accessibility(Refresh)
+1794945513643.2 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945513643.2 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945513644.0 V 687 UI 
+1794945513644.4 B 1023 UI view=692
+1794945513660.3 F 15884 UI interact=45 draw=3063 present=12775
+1794945513660.6 U 59 UI Accessibility(Snapshot(1, 103, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513661.4 V 641 UI 
+1794945513661.7 B 964 UI view=646
+1794945513676.2 F 14454 UI interact=44 draw=2852 present=11558
+1794945513678.3 U 17 UI GitHub(Picker(Select(4)))
+1794945513678.3 K 0 UI /repos/octo-test/group-drawings/git/trees/4486145be339e65be156be74aa779e12f22a2b18
+1794945513679.1 V 658 UI 
+1794945513679.5 B 1050 UI view=663
+1794945513694.3 F 14751 UI interact=41 draw=3237 present=11473
+1794945513694.7 U 77 UI GitHub(Picker(Listing(11, Ok((None, "4486145be339e65be156be74aa779e12f22a2b18", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2
+1794945513694.7 U 3 UI Accessibility(Refresh)
+1794945513694.7 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945513694.7 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945513694.7 K 0 bg /repos/octo-test/group-drawings/git/blobs/9bb40193ff31012d6dec2a68acd9ce6920715e4d
+1794945513694.8 K 0 bg /repos/octo-test/group-drawings/git/blobs/fa350f2f71467edd420d17243985f40b287e237b
+1794945513694.8 K 0 bg /repos/octo-test/group-drawings/git/blobs/a13e9f3a519057509f6aabd2fd8906d00bd6b011
+1794945513694.9 K 0 bg /repos/octo-test/group-drawings/git/blobs/14b8ce5c2a399b21a484f842445c60465ef66d8c
+1794945513694.9 K 0 bg /repos/octo-test/group-drawings/git/blobs/4f14aa06a77bb0a5e6c2e3090bc603615a860a4b
+1794945513695.0 K 0 bg /repos/octo-test/group-drawings/git/blobs/a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a
+1794945513695.0 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-01.rsk&per_page=1
+1794945513695.0 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-06.rsk&per_page=1
+1794945513695.0 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-11.rsk&per_page=1
+1794945513695.0 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-16.rsk&per_page=1
+1794945513695.0 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-21.rsk&per_page=1
+1794945513695.1 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-26.rsk&per_page=1
+1794945513695.6 V 759 UI 
+1794945513696.1 B 1232 UI view=764
+1794945513696.7 U 3 UI Accessibility(Snapshot(1, 104, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513696.8 U 45 UI GitHub(Picker(Changed(10, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+1794945513696.8 U 2 UI GitHub(Picker(Changed(10, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+1794945513696.8 U 1 UI GitHub(Picker(Changed(10, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+1794945513696.8 U 2 UI GitHub(Picker(Changed(10, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+1794945513696.8 U 1 UI GitHub(Picker(Changed(10, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+1794945513696.8 U 1 UI GitHub(Picker(Changed(10, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+1794945513696.8 U 2 UI GitHub(Picker(Thumb("fa350f2f71467edd420d17243985f40b287e237b", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945513696.9 U 1 UI GitHub(Picker(Thumb("a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945513696.9 U 1 UI GitHub(Picker(Thumb("4f14aa06a77bb0a5e6c2e3090bc603615a860a4b", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945513696.9 U 1 UI GitHub(Picker(Thumb("9bb40193ff31012d6dec2a68acd9ce6920715e4d", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945513696.9 U 1 UI GitHub(Picker(Thumb("a13e9f3a519057509f6aabd2fd8906d00bd6b011", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945513696.9 U 1 UI GitHub(Picker(Thumb("14b8ce5c2a399b21a484f842445c60465ef66d8c", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945513696.9 U 2 UI Accessibility(Snapshot(1, 105, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513696.9 U 2 UI Accessibility(Snapshot(1, 106, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513696.9 U 12 UI GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+1794945513697.6 V 556 UI 
+1794945513697.9 B 949 UI view=560
+1794945513729.4 F 32854 UI interact=1895 draw=28027 present=2932
+1794945513730.0 U 4 UI Accessibility(Snapshot(1, 107, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 108, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 109, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 110, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 2 UI Accessibility(Snapshot(1, 111, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 112, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 113, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 114, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 115, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 2 UI Accessibility(Snapshot(1, 116, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 2 UI Accessibility(Snapshot(1, 117, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.0 U 1 UI Accessibility(Snapshot(1, 118, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.1 U 50 UI Accessibility(Snapshot(1, 119, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945513730.6 V 447 UI 
+1794945513730.8 B 651 UI view=450
+1794945513739.7 F 8816 UI interact=31 draw=1889 present=6896
+1794945513739.9 U 2 UI Accessibility(Published(1, Ok(())))
+1794945513740.3 V 419 UI 
+1794945513740.6 B 623 UI view=422
+1794945513770.6 F 30000 UI interact=30 draw=1889 present=28081
+1794945514035.0 U 8 UI Star(Tick)
+1794945514036.9 V 1587 UI 
+1794945514037.7 B 2442 UI view=1599
+1794945514052.4 F 14639 UI interact=140 draw=7084 present=7415
+1794945519034.3 U 54 UI Star(Tick)
+1794945519035.3 V 881 UI 
+1794945519035.8 B 1346 UI view=891
+1794945519045.0 F 9213 UI interact=76 draw=3883 present=5254
+1794945524034.2 U 39 UI Star(Tick)
+1794945524035.2 V 880 UI 
+1794945524035.8 B 1410 UI view=887
+1794945524053.6 F 17832 UI interact=326 draw=4585 present=12921
+1794945524056.7 U 11 UI Accessibility(Native(1, 10, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945524057.7 V 892 UI 
+1794945524058.2 B 1378 UI view=902
+1794945524074.6 F 16064 UI interact=118 draw=6937 present=9009
+1794945524074.9 U 10 UI Accessibility(Refresh)
+1794945524076.6 V 1523 UI 
+1794945524077.6 B 2499 UI view=1537
+1794945524117.1 F 39190 UI interact=116 draw=7531 present=31542
+1794945524117.6 U 102 UI Accessibility(Snapshot(1, 120, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524118.6 V 896 UI 
+1794945524119.3 B 1498 UI view=903
+1794945524134.8 F 15273 UI interact=155 draw=8341 present=6777
+1794945524164.8 F 8286 UI interact=111 draw=3797 present=4378
+1794945524165.1 U 13 UI Accessibility(Refresh)
+1794945524165.2 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 456.40002 } })))
+1794945524165.2 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945524166.3 V 1006 UI 
+1794945524166.9 B 1628 UI view=1014
+1794945524176.5 F 9355 UI interact=118 draw=4315 present=4922
+1794945524176.9 U 89 UI Accessibility(Snapshot(1, 121, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524178.0 V 893 UI 
+1794945524178.5 B 1449 UI view=900
+1794945524197.1 F 18406 UI interact=86 draw=4081 present=14238
+1794945524197.6 U 4 UI Accessibility(Published(1, Ok(())))
+1794945524198.6 V 842 UI 
+1794945524199.1 B 1403 UI view=849
+1794945524208.2 F 9018 UI interact=93 draw=5098 present=3826
+1794945524209.0 U 12 UI GitHub(Picker(Select(1)))
+1794945524209.9 V 836 UI 
+1794945524210.4 B 1273 UI view=843
+1794945524226.4 F 15950 UI interact=54 draw=3568 present=12327
+1794945524226.6 U 7 UI Accessibility(Refresh)
+1794945524226.7 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 456.40002 } })))
+1794945524226.7 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945524227.5 V 712 UI 
+1794945524227.9 B 1064 UI view=717
+1794945524244.1 F 16129 UI interact=47 draw=3485 present=12596
+1794945524244.3 U 6 UI Accessibility(Snapshot(1, 122, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524244.4 U 94 UI Accessibility(Snapshot(1, 123, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524245.3 V 784 UI 
+1794945524245.7 B 1174 UI view=790
+1794945524262.0 F 16137 UI interact=58 draw=3564 present=12515
+1794945524262.7 U 3 UI Accessibility(Published(1, Ok(())))
+1794945524263.6 V 736 UI 
+1794945524263.9 B 1085 UI view=741
+1794945524270.5 F 6508 UI interact=46 draw=3496 present=2966
+1794945524270.7 U 8 UI Accessibility(Refresh)
+1794945524270.8 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 456.40002 } })))
+1794945524270.8 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945524271.5 V 647 UI 
+1794945524271.8 B 983 UI view=652
+1794945524287.4 F 15463 UI interact=50 draw=3323 present=12089
+1794945524287.7 U 51 UI Accessibility(Snapshot(1, 124, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524288.5 V 682 UI 
+1794945524288.8 B 1002 UI view=688
+1794945524303.9 F 15039 UI interact=46 draw=3008 present=11985
+1794945524311.6 D 41 UI picker_open_path read working copy
+1794945524311.6 U 68 UI GitHub(Picker(Select(1)))
+1794945524311.6 K 0 UI /repos/octo-test/group-drawings/git/blobs/fa350f2f71467edd420d17243985f40b287e237b
+1794945524312.3 V 611 UI 
+1794945524312.6 B 931 UI view=615
+1794945524318.5 F 5743 UI interact=37 draw=3003 present=2703
+1794945524318.6 U 11 UI GitHub(Picker(Downloaded(12, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, private: true, default_branch: "main
+1794945524318.7 U 3 UI Accessibility(Refresh)
+1794945524318.7 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 456.40002 } })))
+1794945524318.7 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945524319.4 V 566 UI 
+1794945524319.7 B 882 UI view=570
+1794945524327.5 F 7696 UI interact=41 draw=2974 present=4680
+1794945524327.7 U 4 UI Accessibility(Snapshot(1, 125, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524327.7 U 2 UI Accessibility(Snapshot(1, 126, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524327.8 U 73 UI Accessibility(Snapshot(1, 127, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945524328.4 V 531 UI 
+1794945524328.5 D 9695 bg workcopy::checkout routes/drawing-06.rsk
+1794945524328.7 B 801 UI view=532
+1794945524344.2 F 15459 UI interact=39 draw=2604 present=12815
+1794945524344.5 U 69 UI GitHub(Picker(Written(12, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-06.rsk", Ok(("/private/tmp/claude-502/-Use
+1794945524344.5 U 2 UI Accessibility(Published(1, Ok(())))
+1794945524344.9 D 422 bg read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945524345.1 V 479 UI 
+1794945524346.2 B 1655 UI view=482
+1794945524347.0 U 340 UI FilePrepared(Some(("/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-12
+1794945524349.0 B 686 UI view=259
+1794945524347.1 U 6 UI Accessibility(Snapshot(1, 128, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524347.1 U 8 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945524347.1 U 3 UI InspectorScroll(0.0)
+1794945524347.7 D 735 bg workcopy::hashes octo-test/group-drawings files=2
+1794945524348.5 V 257 UI 
+1794945524354.4 D 9873 bg workcopy::persist write state.json
+1794945524362.5 F 16061 UI interact=2913 draw=1940 present=11208
+1794945524364.6 U 19 UI Tab(TabId(1), Autosaved(Key { serial: 1, generation: 1, epoch: 3, revision: 1, clear: true }, Ok(None)))
+1794945524364.7 U 19 UI Tab(TabId(1), LabelsReady(Key { revision: 1, epoch: 3 }, Ok(Refresh { cache: {1: Entry { source: Document { generic: Generic { alternatives:
+1794945524364.7 U 6 UI Tab(TabId(1), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 15, [("routes/drawing-01.rsk", Some("9bb40193ff31012d6d
+1794945524364.7 U 7 UI Accessibility(Snapshot(1, 129, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524364.7 U 5 UI Accessibility(Snapshot(1, 130, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524364.7 U 5 UI Accessibility(Snapshot(1, 131, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524364.7 U 2 UI GitHub(Persisted(true, Ok(())))
+1794945524365.1 V 269 UI 
+1794945524365.3 B 519 UI view=273
+1794945524370.2 F 4194 UI interact=36 draw=1585 present=2573
+1794945524370.3 U 8 UI Accessibility(Snapshot(1, 132, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.3 U 5 UI Accessibility(Snapshot(1, 133, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.4 U 6 UI Accessibility(Snapshot(1, 134, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.4 U 5 UI Accessibility(Snapshot(1, 135, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.4 U 5 UI Accessibility(Snapshot(1, 136, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.4 U 5 UI Accessibility(Snapshot(1, 137, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.5 U 102 UI Accessibility(Snapshot(1, 138, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524370.8 V 241 UI 
+1794945524371.0 B 483 UI view=245
+1794945524394.9 F 23594 UI interact=59 draw=1601 present=21933
+1794945524395.1 U 3 UI Accessibility(Published(1, Ok(())))
+1794945524395.5 V 269 UI 
+1794945524395.7 B 522 UI view=272
+1794945524403.1 F 7370 UI interact=42 draw=1591 present=5736
+1794945524698.6 U 78 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 1, epoch: 3, atoms: [1, 2, 3, 4, 5, 6, 7, 10, 11] }))
+1794945524699.2 V 449 UI 
+1794945524699.6 B 896 UI view=455
+1794945524704.8 F 4925 UI interact=66 draw=2306 present=2553
+1794945524705.3 U 205 UI Accessibility(Snapshot(1, 139, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524705.8 V 433 UI 
+1794945524706.3 B 848 UI view=438
+1794945524714.2 F 7936 UI interact=70 draw=2337 present=5529
+1794945524725.1 U 35 UI Tab(TabId(1), InspectorAction(PropertiesCalculated(PropertyKey { revision: 1, epoch: 3, atoms: [1, 2, 3, 4, 5, 6, 7, 10, 11] }, Ok(Analysis 
+1794945524725.9 V 712 UI 
+1794945524726.5 B 1274 UI view=717
+1794945524726.9 U 7 UI Accessibility(Snapshot(1, 140, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524727.1 U 158 UI Accessibility(Snapshot(1, 141, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524727.1 U 8 UI InspectorScroll(0.0)
+1794945524727.4 V 240 UI 
+1794945524727.7 B 482 UI view=244
+1794945524732.9 F 6082 UI interact=1020 draw=2386 present=2675
+1794945524733.3 U 136 UI Accessibility(Snapshot(1, 142, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945524733.6 V 279 UI 
+1794945524733.9 B 543 UI view=283
+1794945524740.5 F 6614 UI interact=40 draw=2509 present=4065
+1794945524740.7 U 2 UI Accessibility(Published(1, Ok(())))
+1794945524741.1 V 359 UI 
+1794945524741.5 B 710 UI view=364
+1794945524758.1 F 16552 UI interact=54 draw=2984 present=13514
+1794945529034.7 U 51 UI Star(Tick)
+1794945529035.3 V 548 UI 
+1794945529035.8 B 987 UI view=554
+1794945529045.1 F 9297 UI interact=80 draw=3105 present=6112
+1794945534034.5 U 40 UI Star(Tick)
+1794945534035.1 V 449 UI 
+1794945534036.1 B 1425 UI view=456
+1794945534044.5 F 8367 UI interact=103 draw=4699 present=3564
+1794945535636.9 U 6 UI Accessibility(Native(1, 12, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945535637.5 V 498 UI 
+1794945535637.9 B 916 UI view=506
+1794945535648.2 F 9893 UI interact=70 draw=3757 present=6066
+1794945535648.6 U 18 UI Accessibility(Refresh)
+1794945535649.4 V 585 UI 
+1794945535650.1 B 1340 UI view=703
+1794945535659.0 F 8285 UI interact=88 draw=3627 present=4570
+1794945535659.5 U 207 UI Accessibility(Snapshot(1, 143, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945535660.1 V 459 UI 
+1794945535660.5 B 864 UI view=467
+1794945535697.6 F 37065 UI interact=74 draw=3174 present=33817
+1794945535720.2 U 8 UI Accessibility(Native(1, 12, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #438, dat
+1794945535721.2 V 852 UI 
+1794945535722.0 B 1701 UI view=862
+1794945535730.3 F 8062 UI interact=82 draw=5183 present=2796
+1794945535731.7 B 852 UI view=455
+1794945535730.7 U 125 UI Accessibility(Dispatch(12, GitHub(Menu(true))))
+1794945535731.3 V 453 UI 
+1794945535754.6 F 22484 UI interact=122 draw=3487 present=18875
+1794945535755.0 U 34 UI Accessibility(Snapshot(1, 144, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focuse
+1794945535755.6 V 489 UI 
+1794945535756.1 B 996 UI view=497
+1794945535793.9 F 37142 UI interact=117 draw=3565 present=33459
+1794945535794.2 U 3 UI Accessibility(Published(1, Ok(())))
+1794945535794.9 V 552 UI 
+1794945535795.4 B 1008 UI view=558
+1794945535823.7 F 28159 UI interact=100 draw=3142 present=24917
+1794945536294.2 U 6 UI Accessibility(Native(1, 13, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945536295.5 V 1111 UI 
+1794945536296.0 B 1636 UI view=1119
+1794945536303.1 F 6647 UI interact=97 draw=3583 present=2967
+1794945536303.5 U 14 UI Accessibility(Refresh)
+1794945536304.1 V 500 UI 
+1794945536304.6 B 954 UI view=505
+1794945536315.9 F 10973 UI interact=139 draw=6628 present=4205
+1794945536316.5 U 54 UI Accessibility(Snapshot(1, 145, Snapshot { nodes: [Node { id: "github-open", name: "Open from GitHub…", role: Button, enabled: true, focuse
+1794945536317.2 V 520 UI 
+1794945536317.7 B 1014 UI view=526
+1794945536324.7 F 6827 UI interact=133 draw=4052 present=2642
+1794945536335.0 U 6 UI Accessibility(Native(1, 13, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #454, dat
+1794945536336.3 V 867 UI 
+1794945536336.9 B 1577 UI view=987
+1794945536343.9 F 6612 UI interact=91 draw=3952 present=2569
+1794945536344.3 U 35 UI Accessibility(Dispatch(13, GitHub(Picker(Show(Open)))))
+1794945536345.1 V 552 UI 
+1794945536347.3 B 2737 UI view=558
+1794945536347.7 U 48 UI Accessibility(Snapshot(1, 146, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536347.8 U 22 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945536347.8 U 5 UI InspectorScroll(0.0)
+1794945536348.4 V 489 UI 
+1794945536348.9 B 941 UI view=498
+1794945536358.8 F 11350 UI interact=1523 draw=4742 present=5085
+1794945536359.9 U 8 UI Accessibility(Snapshot(1, 147, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536360.0 U 92 UI Accessibility(Snapshot(1, 148, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536361.0 V 893 UI 
+1794945536361.9 B 1797 UI view=906
+1794945536372.4 F 10369 UI interact=108 draw=6936 present=3325
+1794945536373.0 U 6 UI Accessibility(Published(1, Ok(())))
+1794945536374.3 V 1104 UI 
+1794945536375.4 B 2181 UI view=1149
+1794945536387.0 F 11113 UI interact=139 draw=5704 present=5270
+1794945536432.4 H 88014 bg GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+1794945536432.5 K 0 bg /repos/octo-test/group-drawings/git/commits/3ce9d132ac685992617503fa43864d68a6d935e2
+1794945536432.5 K 0 bg /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c
+1794945536433.2 U 47 UI GitHub(Picker(Listing(16, Ok((Some("3ce9d132ac685992617503fa43864d68a6d935e2"), "8721c1315a26ad73276b3f579db9024c94c1753c", [Entry { name: "
+1794945536433.2 K 0 UI /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c?recursive=1
+1794945536434.5 V 967 UI 
+1794945536435.7 B 2234 UI view=979
+1794945536436.4 U 50 UI GitHub(Picker(Whole(16, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "42d703a2a64ed0cf243878cbe4ce145f30763d37", folder: false }, Entry
+1794945536436.4 U 7 UI Accessibility(Snapshot(1, 149, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536436.5 U 11 UI GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+1794945536437.6 V 969 UI 
+1794945536438.5 B 1875 UI view=995
+1794945536452.0 F 16094 UI interact=2923 draw=7351 present=5820
+1794945536453.3 U 10 UI Accessibility(Snapshot(1, 150, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536453.4 U 84 UI Accessibility(Snapshot(1, 151, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536454.1 V 613 UI 
+1794945536454.7 B 1172 UI view=619
+1794945536464.9 F 10083 UI interact=86 draw=5987 present=4009
+1794945536465.4 U 5 UI Accessibility(Published(1, Ok(())))
+1794945536466.1 V 653 UI 
+1794945536466.7 B 1196 UI view=660
+1794945536478.0 H 133612 bg GET /user status=200 bytes=21
+1794945536505.9 F 39120 UI interact=84 draw=3583 present=35452
+1794945536617.4 H 139450 bg GET /user/installations?per_page=100 status=200 bytes=44
+1794945536732.0 H 114526 bg GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+1794945536733.8 U 40 UI GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", repo: "lab-notes" }, private: tru
+1794945536734.8 V 823 UI 
+1794945536735.6 B 1578 UI view=833
+1794945536749.7 F 13947 UI interact=94 draw=5511 present=8342
+1794945536750.5 U 126 UI Accessibility(Snapshot(1, 152, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536751.8 V 1008 UI 
+1794945536752.8 B 2067 UI view=1019
+1794945536766.1 F 12817 UI interact=141 draw=7270 present=5406
+1794945536917.6 F 9971 UI interact=168 draw=5354 present=4449
+1794945536928.3 U 6 UI Accessibility(Native(1, 14, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945536929.0 V 537 UI 
+1794945536929.5 B 1050 UI view=542
+1794945536929.8 U 14 UI GitHub(Picker(Scrolled(64.29999, 377.7, 400.0)))
+1794945536930.3 V 448 UI 
+1794945536930.7 B 874 UI view=453
+1794945536939.9 F 10296 UI interact=1268 draw=4324 present=4704
+1794945536940.5 U 10 UI Accessibility(Refresh)
+1794945536940.6 U 4 UI Accessibility(Snapshot(1, 153, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536941.4 V 733 UI 
+1794945536942.4 B 1729 UI view=744
+1794945536956.7 F 14030 UI interact=112 draw=7779 present=6139
+1794945536957.3 U 126 UI Accessibility(Snapshot(1, 154, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945536958.6 V 1027 UI 
+1794945536959.6 B 2028 UI view=1040
+1794945536970.9 F 10865 UI interact=134 draw=7139 present=3592
+1794945536971.2 U 4 UI Accessibility(Published(1, Ok(())))
+1794945536971.9 V 609 UI 
+1794945536972.5 B 1122 UI view=619
+1794945536982.8 F 10307 UI interact=63 draw=5708 present=4536
+1794945537008.0 F 7833 UI interact=124 draw=3540 present=4169
+1794945537008.8 U 12 UI Accessibility(Refresh)
+1794945537008.8 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945537008.8 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945537009.5 V 591 UI 
+1794945537010.2 B 1250 UI view=602
+1794945537017.7 F 7355 UI interact=86 draw=3583 present=3685
+1794945537018.2 U 88 UI Accessibility(Snapshot(1, 155, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537019.0 V 637 UI 
+1794945537019.6 B 1238 UI view=645
+1794945537045.9 F 26160 UI interact=81 draw=3964 present=22114
+1794945537046.3 U 5 UI Accessibility(Published(1, Ok(())))
+1794945537047.2 V 706 UI 
+1794945537047.8 B 1344 UI view=716
+1794945537055.3 F 7454 UI interact=88 draw=3908 present=3458
+1794945537057.5 U 9 UI GitHub(Picker(Select(4)))
+1794945537058.1 V 496 UI 
+1794945537058.5 B 926 UI view=503
+1794945537064.2 F 5621 UI interact=41 draw=3212 present=2368
+1794945537064.4 U 7 UI Accessibility(Refresh)
+1794945537064.5 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945537064.5 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945537064.9 V 388 UI 
+1794945537065.3 B 763 UI view=392
+1794945537072.7 F 7368 UI interact=47 draw=3837 present=3484
+1794945537072.9 U 6 UI Accessibility(Snapshot(1, 156, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537073.4 V 424 UI 
+1794945537073.8 B 789 UI view=430
+1794945537089.7 F 15905 UI interact=44 draw=3153 present=12707
+1794945537090.0 U 64 UI Accessibility(Snapshot(1, 157, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537090.6 V 474 UI 
+1794945537091.0 B 872 UI view=479
+1794945537107.1 F 15958 UI interact=52 draw=3211 present=12694
+1794945537107.9 U 3 UI Accessibility(Published(1, Ok(())))
+1794945537108.4 V 434 UI 
+1794945537108.8 B 812 UI view=439
+1794945537123.8 F 14921 UI interact=44 draw=3212 present=11665
+1794945537124.1 U 8 UI Accessibility(Refresh)
+1794945537124.1 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945537124.1 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945537124.7 V 502 UI 
+1794945537125.1 B 905 UI view=508
+1794945537139.7 F 14548 UI interact=48 draw=3236 present=11264
+1794945537140.0 U 46 UI Accessibility(Snapshot(1, 158, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537140.5 V 390 UI 
+1794945537140.8 B 714 UI view=394
+1794945537157.0 F 16194 UI interact=39 draw=2404 present=13750
+1794945537157.8 U 14 UI GitHub(Picker(Select(4)))
+1794945537157.8 K 0 UI /repos/octo-test/group-drawings/git/trees/4486145be339e65be156be74aa779e12f22a2b18
+1794945537158.3 V 382 UI 
+1794945537158.7 B 757 UI view=386
+1794945537173.0 F 14248 UI interact=33 draw=2876 present=11339
+1794945537173.2 U 51 UI GitHub(Picker(Listing(17, Ok((None, "4486145be339e65be156be74aa779e12f22a2b18", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2
+1794945537173.3 U 3 UI Accessibility(Refresh)
+1794945537173.3 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 614.0, y: 542.25 } })))
+1794945537173.3 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945537173.3 K 0 bg /repos/octo-test/group-drawings/git/blobs/9bb40193ff31012d6dec2a68acd9ce6920715e4d
+1794945537173.5 K 0 bg /repos/octo-test/group-drawings/git/blobs/fa350f2f71467edd420d17243985f40b287e237b
+1794945537173.5 K 0 bg /repos/octo-test/group-drawings/git/blobs/a13e9f3a519057509f6aabd2fd8906d00bd6b011
+1794945537173.6 K 0 bg /repos/octo-test/group-drawings/git/blobs/14b8ce5c2a399b21a484f842445c60465ef66d8c
+1794945537173.6 K 0 bg /repos/octo-test/group-drawings/git/blobs/4f14aa06a77bb0a5e6c2e3090bc603615a860a4b
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/git/blobs/a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-01.rsk&per_page=1
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-06.rsk&per_page=1
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-11.rsk&per_page=1
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-16.rsk&per_page=1
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-21.rsk&per_page=1
+1794945537173.7 K 0 bg /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-26.rsk&per_page=1
+1794945537173.9 V 482 UI 
+1794945537174.4 B 1015 UI view=488
+1794945537175.0 U 3 UI Accessibility(Snapshot(1, 159, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537175.1 U 44 UI GitHub(Picker(Changed(16, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+1794945537175.1 U 2 UI GitHub(Picker(Changed(16, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+1794945537175.1 U 1 UI GitHub(Picker(Changed(16, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+1794945537175.1 U 1 UI GitHub(Picker(Changed(16, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+1794945537175.1 U 1 UI GitHub(Picker(Changed(16, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+1794945537175.1 U 1 UI GitHub(Picker(Changed(16, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+1794945537175.2 U 1 UI GitHub(Picker(Thumb("fa350f2f71467edd420d17243985f40b287e237b", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945537175.2 U 1 UI GitHub(Picker(Thumb("a2a45bdc5e9c3332c35f533e2abb93947d9c2e9a", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945537175.2 U 1 UI GitHub(Picker(Thumb("4f14aa06a77bb0a5e6c2e3090bc603615a860a4b", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945537175.2 U 1 UI GitHub(Picker(Thumb("9bb40193ff31012d6dec2a68acd9ce6920715e4d", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945537175.2 U 2 UI Accessibility(Snapshot(1, 160, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537175.2 U 1 UI GitHub(Picker(Thumb("a13e9f3a519057509f6aabd2fd8906d00bd6b011", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945537175.2 U 2 UI Accessibility(Snapshot(1, 161, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537175.2 U 1 UI GitHub(Picker(Thumb("14b8ce5c2a399b21a484f842445c60465ef66d8c", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+1794945537175.2 U 11 UI GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+1794945537175.6 V 348 UI 
+1794945537176.1 B 776 UI view=352
+1794945537210.6 F 35758 UI interact=1700 draw=31007 present=3050
+1794945537211.2 U 4 UI Accessibility(Snapshot(1, 162, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 163, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 2 UI Accessibility(Snapshot(1, 164, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 2 UI Accessibility(Snapshot(1, 165, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 166, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 167, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 168, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 169, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 170, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 171, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 172, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.2 U 1 UI Accessibility(Snapshot(1, 173, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.3 U 50 UI Accessibility(Snapshot(1, 174, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945537211.7 V 320 UI 
+1794945537211.9 B 559 UI view=323
+1794945537219.4 F 7372 UI interact=33 draw=1959 present=5380
+1794945537219.6 U 2 UI Accessibility(Published(1, Ok(())))
+1794945537219.9 V 296 UI 
+1794945537220.1 B 524 UI view=300
+1794945537243.6 F 23439 UI interact=31 draw=1999 present=21409
+1794945539034.2 U 75 UI Star(Tick)
+1794945539036.1 V 1549 UI 
+1794945539037.3 B 2738 UI view=1562
+1794945539057.0 F 19589 UI interact=125 draw=8166 present=11298
+1794945544035.2 U 122 UI Star(Tick)
+1794945544036.6 V 1110 UI 
+1794945544037.5 B 2058 UI view=1120
+1794945544054.2 F 16596 UI interact=133 draw=8211 present=8251
+1794945548307.6 U 7 UI Accessibility(Native(1, 14, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945548308.3 V 589 UI 
+1794945548309.1 B 1374 UI view=594
+1794945548319.3 F 10057 UI interact=72 draw=3868 present=6117
+1794945548319.6 U 9 UI Accessibility(Refresh)
+1794945548320.4 V 617 UI 
+1794945548321.0 B 1272 UI view=624
+1794945548337.4 F 16081 UI interact=144 draw=4085 present=11852
+1794945548337.8 U 74 UI Accessibility(Snapshot(1, 175, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548338.5 V 581 UI 
+1794945548339.1 B 1163 UI view=586
+1794945548409.5 F 70307 UI interact=79 draw=4166 present=66061
+1794945548441.6 F 8203 UI interact=114 draw=4039 present=4050
+1794945548442.1 U 11 UI Accessibility(Refresh)
+1794945548442.1 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 750.0, y: 456.40002 } })))
+1794945548442.1 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945548443.1 V 846 UI 
+1794945548444.0 B 1692 UI view=854
+1794945548454.8 F 10655 UI interact=132 draw=5818 present=4705
+1794945548455.2 U 77 UI Accessibility(Snapshot(1, 176, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548455.9 V 605 UI 
+1794945548456.4 B 1089 UI view=611
+1794945548480.4 F 23905 UI interact=76 draw=2371 present=21458
+1794945548480.9 U 5 UI Accessibility(Published(1, Ok(())))
+1794945548481.5 V 448 UI 
+1794945548481.7 B 679 UI view=453
+1794945548489.0 F 7185 UI interact=31 draw=1642 present=5511
+1794945548489.5 U 8 UI GitHub(Picker(Select(2)))
+1794945548489.8 V 275 UI 
+1794945548490.0 B 499 UI view=278
+1794945548502.5 F 12455 UI interact=23 draw=1570 present=10862
+1794945548502.7 U 4 UI Accessibility(Refresh)
+1794945548502.7 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 750.0, y: 456.40002 } })))
+1794945548502.7 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945548503.1 V 282 UI 
+1794945548503.3 B 518 UI view=285
+1794945548519.3 F 15935 UI interact=27 draw=1577 present=14331
+1794945548519.5 U 4 UI Accessibility(Snapshot(1, 177, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548519.5 U 40 UI Accessibility(Snapshot(1, 178, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548519.9 V 331 UI 
+1794945548520.1 B 560 UI view=335
+1794945548547.2 F 26986 UI interact=38 draw=1626 present=25322
+1794945548548.3 U 3 UI Accessibility(Published(1, Ok(())))
+1794945548548.7 V 290 UI 
+1794945548548.9 B 510 UI view=293
+1794945548564.1 F 15113 UI interact=30 draw=1636 present=13448
+1794945548564.3 U 7 UI Accessibility(Refresh)
+1794945548564.3 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 750.0, y: 456.40002 } })))
+1794945548564.3 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945548564.7 V 293 UI 
+1794945548564.9 B 509 UI view=296
+1794945548579.8 F 14859 UI interact=28 draw=1650 present=13181
+1794945548580.1 U 36 UI Accessibility(Snapshot(1, 179, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548580.4 V 283 UI 
+1794945548580.6 B 482 UI view=285
+1794945548586.4 F 5719 UI interact=29 draw=1561 present=4128
+1794945548590.3 D 38 UI picker_open_path read working copy
+1794945548590.4 U 60 UI GitHub(Picker(Select(2)))
+1794945548590.4 K 0 UI /repos/octo-test/group-drawings/git/blobs/a13e9f3a519057509f6aabd2fd8906d00bd6b011
+1794945548590.7 V 290 UI 
+1794945548590.9 B 500 UI view=293
+1794945548603.2 F 12249 UI interact=22 draw=1604 present=10622
+1794945548603.4 U 10 UI GitHub(Picker(Downloaded(18, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, private: true, default_branch: "main
+1794945548603.4 U 1 UI Accessibility(Refresh)
+1794945548603.4 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 750.0, y: 456.40002 } })))
+1794945548603.4 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945548603.8 V 290 UI 
+1794945548604.0 B 514 UI view=292
+1794945548615.2 D 11741 bg workcopy::checkout routes/drawing-11.rsk
+1794945548622.6 F 18532 UI interact=30 draw=1690 present=16811
+1794945548622.9 U 7 UI Accessibility(Snapshot(1, 180, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548623.6 V 540 UI 
+1794945548623.8 B 775 UI view=543
+1794945548648.3 F 24519 UI interact=33 draw=1542 present=22944
+1794945548648.7 U 11 UI Accessibility(Snapshot(1, 181, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548648.8 U 103 UI Accessibility(Snapshot(1, 182, Snapshot { nodes: [Node { id: "github-search", name: "Search or paste a GitHub link", role: TextInput, enable
+1794945548649.0 U 140 UI GitHub(Picker(Written(18, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-11.rsk", Ok(("/private/tmp/claude-502/-Use
+1794945548649.7 V 593 UI 
+1794945548650.5 D 1436 bg read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-120/data/github/octo-test/group-drawings/state.json
+1794945548652.7 B 3536 UI view=600
+1794945548654.5 U 932 UI FilePrepared(Some(("/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad/ghlag2/runs/after-12
+1794945548654.7 U 2 UI Accessibility(Published(1, Ok(())))
+1794945548654.7 U 22 UI Accessibility(Snapshot(1, 183, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548654.7 U 18 UI Viewport(Size { width: 856.0, height: 626.0 })
+1794945548654.8 U 7 UI InspectorScroll(0.0)
+1794945548656.1 V 255 UI 
+1794945548656.1 D 1491 bg workcopy::hashes octo-test/group-drawings files=3
+1794945548656.6 B 751 UI view=262
+1794945548659.9 D 10820 bg workcopy::persist write state.json
+1794945548665.4 F 12079 UI interact=3708 draw=7090 present=1281
+1794945548665.5 U 12 UI Tab(TabId(2), Autosaved(Key { serial: 1, generation: 1, epoch: 5, revision: 1, clear: true }, Ok(None)))
+1794945548665.6 U 4 UI Tab(TabId(2), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 21, [("routes/drawing-01.rsk", Some("9bb40193ff31012d6d
+1794945548665.6 U 5 UI Accessibility(Snapshot(1, 184, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548665.6 U 3 UI Accessibility(Snapshot(1, 185, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548665.6 U 3 UI Accessibility(Snapshot(1, 186, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548665.6 U 24 UI Tab(TabId(2), LabelsReady(Key { revision: 1, epoch: 5 }, Ok(Refresh { cache: {1: Entry { source: Document { generic: Generic { alternatives:
+1794945548665.6 U 2 UI GitHub(Persisted(true, Ok(())))
+1794945548665.8 V 185 UI 
+1794945548666.1 B 395 UI view=188
+1794945548674.2 F 7731 UI interact=34 draw=1079 present=6617
+1794945548674.4 U 6 UI Accessibility(Snapshot(1, 187, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.4 U 4 UI Accessibility(Snapshot(1, 188, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.4 U 3 UI Accessibility(Snapshot(1, 189, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.4 U 4 UI Accessibility(Snapshot(1, 190, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.4 U 3 UI Accessibility(Snapshot(1, 191, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.4 U 3 UI Accessibility(Snapshot(1, 192, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.5 U 73 UI Accessibility(Snapshot(1, 193, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945548674.7 V 203 UI 
+1794945548675.0 B 434 UI view=206
+1794945548691.0 F 14518 UI interact=75 draw=1136 present=13306
+1794945548691.1 U 2 UI Accessibility(Published(1, Ok(())))
+1794945548691.3 V 198 UI 
+1794945548691.6 B 410 UI view=201
+1794945548707.1 F 15518 UI interact=35 draw=1088 present=14395
+1794945549007.6 U 171 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 1, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+1794945549008.2 V 441 UI 
+1794945549008.7 B 1010 UI view=446
+1794945549015.0 F 5938 UI interact=82 draw=3003 present=2853
+1794945549015.8 U 384 UI Accessibility(Snapshot(1, 194, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945549016.5 V 561 UI 
+1794945549017.2 B 1262 UI view=564
+1794945549023.8 F 6460 UI interact=137 draw=3471 present=2852
+1794945549034.1 U 3 UI Star(Tick)
+1794945549034.3 V 223 UI 
+1794945549034.6 B 444 UI view=225
+1794945549036.7 F 2139 UI interact=36 draw=1111 present=991
+1794945549041.1 U 17 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 1, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1
+1794945549042.5 V 1308 UI 
+1794945549042.9 B 1659 UI view=1310
+1794945549043.1 U 4 UI Accessibility(Snapshot(1, 195, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945549043.2 U 96 UI Accessibility(Snapshot(1, 196, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945549043.2 U 4 UI InspectorScroll(0.0)
+1794945549043.5 V 200 UI 
+1794945549043.6 B 368 UI view=202
+1794945549045.9 F 2848 UI interact=695 draw=1197 present=955
+1794945549046.1 U 79 UI Accessibility(Snapshot(1, 197, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945549046.4 V 238 UI 
+1794945549046.6 B 432 UI view=240
+1794945549054.4 F 7750 UI interact=29 draw=1181 present=6539
+1794945549054.5 U 1 UI Accessibility(Published(1, Ok(())))
+1794945549054.8 V 273 UI 
+1794945549055.0 B 463 UI view=275
+1794945549071.8 F 16774 UI interact=31 draw=1184 present=15558
+1794945554033.6 U 37 UI Star(Tick)
+1794945554035.1 V 1349 UI 
+1794945554036.4 B 2576 UI view=1363
+1794945554051.4 F 14962 UI interact=221 draw=6383 present=8357
+1794945559033.5 U 90 UI Star(Tick)
+1794945559035.1 V 1347 UI 
+1794945559036.2 B 2451 UI view=1358
+1794945559049.6 F 13303 UI interact=185 draw=6769 present=6349
+1794945564033.4 U 50 UI Star(Tick)
+1794945564034.8 V 850 UI 
+1794945564035.5 B 1566 UI view=859
+1794945564042.3 F 6701 UI interact=128 draw=3162 present=3411
+1794945564932.3 U 6 UI Accessibility(Native(1, 16, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945564933.1 V 666 UI 
+1794945564933.6 B 1211 UI view=671
+1794945564940.1 F 6219 UI interact=212 draw=3110 present=2897
+1794945564940.7 U 12 UI Accessibility(Refresh)
+1794945564941.7 V 913 UI 
+1794945564942.9 B 2099 UI view=920
+1794945564951.8 F 8040 UI interact=180 draw=4559 present=3300
+1794945564952.5 U 268 UI Accessibility(Snapshot(1, 198, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945564953.5 V 898 UI 
+1794945564954.4 B 1728 UI view=906
+1794945564991.4 F 36906 UI interact=136 draw=3208 present=33562
+1794945565004.4 U 6 UI Accessibility(Native(1, 16, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #519, dat
+1794945565005.8 V 1217 UI 
+1794945565006.6 B 1958 UI view=1226
+1794945565013.0 F 6257 UI interact=144 draw=3390 present=2723
+1794945565013.5 U 67 UI Accessibility(Dispatch(16, Tool(Bond(1))))
+1794945565014.3 V 688 UI 
+1794945565015.3 B 1673 UI view=694
+1794945565023.6 F 7953 UI interact=82 draw=3685 present=4186
+1794945565024.9 U 189 UI Accessibility(Snapshot(1, 199, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945565025.8 V 742 UI 
+1794945565026.5 B 1443 UI view=753
+1794945565036.0 F 8443 UI interact=143 draw=5490 present=2809
+1794945565036.3 U 4 UI Accessibility(Published(1, Ok(())))
+1794945565037.2 V 768 UI 
+1794945565038.0 B 1616 UI view=775
+1794945565054.0 F 15872 UI interact=83 draw=3222 present=12567
+1794945569040.7 U 70 UI Star(Tick)
+1794945569041.6 V 753 UI 
+1794945569042.3 B 1439 UI view=759
+1794945569052.8 F 10039 UI interact=96 draw=3133 present=6810
+1794945569138.2 U 6540 UI Canvas(PointerHover(Some(Vector { x: 273.0, y: -170.0 })))
+1794945569139.8 V 1379 UI 
+1794945569140.8 B 2386 UI view=1393
+1794945569147.9 F 7093 UI interact=105 draw=3380 present=3608
+1794945569148.3 U 1 UI Star(Event(Mouse(CursorMoved { position: Point { x: 805.0, y: 293.0 } })))
+1794945569149.2 V 772 UI 
+1794945569150.0 B 1528 UI view=778
+1794945569157.1 F 7089 UI interact=120 draw=3804 present=3164
+1794945569213.8 U 53 UI Canvas(PointerHover(Some(Vector { x: 273.0, y: -170.0 })))
+1794945569213.8 U 3 UI Canvas(Hover(None))
+1794945569214.7 V 753 UI 
+1794945569215.4 B 1470 UI view=761
+1794945569222.4 F 6714 UI interact=97 draw=3101 present=3516
+1794945569222.8 U 12 UI Accessibility(Refresh)
+1794945569222.9 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 805.0, y: 293.0 } })))
+1794945569222.9 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945569224.2 V 1130 UI 
+1794945569225.2 B 2215 UI view=1142
+1794945569232.5 F 6755 UI interact=87 draw=3723 present=2944
+1794945569233.1 U 249 UI Accessibility(Snapshot(1, 200, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569234.3 V 1087 UI 
+1794945569235.2 B 1987 UI view=1099
+1794945569241.1 F 5782 UI interact=95 draw=3548 present=2139
+1794945569264.9 U 1939 UI Canvas(Click(Point { x: 155.28299, y: -81.08223 }))
+1794945569267.3 V 892 UI 
+1794945569268.9 B 2451 UI view=901
+1794945569274.4 U 8 UI Accessibility(Refresh)
+1794945569274.4 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 805.0, y: 293.0 } })))
+1794945569274.4 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945569274.5 U 82 UI Tab(TabId(2), LabelsReady(Key { revision: 2, epoch: 5 }, Ok(Refresh { cache: {1: Entry { source: Document { generic: Generic { alternatives:
+1794945569274.6 U 10 UI Accessibility(Snapshot(1, 201, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569274.6 U 8 UI InspectorScroll(0.0)
+1794945569275.4 V 698 UI 
+1794945569276.0 B 1353 UI view=704
+1794945569299.4 F 25278 UI interact=2587 draw=19413 present=3278
+1794945569299.7 U 10 UI Accessibility(Snapshot(1, 202, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569299.7 U 6 UI Accessibility(Snapshot(1, 203, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569299.7 U 6 UI Accessibility(Snapshot(1, 204, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569299.8 U 118 UI Accessibility(Snapshot(1, 205, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569300.5 V 623 UI 
+1794945569301.1 B 1142 UI view=629
+1794945569306.7 F 5018 UI interact=64 draw=2386 present=2567
+1794945569306.9 U 3 UI Accessibility(Published(1, Ok(())))
+1794945569307.5 V 481 UI 
+1794945569307.9 B 895 UI view=485
+1794945569323.1 F 15170 UI interact=37 draw=1978 present=13155
+1794945569618.7 U 376 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 2, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+1794945569620.5 V 1535 UI 
+1794945569622.0 B 3019 UI view=1546
+1794945569629.8 F 7466 UI interact=78 draw=2974 present=4413
+1794945569630.6 U 364 UI Accessibility(Snapshot(1, 206, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569632.0 V 1260 UI 
+1794945569633.4 B 2636 UI view=1273
+1794945569640.1 F 6627 UI interact=138 draw=3645 present=2843
+1794945569661.2 U 38 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 2, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1
+1794945569662.1 V 683 UI 
+1794945569662.7 B 1323 UI view=688
+1794945569667.7 F 4620 UI interact=49 draw=2645 present=1925
+1794945569667.8 U 8 UI Accessibility(Snapshot(1, 207, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569668.0 U 148 UI Accessibility(Snapshot(1, 208, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945569668.5 V 488 UI 
+1794945569669.0 B 969 UI view=493
+1794945569676.3 F 7236 UI interact=40 draw=2306 present=4889
+1794945570014.2 U 406 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 2, epoch: 5, atoms: [62] }))
+1794945570015.4 V 978 UI 
+1794945570016.3 B 1833 UI view=990
+1794945570022.6 F 6026 UI interact=76 draw=3065 present=2885
+1794945570023.2 U 231 UI Accessibility(Snapshot(1, 209, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945570024.1 V 799 UI 
+1794945570024.9 B 1570 UI view=807
+1794945570031.9 F 6987 UI interact=87 draw=3037 present=3863
+1794945570040.1 U 30 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 2, epoch: 5, atoms: [62] }, Ok(Analysis { smiles: "C", smiles_not
+1794945570041.0 V 737 UI 
+1794945570041.8 B 1548 UI view=743
+1794945570048.4 F 6180 UI interact=58 draw=3281 present=2840
+1794945570048.6 U 12 UI Accessibility(Snapshot(1, 210, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945570048.8 U 206 UI Accessibility(Snapshot(1, 211, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945570049.4 V 546 UI 
+1794945570050.0 B 1114 UI view=554
+1794945570055.7 F 5723 UI interact=47 draw=2753 present=2923
+1794945574033.9 U 89 UI Star(Tick)
+1794945574035.5 V 1452 UI 
+1794945574037.1 B 3004 UI view=1464
+1794945574046.6 F 9433 UI interact=198 draw=4390 present=4845
+1794945574267.8 U 174 UI Tick
+1794945574269.5 V 1463 UI 
+1794945574271.3 B 3258 UI view=1477
+1794945574279.9 F 8077 UI interact=74 draw=3161 present=4842
+1794945574281.7 U 500 UI Accessibility(Snapshot(1, 212, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945574283.5 V 1564 UI 
+1794945574285.1 B 3240 UI view=1579
+1794945574293.8 F 8630 UI interact=143 draw=4651 present=3836
+1794945574294.3 U 31 UI Tab(TabId(2), Autosaved(Key { serial: 2, generation: 1, epoch: 5, revision: 2, clear: false }, Ok(None)))
+1794945574295.9 V 1372 UI 
+1794945574297.4 B 2872 UI view=1387
+1794945574304.9 F 6682 UI interact=132 draw=3715 present=2835
+1794945574305.4 U 27 UI Accessibility(Snapshot(1, 213, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945574306.6 V 968 UI 
+1794945574308.4 B 2801 UI view=976
+1794945574316.8 F 8289 UI interact=148 draw=4162 present=3978
+1794945574317.8 U 461 UI Accessibility(Snapshot(1, 214, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945574319.7 V 1584 UI 
+1794945574321.2 B 3094 UI view=1601
+1794945574332.9 F 11562 UI interact=168 draw=6193 present=5201
+1794945578236.0 F 8124 UI interact=47 draw=2995 present=5081
+1794945578236.4 U 0 UI ModifiersChanged(Modifiers(LOGO))
+1794945578236.5 U 12 UI Accessibility(Refresh)
+1794945578236.5 U 0 UI Star(Event(Keyboard(ModifiersChanged(Modifiers(LOGO)))))
+1794945578237.7 V 1045 UI 
+1794945578238.7 B 2098 UI view=1057
+1794945578281.4 F 4170 UI interact=103 draw=2383 present=1684
+1794945578281.7 U 163 UI Accessibility(Snapshot(1, 215, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578281.8 U 51 UI Save
+1794945578282.5 V 599 UI 
+1794945578283.0 B 1127 UI view=605
+1794945578290.6 F 7373 UI interact=52 draw=2106 present=5215
+1794945578290.7 U 0 UI ModifiersChanged(Modifiers(0x0))
+1794945578291.8 B 949 UI view=505
+1794945578290.8 U 0 UI Star(Event(Keyboard(KeyPressed { key: Character("s"), modified_key: Character("s"), physical_key: Code(KeyS), location: Standard, modifiers:
+1794945578290.8 U 0 UI Star(Event(Keyboard(KeyReleased { key: Character("s"), modified_key: Character("s"), physical_key: Code(KeyS), location: Standard, modifiers
+1794945578290.8 U 0 UI Star(Event(Keyboard(ModifiersChanged(Modifiers(0x0)))))
+1794945578290.8 U 6 UI Accessibility(Refresh)
+1794945578290.8 U 1 UI Accessibility(Refresh)
+1794945578290.8 U 1 UI Accessibility(Refresh)
+1794945578290.8 U 7 UI Accessibility(Snapshot(1, 216, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578291.4 V 503 UI 
+1794945578307.2 F 15029 UI interact=35 draw=2018 present=12976
+1794945578307.4 U 11 UI Accessibility(Snapshot(1, 217, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578307.4 U 7 UI Accessibility(Snapshot(1, 218, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578307.6 U 151 UI Accessibility(Snapshot(1, 219, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578308.2 V 532 UI 
+1794945578308.7 B 1017 UI view=537
+1794945578323.8 F 15139 UI interact=41 draw=2266 present=12832
+1794945578324.1 U 84 UI Tab(TabId(2), Saved(5, Document { generic: Generic { alternatives: [], links: [], repeats: [] }, canvas_theme: Light, color_theme: Publicati
+1794945578324.4 D 48 bg workcopy::snapshots routes/drawing-11.rsk
+1794945578324.9 D 523 bg workcopy::hashes octo-test/group-drawings files=1
+1794945578326.1 V 557 UI 
+1794945578326.6 B 1060 UI view=561
+1794945578331.9 D 7539 bg workcopy::save_version routes/drawing-11.rsk
+1794945578341.7 F 13201 UI interact=67 draw=2354 present=10780
+1794945578341.9 U 14 UI Tab(TabId(2), Autosaved(Key { serial: 3, generation: 2, epoch: 5, revision: 2, clear: true }, Ok(None)))
+1794945578341.9 U 5 UI Tab(TabId(2), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 23, [("routes/drawing-11.rsk", Some("4f6f58edf186d5d095
+1794945578342.0 U 8 UI Accessibility(Snapshot(1, 220, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578342.0 U 5 UI Accessibility(Snapshot(1, 221, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578342.6 V 536 UI 
+1794945578343.1 B 1010 UI view=540
+1794945578357.7 F 14091 UI interact=40 draw=2305 present=11746
+1794945578357.9 U 11 UI Tab(TabId(2), GitHub(Recorded(Ok(Some(SaveMeta { id: "1794945578325", path: "/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4d
+1794945578358.0 U 8 UI Accessibility(Snapshot(1, 222, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578358.0 U 6 UI Accessibility(Snapshot(1, 223, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578358.0 U 5 UI Accessibility(Snapshot(1, 224, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578358.0 U 6 UI Accessibility(Snapshot(1, 225, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578358.6 V 531 UI 
+1794945578359.1 B 991 UI view=535
+1794945578374.5 F 15150 UI interact=37 draw=2274 present=12838
+1794945578374.7 U 10 UI Accessibility(Snapshot(1, 226, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578374.9 U 180 UI Accessibility(Snapshot(1, 227, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945578375.5 V 517 UI 
+1794945578375.9 B 972 UI view=521
+1794945578391.4 F 15346 UI interact=40 draw=2262 present=13044
+1794945578391.7 U 4 UI Accessibility(Published(1, Ok(())))
+1794945578392.4 V 601 UI 
+1794945578392.9 B 1137 UI view=606
+1794945578408.7 F 15721 UI interact=51 draw=2671 present=12998
+1794945579033.7 U 91 UI Star(Tick)
+1794945579035.4 V 1409 UI 
+1794945579036.7 B 2788 UI view=1420
+1794945579047.2 F 10399 UI interact=122 draw=5852 present=4425
+1794945584033.9 U 90 UI Star(Tick)
+1794945584035.5 V 1439 UI 
+1794945584036.9 B 2823 UI view=1451
+1794945584051.2 F 14168 UI interact=124 draw=6346 present=7698
+1794945585855.7 U 66 UI Canvas(PointerHover(Some(Vector { x: 288.0, y: -55.0 })))
+1794945585856.5 V 689 UI 
+1794945585857.2 B 1353 UI view=697
+1794945585863.1 F 5829 UI interact=63 draw=2888 present=2878
+1794945585863.3 U 1 UI Star(Event(Mouse(CursorMoved { position: Point { x: 820.0, y: 408.0 } })))
+1794945585864.1 V 685 UI 
+1794945585864.8 B 1386 UI view=698
+1794945585872.9 F 8076 UI interact=75 draw=3434 present=4567
+1794945585929.8 U 80 UI Canvas(PointerHover(Some(Vector { x: 288.0, y: -55.0 })))
+1794945585929.8 U 7 UI Canvas(Hover(None))
+1794945585931.4 V 1379 UI 
+1794945585932.8 B 2728 UI view=1392
+1794945585942.1 F 9112 UI interact=120 draw=5733 present=3259
+1794945585942.5 U 10 UI Accessibility(Refresh)
+1794945585942.5 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 820.0, y: 408.0 } })))
+1794945585942.5 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945585943.4 V 722 UI 
+1794945585944.0 B 1398 UI view=733
+1794945585949.8 F 5444 UI interact=59 draw=2858 present=2527
+1794945585950.4 U 275 UI Accessibility(Snapshot(1, 228, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945585951.4 V 769 UI 
+1794945585952.1 B 1484 UI view=777
+1794945585958.7 F 6602 UI interact=78 draw=3352 present=3171
+1794945585982.3 U 1768 UI Canvas(Click(Point { x: 162.47815, y: -25.919268 }))
+1794945585984.9 V 858 UI 
+1794945585985.7 B 1652 UI view=869
+1794945586008.1 F 19850 UI interact=168 draw=17727 present=1955
+1794945586008.3 U 8 UI Accessibility(Refresh)
+1794945586008.3 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 820.0, y: 408.0 } })))
+1794945586008.3 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945586008.4 U 71 UI Tab(TabId(2), LabelsReady(Key { revision: 3, epoch: 5 }, Ok(Refresh { cache: {61: Entry { source: Document { generic: Generic { alternatives
+1794945586008.4 U 10 UI Accessibility(Snapshot(1, 229, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586009.2 V 657 UI 
+1794945586009.7 B 1224 UI view=662
+1794945586016.2 F 6039 UI interact=45 draw=2302 present=3692
+1794945586016.4 U 9 UI Accessibility(Snapshot(1, 230, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586016.4 U 6 UI Accessibility(Snapshot(1, 231, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586016.6 U 140 UI Accessibility(Snapshot(1, 232, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586017.2 V 554 UI 
+1794945586017.7 B 1051 UI view=559
+1794945586024.5 F 6158 UI interact=56 draw=2311 present=3791
+1794945586024.7 U 4 UI Accessibility(Published(1, Ok(())))
+1794945586025.4 V 584 UI 
+1794945586025.9 B 1078 UI view=589
+1794945586041.4 F 15494 UI interact=49 draw=2311 present=13133
+1794945586335.5 U 344 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 3, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+1794945586337.3 V 1549 UI 
+1794945586338.8 B 3023 UI view=1560
+1794945586349.8 F 10496 UI interact=120 draw=6090 present=4285
+1794945586350.7 U 335 UI Accessibility(Snapshot(1, 233, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586352.1 V 1262 UI 
+1794945586353.2 B 2446 UI view=1274
+1794945586360.1 F 6785 UI interact=108 draw=3677 present=3000
+1794945586382.6 U 41 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 3, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1
+1794945586383.4 V 643 UI 
+1794945586384.1 B 1294 UI view=649
+1794945586388.7 F 4261 UI interact=52 draw=2374 present=1835
+1794945586388.9 U 11 UI Accessibility(Snapshot(1, 234, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586389.1 U 213 UI Accessibility(Snapshot(1, 235, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586389.8 V 564 UI 
+1794945586390.3 B 1070 UI view=569
+1794945586397.3 F 7003 UI interact=46 draw=2291 present=4665
+1794945586735.4 U 211 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 3, epoch: 5, atoms: [64] }))
+1794945586736.4 V 825 UI 
+1794945586737.2 B 1611 UI view=835
+1794945586743.4 F 5899 UI interact=74 draw=2994 present=2831
+1794945586744.2 U 351 UI Accessibility(Snapshot(1, 236, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586745.5 V 1152 UI 
+1794945586746.6 B 2259 UI view=1164
+1794945586754.0 F 7299 UI interact=119 draw=4424 present=2755
+1794945586761.7 U 29 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 3, epoch: 5, atoms: [64] }, Ok(Analysis { smiles: "C", smiles_not
+1794945586762.6 V 770 UI 
+1794945586763.4 B 1565 UI view=776
+1794945586769.3 F 5484 UI interact=57 draw=3338 present=2088
+1794945586769.6 U 13 UI Accessibility(Snapshot(1, 237, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586769.8 U 212 UI Accessibility(Snapshot(1, 238, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945586770.7 V 753 UI 
+1794945586771.3 B 1341 UI view=760
+1794945586777.9 F 6641 UI interact=62 draw=2726 present=3852
+1794945589033.3 U 111 UI Star(Tick)
+1794945589034.7 V 1154 UI 
+1794945589035.5 B 1915 UI view=1163
+1794945589042.0 F 6482 UI interact=78 draw=2958 present=3445
+1794945590984.2 U 156 UI Tick
+1794945590986.0 V 1523 UI 
+1794945590987.5 B 2995 UI view=1538
+1794945591001.2 F 13236 UI interact=114 draw=6586 present=6535
+1794945591002.3 U 577 UI Accessibility(Snapshot(1, 239, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945591004.0 V 1431 UI 
+1794945591005.7 B 3142 UI view=1445
+1794945591015.1 F 9267 UI interact=196 draw=4480 present=4591
+1794945591015.7 U 28 UI Tab(TabId(2), Autosaved(Key { serial: 4, generation: 2, epoch: 5, revision: 3, clear: false }, Ok(None)))
+1794945591016.7 V 856 UI 
+1794945591017.9 B 2028 UI view=864
+1794945591062.0 F 43253 UI interact=117 draw=6958 present=36178
+1794945591062.8 U 31 UI Accessibility(Snapshot(1, 240, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945591063.2 U 393 UI Accessibility(Snapshot(1, 241, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945591064.8 V 1392 UI 
+1794945591066.4 B 2998 UI view=1409
+1794945591077.9 F 11457 UI interact=193 draw=6405 present=4858
+1794945593607.7 F 9075 UI interact=75 draw=4505 present=4495
+1794945593608.1 U 0 UI ModifiersChanged(Modifiers(LOGO))
+1794945593608.2 U 11 UI Accessibility(Refresh)
+1794945593608.2 U 0 UI Star(Event(Keyboard(ModifiersChanged(Modifiers(LOGO)))))
+1794945593609.5 V 1186 UI 
+1794945593610.7 B 2348 UI view=1199
+1794945593621.4 F 7638 UI interact=158 draw=3636 present=3844
+1794945593622.0 U 220 UI Accessibility(Snapshot(1, 242, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593622.1 U 72 UI Save
+1794945593623.1 V 838 UI 
+1794945593623.8 B 1584 UI view=846
+1794945593655.5 F 31411 UI interact=63 draw=3287 present=28060
+1794945593655.9 U 1 UI ModifiersChanged(Modifiers(0x0))
+1794945593655.9 U 13 UI Accessibility(Refresh)
+1794945593656.0 U 2 UI Accessibility(Refresh)
+1794945593656.0 U 3 UI Accessibility(Refresh)
+1794945593656.0 U 0 UI Star(Event(Keyboard(KeyPressed { key: Character("s"), modified_key: Character("s"), physical_key: Code(KeyS), location: Standard, modifiers:
+1794945593656.0 U 0 UI Star(Event(Keyboard(KeyReleased { key: Character("s"), modified_key: Character("s"), physical_key: Code(KeyS), location: Standard, modifiers
+1794945593656.0 U 0 UI Star(Event(Keyboard(ModifiersChanged(Modifiers(0x0)))))
+1794945593656.1 U 22 UI Accessibility(Snapshot(1, 243, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593657.1 V 979 UI 
+1794945593657.9 B 1734 UI view=989
+1794945593672.9 F 14465 UI interact=56 draw=3220 present=11188
+1794945593673.3 U 125 UI Tab(TabId(2), Saved(5, Document { generic: Generic { alternatives: [], links: [], repeats: [] }, canvas_theme: Light, color_theme: Publicati
+1794945593673.7 U 14 UI Accessibility(Snapshot(1, 244, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593673.7 U 10 UI Accessibility(Snapshot(1, 245, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593673.7 U 11 UI Accessibility(Snapshot(1, 246, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593673.9 D 249 bg workcopy::snapshots routes/drawing-11.rsk
+1794945593674.3 D 625 bg workcopy::hashes octo-test/group-drawings files=1
+1794945593675.9 V 761 UI 
+1794945593676.6 B 1490 UI view=769
+1794945593684.1 D 10519 bg workcopy::save_version routes/drawing-11.rsk
+1794945593684.5 F 5550 UI interact=79 draw=3299 present=2172
+1794945593684.8 U 19 UI Tab(TabId(2), Autosaved(Key { serial: 5, generation: 3, epoch: 5, revision: 3, clear: true }, Ok(None)))
+1794945593684.8 U 7 UI Tab(TabId(2), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 25, [("routes/drawing-11.rsk", Some("ee178d8263f1a85faa
+1794945593684.8 U 10 UI Accessibility(Snapshot(1, 247, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593684.9 U 8 UI Accessibility(Snapshot(1, 248, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593685.6 V 685 UI 
+1794945593686.2 B 1248 UI view=691
+1794945593692.5 F 5718 UI interact=50 draw=2860 present=2808
+1794945593692.7 U 13 UI Tab(TabId(2), GitHub(Recorded(Ok(Some(SaveMeta { id: "1794945593674", path: "/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4d
+1794945593692.8 U 8 UI Accessibility(Snapshot(1, 249, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593692.8 U 8 UI Accessibility(Snapshot(1, 250, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593692.8 U 6 UI Accessibility(Snapshot(1, 251, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593692.8 U 7 UI Accessibility(Snapshot(1, 252, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593693.6 V 650 UI 
+1794945593694.1 B 1208 UI view=656
+1794945593710.2 F 15708 UI interact=48 draw=2520 present=13140
+1794945593710.5 U 15 UI Accessibility(Snapshot(1, 253, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593710.7 U 206 UI Accessibility(Snapshot(1, 254, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945593711.4 V 602 UI 
+1794945593711.9 B 1135 UI view=608
+1794945593726.8 F 14663 UI interact=50 draw=2651 present=11961
+1794945593727.0 U 4 UI Accessibility(Published(1, Ok(())))
+1794945593727.7 V 633 UI 
+1794945593728.3 B 1185 UI view=638
+1794945593743.3 F 14998 UI interact=52 draw=2684 present=12262
+1794945594033.7 U 35 UI Star(Tick)
+1794945594034.7 V 831 UI 
+1794945594035.4 B 1589 UI view=842
+1794945594041.4 F 5918 UI interact=94 draw=3012 present=2812
+1794945599033.5 U 117 UI Star(Tick)
+1794945599035.3 V 1414 UI 
+1794945599036.6 B 2767 UI view=1426
+1794945599049.8 F 13093 UI interact=133 draw=6099 present=6860
+1794945600948.9 U 82 UI Canvas(PointerHover(Some(Vector { x: 303.0, y: 60.0 })))
+1794945600949.8 V 785 UI 
+1794945600950.7 B 1667 UI view=791
+1794945600959.6 F 8799 UI interact=126 draw=5116 present=3556
+1794945600959.9 U 1 UI Star(Event(Mouse(CursorMoved { position: Point { x: 835.0, y: 523.0 } })))
+1794945600960.9 V 789 UI 
+1794945600961.6 B 1506 UI view=800
+1794945600968.0 F 6355 UI interact=79 draw=2974 present=3302
+1794945601026.0 U 99 UI Canvas(PointerHover(Some(Vector { x: 303.0, y: 60.0 })))
+1794945601026.0 U 7 UI Canvas(Hover(None))
+1794945601027.8 V 1548 UI 
+1794945601029.2 B 2970 UI view=1558
+1794945601036.6 F 7123 UI interact=87 draw=3829 present=3206
+1794945601036.9 U 13 UI Accessibility(Refresh)
+1794945601037.0 U 20 UI Star(Event(Mouse(CursorMoved { position: Point { x: 835.0, y: 523.0 } })))
+1794945601037.0 U 0 UI Star(Event(Mouse(ButtonPressed(Left))))
+1794945601038.2 V 958 UI 
+1794945601039.1 B 1816 UI view=966
+1794945601044.8 F 5281 UI interact=77 draw=3526 present=1677
+1794945601045.1 U 175 UI Accessibility(Snapshot(1, 255, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601045.9 V 677 UI 
+1794945601046.5 B 1249 UI view=682
+1794945601054.1 F 7619 UI interact=64 draw=3222 present=4333
+1794945601079.7 U 2268 UI Canvas(Click(Point { x: 169.67334, y: 29.243698 }))
+1794945601083.3 V 1300 UI 
+1794945601084.6 B 2518 UI view=1313
+1794945601110.9 F 20316 UI interact=100 draw=18200 present=2015
+1794945601111.1 U 8 UI Accessibility(Refresh)
+1794945601111.2 U 0 UI Star(Event(Mouse(CursorMoved { position: Point { x: 835.0, y: 523.0 } })))
+1794945601111.2 U 0 UI Star(Event(Mouse(ButtonReleased(Left))))
+1794945601111.2 U 66 UI Tab(TabId(2), LabelsReady(Key { revision: 4, epoch: 5 }, Ok(Refresh { cache: {65: Entry { source: Document { generic: Generic { alternatives
+1794945601111.3 U 8 UI Accessibility(Snapshot(1, 256, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601112.0 V 638 UI 
+1794945601112.6 B 1200 UI view=644
+1794945601119.2 F 6149 UI interact=47 draw=2380 present=3722
+1794945601119.4 U 11 UI Accessibility(Snapshot(1, 257, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601119.5 U 6 UI Accessibility(Snapshot(1, 258, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601119.6 U 124 UI Accessibility(Snapshot(1, 259, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601120.3 V 562 UI 
+1794945601120.8 B 1082 UI view=567
+1794945601144.8 F 23362 UI interact=65 draw=2425 present=20872
+1794945601145.0 U 3 UI Accessibility(Published(1, Ok(())))
+1794945601145.6 V 446 UI 
+1794945601145.9 B 792 UI view=450
+1794945601161.0 F 15036 UI interact=34 draw=1602 present=13399
+1794945601432.6 U 423 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 4, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+1794945601434.5 V 1625 UI 
+1794945601436.0 B 3132 UI view=1638
+1794945601446.7 F 10270 UI interact=110 draw=5990 present=4169
+1794945601447.6 U 393 UI Accessibility(Snapshot(1, 260, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601449.0 V 1276 UI 
+1794945601450.4 B 2614 UI view=1287
+1794945601456.1 F 5637 UI interact=121 draw=2971 present=2545
+1794945601477.7 U 38 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 4, epoch: 5, atoms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1
+1794945601478.4 V 574 UI 
+1794945601478.9 B 1128 UI view=578
+1794945601483.6 F 4354 UI interact=44 draw=2345 present=1964
+1794945601483.7 U 10 UI Accessibility(Snapshot(1, 261, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601483.9 U 154 UI Accessibility(Snapshot(1, 262, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601484.5 V 548 UI 
+1794945601485.1 B 1074 UI view=554
+1794945601492.0 F 6896 UI interact=51 draw=2108 present=4736
+1794945601830.9 U 437 UI InspectorAction(RefreshPropertiesFor(PropertyKey { revision: 4, epoch: 5, atoms: [66] }))
+1794945601832.8 V 1607 UI 
+1794945601834.5 B 3229 UI view=1623
+1794945601842.8 F 7808 UI interact=124 draw=4693 present=2990
+1794945601843.5 U 302 UI Accessibility(Snapshot(1, 263, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601844.7 V 1107 UI 
+1794945601845.8 B 2149 UI view=1120
+1794945601852.4 F 6611 UI interact=112 draw=3581 present=2917
+1794945601858.9 U 29 UI Tab(TabId(2), InspectorAction(PropertiesCalculated(PropertyKey { revision: 4, epoch: 5, atoms: [66] }, Ok(Analysis { smiles: "C", smiles_not
+1794945601859.8 V 748 UI 
+1794945601860.5 B 1532 UI view=754
+1794945601866.3 F 5316 UI interact=60 draw=3311 present=1945
+1794945601866.4 U 9 UI Accessibility(Snapshot(1, 264, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601866.6 U 197 UI Accessibility(Snapshot(1, 265, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945601867.3 V 623 UI 
+1794945601867.9 B 1225 UI view=629
+1794945601874.8 F 6813 UI interact=63 draw=2716 present=4033
+1794945604033.9 U 295 UI Star(Tick)
+1794945604035.6 V 1476 UI 
+1794945604037.0 B 2879 UI view=1489
+1794945604048.9 F 11845 UI interact=130 draw=4746 present=6969
+1794945606083.2 U 219 UI Tick
+1794945606085.2 V 1776 UI 
+1794945606087.8 B 4353 UI view=1790
+1794945606103.8 F 15488 UI interact=117 draw=8418 present=6953
+1794945606104.3 U 222 UI Accessibility(Snapshot(1, 266, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945606105.3 V 790 UI 
+1794945606106.0 B 1536 UI view=798
+1794945606112.7 F 6580 UI interact=105 draw=3240 present=3234
+1794945606113.0 U 25 UI Tab(TabId(2), Autosaved(Key { serial: 6, generation: 3, epoch: 5, revision: 4, clear: false }, Ok(None)))
+1794945606114.2 V 1042 UI 
+1794945606115.0 B 1852 UI view=1050
+1794945606151.6 F 36113 UI interact=73 draw=3575 present=32465
+1794945606152.1 U 40 UI Accessibility(Snapshot(1, 267, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945606152.5 U 391 UI Accessibility(Snapshot(1, 268, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945606154.3 V 1474 UI 
+1794945606156.1 B 3295 UI view=1490
+1794945606166.9 F 10760 UI interact=262 draw=6561 present=3936
+1794945608754.8 F 10502 UI interact=70 draw=5224 present=5207
+1794945608757.0 U 0 UI ModifiersChanged(Modifiers(LOGO))
+1794945608757.0 U 0 UI Star(Event(Keyboard(ModifiersChanged(Modifiers(LOGO)))))
+1794945608757.0 U 11 UI Accessibility(Refresh)
+1794945608757.1 U 92 UI Save
+1794945608758.0 V 769 UI 
+1794945608758.8 B 1542 UI view=780
+1794945608768.2 F 8719 UI interact=89 draw=4160 present=4470
+1794945608768.6 U 0 UI ModifiersChanged(Modifiers(0x0))
+1794945608768.6 U 12 UI Accessibility(Refresh)
+1794945608768.7 U 4 UI Accessibility(Refresh)
+1794945608768.7 U 3 UI Accessibility(Refresh)
+1794945608768.7 U 0 UI Star(Event(Keyboard(KeyPressed { key: Character("s"), modified_key: Character("s"), physical_key: Code(KeyS), location: Standard, modifiers:
+1794945608768.7 U 0 UI Star(Event(Keyboard(KeyReleased { key: Character("s"), modified_key: Character("s"), physical_key: Code(KeyS), location: Standard, modifiers
+1794945608768.7 U 0 UI Star(Event(Keyboard(ModifiersChanged(Modifiers(0x0)))))
+1794945608768.7 U 22 UI Accessibility(Snapshot(1, 269, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608768.8 U 18 UI Accessibility(Snapshot(1, 270, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608769.8 V 941 UI 
+1794945608770.9 B 2030 UI view=951
+1794945608795.8 F 24265 UI interact=139 draw=3395 present=20731
+1794945608796.4 U 158 UI Tab(TabId(2), Saved(5, Document { generic: Generic { alternatives: [], links: [], repeats: [] }, canvas_theme: Light, color_theme: Publicati
+1794945608796.9 U 24 UI Accessibility(Snapshot(1, 271, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608796.9 U 18 UI Accessibility(Snapshot(1, 272, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608797.1 D 273 bg workcopy::snapshots routes/drawing-11.rsk
+1794945608797.3 D 552 bg workcopy::hashes octo-test/group-drawings files=1
+1794945608799.4 V 813 UI 
+1794945608800.1 B 1539 UI view=823
+1794945608805.3 D 8502 bg workcopy::save_version routes/drawing-11.rsk
+1794945608808.3 F 5480 UI interact=98 draw=3373 present=2009
+1794945608808.5 U 13 UI Accessibility(Snapshot(1, 273, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608808.5 U 13 UI Tab(TabId(2), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 27, [("routes/drawing-11.rsk", Some("714e322eb80ae8e865
+1794945608808.6 U 11 UI Tab(TabId(2), Autosaved(Key { serial: 7, generation: 4, epoch: 5, revision: 4, clear: true }, Ok(None)))
+1794945608808.6 U 9 UI Accessibility(Snapshot(1, 274, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608808.6 U 9 UI Accessibility(Snapshot(1, 275, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608809.5 V 761 UI 
+1794945608810.1 B 1349 UI view=767
+1794945608825.4 F 14680 UI interact=46 draw=2670 present=11964
+1794945608825.6 U 14 UI Tab(TabId(2), GitHub(Recorded(Ok(Some(SaveMeta { id: "1794945608797", path: "/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4d
+1794945608825.7 U 9 UI Accessibility(Snapshot(1, 276, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608825.7 U 7 UI Accessibility(Snapshot(1, 277, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608825.7 U 7 UI Accessibility(Snapshot(1, 278, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608825.7 U 6 UI Accessibility(Snapshot(1, 279, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608826.5 V 641 UI 
+1794945608827.0 B 1190 UI view=646
+1794945608842.0 F 14645 UI interact=49 draw=2644 present=11951
+1794945608842.3 U 11 UI Accessibility(Snapshot(1, 280, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608842.5 U 212 UI Accessibility(Snapshot(1, 281, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945608843.2 V 626 UI 
+1794945608843.8 B 1169 UI view=631
+1794945608858.6 F 14615 UI interact=49 draw=2642 present=11923
+1794945608858.8 U 3 UI Accessibility(Published(1, Ok(())))
+1794945608859.5 V 608 UI 
+1794945608860.0 B 1132 UI view=613
+1794945608874.7 F 14626 UI interact=45 draw=2643 present=11938
+1794945609034.0 U 92 UI Star(Tick)
+1794945609035.7 V 1464 UI 
+1794945609037.1 B 2832 UI view=1476
+1794945609047.4 F 10230 UI interact=126 draw=5741 present=4363
+1794945614034.0 U 78 UI Star(Tick)
+1794945614035.8 V 1544 UI 
+1794945614037.2 B 2908 UI view=1558
+1794945614049.2 F 11903 UI interact=134 draw=5407 present=6363
+1794945619033.2 U 104 UI Star(Tick)
+1794945619034.4 V 943 UI 
+1794945619035.2 B 1775 UI view=951
+1794945619043.7 F 8406 UI interact=82 draw=4858 present=3466
+1794945623241.7 U 8 UI Accessibility(Native(1, 20, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945623242.8 V 886 UI 
+1794945623244.1 B 2241 UI view=898
+1794945623252.4 F 7487 UI interact=118 draw=3712 present=3656
+1794945623252.7 U 10 UI Accessibility(Refresh)
+1794945623253.6 V 759 UI 
+1794945623254.4 B 1509 UI view=768
+1794945623261.4 F 6660 UI interact=81 draw=3110 present=3469
+1794945623262.0 U 233 UI Accessibility(Snapshot(1, 282, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945623263.6 V 1422 UI 
+1794945623265.2 B 3063 UI view=1438
+1794945623300.9 F 35368 UI interact=170 draw=6356 present=28842
+1794945623318.4 U 10 UI Accessibility(Native(1, 20, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #880, dat
+1794945623320.4 V 1837 UI 
+1794945623321.2 B 2658 UI view=1847
+1794945623327.6 F 6120 UI interact=72 draw=3232 present=2815
+1794945623328.2 U 264 UI Accessibility(Dispatch(20, Tabs(Select(TabId(0)))))
+1794945623330.5 V 862 UI 
+1794945623332.1 B 2411 UI view=872
+1794945623333.1 U 187 UI Accessibility(Snapshot(1, 283, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945623333.2 U 48 UI InspectorScroll(0.0)
+1794945623334.4 V 1102 UI 
+1794945623335.3 B 1959 UI view=1115
+1794945623378.5 F 45830 UI interact=2985 draw=36347 present=6498
+1794945623381.2 U 420 UI Accessibility(Snapshot(1, 284, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945623382.4 V 934 UI 
+1794945623383.2 B 1684 UI view=942
+1794945623392.7 F 7042 UI interact=327 draw=3680 present=3035
+1794945623393.1 U 5 UI Accessibility(Published(1, Ok(())))
+1794945623394.2 V 939 UI 
+1794945623395.0 B 1709 UI view=953
+1794945623402.5 F 7336 UI interact=90 draw=3316 present=3930
+1794945624033.8 U 119 UI Star(Tick)
+1794945624035.5 V 1393 UI 
+1794945624036.9 B 2783 UI view=1406
+1794945624050.1 F 13046 UI interact=137 draw=6591 present=6317
+1794945629032.8 U 46 UI Star(Tick)
+1794945629033.8 V 780 UI 
+1794945629034.6 B 1577 UI view=787
+1794945629045.1 F 10500 UI interact=85 draw=4136 present=6279
+1794945631373.6 U 7 UI Accessibility(Native(1, 21, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945631374.8 V 879 UI 
+1794945631375.7 B 1803 UI view=888
+1794945631383.0 F 6965 UI interact=81 draw=3316 present=3568
+1794945631383.6 U 9 UI Accessibility(Refresh)
+1794945631384.7 V 925 UI 
+1794945631385.6 B 1847 UI view=933
+1794945631394.3 F 8282 UI interact=71 draw=3907 present=4303
+1794945631395.4 U 310 UI Accessibility(Snapshot(1, 285, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945631396.2 V 755 UI 
+1794945631397.3 B 1840 UI view=764
+1794945631437.0 F 39570 UI interact=106 draw=4063 present=35401
+1794945631453.6 U 9 UI Accessibility(Native(1, 21, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #976, dat
+1794945631454.7 V 843 UI 
+1794945631455.4 B 1546 UI view=850
+1794945631461.8 F 6214 UI interact=58 draw=3198 present=2957
+1794945631462.3 U 155 UI Accessibility(Dispatch(21, Tabs(Select(TabId(1)))))
+1794945631464.3 V 626 UI 
+1794945631465.3 B 1665 UI view=639
+1794945631466.1 U 154 UI Accessibility(Snapshot(1, 286, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945631466.2 U 19 UI InspectorScroll(0.0)
+1794945631466.8 V 546 UI 
+1794945631468.4 B 2167 UI view=551
+1794945631476.9 F 11115 UI interact=3111 draw=3979 present=4025
+1794945631478.3 U 212 UI Accessibility(Snapshot(1, 287, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945631478.9 V 506 UI 
+1794945631479.6 B 1196 UI view=512
+1794945631491.3 F 8253 UI interact=204 draw=4371 present=3677
+1794945631491.6 U 5 UI Accessibility(Published(1, Ok(())))
+1794945631492.3 V 554 UI 
+1794945631493.1 B 1324 UI view=561
+1794945631499.4 F 6194 UI interact=94 draw=3660 present=2439
+1794945634033.6 U 41 UI Star(Tick)
+1794945634034.8 V 476 UI 
+1794945634035.5 B 1142 UI view=479
+1794945634042.9 F 7360 UI interact=65 draw=3731 present=3564
+1794945639033.7 U 67 UI Star(Tick)
+1794945639034.6 V 648 UI 
+1794945639035.5 B 1560 UI view=652
+1794945639043.5 F 7913 UI interact=98 draw=3270 present=4546
+1794945639239.5 U 8 UI Accessibility(Native(1, 22, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945639240.7 V 1011 UI 
+1794945639242.1 B 2406 UI view=1022
+1794945639253.2 F 10572 UI interact=135 draw=6801 present=3636
+1794945639253.6 U 36 UI Accessibility(Refresh)
+1794945639254.3 V 527 UI 
+1794945639255.0 B 1279 UI view=533
+1794945639264.3 F 8754 UI interact=98 draw=3374 present=5282
+1794945639265.1 U 379 UI Accessibility(Snapshot(1, 288, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945639266.1 V 822 UI 
+1794945639267.8 B 2535 UI view=833
+1794945639278.4 F 10476 UI interact=182 draw=5970 present=4323
+1794945639304.7 U 13 UI Accessibility(Native(1, 22, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1074, da
+1794945639305.7 V 731 UI 
+1794945639306.6 B 1632 UI view=743
+1794945639313.5 F 6657 UI interact=69 draw=3539 present=3049
+1794945639314.0 U 236 UI Accessibility(Dispatch(22, Tabs(Select(TabId(2)))))
+1794945639316.7 V 947 UI 
+1794945639318.4 B 2633 UI view=958
+1794945639321.7 U 196 UI Accessibility(Snapshot(1, 289, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945639321.8 U 22 UI InspectorScroll(0.0)
+1794945639322.7 V 816 UI 
+1794945639323.6 B 1699 UI view=822
+1794945639359.3 F 38078 UI interact=2749 draw=30322 present=5006
+1794945639361.7 U 366 UI Accessibility(Snapshot(1, 290, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945639363.2 V 1291 UI 
+1794945639364.7 B 2797 UI view=1305
+1794945639371.8 F 6876 UI interact=106 draw=4080 present=2689
+1794945639372.2 U 6 UI Accessibility(Published(1, Ok(())))
+1794945639373.5 V 1123 UI 
+1794945639374.6 B 2139 UI view=1133
+1794945639402.6 F 27896 UI interact=124 draw=6267 present=21504
+1794945644033.1 U 195 UI Star(Tick)
+1794945644034.6 V 1120 UI 
+1794945644035.7 B 2261 UI view=1365
+1794945644042.3 F 6542 UI interact=106 draw=2961 present=3475
+1794945646851.3 U 8 UI Accessibility(Native(1, 23, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945646852.3 V 768 UI 
+1794945646853.6 B 2110 UI view=779
+1794945646867.8 F 13429 UI interact=112 draw=6221 present=7096
+1794945646868.3 U 17 UI Accessibility(Refresh)
+1794945646870.1 V 1525 UI 
+1794945646871.6 B 3028 UI view=1539
+1794945646882.5 F 10029 UI interact=150 draw=4810 present=5069
+1794945646884.2 U 796 UI Accessibility(Snapshot(1, 291, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945646887.1 V 2610 UI 
+1794945646889.2 B 4702 UI view=2637
+1794945646909.4 F 19856 UI interact=183 draw=3983 present=15691
+1794945646924.1 U 9 UI Accessibility(Native(1, 23, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1163, da
+1794945646925.9 V 1058 UI 
+1794945646926.7 B 1817 UI view=1068
+1794945646932.7 F 5793 UI interact=69 draw=3143 present=2581
+1794945646933.4 U 305 UI Accessibility(Dispatch(23, Tabs(Select(TabId(0)))))
+1794945646936.2 V 1258 UI 
+1794945646939.8 B 4819 UI view=1276
+1794945646945.3 U 231 UI Accessibility(Snapshot(1, 292, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945646945.4 U 27 UI InspectorScroll(0.0)
+1794945646946.4 V 807 UI 
+1794945646947.1 B 1540 UI view=822
+1794945646983.9 F 39164 UI interact=2809 draw=29697 present=6657
+1794945646986.7 U 426 UI Accessibility(Snapshot(1, 293, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945646988.5 V 1538 UI 
+1794945646989.3 B 2382 UI view=1554
+1794945646999.5 F 9915 UI interact=105 draw=5205 present=4605
+1794945647000.1 U 7 UI Accessibility(Published(1, Ok(())))
+1794945647001.5 V 1118 UI 
+1794945647002.3 B 1986 UI view=1129
+1794945647009.0 F 6576 UI interact=101 draw=3474 present=3000
+1794945649033.2 U 142 UI Star(Tick)
+1794945649034.9 V 1443 UI 
+1794945649036.0 B 2532 UI view=1456
+1794945649045.6 F 9611 UI interact=88 draw=3153 present=6371
+1794945654033.3 U 68 UI Star(Tick)
+1794945654035.5 V 1757 UI 
+1794945654036.3 B 2567 UI view=1788
+1794945654044.8 F 8439 UI interact=94 draw=3441 present=4904
+1794945655466.9 U 10 UI Accessibility(Native(1, 24, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945655468.2 V 1011 UI 
+1794945655469.0 B 1804 UI view=1019
+1794945655477.4 F 7915 UI interact=69 draw=3612 present=4234
+1794945655477.7 U 10 UI Accessibility(Refresh)
+1794945655478.6 V 738 UI 
+1794945655479.4 B 1514 UI view=753
+1794945655489.3 F 9575 UI interact=71 draw=4791 present=4713
+1794945655490.0 U 234 UI Accessibility(Snapshot(1, 294, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945655491.5 V 1393 UI 
+1794945655492.6 B 2457 UI view=1410
+1794945655526.8 F 33485 UI interact=145 draw=6112 present=27227
+1794945655555.8 U 10 UI Accessibility(Native(1, 24, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1261, da
+1794945655557.7 V 1052 UI 
+1794945655558.5 B 1877 UI view=1062
+1794945655565.0 F 6330 UI interact=66 draw=3114 present=3150
+1794945655565.8 U 295 UI Accessibility(Dispatch(24, Tabs(Select(TabId(2)))))
+1794945655568.5 V 952 UI 
+1794945655570.4 B 2865 UI view=963
+1794945655576.3 U 199 UI Accessibility(Snapshot(1, 295, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945655576.4 U 22 UI InspectorScroll(0.0)
+1794945655577.3 V 748 UI 
+1794945655578.4 B 1857 UI view=755
+1794945655618.1 F 42449 UI interact=3298 draw=32294 present=6858
+1794945655621.7 U 418 UI Accessibility(Snapshot(1, 296, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945655623.5 V 1507 UI 
+1794945655625.2 B 3239 UI view=1520
+1794945655636.8 F 11324 UI interact=171 draw=6480 present=4673
+1794945655637.3 U 7 UI Accessibility(Published(1, Ok(())))
+1794945655639.0 V 1488 UI 
+1794945655640.0 B 2479 UI view=1504
+1794945655649.5 F 9371 UI interact=110 draw=4848 present=4413
+1794945659032.9 U 163 UI Star(Tick)
+1794945659034.7 V 1511 UI 
+1794945659036.1 B 2890 UI view=1525
+1794945659049.9 F 13751 UI interact=124 draw=6069 present=7558
+1794945663998.9 U 9 UI Accessibility(Native(1, 25, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945664000.2 V 1060 UI 
+1794945664001.4 B 2248 UI view=1069
+1794945664009.0 F 7014 UI interact=72 draw=2891 present=4050
+1794945664009.3 U 13 UI Accessibility(Refresh)
+1794945664010.3 V 791 UI 
+1794945664011.1 B 1529 UI view=808
+1794945664021.7 F 10337 UI interact=69 draw=3962 present=6306
+1794945664022.6 U 399 UI Accessibility(Snapshot(1, 297, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945664024.7 V 1664 UI 
+1794945664026.3 B 3276 UI view=1684
+1794945664084.6 F 57972 UI interact=209 draw=6339 present=51423
+1794945664085.1 U 74 UI Star(Tick)
+1794945664086.4 V 1043 UI 
+1794945664087.3 B 2001 UI view=1053
+1794945664094.3 F 6773 UI interact=121 draw=3403 present=3249
+1794945664121.4 U 9 UI Accessibility(Native(1, 25, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1355, da
+1794945664123.5 V 1053 UI 
+1794945664124.3 B 1869 UI view=1065
+1794945664131.0 F 6470 UI interact=64 draw=2880 present=3525
+1794945664131.7 U 252 UI Accessibility(Dispatch(25, Tabs(Select(TabId(1)))))
+1794945664135.2 V 962 UI 
+1794945664137.9 B 3699 UI view=980
+1794945664143.2 U 227 UI Accessibility(Snapshot(1, 298, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945664143.3 U 28 UI InspectorScroll(0.0)
+1794945664144.0 V 541 UI 
+1794945664144.7 B 1248 UI view=548
+1794945664153.5 F 10872 UI interact=2344 draw=3581 present=4946
+1794945664155.9 U 451 UI Accessibility(Snapshot(1, 299, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945664157.0 V 879 UI 
+1794945664158.5 B 2454 UI view=889
+1794945664169.0 F 10185 UI interact=140 draw=5385 present=4660
+1794945664169.4 U 5 UI Accessibility(Published(1, Ok(())))
+1794945664170.2 V 616 UI 
+1794945664171.0 B 1426 UI view=623
+1794945664177.6 F 6548 UI interact=92 draw=3608 present=2848
+1794945666672.4 U 7 UI Accessibility(Native(1, 26, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945666673.0 V 460 UI 
+1794945666673.7 B 1125 UI view=465
+1794945666680.4 F 6369 UI interact=55 draw=3044 present=3270
+1794945666680.7 U 8 UI Accessibility(Refresh)
+1794945666681.2 V 442 UI 
+1794945666682.8 B 1981 UI view=448
+1794945666690.7 F 7374 UI interact=94 draw=3614 present=3666
+1794945666691.1 U 209 UI Accessibility(Snapshot(1, 300, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945666691.7 V 488 UI 
+1794945666692.6 B 1348 UI view=495
+1794945666731.4 F 38648 UI interact=105 draw=7604 present=30938
+1794945666743.7 U 6 UI Accessibility(Native(1, 26, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1447, da
+1794945666744.3 V 469 UI 
+1794945666745.0 B 1132 UI view=475
+1794945666752.0 F 6862 UI interact=54 draw=3068 present=3739
+1794945666752.6 U 294 UI Accessibility(Dispatch(26, Tabs(Select(TabId(0)))))
+1794945666756.5 V 1167 UI 
+1794945666758.3 B 2967 UI view=1183
+1794945666762.0 U 245 UI Accessibility(Snapshot(1, 301, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945666762.0 U 21 UI InspectorScroll(0.0)
+1794945666762.8 V 692 UI 
+1794945666763.6 B 1420 UI view=699
+1794945666796.3 F 34948 UI interact=2499 draw=27168 present=5283
+1794945666798.6 U 373 UI Accessibility(Snapshot(1, 302, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945666800.2 V 1348 UI 
+1794945666801.0 B 2204 UI view=1359
+1794945666807.9 F 6695 UI interact=84 draw=3350 present=3261
+1794945666808.3 U 4 UI Accessibility(Published(1, Ok(())))
+1794945666809.2 V 802 UI 
+1794945666810.0 B 1582 UI view=811
+1794945666816.3 F 6240 UI interact=113 draw=3360 present=2767
+1794945669033.4 U 83 UI Star(Tick)
+1794945669034.9 V 1330 UI 
+1794945669036.3 B 2694 UI view=1342
+1794945669049.5 F 13158 UI interact=132 draw=6801 present=6225
+1794945674033.3 U 128 UI Star(Tick)
+1794945674035.1 V 1458 UI 
+1794945674036.5 B 2933 UI view=1470
+1794945674051.6 F 14942 UI interact=132 draw=6755 present=8055
+1794945676427.2 U 9 UI Accessibility(Native(1, 27, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945676428.1 V 753 UI 
+1794945676428.8 B 1460 UI view=762
+1794945676439.4 F 10147 UI interact=75 draw=4212 present=5860
+1794945676440.1 U 34 UI Accessibility(Refresh)
+1794945676441.2 V 868 UI 
+1794945676442.6 B 2255 UI view=877
+1794945676452.9 F 9970 UI interact=73 draw=3556 present=6341
+1794945676454.6 U 429 UI Accessibility(Snapshot(1, 303, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676456.4 V 1615 UI 
+1794945676458.1 B 3258 UI view=1631
+1794945676500.0 F 41657 UI interact=232 draw=8113 present=33312
+1794945676518.5 U 8 UI Accessibility(Native(1, 27, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1604, da
+1794945676519.4 V 770 UI 
+1794945676521.5 B 2802 UI view=779
+1794945676529.3 F 7487 UI interact=81 draw=3742 present=3664
+1794945676529.8 U 116 UI Accessibility(Dispatch(27, GitHub(ShowVersions)))
+1794945676530.0 D 86 bg workcopy::snapshots routes/drawing-01.rsk
+1794945676531.1 V 460 UI 
+1794945676532.0 B 1400 UI view=472
+1794945676539.2 F 6731 UI interact=67 draw=2286 present=4377
+1794945676539.5 U 17 UI GitHub(Versions(LocalLoaded(1, Ok([]))))
+1794945676539.6 U 23 UI Accessibility(Snapshot(1, 304, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676540.5 V 739 UI 
+1794945676542.2 B 2467 UI view=755
+1794945676551.0 F 8300 UI interact=123 draw=3638 present=4539
+1794945676552.8 U 320 UI Accessibility(Snapshot(1, 305, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676553.8 V 732 UI 
+1794945676555.4 B 2268 UI view=744
+1794945676563.1 F 6520 UI interact=135 draw=2388 present=3999
+1794945676563.6 U 37 UI Accessibility(Published(1, Ok(())))
+1794945676564.6 V 693 UI 
+1794945676565.9 B 2046 UI view=707
+1794945676574.7 F 8706 UI interact=123 draw=4708 present=3874
+1794945676873.0 H 343126 bg GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-01.rsk&per_page=20&page=1 status=200 bytes=2368
+1794945676873.8 U 31 UI GitHub(Versions(RemoteLoaded(1, Ok([RemoteVersion { commit: "3ce9d132ac685992617503fa43864d68a6d935e2", message: "Revise the route, step 12"
+1794945676874.9 V 891 UI 
+1794945676877.6 B 3565 UI view=902
+1794945676879.2 U 523 UI Accessibility(Snapshot(1, 306, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676879.3 U 21 UI GitHub(Versions(Shown("3ce9d132ac685992617503fa43864d68a6d935e2")))
+1794945676879.5 U 15 UI GitHub(Versions(Shown("f103d91f34ca3396821cf011fead4d9f995439f8")))
+1794945676879.6 U 16 UI GitHub(Versions(Shown("ba6641d0416486d594d54ebb5b6d689548609fbe")))
+1794945676879.7 U 19 UI GitHub(Versions(Shown("ebefbb236fd664ae1b79ef9e408313d7a2c3487f")))
+1794945676879.8 U 15 UI GitHub(Versions(Shown("f085a676153d3df23a7f6cfbddca05e6a5fa1efd")))
+1794945676879.9 U 14 UI GitHub(Versions(Shown("0b6a44a624af683b37bad1224c62db8f7f7068bd")))
+1794945676880.2 U 23 UI GitHub(Versions(Shown("37ad08b41aa829da8551f27e43e9bf43dbcdd4b5")))
+1794945676880.3 U 22 UI GitHub(Versions(Shown("6c6a35d0316701d8fa6a6a607cbeafd051787ab4")))
+1794945676880.5 U 17 UI GitHub(Versions(Shown("0a934367be2d3f5353f7eb51a2f44db9f52e7edb")))
+1794945676880.6 U 16 UI GitHub(Versions(Shown("de9ad8f100b2f3a99d2c16bedb6c8896c38436af")))
+1794945676880.8 U 19 UI GitHub(Versions(Shown("5462440500974ad77cbdd3278ef7e7b0e6d3aab5")))
+1794945676881.0 U 61 UI GitHub(Versions(Shown("34b385dc943dd3ddc27010a02c362b1bed821964")))
+1794945676881.1 U 50 UI InspectorScroll(0.0)
+1794945676882.2 V 892 UI 
+1794945676883.7 B 2367 UI view=904
+1794945676898.7 F 20462 UI interact=9938 draw=6111 present=4412
+1794945676899.5 U 27 UI Accessibility(Snapshot(1, 307, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.6 U 27 UI Accessibility(Snapshot(1, 308, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.6 U 29 UI Accessibility(Snapshot(1, 309, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.6 U 13 UI Accessibility(Snapshot(1, 310, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.7 U 19 UI Accessibility(Snapshot(1, 311, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.7 U 11 UI Accessibility(Snapshot(1, 312, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.7 U 11 UI Accessibility(Snapshot(1, 313, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.7 U 11 UI Accessibility(Snapshot(1, 314, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.7 U 15 UI Accessibility(Snapshot(1, 315, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.7 U 12 UI Accessibility(Snapshot(1, 316, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.8 U 11 UI Accessibility(Snapshot(1, 317, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676899.8 U 11 UI Accessibility(Snapshot(1, 318, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676900.0 U 264 UI Accessibility(Snapshot(1, 319, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676900.7 V 507 UI 
+1794945676901.5 B 1258 UI view=515
+1794945676908.2 F 6676 UI interact=241 draw=3622 present=2813
+1794945676908.6 U 14 UI Accessibility(Published(1, Ok(())))
+1794945676909.2 V 513 UI 
+1794945676910.1 B 1360 UI view=523
+1794945676917.8 F 7654 UI interact=90 draw=4180 present=3383
+1794945676967.0 H 87502 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=f103d91f34ca3396821cf011fead4d9f995439f8 status=200 bytes=73622
+1794945676968.8 U 23 UI GitHub(Versions(Doc(1, "f103d91f34ca3396821cf011fead4d9f995439f8", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945676969.7 V 761 UI 
+1794945676971.2 B 2268 UI view=771
+1794945676971.7 H 92022 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=ebefbb236fd664ae1b79ef9e408313d7a2c3487f status=200 bytes=2262
+1794945676984.8 H 104087 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=de9ad8f100b2f3a99d2c16bedb6c8896c38436af status=200 bytes=2256
+1794945676984.8 H 105247 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=ba6641d0416486d594d54ebb5b6d689548609fbe status=200 bytes=8309
+1794945676991.8 F 20053 UI interact=118 draw=15298 present=4637
+1794945676992.0 H 111148 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=5462440500974ad77cbdd3278ef7e7b0e6d3aab5 status=200 bytes=17199
+1794945676992.7 U 411 UI Accessibility(Snapshot(1, 320, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945676993.8 V 888 UI 
+1794945676995.3 B 2395 UI view=903
+1794945676996.5 H 115540 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=34b385dc943dd3ddc27010a02c362b1bed821964 status=200 bytes=5632
+1794945677003.8 H 123444 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=6c6a35d0316701d8fa6a6a607cbeafd051787ab4 status=200 bytes=73616
+1794945677005.2 F 9833 UI interact=145 draw=6438 present=3250
+1794945677005.8 U 19 UI GitHub(Versions(Doc(1, "ebefbb236fd664ae1b79ef9e408313d7a2c3487f", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677005.9 U 5 UI GitHub(Versions(Doc(1, "de9ad8f100b2f3a99d2c16bedb6c8896c38436af", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677005.9 U 4 UI GitHub(Versions(Doc(1, "ba6641d0416486d594d54ebb5b6d689548609fbe", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677005.9 U 4 UI GitHub(Versions(Doc(1, "5462440500974ad77cbdd3278ef7e7b0e6d3aab5", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677006.6 V 542 UI 
+1794945677007.5 B 1491 UI view=549
+1794945677009.8 H 129282 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=0a934367be2d3f5353f7eb51a2f44db9f52e7edb status=200 bytes=8303
+1794945677018.0 H 138176 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=f085a676153d3df23a7f6cfbddca05e6a5fa1efd status=200 bytes=17205
+1794945677020.4 F 12010 UI interact=80 draw=7679 present=4250
+1794945677020.9 U 20 UI GitHub(Versions(Doc(1, "34b385dc943dd3ddc27010a02c362b1bed821964", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677020.9 U 5 UI GitHub(Versions(Doc(1, "6c6a35d0316701d8fa6a6a607cbeafd051787ab4", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677021.0 U 23 UI Accessibility(Snapshot(1, 321, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677021.0 U 14 UI Accessibility(Snapshot(1, 322, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677021.0 U 17 UI Accessibility(Snapshot(1, 323, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677021.1 U 20 UI Accessibility(Snapshot(1, 324, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677021.7 V 527 UI 
+1794945677022.6 B 1403 UI view=533
+1794945677023.8 H 143750 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=0b6a44a624af683b37bad1224c62db8f7f7068bd status=200 bytes=5638
+1794945677029.9 H 149743 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=37ad08b41aa829da8551f27e43e9bf43dbcdd4b5 status=200 bytes=43714
+1794945677031.7 H 152384 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=3ce9d132ac685992617503fa43864d68a6d935e2 status=200 bytes=43720
+1794945677041.5 F 18497 UI interact=98 draw=13971 present=4428
+1794945677041.9 U 19 UI GitHub(Versions(Doc(1, "0a934367be2d3f5353f7eb51a2f44db9f52e7edb", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677042.0 U 7 UI GitHub(Versions(Doc(1, "f085a676153d3df23a7f6cfbddca05e6a5fa1efd", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677042.1 U 25 UI Accessibility(Snapshot(1, 325, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677042.1 U 17 UI Accessibility(Snapshot(1, 326, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677042.7 V 528 UI 
+1794945677043.5 B 1340 UI view=538
+1794945677064.8 F 20749 UI interact=75 draw=15656 present=5017
+1794945677065.3 U 36 UI GitHub(Versions(Doc(1, "0b6a44a624af683b37bad1224c62db8f7f7068bd", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677065.4 U 5 UI GitHub(Versions(Doc(1, "37ad08b41aa829da8551f27e43e9bf43dbcdd4b5", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677065.4 U 4 UI GitHub(Versions(Doc(1, "3ce9d132ac685992617503fa43864d68a6d935e2", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945677065.4 U 27 UI Accessibility(Snapshot(1, 327, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677065.5 U 19 UI Accessibility(Snapshot(1, 328, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677066.0 V 475 UI 
+1794945677067.0 B 1381 UI view=482
+1794945677132.2 F 64563 UI interact=77 draw=53056 present=11431
+1794945677132.8 U 48 UI Accessibility(Snapshot(1, 329, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677132.9 U 28 UI Accessibility(Snapshot(1, 330, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677133.4 U 558 UI Accessibility(Snapshot(1, 331, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945677134.6 V 945 UI 
+1794945677136.1 B 2425 UI view=958
+1794945677146.8 F 10635 UI interact=110 draw=3106 present=7418
+1794945679033.2 U 157 UI Star(Tick)
+1794945679034.7 V 1210 UI 
+1794945679036.5 B 2992 UI view=1225
+1794945679056.7 F 20115 UI interact=146 draw=6184 present=13786
+1794945684033.1 U 140 UI Star(Tick)
+1794945684034.3 V 1017 UI 
+1794945684035.6 B 2278 UI view=1029
+1794945684055.0 F 19324 UI interact=88 draw=3170 present=16066
+1794945689033.0 U 158 UI Star(Tick)
+1794945689034.4 V 1128 UI 
+1794945689036.0 B 2716 UI view=1140
+1794945689054.9 F 18866 UI interact=191 draw=5992 present=12682
+1794945694032.8 U 126 UI Star(Tick)
+1794945694034.0 V 1017 UI 
+1794945694035.5 B 2493 UI view=1027
+1794945694054.8 F 19150 UI interact=134 draw=5981 present=13035
+1794945699032.5 U 131 UI Star(Tick)
+1794945699033.7 V 984 UI 
+1794945699034.7 B 1956 UI view=997
+1794945699046.5 F 11786 UI interact=99 draw=3380 present=8308
+1794945701980.6 U 13 UI Accessibility(Native(1, 28, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945701981.2 V 458 UI 
+1794945701981.8 B 1128 UI view=463
+1794945701992.8 F 10571 UI interact=102 draw=4416 present=6053
+1794945701993.0 U 20 UI Accessibility(Refresh)
+1794945701993.6 V 424 UI 
+1794945701994.4 B 1176 UI view=430
+1794945702010.5 F 15897 UI interact=55 draw=2957 present=12885
+1794945702011.0 U 219 UI Accessibility(Snapshot(1, 332, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945702011.6 V 415 UI 
+1794945702012.2 B 1074 UI view=421
+1794945702056.0 F 43523 UI interact=95 draw=4944 present=38484
+1794945702072.4 U 14 UI Accessibility(Native(1, 28, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1638, da
+1794945702073.0 V 412 UI 
+1794945702073.6 B 1062 UI view=417
+1794945702081.0 F 7226 UI interact=57 draw=2884 present=4285
+1794945702081.4 U 150 UI Accessibility(Dispatch(28, Tabs(Select(TabId(1)))))
+1794945702081.6 D 54 bg workcopy::snapshots routes/drawing-06.rsk
+1794945702083.3 V 443 UI 
+1794945702084.7 B 1842 UI view=454
+1794945702094.5 F 6103 UI interact=151 draw=2980 present=2972
+1794945702094.9 U 18 UI GitHub(Versions(LocalLoaded(2, Ok([]))))
+1794945702094.9 U 17 UI Accessibility(Snapshot(1, 333, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945702095.4 V 395 UI 
+1794945702096.1 B 1111 UI view=400
+1794945702119.4 F 22945 UI interact=55 draw=2637 present=20252
+1794945702119.8 U 161 UI Accessibility(Snapshot(1, 334, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945702120.3 V 389 UI 
+1794945702121.2 B 1351 UI view=391
+1794945702126.8 F 4502 UI interact=142 draw=2410 present=1950
+1794945702127.0 U 11 UI Accessibility(Published(1, Ok(())))
+1794945702127.5 V 462 UI 
+1794945702128.3 B 1194 UI view=469
+1794945702160.4 F 32019 UI interact=76 draw=2245 present=29698
+1794945702172.9 H 91455 bg GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-06.rsk&per_page=20&page=1 status=200 bytes=197
+1794945702173.3 U 14 UI GitHub(Versions(RemoteLoaded(2, Ok([RemoteVersion { commit: "27cf3b0516d799a65f5a655882381bbb4f235d69", message: "Remote change to routes/dr
+1794945702173.7 V 359 UI 
+1794945702174.5 B 1115 UI view=367
+1794945702175.2 U 210 UI Accessibility(Snapshot(1, 335, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945702175.2 U 14 UI GitHub(Versions(Shown("27cf3b0516d799a65f5a655882381bbb4f235d69")))
+1794945702175.7 V 314 UI 
+1794945702176.3 B 970 UI view=319
+1794945702181.3 F 6504 UI interact=1789 draw=2252 present=2463
+1794945702181.9 U 165 UI Accessibility(Snapshot(1, 336, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945702182.4 V 391 UI 
+1794945702183.1 B 1071 UI view=396
+1794945702209.5 F 26361 UI interact=67 draw=2507 present=23786
+1794945702209.8 U 11 UI Accessibility(Published(1, Ok(())))
+1794945702210.2 V 371 UI 
+1794945702210.9 B 997 UI view=376
+1794945702243.3 F 32367 UI interact=58 draw=3522 present=28787
+1794945702271.0 H 95807 bg GET /repos/octo-test/group-drawings/contents/routes/drawing-06.rsk?ref=27cf3b0516d799a65f5a655882381bbb4f235d69 status=200 bytes=5639
+1794945702271.6 U 14 UI GitHub(Versions(Doc(2, "27cf3b0516d799a65f5a655882381bbb4f235d69", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+1794945702272.1 V 366 UI 
+1794945702272.8 B 1051 UI view=371
+1794945702278.4 F 5324 UI interact=54 draw=2693 present=2577
+1794945702278.8 U 207 UI Accessibility(Snapshot(1, 337, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945702279.3 V 394 UI 
+1794945702280.0 B 1042 UI view=400
+1794945702316.0 F 35991 UI interact=61 draw=2318 present=33612
+1794945704032.3 U 92 UI Star(Tick)
+1794945704033.4 V 827 UI 
+1794945704035.2 B 2634 UI view=844
+1794945704047.0 F 11724 UI interact=232 draw=4743 present=6749
+1794945709032.3 U 129 UI Star(Tick)
+1794945709033.3 V 844 UI 
+1794945709034.9 B 2398 UI view=860
+1794945709046.5 F 11500 UI interact=136 draw=4566 present=6798
+1794945714032.3 U 154 UI Star(Tick)
+1794945714033.4 V 868 UI 
+1794945714035.1 B 2630 UI view=886
+1794945714047.0 F 11811 UI interact=145 draw=4923 present=6742
+1794945715888.7 U 25 UI Accessibility(Native(1, 29, ActionRequest { action: ScrollIntoView, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: 
+1794945715889.6 V 757 UI 
+1794945715890.4 B 1563 UI view=766
+1794945715898.4 F 7531 UI interact=64 draw=3358 present=4109
+1794945715898.7 U 19 UI Accessibility(Refresh)
+1794945715899.2 V 412 UI 
+1794945715900.0 B 1174 UI view=419
+1794945715906.3 F 6059 UI interact=59 draw=2489 present=3510
+1794945715906.9 U 256 UI Accessibility(Snapshot(1, 338, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945715907.5 V 457 UI 
+1794945715908.6 B 1534 UI view=463
+1794945715975.0 F 66012 UI interact=138 draw=4671 present=61203
+1794945716002.2 U 18 UI Accessibility(Native(1, 29, ActionRequest { action: Click, target_tree: TreeId(00000000-0000-0000-0000-000000000000), target_node: #1732, da
+1794945716003.8 V 1435 UI 
+1794945716004.6 B 2267 UI view=1445
+1794945716010.0 F 5159 UI interact=68 draw=2341 present=2749
+1794945716010.6 U 366 UI Accessibility(Dispatch(29, Tabs(Select(TabId(0)))))
+1794945716010.9 D 67 bg workcopy::snapshots routes/drawing-01.rsk
+1794945716013.2 V 683 UI 
+1794945716014.9 B 2429 UI view=695
+1794945716140.2 F 124508 UI interact=102 draw=115384 present=9022
+1794945716140.6 U 20 UI GitHub(Versions(LocalLoaded(3, Ok([]))))
+1794945716140.7 U 27 UI Accessibility(Snapshot(1, 339, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945716141.3 V 542 UI 
+1794945716142.1 B 1286 UI view=552
+1794945716153.5 H 142786 bg GET /repos/octo-test/group-drawings/commits?sha=main&path=routes/drawing-01.rsk&per_page=20&page=1 status=200 bytes=2368
+1794945716155.2 F 9666 UI interact=199 draw=2996 present=6471
+1794945716155.8 U 200 UI Accessibility(Snapshot(1, 340, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945716156.5 V 525 UI 
+1794945716157.3 B 1319 UI view=533
+1794945716183.1 F 24927 UI interact=168 draw=3267 present=21491
+1794945716183.5 U 94 UI GitHub(Versions(RemoteLoaded(3, Ok([RemoteVersion { commit: "3ce9d132ac685992617503fa43864d68a6d935e2", message: "Revise the route, step 12"
+1794945716183.6 U 6 UI Accessibility(Published(1, Ok(())))
+1794945716184.4 V 689 UI 
+1794945716186.2 B 2472 UI view=702
+1794945716199.0 F 12154 UI interact=118 draw=4347 present=7688
+1794945716200.0 U 419 UI Accessibility(Snapshot(1, 341, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945716201.1 V 877 UI 
+1794945716202.9 B 2686 UI view=890
+1794945716216.9 F 13913 UI interact=202 draw=5034 present=8677
+1794945719032.4 U 126 UI Star(Tick)
+1794945719033.7 V 1082 UI 
+1794945719035.9 B 3239 UI view=1094
+1794945719054.7 F 18790 UI interact=141 draw=5444 present=13205
+1794945724032.3 U 115 UI Star(Tick)
+1794945724033.1 V 604 UI 
+1794945724034.1 B 1647 UI view=617
+1794945724044.9 F 10690 UI interact=110 draw=3770 present=6809
+1794945729031.8 U 144 UI Star(Tick)
+1794945729033.0 V 990 UI 
+1794945729034.5 B 2467 UI view=1002
+1794945729046.7 F 12193 UI interact=134 draw=3702 present=8357
+1794945734032.5 U 132 UI Star(Tick)
+1794945734033.6 V 850 UI 
+1794945734034.8 B 2023 UI view=857
+1794945734047.5 F 12644 UI interact=117 draw=4468 present=8059
+1794945739031.5 U 52 UI Star(Tick)
+1794945739032.1 V 414 UI 
+1794945739032.7 B 1079 UI view=422
+1794945739046.2 F 13352 UI interact=110 draw=5115 present=8127
+1794945744032.5 U 115 UI Star(Tick)
+1794945744033.6 V 832 UI 
+1794945744034.4 B 1642 UI view=844
+1794945744053.3 F 18868 UI interact=78 draw=6022 present=12767
+1794945749031.5 U 66 UI Star(Tick)
+1794945749032.1 V 445 UI 
+1794945749032.8 B 1109 UI view=451
+1794945749042.9 F 10005 UI interact=57 draw=3696 present=6251
+1794945749043.3 U 7 UI Star(Checked { focused: false })
+1794945749043.9 V 480 UI 
+1794945749044.6 B 1164 UI view=492
+1794945749062.0 F 17323 UI interact=71 draw=6093 present=11158
+1794945749191.3 H 147969 bg GET /user/starred/Ameyanagi/ReShiki status=404
+1794945749207.3 U 15482 UI Star(IsStarred(Some(false)))
+1794945749208.3 V 763 UI 
+1794945749209.9 B 2390 UI view=773
+1794945749226.5 F 16034 UI interact=198 draw=6753 present=9083
+1794945749227.1 U 271 UI Accessibility(Snapshot(1, 342, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945749227.9 V 533 UI 
+1794945749228.6 B 1287 UI view=543
+1794945749239.5 F 10538 UI interact=101 draw=3287 present=7150
+1794945749239.9 U 13 UI Accessibility(Published(1, Ok(())))
+1794945749240.6 V 569 UI 
+1794945749242.1 B 2131 UI view=575
+1794945749303.0 F 60745 UI interact=159 draw=5816 present=54769
+1794945831901.1 U 18 UI Canvas(Hover(None))
+1794945831901.4 V 253 UI 
+1794945831901.7 B 584 UI view=257
+1794945831907.3 U 0 UI Star(Event(Window(Unfocused)))
+1794945831907.3 U 26 UI Accessibility(Window(Id(1), Unfocused))
+1794945831907.1 F 5371 UI interact=30 draw=1559 present=3781
+1794945831907.8 V 425 UI 
+1794945831908.6 B 1210 UI view=433
+1794945831915.7 F 6809 UI interact=42 draw=1947 present=4820
+1794945831916.0 U 110 UI Accessibility(Snapshot(1, 343, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945831916.3 V 238 UI 
+1794945831916.6 B 573 UI view=241
+1794945831957.0 F 40025 UI interact=47 draw=1692 present=38286
+1794945831958.5 U 8 UI Accessibility(Published(1, Ok(())))
+1794945831958.9 V 251 UI 
+1794945831959.2 B 588 UI view=254
+1794945831990.1 F 30868 UI interact=42 draw=1919 present=28907
+1794945836201.7 U 0 UI Star(Event(Window(Focused)))
+1794945836201.8 U 34 UI GitHub(Focused)
+1794945836201.9 U 22 UI Accessibility(Window(Id(1), Focused))
+1794945836202.4 V 419 UI 
+1794945836203.2 B 1195 UI view=427
+1794945836204.1 D 2180 bg workcopy::hashes octo-test/group-drawings files=3
+1794945836211.3 F 7715 UI interact=46 draw=2450 present=5218
+1794945836212.0 U 14 UI Accessibility(Snapshot(1, 344, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945836212.1 U 150 UI Accessibility(Snapshot(1, 345, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945836212.2 U 7 UI GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 28, [("routes/drawing-01.rsk", Some("9bb40193ff31012d6dec2a68acd9ce69
+1794945836212.5 V 283 UI 
+1794945836212.9 B 710 UI view=288
+1794945836255.1 F 41812 UI interact=38 draw=2259 present=39515
+1794945836255.2 U 7 UI Accessibility(Published(1, Ok(())))
+1794945836255.5 V 228 UI 
+1794945836255.8 B 496 UI view=231
+1794945836271.9 F 15914 UI interact=31 draw=1241 present=14641
+1794945836272.2 U 114 UI Accessibility(Snapshot(1, 346, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945836272.5 V 247 UI 
+1794945836272.8 B 569 UI view=250
+1794945836283.7 H 81905 bg GET /repositories/6 status=200 bytes=129
+1794945836288.8 F 15379 UI interact=45 draw=1703 present=13631
+1794945836412.4 H 128625 bg GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+1794945836412.4 K 0 bg /repos/octo-test/group-drawings/git/commits/3ce9d132ac685992617503fa43864d68a6d935e2
+1794945836412.4 K 0 bg /repos/octo-test/group-drawings/git/trees/8721c1315a26ad73276b3f579db9024c94c1753c
+1794945836412.5 K 0 bg /repos/octo-test/group-drawings/git/trees/4486145be339e65be156be74aa779e12f22a2b18
+1794945836413.3 U 39 UI GitHub(Newer(1, RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok((Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-dr
+1794945836414.3 V 800 UI 
+1794945836415.2 B 1723 UI view=809
+1794945836423.6 F 8044 UI interact=89 draw=3711 present=4244
+1794945836424.1 U 234 UI Accessibility(Snapshot(1, 347, Snapshot { nodes: [Node { id: "header-about", name: "About ReShiki; check for updates", role: Button, enabled
+1794945836424.6 V 430 UI 
+1794945836425.3 B 1114 UI view=436
+1794945836459.2 F 33857 UI interact=65 draw=3299 present=30493

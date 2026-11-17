@@ -1,0 +1,185 @@
+
+== 04a-open-drawing
+   +    0.0 U    0.01 UI  GitHub(Picker(Select(0)))
+   +  145.9 D    0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  145.9 D    0.00 UI  picker_open_path read working copy
+   +  145.9 D    0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  145.9 D    0.01 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  145.9 D    0.35 UI  workcopy::folder (scan)
+   +  145.9 U    0.40 UI  GitHub(Picker(Select(0)))
+   +  161.9 D    0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  161.9 D    0.01 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  161.9 D    0.25 UI  workcopy::folder (scan)
+   +  173.6 D   11.60 UI  workcopy::checkout routes/drawing-01.rsk
+   +  173.7 U   12.00 UI  GitHub(Picker(Downloaded(5, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, private
+   +  173.9 D    0.04 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  176.5 D    0.54 UI  workcopy::unsent octo-test/group-drawings files=1
+   +  186.1 D   12.31 bg  workcopy::persist write state.json
+   +  190.3 D   13.34 bg  prefs.json save
+   +  200.6 D    0.40 UI  workcopy::unsent octo-test/group-drawings files=1
+   +  200.7 U    0.00 UI  Tab(TabId(0), GitHub(Kept(Ok(()))))
+   +  200.7 U    0.41 UI  GitHub(Persisted(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(())))
+
+== 04b-open-drawing
+   +    0.0 U    0.01 UI  GitHub(Picker(Select(1)))
+   +  104.2 D    0.06 UI  picker_open_path read working copy
+   +  104.2 U    0.08 UI  GitHub(Picker(Select(1)))
+   +  131.4 D   10.66 UI  workcopy::checkout routes/drawing-06.rsk
+   +  131.5 U   10.76 UI  GitHub(Picker(Downloaded(11, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, privat
+   +  131.9 D    0.29 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  134.8 D    0.67 UI  workcopy::unsent octo-test/group-drawings files=2
+   +  135.2 U    1.04 UI  FilePrepared(Some(("/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/s
+   +  141.3 D    9.69 bg  workcopy::persist write state.json
+   +  145.0 D    0.44 UI  workcopy::unsent octo-test/group-drawings files=2
+   +  145.0 U    0.45 UI  GitHub(Persisted(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(())))
+
+== 04c-open-drawing
+   +    0.0 U    0.01 UI  GitHub(Picker(Select(2)))
+   +  112.3 D    0.04 UI  picker_open_path read working copy
+   +  112.4 U    0.06 UI  GitHub(Picker(Select(2)))
+   +  139.7 D   10.86 UI  workcopy::checkout routes/drawing-11.rsk
+   +  139.8 U   10.97 UI  GitHub(Picker(Downloaded(16, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, privat
+   +  140.0 D    0.11 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +  142.8 D    0.70 UI  workcopy::unsent octo-test/group-drawings files=3
+   +  143.3 U    1.25 UI  FilePrepared(Some(("/private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/s
+   +  147.6 D    7.71 bg  workcopy::persist write state.json
+   +  162.4 D    0.58 UI  workcopy::unsent octo-test/group-drawings files=3
+   +  162.4 U    0.59 UI  GitHub(Persisted(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(())))
+
+== 05a-cmd-s
+   +   24.3 D    0.88 UI  workcopy::unsent octo-test/group-drawings files=3
+   +   24.6 D    0.02 bg  workcopy::snapshots routes/drawing-11.rsk
+   +   33.4 D    8.83 bg  workcopy::save_version routes/drawing-11.rsk
+   +   41.6 D    0.65 UI  workcopy::unsent octo-test/group-drawings files=3
+   +   41.6 U    0.68 UI  Tab(TabId(2), GitHub(Recorded(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(Some(SaveMeta { id: "
+
+== 05b-cmd-s
+   +   37.9 D    1.32 UI  workcopy::unsent octo-test/group-drawings files=3
+   +   37.9 U    1.47 UI  Tab(TabId(2), Saved(5, Document { generic: Generic { alternatives: [], links: [], repeats: [] }, canvas_theme:
+   +   38.4 D    0.19 bg  workcopy::snapshots routes/drawing-11.rsk
+   +   46.2 D    7.93 bg  workcopy::save_version routes/drawing-11.rsk
+   +   56.8 D    0.85 UI  workcopy::unsent octo-test/group-drawings files=3
+   +   56.8 U    0.87 UI  Tab(TabId(2), GitHub(Recorded(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(Some(SaveMeta { id: "
+
+== 05c-cmd-s
+   +   56.3 D    1.06 UI  workcopy::unsent octo-test/group-drawings files=3
+   +   56.3 U    1.26 UI  Tab(TabId(2), Saved(5, Document { generic: Generic { alternatives: [], links: [], repeats: [] }, canvas_theme:
+   +   57.1 D    0.35 bg  workcopy::snapshots routes/drawing-11.rsk
+   +   65.7 D    9.03 bg  workcopy::save_version routes/drawing-11.rsk
+   +   77.5 D    0.95 UI  workcopy::unsent octo-test/group-drawings files=3
+   +   77.5 U    0.97 UI  Tab(TabId(2), GitHub(Recorded(RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok(Some(SaveMeta { id: "
+
+== 06a-tab
+
+== 06b-tab
+
+== 06c-tab
+
+== 06d-tab
+
+== 06e-tab
+
+== 06f-tab
+
+== 08a-history
+   +    0.1 U    0.08 UI  Accessibility(Dispatch(27, GitHub(ShowVersions)))
+   +    0.4 D    0.09 bg  workcopy::snapshots routes/drawing-01.rsk
+   +    9.6 U    0.02 UI  GitHub(Versions(LocalLoaded(1, Ok([]))))
+   +  355.2 H  355.00 bg  GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  442.3 H   86.98 bg  GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-0
+   +  442.8 U    0.04 UI  GitHub(Versions(RemoteLoaded(1, Ok(("3ce9d132ac685992617503fa43864d68a6d935e2", [RemoteVersion { commit: "3ce9
+   +  533.4 H   90.27 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=34b385dc943dd3ddc27010a02c362b1bed82196
+   +  533.5 H   90.55 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=ebefbb236fd664ae1b79ef9e408313d7a2c3487
+   +  534.4 U    0.03 UI  GitHub(Versions(Doc(1, "ebefbb236fd664ae1b79ef9e408313d7a2c3487f", Ok(Document { generic: Generic { alternativ
+   +  534.5 U    0.01 UI  GitHub(Versions(Doc(1, "34b385dc943dd3ddc27010a02c362b1bed821964", Ok(Document { generic: Generic { alternativ
+   +  539.2 H   96.18 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=37ad08b41aa829da8551f27e43e9bf43dbcdd4b
+   +  547.6 H  104.59 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=f085a676153d3df23a7f6cfbddca05e6a5fa1ef
+   +  553.6 H  110.56 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=0a934367be2d3f5353f7eb51a2f44db9f52e7ed
+   +  558.7 H  115.66 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=5462440500974ad77cbdd3278ef7e7b0e6d3aab
+   +  560.6 U    0.01 UI  GitHub(Versions(Doc(1, "f085a676153d3df23a7f6cfbddca05e6a5fa1efd", Ok(Document { generic: Generic { alternativ
+   +  560.6 U    0.02 UI  GitHub(Versions(Doc(1, "37ad08b41aa829da8551f27e43e9bf43dbcdd4b5", Ok(Document { generic: Generic { alternativ
+   +  567.3 H  124.30 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=0b6a44a624af683b37bad1224c62db8f7f7068b
+   +  572.5 H  129.37 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=4a75543bcf6b6f2044a4f06c441317e1fa0d525
+   +  581.4 H  138.49 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=f103d91f34ca3396821cf011fead4d9f995439f
+   +  585.4 H  142.36 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=6c6a35d0316701d8fa6a6a607cbeafd051787ab
+   +  585.6 H  142.69 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=ba6641d0416486d594d54ebb5b6d689548609fb
+   +  590.4 H  147.36 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=de9ad8f100b2f3a99d2c16bedb6c8896c38436a
+   +  592.2 H  149.36 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=3ce9d132ac685992617503fa43864d68a6d935e
+   +  609.9 U    0.03 UI  GitHub(Versions(Doc(1, "0a934367be2d3f5353f7eb51a2f44db9f52e7edb", Ok(Document { generic: Generic { alternativ
+   +  610.0 U    0.01 UI  GitHub(Versions(Doc(1, "5462440500974ad77cbdd3278ef7e7b0e6d3aab5", Ok(Document { generic: Generic { alternativ
+   +  623.2 U    0.03 UI  GitHub(Versions(Doc(1, "0b6a44a624af683b37bad1224c62db8f7f7068bd", Ok(Document { generic: Generic { alternativ
+   +  623.3 U    0.00 UI  GitHub(Versions(Doc(1, "ba6641d0416486d594d54ebb5b6d689548609fbe", Ok(Document { generic: Generic { alternativ
+   +  623.3 U    0.00 UI  GitHub(Versions(Doc(1, "f103d91f34ca3396821cf011fead4d9f995439f8", Ok(Document { generic: Generic { alternativ
+   +  623.3 U    0.01 UI  GitHub(Versions(Doc(1, "4a75543bcf6b6f2044a4f06c441317e1fa0d5256", Ok(Document { generic: Generic { alternativ
+   +  623.4 U    0.00 UI  GitHub(Versions(Doc(1, "de9ad8f100b2f3a99d2c16bedb6c8896c38436af", Ok(Document { generic: Generic { alternativ
+   +  623.4 U    0.01 UI  GitHub(Versions(Doc(1, "6c6a35d0316701d8fa6a6a607cbeafd051787ab4", Ok(Document { generic: Generic { alternativ
+   +  623.5 U    0.00 UI  GitHub(Versions(Doc(1, "3ce9d132ac685992617503fa43864d68a6d935e2", Ok(Document { generic: Generic { alternativ
+
+== 08b-history-other
+   +    0.6 D    0.10 bg  workcopy::snapshots routes/drawing-06.rsk
+   +   17.5 U    0.02 UI  GitHub(Versions(LocalLoaded(2, Ok([]))))
+   +   83.2 H   82.71 bg  GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  212.8 H  129.54 bg  GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-0
+   +  213.5 U    0.03 UI  GitHub(Versions(RemoteLoaded(2, Ok(("3ce9d132ac685992617503fa43864d68a6d935e2", [RemoteVersion { commit: "27cf
+   +  348.7 H  135.14 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-06.rsk?ref=27cf3b0516d799a65f5a655882381bbb4f235d6
+   +  349.9 U    0.04 UI  GitHub(Versions(Doc(2, "27cf3b0516d799a65f5a655882381bbb4f235d69", Ok(Document { generic: Generic { alternativ
+
+== 08c-history-back
+   +    0.6 D    0.07 bg  workcopy::snapshots routes/drawing-01.rsk
+   +   45.3 U    0.03 UI  GitHub(Versions(LocalLoaded(3, Ok([]))))
+   +  140.1 H  139.77 bg  GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  255.6 H  115.40 bg  GET /repos/octo-test/group-drawings/commits?sha=3ce9d132ac685992617503fa43864d68a6d935e2&path=routes/drawing-0
+   +  256.2 U    0.06 UI  GitHub(Versions(RemoteLoaded(3, Ok(("3ce9d132ac685992617503fa43864d68a6d935e2", [RemoteVersion { commit: "3ce9
+   +  345.6 H   88.90 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=34b385dc943dd3ddc27010a02c362b1bed82196
+   +  347.0 U    0.04 UI  GitHub(Versions(Doc(3, "34b385dc943dd3ddc27010a02c362b1bed821964", Ok(Document { generic: Generic { alternativ
+   +  349.0 H   92.41 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=0a934367be2d3f5353f7eb51a2f44db9f52e7ed
+   +  351.6 H   95.18 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=ebefbb236fd664ae1b79ef9e408313d7a2c3487
+   +  357.8 H  101.25 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=6c6a35d0316701d8fa6a6a607cbeafd051787ab
+   +  363.3 U    0.09 UI  GitHub(Versions(Doc(3, "0a934367be2d3f5353f7eb51a2f44db9f52e7edb", Ok(Document { generic: Generic { alternativ
+   +  364.3 H  107.68 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=de9ad8f100b2f3a99d2c16bedb6c8896c38436a
+   +  364.3 H  108.00 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=3ce9d132ac685992617503fa43864d68a6d935e
+   +  377.4 H  120.99 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=ba6641d0416486d594d54ebb5b6d689548609fb
+   +  377.6 H  120.83 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=4a75543bcf6b6f2044a4f06c441317e1fa0d525
+   +  378.0 U    0.02 UI  GitHub(Versions(Doc(3, "ebefbb236fd664ae1b79ef9e408313d7a2c3487f", Ok(Document { generic: Generic { alternativ
+   +  378.1 U    0.01 UI  GitHub(Versions(Doc(3, "6c6a35d0316701d8fa6a6a607cbeafd051787ab4", Ok(Document { generic: Generic { alternativ
+   +  378.1 U    0.01 UI  GitHub(Versions(Doc(3, "de9ad8f100b2f3a99d2c16bedb6c8896c38436af", Ok(Document { generic: Generic { alternativ
+   +  378.2 U    0.04 UI  GitHub(Versions(Doc(3, "3ce9d132ac685992617503fa43864d68a6d935e2", Ok(Document { generic: Generic { alternativ
+   +  382.8 H  126.27 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=37ad08b41aa829da8551f27e43e9bf43dbcdd4b
+   +  389.9 H  133.41 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=f085a676153d3df23a7f6cfbddca05e6a5fa1ef
+   +  396.2 H  139.70 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=0b6a44a624af683b37bad1224c62db8f7f7068b
+   +  401.5 H  145.12 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=f103d91f34ca3396821cf011fead4d9f995439f
+   +  410.0 H  153.29 bg  GET /repos/octo-test/group-drawings/contents/routes/drawing-01.rsk?ref=5462440500974ad77cbdd3278ef7e7b0e6d3aab
+   +  423.6 U    0.03 UI  GitHub(Versions(Doc(3, "ba6641d0416486d594d54ebb5b6d689548609fbe", Ok(Document { generic: Generic { alternativ
+   +  423.7 U    0.01 UI  GitHub(Versions(Doc(3, "4a75543bcf6b6f2044a4f06c441317e1fa0d5256", Ok(Document { generic: Generic { alternativ
+   +  444.7 U    0.06 UI  GitHub(Versions(Doc(3, "37ad08b41aa829da8551f27e43e9bf43dbcdd4b5", Ok(Document { generic: Generic { alternativ
+   +  445.0 U    0.01 UI  GitHub(Versions(Doc(3, "f085a676153d3df23a7f6cfbddca05e6a5fa1efd", Ok(Document { generic: Generic { alternativ
+   +  445.1 U    0.01 UI  GitHub(Versions(Doc(3, "f103d91f34ca3396821cf011fead4d9f995439f8", Ok(Document { generic: Generic { alternativ
+   +  445.1 U    0.01 UI  GitHub(Versions(Doc(3, "0b6a44a624af683b37bad1224c62db8f7f7068bd", Ok(Document { generic: Generic { alternativ
+   +  445.3 U    0.01 UI  GitHub(Versions(Doc(3, "5462440500974ad77cbdd3278ef7e7b0e6d3aab5", Ok(Document { generic: Generic { alternativ
+07a-focus-away: no trigger
+07b-focus: no trigger
+07c-focus-away: no trigger
+
+== 07d-focus
+   +    0.0 U    0.01 UI  GitHub(Focused)
+   +   85.5 H   85.55 bg  GET /repositories/6 status=200 bytes=129
+   +  177.4 H   91.84 bg  GET /repos/octo-test/group-drawings/git/ref/heads/main status=200 bytes=61
+   +  179.6 D    1.36 UI  workcopy::unsent octo-test/group-drawings files=3
+   +  179.7 U    1.42 UI  GitHub(Newer(1, RepoKey { owner: "octo-test", repo: "group-drawings" }, Ok((Repo { id: 6, key: RepoKey { owner
+flow                  max upd (message)               ui disk  bg disk   rows   done  req
+04a-open-drawing         12.0 Picker:Downloaded          13.2     25.7      -    198    0
+04b-open-drawing         10.8 Picker:Downloaded          11.8     10.0      -    142    0
+04c-open-drawing         11.0 Picker:Downloaded          12.2      7.8      -    160    0
+05a-cmd-s                 1.0 Tab                         1.5      8.8      -      6    0
+05b-cmd-s                 1.5 Tab                         2.2      8.1      -     27    0
+05c-cmd-s                 1.3 Tab                         2.0      9.4      -      9    0
+06a-tab                   0.3 Accessibility               0.0      0.0      -     55    0
+06b-tab                   0.3 Accessibility               0.0      0.0      -     21    0
+06c-tab                   0.4 Accessibility               0.0      0.0      -     64    0
+06d-tab                   0.2 Accessibility               0.0      0.0      -     45    0
+06e-tab                   0.3 Accessibility               0.0      0.0      -     48    0
+06f-tab                   0.4 Accessibility               0.0      0.0      -     23    0
+08a-history               0.3 Accessibility               0.0      0.1    457    688   15
+08b-history-other         0.3 Accessibility               0.0      0.1    223    359    3
+08c-history-back          0.4 Accessibility               0.0      0.1    272    508   15
+07d-focus                 1.4 Newer                       1.4      0.0      -    190    2
