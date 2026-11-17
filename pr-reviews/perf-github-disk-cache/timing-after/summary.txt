@@ -1,0 +1,553 @@
+
+== A1-picker-open
+   +    0.2 U     0.18 UI  Accessibility(Dispatch(5, GitHub(Picker(Show(Open)))))
+   +    2.4 D     0.11 bg  cache::load
+   +   90.2 H    87.47 bg  GET /user status=200
+   +   91.7 D     1.47 bg  cache::store bytes=21
+   +   91.8 D     0.02 bg  cache::load
+   +  225.3 H   133.45 bg  GET /user/installations?per_page=100 status=200
+   +  226.7 D     1.30 bg  cache::store bytes=44
+   +  226.9 D     0.04 bg  cache::load
+   +  365.4 H   138.41 bg  GET /user/installations/1/repositories?per_page=100&page=1 status=200
+   +  368.0 D     2.46 bg  cache::store bytes=542
+   +  368.9 U     0.04 UI  GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", rep
+
+== A2-choose-repo
+   +    0.0 U     0.02 UI  Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +    0.6 D     0.40 bg  cache::load
+   +  145.3 H   144.58 bg  GET /repos/<r>/git/ref/heads/main status=200
+   +  146.9 D     1.48 bg  cache::store bytes=61
+   +  147.1 D     0.05 bg  cache::load
+   +  266.7 H   119.57 bg  GET /repos/<r>/git/commits/<sha> status=200
+   +  267.6 D     0.82 bg  cache::store bytes=59
+   +  267.8 D     0.06 bg  cache::load
+   +  393.3 H   125.50 bg  GET /repos/<r>/git/trees/<sha> status=200
+   +  394.8 D     1.42 bg  cache::store bytes=570
+   +  395.6 U     0.20 UI  GitHub(Picker(Listing(2, Ok((Some("<sha>"), "<sha>", [Entry { name: "2
+   +  395.8 D     0.07 bg  cache::load
+   +  499.2 H   103.32 bg  GET /repos/<r>/git/trees/<sha>?recursive=1 status=200
+   +  500.5 D     1.10 bg  cache::store bytes=4094
+   +  501.1 U     0.14 UI  GitHub(Picker(Whole(2, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "<sha>", folder: false }, Entry 
+
+== A3-open-routes
+   +    0.3 U     0.31 UI  GitHub(Picker(Select(4)))
+   +    2.4 D     0.06 bg  cache::load
+   +  107.5 H   105.05 bg  GET /repos/<r>/git/trees/<sha> status=200
+   +  108.4 D     0.85 bg  cache::store bytes=707
+   +  109.0 U     0.16 UI  GitHub(Picker(Listing(4, Ok((None, "<sha>", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2a
+   +  109.3 D     0.05 bg  cache::load
+   +  109.4 D     0.01 bg  cache::load
+   +  109.4 D     0.02 bg  cache::load
+   +  109.4 D     0.02 bg  cache::load
+   +  109.6 D     0.01 bg  cache::load
+   +  109.6 D     0.01 bg  cache::load
+   +  109.6 D     0.03 bg  cache::load
+   +  109.7 D     0.01 bg  cache::load
+   +  109.7 D     0.01 bg  cache::load
+   +  109.7 D     0.01 bg  cache::load
+   +  109.7 D     0.01 bg  cache::load
+   +  109.7 D     0.01 bg  cache::load
+   +  110.6 U     0.03 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  195.0 H    85.21 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  196.0 D     0.89 bg  cache::store bytes=2281
+   +  197.5 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  202.7 H    92.94 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  202.8 H    92.98 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  203.7 D     0.86 bg  cache::store bytes=180
+   +  203.8 D     1.04 bg  cache::store bytes=8322
+   +  216.3 U     0.08 UI  GitHub(Picker(Changed(2, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+   +  216.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  221.4 H   111.44 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  221.4 H   111.68 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  222.1 D     0.67 bg  cache::store bytes=193
+   +  222.7 D     1.20 bg  cache::store bytes=73629
+   +  225.2 H   115.30 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  225.7 D     0.48 bg  cache::store bytes=197
+   +  234.0 H   124.10 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  235.0 D     1.00 bg  cache::store bytes=193
+   +  240.1 H   130.41 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  240.9 D     0.76 bg  cache::store bytes=5639
+   +  245.1 H   135.23 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  246.0 D     0.84 bg  cache::store bytes=205
+   +  246.7 H   137.03 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  248.0 D     1.27 bg  cache::store bytes=43720
+   +  252.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+   +  252.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  252.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+   +  252.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+   +  252.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  252.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  252.5 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+   +  253.0 H   143.17 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  253.9 D     0.80 bg  cache::store bytes=197
+   +  259.2 H   149.43 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  260.8 D     1.57 bg  cache::store bytes=43721
+   +  287.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  287.2 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+
+== A4-bigfolder-open
+   +    0.0 U     0.02 UI  GitHub(Picker(Enter))
+   +    2.9 D     0.41 bg  cache::load
+   +  102.0 H    99.03 bg  GET /repos/<r>
+   +  103.1 D     1.02 bg  cache::store bytes=120
+   +  103.6 U     0.05 UI  GitHub(Picker(Resolved(5, Link { key: RepoKey { owner: "alice", repo: "ligands" }, reference: Some("main"), pa
+   +  103.9 D     0.03 bg  cache::load
+   +  117.3 D    13.56 bg  prefs.json save
+   +  128.4 D    24.59 bg  prefs.json save
+   +  128.8 U     0.01 UI  GitHub(Kept(Ok(())))
+   +  146.0 U     0.01 UI  GitHub(Kept(Ok(())))
+   +  205.5 H   101.61 bg  GET /repos/<r>/git/ref/heads/main status=200
+   +  206.5 D     0.92 bg  cache::store bytes=61
+   +  206.6 D     0.04 bg  cache::load
+   +  353.7 H   147.04 bg  GET /repos/<r>/git/commits/<sha> status=200
+   +  354.7 D     0.90 bg  cache::store bytes=59
+   +  354.8 D     0.03 bg  cache::load
+   +  507.9 H   153.09 bg  GET /repos/<r>/git/trees/<sha> status=200
+   +  508.9 D     0.88 bg  cache::store bytes=877
+   +  509.4 U     0.02 UI  GitHub(Picker(Listing(8, Ok((Some("<sha>"), "<sha>", [Entry { name: "i
+   +  509.5 D     0.04 bg  cache::load
+   +  509.6 D     0.01 bg  cache::load
+   +  600.2 H    90.52 bg  GET /repos/<r>/git/trees/<sha> status=200
+   +  601.4 D     1.14 bg  cache::store bytes=24557
+   +  602.4 U     0.35 UI  GitHub(Picker(Listing(9, Ok((None, "<sha>", [Entry { name: "hit-000.mol", sha: "8a251d575ee7fd76d6725cd6e
+   +  602.7 D     0.02 bg  cache::load
+   +  602.7 D     0.06 bg  cache::load
+   +  602.8 D     0.01 bg  cache::load
+   +  602.8 D     0.02 bg  cache::load
+   +  602.9 D     0.01 bg  cache::load
+   +  602.9 D     0.01 bg  cache::load
+   +  602.9 D     0.01 bg  cache::load
+   +  602.9 D     0.01 bg  cache::load
+   +  602.9 D     0.01 bg  cache::load
+   +  602.9 D     0.02 bg  cache::load
+   +  602.9 D     0.02 bg  cache::load
+   +  603.0 D     0.01 bg  cache::load
+   +  603.0 D     0.01 bg  cache::load
+   +  603.0 D     0.01 bg  cache::load
+   +  603.1 D     0.01 bg  cache::load
+   +  603.1 D     0.01 bg  cache::load
+   +  603.2 D     0.01 bg  cache::load
+   +  603.3 D     0.01 bg  cache::load
+   +  603.3 D     0.01 bg  cache::load
+   +  603.3 D     0.03 bg  cache::load
+   +  603.4 D     0.01 bg  cache::load
+   +  603.4 D     0.01 bg  cache::load
+   +  603.4 D     0.02 bg  cache::load
+   +  603.4 D     0.03 bg  cache::load
+   +  611.2 U     0.11 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  646.1 H   136.54 bg  GET /repos/<r>/git/trees/<sha>?recursive=1 status=200
+   +  647.5 D     1.34 bg  cache::store bytes=28767
+   +  657.6 U     0.17 UI  GitHub(Picker(Whole(8, Ok(([Entry { name: "aromatics/benzofuran.rsk", sha: "<sha>", folder: false }, Entr
+   +  691.6 H    87.73 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  691.7 H    88.16 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  692.5 D     0.77 bg  cache::store bytes=569
+   +  692.5 D     0.87 bg  cache::store bytes=197
+   +  693.8 U     0.07 UI  GitHub(Picker(Changed(8, "screening/hit-010.mol", Ok(Some(("@alice", "2026-11-10T00:10:00Z"))))))
+   +  701.3 H    97.44 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  701.4 H    97.80 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  702.8 D     1.21 bg  cache::store bytes=197
+   +  702.8 D     1.25 bg  cache::store bytes=569
+   +  703.3 H    99.84 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  703.4 H    99.64 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  704.4 D     0.92 bg  cache::store bytes=197
+   +  704.4 D     1.03 bg  cache::store bytes=569
+   +  734.7 H   131.11 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  735.4 H   131.68 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  735.4 H   131.81 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  736.3 H   132.85 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  736.4 H   132.85 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  736.4 H   132.89 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  736.4 H   133.04 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  736.5 H   132.79 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  736.8 H   133.23 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  737.5 D     0.71 bg  cache::store bytes=197
+   +  737.6 D     0.53 bg  cache::store bytes=197
+   +  738.6 D     2.73 bg  cache::store bytes=569
+   +  738.7 H   134.93 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  739.1 D     0.91 bg  cache::store bytes=569
+   +  740.6 D     2.99 bg  cache::store bytes=569
+   +  740.7 D     2.81 bg  cache::store bytes=569
+   +  741.1 D     3.22 bg  cache::store bytes=569
+   +  741.3 D     3.14 bg  cache::store bytes=197
+   +  742.4 D     4.90 bg  cache::store bytes=569
+   +  742.6 H   139.19 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  743.8 D     4.23 bg  cache::store bytes=197
+   +  745.4 D     2.08 bg  cache::store bytes=569
+   +  752.9 H   149.33 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  753.0 H   149.20 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  753.0 H   149.28 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  753.0 H   149.39 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  754.0 U     0.02 UI  GitHub(Picker(Changed(8, "screening/hit-011.mol", Ok(Some(("@alice", "2026-11-10T00:11:00Z"))))))
+   +  754.1 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-008.mol", Ok(Some(("@alice", "2026-11-10T00:08:00Z"))))))
+   +  754.7 D     0.93 bg  cache::store bytes=569
+   +  754.9 D     0.62 bg  cache::store bytes=197
+   +  767.2 H   163.37 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  767.3 H   163.79 bg  GET /repos/<r>/git/blobs/<sha> status=200
+   +  767.4 H   163.70 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200
+   +  768.7 D    14.06 bg  cache::store bytes=197
+   +  769.0 D     0.82 bg  cache::store bytes=197
+   +  769.1 D    14.42 bg  cache::store bytes=197
+   +  769.4 D     1.05 bg  cache::store bytes=197
+   +  769.5 D     1.14 bg  cache::store bytes=569
+   +  779.8 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-000.mol", Ok(Some(("@alice", "2026-11-10T00:00:00Z"))))))
+   +  779.8 U     0.01 UI  GitHub(Picker(Changed(8, "screening/hit-002.mol", Ok(Some(("@alice", "2026-11-10T00:02:00Z"))))))
+   +  779.9 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-004.mol", Ok(Some(("@alice", "2026-11-10T00:04:00Z"))))))
+   +  779.9 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  779.9 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  779.9 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-006.mol", Ok(Some(("@alice", "2026-11-10T00:06:00Z"))))))
+   +  779.9 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  780.0 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  780.0 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  780.0 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-001.mol", Ok(Some(("@alice", "2026-11-10T00:01:00Z"))))))
+   +  780.0 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-007.mol", Ok(Some(("@alice", "2026-11-10T00:07:00Z"))))))
+   +  780.1 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-003.mol", Ok(Some(("@alice", "2026-11-10T00:03:00Z"))))))
+   +  780.1 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-005.mol", Ok(Some(("@alice", "2026-11-10T00:05:00Z"))))))
+   +  780.1 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-009.mol", Ok(Some(("@alice", "2026-11-10T00:09:00Z"))))))
+   +  807.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  807.2 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  807.3 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  807.3 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  807.3 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  807.3 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  807.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+
+== A5-open-drawing
+   +    0.2 D     0.01 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    0.2 D     0.27 UI  workcopy::folder (scan)
+   +    0.3 D     0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    0.3 D     0.00 UI  picker_open_path read working copy
+   +    0.3 D     0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    0.3 K     0.00 UI  /repos/<r>/git/blobs/<sha>
+   +    0.3 U     0.30 UI  GitHub(Picker(Select(0)))
+   +   16.4 D     0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   16.4 D     0.01 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   16.4 D     0.16 UI  workcopy::folder (scan)
+   +   16.4 U     0.22 UI  GitHub(Picker(Downloaded(12, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, privat
+   +   28.9 D    12.32 bg  workcopy::checkout routes/drawing-01.rsk
+   +   49.3 U     0.26 UI  GitHub(Picker(Written(12, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-01.rsk", Ok(
+   +   49.4 D     0.06 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   51.8 D     0.44 bg  workcopy::hashes octo-test/group-drawings files=1
+   +   59.5 D    10.16 bg  workcopy::persist write state.json
+   +   68.5 D    17.07 bg  prefs.json save
+   +   75.9 U     0.01 UI  Tab(TabId(0), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 15, [("routes/drawing-01.
+   +   76.1 U     0.01 UI  Tab(TabId(0), GitHub(Kept(Ok(()))))
+   +   76.1 U     0.03 UI  GitHub(Persisted(true, Ok(())))
+
+== A6-history
+   +    0.1 U     0.08 UI  Accessibility(Dispatch(8, GitHub(ShowVersions)))
+   +    0.3 D     0.06 bg  workcopy::snapshots routes/drawing-01.rsk
+   +    0.3 D     0.06 bg  cache::load
+   +   10.8 U     0.02 UI  GitHub(Versions(LocalLoaded(1, Ok([]))))
+   +  115.2 H   114.83 bg  GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1 status=200
+   +  116.0 D     0.79 bg  cache::store bytes=2368
+   +  116.5 U     0.02 UI  GitHub(Versions(RemoteLoaded(1, Ok([RemoteVersion { commit: "<sha>", message: "Revise the route, step 12"
+   +  121.5 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.7 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.8 D     0.05 bg  cache::load
+   +  121.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.9 D     0.01 bg  cache::load
+   +  121.9 D     0.02 bg  cache::load
+   +  121.9 D     0.02 bg  cache::load
+   +  121.9 D     0.03 bg  cache::load
+   +  121.9 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  122.0 D     0.01 bg  cache::load
+   +  122.0 D     0.01 bg  cache::load
+   +  122.0 D     0.02 bg  cache::load
+   +  122.0 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  122.0 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  122.1 D     0.01 bg  cache::load
+   +  122.1 D     0.01 bg  cache::load
+   +  122.1 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  122.1 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  122.2 D     0.01 bg  cache::load
+   +  122.2 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  122.6 D     0.03 bg  cache::load
+   +  210.2 H    87.95 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  211.1 D     0.80 bg  cache::store bytes=2262
+   +  211.7 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  213.8 H    91.62 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  214.8 D     0.87 bg  cache::store bytes=5638
+   +  217.4 H    95.20 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  221.5 D     4.06 bg  cache::store bytes=73622
+   +  222.2 H   100.12 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  224.1 D     1.77 bg  cache::store bytes=43720
+   +  228.2 H   106.07 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  229.3 D     0.83 bg  cache::store bytes=8309
+   +  232.8 U     0.04 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  232.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  241.4 H   118.98 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  241.4 H   119.49 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  243.1 D     1.62 bg  cache::store bytes=2256
+   +  243.2 D     1.69 bg  cache::store bytes=17205
+   +  247.4 H   125.11 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  248.7 D     1.28 bg  cache::store bytes=73616
+   +  249.7 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  249.7 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  252.6 H   130.12 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  253.9 D     1.15 bg  cache::store bytes=17199
+   +  260.3 H   137.64 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  261.2 D     0.85 bg  cache::store bytes=5632
+   +  266.1 H   143.72 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  266.9 D     0.82 bg  cache::store bytes=8303
+   +  274.3 H   152.03 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200
+   +  276.2 D     1.85 bg  cache::store bytes=43714
+   +  288.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  288.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  288.9 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  312.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  312.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  312.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  312.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+
+== B1-picker-open
+   +    0.1 U     0.07 UI  Accessibility(Dispatch(5, GitHub(Picker(Show(Open)))))
+   +    0.9 D     0.56 bg  cache::load
+   +    0.9 D     0.61 bg  cache::load
+   +  110.6 H   109.57 bg  GET /user status=304
+   +  111.1 D     0.46 bg  cache::load
+   +  116.1 H   115.14 bg  GET /repos/<r>/git/ref/heads/main status=304
+   +  116.6 D     0.45 bg  cache::load
+   +  116.7 KD    0.00 bg  /repos/<r>/git/commits/<sha>
+   +  117.1 D     0.33 bg  cache::load
+   +  117.1 KD    0.00 bg  /repos/<r>/git/trees/<sha>
+   +  117.5 U     0.04 UI  GitHub(Picker(Listing(1, Ok((Some("<sha>"), "<sha>", [Entry { name: "2
+   +  117.9 D     0.43 bg  cache::load
+   +  117.9 KD    0.00 bg  /repos/<r>/git/trees/<sha>?recursive=1
+   +  119.0 U     0.01 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  119.0 U     0.03 UI  GitHub(Picker(Whole(1, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "<sha>", folder: false }, Entry 
+   +  232.1 H   120.90 bg  GET /user/installations?per_page=100 status=304
+   +  232.6 D     0.42 bg  cache::load
+   +  329.2 H    96.60 bg  GET /user/installations/1/repositories?per_page=100&page=1 status=304
+   +  329.6 U     0.03 UI  GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", rep
+
+== B2-choose-repo
+   +    0.0 U     0.03 UI  Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +    0.6 D     0.35 bg  cache::load
+   +  102.7 H   102.04 bg  GET /repos/<r>/git/ref/heads/main status=304
+   +  102.7 K     0.00 bg  /repos/<r>/git/commits/<sha>
+   +  102.7 K     0.00 bg  /repos/<r>/git/trees/<sha>
+   +  103.2 K     0.00 UI  /repos/<r>/git/trees/<sha>?recursive=1
+   +  103.2 U     0.03 UI  GitHub(Picker(Listing(2, Ok((Some("<sha>"), "<sha>", [Entry { name: "2
+   +  104.5 U     0.03 UI  GitHub(Picker(Whole(2, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "<sha>", folder: false }, Entry 
+   +  104.6 U     0.01 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== B3-open-routes
+   +    0.1 U     0.07 UI  GitHub(Picker(Select(4)))
+   +    1.0 D     0.58 bg  cache::load
+   +    1.0 KD    0.00 bg  /repos/<r>/git/trees/<sha>
+   +   16.5 U     0.05 UI  GitHub(Picker(Listing(3, Ok((None, "<sha>", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2a
+   +   18.4 D     0.58 bg  cache::load
+   +   18.4 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +   18.9 D     0.46 bg  cache::load
+   +   19.0 D     0.32 bg  cache::load
+   +   19.4 U     0.03 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +   19.5 D     0.32 bg  cache::load
+   +   20.5 D     2.64 bg  cache::load
+   +   20.5 D     3.09 bg  cache::load
+   +   20.8 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +   20.9 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +   20.9 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +   20.9 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +   21.0 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +   21.3 D     2.38 bg  cache::load
+   +   21.3 D     2.69 bg  cache::load
+   +   21.3 D     3.02 bg  cache::load
+   +   21.4 D     2.43 bg  cache::load
+   +   21.4 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +   21.4 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +   21.4 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +   21.5 D     3.11 bg  cache::load
+   +   21.5 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +   21.6 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +   21.8 D     3.56 bg  cache::load
+   +   21.8 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +   33.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+   +   33.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+   +   33.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +   33.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+   +   33.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+   +   33.5 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+   +   33.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +   33.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +   33.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +   33.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +   33.5 U     0.03 UI  GitHub(Picker(Changed(2, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+   +   33.6 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+
+== B4-bigfolder-open
+   +    0.0 U     0.04 UI  GitHub(Picker(Enter))
+   +    3.8 D     1.22 bg  cache::load
+   +  112.3 H   108.37 bg  GET /repos/<r>/git/ref/heads/main status=304
+   +  113.8 D     1.43 bg  cache::load
+   +  113.9 KD    0.00 bg  /repos/<r>/git/commits/<sha>
+   +  114.5 D     0.54 bg  cache::load
+   +  114.5 KD    0.00 bg  /repos/<r>/git/trees/<sha>
+   +  115.0 U     0.02 UI  GitHub(Picker(Listing(4, Ok((Some("<sha>"), "<sha>", [Entry { name: "i
+   +  118.1 D     2.89 bg  cache::load
+   +  118.1 D     3.07 bg  cache::load
+   +  118.2 KD    0.00 bg  /repos/<r>/git/trees/<sha>?recursive=1
+   +  118.4 KD    0.00 bg  /repos/<r>/git/trees/<sha>
+   +  123.8 U     0.11 UI  GitHub(Picker(Whole(4, Ok(([Entry { name: "aromatics/benzofuran.rsk", sha: "<sha>", folder: false }, Entr
+   +  124.1 U     0.29 UI  GitHub(Picker(Listing(5, Ok((None, "<sha>", [Entry { name: "hit-000.mol", sha: "8a251d575ee7fd76d6725cd6e
+   +  125.2 D     0.51 bg  cache::load
+   +  125.4 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  125.7 D     1.33 bg  cache::load
+   +  126.0 D     0.73 bg  cache::load
+   +  126.3 D     0.24 bg  cache::load
+   +  126.6 D     0.21 bg  cache::load
+   +  126.6 D     0.23 bg  cache::load
+   +  126.8 D     1.78 bg  cache::load
+   +  126.8 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  126.9 D     0.30 bg  cache::load
+   +  126.9 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  126.9 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  126.9 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  126.9 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  126.9 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  126.9 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  127.0 D     1.87 bg  cache::load
+   +  127.1 D     1.83 bg  cache::load
+   +  127.2 D     1.88 bg  cache::load
+   +  127.3 D     1.82 bg  cache::load
+   +  127.3 D     1.89 bg  cache::load
+   +  127.4 D     1.71 bg  cache::load
+   +  127.5 D     1.76 bg  cache::load
+   +  127.6 D     1.93 bg  cache::load
+   +  127.7 D     1.93 bg  cache::load
+   +  127.8 D     1.98 bg  cache::load
+   +  128.0 D     1.88 bg  cache::load
+   +  128.0 D     1.91 bg  cache::load
+   +  128.1 D     1.80 bg  cache::load
+   +  128.1 D     1.85 bg  cache::load
+   +  128.3 D     1.96 bg  cache::load
+   +  128.4 D     1.83 bg  cache::load
+   +  128.4 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.5 KD    0.00 bg  /repos/<r>/git/blobs/<sha>
+   +  128.6 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.6 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.6 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.6 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.7 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.7 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  128.7 KD    0.00 bg  /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1
+   +  131.8 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-001.mol", Ok(Some(("@alice", "2026-11-10T00:01:00Z"))))))
+   +  131.8 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-010.mol", Ok(Some(("@alice", "2026-11-10T00:10:00Z"))))))
+   +  131.8 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-007.mol", Ok(Some(("@alice", "2026-11-10T00:07:00Z"))))))
+   +  131.8 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-009.mol", Ok(Some(("@alice", "2026-11-10T00:09:00Z"))))))
+   +  131.8 U     0.05 UI  GitHub(Picker(Changed(4, "screening/hit-002.mol", Ok(Some(("@alice", "2026-11-10T00:02:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-003.mol", Ok(Some(("@alice", "2026-11-10T00:03:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-005.mol", Ok(Some(("@alice", "2026-11-10T00:05:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-006.mol", Ok(Some(("@alice", "2026-11-10T00:06:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-008.mol", Ok(Some(("@alice", "2026-11-10T00:08:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-011.mol", Ok(Some(("@alice", "2026-11-10T00:11:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-000.mol", Ok(Some(("@alice", "2026-11-10T00:00:00Z"))))))
+   +  131.9 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-004.mol", Ok(Some(("@alice", "2026-11-10T00:04:00Z"))))))
+   +  132.0 U     0.04 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  174.1 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  174.1 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  174.1 U     0.02 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.3 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.3 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  180.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  197.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  197.4 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+
+== B5-open-drawing
+   +    1.2 D     0.96 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    1.2 D     1.25 UI  workcopy::folder (scan)
+   +    1.3 D     0.07 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    1.8 D     0.58 UI  picker_open_path read working copy
+   +    1.9 K     0.00 UI  /repos/<r>/git/blobs/<sha>
+   +    1.9 U     1.95 UI  GitHub(Picker(Select(0)))
+   +   17.1 U     0.03 UI  GitHub(Picker(Downloaded(8, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, private
+   +   27.0 D     9.24 bg  workcopy::checkout routes/drawing-01.rsk
+   +   49.6 U     0.12 UI  GitHub(Picker(Written(8, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-01.rsk", Ok((
+   +   49.9 D     0.14 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   52.1 D     0.47 bg  workcopy::hashes octo-test/group-drawings files=1
+   +   58.5 D     8.73 bg  workcopy::persist write state.json
+   +   75.2 U     0.01 UI  Tab(TabId(0), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 11, [("routes/drawing-01.
+   +   75.3 U     0.01 UI  GitHub(Persisted(true, Ok(())))
+
+== B6-history
+   +    0.1 U     0.11 UI  Accessibility(Dispatch(8, GitHub(ShowVersions)))
+   +    1.2 D     0.07 bg  workcopy::snapshots routes/drawing-01.rsk
+   +    2.0 D     0.74 bg  cache::load
+   +    8.8 U     0.02 UI  GitHub(Versions(LocalLoaded(1, Ok([]))))
+   +   91.3 H    89.11 bg  GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1 status=304
+   +  108.3 U     0.04 UI  GitHub(Versions(RemoteLoaded(1, Ok([RemoteVersion { commit: "<sha>", message: "Revise the route, step 12"
+   +  113.3 U     0.03 UI  GitHub(Versions(Shown("<sha>")))
+   +  113.4 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  113.5 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  113.7 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  113.9 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  114.0 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  114.2 U     0.12 UI  GitHub(Versions(Shown("<sha>")))
+   +  114.4 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  114.5 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  114.6 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  114.7 U     0.02 UI  GitHub(Versions(Shown("<sha>")))
+   +  117.8 U     0.03 UI  GitHub(Versions(Shown("<sha>")))
+   +  118.6 D     0.56 bg  cache::load
+   +  118.8 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  118.9 D     0.26 bg  cache::load
+   +  119.0 D     4.63 bg  cache::load
+   +  119.1 D     4.76 bg  cache::load
+   +  119.5 D     0.58 bg  cache::load
+   +  119.5 D     6.12 bg  cache::load
+   +  119.6 D     5.64 bg  cache::load
+   +  119.8 D     1.40 bg  cache::load
+   +  119.8 D     6.30 bg  cache::load
+   +  120.0 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.0 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.0 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.0 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.0 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.1 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.1 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.1 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  120.2 D     1.98 bg  cache::load
+   +  120.7 D     2.23 bg  cache::load
+   +  121.7 D     2.70 bg  cache::load
+   +  121.7 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  121.8 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  121.8 KD    0.00 bg  /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha>
+   +  135.6 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.6 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.6 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.7 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.8 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.8 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.8 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  135.9 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  136.0 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  136.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  136.1 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  136.1 U     0.00 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+flow                  listed  settled  req  304  mem  disk conns  max upd  ui disk
+A1-picker-open             -      375    3    0    0     0     0      0.2     0.00
+A2-choose-repo           403      403    4    0    0     0     0      0.2     0.00
+A3-open-routes           118      303   13    0    0     0     0      0.8     0.00
+A4-bigfolder-open        518      837   30    0    0     0     0      1.4     0.00
+A5-open-drawing           33       82    0    0    1     0     0      0.5     0.46
+A6-history               133      346   13    0    0     0     0      0.3     0.00
+B0-launch            first frame 348 ms after the launch mark
+B1-picker-open           127      336    4    4    0     3     0      0.1     0.00
+B2-choose-repo           115      115    1    1    3     0     0      0.1     0.00
+B3-open-routes            33       56    0    0    0    13     0      0.1     0.00
+B4-bigfolder-open        123      215    1    1    0    28     0      0.3     0.00
+B5-open-drawing           33       80    0    0    1     0     0      1.9     2.87
+B6-history               134      225    1    1    0    12     0      0.4     0.00

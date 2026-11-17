@@ -1,0 +1,364 @@
+
+== A1-picker-open
+   +    0.2 U     0.18 UI  Accessibility(Dispatch(5, GitHub(Picker(Show(Open)))))
+   +   86.9 H    86.64 bg  GET /user status=200 bytes=21
+   +  218.9 H   131.90 bg  GET /user/installations?per_page=100 status=200 bytes=44
+   +  356.2 H   137.36 bg  GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+   +  356.7 U     0.03 UI  GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", rep
+
+== A2-choose-repo
+   +    0.0 U     0.04 UI  Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +  144.9 H   144.61 bg  GET /repos/<r>/git/ref/heads/main status=200 bytes=61
+   +  265.5 H   120.55 bg  GET /repos/<r>/git/commits/<sha> status=200 bytes=59
+   +  391.6 H   125.87 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=570
+   +  392.1 U     0.12 UI  GitHub(Picker(Listing(2, Ok((Some("<sha>"), "<sha>", [Entry { name: "2
+   +  491.2 H    99.09 bg  GET /repos/<r>/git/trees/<sha>?recursive=1 status=200 bytes=4094
+   +  491.9 U     0.16 UI  GitHub(Picker(Whole(2, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "<sha>", folder: false }, Entry 
+
+== A3-open-routes
+   +    0.1 U     0.11 UI  GitHub(Picker(Select(4)))
+   +  105.0 H   104.93 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=707
+   +  105.5 U     0.12 UI  GitHub(Picker(Listing(4, Ok((None, "<sha>", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2a
+   +  107.0 U     0.02 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  191.8 H    86.14 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=73629
+   +  195.1 H    89.35 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=193
+   +  196.2 U     0.05 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  198.1 H    92.51 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=5639
+   +  215.4 H   109.70 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  215.5 H   109.77 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=205
+   +  217.3 U     0.04 UI  GitHub(Picker(Changed(2, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+   +  220.3 H   114.52 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  225.3 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  225.4 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+   +  225.4 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+   +  228.4 H   122.73 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=180
+   +  233.9 H   128.26 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=8322
+   +  239.9 H   134.08 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=193
+   +  241.3 H   135.67 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=43721
+   +  248.3 H   142.60 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=2281
+   +  254.3 H   148.72 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=43720
+   +  261.3 U     0.02 UI  GitHub(Picker(Changed(2, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+   +  282.6 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+   +  282.7 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+   +  282.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  282.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  282.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  282.8 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+
+== A4-bigfolder-open
+   +    0.0 U     0.01 UI  GitHub(Picker(Enter))
+   +   96.3 H    96.25 bg  GET /repos/<r>
+   +   96.6 U     0.03 UI  GitHub(Picker(Resolved(5, Link { key: RepoKey { owner: "alice", repo: "ligands" }, reference: Some("main"), pa
+   +  111.4 D    14.68 bg  prefs.json save
+   +  126.5 D    29.77 bg  prefs.json save
+   +  144.6 U     0.01 UI  GitHub(Kept(Ok(())))
+   +  161.2 U     0.01 UI  GitHub(Kept(Ok(())))
+   +  199.0 H   102.33 bg  GET /repos/<r>/git/ref/heads/main status=200 bytes=61
+   +  346.7 H   147.65 bg  GET /repos/<r>/git/commits/<sha> status=200 bytes=59
+   +  500.1 H   153.40 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=877
+   +  500.6 U     0.02 UI  GitHub(Picker(Listing(8, Ok((Some("<sha>"), "<sha>", [Entry { name: "i
+   +  589.8 H    89.06 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=24557
+   +  590.8 U     0.30 UI  GitHub(Picker(Listing(9, Ok((None, "<sha>", [Entry { name: "hit-000.mol", sha: "8a251d575ee7fd76d6725cd6e
+   +  600.1 U     0.07 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  636.5 H   135.83 bg  GET /repos/<r>/git/trees/<sha>?recursive=1 status=200 bytes=28767
+   +  657.0 U     0.17 UI  GitHub(Picker(Whole(8, Ok(([Entry { name: "aromatics/benzofuran.rsk", sha: "<sha>", folder: false }, Entr
+   +  679.8 H    88.81 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  680.4 H    89.17 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  684.9 H    93.57 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  686.3 H    95.18 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  692.4 H   101.36 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  692.5 H   101.29 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  693.3 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-000.mol", Ok(Some(("@alice", "2026-11-10T00:00:00Z"))))))
+   +  693.3 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-008.mol", Ok(Some(("@alice", "2026-11-10T00:08:00Z"))))))
+   +  693.3 U     0.06 UI  GitHub(Picker(Changed(8, "screening/hit-007.mol", Ok(Some(("@alice", "2026-11-10T00:07:00Z"))))))
+   +  693.4 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-004.mol", Ok(Some(("@alice", "2026-11-10T00:04:00Z"))))))
+   +  700.8 H   109.61 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  702.5 H   111.41 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  704.6 H   113.20 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  706.8 H   115.72 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  713.0 H   122.04 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  713.2 H   121.94 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  717.0 H   126.08 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  718.7 H   127.61 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  723.1 H   131.86 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  723.2 H   132.32 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  726.5 U     0.01 UI  GitHub(Picker(Changed(8, "screening/hit-002.mol", Ok(Some(("@alice", "2026-11-10T00:02:00Z"))))))
+   +  726.6 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-011.mol", Ok(Some(("@alice", "2026-11-10T00:11:00Z"))))))
+   +  729.9 H   138.67 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  731.4 H   140.26 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  731.5 H   140.44 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  737.7 H   146.35 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  737.7 H   146.80 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  741.5 H   150.18 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  742.6 U     0.01 UI  GitHub(Picker(Changed(8, "screening/hit-006.mol", Ok(Some(("@alice", "2026-11-10T00:06:00Z"))))))
+   +  742.7 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-005.mol", Ok(Some(("@alice", "2026-11-10T00:05:00Z"))))))
+   +  742.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  742.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  742.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  743.0 H   152.07 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  745.2 H   154.21 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  759.6 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-001.mol", Ok(Some(("@alice", "2026-11-10T00:01:00Z"))))))
+   +  759.6 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  759.6 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  759.6 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  759.6 U     0.01 UI  GitHub(Picker(Changed(8, "screening/hit-003.mol", Ok(Some(("@alice", "2026-11-10T00:03:00Z"))))))
+   +  759.7 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-009.mol", Ok(Some(("@alice", "2026-11-10T00:09:00Z"))))))
+   +  759.7 U     0.00 UI  GitHub(Picker(Changed(8, "screening/hit-010.mol", Ok(Some(("@alice", "2026-11-10T00:10:00Z"))))))
+   +  759.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  759.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  759.7 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  776.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  776.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  776.5 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+
+== A5-open-drawing
+   +    0.2 D     0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    0.2 D     0.00 UI  picker_open_path read working copy
+   +    0.2 D     0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    0.2 D     0.01 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    0.2 D     0.21 UI  workcopy::folder (scan)
+   +    0.2 K     0.00 UI  /repos/<r>/git/blobs/<sha>
+   +    0.2 U     0.24 UI  GitHub(Picker(Select(0)))
+   +   16.4 D     0.00 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   16.4 D     0.01 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   16.4 D     0.20 UI  workcopy::folder (scan)
+   +   16.4 U     0.26 UI  GitHub(Picker(Downloaded(12, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, privat
+   +   27.0 D    10.48 bg  workcopy::checkout routes/drawing-01.rsk
+   +   48.8 U     0.22 UI  GitHub(Picker(Written(12, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-01.rsk", Ok(
+   +   48.9 D     0.05 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   51.4 D     0.43 bg  workcopy::hashes octo-test/group-drawings files=1
+   +   57.5 D     8.68 bg  workcopy::persist write state.json
+   +   66.6 D    15.65 bg  prefs.json save
+   +   76.0 U     0.01 UI  Tab(TabId(0), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 15, [("routes/drawing-01.
+   +   76.1 U     0.02 UI  GitHub(Persisted(true, Ok(())))
+   +   76.2 U     0.00 UI  Tab(TabId(0), GitHub(Kept(Ok(()))))
+
+== A6-history
+   +    0.1 U     0.09 UI  Accessibility(Dispatch(8, GitHub(ShowVersions)))
+   +    0.3 D     0.08 bg  workcopy::snapshots routes/drawing-01.rsk
+   +   34.4 U     0.03 UI  GitHub(Versions(LocalLoaded(1, Ok([]))))
+   +  115.9 H   115.70 bg  GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1 status=200 bytes=2368
+   +  116.3 U     0.03 UI  GitHub(Versions(RemoteLoaded(1, Ok([RemoteVersion { commit: "<sha>", message: "Revise the route, step 12"
+   +  119.4 U     0.03 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.7 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.7 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  119.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  120.0 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  120.9 U     0.08 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.1 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  121.2 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  207.5 H    87.74 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=5638
+   +  208.3 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  213.6 H    94.02 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=8309
+   +  215.5 H    96.08 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=43720
+   +  220.6 H   100.84 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=43714
+   +  222.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  222.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  228.5 H   108.84 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=2262
+   +  241.3 H   120.16 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=5632
+   +  241.7 H   122.12 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=73622
+   +  246.6 H   125.73 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=2256
+   +  251.8 H   130.69 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=17199
+   +  262.5 H   141.75 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=8303
+   +  262.6 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  265.4 H   145.56 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=73616
+   +  272.9 H   153.24 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=17205
+   +  295.9 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  295.9 U     0.10 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  296.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  296.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  296.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  296.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  319.7 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  319.8 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+
+== B1-picker-open
+   +    1.8 U     1.84 UI  Accessibility(Dispatch(5, GitHub(Picker(Show(Open)))))
+   +  111.8 H   110.03 bg  GET /user status=200 bytes=21
+   +  119.3 H   116.98 bg  GET /repos/<r>/git/ref/heads/main status=200 bytes=61
+   +  218.3 H    98.99 bg  GET /repos/<r>/git/commits/<sha> status=200 bytes=59
+   +  242.0 H   130.09 bg  GET /user/installations?per_page=100 status=200 bytes=44
+   +  322.0 H   102.15 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=570
+   +  323.6 U     1.20 UI  GitHub(Picker(Listing(1, Ok((Some("<sha>"), "<sha>", [Entry { name: "2
+   +  326.2 U     0.02 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  350.9 H   108.95 bg  GET /user/installations/1/repositories?per_page=100&page=1 status=200 bytes=542
+   +  379.8 U     0.03 UI  GitHub(Listed(1, Ok(Account { login: "octo-test", repos: [Repo { id: 1, key: RepoKey { owner: "octo-test", rep
+   +  406.1 H    82.50 bg  GET /repos/<r>/git/trees/<sha>?recursive=1 status=200 bytes=4094
+   +  415.3 U     1.06 UI  GitHub(Picker(Whole(1, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "<sha>", folder: false }, Entry 
+
+== B2-choose-repo
+   +    0.0 U     0.02 UI  Accessibility(Dispatch(6, GitHub(Picker(PickRepo(RepoKey { owner: "octo-test", repo: "group-drawings" })))))
+   +   89.2 H    89.15 bg  GET /repos/<r>/git/ref/heads/main status=200 bytes=61
+   +   89.2 K     0.00 bg  /repos/<r>/git/commits/<sha>
+   +   89.2 K     0.00 bg  /repos/<r>/git/trees/<sha>
+   +   89.7 K     0.00 UI  /repos/<r>/git/trees/<sha>?recursive=1
+   +   89.7 U     0.03 UI  GitHub(Picker(Listing(2, Ok((Some("<sha>"), "<sha>", [Entry { name: "2
+   +   91.1 U     0.03 UI  GitHub(Picker(Whole(2, Ok(([Entry { name: "2026/q4/drawing-04.rsk", sha: "<sha>", folder: false }, Entry 
+   +   91.2 U     0.01 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+
+== B3-open-routes
+   +    0.4 U     0.42 UI  GitHub(Picker(Select(4)))
+   +  133.6 H   133.22 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=707
+   +  134.1 U     0.09 UI  GitHub(Picker(Listing(3, Ok((None, "<sha>", [Entry { name: "drawing-01.rsk", sha: "9bb40193ff31012d6dec2a
+   +  135.4 U     0.03 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  221.3 H    87.08 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=180
+   +  221.8 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-01.rsk", Ok(Some(("@bob", "2026-11-17T13:55:00Z"))))))
+   +  227.0 H    92.72 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=193
+   +  229.6 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-11.rsk", Ok(Some(("@bob", "2026-11-14T11:11:00Z"))))))
+   +  233.7 H    99.56 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=43720
+   +  237.0 H   102.74 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=73629
+   +  240.6 H   106.27 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  247.5 H   113.25 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=2281
+   +  255.4 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  255.5 H   121.37 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=5639
+   +  260.3 H   126.16 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=43721
+   +  271.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  271.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  271.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  271.4 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-06.rsk", Ok(Some(("@alice", "2026-11-16T06:06:00Z"))))))
+   +  274.5 H   140.16 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=193
+   +  279.2 H   145.00 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=8322
+   +  279.3 H   144.96 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=205
+   +  281.6 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  284.1 H   149.77 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  292.1 U     0.00 UI  GitHub(Picker(Changed(2, "routes/drawing-16.rsk", Ok(Some(("You", "2026-11-12T16:16:00Z"))))))
+   +  292.1 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  292.1 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-26.rsk", Ok(Some(("@bob", "2026-11-15T02:26:00Z"))))))
+   +  301.4 U     0.01 UI  GitHub(Picker(Changed(2, "routes/drawing-21.rsk", Ok(Some(("@alice", "2026-11-10T21:21:00Z"))))))
+
+== B4-bigfolder-open
+   +    0.0 U     0.03 UI  GitHub(Picker(Enter))
+   +  124.8 H   124.75 bg  GET /repos/<r>/git/ref/heads/main status=200 bytes=61
+   +  255.4 H   130.56 bg  GET /repos/<r>/git/commits/<sha> status=200 bytes=59
+   +  392.0 H   136.54 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=877
+   +  392.3 U     0.02 UI  GitHub(Picker(Listing(4, Ok((Some("<sha>"), "<sha>", [Entry { name: "i
+   +  503.8 H   111.41 bg  GET /repos/<r>/git/trees/<sha> status=200 bytes=24557
+   +  504.8 U     0.24 UI  GitHub(Picker(Listing(5, Ok((None, "<sha>", [Entry { name: "hit-000.mol", sha: "8a251d575ee7fd76d6725cd6e
+   +  508.8 H   116.48 bg  GET /repos/<r>/git/trees/<sha>?recursive=1 status=200 bytes=28767
+   +  512.0 U     0.15 UI  GitHub(Picker(Whole(4, Ok(([Entry { name: "aromatics/benzofuran.rsk", sha: "<sha>", folder: false }, Entr
+   +  512.2 U     0.12 UI  GitHub(Picker(Scrolled(0.0, 377.7, 400.0)))
+   +  588.1 H    83.19 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  596.6 H    91.52 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  596.8 H    90.74 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  596.8 H    91.74 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  597.8 U     0.01 UI  GitHub(Picker(Changed(4, "screening/hit-005.mol", Ok(Some(("@alice", "2026-11-10T00:05:00Z"))))))
+   +  600.9 H    94.76 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  602.2 H    97.18 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  608.0 H   101.99 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  608.0 H   103.03 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  614.6 U     0.01 UI  GitHub(Picker(Changed(4, "screening/hit-009.mol", Ok(Some(("@alice", "2026-11-10T00:09:00Z"))))))
+   +  614.7 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-001.mol", Ok(Some(("@alice", "2026-11-10T00:01:00Z"))))))
+   +  615.0 H   108.92 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  615.1 H   109.12 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  620.4 H   114.27 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  621.1 H   115.07 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  621.5 H   115.26 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  626.3 H   120.39 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  628.7 H   122.68 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  633.5 H   127.30 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  633.5 H   127.58 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  639.4 U     0.01 UI  GitHub(Picker(Changed(4, "screening/hit-006.mol", Ok(Some(("@alice", "2026-11-10T00:06:00Z"))))))
+   +  639.5 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-000.mol", Ok(Some(("@alice", "2026-11-10T00:00:00Z"))))))
+   +  640.8 H   134.86 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  640.8 H   134.96 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  645.6 H   139.77 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  647.0 H   140.82 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  652.4 H   146.36 bg  GET /repos/<r>/commits?sha=<sha>&path=<p>&per_page=1 status=200 bytes=197
+   +  653.7 H   148.73 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  656.2 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-008.mol", Ok(Some(("@alice", "2026-11-10T00:08:00Z"))))))
+   +  656.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  656.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  656.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  656.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  656.2 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-002.mol", Ok(Some(("@alice", "2026-11-10T00:02:00Z"))))))
+   +  656.2 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-003.mol", Ok(Some(("@alice", "2026-11-10T00:03:00Z"))))))
+   +  656.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  656.2 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  656.2 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-011.mol", Ok(Some(("@alice", "2026-11-10T00:11:00Z"))))))
+   +  656.2 U     0.01 UI  GitHub(Picker(Changed(4, "screening/hit-007.mol", Ok(Some(("@alice", "2026-11-10T00:07:00Z"))))))
+   +  657.3 H   151.42 bg  GET /repos/<r>/git/blobs/<sha> status=200 bytes=569
+   +  673.4 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-004.mol", Ok(Some(("@alice", "2026-11-10T00:04:00Z"))))))
+   +  673.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  673.4 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  673.4 U     0.00 UI  GitHub(Picker(Changed(4, "screening/hit-010.mol", Ok(Some(("@alice", "2026-11-10T00:10:00Z"))))))
+   +  673.4 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  673.5 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  690.3 U     0.00 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+   +  690.3 U     0.01 UI  GitHub(Picker(Thumb("<sha>", Some(Document { generic: Generic { alternatives: [], links: [], repeats: [] 
+
+== B5-open-drawing
+   +    1.1 D     0.74 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    1.1 D     1.07 UI  workcopy::folder (scan)
+   +    1.2 D     0.08 UI  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +    2.0 D     0.66 UI  picker_open_path read working copy
+   +    2.1 K     0.00 UI  /repos/<r>/git/blobs/<sha>
+   +    2.1 U     2.06 UI  GitHub(Picker(Select(0)))
+   +   16.4 U     0.02 UI  GitHub(Picker(Downloaded(8, Repo { id: 6, key: RepoKey { owner: "octo-test", repo: "group-drawings" }, private
+   +   45.0 D    27.93 bg  workcopy::checkout routes/drawing-01.rsk
+   +   57.3 U     0.81 UI  GitHub(Picker(Written(8, RepoKey { owner: "octo-test", repo: "group-drawings" }, "routes/drawing-01.rsk", Ok((
+   +   57.6 D     0.10 bg  read_state /private/tmp/claude-502/-Users-shiranui-dev-ReShiki/21661837-4da9-40f3-8bf6-7ae65682b395/scratchpad
+   +   61.0 D     0.21 bg  workcopy::hashes octo-test/group-drawings files=1
+   +   66.9 D     9.43 bg  workcopy::persist write state.json
+   +   73.4 U     0.01 UI  Tab(TabId(0), GitHub(Scanned(RepoKey { owner: "octo-test", repo: "group-drawings" }, 11, [("routes/drawing-01.
+   +   90.3 U     0.15 UI  GitHub(Persisted(true, Ok(())))
+
+== B6-history
+   +    0.1 U     0.11 UI  Accessibility(Dispatch(8, GitHub(ShowVersions)))
+   +    0.9 D     0.18 bg  workcopy::snapshots routes/drawing-01.rsk
+   +    8.8 U     0.02 UI  GitHub(Versions(LocalLoaded(1, Ok([]))))
+   +   99.7 H    99.47 bg  GET /repos/<r>/commits?sha=main&path=<p>&per_page=20&page=1 status=200 bytes=2368
+   +  100.2 U     0.11 UI  GitHub(Versions(RemoteLoaded(1, Ok([RemoteVersion { commit: "<sha>", message: "Revise the route, step 12"
+   +  103.5 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.6 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.7 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.7 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.8 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.9 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  103.9 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  104.0 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  104.0 U     0.01 UI  GitHub(Versions(Shown("<sha>")))
+   +  187.6 H    83.58 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=5632
+   +  187.6 H    84.01 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=73622
+   +  188.6 U     0.27 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  195.9 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  200.8 H    96.86 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=8303
+   +  206.0 H   102.05 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=2256
+   +  206.0 H   102.37 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=8309
+   +  212.9 H   108.95 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=17199
+   +  220.1 H   116.30 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=43714
+   +  224.0 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  224.1 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  224.1 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  224.1 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  226.1 H   122.21 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=73616
+   +  233.1 H   129.43 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=2262
+   +  239.1 H   135.39 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=17205
+   +  241.3 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  243.9 H   140.16 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=5638
+   +  253.1 H   149.66 bg  GET /repos/<r>/contents/routes/drawing-01.rsk?ref=<sha> status=200 bytes=43720
+   +  275.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  275.0 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  275.0 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  301.3 U     0.02 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+   +  301.4 U     0.01 UI  GitHub(Versions(Doc(1, "<sha>", Ok(Document { generic: Generic { alternatives: [], links: [], repeats: []
+flow                  listed  settled  req  304  mem  disk conns  max upd  ui disk
+A1-picker-open             -      363    3    0    0     0     0      0.2     0.00
+A2-choose-repo           403      403    4    0    0     0     0      0.2     0.00
+A3-open-routes           113      318   13    0    0     0     0      0.1     0.00
+A4-bigfolder-open        509      794   30    0    0     0     0      0.5     0.00
+A5-open-drawing           32       81    0    0    1     0     0      0.7     0.44
+A6-history               137      348   13    0    0     0     0      0.3     0.00
+B0-launch            first frame 500 ms after the launch mark
+B1-picker-open           338      397    7    0    0     0     0      1.8     0.00
+B2-choose-repo            98       98    1    0    3     0     0      0.1     0.00
+B3-open-routes           142      317   13    0    0     0     0      0.4     0.00
+B4-bigfolder-open        399      708   29    0    0     0     0      0.3     0.00
+B5-open-drawing           23      106    0    0    1     0     0      2.1     2.55
+B6-history               117      337   13    0    0     0     0      0.3     0.00
