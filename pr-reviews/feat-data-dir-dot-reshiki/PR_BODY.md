@@ -58,7 +58,8 @@ old folder.
 | Another ReShiki renamed it first                               | No message; `~/.reshiki` is used.                                                            |
 
 A failed rename leaves nothing at `~/.reshiki`, so the next launch simply tries
-again. After an in-app update, the tabs the updater reopens by their old paths
+again. Opening a drawing at startup replaces the status bar, so **About
+ReShiki** also keeps the message, in red under the folder it names. After an in-app update, the tabs the updater reopens by their old paths
 are rebased onto `~/.reshiki`. `recovery/`, `github/` (with unsent drawings)
 and everything else move together in the one rename.
 
@@ -139,6 +140,9 @@ Reviews: three adversarial passes by a second model, focused on data loss.
 Fixed from them: a missing match arm, linked folders, links inside the folder,
 the warning being replaced by startup messages, a root-only test failure,
 in-use detection, unreadable folders, and reopen paths after an update.
+Greptile's two findings (the message lost when a drawing opens at startup;
+uninstall should name the folder About shows) are fixed in `a744efb8`, which
+was rechecked with fmt, both clippy runs, a build and the affected tests.
 
 ## Risk
 
