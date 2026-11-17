@@ -46,6 +46,15 @@ After: **1 chemical change**. The CHEM row says **NO₂ added** with SMILES befo
 
 After: **Chemically identical**; **MOVED · Molecule redrawn** (ethanol's shape changed) and **STYLE · Arrow style changed**. [Chemistry](after/history-redrawn-chemistry.png) · [Layout](after/history-redrawn-layout.png) · [changed-on-GitHub, after](after/conflict-redrawn-everything.png) · [before](before/conflict-redrawn.png)
 
+### Which side is current
+
+The owner's pick (variant A): the version compared is on the **left** in a dashed grey frame with a **COMPARED** pill; the drawing now is on the **right** in a solid green frame with a **CURRENT** pill. Headers name the version (**Version · saved 14:02 · …**, **On GitHub · @alice · 14:05 · …**, **Your drawing · open now** / **not sent**); screen readers hear "Current: …" and "Compared: …"; the footer says **Changes read from … (left) to … (right)**. Green and grey are used only for this, so they never meet the change colours. The sides were already compared-left / current-right in both dialogs; only the frames, headers and footer are new.
+
+| Before (panes unmarked) | After, light | After, dark |
+|---|---|---|
+| ![](after/history-nitro-everything.png) | ![](after/identity/history-nitro-identity.png) | ![](after/identity/history-nitro-identity-dark.png) |
+| ![](after/conflict-nitro-everything.png) | ![](after/identity/conflict-nitro-identity.png) | ![](after/identity/conflict-nitro-identity-dark.png) |
+
 ### Dark interface
 
 | History, moved + NO₂ | Changed on GitHub, redrawn |
@@ -54,7 +63,7 @@ After: **Chemically identical**; **MOVED · Molecule redrawn** (ethanol's shape 
 
 Also: [moved](after/history-moved-everything-dark.png) · [moved, Chemistry](after/history-moved-chemistry-dark.png) · [NO₂, Chemistry](after/history-nitro-chemistry-dark.png) · [redrawn](after/history-redrawn-everything-dark.png) · [conflict moved](after/conflict-moved-everything-dark.png) · [conflict NO₂](after/conflict-nitro-everything-dark.png). Light contact sheet: [contact-sheet-light.png](contact-sheet-light.png).
 
-Captures are of the build at `5d57161`; the only later change (`b2994a9`, how a hydrogen bond's style counts) does not touch these drawings.
+The scenario captures are of the build at `5d57161`; later commits change only marks for stereo, hydrogen bonds and arrow anchors, none of which these drawings have, and the pane frames, captured at `fd2c815` (History) and `d9a2980` (changed on GitHub), show the same rows.
 
 ## Verification
 
@@ -69,6 +78,8 @@ Three adversarial passes (gpt-6.1-sol, read-only) on the model and the dialog, f
 - A molecule is fitted on its own atoms only; symmetric atoms pair as drawn (no false 180° turn), and only when every bond is kept.
 - An arrow given a bend is **redrawn**; a hydrogen bond added or removed between molecules is a chemical line.
 - A changed atom or bond hidden in a collapsed label is marked on the label; a comparison that stops says **Couldn't compare**.
+
+Greptile, two rounds, each fixed with a failing-first test: a changed stereocentre or E/Z double bond is marked beside other edits; a restyled hydrogen bond between molecules is a style line (once, not twice inside one molecule); an arrow that lets go of an atom is listed, compared by anchor target so turning the scheme does not count.
 
 No stale-result race was found: each comparison has its own generation, and a result for another one is dropped (tested).
 
