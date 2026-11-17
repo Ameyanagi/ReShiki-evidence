@@ -1,0 +1,10 @@
+Downloading reshiki (14.9MiB)
+ Downloaded reshiki
+Installed 1 package in 3ms
+reshiki 0.15.0
+ethanol.png (exported by the app with the editable drawing): ValueError: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 0
+plain.png (written by this package, no drawing inside): ValueError: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 0
+ethanol.svg (exported by the app with the editable drawing): ValueError: Unsupported import format
+plain.svg (written by this package, no drawing inside): ValueError: Unsupported import format
+ethanol.pdf (exported by the app with the editable drawing): ValueError: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 10
+plain.pdf (written by this package, no drawing inside): ValueError: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 10
