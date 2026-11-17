@@ -1,0 +1,15 @@
+     Running unittests src/lib.rs (/Users/ryuichi/dev/ReShiki-agents-wt/triage-target/debug/deps/reshiki_model-2c15f21e7c97d55b)
+test style::added_font_tests::missing_generic_family_uses_an_installed_sans_before_the_bundle ... ok
+test style::added_font_tests::an_existing_arial_face_skips_the_bundle_and_keeps_its_metrics ... ok
+test style::added_font_tests::generic_sans_fallback_precedes_cjk_without_replacing_requested_families ... ok
+test style::added_font_tests::an_added_arial_is_used_instead_of_the_bundled_stand_in ... ok
+test style::added_font_tests::bundled_sans_supplies_glyphs_missing_from_installed_faces ... ok
+test style::added_font_tests::last_resort_checks_glyph_weight_and_style_in_database_order ... ok
+test style::font::tests::an_existing_helvetica_face_is_not_aliased_to_the_bundle ... ok
+test style::font::tests::metrics_follow_requested_weight_instead_of_the_variable_default ... ok
+test style::added_font_tests::missing_named_families_use_an_installed_face_for_label_metrics ... ok
+test style::added_font_tests::bundled_faces_supply_arial_and_helvetica_for_each_label_style ... ok
+test style::font::tests::resident_faces_keep_their_order_and_matches ... ok
+test style::added_font_tests::installed_arial_leaves_the_bundled_faces_unloaded ... ok
+test style::added_font_tests::added_fonts_join_measurement_and_export ... ok
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 1507 filtered out; finished in 0.15s

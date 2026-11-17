@@ -1,0 +1,15 @@
+bun test v1.4.4 (38afee6c8)
+
+test/element.test.ts:
+(pass) a failed editor load is retried by the next call [0.14ms]
+(pass) a src that answers with an HTTP error fires error and does not mount [0.37ms]
+(pass) the element forwards load's copied import warnings [0.38ms]
+(pass) a changed src loads the new drawing, unless the page prevents it [5.93ms]
+(pass) an earlier src never loads after a later change, also a prevented or removed one [14.99ms]
+(pass) src and format are read together when the editor starts [2.46ms]
+(pass) a changed src starts an editor whose first src could not be loaded [1.25ms]
+
+ 7 pass
+ 0 fail
+ 32 expect() calls
+Ran 7 tests across 1 file. [29.00ms]

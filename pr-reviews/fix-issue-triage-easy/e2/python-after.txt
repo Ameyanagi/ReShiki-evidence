@@ -1,0 +1,7 @@
+reshiki 0.15.0
+ethanol.png (exported by the app with the editable drawing): Drawing CCO
+plain.png (written by this package, no drawing inside): ReShikiError: This picture has no ReShiki drawing inside
+ethanol.svg (exported by the app with the editable drawing): Drawing CCO
+plain.svg (written by this package, no drawing inside): ReShikiError: This picture has no ReShiki drawing inside
+ethanol.pdf (exported by the app with the editable drawing): Drawing CCO
+plain.pdf (written by this package, no drawing inside): ReShikiError: This picture has no ReShiki drawing inside

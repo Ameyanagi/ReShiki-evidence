@@ -1,29 +1,40 @@
 reshiki 0.15.0-nightly.20261116.43935165397.1
-$ reshiki --cli convert ethanol.png --to smiles   # exported by the app with the editable drawing
+
+# ethanol.png: exported by the app with the editable drawing. plain.png: written by this CLI, no drawing inside.
+$ reshiki --cli convert ethanol.png --to smiles
 reshiki: error: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 0
-exit 1
-reshiki: warning: PNG: 737 × 352 pixels at 1200 dpi
-$ reshiki --cli convert plain.png --to smiles   # written by this CLI, no drawing inside
+(exit 1)
+
+$ reshiki --cli convert plain.png --to smiles
 reshiki: error: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 0
-exit 1
-$ reshiki --cli convert ethanol.svg --to smiles   # exported by the app with the editable drawing
+(exit 1)
+
+# ethanol.svg: exported by the app with the editable drawing. plain.svg: written by this CLI, no drawing inside.
+$ reshiki --cli convert ethanol.svg --to smiles
 reshiki: error[failed]: Invalid SMILES at byte 0
-exit 1
-$ reshiki --cli convert plain.svg --to smiles   # written by this CLI, no drawing inside
+(exit 1)
+
+$ reshiki --cli convert plain.svg --to smiles
 reshiki: error[failed]: Invalid SMILES at byte 0
-exit 1
-$ reshiki --cli convert ethanol.pdf --to smiles   # exported by the app with the editable drawing
+(exit 1)
+
+# ethanol.pdf: exported by the app with the editable drawing. plain.pdf: written by this CLI, no drawing inside.
+$ reshiki --cli convert ethanol.pdf --to smiles
 reshiki: error: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 10
-exit 1
-$ reshiki --cli convert plain.pdf --to smiles   # written by this CLI, no drawing inside
+(exit 1)
+
+$ reshiki --cli convert plain.pdf --to smiles
 reshiki: error: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 10
-exit 1
+(exit 1)
+
 $ reshiki --cli analyze ethanol.png
 reshiki: error: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 0
-exit 0
+(exit 1)
+
 $ reshiki --cli name ethanol.pdf
 reshiki: error: The file is not valid UTF-8: invalid utf-8 sequence of 1 bytes from index 10
-exit 1
+(exit 1)
+
 $ reshiki --cli convert - --from mol --to smiles < ethanol.svg
 reshiki: error[failed]: Invalid MOL input at line 4: Unexpected end of file
-exit 1
+(exit 0)

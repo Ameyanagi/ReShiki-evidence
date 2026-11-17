@@ -1,0 +1,40 @@
+reshiki 0.15.0
+
+# ethanol.png: exported by the app with the editable drawing. plain.png: written by this CLI, no drawing inside.
+$ reshiki --cli convert ethanol.png --to smiles
+CCO
+(exit 0)
+
+$ reshiki --cli convert plain.png --to smiles
+reshiki: error: This picture has no ReShiki drawing inside
+(exit 1)
+
+# ethanol.svg: exported by the app with the editable drawing. plain.svg: written by this CLI, no drawing inside.
+$ reshiki --cli convert ethanol.svg --to smiles
+CCO
+(exit 0)
+
+$ reshiki --cli convert plain.svg --to smiles
+reshiki: error: This picture has no ReShiki drawing inside
+(exit 1)
+
+# ethanol.pdf: exported by the app with the editable drawing. plain.pdf: written by this CLI, no drawing inside.
+$ reshiki --cli convert ethanol.pdf --to smiles
+CCO
+(exit 0)
+
+$ reshiki --cli convert plain.pdf --to smiles
+reshiki: error: This picture has no ReShiki drawing inside
+(exit 1)
+
+$ reshiki --cli analyze ethanol.png
+{"api":{"operation_api":2,"stability":"experimental"},"experimental":true,"validation":{"status":"valid"},"value":{"analysis":{"acceptors":1,"display_formula":"C₂H₆O","donors":1,"exact_mass":46.04
+(exit 0)
+
+$ reshiki --cli name ethanol.pdf
+ethanol
+(exit 0)
+
+$ reshiki --cli convert - --from mol --to smiles < ethanol.svg
+CCO
+(exit 0)

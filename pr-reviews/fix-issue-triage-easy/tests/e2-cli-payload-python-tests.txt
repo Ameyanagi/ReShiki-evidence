@@ -1,0 +1,5 @@
+test cli::tests::pictures_convert_from_the_editable_drawing_inside_them ... ok
+test result: ok. 93 passed; 0 failed; 1 ignored; 0 measured; 418 filtered out; finished in 54.07s
+test payload::tests::pictures_are_told_from_drawings_and_structure_text ... ok
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 689 filtered out; finished in 0.09s
+================= 159 passed, 3 skipped, 2 warnings in 22.60s ==================

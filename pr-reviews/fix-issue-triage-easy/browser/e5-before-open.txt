@@ -1,0 +1,7 @@
+before: drop evidence-big.rsk (20 copies of a 100-residue peptide, 10 020 atoms) on the editor
+     7 ms  file dropped: evidence-big.rsk
+    23 ms  long task: 56 ms
+    80 ms  long task: 245 ms
+   325 ms  long task: 546 ms
+   871 ms  long task: 574 ms
+  1446 ms  long task: 53 ms

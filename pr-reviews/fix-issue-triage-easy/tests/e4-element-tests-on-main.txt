@@ -1,0 +1,13 @@
+(pass) a failed editor load is retried by the next call [0.14ms]
+(pass) a src that answers with an HTTP error fires error and does not mount [0.35ms]
+(pass) the element forwards load's copied import warnings [0.40ms]
+TypeError: element.attributeChangedCallback is not a function. (In 'element.attributeChangedCallback("src", null, "first.mol")', 'element.attributeChangedCallback' is undefined)
+(fail) a changed src loads the new drawing, unless the page prevents it [1.64ms]
+TypeError: element.attributeChangedCallback is not a function. (In 'element.attributeChangedCallback("src", before, src)', 'element.attributeChangedCallback' is undefined)
+(fail) an earlier src never loads after a later change, also a prevented or removed one [0.34ms]
+TypeError: element.attributeChangedCallback is not a function. (In 'element.attributeChangedCallback("src", "a.mol", "b.cdx")', 'element.attributeChangedCallback' is undefined)
+(fail) src and format are read together when the editor starts [0.14ms]
+TypeError: element.attributeChangedCallback is not a function. (In 'element.attributeChangedCallback("src", before, src)', 'element.attributeChangedCallback' is undefined)
+(fail) a changed src starts an editor whose first src could not be loaded [0.14ms]
+ 3 pass
+ 4 fail

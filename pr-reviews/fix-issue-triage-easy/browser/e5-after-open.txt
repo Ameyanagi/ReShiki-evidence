@@ -1,0 +1,11 @@
+after: drop evidence-big.rsk (20 copies of a 100-residue peptide, 10 020 atoms) on the editor
+     4 ms  file dropped: evidence-big.rsk
+    38 ms  status set: Opening… · No selection
+    51 ms  frame painted with status: Opening… · No selection
+    51 ms  long task: 324 ms
+   327 ms  status set: Document opened · No selection
+   376 ms  frame painted with status: Document opened · No selection
+   376 ms  long task: 526 ms
+   903 ms  long task: 601 ms
+  1504 ms  long task: 133 ms
+  1640 ms  long task: 60 ms

@@ -1,0 +1,6 @@
+after: click Export PDF… for the same drawing
+   121 ms  status set: Preparing PDF export… · No selection
+   126 ms  frame painted with status: Preparing PDF export… · No selection
+   127 ms  long task: 1241 ms
+  1414 ms  status set: Downloaded evidence-big.pdf · Includes the editable drawing · No selection
+  1421 ms  frame painted with status: Downloaded evidence-big.pdf · Includes the editable drawing · No selection

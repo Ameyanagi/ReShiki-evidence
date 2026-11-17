@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ReShiki evidence page</title>
+    <style>
+      html, body { margin: 0; }
+      #editor { width: 1280px; height: 760px; }
+    </style>
+  </head>
+  <body>
+    <div id="banner" style="font: 16px system-ui; padding: 6px 10px; background: #fff3c4"></div>
+    <div id="editor"></div>
+    <script type="module">
+      // Evidence only: mounts the editor and logs status changes, frames and long tasks.
+      import { mount } from "../src/editor.js";
+      const query = new URLSearchParams(location.search);
+      const timeline = (window.timeline = []);
+      let zero = performance.now();
+      const note = (kind, detail) =>
+        timeline.push({ ms: Math.round(performance.now() - zero), kind, detail });
+      window.restart = () => {
+        timeline.length = 0;
+        zero = performance.now();
+      };
+      new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+          timeline.push({
+            ms: Math.round(entry.startTime - zero),
+            kind: "long task",
+            detail: `${Math.round(entry.duration)} ms`,
+          });
+        }
+      }).observe({ entryTypes: ["longtask"] });
+      const element = document.getElementById("editor");
+      window.editor = await mount(element, {
+        data: query.has("residues")
+          ? "NC(C)C(=O)".repeat(Number(query.get("residues"))) + "O"
+          : (query.get("smiles") ?? undefined),
+        format: "smiles",
+        fonts: query.has("arial") ? ["./evidence-arial.ttf"] : [],
+      });
+      const status = document.getElementById("reshiki-editor-status");
+      let shown = status.textContent;
+      // The status line as the editor last set it, and the first frame drawn after each change.
+      new MutationObserver(() => {
+        if (status.textContent === shown) return;
+        shown = status.textContent;
+        note("status set", shown);
+        const text = shown;
+        // The browser paints right after its animation-frame callbacks.
+        requestAnimationFrame(() => note("frame painted with status", text));
+      }).observe(status, { childList: true, characterData: true, subtree: true });
+      // Drops a file on the editor as a drag from the desktop does.
+      // The drawing in front, `copies` times over, as one native file.
+      window.dropSaved = async (name, copies) => {
+        const drawing = JSON.parse(await window.editor.save("rsk"));
+        const [atoms, bonds] = [[...drawing.atoms], [...drawing.bonds]];
+        const step = Math.max(...atoms.map((atom) => atom.id)) + 1;
+        const ys = atoms.map((atom) => atom.position.y);
+        const height = Math.max(...ys) - Math.min(...ys) + 80;
+        for (let copy = 1; copy < copies; copy++) {
+          for (const atom of atoms) {
+            drawing.atoms.push({
+              ...atom,
+              id: atom.id + copy * step,
+              position: { x: atom.position.x, y: atom.position.y + copy * height },
+            });
+          }
+          for (const bond of bonds) {
+            drawing.bonds.push({ ...bond, a: bond.a + copy * step, b: bond.b + copy * step });
+          }
+        }
+        const bytes = JSON.stringify(drawing);
+        window.restart();
+        const transfer = new DataTransfer();
+        transfer.items.add(new File([bytes], name));
+        note("file dropped", name);
+        element.dispatchEvent(new DragEvent("drop", { dataTransfer: transfer, bubbles: true, cancelable: true }));
+      };
+      // ?auto=N: drop N copies after a countdown. The banner's clock runs on the
+      // page's thread, so it stands still while that thread is held.
+      if (query.has("auto")) {
+        const banner = document.getElementById("banner");
+        const build = query.get("build") ?? "";
+        let dropped;
+        const tick = () => {
+          const seconds = ((performance.now() - (dropped ?? zero)) / 1000).toFixed(1);
+          banner.textContent = dropped
+            ? `${build}: FILE DROPPED. Page clock since the drop: ${seconds} s (it stands still while the page is held)`
+            : `${build}: dropping a large drawing in ${Math.max(0, 12 - seconds).toFixed(0)} s`;
+          requestAnimationFrame(tick);
+        };
+        tick();
+        setTimeout(() => {
+          dropped = performance.now();
+          requestAnimationFrame(() => setTimeout(() => window.dropSaved("evidence-big.rsk", Number(query.get("auto")))));
+        }, 12000);
+      }
+      window.ready = true;
+    </script>
+  </body>
+</html>
