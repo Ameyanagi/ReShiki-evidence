@@ -21,20 +21,80 @@ The cloud sat among the editing commands although it is about where the drawing 
 
 ## Evidence
 
-Pending: real-window captures before (main) and after, light and dark, are being taken.
+Real app on macOS arm64 (debug builds), window 1280 × 852 pt unless noted, against the **local mock GitHub** (`src/github/mock.rs`, `RESHIKI_GITHUB_CLIENT_ID=mock` with the API and web overrides; user `@octo-test`), each launch with a fresh `RESHIKI_DATA_DIR`, driven by Codex computer use; every image is a capture of the ReShiki window only. Steps, the same on both builds: launch signed out, open the GitHub menu, **Sign in…** (the mock approves the code), **Open from GitHub…** → lab-notes → ring.rsk, move it and save (one unsent drawing), open the menu, open the picker and point at reaction-notes, right-click it, then two new tabs and the window set to 1040 pt.
+
+- **Before**: main at `6cb84b674` (the later commits on main touch ChemDraw import and CI only).
+- **After**: this branch, build of `05c1de1b`'s app code (the head adds only a test change).
+
+### Idle, signed in, a GitHub drawing in front
+
+| Before | After |
+| --- | --- |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-03-idle-signed-in.png" width="440"><br>The cloud sits in the command bar after Save as; the chip **● lab-notes · 1 unsent [Send]** comes after the status message **Document saved**. | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-03-idle-signed-in.png" width="440"><br>The command bar has no cloud. The status bar starts with the cloud (dot and **O** badge), then **● lab-notes · 1 unsent [Send]**, then **Document saved**. |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/dark-03-idle-signed-in.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/dark-03-idle-signed-in.png" width="440"> |
+
+### The GitHub menu
+
+| Before | After |
+| --- | --- |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-04-menu-open.png" width="440"><br>Opens downward from the command bar. | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-04-menu-open.png" width="440"><br>The same items (**Open from GitHub…**, **Send 1 drawing**, **History**, **@octo-test**, **Add repositories… ↗**, **Sign out**), opening upward from the bottom-left corner. |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/dark-04-menu-open.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/dark-04-menu-open.png" width="440"> |
+
+### Signed out
+
+| Before | After |
+| --- | --- |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-01-signed-out.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-01-signed-out.png" width="440"><br>The cloud stays at the bottom left, without badge or dot (tooltip **GitHub · Not signed in**). |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-02-signed-out-menu.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-02-signed-out-menu.png" width="440"><br>**Open from GitHub…**, **Send to GitHub…**, **Sign in…**, upward. |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/dark-02-signed-out-menu.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/dark-02-signed-out-menu.png" width="440"> |
+
+### 1040 pt window, three tabs
+
+| Before | After |
+| --- | --- |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-07-narrow-three-tabs.png" width="440"><br>The GitHub tab is cut to **ring.…** beside two Untitled tabs. | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-07-narrow-three-tabs.png" width="440"><br>With the cloud gone and 4 px gaps, **ring.rsk**, **Untitled** and **Untitled** show in full. |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/dark-07-narrow-three-tabs.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/dark-07-narrow-three-tabs.png" width="440"> |
+
+### Repository rows in Open from GitHub…
+
+<img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/rows-closeup-light-dark-before.png" width="640">
+
+Close-up of the repository list, from the captures below: after, light and dark (pointer on reaction-notes; right-click), then before. lab-notes is selected and shows its ↗; reaction-notes shows it under the pointer; spectra shows none, and its lock stays where the other rows' locks are. Right-click shows **Open on GitHub ↗** (reaction-notes is not shared, so there is no **Remove from list**). Before, the rows had no ↗ and right-click did nothing.
+
+| Before | After |
+| --- | --- |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-05-picker-row-hover.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-05-picker-row-hover.png" width="440"> |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/light-06-row-context-menu.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/light-06-row-context-menu.png" width="440"> |
+| <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/before/dark-06-row-context-menu.png" width="440"> | <img src="https://github.com/Ameyanagi/ReShiki-evidence/raw/f0d469c2228109acac4f2cce8c28530340c68a5d/pr-reviews/feat-github-button-status-bar/after/dark-06-row-context-menu.png" width="440"> |
+
+Not clicked in these runs: the ↗ and **Open on GitHub ↗** open a browser. The renderer test below checks the message they send and the URL.
 
 ## Verification
 
 | Platform | Result |
 |---|---|
-| macOS arm64 (Apple M4) | pending |
-| PR CI | pending |
+| macOS arm64 (Apple M4) | pass · fmt, clippy (native + wasm32), lib + bin tests, renderer tests, module index, copy lint, docs checks |
+| PR CI | Linux and Windows |
 
-Pending: the full check run on the branch head.
+Commands, on `05c1de1b` (the head's tree):
+
+- `cargo fmt --all --check`
+- `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`
+- `cargo clippy -p reshiki-web -p reshiki -p reshiki-web-worker --lib --bin reshiki --target wasm32-unknown-unknown --locked -- -D warnings`
+- `cargo test --locked --no-default-features -p reshiki --lib --bins`: 490 + 1805 passed
+- `cargo test --locked --no-default-features -p reshiki --bin reshiki -- --include-ignored --test-threads=1 --skip manual_`: 1962 passed (the renderer tests, including the four new ones and `tab_strip_clicks_switch_and_close_tabs`)
+- `python3 scripts/module_index.py --check`, `python3 scripts/copy_lint.py`, `bun scripts/check_docs_tree.mjs`, `uv run --locked python scripts/assemble_changelog.py --check`
+
+Linux and Windows run in this PR's CI.
 
 ## Review
 
-Pending: an independent adversarial review of the diff.
+An independent adversarial review (Codex, read-only) of the whole diff found no P0–P2 problems and two P3s, both fixed in the last commit (a second read-only review of that commit found nothing further):
+
+- The ↗ showed only inside the row's padding: a pointer on the row's outer 4–6 px highlighted the row without showing it. The padding now sits inside the hover area.
+- The long-name assertion could pass with the selected row's own ↗ removed, because the hidden ↗ button also reports an 18 pt "↗" text. The test now counts: two ↗ texts on the selected row, one on each other row.
+
+An earlier review on the first commit found that the button could be squeezed out by a very long theme name in the status bar, and that a long repository name could take the ↗'s room; the second commit fixed both, with tests.
 
 ## Risk
 

@@ -79,7 +79,7 @@ Three adversarial passes (gpt-6.1-sol, read-only) on the model and the dialog, f
 - An arrow given a bend is **redrawn**; a hydrogen bond added or removed between molecules is a chemical line.
 - A changed atom or bond hidden in a collapsed label is marked on the label; a comparison that stops says **Couldn't compare**.
 
-Greptile, two rounds, each fixed with a failing-first test: a changed stereocentre or E/Z double bond is marked beside other edits; a restyled hydrogen bond between molecules is a style line (once, not twice inside one molecule); an arrow that lets go of an atom is listed, compared by anchor target so turning the scheme does not count.
+Greptile, three rounds (5/5 at the final head, no open threads), each finding fixed with a failing-first test: a changed stereocentre or E/Z double bond is marked beside other edits; a restyled hydrogen bond between molecules is a style line (once, not twice inside one molecule); an arrow that lets go of an atom is listed, compared by anchor target so turning the scheme does not count.
 
 No stale-result race was found: each comparison has its own generation, and a result for another one is dropped (tested).
 
