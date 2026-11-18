@@ -74,6 +74,8 @@ Two adversarial passes (gpt-6.2-sol, read-only), focused on mirror vs stereo, th
 - A mirror drawn again with new ids pairs atoms by the best of the fit models, so it reads **mirrored**, not redrawn.
 - A projection bond is not called a swapped wedge.
 
+Greptile, first round (4/5): a symmetric molecule drawn again and turned 180° could pair its atoms as a mirror (the pairing is now chosen by the first model that fits, rigid first), and bonds made or broken between kept atoms went unworded (now **C1–C3 bond added**, their hydrogens not worded). Both fixed with tests; second round 5/5 at the final head, no open threads.
+
 Not changed (noted): a graphic stored as a large path in local coordinates scales only its frame axes, so a scale of it can go unseen; an exact 45° rotation can move a fixed H to the other cardinal side; drawn H on a protonated atom can read as a charge-only change.
 
 ## Risk
