@@ -24,7 +24,7 @@ Alternatives rejected:
 
 ## Evidence
 
-All captures: macOS arm64, debug builds, ReShiki window only (2560 x 1704 px). Input: `aspirin.smi` (`CC(=O)Oc1ccccc1C(=O)O`) opened at launch, fresh data folder, naming helper pointed at the build. Before: `main` 0d97885c (binary `shasum` c0071e45…). After: this branch 09dc6c52 (binary 5303c665…). Driven by Codex computer use; every image checked by Claude against the mock.
+All captures: macOS arm64, debug builds, ReShiki window only (2560 x 1704 px). Input: `aspirin.smi` (`CC(=O)Oc1ccccc1C(=O)O`) opened at launch, fresh data folder, naming helper pointed at the build. Before: `main` 0d97885c (binary `shasum` c0071e45…). After: this branch at 09dc6c52 (binary 5303c665…), which is 316f024e after the rebase onto main b9bdcaf7. Driven by Codex computer use; every image checked by Claude against the mock.
 
 ### Before (main)
 
@@ -45,7 +45,7 @@ All captures: macOS arm64, debug builds, ReShiki window only (2560 x 1704 px). I
 | <img src="after/after-09-undo.png" width="420"><br>One Undo: `Compound 3a` again, with the note. | <img src="after/after-10-caption-panel-dark.png" width="420"><br>Dark theme. |
 | <img src="after/after-11-menu-dark.png" width="420"><br>Dark: **Hide chemical name** (no tick) and ✓ on Name, Mol. Wt. and Exact Mass. The submenu separator is a gap, as the other menu separators are in dark. | |
 
-The GUI captures are from 09dc6c52 (binary 5303c665…); the commits after it change only CDXML/CDX export (below).
+The GUI captures are from 09dc6c52, now 316f024e (binary 5303c665…); the commits after it change only CDXML/CDX export, test goldens and docs.
 
 ### ChemDraw 26
 

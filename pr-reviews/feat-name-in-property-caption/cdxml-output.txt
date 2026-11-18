@@ -1,4 +1,4 @@
-# CDXML written by the branch head d8f6e241 / 605c0d07 (binary c5d97e38) from the two drawings saved in the app
+# CDXML from the two drawings saved in the app, written by the branch at d8f6e241 (b982c4d9 after the rebase; binary c5d97e38). The export code is unchanged since.
 
 ## name-caption-auto.cdxml
 <chemicalproperty id="33" ChemicalPropertyDisplayID="32" ChemicalPropertyIsActive="yes" ChemicalPropertyType="4 3" BasisObjects="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30" />
