@@ -35,6 +35,7 @@
       },
       "format": {
         "enum": [
+          "value",
           "numbers",
           "ppm",
           "both"
@@ -106,7 +107,7 @@
 ## label_atoms arguments
 
 {
-  "document": "doc_693eb92d70233abd5b18433d68eb6218",
+  "document": "doc_12c7e9aa6b478c6c05feb965bf50b54c",
   "rows": [
     {
       "atom": "1",
@@ -161,7 +162,7 @@
       "ppm": null
     }
   ],
-  "format": "both",
+  "format": "value",
   "decimals": 1,
   "base_revision": "0",
   "idempotency_key": "label-13c"
@@ -174,7 +175,7 @@
     "status": "valid"
   },
   "value": {
-    "document": "doc_693eb92d70233abd5b18433d68eb6218",
+    "document": "doc_12c7e9aa6b478c6c05feb965bf50b54c",
     "effect": "applied",
     "labeled": [
       "1",
@@ -201,7 +202,7 @@
 ## the same call with the same idempotency_key replays the receipt
 
 {
-  "document": "doc_693eb92d70233abd5b18433d68eb6218",
+  "document": "doc_12c7e9aa6b478c6c05feb965bf50b54c",
   "effect": "applied",
   "labeled": [
     "1",
@@ -219,7 +220,7 @@
 
 ## export svg_text live: the label text is in the SVG
 
-8 labels drawn as text
+8 values drawn as text
 
 ## the same rows again without the key: stale (the document is at revision 1)
 
@@ -243,7 +244,7 @@
 
 {
   "deleted": [],
-  "document": "doc_693eb92d70233abd5b18433d68eb6218",
+  "document": "doc_12c7e9aa6b478c6c05feb965bf50b54c",
   "effect": "applied",
   "id_remap": [],
   "inserted": [],
@@ -251,19 +252,19 @@
   "revision": "2"
 }
 
-## after undo the SVG has no label: True
+## after undo the SVG has no value: True
 
 ## error: unknown atom
 
 {"isError": true, "error": {"code": "unknown_object", "message": "Atom 99 is not in the drawing", "param": "rows", "retryable": false}}
 
-## error: label over 32 characters
+## error: label over 32 characters (format both)
 
 {"isError": true, "error": {"code": "invalid_arguments", "message": "The label of atom 1 is longer than 32 characters", "param": "rows", "retryable": false}}
 
 ## error: format Both
 
-{"isError": true, "error": {"code": "invalid_arguments", "message": "format must be numbers, ppm or both", "param": "format", "retryable": false}}
+{"isError": true, "error": {"code": "invalid_arguments", "message": "format must be value, numbers, ppm or both", "param": "format", "retryable": false}}
 
 ## error: decimals 5
 

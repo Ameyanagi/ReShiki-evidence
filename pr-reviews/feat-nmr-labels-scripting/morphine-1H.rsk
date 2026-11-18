@@ -12,7 +12,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#1 · 2.54 ppm",
+          "text": "2.54",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -87,7 +87,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#3 · 3.29 ppm",
+          "text": "3.29",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -145,7 +145,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#4 · 2.11 ppm",
+          "text": "2.11",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -262,7 +262,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#8 · 6.79 ppm",
+          "text": "6.79",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -320,7 +320,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#9 · 6.80 ppm",
+          "text": "6.80",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -446,7 +446,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#14 · 4.96 ppm",
+          "text": "4.96",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -512,7 +512,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#15 · 3.77 ppm",
+          "text": "3.77",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -594,7 +594,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#17 · 6.26 ppm",
+          "text": "6.26",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -652,7 +652,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#18 · 6.26 ppm",
+          "text": "6.26",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -710,7 +710,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#19 · 3.36 ppm",
+          "text": "3.36",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -775,7 +775,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#20 · 3.57 ppm",
+          "text": "3.57",
           "offset": null,
           "style": {
             "family": "Arial",
@@ -840,7 +840,7 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#21 · 3.00 ppm",
+          "text": "3.00",
           "offset": null,
           "style": {
             "family": "Arial",

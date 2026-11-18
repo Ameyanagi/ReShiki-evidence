@@ -1,19 +1,36 @@
-Installed 4 packages in 29ms
+Installed 4 packages in 36ms
 reshiki 0.15.0
 
 >>> m = reshiki.Molecule.from_smiles('CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5').clean()
 >>> shifts = m.predict_nmr('13C')
->>> m.with_labels(shifts, format='both').save('morphine-13C.svg', style='JACS / ACS')
+>>> m.with_labels(shifts).save('morphine-13C.svg', style='JACS / ACS')
 # 17 rows, 5 labels; rows without ppm (skipped): [3, 4, 5, 6, 7, 12, 14, 15, 17, 19, 20, 21]
-#   atom 1: #1 · 41.8 ppm
-#   atom 8: #8 · 127.4 ppm
-#   atom 9: #9 · 114.3 ppm
-#   atom 10: #10 · 149.0 ppm
-#   atom 18: #18 · 126.8 ppm
+#   atom 1: 41.8
+#   atom 8: 127.4
+#   atom 9: 114.3
+#   atom 10: 149.0
+#   atom 18: 126.8
 
 >>> m = reshiki.Molecule.from_smiles('CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5').clean()
 >>> shifts = m.predict_nmr('1H')
->>> m.with_labels(shifts, format='both').save('morphine-1H.svg', style='JACS / ACS')
+>>> m.with_labels(shifts).save('morphine-1H.svg', style='JACS / ACS')
+# 14 rows, 12 labels; rows without ppm (skipped): [11, 16]
+#   atom 1: 2.54
+#   atom 3: 3.29
+#   atom 4: 2.11
+#   atom 8: 6.79
+#   atom 9: 6.80
+#   atom 14: 4.96
+#   atom 15: 3.77
+#   atom 17: 6.26
+#   atom 18: 6.26
+#   atom 19: 3.36
+#   atom 20: 3.57
+#   atom 21: 3.00
+
+>>> m = reshiki.Molecule.from_smiles('CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5').clean()
+>>> shifts = m.predict_nmr('1H')
+>>> m.with_labels(shifts, format='both').save('morphine-1H-both.svg', style='JACS / ACS')
 # 14 rows, 12 labels; rows without ppm (skipped): [11, 16]
 #   atom 1: #1 · 2.54 ppm
 #   atom 3: #3 · 3.29 ppm
@@ -30,50 +47,51 @@ reshiki 0.15.0
 
 >>> m = reshiki.Molecule.from_smiles('COc1ccc(C=O)cc1').clean()
 >>> shifts = m.predict_nmr('13C')
->>> m.with_labels(shifts, format='both').save('anisaldehyde-13C.svg', style='JACS / ACS')
+>>> m.with_labels(shifts).save('anisaldehyde-13C.svg', style='JACS / ACS')
 # 8 rows, 8 labels; rows without ppm (skipped): []
-#   atom 1: #1 · 55.3 ppm
-#   atom 3: #3 · 159.6 ppm
-#   atom 4: #4 · 114.2 ppm
-#   atom 5: #5 · 127.5 ppm
-#   atom 6: #6 · 134.4 ppm
-#   atom 7: #7 · 190.8 ppm
-#   atom 9: #9 · 127.5 ppm
-#   atom 10: #10 · 114.2 ppm
+#   atom 1: 55.3
+#   atom 3: 159.6
+#   atom 4: 114.2
+#   atom 5: 127.5
+#   atom 6: 134.4
+#   atom 7: 190.8
+#   atom 9: 127.5
+#   atom 10: 114.2
 
 >>> m = reshiki.Molecule.from_smiles('COc1ccc(C=O)cc1').clean()
 >>> shifts = m.predict_nmr('1H')
->>> m.with_labels(shifts, format='both').save('anisaldehyde-1H.svg', style='JACS / ACS')
+>>> m.with_labels(shifts).save('anisaldehyde-1H.svg', style='JACS / ACS')
 # 6 rows, 6 labels; rows without ppm (skipped): []
-#   atom 1: #1 · 3.79 ppm
-#   atom 4: #4 · 6.79 ppm
-#   atom 5: #5 · 7.25 ppm
-#   atom 7: #7 · 9.98 ppm
-#   atom 9: #9 · 7.25 ppm
-#   atom 10: #10 · 6.79 ppm
+#   atom 1: 3.79
+#   atom 4: 6.79
+#   atom 5: 7.25
+#   atom 7: 9.98
+#   atom 9: 7.25
+#   atom 10: 6.79
 
->>> m.with_labels(m.predict_nmr('13C'), format='both', decimals=3).save('anisaldehyde-13C-decimals3.svg', style='JACS / ACS')
-#   atom 1: #1 · 55.300 ppm
-#   atom 3: #3 · 159.600 ppm
-#   atom 4: #4 · 114.200 ppm
-#   atom 5: #5 · 127.484 ppm
-#   atom 6: #6 · 134.448 ppm
-#   atom 7: #7 · 190.850 ppm
-#   atom 9: #9 · 127.484 ppm
-#   atom 10: #10 · 114.200 ppm
+>>> m.with_labels(m.predict_nmr('13C'), decimals=3).save('anisaldehyde-13C-decimals3.svg', style='JACS / ACS')
+#   atom 1: 55.300
+#   atom 3: 159.600
+#   atom 4: 114.200
+#   atom 5: 127.484
+#   atom 6: 134.448
+#   atom 7: 190.850
+#   atom 9: 127.484
+#   atom 10: 114.200
 
 # Decimals default per nucleus, or 0 to 4 on request (anisaldehyde atom 7, 13C):
-#   decimals=None: 190.8 ppm
-#   decimals=0: 191 ppm
-#   decimals=2: 190.85 ppm
-#   decimals=4: 190.8500 ppm
+#   decimals=None: 190.8
+#   decimals=0: 191
+#   decimals=2: 190.85
+#   decimals=4: 190.8500
 #   decimals=5: ReShikiError[invalid_arguments]: decimals must be 0 to 4
 
 # RDKit atomNote round trip:
-#   to_rdkit notes: [(0, '#1 · 3.79 ppm'), (3, '#4 · 6.79 ppm'), (4, '#5 · 7.25 ppm'), (6, '#7 · 9.98 ppm'), (8, '#9 · 7.25 ppm'), (9, '#10 · 6.79 ppm')]
-#   from_rdkit numbers: {1: '#1 · 3.79 ppm', 4: '#4 · 6.79 ppm', 5: '#5 · 7.25 ppm', 7: '#7 · 9.98 ppm', 9: '#9 · 7.25 ppm', 10: '#10 · 6.79 ppm'}
+#   to_rdkit notes: [(0, '3.79'), (3, '6.79'), (4, '7.25'), (6, '9.98'), (8, '7.25'), (9, '6.79')]
+#   from_rdkit numbers: {1: '3.79', 4: '6.79', 5: '7.25', 7: '9.98', 9: '7.25', 10: '6.79'}
 
-# The three formats on anisaldehyde 13C, atom 7 (the aldehyde C):
+# The four formats on anisaldehyde 13C, atom 7 (the aldehyde C):
+#   value: 190.8
 #   numbers: #7
 #   ppm: 190.8 ppm
 #   both: #7 · 190.8 ppm

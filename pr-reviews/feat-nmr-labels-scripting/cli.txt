@@ -1,30 +1,30 @@
-$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 13C --labels both -o cli-morphine-13C.png --force
-reshiki: warning: PNG: 2894 × 1550 pixels at 1200 dpi
+$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 13C --labels value -o cli-morphine-13C.png --force
+reshiki: warning: PNG: 2008 × 1411 pixels at 1200 dpi
 [exit 0]
 
-$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 1H --labels both -o cli-morphine-1H.png --force
-reshiki: warning: PNG: 3357 × 1739 pixels at 1200 dpi
+$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 1H --labels value -o cli-morphine-1H.png --force
+reshiki: warning: PNG: 2008 × 1403 pixels at 1200 dpi
 [exit 0]
 
-$ reshiki --cli convert --smiles 'COc1ccc(C=O)cc1' --nucleus 13C --labels ppm --decimals 3 -o cli-anisaldehyde-13C-decimals3.svg --force
+$ reshiki --cli convert --smiles 'COc1ccc(C=O)cc1' --nucleus 13C --labels value --decimals 3 -o cli-anisaldehyde-13C-decimals3.svg --force
 [exit 0]
 
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --nucleus 13C --labels numbers -o cli-ibuprofen-13C.pdf --force
 [exit 0]
 
-$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --nucleus 13C --labels both -o cli-ibuprofen-13C.cdxml --force --receipt
-{"api":{"operation_api":2,"stability":"experimental"},"experimental":true,"receipt":{"byte_len":6746,"detail":null,"format":"cdxml"}}
+$ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --nucleus 13C --labels value -o cli-ibuprofen-13C.cdxml --force --receipt
+{"api":{"operation_api":2,"stability":"experimental"},"experimental":true,"receipt":{"byte_len":6564,"detail":null,"format":"cdxml"}}
 [exit 0]
 
 # AtomNumber attributes in cli-ibuprofen-13C.cdxml:
- AtomNumber="#1 · 22.4 ppm"
- AtomNumber="#2 · 28.9 ppm"
- AtomNumber="#3 · 22.4 ppm"
- AtomNumber="#5 · 136.8 ppm"
- AtomNumber="#6 · 129.4 ppm"
- AtomNumber="#7 · 127.5 ppm"
- AtomNumber="#9 · 127.5 ppm"
- AtomNumber="#10 · 129.4 ppm"
+ AtomNumber="22.4"
+ AtomNumber="28.9"
+ AtomNumber="22.4"
+ AtomNumber="136.8"
+ AtomNumber="129.4"
+ AtomNumber="127.5"
+ AtomNumber="127.5"
+ AtomNumber="129.4"
 
 # Usage errors (exit 2) and an operation error (exit 1):
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --labels both
@@ -32,7 +32,7 @@ reshiki: --labels needs --nucleus 1H or 13C
 [exit 2]
 
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --nucleus 13C
-reshiki: --nucleus needs --labels numbers, ppm or both
+reshiki: --nucleus needs --labels value, numbers, ppm or both
 [exit 2]
 
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to mol --nucleus 13C --labels both
@@ -40,11 +40,11 @@ reshiki: --labels needs an output that keeps atom numbers: svg, png, pdf, cdxml,
 [exit 2]
 
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --nucleus 13C --labels Both
-reshiki: --labels must be numbers, ppm or both
+reshiki: --labels must be value, numbers, ppm or both
 [exit 2]
 
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --decimals 2
-reshiki: --decimals needs --labels numbers, ppm or both
+reshiki: --decimals needs --labels value, numbers, ppm or both
 [exit 2]
 
 $ reshiki --cli convert --smiles 'CC(C)Cc1ccc(cc1)C(C)C(=O)O' --to svg --nucleus 13C --labels ppm --decimals 5
