@@ -36,14 +36,16 @@ Release builds of `04e88c10` (main, before) and this branch at `4ebbb35b` (after
 - **Disk work:** 128 reads (0.9 ms on average, 6.3 ms at most) and 63 writes (1.8 ms on average, 14.4 ms at most), every one on a background thread; no update on the window's thread grew. After both launches the cache held 740 KB.
 - The branch head is still asked each time a repository is picked, as before, so a new commit shows at once; GitHub answers 304 when it has not moved.
 - Opening a drawing makes no request in either build: its tile preview already read it.
-- Per-flow request, update and disk-span logs, the mock's logs and the runner's step reports: [before](https://github.com/Ameyanagi/ReShiki-evidence/blob/62b3b2e2673a58070758970432c5d34ae706522e/pr-reviews/perf-github-disk-cache/timing-before/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/62b3b2e2673a58070758970432c5d34ae706522e/pr-reviews/perf-github-disk-cache/timing-before/report.md)), [after](https://github.com/Ameyanagi/ReShiki-evidence/blob/62b3b2e2673a58070758970432c5d34ae706522e/pr-reviews/perf-github-disk-cache/timing-after/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/62b3b2e2673a58070758970432c5d34ae706522e/pr-reviews/perf-github-disk-cache/timing-after/report.md)), [protocol](https://github.com/Ameyanagi/ReShiki-evidence/blob/62b3b2e2673a58070758970432c5d34ae706522e/pr-reviews/perf-github-disk-cache/protocol.md), analysis script [analyze4.py](https://github.com/Ameyanagi/ReShiki-evidence/blob/62b3b2e2673a58070758970432c5d34ae706522e/pr-reviews/perf-github-disk-cache/analyze4.py).
+- Per-flow request, update and disk-span logs, the mock's logs and the runner's step reports: [before](https://github.com/Ameyanagi/ReShiki-evidence/blob/c282cbbe5e219196198681af3698a70540dc6c89/pr-reviews/perf-github-disk-cache/timing-before/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/c282cbbe5e219196198681af3698a70540dc6c89/pr-reviews/perf-github-disk-cache/timing-before/report.md)), [after](https://github.com/Ameyanagi/ReShiki-evidence/blob/c282cbbe5e219196198681af3698a70540dc6c89/pr-reviews/perf-github-disk-cache/timing-after/summary.txt) ([report](https://github.com/Ameyanagi/ReShiki-evidence/blob/c282cbbe5e219196198681af3698a70540dc6c89/pr-reviews/perf-github-disk-cache/timing-after/report.md)), [protocol](https://github.com/Ameyanagi/ReShiki-evidence/blob/c282cbbe5e219196198681af3698a70540dc6c89/pr-reviews/perf-github-disk-cache/protocol.md), analysis script [analyze4.py](https://github.com/Ameyanagi/ReShiki-evidence/blob/c282cbbe5e219196198681af3698a70540dc6c89/pr-reviews/perf-github-disk-cache/analyze4.py).
 
 ## Verification
 
 | Platform | Result |
 |---|---|
-| macOS arm64 (Apple M4) | running |
-| PR CI | running |
+| macOS arm64 (Apple M4) | pass · fmt, workspace + wasm32 clippy, lib/bin and renderer tests, Python, docs checks |
+| PR CI | pass at 6651d5c7 (27 checks; Linux x64 and Windows x64) |
+
+macOS arm64 (Apple M4), at `6651d5c7`, with a fresh `RESHIKI_DATA_DIR` and the InChI and naming helpers pointed at the built binary: `cargo fmt --all --check`; workspace clippy `--all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml (the GitHub code, and so the cache, is not built for the browser); `cargo test --locked --no-default-features -p reshiki --lib --bins` (511 lib + 1823 bin passed); the renderer tests `--bin reshiki -- --include-ignored --test-threads=1 --skip manual_` (1980 passed); Python unittest via `uv run --locked` (292 run, 9 skipped); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py --check`; `check_docs_tree.mjs`; `bun run docs:check`.
 
 New tests (lib, against the mock and its request log):
 

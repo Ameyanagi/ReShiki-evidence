@@ -42,7 +42,7 @@ Release builds of `04e88c10` (main, before) and this branch at `4ebbb35b` (after
 
 VERIFICATION_TABLE
 
-macOS arm64 (Apple M4), at `6651d5c7`, with a fresh `RESHIKI_DATA_DIR` and the InChI and naming helpers pointed at the built binary: `cargo fmt --all --check`; workspace clippy `--all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml (the GitHub code, and so the cache, is not built for the browser); `cargo test --locked --no-default-features -p reshiki --lib --bins` (511 lib + 1823 bin passed); the renderer tests `--bin reshiki -- --include-ignored --test-threads=1 --skip manual_` (1980 passed); Python unittest via `uv run --locked` (292 run, 9 skipped); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py --check`; `check_docs_tree.mjs`; `bun run docs:check`.
+macOS arm64 (Apple M4), at `6651d5c7`, with a fresh `RESHIKI_DATA_DIR` and the InChI and naming helpers pointed at the built binary: `cargo fmt --all --check`; workspace clippy `--all-targets --all-features -D warnings`; wasm32 clippy as in checks.yml (the GitHub code, and so the cache, is not built for the browser); `cargo test --locked --no-default-features -p reshiki --lib --bins` (511 lib + 1823 bin passed); the renderer tests `--bin reshiki -- --include-ignored --test-threads=1 --skip manual_` (1980 passed); Python unittest via `uv run --locked` (292 run, 9 skipped); `module_index.py --check`; `copy_lint.py`; `assemble_changelog.py --check`; `check_docs_tree.mjs`; `bun run docs:check`. At `0675c214` (the Greptile fix, in `src/github/cache.rs` and its test only): workspace clippy and the GitHub tests again (95 lib + 152 app).
 
 New tests (lib, against the mock and its request log):
 
@@ -55,7 +55,7 @@ New tests (lib, against the mock and its request log):
 - an entry that is garbage, cut short, empty or has a damaged ETag is a miss and removed; through a client it is read again and kept again;
 - eviction never reaches through a linked folder (Unix).
 
-App: a new app reads what an earlier run kept on disk, signed out and signed in, with GitHub unreachable (`a_new_app_reads_what_github_sent_before_from_the_data_folder`).
+App: a new app reads what an earlier run kept on disk, signed out and signed in, with GitHub unreachable (`a_new_app_reads_what_github_sent_before_from_the_data_folder`). Also: 16 writes at once are each counted once, so none is evicted below the cap.
 
 ## Reviews
 
@@ -63,6 +63,7 @@ Two adversarial passes by a second model (gpt-6.2-sol), focused on stale data ve
 
 - First pass, fixed in `0a819d3d`: an ETag damaged on disk (the sum covered only the reply) could make one request unsendable, now a miss; a miss that found nothing could remove an entry written meanwhile; one shared `github-override` folder for every test server, now one per server address; only GitHub-shaped logins name folders.
 - Second pass, fixed in `6651d5c7` with tests: eviction followed a linked account folder and could remove files elsewhere; a replaced entry was counted twice and could evict below the cap; a test server's address (which may hold credentials) named its folder, now a hash; managed users' logins (with `_`) got no cache. The LRU test now sets times far apart.
+- Greptile (at `6651d5c7`, 4/5): two writes landing before the first count after launch were both in that count's listing and then each counted again, which could evict below the cap. Fixed in `0675c214`: the rename, the first listing and every count happen under one lock, and a temporary file is never listed. The new test `writes_at_once_are_each_counted_once` (16 writes at once) failed 5 of 5 runs before the fix (14 of 16 entries left) and passes now.
 - Explained rather than handled (see Risk): a renamed account's old login on a commit's tile, a login reassigned to someone else on the same computer account, two processes over the cap, a damaged entry removed just as another task rewrites it (one extra download), the cache folder resolved at startup with the same few `stat`s the working-copy folder already makes.
 
 ## Risk
