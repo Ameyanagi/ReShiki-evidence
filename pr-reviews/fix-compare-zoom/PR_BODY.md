@@ -4,18 +4,34 @@ Follow-up to #1235. Clicking a change in **What changed** zoomed both panes to t
 
 ## Approach
 
-- The zoom box is the change's objects (for a chemical change, its whole molecule) together with its painted atoms; the selection outline still marks just the changed atoms and bonds.
+- The zoom box is the change's objects (for a chemical change, its whole molecule) together with its painted atoms, padded by half a bond length so labels at its edge are not cut; the selection outline still marks just the changed atoms and bonds.
 - Both panes keep one size, so one scale, each centred on the change on its side.
 - The box is at least half the whole drawing in each direction, so a selected change is shown at most about twice as large as the full view.
 - Each spot now carries both boxes (`Spot { outline, context }`).
 
 ## Evidence
 
-_Pending._
+Real window captures from macOS arm64: a debug build of `main` (before, with #1235) and of this branch (after), against the local mock GitHub with a fresh data folder per run. History compares alice's **Draft** with the drawing now; the CHEM line is clicked.
+
+| Before (`main`) | After |
+|---|---|
+| ![](before/history-nitro-selected.png) | ![](after/history-nitro-selected.png) |
+| ![](before/history-wide-selected.png) | ![](after/history-wide-selected.png) |
+| ![](before/history-long-selected.png) | ![](after/history-long-selected.png) |
+
+Before: the panes zoom onto the NO₂ alone; "H2SO4, heat" and the ester's O are cut at the pane edge. After: the whole ester with its NO₂, the whole acetanilide with its Cl, and the whole peptide with the new OH, both panes at one scale; the outline still marks only the changed atoms.
+
+Dark: [before nitro](before/history-nitro-selected-dark.png) · [after nitro](after/history-nitro-selected-dark.png) · [before wide](before/history-wide-selected-dark.png) · [after wide](after/history-wide-selected-dark.png) · [before long](before/history-long-selected-dark.png) · [after long](after/history-long-selected-dark.png). Unselected views: [after nitro](after/history-nitro.png) · [after wide](after/history-wide.png) · [after long](after/history-long.png). Contact sheet: [contact-sheet.png](contact-sheet.png).
+
+**Wide scheme text in #1235's evidence.** The reagent labels over the arrows in #1235's wide-scheme captures overlapped the arrows and rings because the generated fixture placed each label's top-left corner at the middle of its arrow. That was the fixture, not the preview: redrawn with each label centred above an arrow long enough for it (above), the preview draws it cleanly at every zoom.
 
 ## Verification
 
 VERIFICATION_TABLE
+
+## Review
+
+An adversarial pass (gpt-6.2-sol, read-only) found one low-severity case, not changed: a hydrogen bond added between molecules has no objects on the side without it, so that pane centres on the bond's ends with the other pane's width, and a label far to the side could still be cut.
 
 ## Risk
 
