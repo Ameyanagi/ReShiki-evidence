@@ -105,6 +105,15 @@ New model tests in `compare/structure/tests.rs` and `reaction_mapping/search/tes
 - Mapper: only bonds of the same order and ring membership count; ties go to the lowest cost, not to id order; out of budget, the search is unfinished and its work stays bounded. All existing `propose` tests pass unchanged.
 - Measured (debug build): a 97-atom pair costs 4.9M work and is complete. Before Compare stopped ranking by the mapper's finer preferences, it cost 177M. A 49-atom pair costs 0.66M, an ester 8k.
 
+## Reviews
+
+Two adversarial review passes (gpt-6.2-sol, read-only), focused on false matches, determinism, budget bounds and reaction auto-mapping. Fixed:
+
+- **Pass 1:** no work after the budget is spent; a molecule over 128 atoms, or a pairing that splits ring systems, is a rival of unknown worth instead of disappearing; a ring-system link needs a kept ring bond (cyclopropyl ↔ diaziridinyl tails no longer match); the scheme guess is refitted after constitution matches; an unfinished constitution pairing is not used for local edits; costs are bounded.
+- **Pass 2:** exact-half id evidence only (a molecule cut down with its ids kept beside a new copy pairs as before); a constitution pairing must keep bonds to drawn H; the fit no longer drops atoms that only gained a group (hexafluorobenzene over benzene was a false redraw); an open molecule the mapper can't read turns structure matching off; positions looked up once per molecule.
+- **Not changed:** `O` ↔ `[2H]O` (see Risk). An independently drawn biphenyl that reuses six ids of hexylbenzene's ring still pairs by id, as it does on C2a.
+- Both passes confirmed `propose` keeps its isotope rule, map seeds, pre-charged work and tie pruning.
+
 ## Verification
 
 VERIFICATION_TABLE
