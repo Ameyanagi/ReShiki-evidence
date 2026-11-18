@@ -16,7 +16,7 @@ One core function, three thin surfaces, a shared layout, and the canvas sharing 
   - **Switch:** atom numbers ending in ` ppm`, which every `ppm` and `both` label does. Every other number (`3`, `12a`, `#3`, free text) keeps today's layout; no golden changed.
   - Candidates around the atom, outward first (away from the drawing around it) and nearest first, in 7.5° steps and half-text-height distance steps. The first box that touches no bond (with room for double and triple bond rails), atom label, other label or leader, and stays outside its molecule's convex hull, wins. Text uses its real advance width and height.
   - Labels that fit beside their atom go first, those with the least room first; the rest are placed after them.
-  - A **leader** (a thin line, half the bond width) joins a label to its atom when the label sits more than 1.5 bond lengths away or another atom is as near to it. A spot whose leader would cross text or another leader is not used; a leader may cross a bond when there is no other way.
+  - A **leader** (a thin line, half the bond width) joins a label to its atom when the label sits more than 1.5 bond lengths away or another atom is as near to it. A spot whose leader would cross text or another leader is not used; a leader may cross a bond when there is no other way, and then only at least 0.3 bond lengths from either end of the leader, so the crossing never reads as a mark on the bond.
   - Deterministic: the order and candidates depend only on the drawing.
   - **Size:** labels written without a style are 65% of the drawing's atom-label size (6.5 pt with 10 pt atom labels), and never below 4 pt. At the previous 7.5 pt (75%) a row of shift labels read as full-size text next to the atoms.
 - **Canvas** (`src/canvas/nmr.rs`): the **Show labels** overlay builds its text with `label_text` (3 decimals, as before). A test checks the overlay text equals the atom numbers scripts write. The overlay stays on screen only.
@@ -50,26 +50,118 @@ Labels are stored as atom numbers (static text), as the owner decided:
 
 ## Evidence
 
-EVIDENCE_PLACEHOLDER
+All images were made on macOS arm64 (Apple M4) from this branch with the default decimals (2 for ¹H, 1 for ¹³C); one shows `decimals=3`. Shifts are predicted from the bundled nmrshiftdb2-derived index; contains information from nmrshiftdb2.
+
+### The issue's example, end to end (Python)
+
+`m = reshiki.Molecule.from_smiles(MORPHINE).clean()`, `m.predict_nmr(nucleus)`, then `m.with_labels(shifts, format="both").save(..., style="JACS / ACS")`. [python-session.txt](python-session.txt) has the full session: every label, the decimals, the row types, the `.rsk` round trip, RDKit `atomNote`, CDXML and the errors. Rows without reference data are skipped: morphine ¹³C has data for 5 of 17 carbons, ¹H for 12 of 14 sites.
+
+<img src="morphine-1H.png" width="760">
+
+Morphine ¹H: twelve labels around a compact polycycle. Each is beside its atom or joined to it by a leader; none touches a bond, an atom label or another label, and no leader crosses text. Where an atom has no clear path out (#18, #4, #19, #20), the leader crosses a bond, always at least half a bond length from both of its ends, so the crossing never looks like a mark on the bond. Each leader ends at a different atom.
+
+<img src="morphine-13C.png" width="620">
+
+Morphine ¹³C: #18 is inside the ring through N, so its leader runs up past the N and crosses one bond halfway along.
+
+### 4-Anisaldehyde, every site predicted
+
+| ¹³C | ¹H |
+| --- | --- |
+| <img src="anisaldehyde-13C.png" width="420"> | <img src="anisaldehyde-1H.png" width="420"> |
+
+`decimals=3` instead of the ¹³C default of 1:
+
+<img src="anisaldehyde-13C-decimals3.png" width="420">
+
+SVGs and `.rsk` files: [morphine-1H.svg](morphine-1H.svg), [morphine-13C.svg](morphine-13C.svg), [anisaldehyde-13C.svg](anisaldehyde-13C.svg), [anisaldehyde-1H.svg](anisaldehyde-1H.svg), [anisaldehyde-13C-decimals3.svg](anisaldehyde-13C-decimals3.svg), [anisaldehyde-13C.rsk](anisaldehyde-13C.rsk).
+
+### Decimals, `.rsk` and RDKit
+
+```text
+# Decimals default per nucleus, or 0 to 4 on request (anisaldehyde atom 7, 13C):
+#   decimals=None: 190.8 ppm
+#   decimals=0: 191 ppm
+#   decimals=2: 190.85 ppm
+#   decimals=4: 190.8500 ppm
+#   decimals=5: ReShikiError[invalid_arguments]: decimals must be 0 to 4
+# .rsk round trip: the labels and the file version are kept
+#   version written: 30, unlabelled: 30
+#   labels equal after reopening: True
+# RDKit atomNote round trip:
+#   to_rdkit notes: [(0, '#1 · 3.79 ppm'), (3, '#4 · 6.79 ppm'), ...]
+#   from_rdkit numbers: {1: '#1 · 3.79 ppm', 4: '#4 · 6.79 ppm', ...}
+```
+
+The pytest suite also covers the `[H]CO` case with the explicit H kept in RDKit (notes land on C as atom 2 and O as atom 3; a note on the H is skipped with a warning) and invalid notes.
+
+### CDXML atom numbers (ChemDraw)
+
+```text
+<n id="3" ... AtomNumber="#1 · 55.3 ppm" ShowAtomNumber="yes">
+<n id="9" ... AtomNumber="#7 · 190.8 ppm" ShowAtomNumber="yes">
+```
+
+Plain atom numbers, no leaders: [anisaldehyde-13C.cdxml](anisaldehyde-13C.cdxml).
+
+### Command line
+
+```text
+$ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 13C --labels both -o cli-morphine-13C.png --force
+reshiki: warning: PNG: … at 1200 dpi
+[exit 0]
+```
+
+<img src="cli-morphine-13C.png" width="620">
+
+[cli.txt](cli.txt) also has ¹H `both` to PNG ([cli-morphine-1H.png](cli-morphine-1H.png)), `--decimals 3` to SVG ([cli-anisaldehyde-13C-decimals3.svg](cli-anisaldehyde-13C-decimals3.svg)), `numbers` to PDF, CDXML with `--receipt`, and the usage errors:
+
+```text
+$ reshiki --cli convert --smiles ... --to svg --decimals 2
+reshiki: --decimals needs --labels numbers, ppm or both                           [exit 2]
+$ reshiki --cli convert --smiles ... --to svg --nucleus 13C --labels ppm --decimals 5
+reshiki: --decimals must be a whole number from 0 to 4                            [exit 2]
+$ reshiki --cli convert --smiles ... --to svg --labels both
+reshiki: --labels needs --nucleus 1H or 13C                                       [exit 2]
+$ reshiki --cli convert --smiles ... --to mol --nucleus 13C --labels both
+reshiki: --labels needs an output that keeps atom numbers: svg, png, pdf, cdxml, cdx   [exit 2]
+```
+
+### MCP: `label_atoms` and undo
+
+[mcp.txt](mcp.txt): the `tools/list` entry (with `decimals`), then on ibuprofen `predict_nmr` (revision 0, 13 rows, 5 without data) → `label_atoms` with `decimals: 1` and `base_revision: "0"` → `{effect: "applied", revision: "1", recorded: true, labeled: [...8 atoms]}`; the same key replays that receipt; the same rows without the key are `stale`; one `apply` undo removes every label; an unknown atom is `unknown_object`; a label over 32 characters, `format: "Both"` and `decimals: 5` are `invalid_arguments`. The exported SVG: [mcp-ibuprofen-13C.svg](mcp-ibuprofen-13C.svg).
 
 ## Verification
 
 VERIFICATION_TABLE
 
-VERIFICATION_DETAILS
+On macOS arm64 (Apple M4), on this branch rebased onto `main` at 1178767 (after #1230, #1236, #1237, #1238):
+
+- `cargo fmt --all --check`, `cargo clippy --workspace --all-targets --all-features -D warnings`, and the wasm32 clippy for `reshiki-web`, `reshiki` and `reshiki-web-worker`.
+- `reshiki-model` 1,581 passed (the long-label tests: morphine ¹H and ¹³C, 4-anisaldehyde ¹³C, determinism and the switch, size, the dragged label, the 4 pt floor), `reshiki-io` 772, `reshiki-agent` 367 (contract 36), `reshiki` lib and bins 2,353, CLI 97, the `it` CLI and MCP suites 51, renderer and canvas 499. 0 failed.
+- Python: the wheel built with maturin, pytest 174 passed (3 skipped) with RDKit, `ruff check`, `ruff format --check` and `ty check`; the repository's Python tests 288 OK.
+- Module index, copy lint, changelog, docs tree, `bun run docs:check`, `bun run docs:build` (`agent-api.txt` 218,172 bytes, 18 tools), runtime dependency check of the built binary.
+- Failing first: the morphine ¹³C test failed before the near-end rule (`#18 · 126.8 ppm's leader crosses bond 3-4 near its end`), and the morphine ¹H test failed on the leader through `OH` (`#18 · 6.26 ppm's leader crosses atom 16's label`) before the retry.
+
+Linux (x64, arm64) and Windows x64 are covered by PR CI.
 
 ## Risk
 
 - Overwrites the numbers of the listed atoms, including numbers a user typed. Only listed atoms change, and it is one undo step in MCP.
 - Labels go stale after a chemistry edit (documented).
-- Crowded molecules: a label that cannot sit beside its atom gets a leader, which may cross a bond when there is no clear path (morphine ¹H #18 below). Labels never overlap text, bonds or other labels in the two test molecules, and leaders never cross text; the search is capped at 8 bond lengths, after which the least-bad spot is used.
+- Crowded molecules: a label that cannot sit beside its atom gets a leader, which may cross bonds when there is no clear path (morphine ¹H #18, #19, #20, #4). In the test molecules (morphine ¹H and ¹³C, 4-anisaldehyde ¹³C) labels never overlap text, bonds or other labels, leaders never cross text, atom labels or other leaders, and a leader crosses a bond only at least half a bond length from both of its ends. The search is capped at 8 bond lengths and at most eight retries of the leader pass, after which the least-bad spot is used. Busy drawings like morphine ¹H stay legible but have several long leaders.
 - Hit testing, Print Selection and molecules shown only in 3D use the same placement as before for picking; a long label's leader is drawn but not itself pickable, and a 3D-only neighbour can shift where a picking pass expects a label. Both are edge cases of the existing indicator code.
 - Numbers inside a collapsed abbreviation make CDXML/CDX export ask for the abbreviation to be expanded, as for any atom number there (documented).
-- MCP catalog: CATALOG_SIZE characters, under the 21,500 cap that #1231 set; not raised. `agent-api.txt`: LLMS_SIZE bytes, under the 220 KiB cap; not raised.
+- MCP catalog: 21,429 (was 20,250 before this PR) characters, under the 21,500 cap that #1231 set; not raised. `agent-api.txt`: 218,172 bytes, under the 220 KiB cap; not raised.
 
 ## Review
 
-REVIEW_SECTION
+- Codex (gpt-6.2-sol), adversarial, four passes on the first round (revision binding, atomicity, overwrite, surface consistency). Fixed: a no-op call recorded a revision and left its key unbound (now commits the snapshot unchanged, binding the key); `ppm` was optional in MCP rows; a figure round-trip test and a docs claim assumed embedded drawings; real writes reconcile again after a detour (separators and captions need it); the result contract's warnings; Windows UTF-8. Not changed: `budget` before `stale` under a concurrent edit (`apply`'s existing order); a negative atom in Python raises `OverflowError`, like other argument type errors.
+- Greptile (4/5): Python skipped reaction spacing; fixed with a failing-first test. Then 5/5.
+- Codex, adversarial, two passes on this round's layout, decimals and `atomNote`. Fixed: the switch was every number with a space, which moved free-text numbers (now only labels ending in ` ppm`; no other layout or golden changes); hulls were rebuilt per atom and placement order depended on far-away labels (now once per molecule, ordered around each molecule's own centre); beside-only searches ran to 8 bond lengths (now 1.5); rail clearance did not cover wide bond spacings or triple bonds (now one bond spacing plus half the bold width); shift labels could fall below the 4 pt minimum on small styles; Python applied a nucleus default to mixed rows; dragged labels ran the room count. Not changed: a dragged label's leader is not collision-checked (the user placed it); hit testing does not pick the leader itself and builds against the full drawing, as indicators always have; Print Selection can drop a leader that existed only because an unselected atom was near; after the 8-bond-length cap the least-bad spot is used; `numbers` labels written by scripts also get the smaller shift-label size (they are new numbers, not existing ones).
+- Own check of the regenerated images: the ¹³C `#18` leader crossed a bond right next to the label, which read as a mark on the bond, and once a short-end rule was added a ¹H leader went through an `OH` label because earlier leaders had taken the clear paths. Fixed with failing-first tests (a morphine ¹³C case; the shared check now rejects leaders through atom labels and bond crossings near a leader end): such a crossing costs more than any ordinary one, and the leader pass is retried with each label left without a clear spot placed first.
+- Codex, adversarial, on that change. Fixed: a mark was also charged as an ordinary crossing; the retry stopped when the first stuck label was already first, and could repeat orders (now each stuck label is moved first at most once). Not changed: clearance is measured along the leader, not from the bond's end atoms, by design (a leader passing near an atom is already kept off its box).
+- Owner review of the first images: `#19` crossed ring bonds, `#18` sat on the N-methyl bond, long labels sat far from their atoms and the text was full size. All addressed above; see the images.
 
 ## Changelog
 

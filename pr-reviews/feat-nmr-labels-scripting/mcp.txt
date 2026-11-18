@@ -106,7 +106,7 @@
 ## label_atoms arguments
 
 {
-  "document": "doc_2dbe8c98c95ed5ba9fdb6cbeb1010467",
+  "document": "doc_693eb92d70233abd5b18433d68eb6218",
   "rows": [
     {
       "atom": "1",
@@ -174,7 +174,7 @@
     "status": "valid"
   },
   "value": {
-    "document": "doc_2dbe8c98c95ed5ba9fdb6cbeb1010467",
+    "document": "doc_693eb92d70233abd5b18433d68eb6218",
     "effect": "applied",
     "labeled": [
       "1",
@@ -191,7 +191,7 @@
   },
   "versions": {
     "app": "0.15.0",
-    "document": 38,
+    "document": 39,
     "engine_protocol": 1,
     "operation_api": 2
   },
@@ -201,7 +201,7 @@
 ## the same call with the same idempotency_key replays the receipt
 
 {
-  "document": "doc_2dbe8c98c95ed5ba9fdb6cbeb1010467",
+  "document": "doc_693eb92d70233abd5b18433d68eb6218",
   "effect": "applied",
   "labeled": [
     "1",
@@ -233,7 +233,7 @@
   },
   "versions": {
     "app": "0.15.0",
-    "document": 38,
+    "document": 39,
     "engine_protocol": 1,
     "operation_api": 2
   }
@@ -243,7 +243,7 @@
 
 {
   "deleted": [],
-  "document": "doc_2dbe8c98c95ed5ba9fdb6cbeb1010467",
+  "document": "doc_693eb92d70233abd5b18433d68eb6218",
   "effect": "applied",
   "id_remap": [],
   "inserted": [],

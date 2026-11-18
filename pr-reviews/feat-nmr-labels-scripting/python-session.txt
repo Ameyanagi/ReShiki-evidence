@@ -1,4 +1,4 @@
-Installed 4 packages in 33ms
+Installed 4 packages in 29ms
 reshiki 0.15.0
 
 >>> m = reshiki.Molecule.from_smiles('CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5').clean()

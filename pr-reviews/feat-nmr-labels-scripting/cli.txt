@@ -1,9 +1,9 @@
 $ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 13C --labels both -o cli-morphine-13C.png --force
-reshiki: warning: PNG: 2902 × 1520 pixels at 1200 dpi
+reshiki: warning: PNG: 2894 × 1550 pixels at 1200 dpi
 [exit 0]
 
 $ reshiki --cli convert --smiles 'CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5' --nucleus 1H --labels both -o cli-morphine-1H.png --force
-reshiki: warning: PNG: 3250 × 1917 pixels at 1200 dpi
+reshiki: warning: PNG: 3357 × 1739 pixels at 1200 dpi
 [exit 0]
 
 $ reshiki --cli convert --smiles 'COc1ccc(C=O)cc1' --nucleus 13C --labels ppm --decimals 3 -o cli-anisaldehyde-13C-decimals3.svg --force
