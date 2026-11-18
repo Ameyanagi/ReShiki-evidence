@@ -12,11 +12,11 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#1 · 41.800 ppm",
+          "text": "#1 · 41.8 ppm",
           "offset": null,
           "style": {
             "family": "Arial",
-            "size_pt": 7.5,
+            "size_pt": 6.5,
             "bold": false,
             "italic": false,
             "underline": false,
@@ -180,11 +180,11 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#8 · 127.400 ppm",
+          "text": "#8 · 127.4 ppm",
           "offset": null,
           "style": {
             "family": "Arial",
-            "size_pt": 7.5,
+            "size_pt": 6.5,
             "bold": false,
             "italic": false,
             "underline": false,
@@ -238,11 +238,11 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#9 · 114.300 ppm",
+          "text": "#9 · 114.3 ppm",
           "offset": null,
           "style": {
             "family": "Arial",
-            "size_pt": 7.5,
+            "size_pt": 6.5,
             "bold": false,
             "italic": false,
             "underline": false,
@@ -296,11 +296,11 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#10 · 149.000 ppm",
+          "text": "#10 · 149.0 ppm",
           "offset": null,
           "style": {
             "family": "Arial",
-            "size_pt": 7.5,
+            "size_pt": 6.5,
             "bold": false,
             "italic": false,
             "underline": false,
@@ -488,11 +488,11 @@
         "hydrogens": null,
         "hydrogen_position": "auto",
         "number": {
-          "text": "#18 · 126.750 ppm",
+          "text": "#18 · 126.8 ppm",
           "offset": null,
           "style": {
             "family": "Arial",
-            "size_pt": 7.5,
+            "size_pt": 6.5,
             "bold": false,
             "italic": false,
             "underline": false,
