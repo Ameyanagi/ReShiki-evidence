@@ -14,7 +14,7 @@ One core function, three thin surfaces, and the canvas sharing the label text:
   - Every row is checked before anything changes. An ID that is not an atom (in any row), a ppm that is not finite, or a label over 32 characters is an error, and nothing is written.
   - Rows with no ppm are skipped. Listed atoms keep their number style (`number_style()` if they had none) and lose their offset. Other atoms are untouched.
 - **Canvas** (`src/canvas/nmr.rs`): the **Show labels** overlay now builds its text with `label_text`. A test checks that the overlay text equals the atom numbers scripts write, for all three formats. The overlay is otherwise unchanged: on screen only, never exported.
-- **Python**: `Drawing.with_labels(rows, *, format="numbers" | "ppm" | "both" = "both") -> Self`. `rows` is an `NmrPrediction`, or an iterable of `NmrShift`, `{"atom", "ppm"}` mappings or `(atom, ppm)` tuples. Errors are `ReShikiError` with code `invalid_arguments`.
+- **Python**: `Drawing.with_labels(rows, *, format="numbers" | "ppm" | "both" = "both") -> Self`. `rows` is an `NmrPrediction`, or an iterable of `NmrShift`, `{"atom", "ppm"}` mappings or `(atom, ppm)` tuples. A changed drawing is reconciled as the app reconciles an atom-number edit (reaction gaps and their signs make room for wider labels). Errors are `ReShikiError` with code `invalid_arguments`.
 - **MCP** (`crates/agent/src/ops/label_atoms.rs`): `label_atoms {document, rows: [{atom, ppm|null}], format, base_revision, idempotency_key}`. It is mutating, destructive (it replaces numbers), idempotent, closed-world, and one undo step.
   - `base_revision` is required and is the `revision` `predict_nmr` returned, so rows never land on atoms that an edit since then removed or renumbered (`stale`).
   - It reuses `apply`'s receipt replay and atomic commit: `apply`'s `prepare` (the two receipt lookups) and `commit` (the single effect, with revision, owner and key checked again under the store's lock) are now shared functions. `apply` behaves the same; its tests are unchanged.
@@ -122,7 +122,7 @@ Run on macOS arm64 (Apple M4):
 - `cargo test -p reshiki-io` (714, including the new `nmr::` label tests), `-p reshiki-model` (1520), `-p reshiki-agent` (327 unit, 36 contract including the new `ops-label-atoms` corpus, 4 headless).
 - `cargo test --no-default-features -p reshiki --lib --bins` (505 + 1823) and the renderer suite (`--bin reshiki -- --include-ignored --test-threads=1 --skip manual_`, filtered to nmr, canvas and label: 498). These ran before the last agent-only fixes; `cli::` (97) and the agent tests ran again on the head.
 - The `it` CLI/MCP modules `cli::`, `mcp_stdio::`, `mcp_tools::`, `mcp_shutdown::`, `headless_parity::` (51).
-- The Python wheel built as CI builds it (`maturin build --locked`), then `pytest crates/python/tests` with rdkit (169 passed, 3 skipped), ruff and ty; `python -m unittest discover -s tests` (288), ruff and ty for scripts.
+- The Python wheel built as CI builds it (`maturin build --locked`), then `pytest crates/python/tests` with rdkit (170 passed, 3 skipped), ruff and ty; `python -m unittest discover -s tests` (288), ruff and ty for scripts.
 - Goldens regenerated from the built binary and verified: `ops-catalog.json`, `cli-tools.json`, `cli-help.json`, `cli-help/convert.txt`, the Agent Skill folder, `docs/agent-reference.md`, and the four MCP transcripts (`label_atoms` success and stale in the modern and legacy `tools-*`).
 - `module_index.py --check`, `copy_lint.py`, `assemble_changelog.py --check`, `check_docs_tree.mjs`, `bun run docs:check`, `bun run docs:build` (llms check: 217,225 bytes, 18 tools), `bun fmt --check`, and `check_runtime_dependencies.verify_agent_api` on the built binary (the packaged client's ordered tool list).
 - Failing first: with the no-op guard removed, `a_call_that_writes_nothing_changes_nothing_and_binds_its_key` fails (`recorded: true`).
@@ -145,6 +145,8 @@ Run on macOS arm64 (Apple M4):
 - Second pass. Fixed: the key of a no-op call was left unbound (see above); the Python SVG test now reads UTF-8 (Windows CI). Documented, not changed: numbers inside a collapsed abbreviation make CDXML/CDX export ask for expansion, as for any atom number there. Not changed: a negative atom in Python raises `OverflowError` from the binding, as argument type errors do across the package; under a concurrent edit `budget` can be reported before `stale`, which is `apply`'s existing order.
 - Third pass. Skipping reconciliation for real writes (tried after the second pass) also skipped the reflows an atom-number change needs (reaction separators, caption positions). Real writes reconcile again, as the app's atom-number edits do; only no-ops skip it.
 - Final pass on that change: no stale-write, atomicity, key-binding or reconciliation-parity defect. Fixed: the result contract said `warnings` is empty; like `apply`, a label refresh notice becomes a warning. Not changed: `budget` before `stale` under a concurrent edit (`apply`'s existing order).
+
+- Greptile (4/5) on c1f8f2afa: Python `with_labels` skipped the reaction spacing that MCP's reconciliation runs. Fixed in c810dd02d with a failing-first test (a labelled first reactant beside a tracked `+`).
 
 ## Changelog
 
