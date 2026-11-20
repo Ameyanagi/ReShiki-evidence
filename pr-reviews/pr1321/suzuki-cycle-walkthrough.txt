@@ -1,0 +1,31 @@
+Suzuki–Miyaura coupling, circular insertion example
+
+Captured in the macOS ReShiki app in Publication theme, with a light
+canvas and 74% zoom throughout. The full window is 2560 by 1704.
+Source commit: a11be2cf9e64148924cc582affb4f015c0f388d3
+App SHA-256: 7b3740c802fd37138e6b707d4dca16d2a0d307c91da09ef4560d1d69eb5d074a
+
+1. Open suzuki-cycle-before.rsk. The aryl–palladium bromide complex
+   sits outside a cycle sketch with two placed intermediates.
+2. With Select, double-click the free complex's ring bond near
+   (1818,1100) and drag that point to the right-hand arc near
+   (1464,1238) in the captured window.
+3. Release. The app reports "Added to the cycle as Intermediate 2".
+   Deselect on empty canvas to see the finished placement.
+4. Undo once to return the complex to its starting position. Redo once
+   to put it back in the cycle. Save and compare the two .rsk files.
+
+The saved result keeps all 154 bonds, all 136 atoms, the existing
+intermediate order and the two named step roles. Only the 46 atoms
+of the inserted complex moved. The newly created step is unnamed.
+The in-flight arc highlight and tag are exercised in
+dragging_onto_an_arc_lights_it_and_tags_below_the_piece. The native
+screen captures show the starting drawing and the states after release.
+
+File checksums follow.
+e599a4771846f6a1c5c9035111bcd2343145c1e6f64f92c50fbdd6444790799d  pr-reviews/pr1321/suzuki-cycle-before.jpg
+4e8d84a4f85fde7ad68df31fa04f717b518c35694cfdb8d74d1ee286be1a3d5a  pr-reviews/pr1321/suzuki-cycle-added.jpg
+ca8f8232cedf6fff3d538f3b9f5fc6feda590a0a1e5af6ae392a51afe43ec52e  pr-reviews/pr1321/suzuki-cycle-after.jpg
+ea24350861242e5ce4cd8a26f30fe7c10020d3aa8cd9693d1237e6657e874493  pr-reviews/pr1321/suzuki-cycle-undo.jpg
+6daf284a0ca9e877aa840eea4e818a7205d7e488fafcba23239784b9c66333d8  pr-reviews/pr1321/suzuki-cycle-before.rsk
+2517b20e3a661a93f716a8907538701f2fdea6b70cd14f28b3250ae2accc15bd  pr-reviews/pr1321/suzuki-cycle-after.rsk
