@@ -1,0 +1,24 @@
+Native macOS Cycle Tidy walkthrough
+ReShiki commit 68794e69f5c9d43d0f5930ff5e41b878a8485db3
+App binary SHA-256 a17f717c774c51f08948fd6a51eb56cf428af49b52dfff6623540942fa03c764
+
+All captures show the same Suzuki–Miyaura drawing, light publication
+canvas and 49% zoom. The starting drawing is ../suzuki-before.rsk.
+
+01 Before. The three palladium intermediates have uneven spacing.
+Bromobenzene is close to the oxidative-addition arc.
+02 Preview. Select the cycle, then Tidy cycle in Properties. The canvas
+shows the proposed positions and all three reaction names inside the
+ring. Apply and Discard are both available.
+03 Apply and deselect. Oxidative addition sits wholly inside the upper
+right arc, with clear space between the name and the drawn arrow.
+Reductive elimination and Transmetalation also sit inside the ring.
+04 Escape closes the preview with Undo still disabled.
+05 One Undo after Apply restores the starting drawing. Redo restores
+the applied drawing.
+06 Running Tidy again reports that the cycle is already tidy.
+Save As writes the applied drawing to suzuki-tidied.rsk.
+
+The saved drawing has the same 168 atom IDs and the same 186 bond
+records. The cycle title, ordered intermediates, step names, reversible
+setting, reagents, products and gap all match the starting drawing.
