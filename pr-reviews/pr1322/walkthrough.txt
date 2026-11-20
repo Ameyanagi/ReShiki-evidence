@@ -1,0 +1,26 @@
+Tidy cycle in a Suzuki–Miyaura coupling drawing
+
+Captured from ReShiki on macOS, at 49% zoom in the light Publication
+theme. All views show the same 2560 by 1704 app window.
+Source commit b28bc496c24eebd5aa0dc7bca16477d1f7bb3e05.
+App SHA-256 8455fa5e5e74edbf5ef49f4371191c56cf9d7989bb6bcbdf04386154f2eaeaf1.
+
+1. Open suzuki-before.rsk. Click the right-hand cycle arc to select the
+   whole cycle. Choose Tidy cycle in Properties.
+2. Review the proposed layout. Escape discards it and the Undo button
+   stays disabled. Choose Tidy cycle again, then Apply.
+3. Click an empty part of the canvas to see the result clearly.
+   One Undo restores the starting arrangement. One Redo restores Tidy.
+4. Save as a separate file. The fixture and the saved copy contain all
+   168 atoms, the same 186 bonds, and the same cycle settings, steps and
+   roles. A second Tidy reports "The cycle is already tidy".
+
+File checksums follow.
+4a7c3880153ec3fab9ab4a2f4ef84ca08bf0d687d26333a190931ea9ffc3ad50  pr-reviews/pr1322/01-tidy-before.jpg
+9f661a7c3a43335c70ecaa797efcfd10eadb880dd5b7ef7bca01b7f876bd778a  pr-reviews/pr1322/02-tidy-preview.jpg
+97d469149f955e2e31340ba57a2414c7ec12d11a012b644f3d0b7bc0c3e18905  pr-reviews/pr1322/03-tidy-applied.jpg
+9c80a479f6ee293135b4f49f01f75672a2e5d03b44b1bbd49fcc9e212748d6c4  pr-reviews/pr1322/04-tidy-discarded.jpg
+9c5d5ba4b5f2aaf29333041bdcd70fa6c21a4421d6caca7ecbdd90407ce12fb2  pr-reviews/pr1322/05-tidy-undone.jpg
+a3efc848e6ecf5c726616d411e1a5d152a142339be65d974acbccd5bee437375  pr-reviews/pr1322/06-tidy-already.jpg
+e50c2c2e051a8856d392b23c59e04d2ca5ad4d8011c169329c13db0f06fbcb72  pr-reviews/pr1322/suzuki-before.rsk
+35be3b3c00bf0e765b30ffbe57445272ae15de5a0c6f123848acdae741238aa1  pr-reviews/pr1322/suzuki-tidied.rsk
