@@ -1,0 +1,16 @@
+Native Tidy preview and reversible-arrow check
+Commit 23eb84b9f62dbf44b53de5bce21f466c3f630c04
+App SHA-256 c99cfa0b9a4c3ba83a86c91527c231368c2b8c208b377e4731ecfefd65aaa84c
+Fixture tidy-before.rsk
+Fixture SHA-256 b1815be6eee0c6a044cfaea613b87cd41db19852127e1a16d21872857060c52a
+macOS, Publication theme, light canvas, 49% Fit zoom, 2560 by 1704
+
+Open the Suzuki cycle and select it. Run Tidy catalytic cycle from
+the command palette. The preview shows Apply and Discard. Escape
+restores the original with Undo disabled. Run Tidy again, then press
+Enter. The clean result after deselecting shows the intermediates and
+side parts, with separate connections to the visible reversible lane.
+
+A second Tidy presents no preview. One Command+Z returns the original
+drawing and leaves Undo disabled and Redo available. All four captures
+use the same drawing, framing, theme and zoom.
