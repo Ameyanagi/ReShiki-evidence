@@ -1,0 +1,22 @@
+One Backspace, one Undo, one Redo
+ReShiki for macOS, Publication theme, light canvas, 213% Fit zoom
+Identical window dimensions (2560 by 1704) and input on both builds
+
+Earlier PR implementation
+004bf1b9fa82a3e1ee8b77672e2f4d91855cf308
+Signed app SHA-256 f37a02e4bd548b8dd8557131d81941e89c339a97d2c415aed2b0bbd8412b332b
+
+Fixed integration
+5f990b7b749444bb60a966d73406371bfff5c636
+Signed app SHA-256 68c6d325626908c276f40242bfffce8f8ad35bc156573c4105a1de63aec6668e
+
+Fixture SHA-256 303caf3a6503b62ec971b9cab4ed160ef16c969f3621fd20765e735472afdcae
+
+Double-click a caption to edit. Press Command+Right, Backspace,
+Command+Z, then Command+Shift+Z. Keep focus in the text editor.
+Backspace removes a complete flag or joined scientist on both builds.
+One Undo previously restored a lone regional indicator or woman glyph.
+One Undo now restores the complete flag or scientist. One Redo removes it
+on both builds. Escape cancels the draft, leaving the file unmodified.
+
+Screenshots capture each editor immediately after one Undo.
