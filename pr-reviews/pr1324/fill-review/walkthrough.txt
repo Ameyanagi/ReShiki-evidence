@@ -1,0 +1,12 @@
+Native macOS SVG import walkthrough
+ReShiki commit 6c9b0cd21d7ac8964320ebe4bd9f1694f82f326d
+App binary SHA-256 74d34ed2bc02a7ef49c9b5d63f548c1eae1527e0e71f6200d450175cd14e1a2f
+
+The original reflux drawing uses a CSS filter on the flask's liquid
+and leaves that SVG fill contour implicitly closed. Import SVG as
+drawing from the Import panel retains the blue fill and the overlapping
+translucent swatches. The editor creates 11 editable paths in one group.
+The saved .rsk contains the liquid fill, and the drawn artwork reopens.
+
+The clean result and Undo show the same Publication canvas at 77%.
+Undo removes the complete group in one step. Redo puts it back.
