@@ -1,0 +1,17 @@
+Icons review fixes in ReShiki on macOS
+
+Source commit 74dec7c4f258b5a34d0b7e6ab7f8d72ed24d93ef.
+App SHA-256 774df20c814fe6f17d1d838847109bb6e0a3ae51b317e785598b8a52a3bde7e4.
+Screenshots show the full window at 250% zoom in the light Publication theme.
+
+1. Open Icons, search for "percentage 40", then place the matching icon.
+   The catalogue and placed icon show the same filled wedge and outer ring.
+2. Close Icons and open Transform in Properties. Both dimensions read
+   16.44 pt. The proportions toggle is checked and disabled for the icon.
+3. Enter width 24 pt and Apply. Both dimensions now read 24.00 pt.
+   One Undo restores 16.44 pt in both fields. Redo restores 24.00 pt.
+4. Save. The first path in percentage-40.rsk retains filled=true and
+   stroked=false. The separate outer ring retains its stroke.
+2b371d0b9cc7c69bc3cf4f3c8ad212a64dc303d2522160ea9c1c59041e141d00  pr-reviews/pr1310/review-fixes/02-percentage-fill.jpg
+1ef5c4d647b34ef8a09e6579bd520063767ba775cb32b631af97d5f12336f0d8  pr-reviews/pr1310/review-fixes/04-icon-resized.jpg
+6d68cd628ef30fbdb0e21a0a0e181217b783bd454339860a2105369924f0c92a  pr-reviews/pr1310/review-fixes/percentage-40.rsk

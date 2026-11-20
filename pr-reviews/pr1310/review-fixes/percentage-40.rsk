@@ -1,0 +1,197 @@
+{
+  "atom_labels": {
+    "carbons": "skeletal",
+    "hydrogens": true,
+    "stereo": false
+  },
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [],
+  "arrows": [],
+  "graphics": [
+    {
+      "icon": {
+        "name": "percentage-40",
+        "paths": [
+          {
+            "commands": [
+              {
+                "command": "move",
+                "points": {
+                  "x": 12.0,
+                  "y": 3.0
+                }
+              },
+              {
+                "command": "cubic",
+                "points": [
+                  {
+                    "x": 15.927751,
+                    "y": 3.0003116
+                  },
+                  {
+                    "x": 19.401667,
+                    "y": 5.547715
+                  },
+                  {
+                    "x": 20.58275,
+                    "y": 9.293682
+                  }
+                ]
+              },
+              {
+                "command": "cubic",
+                "points": [
+                  {
+                    "x": 21.763832,
+                    "y": 13.039649
+                  },
+                  {
+                    "x": 20.379265,
+                    "y": 17.118906
+                  },
+                  {
+                    "x": 17.162,
+                    "y": 19.372
+                  }
+                ]
+              },
+              {
+                "command": "line",
+                "points": {
+                  "x": 12.0,
+                  "y": 12.0
+                }
+              },
+              {
+                "command": "line",
+                "points": {
+                  "x": 12.0,
+                  "y": 3.0
+                }
+              }
+            ],
+            "filled": true,
+            "stroked": false
+          },
+          {
+            "commands": [
+              {
+                "command": "move",
+                "points": {
+                  "x": 3.0,
+                  "y": 12.0
+                }
+              },
+              {
+                "command": "cubic",
+                "points": [
+                  {
+                    "x": 3.0,
+                    "y": 16.970562
+                  },
+                  {
+                    "x": 7.029437,
+                    "y": 21.0
+                  },
+                  {
+                    "x": 12.0,
+                    "y": 21.0
+                  }
+                ]
+              },
+              {
+                "command": "cubic",
+                "points": [
+                  {
+                    "x": 16.970562,
+                    "y": 21.0
+                  },
+                  {
+                    "x": 21.0,
+                    "y": 16.970562
+                  },
+                  {
+                    "x": 21.0,
+                    "y": 12.0
+                  }
+                ]
+              },
+              {
+                "command": "cubic",
+                "points": [
+                  {
+                    "x": 21.0,
+                    "y": 7.029437
+                  },
+                  {
+                    "x": 16.970562,
+                    "y": 3.0
+                  },
+                  {
+                    "x": 12.0,
+                    "y": 3.0
+                  }
+                ]
+              },
+              {
+                "command": "cubic",
+                "points": [
+                  {
+                    "x": 7.029437,
+                    "y": 3.0
+                  },
+                  {
+                    "x": 3.0,
+                    "y": 7.029437
+                  },
+                  {
+                    "x": 3.0,
+                    "y": 12.0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "id": 1,
+      "kind": "icon",
+      "origin": {
+        "x": 0.5,
+        "y": -2.5
+      },
+      "axis_x": {
+        "x": 62.04546,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 62.04546
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": "paper",
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": 1
+    }
+  ],
+  "groups": [],
+  "view": {
+    "center": {
+      "x": 25.5,
+      "y": -2.5
+    },
+    "zoom": 2.5
+  }
+}
