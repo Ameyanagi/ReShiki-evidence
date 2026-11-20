@@ -1,0 +1,29 @@
+Bowed cycle insertion native comparison
+macOS, Publication theme, light canvas, 49% Fit zoom
+Full app window 2560 by 1704
+
+Declared base c09496013d7cbe73c436a91be4e8380e98cf039a
+App SHA-256 a7250042613ff041fc6ca805095f8429087d9fe261ef1ff081a2eb6e05234145
+Earlier draft a17dc9a164d14e94675ef13425c1b22b498e5e28
+App SHA-256 4d1bc7a63e3c2424f1fb9c4f3ec22a963dcae98c946e272da5348a45797f0eea
+Repaired head a11be2cf9e64148924cc582affb4f015c0f388d3
+App SHA-256 7b3740c802fd37138e6b707d4dca16d2a0d307c91da09ef4560d1d69eb5d074a
+Fixture SHA-256 1e0a8a243b20cbaa0ed03c7844d464e2d222760ae487dc523d330bcdc2f80e5b
+
+Open addstep-bowed.rsk. Double-click the free Pd compound's left
+ring bond near viewport (1510,861), then drag (1510,866) to
+(1282,1243). The declared base reports Reagent of step 1. The earlier
+draft reports Intermediate 2, with long side connectors across the
+new step. The repaired head reports Intermediate 2 and moves the two
+inherited side structures stranded beyond the shortened step.
+
+Click empty canvas before the clean comparison. One Undo restores
+the original two-intermediate fixture and frees the dragged complex.
+One Redo restores the insertion. The saved result contains the
+46-atom Intermediate 2, the same bond list and the same earlier step
+and side roles. Only the compound and the two stranded side
+structures changed coordinates. A separate direct drop also worked
+without Bow.
+
+The app screenshots show the drawing after release. The focused
+canvas test covers the transient arc highlight and placement tag.
