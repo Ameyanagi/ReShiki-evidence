@@ -1,0 +1,27 @@
+ReShiki Icons native walkthrough
+Commit 5e12732f04aa48de97ef22a7c1379164ab878c0d
+App binary SHA-256 a11daeadcf00788c4a4b52d4ecf0b56a5771caf59c2434c920e41d27153df7d6
+Benzaldehyde to benzyl alcohol CDXML fixture
+Fixture SHA-256 130b0e68644430269a4fe17290f10347d742815380bbc04841f53dd0fecc03e9
+macOS, Publication theme, 116% Fit zoom, 2560 × 1704 app window
+
+With All icons selected and search empty, placed Light and Heat.
+Recent appeared above Reaction conditions and the editor stayed open.
+Searched for flask, placed it, and cleared the query. Recent retained
+all three icons. Five additional search/clear runs included Japanese
+and a query with no matches.
+Ten mouse-wheel batches kept the catalog populated. Dragging the
+scrollbar to the middle, bottom, and back to the top changed the
+mounted rows while leaving search visible. Escape returned to Select.
+One Undo removed Flask and one Redo restored it.
+
+Saved .rsk, reopened and checked light and dark canvas. Wrote PNG,
+SVG, PDF, CDXML, and CDX through the app. The native document contains
+16 atoms, 16 bonds, one reaction arrow and three graphics. The CDXML
+contains 17 editable curves for the three icons and one arrow and was
+reopened in ReShiki. The real ChemDraw application was not used for
+this additional walkthrough.
+
+The 314,508-byte compressed icon pack occurs once in the native
+candidate. The exact incremental release/executable and wasm size
+differences still need a matched release build.
