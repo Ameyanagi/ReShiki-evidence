@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120mm" height="95mm" viewBox="0 0 480 380">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c5eaf5"/><stop offset="1" stop-color="#5a9db8"/></linearGradient>
+    <!-- This unused recursive symbol must not prevent the flask from importing. -->
+    <symbol id="unused"><use href="#unused"/></symbol>
+  </defs>
+  <path d="M154 120V195C115 211 97 244 105 277C113 314 143 332 170 332C204 332 232 307 236 277C241 241 222 212 186 195V120Z" fill="url(#glass)" stroke="#263238" stroke-width="2.4"/>
+  <path d="M154 130H186 M154 138H186 M154 146H186" fill="none" stroke="#263238" stroke-width="1.2"/>
+  <text x="110" y="92" font-family="sans-serif" font-size="18">Original SVG label</text>
+  <path d="M35 40H82V82H35Z" fill="#ff0000" fill-opacity=".5"/>
+  <path d="M58 58H106V100H58Z" fill="#0000ff" fill-opacity=".5"/>
+</svg>

@@ -1,0 +1,22 @@
+Editable SVG import native walkthrough
+Commit 09be6625d8f9a3bc45574ed6d7455db3ef40dfa6
+App SHA-256 ff29d3588294cb44a48686e042f348b2f76189dc19fc1e550164e4755c4ecb1f
+macOS, Publication theme, light canvas, 2560 by 1704 app window
+
+The primary source is original 120 mm by 95 mm line art. It has
+a flask, jacketed condenser, stand and two translucent test swatches.
+The command palette found Import SVG as drawing in File. Importing
+through it placed one selected group. The swatches showed purple at
+their overlap. The inspector identified the imported art as pen paths.
+
+The clean result, Undo and Redo screenshots use the same 77% Fit
+zoom. One Undo cleared the artwork and one Redo restored it. The
+saved native drawing reopened with its paths and swatch colors intact.
+
+The Import panel launched the secondary input. Its unused recursive
+definition did not prevent the visible flask from importing. The
+gradient became a solid midpoint color and the source text was omitted.
+Those approximation cases are covered in the focused IO tests.
+
+The before/after sequence uses one candidate. Earlier builds did not
+offer this separate editable SVG import command.
