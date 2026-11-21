@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CDXML SYSTEM "http://www.cambridgesoft.com/xml/cdxml.dtd">
+<CDXML BondLength="14.4" CaptionFont="3" CaptionSize="11">
+  <colortable>
+    <color r="1" g="1" b="1" />
+    <color r="0" g="0" b="0" />
+    <color r="1" g="0.12" b="0.12" />
+    <color r="0.08" g="0.3" b="0.98" />
+    <color r="0.0" g="0.55" b="0.2" />
+    <color r="0.75" g="0.1" b="0.75" />
+  </colortable>
+  <fonttable>
+    <font id="3" charset="iso-8859-1" name="Arial" />
+  </fonttable>
+  <page id="1" BoundingBox="0 0 300 258" WidthPages="1" HeightPages="1">
+    <table id="2" BoundingBox="44 86 257 184" color="3" Z="1">
+      <page id="10" BoundingBox="44 86 88 120" BoundsInParent="44 86 88 120" HeightPages="1" WidthPages="1">
+        <t id="11" p="22 21" Justification="Center">
+          <s font="3" size="11" color="3" face="1">Entry</s>
+        </t>
+        <border id="12" LineWidth="0.8" color="3" Side="left" />
+        <border id="13" LineWidth="1.2" color="3" Side="top" />
+        <border id="14" LineWidth="0.8" color="3" Side="bottom" />
+        <border id="15" LineWidth="5" color="4" Side="right" />
+      </page>
+      <page id="16" BoundingBox="88 86 172 120" BoundsInParent="88 86 172 120" HeightPages="1" WidthPages="1">
+        <t id="17" p="42 21" Justification="Center">
+          <s font="3" size="11" color="3" face="1">Structure</s>
+        </t>
+        <border id="18" LineWidth="1" color="5" Side="left" />
+        <border id="19" LineWidth="1.2" color="3" Side="top" />
+        <border id="20" LineWidth="0.8" color="3" Side="bottom" />
+        <border id="21" LineWidth="0.8" color="3" Side="right" />
+      </page>
+      <page id="22" BoundingBox="172 86 257 120" BoundsInParent="172 86 257 120" HeightPages="1" WidthPages="1">
+        <t id="23" p="42.5 21" Justification="Center">
+          <s font="3" size="11" color="3" face="1">Yield</s>
+        </t>
+        <border id="24" LineWidth="0.8" color="3" Side="left" />
+        <border id="25" LineWidth="1.2" color="3" Side="top" />
+        <border id="26" LineWidth="5" color="6" Side="bottom" />
+        <border id="27" LineWidth="0.8" color="3" Side="right" />
+      </page>
+      <page id="28" BoundingBox="44 120 88 184" BoundsInParent="44 120 88 184" HeightPages="1" WidthPages="1">
+        <t id="29" p="22 36" Justification="Center">
+          <s font="3" size="11" color="3" face="0">1</s>
+        </t>
+        <border id="30" LineWidth="0.8" color="3" Side="left" />
+        <border id="31" LineWidth="0.8" color="3" Side="top" />
+        <border id="32" LineWidth="1.2" color="3" Side="bottom" />
+        <border id="33" LineWidth="1" color="5" Side="right" />
+        <t id="58" p="28 49" Justification="Left">
+          <s font="3" size="11" color="6">Crosses into the next cell</s>
+        </t>
+        <t id="59" p="10 72" Justification="Left">
+          <s font="3" size="11" color="7">Below the table</s>
+        </t>
+      </page>
+      <page id="34" BoundingBox="88 120 172 184" BoundsInParent="88 120 172 184" HeightPages="1" WidthPages="1">
+        <fragment id="35">
+          <n id="36" p="80 17.6" />
+          <n id="37" p="92.47 24.8" />
+          <n id="38" p="92.47 39.2" />
+          <n id="39" p="80 46.4" />
+          <n id="40" p="67.53 39.2" />
+          <n id="41" p="67.53 24.8" />
+          <b id="42" B="36" E="37" Order="2" />
+          <b id="43" B="37" E="38" Order="1" />
+          <b id="44" B="38" E="39" Order="2" />
+          <b id="45" B="39" E="40" Order="1" />
+          <b id="46" B="40" E="41" Order="2" />
+          <b id="47" B="41" E="36" Order="1" />
+        </fragment>
+        <border id="48" LineWidth="5" color="4" Side="left" />
+        <border id="49" LineWidth="0.8" color="3" Side="top" />
+        <border id="50" LineWidth="1.2" color="3" Side="bottom" />
+        <border id="51" LineWidth="0.8" color="3" Side="right" />
+      </page>
+      <page id="52" BoundingBox="172 120 257 184" BoundsInParent="172 120 257 184" HeightPages="1" WidthPages="1">
+        <t id="53" p="42.5 36" Justification="Center">
+          <s font="3" size="11" color="3" face="0">Example</s>
+        </t>
+        <border id="54" LineWidth="0.8" color="3" Side="left" />
+        <border id="55" LineWidth="1" color="7" Side="top" />
+        <border id="56" LineWidth="1.2" color="3" Side="bottom" />
+        <border id="57" LineWidth="0.8" color="3" Side="right" />
+        <t id="60" p="60 52" Justification="Left">
+          <s font="3" size="11" color="6">Past the table edge</s>
+        </t>
+      </page>
+    </table>
+  </page>
+</CDXML>
