@@ -1,0 +1,15 @@
+{
+  "ordinary_app_quit": true,
+  "same_pid_exited": true,
+  "native_query_returned_before_exit": false,
+  "trace_events": [
+    "loaded",
+    "entered",
+    "fixture-query-entered"
+  ],
+  "source": "ce3dd667e3e17b47d5828737b5d1ca3660fabafb",
+  "host": "macOS arm64",
+  "original_binary_sha256": "11839255d865183e602dab7905573cd201c098271cfa696abc077d1af098e939",
+  "fixture_scope": "disposable private file keychain",
+  "default_login_search_list_unchanged": true
+}
