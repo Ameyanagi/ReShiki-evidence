@@ -1,0 +1,96 @@
+{
+  "atom_labels": {
+    "carbons": "skeletal",
+    "hydrogens": true,
+    "stereo": false
+  },
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [],
+  "arrows": [],
+  "graphics": [
+    {
+      "piece": {
+        "definition": "user/piece-18e9ee26ebacbab8-147a6-0@1#8d0a1115fdac3387"
+      },
+      "id": 2,
+      "kind": "piece",
+      "origin": {
+        "x": 0.0,
+        "y": 67.5
+      },
+      "axis_x": {
+        "x": 3.0104165,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 3.0104165
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": null,
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": -1
+    }
+  ],
+  "groups": [],
+  "piece_definitions": [
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "user/piece-18e9ee26ebacbab8-147a6-0",
+      "revision": 1,
+      "family": "user-piece",
+      "names": {
+        "en": "Glass socket adapter"
+      },
+      "category": "other",
+      "credits": {},
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "shape-1",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-9.56678187976536 -22.42214562468407L9.56678187976536 -22.42214562468407L6.477508736019843 6.477508736019845L24.913495138537858 22.42214562468407L-24.913495138537858 22.42214562468407L-6.477508736019843 6.477508736019845Z"
+        }
+      ],
+      "joints": [
+        {
+          "kind": "taper",
+          "id": "joint-1",
+          "size": "15/25",
+          "gender": "F",
+          "at": [
+            -0.03321812023463977,
+            -22.588235592274327
+          ],
+          "dir": [
+            0.0,
+            -1.0
+          ],
+          "draw": "standard"
+        }
+      ]
+    }
+  ],
+  "view": {
+    "center": {
+      "x": 25.0,
+      "y": -31.249996
+    },
+    "zoom": 1.2800001
+  }
+}
