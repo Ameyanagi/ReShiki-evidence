@@ -1,0 +1,282 @@
+{
+  "version": 40,
+  "drawing_style": {
+    "name": "JACS / ACS",
+    "font_family": "Arial",
+    "bond_length_world": 42.0,
+    "bond_length_pt": 14.4,
+    "font_size_pt": 10.0,
+    "line_width_pt": 0.6,
+    "bold_width_pt": 2.0,
+    "margin_width_pt": 1.6,
+    "hash_spacing_pt": 2.5,
+    "bond_spacing_ratio": 0.18,
+    "png_dpi": 1200
+  },
+  "atoms": [],
+  "bonds": [],
+  "annotations": [
+    {
+      "id": 11,
+      "position": {
+        "x": 92.5,
+        "y": 196.5
+      },
+      "text": "hν · Blue LEDs\n450 nm · 2 h",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 11,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "#263238",
+          "script": "normal",
+          "formula": false
+        },
+        "spans": [],
+        "alignment": "center",
+        "line_spacing": 1.2,
+        "width_pt": 87.42857142857143
+      },
+      "angle": 0
+    },
+    {
+      "id": 12,
+      "position": {
+        "x": 464.5,
+        "y": 215.75
+      },
+      "text": "N₂ atmosphere",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 11,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "#263238",
+          "script": "normal",
+          "formula": false
+        },
+        "spans": [],
+        "alignment": "center",
+        "line_spacing": 1.2,
+        "width_pt": 75.77142857142857
+      },
+      "angle": 0
+    },
+    {
+      "id": 13,
+      "position": {
+        "x": 794.5,
+        "y": 201.75
+      },
+      "text": "💡",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 19,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "#263238",
+          "script": "normal",
+          "formula": false
+        },
+        "spans": [],
+        "alignment": "center",
+        "line_spacing": 1.2,
+        "width_pt": 31.2
+      },
+      "angle": 0
+    },
+    {
+      "id": 101,
+      "position": {
+        "x": 70.0,
+        "y": 55
+      },
+      "text": "Irradiation",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 11.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "script": "normal",
+          "formula": false
+        },
+        "alignment": "center",
+        "width_pt": 102.85714285714286
+      }
+    },
+    {
+      "id": 102,
+      "position": {
+        "x": 445.0,
+        "y": 55
+      },
+      "text": "Atmosphere",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 11.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "script": "normal",
+          "formula": false
+        },
+        "alignment": "center",
+        "width_pt": 89.14285714285714
+      }
+    },
+    {
+      "id": 103,
+      "position": {
+        "x": 770.0,
+        "y": 55
+      },
+      "text": "Light",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 11.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "script": "normal",
+          "formula": false
+        },
+        "alignment": "center",
+        "width_pt": 48.0
+      }
+    },
+    {
+      "id": 100,
+      "position": {
+        "x": 70,
+        "y": -50
+      },
+      "text": "Photochemistry labels",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 16,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "script": "normal",
+          "formula": false
+        }
+      }
+    }
+  ],
+  "arrows": [],
+  "graphics": [
+    {
+      "id": 1,
+      "kind": "rounded_rectangle",
+      "origin": {
+        "x": 70.0,
+        "y": 170.0
+      },
+      "axis_x": {
+        "x": 300,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 130
+      },
+      "style": {
+        "stroke": "#385b72",
+        "fill": "#e9f1f8",
+        "width_pt": 0.6,
+        "pattern": "solid",
+        "corner_pt": 8
+      },
+      "layer": -1,
+      "text": 11
+    },
+    {
+      "id": 2,
+      "kind": "rounded_rectangle",
+      "origin": {
+        "x": 445.0,
+        "y": 190.0
+      },
+      "axis_x": {
+        "x": 260,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 90
+      },
+      "style": {
+        "stroke": "#527661",
+        "fill": "#e7f2ec",
+        "width_pt": 0.6,
+        "pattern": "solid",
+        "corner_pt": 8
+      },
+      "layer": -1,
+      "text": 12
+    },
+    {
+      "id": 3,
+      "kind": "ellipse",
+      "origin": {
+        "x": 770.0,
+        "y": 185.0
+      },
+      "axis_x": {
+        "x": 140,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 100
+      },
+      "style": {
+        "stroke": "#946b20",
+        "fill": "#fff3cc",
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "layer": -1,
+      "text": 13
+    }
+  ],
+  "groups": [],
+  "view": {
+    "center": {
+      "x": 465,
+      "y": 170
+    },
+    "zoom": 0.85
+  }
+}
