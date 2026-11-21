@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CDXML SYSTEM "http://www.cambridgesoft.com/xml/cdxml.dtd">
+<CDXML BondLength="14.4" CaptionFont="3" CaptionSize="11" CaptionJustification="Center">
+  <colortable><color r="1" g="1" b="1"/><color r="0" g="0" b="0"/></colortable>
+  <fonttable><font id="3" charset="iso-8859-1" name="Arial"/></fonttable>
+  <page id="1" BoundingBox="0 0 540 480" HeightPages="1" WidthPages="1">
+    <t id="2" p="270 126" Justification="Center"><s font="3" size="15" color="3" face="1">TLC reaction check</s></t>
+    <tlcplate id="3" TopLeft="150 151" TopRight="390 151" BottomRight="390 351" BottomLeft="150 351" BoundingBox="150 151 390 351" ShowOrigin="yes" ShowSolventFront="yes" ShowBorders="yes" OriginFraction="0.1" SolventFrontFraction="0.1" color="3">
+      <tlclane id="4">
+        <tlcspot id="5" Rf="0.67" Width="458752" Height="458752" Tail="0" CurveType="128" color="3"/>
+      </tlclane>
+      <tlclane id="6">
+        <tlcspot id="7" Rf="0.67" Width="458752" Height="458752" Tail="0" CurveType="128" color="3"/>
+        <tlcspot id="8" Rf="0.32" Width="458752" Height="458752" Tail="0" CurveType="128" color="3"/>
+      </tlclane>
+      <tlclane id="9">
+        <tlcspot id="10" Rf="0.32" Width="458752" Height="458752" Tail="0" CurveType="128" color="3" ShowRf="yes">
+          <objecttag id="11" Name="rf" TagType="Unknown"><t id="12" p="343 275" Justification="Left"><s font="3" size="9" color="3">R</s><s font="3" size="9" color="3" face="32">f</s><s font="3" size="9" color="3"> = 0.32</s></t></objecttag>
+        </tlcspot>
+      </tlclane>
+    </tlcplate>
+    <t id="13" p="193.33 374" Justification="Center"><s font="3" size="11" color="3">Starting material</s></t>
+    <t id="14" p="270 374" Justification="Center"><s font="3" size="11" color="3">Co-spot</s></t>
+    <t id="15" p="346.67 374" Justification="Center"><s font="3" size="11" color="3">Reaction mixture</s></t>
+  </page>
+</CDXML>
