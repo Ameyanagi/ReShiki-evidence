@@ -1,0 +1,229 @@
+{
+  "atom_labels": {
+    "carbons": "skeletal",
+    "hydrogens": true,
+    "stereo": false
+  },
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [
+    {
+      "id": 2,
+      "position": {
+        "x": -253.41667,
+        "y": -178.4
+      },
+      "text": "Entry",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "script": "normal",
+          "formula": false
+        },
+        "spans": [],
+        "alignment": "left",
+        "line_spacing": 1.2,
+        "width_pt": null
+      }
+    },
+    {
+      "id": 3,
+      "position": {
+        "x": -81.74999,
+        "y": -178.4
+      },
+      "text": "Solvent",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "script": "normal",
+          "formula": false
+        },
+        "spans": [],
+        "alignment": "left",
+        "line_spacing": 1.2,
+        "width_pt": null
+      }
+    }
+  ],
+  "arrows": [],
+  "graphics": [
+    {
+      "id": 4,
+      "kind": "rectangle",
+      "layer": -2,
+      "origin": {
+        "x": -274.0,
+        "y": -200.0
+      },
+      "axis_x": {
+        "x": 181.0,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 157.0
+      },
+      "style": {
+        "stroke": [
+          36,
+          49,
+          63
+        ],
+        "fill": [
+          36,
+          49,
+          63
+        ],
+        "width_pt": 0.1,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false
+    },
+    {
+      "id": 1,
+      "kind": "table",
+      "origin": {
+        "x": -262.0,
+        "y": -190.0
+      },
+      "axis_x": {
+        "x": 515.0,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 290.0
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": null,
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": -1,
+      "table": {
+        "cells": [
+          {
+            "id": 1,
+            "lo": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 0.33333334,
+              "y": 0.5
+            },
+            "members": [
+              2
+            ],
+            "borders": []
+          },
+          {
+            "id": 2,
+            "lo": {
+              "x": 0.33333334,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 0.6666667,
+              "y": 0.5
+            },
+            "members": [
+              3
+            ],
+            "borders": []
+          },
+          {
+            "id": 3,
+            "lo": {
+              "x": 0.6666667,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.5
+            },
+            "members": [],
+            "borders": []
+          },
+          {
+            "id": 4,
+            "lo": {
+              "x": 0.0,
+              "y": 0.5
+            },
+            "hi": {
+              "x": 0.33333334,
+              "y": 1.0
+            },
+            "members": [],
+            "borders": []
+          },
+          {
+            "id": 5,
+            "lo": {
+              "x": 0.33333334,
+              "y": 0.5
+            },
+            "hi": {
+              "x": 0.6666667,
+              "y": 1.0
+            },
+            "members": [],
+            "borders": []
+          },
+          {
+            "id": 6,
+            "lo": {
+              "x": 0.6666667,
+              "y": 0.5
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "members": [],
+            "borders": []
+          }
+        ]
+      }
+    }
+  ],
+  "groups": [],
+  "view": {
+    "center": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "zoom": 1.0
+  }
+}
