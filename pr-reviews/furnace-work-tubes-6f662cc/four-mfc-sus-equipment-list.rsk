@@ -1,0 +1,6531 @@
+{
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "arrows": [],
+  "annotations": [
+    {
+      "id": 2,
+      "position": {
+        "x": 0.0,
+        "y": -195.41666666666666
+      },
+      "text": "Four-MFC reactor with SUS",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 26,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 687
+      }
+    },
+    {
+      "id": 3,
+      "position": {
+        "x": 0.0,
+        "y": -99.16666666666666
+      },
+      "text": "Equipment list · 84 pieces · 83 connections",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 14,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 687
+      }
+    },
+    {
+      "id": 4,
+      "position": {
+        "x": 0.0,
+        "y": 1429.8958333333333
+      },
+      "text": "Thermocouple and controller input appear as schematic graphics.",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 687
+      }
+    },
+    {
+      "id": 5,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 8.3125
+      },
+      "text": "Qty",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 6,
+      "position": {
+        "x": 183.75,
+        "y": 8.3125
+      },
+      "text": "Equipment",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 7,
+      "position": {
+        "x": 1327.0833333333333,
+        "y": 8.3125
+      },
+      "text": "Tube OD × ID",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 118
+      }
+    },
+    {
+      "id": 8,
+      "position": {
+        "x": 1712.0833333333333,
+        "y": 8.3125
+      },
+      "text": "Cut length",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 93
+      }
+    },
+    {
+      "id": 9,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 68.83333333333333
+      },
+      "text": "4",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 10,
+      "position": {
+        "x": 183.75,
+        "y": 68.83333333333333
+      },
+      "text": "Mass flow controller · 1/4 in compression",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 11,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 129.35416666666666
+      },
+      "text": "4",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 12,
+      "position": {
+        "x": 183.75,
+        "y": 129.35416666666666
+      },
+      "text": "Gas ball valve, 1/4 in compression",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 13,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 189.87499999999997
+      },
+      "text": "5",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 14,
+      "position": {
+        "x": 183.75,
+        "y": 189.87499999999997
+      },
+      "text": "Gas check valve, 1/4 in compression",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 15,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 250.39583333333331
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 16,
+      "position": {
+        "x": 183.75,
+        "y": 250.39583333333331
+      },
+      "text": "Supply pressure-reducing regulator, 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 17,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 310.91666666666663
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 18,
+      "position": {
+        "x": 183.75,
+        "y": 310.91666666666663
+      },
+      "text": "Pressure gauge, 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 19,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 371.43749999999994
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 20,
+      "position": {
+        "x": 183.75,
+        "y": 371.43749999999994
+      },
+      "text": "Horizontal split tube furnace",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 21,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 431.9583333333333
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 22,
+      "position": {
+        "x": 183.75,
+        "y": 431.9583333333333
+      },
+      "text": "Furnace work tube · 1/4 in SUS",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 23,
+      "position": {
+        "x": 1327.0833333333333,
+        "y": 431.9583333333333
+      },
+      "text": "6.35 × 4.57 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 118
+      }
+    },
+    {
+      "id": 24,
+      "position": {
+        "x": 1712.0833333333333,
+        "y": 431.9583333333333
+      },
+      "text": "668 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 93
+      }
+    },
+    {
+      "id": 25,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 492.47916666666663
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 26,
+      "position": {
+        "x": 183.75,
+        "y": 492.47916666666663
+      },
+      "text": "Spring safety relief valve, 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 27,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 553.0
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 28,
+      "position": {
+        "x": 183.75,
+        "y": 553.0
+      },
+      "text": "Pressure transducer, 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 29,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 613.5208333333333
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 30,
+      "position": {
+        "x": 183.75,
+        "y": 613.5208333333333
+      },
+      "text": "Back-pressure regulator, 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 31,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 674.0416666666666
+      },
+      "text": "5",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 32,
+      "position": {
+        "x": 183.75,
+        "y": 674.0416666666666
+      },
+      "text": "Compression reducing union, 3/8 in × 1/4 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 33,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 734.5625
+      },
+      "text": "3",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 34,
+      "position": {
+        "x": 183.75,
+        "y": 734.5625
+      },
+      "text": "Compression tube union, 1/4 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 35,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 795.0833333333334
+      },
+      "text": "3",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 36,
+      "position": {
+        "x": 183.75,
+        "y": 795.0833333333334
+      },
+      "text": "Compression tube union, 3/8 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 37,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 855.6041666666667
+      },
+      "text": "2",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 38,
+      "position": {
+        "x": 183.75,
+        "y": 855.6041666666667
+      },
+      "text": "Compression union elbow, 3/8 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 39,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 916.125
+      },
+      "text": "1",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 40,
+      "position": {
+        "x": 183.75,
+        "y": 916.125
+      },
+      "text": "Compression union tee, 1/4 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 41,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 976.6458333333334
+      },
+      "text": "3",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 42,
+      "position": {
+        "x": 183.75,
+        "y": 976.6458333333334
+      },
+      "text": "Compression union tee, 3/8 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 43,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 1037.1666666666667
+      },
+      "text": "6",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 44,
+      "position": {
+        "x": 183.75,
+        "y": 1037.1666666666667
+      },
+      "text": "Compression-to-NPT adapter, 1/4 in to 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 45,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 1097.6875
+      },
+      "text": "2",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 46,
+      "position": {
+        "x": 183.75,
+        "y": 1097.6875
+      },
+      "text": "Gauge tee · 1/4 in compression × 1/4 in NPT",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 47,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 1158.2083333333333
+      },
+      "text": "22",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 48,
+      "position": {
+        "x": 183.75,
+        "y": 1158.2083333333333
+      },
+      "text": "Stainless-steel tubing · 1/4 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 49,
+      "position": {
+        "x": 1327.0833333333333,
+        "y": 1158.2083333333333
+      },
+      "text": "6.35 × 4.57 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 118
+      }
+    },
+    {
+      "id": 50,
+      "position": {
+        "x": 1712.0833333333333,
+        "y": 1158.2083333333333
+      },
+      "text": "60 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 93
+      }
+    },
+    {
+      "id": 51,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 1218.7291666666667
+      },
+      "text": "5",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 52,
+      "position": {
+        "x": 183.75,
+        "y": 1218.7291666666667
+      },
+      "text": "Stainless-steel tubing · 1/4 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 53,
+      "position": {
+        "x": 1327.0833333333333,
+        "y": 1218.7291666666667
+      },
+      "text": "6.35 × 4.57 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 118
+      }
+    },
+    {
+      "id": 54,
+      "position": {
+        "x": 1712.0833333333333,
+        "y": 1218.7291666666667
+      },
+      "text": "120 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 93
+      }
+    },
+    {
+      "id": 55,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 1279.25
+      },
+      "text": "8",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 56,
+      "position": {
+        "x": 183.75,
+        "y": 1279.25
+      },
+      "text": "Stainless-steel tubing · 3/8 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 57,
+      "position": {
+        "x": 1327.0833333333333,
+        "y": 1279.25
+      },
+      "text": "9.525 × 7.745 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 118
+      }
+    },
+    {
+      "id": 58,
+      "position": {
+        "x": 1712.0833333333333,
+        "y": 1279.25
+      },
+      "text": "60 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 93
+      }
+    },
+    {
+      "id": 59,
+      "position": {
+        "x": 20.416666666666664,
+        "y": 1339.7708333333333
+      },
+      "text": "4",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 42
+      }
+    },
+    {
+      "id": 60,
+      "position": {
+        "x": 183.75,
+        "y": 1339.7708333333333
+      },
+      "text": "Stainless-steel tubing · 3/8 in",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 378
+      }
+    },
+    {
+      "id": 61,
+      "position": {
+        "x": 1327.0833333333333,
+        "y": 1339.7708333333333
+      },
+      "text": "9.525 × 7.745 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 118
+      }
+    },
+    {
+      "id": 62,
+      "position": {
+        "x": 1712.0833333333333,
+        "y": 1339.7708333333333
+      },
+      "text": "120 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "left",
+        "line_spacing": 1.14,
+        "width_pt": 93
+      }
+    }
+  ],
+  "graphics": [
+    {
+      "id": 1,
+      "kind": "table",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "axis_x": {
+        "x": 2003.75,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 1391.9791666666665
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": null,
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": -1,
+      "table": {
+        "cells": [
+          {
+            "id": 1,
+            "lo": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.043478260869565216
+            },
+            "members": [
+              5
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.043478260869565216
+            },
+            "members": [
+              6
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.043478260869565216
+            },
+            "members": [
+              7
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.0
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.043478260869565216
+            },
+            "members": [
+              8
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "lo": {
+              "x": 0.0,
+              "y": 0.043478260869565216
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.08695652173913043
+            },
+            "members": [
+              9
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.043478260869565216
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.08695652173913043
+            },
+            "members": [
+              10
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.043478260869565216
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.08695652173913043
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.043478260869565216
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.08695652173913043
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "lo": {
+              "x": 0.0,
+              "y": 0.08695652173913043
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.13043478260869565
+            },
+            "members": [
+              11
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.08695652173913043
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.13043478260869565
+            },
+            "members": [
+              12
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.08695652173913043
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.13043478260869565
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.08695652173913043
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.13043478260869565
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "lo": {
+              "x": 0.0,
+              "y": 0.13043478260869565
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.17391304347826086
+            },
+            "members": [
+              13
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.13043478260869565
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.17391304347826086
+            },
+            "members": [
+              14
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.13043478260869565
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.17391304347826086
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.13043478260869565
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.17391304347826086
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "lo": {
+              "x": 0.0,
+              "y": 0.17391304347826086
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.21739130434782608
+            },
+            "members": [
+              15
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 18,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.17391304347826086
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.21739130434782608
+            },
+            "members": [
+              16
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.17391304347826086
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.21739130434782608
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.17391304347826086
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.21739130434782608
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 21,
+            "lo": {
+              "x": 0.0,
+              "y": 0.21739130434782608
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.2608695652173913
+            },
+            "members": [
+              17
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.21739130434782608
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.2608695652173913
+            },
+            "members": [
+              18
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.21739130434782608
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.2608695652173913
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 24,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.21739130434782608
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.2608695652173913
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 25,
+            "lo": {
+              "x": 0.0,
+              "y": 0.2608695652173913
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.30434782608695654
+            },
+            "members": [
+              19
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 26,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.2608695652173913
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.30434782608695654
+            },
+            "members": [
+              20
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 27,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.2608695652173913
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.30434782608695654
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 28,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.2608695652173913
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.30434782608695654
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 29,
+            "lo": {
+              "x": 0.0,
+              "y": 0.30434782608695654
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.34782608695652173
+            },
+            "members": [
+              21
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 30,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.30434782608695654
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.34782608695652173
+            },
+            "members": [
+              22
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.30434782608695654
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.34782608695652173
+            },
+            "members": [
+              23
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 32,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.30434782608695654
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.34782608695652173
+            },
+            "members": [
+              24
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "lo": {
+              "x": 0.0,
+              "y": 0.34782608695652173
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.391304347826087
+            },
+            "members": [
+              25
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.34782608695652173
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.391304347826087
+            },
+            "members": [
+              26
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.34782608695652173
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.391304347826087
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 36,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.34782608695652173
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.391304347826087
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 37,
+            "lo": {
+              "x": 0.0,
+              "y": 0.391304347826087
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.43478260869565216
+            },
+            "members": [
+              27
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 38,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.391304347826087
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.43478260869565216
+            },
+            "members": [
+              28
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 39,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.391304347826087
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.43478260869565216
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.391304347826087
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.43478260869565216
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 41,
+            "lo": {
+              "x": 0.0,
+              "y": 0.43478260869565216
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.4782608695652174
+            },
+            "members": [
+              29
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 42,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.43478260869565216
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.4782608695652174
+            },
+            "members": [
+              30
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 43,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.43478260869565216
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.4782608695652174
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 44,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.43478260869565216
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.4782608695652174
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 45,
+            "lo": {
+              "x": 0.0,
+              "y": 0.4782608695652174
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.5217391304347826
+            },
+            "members": [
+              31
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 46,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.4782608695652174
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.5217391304347826
+            },
+            "members": [
+              32
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 47,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.4782608695652174
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.5217391304347826
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 48,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.4782608695652174
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.5217391304347826
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 49,
+            "lo": {
+              "x": 0.0,
+              "y": 0.5217391304347826
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.5652173913043478
+            },
+            "members": [
+              33
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 50,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.5217391304347826
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.5652173913043478
+            },
+            "members": [
+              34
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 51,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.5217391304347826
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.5652173913043478
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 52,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.5217391304347826
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.5652173913043478
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 53,
+            "lo": {
+              "x": 0.0,
+              "y": 0.5652173913043478
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.6086956521739131
+            },
+            "members": [
+              35
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 54,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.5652173913043478
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.6086956521739131
+            },
+            "members": [
+              36
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 55,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.5652173913043478
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.6086956521739131
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 56,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.5652173913043478
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.6086956521739131
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 57,
+            "lo": {
+              "x": 0.0,
+              "y": 0.6086956521739131
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.6521739130434783
+            },
+            "members": [
+              37
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 58,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.6086956521739131
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.6521739130434783
+            },
+            "members": [
+              38
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 59,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.6086956521739131
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.6521739130434783
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 60,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.6086956521739131
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.6521739130434783
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 61,
+            "lo": {
+              "x": 0.0,
+              "y": 0.6521739130434783
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.6956521739130435
+            },
+            "members": [
+              39
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 62,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.6521739130434783
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.6956521739130435
+            },
+            "members": [
+              40
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 63,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.6521739130434783
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.6956521739130435
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 64,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.6521739130434783
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.6956521739130435
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 65,
+            "lo": {
+              "x": 0.0,
+              "y": 0.6956521739130435
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.7391304347826086
+            },
+            "members": [
+              41
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 66,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.6956521739130435
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.7391304347826086
+            },
+            "members": [
+              42
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 67,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.6956521739130435
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.7391304347826086
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 68,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.6956521739130435
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.7391304347826086
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 69,
+            "lo": {
+              "x": 0.0,
+              "y": 0.7391304347826086
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.782608695652174
+            },
+            "members": [
+              43
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 70,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.7391304347826086
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.782608695652174
+            },
+            "members": [
+              44
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 71,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.7391304347826086
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.782608695652174
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 72,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.7391304347826086
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.782608695652174
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 73,
+            "lo": {
+              "x": 0.0,
+              "y": 0.782608695652174
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.8260869565217391
+            },
+            "members": [
+              45
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 74,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.782608695652174
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.8260869565217391
+            },
+            "members": [
+              46
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 75,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.782608695652174
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.8260869565217391
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 76,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.782608695652174
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.8260869565217391
+            },
+            "members": [],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 77,
+            "lo": {
+              "x": 0.0,
+              "y": 0.8260869565217391
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.8695652173913043
+            },
+            "members": [
+              47
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 78,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.8260869565217391
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.8695652173913043
+            },
+            "members": [
+              48
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 79,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.8260869565217391
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.8695652173913043
+            },
+            "members": [
+              49
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 80,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.8260869565217391
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.8695652173913043
+            },
+            "members": [
+              50
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 81,
+            "lo": {
+              "x": 0.0,
+              "y": 0.8695652173913043
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.9130434782608695
+            },
+            "members": [
+              51
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 82,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.8695652173913043
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.9130434782608695
+            },
+            "members": [
+              52
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 83,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.8695652173913043
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.9130434782608695
+            },
+            "members": [
+              53
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 84,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.8695652173913043
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.9130434782608695
+            },
+            "members": [
+              54
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 85,
+            "lo": {
+              "x": 0.0,
+              "y": 0.9130434782608695
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 0.9565217391304348
+            },
+            "members": [
+              55
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 86,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.9130434782608695
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 0.9565217391304348
+            },
+            "members": [
+              56
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 87,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.9130434782608695
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 0.9565217391304348
+            },
+            "members": [
+              57
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 88,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.9130434782608695
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 0.9565217391304348
+            },
+            "members": [
+              58
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 89,
+            "lo": {
+              "x": 0.0,
+              "y": 0.9565217391304348
+            },
+            "hi": {
+              "x": 0.08151382823871907,
+              "y": 1.0
+            },
+            "members": [
+              59
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 90,
+            "lo": {
+              "x": 0.08151382823871907,
+              "y": 0.9565217391304348
+            },
+            "hi": {
+              "x": 0.6521106259097526,
+              "y": 1.0
+            },
+            "members": [
+              60
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 91,
+            "lo": {
+              "x": 0.6521106259097526,
+              "y": 0.9565217391304348
+            },
+            "hi": {
+              "x": 0.8442503639010189,
+              "y": 1.0
+            },
+            "members": [
+              61
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          },
+          {
+            "id": 92,
+            "lo": {
+              "x": 0.8442503639010189,
+              "y": 0.9565217391304348
+            },
+            "hi": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "members": [
+              62
+            ],
+            "borders": [
+              {
+                "side": "left",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "top",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "bottom",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              },
+              {
+                "side": "right",
+                "width_pt": 0.45,
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "pattern": "solid"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
