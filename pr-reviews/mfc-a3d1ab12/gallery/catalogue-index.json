@@ -1,0 +1,1205 @@
+{
+  "head": "a3d1ab12ea0e3a8fce431e5e1e1bf9d135101761",
+  "count": 142,
+  "boards": [
+    {
+      "name": "Mounting, heating, and general equipment",
+      "image": "01-general-equipment.png",
+      "count": 14,
+      "pieces": [
+        {
+          "id": "reshiki/mass-flow-controller",
+          "name": "Mass flow controller",
+          "variant": {
+            "connection": "1/4 in compression"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/boss-head",
+          "name": "Boss head",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/dewar",
+          "name": "Dewar flask",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/heating-mantle",
+          "name": "Heating mantle",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/keck-clip-10",
+          "name": "Joint clip 10/18",
+          "variant": {
+            "joint": "10/18"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/keck-clip-15",
+          "name": "Joint clip, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 3
+        },
+        {
+          "id": "reshiki/keck-clip-29",
+          "name": "Joint clip, 29/42",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/stand",
+          "name": "Lab stand",
+          "variant": {
+            "rod": "620 mm rod"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/oil-bath",
+          "name": "Oil bath",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/hotplate",
+          "name": "Stirrer hotplate",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/ring",
+          "name": "Support ring",
+          "variant": {},
+          "revision": 2
+        },
+        {
+          "id": "reshiki/clamp-3finger",
+          "name": "Three-finger clamp",
+          "variant": {},
+          "revision": 3
+        },
+        {
+          "id": "reshiki/hose-7",
+          "name": "Rubber hose, 7 mm",
+          "variant": {
+            "bore": "7 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/stir-bar",
+          "name": "Stir bar",
+          "variant": {},
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "Flasks, vessels, NMR, and chromatography",
+      "image": "02-flasks-and-vessels.png",
+      "count": 18,
+      "pieces": [
+        {
+          "id": "reshiki/beaker",
+          "name": "Beaker",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/chrom-column",
+          "name": "Chromatography column",
+          "variant": {},
+          "revision": 2
+        },
+        {
+          "id": "reshiki/erlenmeyer",
+          "name": "Erlenmeyer flask",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-nmr-tube",
+          "name": "J. Young NMR tube",
+          "variant": {},
+          "revision": 2
+        },
+        {
+          "id": "reshiki/nmr-tube",
+          "name": "NMR tube, 5 mm",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/pear-15",
+          "name": "Pear-shaped flask",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/pear-29",
+          "name": "Pear-shaped flask",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rbf-300-15",
+          "name": "Round-bottom flask",
+          "variant": {
+            "joint": "15/25",
+            "volume_ml": "300"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rbf-100-15",
+          "name": "Round-bottom flask, 100 mL",
+          "variant": {
+            "volume_ml": "100",
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/rbf-100-29",
+          "name": "Round-bottom flask, 100 mL",
+          "variant": {
+            "volume_ml": "100",
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/rbf-300-29",
+          "name": "Round-bottom flask, 300 mL",
+          "variant": {
+            "volume_ml": "300",
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/rbf-50-15",
+          "name": "Round-bottom flask, 50 mL",
+          "variant": {
+            "volume_ml": "50",
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/rbf-500-29",
+          "name": "Round-bottom flask, 500 mL",
+          "variant": {
+            "volume_ml": "500",
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/test-tube",
+          "name": "Test tube",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rbf3-300-15",
+          "name": "Three-neck flask",
+          "variant": {
+            "joint": "15/25",
+            "volume_ml": "300"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rbf3-300-29",
+          "name": "Three-neck flask",
+          "variant": {
+            "joint": "29/42",
+            "volume_ml": "300"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rbf2-300-15",
+          "name": "Two-neck flask",
+          "variant": {
+            "joint": "15/25",
+            "volume_ml": "300"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rbf2-300-29",
+          "name": "Two-neck flask",
+          "variant": {
+            "joint": "29/42",
+            "volume_ml": "300"
+          },
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "Schlenk flasks, tubes, and stopcocks",
+      "image": "03-schlenk-equipment.png",
+      "count": 13,
+      "pieces": [
+        {
+          "id": "reshiki/schlenk-flask-100-29",
+          "name": "Schlenk flask",
+          "variant": {
+            "joint": "29/42",
+            "volume_ml": "100"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/schlenk-flask-100-15",
+          "name": "Schlenk flask, 100 mL",
+          "variant": {
+            "volume_ml": "100",
+            "joint": "15/25"
+          },
+          "revision": 3
+        },
+        {
+          "id": "reshiki/schlenk-tube-15-left",
+          "name": "Schlenk tube",
+          "variant": {
+            "joint": "15/25",
+            "arm": "Left"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/schlenk-tube-29",
+          "name": "Schlenk tube",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/schlenk-tube-29-left",
+          "name": "Schlenk tube",
+          "variant": {
+            "joint": "29/42",
+            "arm": "Left"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/schlenk-tube-15",
+          "name": "Schlenk tube, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/schlenk-tube-straight-15-left",
+          "name": "Schlenk tube, straight, 15/25, left",
+          "variant": {
+            "geometry": "Straight",
+            "side": "Left",
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/schlenk-tube-straight-15",
+          "name": "Schlenk tube, straight, 15/25, right",
+          "variant": {
+            "geometry": "Straight",
+            "side": "Right",
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/schlenk-tube-straight-29-left",
+          "name": "Schlenk tube, straight, 29/42, left",
+          "variant": {
+            "geometry": "Straight",
+            "side": "Left",
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/schlenk-tube-straight-29",
+          "name": "Schlenk tube, straight, 29/42, right",
+          "variant": {
+            "geometry": "Straight",
+            "side": "Right",
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/stopcock-three-way-15",
+          "name": "Three-way stopcock, 15/25 cone",
+          "variant": {
+            "outlet": "15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/stopcock-three-way-29",
+          "name": "Three-way stopcock, 29/42 cone",
+          "variant": {
+            "outlet": "29/42 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/stopcock-three-way-hose",
+          "name": "Three-way stopcock, 7 mm hose barbs",
+          "variant": {
+            "outlet": "7 mm hose barbs"
+          },
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "J. Young storage flasks and Schlenk tubes",
+      "image": "04-j-young-equipment.png",
+      "count": 24,
+      "pieces": [
+        {
+          "id": "reshiki/jy-schlenk-tube-small",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "22 x 100 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube-small-cone",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "22 x 100 mm",
+            "outlet": "Level 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube-small-cone-rising",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "22 x 100 mm",
+            "outlet": "Rising 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube-small-rising",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "22 x 100 mm",
+            "outlet": "Rising hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "30 x 135 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube-cone",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "30 x 135 mm",
+            "outlet": "Level 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube-cone-rising",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "30 x 135 mm",
+            "outlet": "Rising 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-schlenk-tube-rising",
+          "name": "J. Young Schlenk tube",
+          "variant": {
+            "body": "30 x 135 mm",
+            "outlet": "Rising hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-100-cone",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "100",
+            "outlet": "Level 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-100-cone-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "100",
+            "outlet": "Rising 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-100-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "100",
+            "outlet": "Rising hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-25",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-25-cone",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "25",
+            "outlet": "Level 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-25-cone-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "25",
+            "outlet": "Rising 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-25-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "25",
+            "outlet": "Rising hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-250",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "250"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-250-cone",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "250",
+            "outlet": "Level 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-250-cone-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "250",
+            "outlet": "Rising 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-250-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "250",
+            "outlet": "Rising hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-50",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "50"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-50-cone",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "50",
+            "outlet": "Level 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-50-cone-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "50",
+            "outlet": "Rising 15/25 cone"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-50-rising",
+          "name": "J. Young storage flask",
+          "variant": {
+            "volume_ml": "50",
+            "outlet": "Rising hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/jy-storage-flask-100",
+          "name": "J. Young storage flask, 100 mL",
+          "variant": {
+            "volume_ml": "100"
+          },
+          "revision": 2
+        }
+      ]
+    },
+    {
+      "name": "Addition and gas handling",
+      "image": "05-addition-and-gas-handling.png",
+      "count": 14,
+      "pieces": [
+        {
+          "id": "reshiki/balloon",
+          "name": "Balloon",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/cold-trap",
+          "name": "Cold trap",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/drying-tube-15",
+          "name": "Drying tube",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/gas-inlet-15",
+          "name": "Gas inlet adapter",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/gas-inlet-29",
+          "name": "Gas inlet adapter",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/stopper-15",
+          "name": "Glass stopper, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/stopper-29",
+          "name": "Glass stopper, 29/42",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/bubbler",
+          "name": "Oil bubbler",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/dropping-funnel-15",
+          "name": "Pressure-equalizing dropping funnel",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/dropping-funnel-29",
+          "name": "Pressure-equalizing dropping funnel",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/septum-15",
+          "name": "Rubber septum, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/septum-hose-7",
+          "name": "Rubber septum, 15/25, hose barb",
+          "variant": {
+            "joint": "15/25",
+            "mount": "7 mm hose barb"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/septum-29",
+          "name": "Rubber septum, 29/42",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/stopper-10",
+          "name": "Stopper 10/18",
+          "variant": {},
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "Condensers and size adapters",
+      "image": "06-condensers-and-adapters.png",
+      "count": 12,
+      "pieces": [
+        {
+          "id": "reshiki/allihn-15",
+          "name": "Allihn condenser",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/allihn-29",
+          "name": "Allihn condenser",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/dimroth-15",
+          "name": "Dimroth condenser",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/dimroth-29",
+          "name": "Dimroth condenser",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/exp-10-15",
+          "name": "Expansion adapter 10/18 → 15/25",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/exp-10-29",
+          "name": "Expansion adapter 10/18 → 29/42",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/exp-15-29",
+          "name": "Expansion adapter, 15/25 to 29/42",
+          "variant": {
+            "cone": "15/25",
+            "socket": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/liebig-15",
+          "name": "Liebig condenser, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/liebig-29",
+          "name": "Liebig condenser, 29/42",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/red-15-10",
+          "name": "Reducing adapter 15/25 → 10/18",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/red-29-10",
+          "name": "Reducing adapter 29/42 → 10/18",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/red-29-15",
+          "name": "Reducing adapter, 29/42 to 15/25",
+          "variant": {
+            "cone": "29/42",
+            "socket": "15/25"
+          },
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "Distillation heads and columns",
+      "image": "07-distillation-heads-and-columns.png",
+      "count": 13,
+      "pieces": [
+        {
+          "id": "reshiki/claisen-adapter-15",
+          "name": "Claisen adapter",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/claisen-adapter-29",
+          "name": "Claisen adapter",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/claisen-head-15",
+          "name": "Claisen distillation head",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/claisen-head-29",
+          "name": "Claisen distillation head",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/still-head-15",
+          "name": "Distillation head",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/still-head-15-socket-arm",
+          "name": "Distillation head",
+          "variant": {
+            "joint": "15/25",
+            "arm": "Socket"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/still-head-29",
+          "name": "Distillation head",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/still-head-29-socket-arm",
+          "name": "Distillation head",
+          "variant": {
+            "joint": "29/42",
+            "arm": "Socket"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/fractionating-15",
+          "name": "Packed fractionating column",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/fractionating-29",
+          "name": "Packed fractionating column",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/short-path-15",
+          "name": "Short-path distillation head",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/vigreux-15",
+          "name": "Vigreux column",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/vigreux-29",
+          "name": "Vigreux column",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "Distillation accessories and Kugelrohr",
+      "image": "08-distillation-accessories.png",
+      "count": 17,
+      "pieces": [
+        {
+          "id": "reshiki/bend-120-15",
+          "name": "120° joint",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/bend-120-29",
+          "name": "120° joint",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/cow-15",
+          "name": "Cow receiver adapter, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/drip-adapter-15",
+          "name": "Receiver adapter, straight",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/drip-adapter-29",
+          "name": "Receiver adapter, straight",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/thermometer",
+          "name": "Thermometer",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/thermometer-adapter-29",
+          "name": "Thermometer adapter",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/thermometer-adapter-15",
+          "name": "Thermometer adapter, 15/25",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/vacuum-adapter-15",
+          "name": "Vacuum adapter",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/vacuum-adapter-29",
+          "name": "Vacuum adapter",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-bulb-10",
+          "name": "Kugelrohr bulb",
+          "variant": {
+            "joint": "10/18"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-bulb-15",
+          "name": "Kugelrohr bulb",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-flask-10",
+          "name": "Kugelrohr distilling bulb",
+          "variant": {
+            "joint": "10/18"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-flask-15",
+          "name": "Kugelrohr distilling bulb",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-drive-10",
+          "name": "Kugelrohr drive",
+          "variant": {
+            "joint": "10/18"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-drive-15",
+          "name": "Kugelrohr drive",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kugelrohr-oven",
+          "name": "Kugelrohr oven",
+          "variant": {},
+          "revision": 1
+        }
+      ]
+    },
+    {
+      "name": "Filtration and separation",
+      "image": "09-filtration-and-separation.png",
+      "count": 17,
+      "pieces": [
+        {
+          "id": "reshiki/buchner",
+          "name": "Büchner funnel",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-21-joint",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "15/25 cone",
+            "filter_diameter": "21 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-40-joint",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "15/25 cone",
+            "filter_diameter": "40 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-60-joint",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "15/25 cone",
+            "filter_diameter": "60 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-95-joint",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "15/25 cone",
+            "filter_diameter": "95 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-21-stem",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "Stopper stem",
+            "filter_diameter": "21 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-40-stem",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "Stopper stem",
+            "filter_diameter": "40 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-60-stem",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "Stopper stem",
+            "filter_diameter": "60 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-95-stem",
+          "name": "Kiriyama funnel",
+          "variant": {
+            "mount": "Stopper stem",
+            "filter_diameter": "95 mm"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-flask-100",
+          "name": "Kiriyama suction flask",
+          "variant": {
+            "volume_ml": "100",
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-flask-250",
+          "name": "Kiriyama suction flask",
+          "variant": {
+            "volume_ml": "250",
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/kiriyama-flask-500",
+          "name": "Kiriyama suction flask",
+          "variant": {
+            "volume_ml": "500",
+            "joint": "15/25"
+          },
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rubber-adapter",
+          "name": "Rubber filter adapter",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/rubber-stopper",
+          "name": "Rubber stopper, holed",
+          "variant": {},
+          "revision": 1
+        },
+        {
+          "id": "reshiki/sep-funnel-15",
+          "name": "Separatory funnel",
+          "variant": {
+            "joint": "15/25"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/sep-funnel-29",
+          "name": "Separatory funnel",
+          "variant": {
+            "joint": "29/42"
+          },
+          "revision": 2
+        },
+        {
+          "id": "reshiki/filter-flask",
+          "name": "Suction flask",
+          "variant": {},
+          "revision": 1
+        }
+      ]
+    }
+  ]
+}
