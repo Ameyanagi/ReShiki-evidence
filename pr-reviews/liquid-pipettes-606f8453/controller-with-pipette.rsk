@@ -1,0 +1,635 @@
+{
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "graphics": [
+    {
+      "id": 1,
+      "kind": "piece",
+      "origin": {
+        "x": 0.0,
+        "y": -18.666666666666668
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 1.1666666666666667
+      },
+      "layer": -2,
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-10@1#6f7ae9c54d767002",
+        "params": {
+          "fill": 0.35
+        }
+      }
+    },
+    {
+      "id": 2,
+      "kind": "piece",
+      "origin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 1.1666666666666667
+      },
+      "layer": -1,
+      "piece": {
+        "definition": "reshiki/electric-pipette-controller@1#d3887424864026c6",
+        "params": {
+          "view": "exterior"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "kind": "piece",
+      "origin": {
+        "x": 210.0,
+        "y": -18.666666666666668
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 1.1666666666666667
+      },
+      "layer": -2,
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-10@1#6f7ae9c54d767002",
+        "params": {
+          "fill": 0.35
+        }
+      }
+    },
+    {
+      "id": 4,
+      "kind": "piece",
+      "origin": {
+        "x": 210.0,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0
+      },
+      "axis_y": {
+        "x": 0,
+        "y": 1.1666666666666667
+      },
+      "layer": -1,
+      "piece": {
+        "definition": "reshiki/electric-pipette-controller@1#d3887424864026c6",
+        "params": {
+          "view": "section"
+        }
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "id": 5,
+      "position": {
+        "x": -39.958333333333336,
+        "y": -115.50000000000001
+      },
+      "text": "Exterior",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 8.5,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 65,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 6,
+      "position": {
+        "x": 170.04166666666669,
+        "y": -115.50000000000001
+      },
+      "text": "Adapter section",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 8.5,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 65,
+        "line_spacing": 1.14
+      }
+    }
+  ],
+  "arrows": [],
+  "piece_definitions": [
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/electric-pipette-controller",
+      "revision": 1,
+      "family": "electric-pipette-controller",
+      "variant": {},
+      "names": {
+        "en": "Electric pipette controller"
+      },
+      "category": "addition",
+      "keywords": [
+        "autopipetter",
+        "autopipettor",
+        "pipette controller",
+        "pipet controller",
+        "pipette aid",
+        "electric",
+        "electronic",
+        "motorized",
+        "volumetric pipette",
+        "whole pipette",
+        "glass pipette"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "ergonomic-housing",
+          "layer": "body",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M-9 -75C16 -76 70 -70 99 -63C108 -61 113 -56 111 -47L108 -35Q107 -28 98 -29L83 -32Q77 -31 77 -23L88 38Q90 48 80 50L62 50Q53 50 50 42L36 -12Q32 -25 18 -28L-9 -31Q-18 -32 -18 -42L-17 -63Q-17 -72 -9 -75Z",
+          "color": [
+            228,
+            233,
+            237
+          ]
+        },
+        {
+          "id": "motor-head-inset",
+          "layer": "body",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M-8 -69C18 -70 69 -64 99 -58Q105 -57 104 -51L102 -42Q102 -38 97 -39L15 -48L-12 -47L-12 -60Q-12 -67 -8 -69Z",
+          "color": [
+            63,
+            105,
+            120
+          ]
+        },
+        {
+          "id": "grip-panel",
+          "layer": "body",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M55 -23Q64 -29 71 -23L81 36Q82 41 76 42L64 42Q60 41 58 35L47 -9Q45 -18 55 -23Z",
+          "color": [
+            99,
+            119,
+            129
+          ]
+        },
+        {
+          "id": "grip-end-seam",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M61 43L79 43"
+        },
+        {
+          "id": "housing-parting-line",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M17 -44C39 -41 68 -37 98 -34"
+        },
+        {
+          "id": "grip-ribs",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M58 6L70 3M60 14L72 11M62 22L74 19M64 30L76 27"
+        },
+        {
+          "id": "aspiration-button",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M24 -25L34 -22Q38 -21 37 -17L36 -13Q35 -10 31 -11L21 -14Q18 -15 19 -19L20 -22Q21 -26 24 -25Z",
+          "color": [
+            75,
+            143,
+            167
+          ]
+        },
+        {
+          "id": "dispense-button",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M30 -4L40 -1Q44 0 43 4L42 8Q41 11 37 10L27 7Q24 6 25 2L26 -1Q27 -5 30 -4Z",
+          "color": [
+            145,
+            190,
+            201
+          ]
+        },
+        {
+          "id": "aspiration-arrow",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M26.6 -14.8L27.8 -19.2L25.8 -18.5L26.3 -20.2L29.4 -21.3L31 -18.7L30.5 -17L29.5 -18.5L28.3 -14.3Z",
+          "depth": 1
+        },
+        {
+          "id": "dispense-arrow",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M32.9 -0.3L31.7 4.1L33.7 3.4L33.2 5.1L30.1 6.2L28.5 3.6L29 1.9L30 3.4L31.2 -1Z",
+          "depth": 1
+        },
+        {
+          "id": "speed-wheel",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M13 -61A5 5 0 1 1 3 -61A5 5 0 1 1 13 -61Z",
+          "color": [
+            53,
+            63,
+            71
+          ]
+        },
+        {
+          "id": "wheel-index",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M7.8 -64.5L7.8 -60",
+          "depth": 1
+        },
+        {
+          "id": "battery-window",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M58 -62L74 -59.7L73.3 -55L57.3 -57.3Z",
+          "color": [
+            74,
+            84,
+            88
+          ]
+        },
+        {
+          "id": "battery-indicator-bars",
+          "layer": "front",
+          "material": "plastic",
+          "role": "fill",
+          "path": "M60 -60.5L62 -60.2L61.7 -57.9L59.7 -58.2ZM64 -59.9L66 -59.6L65.7 -57.3L63.7 -57.6ZM68 -59.3L70 -59L69.7 -56.7L67.7 -57Z",
+          "color": [
+            176,
+            207,
+            175
+          ],
+          "depth": 1
+        },
+        {
+          "id": "nose-retaining-collar",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M-14 -39L14 -39Q16 -38 15.5 -34L14.5 -30Q14 -28 11 -28L-11 -28Q-14 -28 -14.5 -30L-15.5 -34Q-16 -38 -14 -39Z",
+          "color": [
+            207,
+            215,
+            222
+          ]
+        },
+        {
+          "id": "collar-grip-ribs",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M-10 -37V-31M-6 -37V-31M-2 -37V-31M2 -37V-31M6 -37V-31M10 -37V-31",
+          "depth": 1
+        },
+        {
+          "id": "nose-exterior-fill",
+          "layer": "front",
+          "material": "plastic",
+          "role": "fill",
+          "path": "M-11 -28L11 -28L9 -9Q8.7 -6 6.8 -5L3.3 -5L3.3 -6.5L-3.3 -6.5L-3.3 -5L-6.8 -5Q-8.7 -6 -9 -9Z",
+          "color": [
+            232,
+            235,
+            237
+          ],
+          "when": {
+            "view": [
+              "exterior"
+            ]
+          },
+          "depth": 1
+        },
+        {
+          "id": "nose-exterior-edges",
+          "layer": "front",
+          "material": "plastic",
+          "role": "outline",
+          "path": "M-11 -28L-9 -9Q-8.7 -6 -6.8 -5M11 -28L9 -9Q8.7 -6 6.8 -5",
+          "when": {
+            "view": [
+              "exterior"
+            ]
+          },
+          "depth": 2
+        },
+        {
+          "id": "silicone-exterior-fill",
+          "layer": "front",
+          "material": "rubber",
+          "role": "fill",
+          "path": "M-6.8 -8L6.8 -8L6.5 0L3.3 0L3.3 -2L-3.3 -2L-3.3 0L-6.5 0Z",
+          "color": [
+            151,
+            161,
+            167
+          ],
+          "when": {
+            "view": [
+              "exterior"
+            ]
+          },
+          "depth": 2
+        },
+        {
+          "id": "silicone-exit-lips",
+          "layer": "front",
+          "material": "rubber",
+          "role": "outline",
+          "path": "M-6.8 -6L-6.5 0L-3.3 0M6.8 -6L6.5 0L3.3 0",
+          "when": {
+            "view": [
+              "exterior"
+            ]
+          },
+          "depth": 3
+        },
+        {
+          "id": "section-nose-left-wall",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M-11 -28L-8.5 -28L-7 -7L-6.5 0L-8.2 -2L-9.5 -8Z",
+          "color": [
+            218,
+            225,
+            230
+          ],
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 1
+        },
+        {
+          "id": "section-nose-right-wall",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M11 -28L8.5 -28L7 -7L6.5 0L8.2 -2L9.5 -8Z",
+          "color": [
+            218,
+            225,
+            230
+          ],
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 1
+        },
+        {
+          "id": "section-silicone-mount-left",
+          "layer": "front",
+          "material": "rubber",
+          "role": "fill",
+          "path": "M-7.8 -23L-3.8 -23L-3.8 -18L-3.35 -16L-3.45 -7L-4.1 0L-6.5 0L-6.8 -8Z",
+          "color": [
+            151,
+            161,
+            167
+          ],
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 2
+        },
+        {
+          "id": "section-silicone-mount-right",
+          "layer": "front",
+          "material": "rubber",
+          "role": "fill",
+          "path": "M7.8 -23L3.8 -23L3.8 -18L3.35 -16L3.45 -7L4.1 0L6.5 0L6.8 -8Z",
+          "color": [
+            151,
+            161,
+            167
+          ],
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 2
+        },
+        {
+          "id": "section-filter",
+          "layer": "front",
+          "material": "paper",
+          "role": "solid",
+          "path": "M-6.5 -27L6.5 -27L6.5 -24L-6.5 -24Z",
+          "color": [
+            235,
+            232,
+            222
+          ],
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 2
+        },
+        {
+          "id": "section-filter-detail",
+          "layer": "front",
+          "material": "ink",
+          "role": "detail",
+          "path": "M-5 -25.5L-3 -25.5M-1 -25.5L1 -25.5M3 -25.5L5 -25.5",
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 3
+        },
+        {
+          "id": "section-silicone-cut-hatching",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M-6.8 -21L-4.6 -18.8M-6.5 -16L-4.1 -13.6M-6.1 -10.5L-4.2 -8.6M-5.7 -5L-4.5 -3.8M6.8 -21L4.6 -18.8M6.5 -16L4.1 -13.6M6.1 -10.5L4.2 -8.6M5.7 -5L4.5 -3.8",
+          "when": {
+            "view": [
+              "section"
+            ]
+          },
+          "depth": 3
+        }
+      ],
+      "params": [
+        {
+          "id": "view",
+          "kind": "states",
+          "names": {
+            "en": "View"
+          },
+          "states": [
+            {
+              "id": "exterior",
+              "names": {
+                "en": "Exterior"
+              }
+            },
+            {
+              "id": "section",
+              "names": {
+                "en": "Adapter section"
+              }
+            }
+          ],
+          "default": "exterior"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/volumetric-pipette-10",
+      "revision": 1,
+      "family": "volumetric-pipette",
+      "variant": {
+        "capacity": "10 mL"
+      },
+      "names": {
+        "en": "Volumetric pipette, 10 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "volumetric",
+        "single mark",
+        "bulb pipette",
+        "10 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.225 0L3.225 196.3C3.225 204.75 7.6 205.4 7.6 217.1L7.6 240.5C7.6 252.85 3.225 254.8 3.225 261.3L3.225 416C3.225 423 0.65 432 0.6 440L-0.6 440C-0.65 432 -3.225 423 -3.225 416L-3.225 261.3C-3.225 254.8 -7.6 252.85 -7.6 240.5L-7.6 217.1C-7.6 205.4 -3.225 204.75 -3.225 196.3L-3.225 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.675 1.4Q0 2.4 2.675 1.4"
+        },
+        {
+          "id": "single-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.225 164H3.225V164.6H-3.225Z"
+        },
+        {
+          "id": "nominal-capacity",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.766 225.345L-1.776 224.445L-1.494 224.755L-2.484 225.655ZM-1.425 224.6L-1.425 229.1L-1.845 229.1L-1.845 224.6ZM-2.415 225.5A0.21 0.21 0 1 1 -2.835 225.5A0.21 0.21 0 1 1 -2.415 225.5ZM-1.425 224.6A0.21 0.21 0 1 1 -1.845 224.6A0.21 0.21 0 1 1 -1.425 224.6ZM-1.425 229.1A0.21 0.21 0 1 1 -1.845 229.1A0.21 0.21 0 1 1 -1.425 229.1ZM-2.625 228.89L-0.645 228.89L-0.645 229.31L-2.625 229.31ZM-2.415 229.1A0.21 0.21 0 1 1 -2.835 229.1A0.21 0.21 0 1 1 -2.415 229.1ZM-0.435 229.1A0.21 0.21 0 1 1 -0.855 229.1A0.21 0.21 0 1 1 -0.435 229.1ZM1.095 224.39L2.355 224.39L2.355 224.81L1.095 224.81ZM2.523 224.474L3.063 225.194L2.727 225.446L2.187 224.726ZM3.105 225.32L3.105 228.38L2.685 228.38L2.685 225.32ZM3.063 228.506L2.523 229.226L2.187 228.974L2.727 228.254ZM2.355 229.31L1.095 229.31L1.095 228.89L2.355 228.89ZM0.927 229.226L0.387 228.506L0.723 228.254L1.263 228.974ZM0.345 228.38L0.345 225.32L0.765 225.32L0.765 228.38ZM0.387 225.194L0.927 224.474L1.263 224.726L0.723 225.446ZM1.305 224.6A0.21 0.21 0 1 1 0.885 224.6A0.21 0.21 0 1 1 1.305 224.6ZM2.565 224.6A0.21 0.21 0 1 1 2.145 224.6A0.21 0.21 0 1 1 2.565 224.6ZM3.105 225.32A0.21 0.21 0 1 1 2.685 225.32A0.21 0.21 0 1 1 3.105 225.32ZM3.105 228.38A0.21 0.21 0 1 1 2.685 228.38A0.21 0.21 0 1 1 3.105 228.38ZM2.565 229.1A0.21 0.21 0 1 1 2.145 229.1A0.21 0.21 0 1 1 2.565 229.1ZM1.305 229.1A0.21 0.21 0 1 1 0.885 229.1A0.21 0.21 0 1 1 1.305 229.1ZM0.765 228.38A0.21 0.21 0 1 1 0.345 228.38A0.21 0.21 0 1 1 0.765 228.38ZM0.765 225.32A0.21 0.21 0 1 1 0.345 225.32A0.21 0.21 0 1 1 0.765 225.32ZM1.305 224.6A0.21 0.21 0 1 1 0.885 224.6A0.21 0.21 0 1 1 1.305 224.6ZM-1.99 232.22L-1.99 230.3L-1.69 230.3L-1.69 232.22ZM-1.84 230.15L-1.36 230.15L-1.36 230.45L-1.84 230.45ZM-1.254 230.194L-0.774 230.674L-0.986 230.886L-1.466 230.406ZM-0.73 230.78L-0.73 232.22L-1.03 232.22L-1.03 230.78ZM-1.69 232.22A0.15 0.15 0 1 1 -1.99 232.22A0.15 0.15 0 1 1 -1.69 232.22ZM-1.69 230.3A0.15 0.15 0 1 1 -1.99 230.3A0.15 0.15 0 1 1 -1.69 230.3ZM-1.21 230.3A0.15 0.15 0 1 1 -1.51 230.3A0.15 0.15 0 1 1 -1.21 230.3ZM-0.73 230.78A0.15 0.15 0 1 1 -1.03 230.78A0.15 0.15 0 1 1 -0.73 230.78ZM-0.73 232.22A0.15 0.15 0 1 1 -1.03 232.22A0.15 0.15 0 1 1 -0.73 232.22ZM-0.986 230.674L-0.506 230.194L-0.294 230.406L-0.774 230.886ZM-0.4 230.15L0.08 230.15L0.08 230.45L-0.4 230.45ZM0.23 230.3L0.23 232.22L-0.07 232.22L-0.07 230.3ZM-0.73 230.78A0.15 0.15 0 1 1 -1.03 230.78A0.15 0.15 0 1 1 -0.73 230.78ZM-0.25 230.3A0.15 0.15 0 1 1 -0.55 230.3A0.15 0.15 0 1 1 -0.25 230.3ZM0.23 230.3A0.15 0.15 0 1 1 -0.07 230.3A0.15 0.15 0 1 1 0.23 230.3ZM0.23 232.22A0.15 0.15 0 1 1 -0.07 232.22A0.15 0.15 0 1 1 0.23 232.22ZM0.95 229.9L0.95 232.22L0.65 232.22L0.65 229.9ZM0.8 232.07L1.84 232.07L1.84 232.37L0.8 232.37ZM0.95 229.9A0.15 0.15 0 1 1 0.65 229.9A0.15 0.15 0 1 1 0.95 229.9ZM0.95 232.22A0.15 0.15 0 1 1 0.65 232.22A0.15 0.15 0 1 1 0.95 232.22ZM1.99 232.22A0.15 0.15 0 1 1 1.69 232.22A0.15 0.15 0 1 1 1.99 232.22Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.675 1.4L2.675 196.3C2.675 204.75 7.05 205.4 7.05 217.1L7.05 240.5C7.05 252.85 2.675 254.8 2.675 261.3L2.675 416C2.675 423 0.14 432 0.14 438.8L-0.14 438.8C-0.14 432 -2.675 423 -2.675 416L-2.675 261.3C-2.675 254.8 -7.05 252.85 -7.05 240.5L-7.05 217.1C-7.05 205.4 -2.675 204.75 -2.675 196.3L-2.675 1.4Z"
+        }
+      ]
+    }
+  ],
+  "seats": []
+}

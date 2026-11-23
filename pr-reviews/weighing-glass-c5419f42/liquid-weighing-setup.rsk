@@ -1,0 +1,604 @@
+{
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [
+    {
+      "id": 7,
+      "position": {
+        "x": -101.5,
+        "y": -35.0
+      },
+      "text": "Liquid Weighing Glassware",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 12,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 180,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 8,
+      "position": {
+        "x": -8.75,
+        "y": 110.83333333333334
+      },
+      "text": "Vial and open weighing bottle",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 8,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 54,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 9,
+      "position": {
+        "x": 173.54166666666669,
+        "y": 110.83333333333334
+      },
+      "text": "Closed vessel on a balance",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 8,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 57,
+        "line_spacing": 1.14
+      }
+    }
+  ],
+  "arrows": [],
+  "graphics": [
+    {
+      "id": 1,
+      "kind": "piece",
+      "origin": {
+        "x": 5.833333333333334,
+        "y": 7.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/glass-sample-vial-4@1#9b5e67d36dbb5d06",
+        "params": {
+          "closure": "removed",
+          "fill": 0.55
+        }
+      }
+    },
+    {
+      "id": 2,
+      "kind": "piece",
+      "origin": {
+        "x": 93.33333333333334,
+        "y": 28.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/weighing-bottle-squat-20@1#af82c8174381292b",
+        "params": {
+          "closure": "removed",
+          "fill": 0.42
+        }
+      }
+    },
+    {
+      "id": 3,
+      "kind": "piece",
+      "origin": {
+        "x": 256.6666666666667,
+        "y": 28.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/weighing-bottle-squat-20@1#af82c8174381292b",
+        "params": {
+          "closure": "closed",
+          "fill": 0.42
+        }
+      }
+    },
+    {
+      "id": 4,
+      "kind": "rounded_rectangle",
+      "origin": {
+        "x": 204.16666666666669,
+        "y": 63.00000000000001
+      },
+      "axis_x": {
+        "x": 105.0,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 7.0
+      }
+    },
+    {
+      "id": 5,
+      "kind": "rounded_rectangle",
+      "origin": {
+        "x": 183.16666666666669,
+        "y": 71.16666666666667
+      },
+      "axis_x": {
+        "x": 147.0,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 26.833333333333336
+      }
+    },
+    {
+      "id": 6,
+      "kind": "rounded_rectangle",
+      "origin": {
+        "x": 240.33333333333334,
+        "y": 77.0
+      },
+      "axis_x": {
+        "x": 32.66666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 12.833333333333334
+      }
+    }
+  ],
+  "piece_definitions": [
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/glass-sample-vial-4",
+      "revision": 1,
+      "family": "glass-sample-vial",
+      "variant": {
+        "volume_ml": "4"
+      },
+      "names": {
+        "en": "Glass sample vial, screw cap, 4 mL"
+      },
+      "category": "vessel",
+      "keywords": [
+        "glass vial",
+        "sample vial",
+        "screw cap",
+        "liquid sample",
+        "weighing",
+        "borosilicate",
+        "capped vial"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "body",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-5.7 0.9L-5.7 7.3C-5.7 9.3 -7.5 9.3 -7.5 11.5L-7.5 43.2Q-7.5 45 -5.7 45L5.7 45Q7.5 45 7.5 43.2L7.5 11.5C7.5 9.3 5.7 9.3 5.7 7.3L5.7 0.9C5.7 -0.3 -5.7 -0.3 -5.7 0.9Z"
+        },
+        {
+          "id": "mouth-front",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-5.7 .9C-5.7 2.1 5.7 2.1 5.7 .9"
+        },
+        {
+          "id": "neck-thread",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-6.5 2.35L6.5 1.45M-6.5 4.25L6.5 3.35M-6 5.6L6 4.7"
+        },
+        {
+          "id": "inside-base",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-6.3 42.3Q-6.3 43.7 -4.9 43.7L4.9 43.7Q6.3 43.7 6.3 42.3"
+        },
+        {
+          "id": "thread-collar",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-6.5 .5L6.5 .5L6.5 5.9L-6.5 5.9Z"
+        },
+        {
+          "id": "cap",
+          "layer": "front",
+          "material": "plastic",
+          "role": "solid",
+          "path": "M-6.6 -3L6.6 -3Q7.6 -3 7.6 -2L7.6 5.5Q7.6 6.5 6.6 6.5L-6.6 6.5Q-7.6 6.5 -7.6 5.5L-7.6 -2Q-7.6 -3 -6.6 -3Z",
+          "part": "closure",
+          "color": [
+            62,
+            67,
+            72
+          ]
+        },
+        {
+          "id": "cap-ribs",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M-5.472 -1.5L-5.472 4.9M-2.736 -1.5L-2.736 4.9M0 -1.5L0 4.9M2.736 -1.5L2.736 4.9M5.472 -1.5L5.472 4.9",
+          "part": "closure",
+          "color": [
+            148,
+            155,
+            160
+          ]
+        },
+        {
+          "id": "cap-lower-edge",
+          "layer": "front",
+          "material": "plastic",
+          "role": "detail",
+          "path": "M-6.8 5.7L6.8 5.7",
+          "part": "closure",
+          "color": [
+            148,
+            155,
+            160
+          ]
+        }
+      ],
+      "params": [
+        {
+          "id": "closure",
+          "names": {
+            "en": "Screw cap"
+          },
+          "kind": "states",
+          "default": "closed",
+          "states": [
+            {
+              "id": "closed",
+              "names": {
+                "en": "Closed"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Liquid level"
+          },
+          "kind": "fill",
+          "liquid": "body",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "body",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "closure",
+          "param": "closure",
+          "motion": {
+            "per_state": {
+              "closed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                23.0,
+                38.5
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              1.75
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "body",
+          "region": "M-6.3 12.1L6.3 12.1L6.3 42.3Q6.3 43.5 5.1 43.5L-5.1 43.5Q-6.3 43.5 -6.3 42.3Z",
+          "meniscus": "concave"
+        }
+      ],
+      "labels": [
+        {
+          "id": "sample",
+          "at": [
+            0,
+            27.75
+          ]
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/weighing-bottle-squat-20",
+      "revision": 1,
+      "family": "weighing-bottle",
+      "variant": {
+        "form": "squat",
+        "volume_ml": "20"
+      },
+      "names": {
+        "en": "Ground-lid weighing bottle, squat, 20 mL"
+      },
+      "category": "vessel",
+      "keywords": [
+        "weighing bottle",
+        "ground lid",
+        "ground glass",
+        "balance",
+        "weigh by difference",
+        "squat",
+        "sample vessel"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "body",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-25 1.2L-25 28Q-25 30 -23 30L23 30Q25 30 25 28L25 1.2C25 -0.4 -25 -0.4 -25 1.2Z"
+        },
+        {
+          "id": "inside-base",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-23.5 27Q-23.5 28.5 -22 28.5L22 28.5Q23.5 28.5 23.5 27"
+        },
+        {
+          "id": "mouth-front",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-25 1.2C-25 2.8 25 2.8 25 1.2"
+        },
+        {
+          "id": "mouth-inner",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-23.7 1.2C-23.7 0.3 23.7 0.3 23.7 1.2C23.7 2.1 -23.7 2.1 -23.7 1.2Z"
+        },
+        {
+          "id": "socket-bottom",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-23.7 8L23.7 8",
+          "when": {
+            "closure": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "ground-plug",
+          "layer": "front",
+          "material": "frosted",
+          "role": "solid",
+          "path": "M-23.65 -0.4L23.65 -0.4L23.35 7.5Q0 8 -23.35 7.5Z",
+          "part": "closure"
+        },
+        {
+          "id": "lid-plate",
+          "layer": "front",
+          "material": "glass",
+          "role": "solid",
+          "path": "M-24.75 -3.2L24.75 -3.2Q25.65 -3.2 25.65 -2.3L25.65 -0.8Q25.65 0.1 24.75 0.1L-24.75 0.1Q-25.65 0.1 -25.65 -0.8L-25.65 -2.3Q-25.65 -3.2 -24.75 -3.2Z",
+          "part": "closure"
+        },
+        {
+          "id": "lid-knob",
+          "layer": "front",
+          "material": "glass",
+          "role": "solid",
+          "path": "M-5.6 -3.2L-6.5 -9.8Q-6.7 -11 0 -11Q6.7 -11 6.5 -9.8L5.6 -3.2Z",
+          "part": "closure"
+        },
+        {
+          "id": "knob-base",
+          "layer": "front",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-4.7 -5L4.7 -5",
+          "part": "closure"
+        },
+        {
+          "id": "ground-hatching",
+          "layer": "front",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-20.65 5.9L-18.65 2M-11.825 5.9L-9.825 2M0 5.9L2 2M11.825 5.9L13.825 2M18.65 5.9L20.65 2",
+          "part": "closure"
+        }
+      ],
+      "params": [
+        {
+          "id": "closure",
+          "names": {
+            "en": "Ground lid"
+          },
+          "kind": "states",
+          "default": "closed",
+          "states": [
+            {
+              "id": "closed",
+              "names": {
+                "en": "Closed"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Liquid level"
+          },
+          "kind": "fill",
+          "liquid": "body",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "body",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "closure",
+          "param": "closure",
+          "motion": {
+            "per_state": {
+              "closed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                64,
+                22.5
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -7
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "body",
+          "region": "M-23.5 9.3L23.5 9.3L23.5 26.9Q23.5 28.3 22.1 28.3L-22.1 28.3Q-23.5 28.3 -23.5 26.9Z",
+          "meniscus": "concave"
+        }
+      ],
+      "labels": [
+        {
+          "id": "sample",
+          "at": [
+            0,
+            19.5
+          ]
+        }
+      ]
+    }
+  ],
+  "seats": []
+}
