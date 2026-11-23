@@ -1,0 +1,3340 @@
+{
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [
+    {
+      "id": 21,
+      "position": {
+        "x": -39.375,
+        "y": 408.33333333333337
+      },
+      "text": "1 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 22,
+      "position": {
+        "x": 77.29166666666667,
+        "y": 408.33333333333337
+      },
+      "text": "2 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 23,
+      "position": {
+        "x": 193.95833333333334,
+        "y": 408.33333333333337
+      },
+      "text": "3 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 24,
+      "position": {
+        "x": 310.625,
+        "y": 408.33333333333337
+      },
+      "text": "5 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 25,
+      "position": {
+        "x": 427.2916666666667,
+        "y": 408.33333333333337
+      },
+      "text": "10 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 26,
+      "position": {
+        "x": -5.833333333333334,
+        "y": -122.50000000000001
+      },
+      "text": "Komagome pipettes",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 172,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 27,
+      "position": {
+        "x": 555.625,
+        "y": 291.6666666666667
+      },
+      "text": "150 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 28,
+      "position": {
+        "x": 672.2916666666667,
+        "y": 291.6666666666667
+      },
+      "text": "230 mm",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 29,
+      "position": {
+        "x": 414.1666666666667,
+        "y": -122.50000000000001
+      },
+      "text": "Pasteur pipettes",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 172,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 30,
+      "position": {
+        "x": 876.4583333333334,
+        "y": 577.5
+      },
+      "text": "1 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 31,
+      "position": {
+        "x": 993.1250000000001,
+        "y": 577.5
+      },
+      "text": "2 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 32,
+      "position": {
+        "x": 1109.7916666666667,
+        "y": 577.5
+      },
+      "text": "5 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 33,
+      "position": {
+        "x": 1226.4583333333335,
+        "y": 577.5
+      },
+      "text": "10 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 34,
+      "position": {
+        "x": 1343.125,
+        "y": 577.5
+      },
+      "text": "25 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 35,
+      "position": {
+        "x": 910.0000000000001,
+        "y": -122.50000000000001
+      },
+      "text": "Volumetric pipettes",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 172,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 36,
+      "position": {
+        "x": 65.625,
+        "y": 1236.6666666666667
+      },
+      "text": "1 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 37,
+      "position": {
+        "x": 182.29166666666669,
+        "y": 1236.6666666666667
+      },
+      "text": "2 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 38,
+      "position": {
+        "x": 298.95833333333337,
+        "y": 1236.6666666666667
+      },
+      "text": "5 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 39,
+      "position": {
+        "x": 415.625,
+        "y": 1236.6666666666667
+      },
+      "text": "10 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 40,
+      "position": {
+        "x": 40.833333333333336,
+        "y": 659.1666666666667
+      },
+      "text": "Intermediate graduated pipettes",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 172,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 41,
+      "position": {
+        "x": 835.625,
+        "y": 1236.6666666666667
+      },
+      "text": "1 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 42,
+      "position": {
+        "x": 952.2916666666667,
+        "y": 1236.6666666666667
+      },
+      "text": "2 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 43,
+      "position": {
+        "x": 1068.9583333333335,
+        "y": 1236.6666666666667
+      },
+      "text": "5 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 44,
+      "position": {
+        "x": 1185.625,
+        "y": 1236.6666666666667
+      },
+      "text": "10 mL",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9.5,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 35,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 45,
+      "position": {
+        "x": 810.8333333333334,
+        "y": 659.1666666666667
+      },
+      "text": "Tip-graduated pipettes",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 13,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 172,
+        "line_spacing": 1.14
+      }
+    }
+  ],
+  "arrows": [],
+  "graphics": [
+    {
+      "id": 1,
+      "kind": "piece",
+      "origin": {
+        "x": 11.666666666666668,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/komagome-pipette-1@1#b23ddc3e75272e79",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 2,
+      "kind": "piece",
+      "origin": {
+        "x": 128.33333333333334,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/komagome-pipette-2@1#a22459b4606b53e4",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 3,
+      "kind": "piece",
+      "origin": {
+        "x": 245.00000000000003,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/komagome-pipette-3@1#8c73f7ee3bfbfb2a",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 4,
+      "kind": "piece",
+      "origin": {
+        "x": 361.6666666666667,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/komagome-pipette-5@1#71f96d87af3ea512",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 5,
+      "kind": "piece",
+      "origin": {
+        "x": 478.33333333333337,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/komagome-pipette-10@1#092f38c0cffd33c0",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 6,
+      "kind": "piece",
+      "origin": {
+        "x": 606.6666666666667,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/pasteur-pipette-short@1#232447ff6ea69f79",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 7,
+      "kind": "piece",
+      "origin": {
+        "x": 723.3333333333334,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/pasteur-pipette-long@1#5ccc781d2112cd05",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 8,
+      "kind": "piece",
+      "origin": {
+        "x": 927.5000000000001,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-1@1#7de8058c185ba4ef",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 9,
+      "kind": "piece",
+      "origin": {
+        "x": 1044.1666666666667,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-2@1#7878792d1b722fb4",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 10,
+      "kind": "piece",
+      "origin": {
+        "x": 1160.8333333333335,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-5@1#67b6e4a0f748826f",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 11,
+      "kind": "piece",
+      "origin": {
+        "x": 1277.5,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-10@1#b0ef872e7e6425fa",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 12,
+      "kind": "piece",
+      "origin": {
+        "x": 1394.1666666666667,
+        "y": 0.0
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/volumetric-pipette-25@1#a58cf781d618d30d",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 13,
+      "kind": "piece",
+      "origin": {
+        "x": 116.66666666666667,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-intermediate-1@1#a85a59ef5d01d2bc",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 14,
+      "kind": "piece",
+      "origin": {
+        "x": 233.33333333333334,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-intermediate-2@1#62af509ffe6e2431",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 15,
+      "kind": "piece",
+      "origin": {
+        "x": 350.0,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-intermediate-5@1#703843a827d98770",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 16,
+      "kind": "piece",
+      "origin": {
+        "x": 466.6666666666667,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-intermediate-10@1#ee388b8a598047c0",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 17,
+      "kind": "piece",
+      "origin": {
+        "x": 886.6666666666667,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-tip-1@1#5020223982ba2353",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 18,
+      "kind": "piece",
+      "origin": {
+        "x": 1003.3333333333334,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-tip-2@1#39288312c008ad7e",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 19,
+      "kind": "piece",
+      "origin": {
+        "x": 1120.0,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-tip-5@1#4c13f959904af4a6",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    },
+    {
+      "id": 20,
+      "kind": "piece",
+      "origin": {
+        "x": 1236.6666666666667,
+        "y": 781.6666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/graduated-pipette-tip-10@1#cb490c1ec0f4e9d4",
+        "params": {
+          "fill": 0.4
+        }
+      }
+    }
+  ],
+  "piece_definitions": [
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-intermediate-1",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "1 mL",
+        "graduation": "Intermediate mark"
+      },
+      "names": {
+        "en": "Graduated pipette, 1 mL, Intermediate mark"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "intermediate mark",
+        "mohr",
+        "1 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.5 0L3.5 326C3.5 336 0.75 350 0.65 360L-0.65 360C-0.75 350 -3.5 336 -3.5 326L-3.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.95 1.4Q0 2.4 2.95 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.85 53.79H1.875V54.21H-2.85ZM-2.85 56.17H-0.4V56.49H-2.85ZM-2.85 58.5H-0.4V58.82H-2.85ZM-2.85 60.83H-0.4V61.15H-2.85ZM-2.85 63.16H-0.4V63.48H-2.85ZM-2.85 65.49H0.65V65.81H-2.85ZM-2.85 67.82H-0.4V68.14H-2.85ZM-2.85 70.15H-0.4V70.47H-2.85ZM-2.85 72.48H-0.4V72.8H-2.85ZM-2.85 74.81H-0.4V75.13H-2.85ZM-2.85 77.09H1.875V77.51H-2.85ZM-2.85 79.47H-0.4V79.79H-2.85ZM-2.85 81.8H-0.4V82.12H-2.85ZM-2.85 84.13H-0.4V84.45H-2.85ZM-2.85 86.46H-0.4V86.78H-2.85ZM-2.85 88.79H0.65V89.11H-2.85ZM-2.85 91.12H-0.4V91.44H-2.85ZM-2.85 93.45H-0.4V93.77H-2.85ZM-2.85 95.78H-0.4V96.1H-2.85ZM-2.85 98.11H-0.4V98.43H-2.85ZM-2.85 100.39H1.875V100.81H-2.85ZM-2.85 102.77H-0.4V103.09H-2.85ZM-2.85 105.1H-0.4V105.42H-2.85ZM-2.85 107.43H-0.4V107.75H-2.85ZM-2.85 109.76H-0.4V110.08H-2.85ZM-2.85 112.09H0.65V112.41H-2.85ZM-2.85 114.42H-0.4V114.74H-2.85ZM-2.85 116.75H-0.4V117.07H-2.85ZM-2.85 119.08H-0.4V119.4H-2.85ZM-2.85 121.41H-0.4V121.73H-2.85ZM-2.85 123.69H1.875V124.11H-2.85ZM-2.85 126.07H-0.4V126.39H-2.85ZM-2.85 128.4H-0.4V128.72H-2.85ZM-2.85 130.73H-0.4V131.05H-2.85ZM-2.85 133.06H-0.4V133.38H-2.85ZM-2.85 135.39H0.65V135.71H-2.85ZM-2.85 137.72H-0.4V138.04H-2.85ZM-2.85 140.05H-0.4V140.37H-2.85ZM-2.85 142.38H-0.4V142.7H-2.85ZM-2.85 144.71H-0.4V145.03H-2.85ZM-2.85 146.99H1.875V147.41H-2.85ZM-2.85 149.37H-0.4V149.69H-2.85ZM-2.85 151.7H-0.4V152.02H-2.85ZM-2.85 154.03H-0.4V154.35H-2.85ZM-2.85 156.36H-0.4V156.68H-2.85ZM-2.85 158.69H0.65V159.01H-2.85ZM-2.85 161.02H-0.4V161.34H-2.85ZM-2.85 163.35H-0.4V163.67H-2.85ZM-2.85 165.68H-0.4V166H-2.85ZM-2.85 168.01H-0.4V168.33H-2.85ZM-2.85 170.29H1.875V170.71H-2.85ZM-2.85 172.67H-0.4V172.99H-2.85ZM-2.85 175H-0.4V175.32H-2.85ZM-2.85 177.33H-0.4V177.65H-2.85ZM-2.85 179.66H-0.4V179.98H-2.85ZM-2.85 181.99H0.65V182.31H-2.85ZM-2.85 184.32H-0.4V184.64H-2.85ZM-2.85 186.65H-0.4V186.97H-2.85ZM-2.85 188.98H-0.4V189.3H-2.85ZM-2.85 191.31H-0.4V191.63H-2.85ZM-2.85 193.59H1.875V194.01H-2.85ZM-2.85 195.97H-0.4V196.29H-2.85ZM-2.85 198.3H-0.4V198.62H-2.85ZM-2.85 200.63H-0.4V200.95H-2.85ZM-2.85 202.96H-0.4V203.28H-2.85ZM-2.85 205.29H0.65V205.61H-2.85ZM-2.85 207.62H-0.4V207.94H-2.85ZM-2.85 209.95H-0.4V210.27H-2.85ZM-2.85 212.28H-0.4V212.6H-2.85ZM-2.85 214.61H-0.4V214.93H-2.85ZM-2.85 216.89H1.875V217.31H-2.85ZM-2.85 219.27H-0.4V219.59H-2.85ZM-2.85 221.6H-0.4V221.92H-2.85ZM-2.85 223.93H-0.4V224.25H-2.85ZM-2.85 226.26H-0.4V226.58H-2.85ZM-2.85 228.59H0.65V228.91H-2.85ZM-2.85 230.92H-0.4V231.24H-2.85ZM-2.85 233.25H-0.4V233.57H-2.85ZM-2.85 235.58H-0.4V235.9H-2.85ZM-2.85 237.91H-0.4V238.23H-2.85ZM-2.85 240.19H1.875V240.61H-2.85ZM-2.85 242.57H-0.4V242.89H-2.85ZM-2.85 244.9H-0.4V245.22H-2.85ZM-2.85 247.23H-0.4V247.55H-2.85ZM-2.85 249.56H-0.4V249.88H-2.85ZM-2.85 251.89H0.65V252.21H-2.85ZM-2.85 254.22H-0.4V254.54H-2.85ZM-2.85 256.55H-0.4V256.87H-2.85ZM-2.85 258.88H-0.4V259.2H-2.85ZM-2.85 261.21H-0.4V261.53H-2.85ZM-2.85 263.49H1.875V263.91H-2.85ZM-2.85 265.87H-0.4V266.19H-2.85ZM-2.85 268.2H-0.4V268.52H-2.85ZM-2.85 270.53H-0.4V270.85H-2.85ZM-2.85 272.86H-0.4V273.18H-2.85ZM-2.85 275.19H0.65V275.51H-2.85ZM-2.85 277.52H-0.4V277.84H-2.85ZM-2.85 279.85H-0.4V280.17H-2.85ZM-2.85 282.18H-0.4V282.5H-2.85ZM-2.85 284.51H-0.4V284.83H-2.85ZM-2.85 286.79H1.875V287.21H-2.85Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-1.5 34H1.5V37H-1.5ZM-1.15 34.35V36.65H1.15V34.35Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.95 1.4L2.95 326C2.95 336 0.2 350 0.14 358.8L-0.14 358.8C-0.2 350 -2.95 336 -2.95 326L-2.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-intermediate-10",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "10 mL",
+        "graduation": "Intermediate mark"
+      },
+      "names": {
+        "en": "Graduated pipette, 10 mL, Intermediate mark"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "intermediate mark",
+        "mohr",
+        "10 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M4 0L4 336C4 346 0.75 360 0.65 370L-0.65 370C-0.75 360 -4 346 -4 336L-4 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.45 1.4Q0 2.4 3.45 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.35 53.79H2.05V54.21H-3.35ZM-3.35 56.27H-0.55V56.59H-3.35ZM-3.35 58.7H-0.55V59.02H-3.35ZM-3.35 61.13H-0.55V61.45H-3.35ZM-3.35 63.56H-0.55V63.88H-3.35ZM-3.35 65.99H0.65V66.31H-3.35ZM-3.35 68.42H-0.55V68.74H-3.35ZM-3.35 70.85H-0.55V71.17H-3.35ZM-3.35 73.28H-0.55V73.6H-3.35ZM-3.35 75.71H-0.55V76.03H-3.35ZM-3.35 78.09H2.05V78.51H-3.35ZM-3.35 80.57H-0.55V80.89H-3.35ZM-3.35 83H-0.55V83.32H-3.35ZM-3.35 85.43H-0.55V85.75H-3.35ZM-3.35 87.86H-0.55V88.18H-3.35ZM-3.35 90.29H0.65V90.61H-3.35ZM-3.35 92.72H-0.55V93.04H-3.35ZM-3.35 95.15H-0.55V95.47H-3.35ZM-3.35 97.58H-0.55V97.9H-3.35ZM-3.35 100.01H-0.55V100.33H-3.35ZM-3.35 102.39H2.05V102.81H-3.35ZM-3.35 104.87H-0.55V105.19H-3.35ZM-3.35 107.3H-0.55V107.62H-3.35ZM-3.35 109.73H-0.55V110.05H-3.35ZM-3.35 112.16H-0.55V112.48H-3.35ZM-3.35 114.59H0.65V114.91H-3.35ZM-3.35 117.02H-0.55V117.34H-3.35ZM-3.35 119.45H-0.55V119.77H-3.35ZM-3.35 121.88H-0.55V122.2H-3.35ZM-3.35 124.31H-0.55V124.63H-3.35ZM-3.35 126.69H2.05V127.11H-3.35ZM-3.35 129.17H-0.55V129.49H-3.35ZM-3.35 131.6H-0.55V131.92H-3.35ZM-3.35 134.03H-0.55V134.35H-3.35ZM-3.35 136.46H-0.55V136.78H-3.35ZM-3.35 138.89H0.65V139.21H-3.35ZM-3.35 141.32H-0.55V141.64H-3.35ZM-3.35 143.75H-0.55V144.07H-3.35ZM-3.35 146.18H-0.55V146.5H-3.35ZM-3.35 148.61H-0.55V148.93H-3.35ZM-3.35 150.99H2.05V151.41H-3.35ZM-3.35 153.47H-0.55V153.79H-3.35ZM-3.35 155.9H-0.55V156.22H-3.35ZM-3.35 158.33H-0.55V158.65H-3.35ZM-3.35 160.76H-0.55V161.08H-3.35ZM-3.35 163.19H0.65V163.51H-3.35ZM-3.35 165.62H-0.55V165.94H-3.35ZM-3.35 168.05H-0.55V168.37H-3.35ZM-3.35 170.48H-0.55V170.8H-3.35ZM-3.35 172.91H-0.55V173.23H-3.35ZM-3.35 175.29H2.05V175.71H-3.35ZM-3.35 177.77H-0.55V178.09H-3.35ZM-3.35 180.2H-0.55V180.52H-3.35ZM-3.35 182.63H-0.55V182.95H-3.35ZM-3.35 185.06H-0.55V185.38H-3.35ZM-3.35 187.49H0.65V187.81H-3.35ZM-3.35 189.92H-0.55V190.24H-3.35ZM-3.35 192.35H-0.55V192.67H-3.35ZM-3.35 194.78H-0.55V195.1H-3.35ZM-3.35 197.21H-0.55V197.53H-3.35ZM-3.35 199.59H2.05V200.01H-3.35ZM-3.35 202.07H-0.55V202.39H-3.35ZM-3.35 204.5H-0.55V204.82H-3.35ZM-3.35 206.93H-0.55V207.25H-3.35ZM-3.35 209.36H-0.55V209.68H-3.35ZM-3.35 211.79H0.65V212.11H-3.35ZM-3.35 214.22H-0.55V214.54H-3.35ZM-3.35 216.65H-0.55V216.97H-3.35ZM-3.35 219.08H-0.55V219.4H-3.35ZM-3.35 221.51H-0.55V221.83H-3.35ZM-3.35 223.89H2.05V224.31H-3.35ZM-3.35 226.37H-0.55V226.69H-3.35ZM-3.35 228.8H-0.55V229.12H-3.35ZM-3.35 231.23H-0.55V231.55H-3.35ZM-3.35 233.66H-0.55V233.98H-3.35ZM-3.35 236.09H0.65V236.41H-3.35ZM-3.35 238.52H-0.55V238.84H-3.35ZM-3.35 240.95H-0.55V241.27H-3.35ZM-3.35 243.38H-0.55V243.7H-3.35ZM-3.35 245.81H-0.55V246.13H-3.35ZM-3.35 248.19H2.05V248.61H-3.35ZM-3.35 250.67H-0.55V250.99H-3.35ZM-3.35 253.1H-0.55V253.42H-3.35ZM-3.35 255.53H-0.55V255.85H-3.35ZM-3.35 257.96H-0.55V258.28H-3.35ZM-3.35 260.39H0.65V260.71H-3.35ZM-3.35 262.82H-0.55V263.14H-3.35ZM-3.35 265.25H-0.55V265.57H-3.35ZM-3.35 267.68H-0.55V268H-3.35ZM-3.35 270.11H-0.55V270.43H-3.35ZM-3.35 272.49H2.05V272.91H-3.35ZM-3.35 274.97H-0.55V275.29H-3.35ZM-3.35 277.4H-0.55V277.72H-3.35ZM-3.35 279.83H-0.55V280.15H-3.35ZM-3.35 282.26H-0.55V282.58H-3.35ZM-3.35 284.69H0.65V285.01H-3.35ZM-3.35 287.12H-0.55V287.44H-3.35ZM-3.35 289.55H-0.55V289.87H-3.35ZM-3.35 291.98H-0.55V292.3H-3.35ZM-3.35 294.41H-0.55V294.73H-3.35ZM-3.35 296.79H2.05V297.21H-3.35Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-1.5 34H1.5V37H-1.5ZM-1.15 34.35V36.65H1.15V34.35Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.45 1.4L3.45 336C3.45 346 0.2 360 0.14 368.8L-0.14 368.8C-0.2 360 -3.45 346 -3.45 336L-3.45 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-intermediate-2",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "2 mL",
+        "graduation": "Intermediate mark"
+      },
+      "names": {
+        "en": "Graduated pipette, 2 mL, Intermediate mark"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "intermediate mark",
+        "mohr",
+        "2 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.75 0L3.75 326C3.75 336 0.75 350 0.65 360L-0.65 360C-0.75 350 -3.75 336 -3.75 326L-3.75 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.2 1.4Q0 2.4 3.2 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.1 53.79H1.962V54.21H-3.1ZM-3.1 56.17H-0.475V56.49H-3.1ZM-3.1 58.5H-0.475V58.82H-3.1ZM-3.1 60.83H-0.475V61.15H-3.1ZM-3.1 63.16H-0.475V63.48H-3.1ZM-3.1 65.49H0.65V65.81H-3.1ZM-3.1 67.82H-0.475V68.14H-3.1ZM-3.1 70.15H-0.475V70.47H-3.1ZM-3.1 72.48H-0.475V72.8H-3.1ZM-3.1 74.81H-0.475V75.13H-3.1ZM-3.1 77.09H1.962V77.51H-3.1ZM-3.1 79.47H-0.475V79.79H-3.1ZM-3.1 81.8H-0.475V82.12H-3.1ZM-3.1 84.13H-0.475V84.45H-3.1ZM-3.1 86.46H-0.475V86.78H-3.1ZM-3.1 88.79H0.65V89.11H-3.1ZM-3.1 91.12H-0.475V91.44H-3.1ZM-3.1 93.45H-0.475V93.77H-3.1ZM-3.1 95.78H-0.475V96.1H-3.1ZM-3.1 98.11H-0.475V98.43H-3.1ZM-3.1 100.39H1.962V100.81H-3.1ZM-3.1 102.77H-0.475V103.09H-3.1ZM-3.1 105.1H-0.475V105.42H-3.1ZM-3.1 107.43H-0.475V107.75H-3.1ZM-3.1 109.76H-0.475V110.08H-3.1ZM-3.1 112.09H0.65V112.41H-3.1ZM-3.1 114.42H-0.475V114.74H-3.1ZM-3.1 116.75H-0.475V117.07H-3.1ZM-3.1 119.08H-0.475V119.4H-3.1ZM-3.1 121.41H-0.475V121.73H-3.1ZM-3.1 123.69H1.962V124.11H-3.1ZM-3.1 126.07H-0.475V126.39H-3.1ZM-3.1 128.4H-0.475V128.72H-3.1ZM-3.1 130.73H-0.475V131.05H-3.1ZM-3.1 133.06H-0.475V133.38H-3.1ZM-3.1 135.39H0.65V135.71H-3.1ZM-3.1 137.72H-0.475V138.04H-3.1ZM-3.1 140.05H-0.475V140.37H-3.1ZM-3.1 142.38H-0.475V142.7H-3.1ZM-3.1 144.71H-0.475V145.03H-3.1ZM-3.1 146.99H1.962V147.41H-3.1ZM-3.1 149.37H-0.475V149.69H-3.1ZM-3.1 151.7H-0.475V152.02H-3.1ZM-3.1 154.03H-0.475V154.35H-3.1ZM-3.1 156.36H-0.475V156.68H-3.1ZM-3.1 158.69H0.65V159.01H-3.1ZM-3.1 161.02H-0.475V161.34H-3.1ZM-3.1 163.35H-0.475V163.67H-3.1ZM-3.1 165.68H-0.475V166H-3.1ZM-3.1 168.01H-0.475V168.33H-3.1ZM-3.1 170.29H1.962V170.71H-3.1ZM-3.1 172.67H-0.475V172.99H-3.1ZM-3.1 175H-0.475V175.32H-3.1ZM-3.1 177.33H-0.475V177.65H-3.1ZM-3.1 179.66H-0.475V179.98H-3.1ZM-3.1 181.99H0.65V182.31H-3.1ZM-3.1 184.32H-0.475V184.64H-3.1ZM-3.1 186.65H-0.475V186.97H-3.1ZM-3.1 188.98H-0.475V189.3H-3.1ZM-3.1 191.31H-0.475V191.63H-3.1ZM-3.1 193.59H1.962V194.01H-3.1ZM-3.1 195.97H-0.475V196.29H-3.1ZM-3.1 198.3H-0.475V198.62H-3.1ZM-3.1 200.63H-0.475V200.95H-3.1ZM-3.1 202.96H-0.475V203.28H-3.1ZM-3.1 205.29H0.65V205.61H-3.1ZM-3.1 207.62H-0.475V207.94H-3.1ZM-3.1 209.95H-0.475V210.27H-3.1ZM-3.1 212.28H-0.475V212.6H-3.1ZM-3.1 214.61H-0.475V214.93H-3.1ZM-3.1 216.89H1.962V217.31H-3.1ZM-3.1 219.27H-0.475V219.59H-3.1ZM-3.1 221.6H-0.475V221.92H-3.1ZM-3.1 223.93H-0.475V224.25H-3.1ZM-3.1 226.26H-0.475V226.58H-3.1ZM-3.1 228.59H0.65V228.91H-3.1ZM-3.1 230.92H-0.475V231.24H-3.1ZM-3.1 233.25H-0.475V233.57H-3.1ZM-3.1 235.58H-0.475V235.9H-3.1ZM-3.1 237.91H-0.475V238.23H-3.1ZM-3.1 240.19H1.962V240.61H-3.1ZM-3.1 242.57H-0.475V242.89H-3.1ZM-3.1 244.9H-0.475V245.22H-3.1ZM-3.1 247.23H-0.475V247.55H-3.1ZM-3.1 249.56H-0.475V249.88H-3.1ZM-3.1 251.89H0.65V252.21H-3.1ZM-3.1 254.22H-0.475V254.54H-3.1ZM-3.1 256.55H-0.475V256.87H-3.1ZM-3.1 258.88H-0.475V259.2H-3.1ZM-3.1 261.21H-0.475V261.53H-3.1ZM-3.1 263.49H1.962V263.91H-3.1ZM-3.1 265.87H-0.475V266.19H-3.1ZM-3.1 268.2H-0.475V268.52H-3.1ZM-3.1 270.53H-0.475V270.85H-3.1ZM-3.1 272.86H-0.475V273.18H-3.1ZM-3.1 275.19H0.65V275.51H-3.1ZM-3.1 277.52H-0.475V277.84H-3.1ZM-3.1 279.85H-0.475V280.17H-3.1ZM-3.1 282.18H-0.475V282.5H-3.1ZM-3.1 284.51H-0.475V284.83H-3.1ZM-3.1 286.79H1.962V287.21H-3.1Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-1.5 34H1.5V37H-1.5ZM-1.15 34.35V36.65H1.15V34.35Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.2 1.4L3.2 326C3.2 336 0.2 350 0.14 358.8L-0.14 358.8C-0.2 350 -3.2 336 -3.2 326L-3.2 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-intermediate-5",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "5 mL",
+        "graduation": "Intermediate mark"
+      },
+      "names": {
+        "en": "Graduated pipette, 5 mL, Intermediate mark"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "intermediate mark",
+        "mohr",
+        "5 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.5 0L3.5 332C3.5 342 0.75 356 0.65 366L-0.65 366C-0.75 356 -3.5 342 -3.5 332L-3.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.95 1.4Q0 2.4 2.95 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.85 53.79H1.875V54.21H-2.85ZM-2.85 56.23H-0.4V56.55H-2.85ZM-2.85 58.62H-0.4V58.94H-2.85ZM-2.85 61.01H-0.4V61.33H-2.85ZM-2.85 63.4H-0.4V63.72H-2.85ZM-2.85 65.79H0.65V66.11H-2.85ZM-2.85 68.18H-0.4V68.5H-2.85ZM-2.85 70.57H-0.4V70.89H-2.85ZM-2.85 72.96H-0.4V73.28H-2.85ZM-2.85 75.35H-0.4V75.67H-2.85ZM-2.85 77.69H1.875V78.11H-2.85ZM-2.85 80.13H-0.4V80.45H-2.85ZM-2.85 82.52H-0.4V82.84H-2.85ZM-2.85 84.91H-0.4V85.23H-2.85ZM-2.85 87.3H-0.4V87.62H-2.85ZM-2.85 89.69H0.65V90.01H-2.85ZM-2.85 92.08H-0.4V92.4H-2.85ZM-2.85 94.47H-0.4V94.79H-2.85ZM-2.85 96.86H-0.4V97.18H-2.85ZM-2.85 99.25H-0.4V99.57H-2.85ZM-2.85 101.59H1.875V102.01H-2.85ZM-2.85 104.03H-0.4V104.35H-2.85ZM-2.85 106.42H-0.4V106.74H-2.85ZM-2.85 108.81H-0.4V109.13H-2.85ZM-2.85 111.2H-0.4V111.52H-2.85ZM-2.85 113.59H0.65V113.91H-2.85ZM-2.85 115.98H-0.4V116.3H-2.85ZM-2.85 118.37H-0.4V118.69H-2.85ZM-2.85 120.76H-0.4V121.08H-2.85ZM-2.85 123.15H-0.4V123.47H-2.85ZM-2.85 125.49H1.875V125.91H-2.85ZM-2.85 127.93H-0.4V128.25H-2.85ZM-2.85 130.32H-0.4V130.64H-2.85ZM-2.85 132.71H-0.4V133.03H-2.85ZM-2.85 135.1H-0.4V135.42H-2.85ZM-2.85 137.49H0.65V137.81H-2.85ZM-2.85 139.88H-0.4V140.2H-2.85ZM-2.85 142.27H-0.4V142.59H-2.85ZM-2.85 144.66H-0.4V144.98H-2.85ZM-2.85 147.05H-0.4V147.37H-2.85ZM-2.85 149.39H1.875V149.81H-2.85ZM-2.85 151.83H-0.4V152.15H-2.85ZM-2.85 154.22H-0.4V154.54H-2.85ZM-2.85 156.61H-0.4V156.93H-2.85ZM-2.85 159H-0.4V159.32H-2.85ZM-2.85 161.39H0.65V161.71H-2.85ZM-2.85 163.78H-0.4V164.1H-2.85ZM-2.85 166.17H-0.4V166.49H-2.85ZM-2.85 168.56H-0.4V168.88H-2.85ZM-2.85 170.95H-0.4V171.27H-2.85ZM-2.85 173.29H1.875V173.71H-2.85ZM-2.85 175.73H-0.4V176.05H-2.85ZM-2.85 178.12H-0.4V178.44H-2.85ZM-2.85 180.51H-0.4V180.83H-2.85ZM-2.85 182.9H-0.4V183.22H-2.85ZM-2.85 185.29H0.65V185.61H-2.85ZM-2.85 187.68H-0.4V188H-2.85ZM-2.85 190.07H-0.4V190.39H-2.85ZM-2.85 192.46H-0.4V192.78H-2.85ZM-2.85 194.85H-0.4V195.17H-2.85ZM-2.85 197.19H1.875V197.61H-2.85ZM-2.85 199.63H-0.4V199.95H-2.85ZM-2.85 202.02H-0.4V202.34H-2.85ZM-2.85 204.41H-0.4V204.73H-2.85ZM-2.85 206.8H-0.4V207.12H-2.85ZM-2.85 209.19H0.65V209.51H-2.85ZM-2.85 211.58H-0.4V211.9H-2.85ZM-2.85 213.97H-0.4V214.29H-2.85ZM-2.85 216.36H-0.4V216.68H-2.85ZM-2.85 218.75H-0.4V219.07H-2.85ZM-2.85 221.09H1.875V221.51H-2.85ZM-2.85 223.53H-0.4V223.85H-2.85ZM-2.85 225.92H-0.4V226.24H-2.85ZM-2.85 228.31H-0.4V228.63H-2.85ZM-2.85 230.7H-0.4V231.02H-2.85ZM-2.85 233.09H0.65V233.41H-2.85ZM-2.85 235.48H-0.4V235.8H-2.85ZM-2.85 237.87H-0.4V238.19H-2.85ZM-2.85 240.26H-0.4V240.58H-2.85ZM-2.85 242.65H-0.4V242.97H-2.85ZM-2.85 244.99H1.875V245.41H-2.85ZM-2.85 247.43H-0.4V247.75H-2.85ZM-2.85 249.82H-0.4V250.14H-2.85ZM-2.85 252.21H-0.4V252.53H-2.85ZM-2.85 254.6H-0.4V254.92H-2.85ZM-2.85 256.99H0.65V257.31H-2.85ZM-2.85 259.38H-0.4V259.7H-2.85ZM-2.85 261.77H-0.4V262.09H-2.85ZM-2.85 264.16H-0.4V264.48H-2.85ZM-2.85 266.55H-0.4V266.87H-2.85ZM-2.85 268.89H1.875V269.31H-2.85ZM-2.85 271.33H-0.4V271.65H-2.85ZM-2.85 273.72H-0.4V274.04H-2.85ZM-2.85 276.11H-0.4V276.43H-2.85ZM-2.85 278.5H-0.4V278.82H-2.85ZM-2.85 280.89H0.65V281.21H-2.85ZM-2.85 283.28H-0.4V283.6H-2.85ZM-2.85 285.67H-0.4V285.99H-2.85ZM-2.85 288.06H-0.4V288.38H-2.85ZM-2.85 290.45H-0.4V290.77H-2.85ZM-2.85 292.79H1.875V293.21H-2.85Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-1.5 34H1.5V37H-1.5ZM-1.15 34.35V36.65H1.15V34.35Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.95 1.4L2.95 332C2.95 342 0.2 356 0.14 364.8L-0.14 364.8C-0.2 356 -2.95 342 -2.95 332L-2.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-tip-1",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "1 mL",
+        "graduation": "Tip graduated"
+      },
+      "names": {
+        "en": "Graduated pipette, 1 mL, Tip graduated"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "tip graduated",
+        "tip measuring",
+        "1 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.5 0L3.5 326C3.5 336 0.75 350 0.65 360L-0.65 360C-0.75 350 -3.5 336 -3.5 326L-3.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.95 1.4Q0 2.4 2.95 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.85 53.79H1.875V54.21H-2.85ZM-2.85 56.5H-0.4V56.82H-2.85ZM-2.85 59.16H-0.4V59.48H-2.85ZM-2.85 61.82H-0.4V62.14H-2.85ZM-2.85 64.48H-0.4V64.8H-2.85ZM-2.85 67.14H0.65V67.46H-2.85ZM-2.85 69.8H-0.4V70.12H-2.85ZM-2.85 72.46H-0.4V72.78H-2.85ZM-2.85 75.12H-0.4V75.44H-2.85ZM-2.85 77.78H-0.4V78.1H-2.85ZM-2.85 80.39H1.875V80.81H-2.85ZM-2.85 83.1H-0.4V83.42H-2.85ZM-2.85 85.76H-0.4V86.08H-2.85ZM-2.85 88.42H-0.4V88.74H-2.85ZM-2.85 91.08H-0.4V91.4H-2.85ZM-2.85 93.74H0.65V94.06H-2.85ZM-2.85 96.4H-0.4V96.72H-2.85ZM-2.85 99.06H-0.4V99.38H-2.85ZM-2.85 101.72H-0.4V102.04H-2.85ZM-2.85 104.38H-0.4V104.7H-2.85ZM-2.85 106.99H1.875V107.41H-2.85ZM-2.85 109.7H-0.4V110.02H-2.85ZM-2.85 112.36H-0.4V112.68H-2.85ZM-2.85 115.02H-0.4V115.34H-2.85ZM-2.85 117.68H-0.4V118H-2.85ZM-2.85 120.34H0.65V120.66H-2.85ZM-2.85 123H-0.4V123.32H-2.85ZM-2.85 125.66H-0.4V125.98H-2.85ZM-2.85 128.32H-0.4V128.64H-2.85ZM-2.85 130.98H-0.4V131.3H-2.85ZM-2.85 133.59H1.875V134.01H-2.85ZM-2.85 136.3H-0.4V136.62H-2.85ZM-2.85 138.96H-0.4V139.28H-2.85ZM-2.85 141.62H-0.4V141.94H-2.85ZM-2.85 144.28H-0.4V144.6H-2.85ZM-2.85 146.94H0.65V147.26H-2.85ZM-2.85 149.6H-0.4V149.92H-2.85ZM-2.85 152.26H-0.4V152.58H-2.85ZM-2.85 154.92H-0.4V155.24H-2.85ZM-2.85 157.58H-0.4V157.9H-2.85ZM-2.85 160.19H1.875V160.61H-2.85ZM-2.85 162.9H-0.4V163.22H-2.85ZM-2.85 165.56H-0.4V165.88H-2.85ZM-2.85 168.22H-0.4V168.54H-2.85ZM-2.85 170.88H-0.4V171.2H-2.85ZM-2.85 173.54H0.65V173.86H-2.85ZM-2.85 176.2H-0.4V176.52H-2.85ZM-2.85 178.86H-0.4V179.18H-2.85ZM-2.85 181.52H-0.4V181.84H-2.85ZM-2.85 184.18H-0.4V184.5H-2.85ZM-2.85 186.79H1.875V187.21H-2.85ZM-2.85 189.5H-0.4V189.82H-2.85ZM-2.85 192.16H-0.4V192.48H-2.85ZM-2.85 194.82H-0.4V195.14H-2.85ZM-2.85 197.48H-0.4V197.8H-2.85ZM-2.85 200.14H0.65V200.46H-2.85ZM-2.85 202.8H-0.4V203.12H-2.85ZM-2.85 205.46H-0.4V205.78H-2.85ZM-2.85 208.12H-0.4V208.44H-2.85ZM-2.85 210.78H-0.4V211.1H-2.85ZM-2.85 213.39H1.875V213.81H-2.85ZM-2.85 216.1H-0.4V216.42H-2.85ZM-2.85 218.76H-0.4V219.08H-2.85ZM-2.85 221.42H-0.4V221.74H-2.85ZM-2.85 224.08H-0.4V224.4H-2.85ZM-2.85 226.74H0.65V227.06H-2.85ZM-2.85 229.4H-0.4V229.72H-2.85ZM-2.85 232.06H-0.4V232.38H-2.85ZM-2.85 234.72H-0.4V235.04H-2.85ZM-2.85 237.38H-0.4V237.7H-2.85ZM-2.85 239.99H1.875V240.41H-2.85ZM-2.85 242.7H-0.4V243.02H-2.85ZM-2.85 245.36H-0.4V245.68H-2.85ZM-2.85 248.02H-0.4V248.34H-2.85ZM-2.85 250.68H-0.4V251H-2.85ZM-2.85 253.34H0.65V253.66H-2.85ZM-2.85 256H-0.4V256.32H-2.85ZM-2.85 258.66H-0.4V258.98H-2.85ZM-2.85 261.32H-0.4V261.64H-2.85ZM-2.85 263.98H-0.4V264.3H-2.85ZM-2.85 266.59H1.875V267.01H-2.85ZM-2.85 269.3H-0.4V269.62H-2.85ZM-2.85 271.96H-0.4V272.28H-2.85ZM-2.85 274.62H-0.4V274.94H-2.85ZM-2.85 277.28H-0.4V277.6H-2.85ZM-2.85 279.94H0.65V280.26H-2.85ZM-2.85 282.6H-0.4V282.92H-2.85ZM-2.85 285.26H-0.4V285.58H-2.85ZM-2.85 287.92H-0.4V288.24H-2.85ZM-2.85 290.58H-0.4V290.9H-2.85ZM-2.85 293.19H1.875V293.61H-2.85ZM-2.85 295.9H-0.4V296.22H-2.85ZM-2.85 298.56H-0.4V298.88H-2.85ZM-2.85 301.22H-0.4V301.54H-2.85ZM-2.85 303.88H-0.4V304.2H-2.85ZM-2.85 306.54H0.65V306.86H-2.85ZM-2.85 309.2H-0.4V309.52H-2.85ZM-2.85 311.86H-0.4V312.18H-2.85ZM-2.85 314.52H-0.4V314.84H-2.85ZM-2.85 317.18H-0.4V317.5H-2.85ZM-2.85 319.79H1.875V320.21H-2.85Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M0 33.8L1.8 37H-1.8ZM0 34.55L-1.2 36.65H1.2Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.95 1.4L2.95 326C2.95 336 0.2 350 0.14 358.8L-0.14 358.8C-0.2 350 -2.95 336 -2.95 326L-2.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-tip-10",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "10 mL",
+        "graduation": "Tip graduated"
+      },
+      "names": {
+        "en": "Graduated pipette, 10 mL, Tip graduated"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "tip graduated",
+        "tip measuring",
+        "10 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M4 0L4 336C4 346 0.75 360 0.65 370L-0.65 370C-0.75 360 -4 346 -4 336L-4 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.45 1.4Q0 2.4 3.45 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.35 53.79H2.05V54.21H-3.35ZM-3.35 56.6H-0.55V56.92H-3.35ZM-3.35 59.36H-0.55V59.68H-3.35ZM-3.35 62.12H-0.55V62.44H-3.35ZM-3.35 64.88H-0.55V65.2H-3.35ZM-3.35 67.64H0.65V67.96H-3.35ZM-3.35 70.4H-0.55V70.72H-3.35ZM-3.35 73.16H-0.55V73.48H-3.35ZM-3.35 75.92H-0.55V76.24H-3.35ZM-3.35 78.68H-0.55V79H-3.35ZM-3.35 81.39H2.05V81.81H-3.35ZM-3.35 84.2H-0.55V84.52H-3.35ZM-3.35 86.96H-0.55V87.28H-3.35ZM-3.35 89.72H-0.55V90.04H-3.35ZM-3.35 92.48H-0.55V92.8H-3.35ZM-3.35 95.24H0.65V95.56H-3.35ZM-3.35 98H-0.55V98.32H-3.35ZM-3.35 100.76H-0.55V101.08H-3.35ZM-3.35 103.52H-0.55V103.84H-3.35ZM-3.35 106.28H-0.55V106.6H-3.35ZM-3.35 108.99H2.05V109.41H-3.35ZM-3.35 111.8H-0.55V112.12H-3.35ZM-3.35 114.56H-0.55V114.88H-3.35ZM-3.35 117.32H-0.55V117.64H-3.35ZM-3.35 120.08H-0.55V120.4H-3.35ZM-3.35 122.84H0.65V123.16H-3.35ZM-3.35 125.6H-0.55V125.92H-3.35ZM-3.35 128.36H-0.55V128.68H-3.35ZM-3.35 131.12H-0.55V131.44H-3.35ZM-3.35 133.88H-0.55V134.2H-3.35ZM-3.35 136.59H2.05V137.01H-3.35ZM-3.35 139.4H-0.55V139.72H-3.35ZM-3.35 142.16H-0.55V142.48H-3.35ZM-3.35 144.92H-0.55V145.24H-3.35ZM-3.35 147.68H-0.55V148H-3.35ZM-3.35 150.44H0.65V150.76H-3.35ZM-3.35 153.2H-0.55V153.52H-3.35ZM-3.35 155.96H-0.55V156.28H-3.35ZM-3.35 158.72H-0.55V159.04H-3.35ZM-3.35 161.48H-0.55V161.8H-3.35ZM-3.35 164.19H2.05V164.61H-3.35ZM-3.35 167H-0.55V167.32H-3.35ZM-3.35 169.76H-0.55V170.08H-3.35ZM-3.35 172.52H-0.55V172.84H-3.35ZM-3.35 175.28H-0.55V175.6H-3.35ZM-3.35 178.04H0.65V178.36H-3.35ZM-3.35 180.8H-0.55V181.12H-3.35ZM-3.35 183.56H-0.55V183.88H-3.35ZM-3.35 186.32H-0.55V186.64H-3.35ZM-3.35 189.08H-0.55V189.4H-3.35ZM-3.35 191.79H2.05V192.21H-3.35ZM-3.35 194.6H-0.55V194.92H-3.35ZM-3.35 197.36H-0.55V197.68H-3.35ZM-3.35 200.12H-0.55V200.44H-3.35ZM-3.35 202.88H-0.55V203.2H-3.35ZM-3.35 205.64H0.65V205.96H-3.35ZM-3.35 208.4H-0.55V208.72H-3.35ZM-3.35 211.16H-0.55V211.48H-3.35ZM-3.35 213.92H-0.55V214.24H-3.35ZM-3.35 216.68H-0.55V217H-3.35ZM-3.35 219.39H2.05V219.81H-3.35ZM-3.35 222.2H-0.55V222.52H-3.35ZM-3.35 224.96H-0.55V225.28H-3.35ZM-3.35 227.72H-0.55V228.04H-3.35ZM-3.35 230.48H-0.55V230.8H-3.35ZM-3.35 233.24H0.65V233.56H-3.35ZM-3.35 236H-0.55V236.32H-3.35ZM-3.35 238.76H-0.55V239.08H-3.35ZM-3.35 241.52H-0.55V241.84H-3.35ZM-3.35 244.28H-0.55V244.6H-3.35ZM-3.35 246.99H2.05V247.41H-3.35ZM-3.35 249.8H-0.55V250.12H-3.35ZM-3.35 252.56H-0.55V252.88H-3.35ZM-3.35 255.32H-0.55V255.64H-3.35ZM-3.35 258.08H-0.55V258.4H-3.35ZM-3.35 260.84H0.65V261.16H-3.35ZM-3.35 263.6H-0.55V263.92H-3.35ZM-3.35 266.36H-0.55V266.68H-3.35ZM-3.35 269.12H-0.55V269.44H-3.35ZM-3.35 271.88H-0.55V272.2H-3.35ZM-3.35 274.59H2.05V275.01H-3.35ZM-3.35 277.4H-0.55V277.72H-3.35ZM-3.35 280.16H-0.55V280.48H-3.35ZM-3.35 282.92H-0.55V283.24H-3.35ZM-3.35 285.68H-0.55V286H-3.35ZM-3.35 288.44H0.65V288.76H-3.35ZM-3.35 291.2H-0.55V291.52H-3.35ZM-3.35 293.96H-0.55V294.28H-3.35ZM-3.35 296.72H-0.55V297.04H-3.35ZM-3.35 299.48H-0.55V299.8H-3.35ZM-3.35 302.19H2.05V302.61H-3.35ZM-3.35 305H-0.55V305.32H-3.35ZM-3.35 307.76H-0.55V308.08H-3.35ZM-3.35 310.52H-0.55V310.84H-3.35ZM-3.35 313.28H-0.55V313.6H-3.35ZM-3.35 316.04H0.65V316.36H-3.35ZM-3.35 318.8H-0.55V319.12H-3.35ZM-3.35 321.56H-0.55V321.88H-3.35ZM-3.35 324.32H-0.55V324.64H-3.35ZM-3.35 327.08H-0.55V327.4H-3.35ZM-3.35 329.79H2.05V330.21H-3.35Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M0 33.8L1.8 37H-1.8ZM0 34.55L-1.2 36.65H1.2Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.45 1.4L3.45 336C3.45 346 0.2 360 0.14 368.8L-0.14 368.8C-0.2 360 -3.45 346 -3.45 336L-3.45 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-tip-2",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "2 mL",
+        "graduation": "Tip graduated"
+      },
+      "names": {
+        "en": "Graduated pipette, 2 mL, Tip graduated"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "tip graduated",
+        "tip measuring",
+        "2 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.75 0L3.75 326C3.75 336 0.75 350 0.65 360L-0.65 360C-0.75 350 -3.75 336 -3.75 326L-3.75 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.2 1.4Q0 2.4 3.2 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.1 53.79H1.962V54.21H-3.1ZM-3.1 56.5H-0.475V56.82H-3.1ZM-3.1 59.16H-0.475V59.48H-3.1ZM-3.1 61.82H-0.475V62.14H-3.1ZM-3.1 64.48H-0.475V64.8H-3.1ZM-3.1 67.14H0.65V67.46H-3.1ZM-3.1 69.8H-0.475V70.12H-3.1ZM-3.1 72.46H-0.475V72.78H-3.1ZM-3.1 75.12H-0.475V75.44H-3.1ZM-3.1 77.78H-0.475V78.1H-3.1ZM-3.1 80.39H1.962V80.81H-3.1ZM-3.1 83.1H-0.475V83.42H-3.1ZM-3.1 85.76H-0.475V86.08H-3.1ZM-3.1 88.42H-0.475V88.74H-3.1ZM-3.1 91.08H-0.475V91.4H-3.1ZM-3.1 93.74H0.65V94.06H-3.1ZM-3.1 96.4H-0.475V96.72H-3.1ZM-3.1 99.06H-0.475V99.38H-3.1ZM-3.1 101.72H-0.475V102.04H-3.1ZM-3.1 104.38H-0.475V104.7H-3.1ZM-3.1 106.99H1.962V107.41H-3.1ZM-3.1 109.7H-0.475V110.02H-3.1ZM-3.1 112.36H-0.475V112.68H-3.1ZM-3.1 115.02H-0.475V115.34H-3.1ZM-3.1 117.68H-0.475V118H-3.1ZM-3.1 120.34H0.65V120.66H-3.1ZM-3.1 123H-0.475V123.32H-3.1ZM-3.1 125.66H-0.475V125.98H-3.1ZM-3.1 128.32H-0.475V128.64H-3.1ZM-3.1 130.98H-0.475V131.3H-3.1ZM-3.1 133.59H1.962V134.01H-3.1ZM-3.1 136.3H-0.475V136.62H-3.1ZM-3.1 138.96H-0.475V139.28H-3.1ZM-3.1 141.62H-0.475V141.94H-3.1ZM-3.1 144.28H-0.475V144.6H-3.1ZM-3.1 146.94H0.65V147.26H-3.1ZM-3.1 149.6H-0.475V149.92H-3.1ZM-3.1 152.26H-0.475V152.58H-3.1ZM-3.1 154.92H-0.475V155.24H-3.1ZM-3.1 157.58H-0.475V157.9H-3.1ZM-3.1 160.19H1.962V160.61H-3.1ZM-3.1 162.9H-0.475V163.22H-3.1ZM-3.1 165.56H-0.475V165.88H-3.1ZM-3.1 168.22H-0.475V168.54H-3.1ZM-3.1 170.88H-0.475V171.2H-3.1ZM-3.1 173.54H0.65V173.86H-3.1ZM-3.1 176.2H-0.475V176.52H-3.1ZM-3.1 178.86H-0.475V179.18H-3.1ZM-3.1 181.52H-0.475V181.84H-3.1ZM-3.1 184.18H-0.475V184.5H-3.1ZM-3.1 186.79H1.962V187.21H-3.1ZM-3.1 189.5H-0.475V189.82H-3.1ZM-3.1 192.16H-0.475V192.48H-3.1ZM-3.1 194.82H-0.475V195.14H-3.1ZM-3.1 197.48H-0.475V197.8H-3.1ZM-3.1 200.14H0.65V200.46H-3.1ZM-3.1 202.8H-0.475V203.12H-3.1ZM-3.1 205.46H-0.475V205.78H-3.1ZM-3.1 208.12H-0.475V208.44H-3.1ZM-3.1 210.78H-0.475V211.1H-3.1ZM-3.1 213.39H1.962V213.81H-3.1ZM-3.1 216.1H-0.475V216.42H-3.1ZM-3.1 218.76H-0.475V219.08H-3.1ZM-3.1 221.42H-0.475V221.74H-3.1ZM-3.1 224.08H-0.475V224.4H-3.1ZM-3.1 226.74H0.65V227.06H-3.1ZM-3.1 229.4H-0.475V229.72H-3.1ZM-3.1 232.06H-0.475V232.38H-3.1ZM-3.1 234.72H-0.475V235.04H-3.1ZM-3.1 237.38H-0.475V237.7H-3.1ZM-3.1 239.99H1.962V240.41H-3.1ZM-3.1 242.7H-0.475V243.02H-3.1ZM-3.1 245.36H-0.475V245.68H-3.1ZM-3.1 248.02H-0.475V248.34H-3.1ZM-3.1 250.68H-0.475V251H-3.1ZM-3.1 253.34H0.65V253.66H-3.1ZM-3.1 256H-0.475V256.32H-3.1ZM-3.1 258.66H-0.475V258.98H-3.1ZM-3.1 261.32H-0.475V261.64H-3.1ZM-3.1 263.98H-0.475V264.3H-3.1ZM-3.1 266.59H1.962V267.01H-3.1ZM-3.1 269.3H-0.475V269.62H-3.1ZM-3.1 271.96H-0.475V272.28H-3.1ZM-3.1 274.62H-0.475V274.94H-3.1ZM-3.1 277.28H-0.475V277.6H-3.1ZM-3.1 279.94H0.65V280.26H-3.1ZM-3.1 282.6H-0.475V282.92H-3.1ZM-3.1 285.26H-0.475V285.58H-3.1ZM-3.1 287.92H-0.475V288.24H-3.1ZM-3.1 290.58H-0.475V290.9H-3.1ZM-3.1 293.19H1.962V293.61H-3.1ZM-3.1 295.9H-0.475V296.22H-3.1ZM-3.1 298.56H-0.475V298.88H-3.1ZM-3.1 301.22H-0.475V301.54H-3.1ZM-3.1 303.88H-0.475V304.2H-3.1ZM-3.1 306.54H0.65V306.86H-3.1ZM-3.1 309.2H-0.475V309.52H-3.1ZM-3.1 311.86H-0.475V312.18H-3.1ZM-3.1 314.52H-0.475V314.84H-3.1ZM-3.1 317.18H-0.475V317.5H-3.1ZM-3.1 319.79H1.962V320.21H-3.1Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M0 33.8L1.8 37H-1.8ZM0 34.55L-1.2 36.65H1.2Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.2 1.4L3.2 326C3.2 336 0.2 350 0.14 358.8L-0.14 358.8C-0.2 350 -3.2 336 -3.2 326L-3.2 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/graduated-pipette-tip-5",
+      "revision": 1,
+      "family": "graduated-pipette",
+      "variant": {
+        "capacity": "5 mL",
+        "graduation": "Tip graduated"
+      },
+      "names": {
+        "en": "Graduated pipette, 5 mL, Tip graduated"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "graduated",
+        "measuring",
+        "tip graduated",
+        "tip measuring",
+        "5 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.5 0L3.5 332C3.5 342 0.75 356 0.65 366L-0.65 366C-0.75 356 -3.5 342 -3.5 332L-3.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.95 1.4Q0 2.4 2.95 1.4"
+        },
+        {
+          "id": "graduations",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.85 53.79H1.875V54.21H-2.85ZM-2.85 56.56H-0.4V56.88H-2.85ZM-2.85 59.28H-0.4V59.6H-2.85ZM-2.85 62H-0.4V62.32H-2.85ZM-2.85 64.72H-0.4V65.04H-2.85ZM-2.85 67.44H0.65V67.76H-2.85ZM-2.85 70.16H-0.4V70.48H-2.85ZM-2.85 72.88H-0.4V73.2H-2.85ZM-2.85 75.6H-0.4V75.92H-2.85ZM-2.85 78.32H-0.4V78.64H-2.85ZM-2.85 80.99H1.875V81.41H-2.85ZM-2.85 83.76H-0.4V84.08H-2.85ZM-2.85 86.48H-0.4V86.8H-2.85ZM-2.85 89.2H-0.4V89.52H-2.85ZM-2.85 91.92H-0.4V92.24H-2.85ZM-2.85 94.64H0.65V94.96H-2.85ZM-2.85 97.36H-0.4V97.68H-2.85ZM-2.85 100.08H-0.4V100.4H-2.85ZM-2.85 102.8H-0.4V103.12H-2.85ZM-2.85 105.52H-0.4V105.84H-2.85ZM-2.85 108.19H1.875V108.61H-2.85ZM-2.85 110.96H-0.4V111.28H-2.85ZM-2.85 113.68H-0.4V114H-2.85ZM-2.85 116.4H-0.4V116.72H-2.85ZM-2.85 119.12H-0.4V119.44H-2.85ZM-2.85 121.84H0.65V122.16H-2.85ZM-2.85 124.56H-0.4V124.88H-2.85ZM-2.85 127.28H-0.4V127.6H-2.85ZM-2.85 130H-0.4V130.32H-2.85ZM-2.85 132.72H-0.4V133.04H-2.85ZM-2.85 135.39H1.875V135.81H-2.85ZM-2.85 138.16H-0.4V138.48H-2.85ZM-2.85 140.88H-0.4V141.2H-2.85ZM-2.85 143.6H-0.4V143.92H-2.85ZM-2.85 146.32H-0.4V146.64H-2.85ZM-2.85 149.04H0.65V149.36H-2.85ZM-2.85 151.76H-0.4V152.08H-2.85ZM-2.85 154.48H-0.4V154.8H-2.85ZM-2.85 157.2H-0.4V157.52H-2.85ZM-2.85 159.92H-0.4V160.24H-2.85ZM-2.85 162.59H1.875V163.01H-2.85ZM-2.85 165.36H-0.4V165.68H-2.85ZM-2.85 168.08H-0.4V168.4H-2.85ZM-2.85 170.8H-0.4V171.12H-2.85ZM-2.85 173.52H-0.4V173.84H-2.85ZM-2.85 176.24H0.65V176.56H-2.85ZM-2.85 178.96H-0.4V179.28H-2.85ZM-2.85 181.68H-0.4V182H-2.85ZM-2.85 184.4H-0.4V184.72H-2.85ZM-2.85 187.12H-0.4V187.44H-2.85ZM-2.85 189.79H1.875V190.21H-2.85ZM-2.85 192.56H-0.4V192.88H-2.85ZM-2.85 195.28H-0.4V195.6H-2.85ZM-2.85 198H-0.4V198.32H-2.85ZM-2.85 200.72H-0.4V201.04H-2.85ZM-2.85 203.44H0.65V203.76H-2.85ZM-2.85 206.16H-0.4V206.48H-2.85ZM-2.85 208.88H-0.4V209.2H-2.85ZM-2.85 211.6H-0.4V211.92H-2.85ZM-2.85 214.32H-0.4V214.64H-2.85ZM-2.85 216.99H1.875V217.41H-2.85ZM-2.85 219.76H-0.4V220.08H-2.85ZM-2.85 222.48H-0.4V222.8H-2.85ZM-2.85 225.2H-0.4V225.52H-2.85ZM-2.85 227.92H-0.4V228.24H-2.85ZM-2.85 230.64H0.65V230.96H-2.85ZM-2.85 233.36H-0.4V233.68H-2.85ZM-2.85 236.08H-0.4V236.4H-2.85ZM-2.85 238.8H-0.4V239.12H-2.85ZM-2.85 241.52H-0.4V241.84H-2.85ZM-2.85 244.19H1.875V244.61H-2.85ZM-2.85 246.96H-0.4V247.28H-2.85ZM-2.85 249.68H-0.4V250H-2.85ZM-2.85 252.4H-0.4V252.72H-2.85ZM-2.85 255.12H-0.4V255.44H-2.85ZM-2.85 257.84H0.65V258.16H-2.85ZM-2.85 260.56H-0.4V260.88H-2.85ZM-2.85 263.28H-0.4V263.6H-2.85ZM-2.85 266H-0.4V266.32H-2.85ZM-2.85 268.72H-0.4V269.04H-2.85ZM-2.85 271.39H1.875V271.81H-2.85ZM-2.85 274.16H-0.4V274.48H-2.85ZM-2.85 276.88H-0.4V277.2H-2.85ZM-2.85 279.6H-0.4V279.92H-2.85ZM-2.85 282.32H-0.4V282.64H-2.85ZM-2.85 285.04H0.65V285.36H-2.85ZM-2.85 287.76H-0.4V288.08H-2.85ZM-2.85 290.48H-0.4V290.8H-2.85ZM-2.85 293.2H-0.4V293.52H-2.85ZM-2.85 295.92H-0.4V296.24H-2.85ZM-2.85 298.59H1.875V299.01H-2.85ZM-2.85 301.36H-0.4V301.68H-2.85ZM-2.85 304.08H-0.4V304.4H-2.85ZM-2.85 306.8H-0.4V307.12H-2.85ZM-2.85 309.52H-0.4V309.84H-2.85ZM-2.85 312.24H0.65V312.56H-2.85ZM-2.85 314.96H-0.4V315.28H-2.85ZM-2.85 317.68H-0.4V318H-2.85ZM-2.85 320.4H-0.4V320.72H-2.85ZM-2.85 323.12H-0.4V323.44H-2.85ZM-2.85 325.79H1.875V326.21H-2.85Z"
+        },
+        {
+          "id": "graduation-type-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M0 33.8L1.8 37H-1.8ZM0 34.55L-1.2 36.65H1.2Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.95 1.4L2.95 332C2.95 342 0.2 356 0.14 364.8L-0.14 364.8C-0.2 356 -2.95 342 -2.95 332L-2.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/komagome-pipette-1",
+      "revision": 1,
+      "family": "komagome-pipette",
+      "variant": {
+        "capacity": "1 mL"
+      },
+      "names": {
+        "en": "Komagome pipette, 1 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "komagome",
+        "dropper",
+        "rubber bulb",
+        "approximate scale"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.5 0C3.65 2 3.5 5 2.5 8L2.5 54C2.5 59.4 5.8 63.45 5.8 70.2C5.8 76.95 2.3 82.35 2.3 89.1L2.3 191.7C2.3 221.4 1.3 253.8 0.7 270L-0.7 270C-1.3 253.8 -2.3 221.4 -2.3 191.7L-2.3 89.1C-2.3 82.35 -5.8 76.95 -5.8 70.2C-5.8 63.45 -2.5 59.4 -2.5 54L-2.5 8C-3.5 5 -3.65 2 -3.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.95 1.4Q0 2.4 2.95 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "scale-marks",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-1.65 123.99H1.455V124.41H-1.65ZM-1.65 137H-0.04V137.32H-1.65ZM-1.65 149.96H-0.04V150.28H-1.65ZM-1.65 162.92H-0.04V163.24H-1.65ZM-1.65 175.88H-0.04V176.2H-1.65ZM-1.65 188.79H1.455V189.21H-1.65Z"
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-4.3 7L-4.3 -3C-4.3 -8 -7.5 -10 -7.5 -20.52C-7.5 -30.6 -4.35 -36 0 -36C4.35 -36 7.5 -30.6 7.5 -20.52C7.5 -10 4.3 -8 4.3 -3L4.3 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-3.65 3Q0 4 3.65 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -19.8
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.95 1.4C3.1 2 2.95 5 1.95 8L1.95 54C1.95 59.4 5.25 63.45 5.25 70.2C5.25 76.95 1.75 82.35 1.75 89.1L1.75 191.7C1.75 221.4 0.75 253.8 0.15 268.8L-0.15 268.8C-0.75 253.8 -1.75 221.4 -1.75 191.7L-1.75 89.1C-1.75 82.35 -5.25 76.95 -5.25 70.2C-5.25 63.45 -1.95 59.4 -1.95 54L-1.95 8C-2.95 5 -3.1 2 -2.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/komagome-pipette-10",
+      "revision": 1,
+      "family": "komagome-pipette",
+      "variant": {
+        "capacity": "10 mL"
+      },
+      "names": {
+        "en": "Komagome pipette, 10 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "komagome",
+        "dropper",
+        "rubber bulb",
+        "approximate scale"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M5.5 0C5.65 2 5.5 5 4.4 8L4.4 68C4.4 74.8 10.6 79.9 10.6 88.4C10.6 96.9 4.3 103.7 4.3 112.2L4.3 241.4C4.3 278.8 1.3 319.6 0.7 340L-0.7 340C-1.3 319.6 -4.3 278.8 -4.3 241.4L-4.3 112.2C-4.3 103.7 -10.6 96.9 -10.6 88.4C-10.6 79.9 -4.4 74.8 -4.4 68L-4.4 8C-5.5 5 -5.65 2 -5.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-4.95 1.4Q0 2.4 4.95 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "scale-marks",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.65 156.19H2.155V156.61H-3.65ZM-3.65 157.872H-0.64V158.192H-3.65ZM-3.65 159.504H-0.64V159.824H-3.65ZM-3.65 161.136H-0.64V161.456H-3.65ZM-3.65 162.768H-0.64V163.088H-3.65ZM-3.65 164.35H2.155V164.77H-3.65ZM-3.65 166.032H-0.64V166.352H-3.65ZM-3.65 167.664H-0.64V167.984H-3.65ZM-3.65 169.296H-0.64V169.616H-3.65ZM-3.65 170.928H-0.64V171.248H-3.65ZM-3.65 172.51H2.155V172.93H-3.65ZM-3.65 174.192H-0.64V174.512H-3.65ZM-3.65 175.824H-0.64V176.144H-3.65ZM-3.65 177.456H-0.64V177.776H-3.65ZM-3.65 179.088H-0.64V179.408H-3.65ZM-3.65 180.67H2.155V181.09H-3.65ZM-3.65 182.352H-0.64V182.672H-3.65ZM-3.65 183.984H-0.64V184.304H-3.65ZM-3.65 185.616H-0.64V185.936H-3.65ZM-3.65 187.248H-0.64V187.568H-3.65ZM-3.65 188.83H2.155V189.25H-3.65ZM-3.65 190.512H-0.64V190.832H-3.65ZM-3.65 192.144H-0.64V192.464H-3.65ZM-3.65 193.776H-0.64V194.096H-3.65ZM-3.65 195.408H-0.64V195.728H-3.65ZM-3.65 196.99H2.155V197.41H-3.65ZM-3.65 198.672H-0.64V198.992H-3.65ZM-3.65 200.304H-0.64V200.624H-3.65ZM-3.65 201.936H-0.64V202.256H-3.65ZM-3.65 203.568H-0.64V203.888H-3.65ZM-3.65 205.15H2.155V205.57H-3.65ZM-3.65 206.832H-0.64V207.152H-3.65ZM-3.65 208.464H-0.64V208.784H-3.65ZM-3.65 210.096H-0.64V210.416H-3.65ZM-3.65 211.728H-0.64V212.048H-3.65ZM-3.65 213.31H2.155V213.73H-3.65ZM-3.65 214.992H-0.64V215.312H-3.65ZM-3.65 216.624H-0.64V216.944H-3.65ZM-3.65 218.256H-0.64V218.576H-3.65ZM-3.65 219.888H-0.64V220.208H-3.65ZM-3.65 221.47H2.155V221.89H-3.65ZM-3.65 223.152H-0.64V223.472H-3.65ZM-3.65 224.784H-0.64V225.104H-3.65ZM-3.65 226.416H-0.64V226.736H-3.65ZM-3.65 228.048H-0.64V228.368H-3.65ZM-3.65 229.63H2.155V230.05H-3.65ZM-3.65 231.312H-0.64V231.632H-3.65ZM-3.65 232.944H-0.64V233.264H-3.65ZM-3.65 234.576H-0.64V234.896H-3.65ZM-3.65 236.208H-0.64V236.528H-3.65ZM-3.65 237.79H2.155V238.21H-3.65Z"
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-6.3 7L-6.3 -3C-6.3 -8 -9.35 -10 -9.35 -23.94C-9.35 -35.7 -5.423 -42 0 -42C5.423 -42 9.35 -35.7 9.35 -23.94C9.35 -10 6.3 -8 6.3 -3L6.3 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-5.65 3Q0 4 5.65 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -23.1
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M4.95 1.4C5.1 2 4.95 5 3.85 8L3.85 68C3.85 74.8 10.05 79.9 10.05 88.4C10.05 96.9 3.75 103.7 3.75 112.2L3.75 241.4C3.75 278.8 0.75 319.6 0.15 338.8L-0.15 338.8C-0.75 319.6 -3.75 278.8 -3.75 241.4L-3.75 112.2C-3.75 103.7 -10.05 96.9 -10.05 88.4C-10.05 79.9 -3.85 74.8 -3.85 68L-3.85 8C-4.95 5 -5.1 2 -4.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/komagome-pipette-2",
+      "revision": 1,
+      "family": "komagome-pipette",
+      "variant": {
+        "capacity": "2 mL"
+      },
+      "names": {
+        "en": "Komagome pipette, 2 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "komagome",
+        "dropper",
+        "rubber bulb",
+        "approximate scale"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M4.5 0C4.65 2 4.5 5 3.3 8L3.3 54C3.3 59.4 6.8 63.45 6.8 70.2C6.8 76.95 3 82.35 3 89.1L3 191.7C3 221.4 1.3 253.8 0.7 270L-0.7 270C-1.3 253.8 -3 221.4 -3 191.7L-3 89.1C-3 82.35 -6.8 76.95 -6.8 70.2C-6.8 63.45 -3.3 59.4 -3.3 54L-3.3 8C-4.5 5 -4.65 2 -4.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.95 1.4Q0 2.4 3.95 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "scale-marks",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.35 123.99H1.7V124.41H-2.35ZM-2.35 130.52H-0.25V130.84H-2.35ZM-2.35 137H-0.25V137.32H-2.35ZM-2.35 143.48H-0.25V143.8H-2.35ZM-2.35 149.96H-0.25V150.28H-2.35ZM-2.35 156.39H1.7V156.81H-2.35ZM-2.35 162.92H-0.25V163.24H-2.35ZM-2.35 169.4H-0.25V169.72H-2.35ZM-2.35 175.88H-0.25V176.2H-2.35ZM-2.35 182.36H-0.25V182.68H-2.35ZM-2.35 188.79H1.7V189.21H-2.35Z"
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-5.3 7L-5.3 -3C-5.3 -8 -7.65 -10 -7.65 -20.52C-7.65 -30.6 -4.437 -36 0 -36C4.437 -36 7.65 -30.6 7.65 -20.52C7.65 -10 5.3 -8 5.3 -3L5.3 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-4.65 3Q0 4 4.65 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -19.8
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.95 1.4C4.1 2 3.95 5 2.75 8L2.75 54C2.75 59.4 6.25 63.45 6.25 70.2C6.25 76.95 2.45 82.35 2.45 89.1L2.45 191.7C2.45 221.4 0.75 253.8 0.15 268.8L-0.15 268.8C-0.75 253.8 -2.45 221.4 -2.45 191.7L-2.45 89.1C-2.45 82.35 -6.25 76.95 -6.25 70.2C-6.25 63.45 -2.75 59.4 -2.75 54L-2.75 8C-3.95 5 -4.1 2 -3.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/komagome-pipette-3",
+      "revision": 1,
+      "family": "komagome-pipette",
+      "variant": {
+        "capacity": "3 mL"
+      },
+      "names": {
+        "en": "Komagome pipette, 3 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "komagome",
+        "dropper",
+        "rubber bulb",
+        "approximate scale"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M5 0C5.15 2 5 5 3.7 8L3.7 55C3.7 60.5 7.5 64.625 7.5 71.5C7.5 78.375 3.4 83.875 3.4 90.75L3.4 195.25C3.4 225.5 1.3 258.5 0.7 275L-0.7 275C-1.3 258.5 -3.4 225.5 -3.4 195.25L-3.4 90.75C-3.4 83.875 -7.5 78.375 -7.5 71.5C-7.5 64.625 -3.7 60.5 -3.7 55L-3.7 8C-5 5 -5.15 2 -5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-4.45 1.4Q0 2.4 4.45 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "scale-marks",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.75 126.29H1.84V126.71H-2.75ZM-2.75 130.74H-0.37V131.06H-2.75ZM-2.75 135.14H-0.37V135.46H-2.75ZM-2.75 139.54H-0.37V139.86H-2.75ZM-2.75 143.94H-0.37V144.26H-2.75ZM-2.75 148.29H1.84V148.71H-2.75ZM-2.75 152.74H-0.37V153.06H-2.75ZM-2.75 157.14H-0.37V157.46H-2.75ZM-2.75 161.54H-0.37V161.86H-2.75ZM-2.75 165.94H-0.37V166.26H-2.75ZM-2.75 170.29H1.84V170.71H-2.75ZM-2.75 174.74H-0.37V175.06H-2.75ZM-2.75 179.14H-0.37V179.46H-2.75ZM-2.75 183.54H-0.37V183.86H-2.75ZM-2.75 187.94H-0.37V188.26H-2.75ZM-2.75 192.29H1.84V192.71H-2.75Z"
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-5.8 7L-5.8 -3C-5.8 -8 -8.5 -10 -8.5 -20.52C-8.5 -30.6 -4.93 -36 0 -36C4.93 -36 8.5 -30.6 8.5 -20.52C8.5 -10 5.8 -8 5.8 -3L5.8 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-5.15 3Q0 4 5.15 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -19.8
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M4.45 1.4C4.6 2 4.45 5 3.15 8L3.15 55C3.15 60.5 6.95 64.625 6.95 71.5C6.95 78.375 2.85 83.875 2.85 90.75L2.85 195.25C2.85 225.5 0.75 258.5 0.15 273.8L-0.15 273.8C-0.75 258.5 -2.85 225.5 -2.85 195.25L-2.85 90.75C-2.85 83.875 -6.95 78.375 -6.95 71.5C-6.95 64.625 -3.15 60.5 -3.15 55L-3.15 8C-4.45 5 -4.6 2 -4.45 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/komagome-pipette-5",
+      "revision": 1,
+      "family": "komagome-pipette",
+      "variant": {
+        "capacity": "5 mL"
+      },
+      "names": {
+        "en": "Komagome pipette, 5 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "komagome",
+        "dropper",
+        "rubber bulb",
+        "approximate scale"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M5.5 0C5.65 2 5.5 5 4.1 8L4.1 55C4.1 60.5 8.3 64.625 8.3 71.5C8.3 78.375 3.9 83.875 3.9 90.75L3.9 195.25C3.9 225.5 1.3 258.5 0.7 275L-0.7 275C-1.3 258.5 -3.9 225.5 -3.9 195.25L-3.9 90.75C-3.9 83.875 -8.3 78.375 -8.3 71.5C-8.3 64.625 -4.1 60.5 -4.1 55L-4.1 8C-5.5 5 -5.65 2 -5.5 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-4.95 1.4Q0 2.4 4.95 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "scale-marks",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.25 126.29H2.015V126.71H-3.25ZM-3.25 128.98H-0.52V129.3H-3.25ZM-3.25 131.62H-0.52V131.94H-3.25ZM-3.25 134.26H-0.52V134.58H-3.25ZM-3.25 136.9H-0.52V137.22H-3.25ZM-3.25 139.49H2.015V139.91H-3.25ZM-3.25 142.18H-0.52V142.5H-3.25ZM-3.25 144.82H-0.52V145.14H-3.25ZM-3.25 147.46H-0.52V147.78H-3.25ZM-3.25 150.1H-0.52V150.42H-3.25ZM-3.25 152.69H2.015V153.11H-3.25ZM-3.25 155.38H-0.52V155.7H-3.25ZM-3.25 158.02H-0.52V158.34H-3.25ZM-3.25 160.66H-0.52V160.98H-3.25ZM-3.25 163.3H-0.52V163.62H-3.25ZM-3.25 165.89H2.015V166.31H-3.25ZM-3.25 168.58H-0.52V168.9H-3.25ZM-3.25 171.22H-0.52V171.54H-3.25ZM-3.25 173.86H-0.52V174.18H-3.25ZM-3.25 176.5H-0.52V176.82H-3.25ZM-3.25 179.09H2.015V179.51H-3.25ZM-3.25 181.78H-0.52V182.1H-3.25ZM-3.25 184.42H-0.52V184.74H-3.25ZM-3.25 187.06H-0.52V187.38H-3.25ZM-3.25 189.7H-0.52V190.02H-3.25ZM-3.25 192.29H2.015V192.71H-3.25Z"
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-6.3 7L-6.3 -3C-6.3 -8 -9.35 -10 -9.35 -23.94C-9.35 -35.7 -5.423 -42 0 -42C5.423 -42 9.35 -35.7 9.35 -23.94C9.35 -10 6.3 -8 6.3 -3L6.3 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-5.65 3Q0 4 5.65 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -23.1
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M4.95 1.4C5.1 2 4.95 5 3.55 8L3.55 55C3.55 60.5 7.75 64.625 7.75 71.5C7.75 78.375 3.35 83.875 3.35 90.75L3.35 195.25C3.35 225.5 0.75 258.5 0.15 273.8L-0.15 273.8C-0.75 258.5 -3.35 225.5 -3.35 195.25L-3.35 90.75C-3.35 83.875 -7.75 78.375 -7.75 71.5C-7.75 64.625 -3.55 60.5 -3.55 55L-3.55 8C-4.95 5 -5.1 2 -4.95 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/pasteur-pipette-long",
+      "revision": 1,
+      "family": "pasteur-pipette",
+      "variant": {
+        "length": "230 mm",
+        "style": "Long"
+      },
+      "names": {
+        "en": "Pasteur pipette, Long"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "pasteur",
+        "dropper",
+        "long",
+        "rubber bulb",
+        "capillary"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.6 0L3.6 5C3.6 8 2.85 8 2.85 11C2.85 14 3.6 14 3.6 18L3.6 84C3.6 92 0.8 95 0.8 101L0.8 230L-0.8 230L-0.8 101C-0.8 95 -3.6 92 -3.6 84L-3.6 18C-3.6 14 -2.85 14 -2.85 11C-2.85 8 -3.6 8 -3.6 5L-3.6 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.05 1.4Q0 2.4 3.05 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-4.4 7L-4.4 -3C-4.4 -8 -8.5 -10 -8.5 -18.24C-8.5 -27.2 -4.93 -32 0 -32C4.93 -32 8.5 -27.2 8.5 -18.24C8.5 -10 4.4 -8 4.4 -3L4.4 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-3.75 3Q0 4 3.75 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -17.6
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.05 1.4L3.05 5C3.05 8 2.3 8 2.3 11C2.3 14 3.05 14 3.05 18L3.05 84C3.05 92 0.25 95 0.25 101L0.25 228.8L-0.25 228.8L-0.25 101C-0.25 95 -3.05 92 -3.05 84L-3.05 18C-3.05 14 -2.3 14 -2.3 11C-2.3 8 -3.05 8 -3.05 5L-3.05 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/pasteur-pipette-short",
+      "revision": 1,
+      "family": "pasteur-pipette",
+      "variant": {
+        "length": "150 mm",
+        "style": "Short"
+      },
+      "names": {
+        "en": "Pasteur pipette, Short"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "pasteur",
+        "dropper",
+        "short",
+        "rubber bulb",
+        "capillary"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.6 0L3.6 5C3.6 8 2.85 8 2.85 11C2.85 14 3.6 14 3.6 18L3.6 84C3.6 92 0.8 95 0.8 101L0.8 150L-0.8 150L-0.8 101C-0.8 95 -3.6 92 -3.6 84L-3.6 18C-3.6 14 -2.85 14 -2.85 11C-2.85 8 -3.6 8 -3.6 5L-3.6 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.05 1.4Q0 2.4 3.05 1.4",
+          "when": {
+            "bulb": [
+              "removed"
+            ]
+          }
+        },
+        {
+          "id": "rubber-bulb",
+          "layer": "front",
+          "material": "rubber",
+          "role": "solid",
+          "path": "M-4.4 7L-4.4 -3C-4.4 -8 -8.5 -10 -8.5 -18.24C-8.5 -27.2 -4.93 -32 0 -32C4.93 -32 8.5 -27.2 8.5 -18.24C8.5 -10 4.4 -8 4.4 -3L4.4 7Z",
+          "color": [
+            177,
+            68,
+            57
+          ],
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        },
+        {
+          "id": "bulb-socket-edge",
+          "layer": "front",
+          "material": "rubber",
+          "role": "detail",
+          "path": "M-3.75 3Q0 4 3.75 3",
+          "part": "bulb-toggle",
+          "when": {
+            "bulb": [
+              "fitted"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "id": "bulb",
+          "names": {
+            "en": "Rubber bulb"
+          },
+          "kind": "states",
+          "default": "fitted",
+          "states": [
+            {
+              "id": "fitted",
+              "names": {
+                "en": "Fitted"
+              }
+            },
+            {
+              "id": "removed",
+              "names": {
+                "en": "Removed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "bulb-toggle",
+          "param": "bulb",
+          "motion": {
+            "per_state": {
+              "fitted": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "removed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -17.6
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.05 1.4L3.05 5C3.05 8 2.3 8 2.3 11C2.3 14 3.05 14 3.05 18L3.05 84C3.05 92 0.25 95 0.25 101L0.25 148.8L-0.25 148.8L-0.25 101C-0.25 95 -3.05 92 -3.05 84L-3.05 18C-3.05 14 -2.3 14 -2.3 11C-2.3 8 -3.05 8 -3.05 5L-3.05 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/volumetric-pipette-1",
+      "revision": 1,
+      "family": "volumetric-pipette",
+      "variant": {
+        "capacity": "1 mL"
+      },
+      "names": {
+        "en": "Volumetric pipette, 1 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "volumetric",
+        "single mark",
+        "bulb pipette",
+        "1 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M2.275 0L2.275 177.25C2.275 181 3.3 183.5 3.3 189.75C3.3 196 2.275 198.5 2.275 202.25L2.275 321C2.275 328 0.65 337 0.6 345L-0.6 345C-0.65 337 -2.275 328 -2.275 321L-2.275 202.25C-2.275 198.5 -3.3 196 -3.3 189.75C-3.3 183.5 -2.275 181 -2.275 177.25L-2.275 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-1.725 1.4Q0 2.4 1.725 1.4"
+        },
+        {
+          "id": "single-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.275 144.95H2.275V145.55H-2.275Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M1.725 1.4L1.725 177.25C1.725 181 2.75 183.5 2.75 189.75C2.75 196 1.725 198.5 1.725 202.25L1.725 321C1.725 328 0.14 337 0.14 343.8L-0.14 343.8C-0.14 337 -1.725 328 -1.725 321L-1.725 202.25C-1.725 198.5 -2.75 196 -2.75 189.75C-2.75 183.5 -1.725 181 -1.725 177.25L-1.725 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/volumetric-pipette-10",
+      "revision": 1,
+      "family": "volumetric-pipette",
+      "variant": {
+        "capacity": "10 mL"
+      },
+      "names": {
+        "en": "Volumetric pipette, 10 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "volumetric",
+        "single mark",
+        "bulb pipette",
+        "10 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.225 0L3.225 196.3C3.225 204.75 7.6 205.4 7.6 217.1L7.6 240.5C7.6 252.85 3.225 254.8 3.225 261.3L3.225 416C3.225 423 0.65 432 0.6 440L-0.6 440C-0.65 432 -3.225 423 -3.225 416L-3.225 261.3C-3.225 254.8 -7.6 252.85 -7.6 240.5L-7.6 217.1C-7.6 205.4 -3.225 204.75 -3.225 196.3L-3.225 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.675 1.4Q0 2.4 2.675 1.4"
+        },
+        {
+          "id": "single-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.225 164H3.225V164.6H-3.225Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.675 1.4L2.675 196.3C2.675 204.75 7.05 205.4 7.05 217.1L7.05 240.5C7.05 252.85 2.675 254.8 2.675 261.3L2.675 416C2.675 423 0.14 432 0.14 438.8L-0.14 438.8C-0.14 432 -2.675 423 -2.675 416L-2.675 261.3C-2.675 254.8 -7.05 252.85 -7.05 240.5L-7.05 217.1C-7.05 205.4 -2.675 204.75 -2.675 196.3L-2.675 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/volumetric-pipette-2",
+      "revision": 1,
+      "family": "volumetric-pipette",
+      "variant": {
+        "capacity": "2 mL"
+      },
+      "names": {
+        "en": "Volumetric pipette, 2 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "volumetric",
+        "single mark",
+        "bulb pipette",
+        "2 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M2.625 0L2.625 177.75C2.625 183 4.1 186.5 4.1 195.25C4.1 204 2.625 207.5 2.625 212.75L2.625 331C2.625 338 0.65 347 0.6 355L-0.6 355C-0.65 347 -2.625 338 -2.625 331L-2.625 212.75C-2.625 207.5 -4.1 204 -4.1 195.25C-4.1 186.5 -2.625 183 -2.625 177.75L-2.625 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.075 1.4Q0 2.4 2.075 1.4"
+        },
+        {
+          "id": "single-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-2.625 145.45H2.625V146.05H-2.625Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.075 1.4L2.075 177.75C2.075 183 3.55 186.5 3.55 195.25C3.55 204 2.075 207.5 2.075 212.75L2.075 331C2.075 338 0.14 347 0.14 353.8L-0.14 353.8C-0.14 347 -2.075 338 -2.075 331L-2.075 212.75C-2.075 207.5 -3.55 204 -3.55 195.25C-3.55 186.5 -2.075 183 -2.075 177.75L-2.075 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/volumetric-pipette-25",
+      "revision": 1,
+      "family": "volumetric-pipette",
+      "variant": {
+        "capacity": "25 mL"
+      },
+      "names": {
+        "en": "Volumetric pipette, 25 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "volumetric",
+        "single mark",
+        "bulb pipette",
+        "25 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.725 0L3.725 205C3.725 214.1 10.8 214.8 10.8 227.4L10.8 252.6C10.8 265.9 3.725 268 3.725 275L3.725 456C3.725 463 0.65 472 0.6 480L-0.6 480C-0.65 472 -3.725 463 -3.725 456L-3.725 275C-3.725 268 -10.8 265.9 -10.8 252.6L-10.8 227.4C-10.8 214.8 -3.725 214.1 -3.725 205L-3.725 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.175 1.4Q0 2.4 3.175 1.4"
+        },
+        {
+          "id": "single-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.725 172.7H3.725V173.3H-3.725Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M3.175 1.4L3.175 205C3.175 214.1 10.25 214.8 10.25 227.4L10.25 252.6C10.25 265.9 3.175 268 3.175 275L3.175 456C3.175 463 0.14 472 0.14 478.8L-0.14 478.8C-0.14 472 -3.175 463 -3.175 456L-3.175 275C-3.175 268 -10.25 265.9 -10.25 252.6L-10.25 227.4C-10.25 214.8 -3.175 214.1 -3.175 205L-3.175 1.4Z"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/volumetric-pipette-5",
+      "revision": 1,
+      "family": "volumetric-pipette",
+      "variant": {
+        "capacity": "5 mL"
+      },
+      "names": {
+        "en": "Volumetric pipette, 5 mL"
+      },
+      "category": "addition",
+      "keywords": [
+        "pipette",
+        "liquid transfer",
+        "volumetric",
+        "single mark",
+        "bulb pipette",
+        "5 mL"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "glass",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M3.225 0L3.225 173.75C3.225 180.25 6 180.75 6 189.75L6 207.75C6 217.25 3.225 218.75 3.225 223.75L3.225 351C3.225 358 0.65 367 0.6 375L-0.6 375C-0.65 367 -3.225 358 -3.225 351L-3.225 223.75C-3.225 218.75 -6 217.25 -6 207.75L-6 189.75C-6 180.75 -3.225 180.25 -3.225 173.75L-3.225 0Z"
+        },
+        {
+          "id": "open-mouth",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.675 1.4Q0 2.4 2.675 1.4"
+        },
+        {
+          "id": "single-mark",
+          "layer": "front",
+          "material": "ink",
+          "role": "fill",
+          "path": "M-3.225 141.45H3.225V142.05H-3.225Z"
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Drawn liquid level"
+          },
+          "kind": "fill",
+          "liquid": "sample",
+          "default": 0
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "sample",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [],
+      "liquids": [
+        {
+          "id": "sample",
+          "region": "M2.675 1.4L2.675 173.75C2.675 180.25 5.45 180.75 5.45 189.75L5.45 207.75C5.45 217.25 2.675 218.75 2.675 223.75L2.675 351C2.675 358 0.14 367 0.14 373.8L-0.14 373.8C-0.14 367 -2.675 358 -2.675 351L-2.675 223.75C-2.675 218.75 -5.45 217.25 -5.45 207.75L-5.45 189.75C-5.45 180.75 -2.675 180.25 -2.675 173.75L-2.675 1.4Z"
+        }
+      ]
+    }
+  ],
+  "seats": []
+}
