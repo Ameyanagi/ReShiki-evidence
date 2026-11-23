@@ -1,0 +1,915 @@
+{
+  "atom_labels": {
+    "carbons": "skeletal",
+    "hydrogens": true,
+    "stereo": false
+  },
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [],
+  "arrows": [],
+  "graphics": [
+    {
+      "piece": {
+        "definition": "reshiki/jy-nmr-tube@3#e990e3cd04e8c408",
+        "params": {
+          "valve": "closed"
+        }
+      },
+      "id": 2,
+      "kind": "piece",
+      "origin": {
+        "x": 27.0,
+        "y": 149.51666
+      },
+      "axis_x": {
+        "x": 1.1666666,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": null,
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": -1
+    },
+    {
+      "piece": {
+        "definition": "reshiki/jy-nmr-evacuation-manifold@1#36e07ea0529349a6",
+        "params": {
+          "valve": "closed"
+        }
+      },
+      "id": 1,
+      "kind": "piece",
+      "origin": {
+        "x": 27.0,
+        "y": 22.0
+      },
+      "axis_x": {
+        "x": 1.1666666,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": null,
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": -1
+    },
+    {
+      "piece": {
+        "definition": "reshiki/hose-9@1#ee8f663f2cc3bf98",
+        "centre_line": [
+          [
+            0.00877376654398887,
+            0.5158364267293507
+          ],
+          [
+            6.675440433210653,
+            0.5158364267293507
+          ],
+          [
+            13.342107099877332,
+            0.5158364267293507
+          ],
+          [
+            20.00877376654399,
+            0.5158364267293507
+          ],
+          [
+            29.116773766543993,
+            0.5158364267293507
+          ],
+          [
+            36.50877376654399,
+            7.90783642672935
+          ],
+          [
+            36.50877376654399,
+            17.015836426729354
+          ],
+          [
+            36.50877376654399,
+            19.849169760062683
+          ],
+          [
+            36.50877376654399,
+            22.68250309339602
+          ],
+          [
+            36.50877376654399,
+            25.515836426729354
+          ],
+          [
+            36.50877376654399,
+            29.68250309339602
+          ],
+          [
+            36.50877376654399,
+            33.84916976006268
+          ],
+          [
+            36.50877376654399,
+            38.01583642672935
+          ],
+          [
+            36.50877376654399,
+            39.404725315618236
+          ],
+          [
+            36.50877376654399,
+            40.793614204507136
+          ],
+          [
+            36.50877376654399,
+            42.18250309339602
+          ],
+          [
+            36.50877376654399,
+            44.960280871173794
+          ],
+          [
+            36.50877376654399,
+            47.738058648951565
+          ],
+          [
+            36.50877376654399,
+            50.51583642672935
+          ]
+        ]
+      },
+      "id": 3,
+      "kind": "piece",
+      "origin": {
+        "x": 58.139763,
+        "y": 22.564857
+      },
+      "axis_x": {
+        "x": 1.1666666,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666
+      },
+      "style": {
+        "stroke": [
+          0,
+          0,
+          0
+        ],
+        "fill": null,
+        "width_pt": 0.6,
+        "pattern": "solid"
+      },
+      "sides": "both",
+      "phase": "solid",
+      "phase_flipped": false,
+      "layer": -1
+    }
+  ],
+  "groups": [],
+  "piece_definitions": [
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/jy-nmr-tube",
+      "revision": 3,
+      "family": "jy-nmr-tube",
+      "names": {
+        "en": "J. Young NMR tube",
+        "ja": "J. Young NMR 管"
+      },
+      "category": "nmr",
+      "keywords": [
+        "jy nmr tube",
+        "nmr"
+      ],
+      "credits": {
+        "author": "ReShiki"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "shape-1",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-2.5 -0.01L-2.5 0L-2.5 175.5A2.5 2.5 0 0 0 2.5 175.5L2.5 0L2.5 -0.01Z"
+        },
+        {
+          "id": "shape-2",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-3.4 -35V-21C-3.4 -20 -4.6 -20 -4.6 -18.6C-4.6 -16.6 -3 -15 -2.9 -12.4Q-2.8 -11.3 -3.3 -10.8C-4 -10.4 -4 -8.8 -3.8 -6.4C-3.6 -3.6 -3.1 -1 -2.5 .4V2H2.5V.4C3.1 -1 3.6 -3.6 3.8 -6.4C4 -8.8 4 -10.4 3.3 -10.8Q2.8 -11.3 2.9 -12.4C3 -15 4.6 -16.6 4.6 -18.6C4.6 -20 3.4 -20 3.4 -21V-35Z"
+        },
+        {
+          "id": "shape-8",
+          "layer": "inner",
+          "material": "ptfe",
+          "color": [
+            226,
+            226,
+            218
+          ],
+          "role": "fill",
+          "path": "M-2.2 -35H2.2V-14.2Q2.2 -13.72 3.0216936 -13.4370416C2.9574 -13.1084 2.914 -12.764 2.9 -12.4Q2.53 -12.18 2.15 -12.1V-11.83Q2.15 -11.61 1.8 -11.58Q0 -11.39 -1.8 -11.58Q-2.15 -11.61 -2.15 -11.83V-12.1Q-2.53 -12.18 -2.9 -12.4C-2.914 -12.764 -2.9574 -13.1084 -3.0216936 -13.4370416Q-2.2 -13.72 -2.2 -14.2Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "lower-ptfe-side-bore",
+          "layer": "inner",
+          "depth": 1,
+          "material": "ptfe",
+          "color": [
+            112,
+            120,
+            116
+          ],
+          "role": "fill",
+          "path": "M-.67 -15.4A.67 .55 0 0 1 .67 -15.4A.67 .55 0 0 1 -.67 -15.4Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "seated-ptfe-contact-band",
+          "layer": "inner",
+          "depth": 1,
+          "material": "ptfe",
+          "color": [
+            252,
+            250,
+            244
+          ],
+          "role": "fill",
+          "path": "M-3.0216936 -13.4370416Q0 -13.18 3.0216936 -13.4370416C2.9574 -13.1084 2.914 -12.764 2.9 -12.4Q0 -12.145 -2.9 -12.4C-2.914 -12.764 -2.9574 -13.1084 -3.0216936 -13.4370416Z",
+          "part": "valve-handle",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          }
+        },
+        {
+          "id": "closed-lower-plug-seal",
+          "layer": "inner",
+          "depth": 1,
+          "material": "rubber",
+          "color": [
+            113,
+            129,
+            134
+          ],
+          "role": "fill",
+          "path": "M-2.25 -25A2.25 0.33 0 0 1 2.25 -25A2.25 0.33 0 0 1 -2.25 -25Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "shape-9",
+          "layer": "body",
+          "material": "plastic",
+          "color": [
+            245,
+            211,
+            38
+          ],
+          "role": "solid",
+          "path": "M-6 -43H6V-31.1Q6 -30 4.9 -30H-4.9Q-6 -30 -6 -31.1Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "cap-closed-knurled-band",
+          "layer": "body",
+          "depth": 1,
+          "material": "plastic",
+          "color": [
+            249,
+            216,
+            47
+          ],
+          "role": "solid",
+          "path": "M-7 -48.1A7 .9 0 0 1 7 -48.1V-42.6Q7 -41.9 6.3 -41.9H-6.3Q-7 -41.9 -7 -42.6Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "shape-10",
+          "layer": "body",
+          "depth": 2,
+          "material": "glass",
+          "role": "detail",
+          "path": "M-4.8 -46.4V-43.1",
+          "part": "valve-handle"
+        },
+        {
+          "id": "shape-11",
+          "layer": "body",
+          "depth": 2,
+          "material": "glass",
+          "role": "detail",
+          "path": "M-2.4 -46.4V-43.1",
+          "part": "valve-handle"
+        },
+        {
+          "id": "shape-12",
+          "layer": "body",
+          "depth": 2,
+          "material": "glass",
+          "role": "detail",
+          "path": "M0 -46.4V-43.1",
+          "part": "valve-handle"
+        },
+        {
+          "id": "shape-13",
+          "layer": "body",
+          "depth": 2,
+          "material": "glass",
+          "role": "detail",
+          "path": "M2.4 -46.4V-43.1",
+          "part": "valve-handle"
+        },
+        {
+          "id": "shape-14",
+          "layer": "body",
+          "depth": 2,
+          "material": "glass",
+          "role": "detail",
+          "path": "M4.8 -46.4V-43.1",
+          "part": "valve-handle"
+        },
+        {
+          "id": "closed-exposed-ptfe-stem",
+          "layer": "front",
+          "material": "ptfe",
+          "color": [
+            249,
+            247,
+            240
+          ],
+          "role": "solid",
+          "path": "M-2.8 -63.2A2.8 .8 0 0 1 2.8 -63.2V-48.1H-2.8Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "closed-primary-stem-seal",
+          "layer": "front",
+          "depth": 1,
+          "material": "rubber",
+          "color": [
+            109,
+            127,
+            134
+          ],
+          "role": "fill",
+          "path": "M-3.05 -62.3H3.05V-61.65Q0 -61.35 -3.05 -61.65Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "closed-secondary-stem-seal",
+          "layer": "front",
+          "depth": 1,
+          "material": "rubber",
+          "color": [
+            128,
+            109,
+            66
+          ],
+          "role": "fill",
+          "path": "M-3.2 -49.65A3.2 0.4 0 0 1 3.2 -49.65A3.2 0.4 0 0 1 -3.2 -49.65Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "closed-stem-tip-face",
+          "layer": "front",
+          "depth": 2,
+          "material": "ptfe",
+          "color": [
+            249,
+            247,
+            240
+          ],
+          "role": "fill",
+          "path": "M-2.8 -63.2A2.8 0.8 0 0 1 2.8 -63.2A2.8 0.8 0 0 1 -2.8 -63.2Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "closed-stem-tip-rim",
+          "layer": "front",
+          "depth": 3,
+          "material": "plastic",
+          "color": [
+            109,
+            115,
+            114
+          ],
+          "role": "fill",
+          "path": "M-2.8 -63.2A2.8 0.8 0 0 1 2.8 -63.2A2.8 0.8 0 0 1 -2.8 -63.2ZM-2.55 -63.2A2.55 0.55 0 0 0 2.55 -63.2A2.55 0.55 0 0 0 -2.55 -63.2Z",
+          "part": "valve-handle"
+        },
+        {
+          "id": "closed-stem-tip-bore",
+          "layer": "front",
+          "depth": 4,
+          "material": "plastic",
+          "color": [
+            57,
+            64,
+            65
+          ],
+          "role": "fill",
+          "path": "M-1.05 -63.14A1.05 0.3 0 0 1 1.05 -63.14A1.05 0.3 0 0 1 -1.05 -63.14Z",
+          "part": "valve-handle"
+        }
+      ],
+      "joints": [
+        {
+          "kind": "plug",
+          "id": "nmr-stem",
+          "family": "nmr",
+          "gender": "M",
+          "size_mm": 6.4,
+          "at": [
+            0.0,
+            -49.25
+          ],
+          "dir": [
+            0.0,
+            -1.0
+          ],
+          "part": "valve-handle"
+        }
+      ],
+      "params": [
+        {
+          "kind": "states",
+          "id": "valve",
+          "names": {
+            "en": "Valve"
+          },
+          "states": [
+            {
+              "id": "closed",
+              "names": {
+                "en": "Closed"
+              }
+            },
+            {
+              "id": "open",
+              "names": {
+                "en": "Open"
+              }
+            }
+          ],
+          "default": "closed"
+        },
+        {
+          "kind": "fill",
+          "id": "fill",
+          "names": {
+            "en": "Sample height"
+          },
+          "liquid": "body",
+          "default": 0.22727272727272727
+        },
+        {
+          "kind": "color",
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "liquid": "body",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "id": "sample-mark",
+          "param": "fill",
+          "motion": {
+            "translate": [
+              0.0,
+              -176.0
+            ]
+          },
+          "handle": {
+            "at": [
+              5.4,
+              138.0
+            ],
+            "gesture": "drag"
+          }
+        },
+        {
+          "id": "valve-handle",
+          "param": "valve",
+          "motion": {
+            "per_state": {
+              "closed": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "open": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.5
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0.0,
+              -40.0
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ],
+      "liquids": [
+        {
+          "id": "body",
+          "region": "M -1.9 1.99 L -1.9 2 L -1.9 175.5 L -1.88959 175.6986 L -1.85848 175.89503 L -1.80701 176.08713 L -1.73574 176.2728 L -1.64545 176.45 L -1.53713 176.61679 L -1.41198 176.77135 L -1.27135 176.91198 L -1.11679 177.03713 L -0.95 177.14545 L -0.7728 177.23574 L -0.58713 177.30701 L -0.39503 177.35848 L -0.1986 177.38959 L 0 177.4 L 0.1986 177.38959 L 0.39503 177.35848 L 0.58713 177.30701 L 0.7728 177.23574 L 0.95 177.14545 L 1.11679 177.03713 L 1.27135 176.91198 L 1.41198 176.77135 L 1.53713 176.61679 L 1.64545 176.45 L 1.73574 176.2728 L 1.80701 176.08713 L 1.85848 175.89503 L 1.88959 175.6986 L 1.9 175.5 L 1.9 2 L 1.9 1.99 Z",
+          "meniscus": "concave"
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/jy-nmr-evacuation-manifold",
+      "revision": 1,
+      "family": "jy-nmr-evacuation-manifold",
+      "variant": {
+        "hose": "9 mm hose",
+        "valve": "10 mm valve"
+      },
+      "names": {
+        "en": "J. Young NMR evacuation manifold"
+      },
+      "category": "nmr",
+      "keywords": [
+        "J. Young",
+        "J Young",
+        "NMR",
+        "evacuation manifold",
+        "vacuum manifold",
+        "vacuum",
+        "hose barb",
+        "9 mm hose",
+        "10 mm valve",
+        "50150"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "fused-glass-body",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-6.4 -18L6.4 -18L6.4 -11C6.4 -7 7.2 -2.6 11.7 -2.6L16.2 -2.6Q16.9 -3.5 17.7 -3.5L19.1 -2.8Q20.7 -3.5 21.5 -3.5L22.9 -2.8Q24.4 -3.5 25.2 -3.5L26.7 -3.5L26.7 5.5L25.2 5.5Q24.4 5.5 22.9 4.8L21.5 5.5Q20.7 5.5 19.1 4.8L17.7 5.5Q16.9 5.5 16.2 4.6L11.7 4.6C9.4 4.6 8.4 6.5 7.6 8.8C6.8 11.1 5.5 14.4 4.2 17.8Q3.7 19 3.7 21L3.7 57.6Q3.7 59 4.7 60.2Q0 61.8 -4.7 60.2Q-3.7 59 -3.7 57.6L-3.7 21C-3.7 16.5 -7.8 12.5 -8.5 4C-9.4 -3 -6.4 -6.5 -6.4 -11Z"
+        },
+        {
+          "id": "lower-open-lip",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M-3.25 60.05C-3.25 58.95 3.25 58.95 3.25 60.05C3.25 61.15 -3.25 61.15 -3.25 60.05Z"
+        },
+        {
+          "id": "barb-rim-1",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M17.7 -3.05Q18.3 1 17.7 5.05"
+        },
+        {
+          "id": "barb-rim-2",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M21.5 -3.05Q22.1 1 21.5 5.05"
+        },
+        {
+          "id": "barb-rim-3",
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "path": "M25.2 -3.05Q25.8 1 25.2 5.05"
+        },
+        {
+          "id": "ptfe-sealing-spindle",
+          "layer": "inner",
+          "material": "ptfe",
+          "color": [
+            242,
+            239,
+            228
+          ],
+          "role": "fill",
+          "path": "M-4.45 -20L4.45 -20L4.45 12.6Q4.45 13.2 5.660985 14C5.522063 14.361417 5.380695 14.728519 5.237606 15.1Q4.35 15.65 3.9 16.1Q0 17.15 -3.9 16.1Q-4.35 15.65 -5.367182 15.1C-5.520314 14.742382 -5.678008 14.376329 -5.8375 14Q-4.45 13.2 -4.45 12.6Z",
+          "part": "valve"
+        },
+        {
+          "id": "ptfe-contact-collar",
+          "layer": "inner",
+          "depth": 1,
+          "material": "ptfe",
+          "color": [
+            252,
+            250,
+            244
+          ],
+          "role": "fill",
+          "path": "M-5.8375 14Q0 14.45 5.660985 14C5.522063 14.361417 5.380695 14.728519 5.237606 15.1Q0 15.55 -5.367182 15.1C-5.520314 14.742382 -5.678008 14.376329 -5.8375 14Z",
+          "part": "valve"
+        },
+        {
+          "id": "yellow-cap",
+          "layer": "front",
+          "material": "plastic",
+          "color": [
+            239,
+            199,
+            31
+          ],
+          "role": "solid",
+          "path": "M-9 -41L9 -41Q10.1 -40.7 10.1 -39.2L10.1 -18.5Q0 -15.5 -10.1 -18.5L-10.1 -39.2Q-10.1 -40.7 -9 -41Z",
+          "part": "valve"
+        },
+        {
+          "id": "cap-lower-band",
+          "layer": "front",
+          "depth": 1,
+          "material": "plastic",
+          "role": "detail",
+          "path": "M-10.1 -23Q0 -21.6 10.1 -23",
+          "part": "valve"
+        },
+        {
+          "id": "cap-knurling",
+          "layer": "front",
+          "depth": 1,
+          "material": "ink",
+          "color": [
+            170,
+            136,
+            14
+          ],
+          "role": "fill",
+          "path": "M-8.75 -38.7H-8.45V-24H-8.75ZM-7.45 -38.7H-7.15V-24H-7.45ZM-6.15 -38.7H-5.85V-24H-6.15ZM-4.85 -38.7H-4.55V-24H-4.85ZM-3.55 -38.7H-3.25V-24H-3.55ZM-2.25 -38.7H-1.95V-24H-2.25ZM-0.95 -38.7H-0.65V-24H-0.95ZM0.65 -38.7H0.95V-24H0.65ZM1.95 -38.7H2.25V-24H1.95ZM3.25 -38.7H3.55V-24H3.25ZM4.55 -38.7H4.85V-24H4.55ZM5.85 -38.7H6.15V-24H5.85ZM7.15 -38.7H7.45V-24H7.15ZM8.45 -38.7H8.75V-24H8.45Z",
+          "part": "valve"
+        },
+        {
+          "id": "cap-top-shoulder",
+          "layer": "front",
+          "depth": 1,
+          "material": "plastic",
+          "role": "detail",
+          "path": "M-9.4 -39.1Q0 -37.9 9.4 -39.1",
+          "part": "valve"
+        },
+        {
+          "id": "off-white-axial-spindle",
+          "layer": "front",
+          "depth": 2,
+          "material": "ptfe",
+          "color": [
+            244,
+            242,
+            232
+          ],
+          "role": "solid",
+          "path": "M-3.25 -48.65Q0 -49.35 3.25 -48.65L4.15 -42.2L5.25 -42.2Q5.65 -42.2 5.65 -41.3Q5.65 -40.2 4.5 -40L-4.5 -40Q-5.65 -40.2 -5.65 -41.3Q-5.65 -42.2 -5.25 -42.2L-4.15 -42.2Z",
+          "part": "valve"
+        }
+      ],
+      "joints": [
+        {
+          "kind": "plug",
+          "id": "hose",
+          "family": "hose",
+          "gender": "M",
+          "size_mm": 9.0,
+          "at": [
+            26.7,
+            1.0
+          ],
+          "dir": [
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "kind": "plug",
+          "id": "nmr-socket",
+          "family": "nmr",
+          "gender": "F",
+          "size_mm": 6.4,
+          "at": [
+            0.0,
+            60.05
+          ],
+          "dir": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "params": [
+        {
+          "kind": "states",
+          "id": "valve",
+          "names": {
+            "en": "Valve"
+          },
+          "states": [
+            {
+              "id": "closed",
+              "names": {
+                "en": "Closed"
+              }
+            },
+            {
+              "id": "open",
+              "names": {
+                "en": "Open"
+              }
+            }
+          ],
+          "default": "closed"
+        }
+      ],
+      "parts": [
+        {
+          "id": "valve",
+          "param": "valve",
+          "motion": {
+            "per_state": {
+              "closed": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "open": [
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -3.0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0.0,
+              -30.0
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/hose-9",
+      "revision": 1,
+      "family": "hose",
+      "variant": {
+        "bore": "9 mm"
+      },
+      "names": {
+        "en": "Rubber hose, 9 mm"
+      },
+      "category": "other",
+      "keywords": [
+        "hose",
+        "tubing",
+        "rubber hose",
+        "9 mm"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "tube": {
+        "width_mm": 11.0,
+        "material": "rubber",
+        "color": [
+          196,
+          106,
+          58
+        ],
+        "ends": [
+          "a",
+          "b"
+        ]
+      },
+      "joints": [
+        {
+          "kind": "plug",
+          "id": "a",
+          "family": "hose",
+          "gender": "F",
+          "size_mm": 9.0,
+          "at": [
+            0.0,
+            0.0
+          ],
+          "dir": [
+            -1.0,
+            0.0
+          ]
+        },
+        {
+          "kind": "plug",
+          "id": "b",
+          "family": "hose",
+          "gender": "F",
+          "size_mm": 9.0,
+          "at": [
+            60.0,
+            0.0
+          ],
+          "dir": [
+            1.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "seats": [
+    {
+      "a": {
+        "piece": 2,
+        "joint": "nmr-stem"
+      },
+      "b": {
+        "piece": 1,
+        "joint": "nmr-socket"
+      }
+    },
+    {
+      "a": {
+        "piece": 1,
+        "joint": "hose"
+      },
+      "b": {
+        "piece": 3,
+        "joint": "a"
+      }
+    }
+  ],
+  "view": {
+    "center": {
+      "x": 86.183334,
+      "y": 157.73193
+    },
+    "zoom": 1.1807888
+  }
+}
