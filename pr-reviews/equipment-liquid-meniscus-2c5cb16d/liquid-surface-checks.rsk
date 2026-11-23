@@ -1,0 +1,654 @@
+{
+  "version": 40,
+  "atoms": [],
+  "bonds": [],
+  "annotations": [
+    {
+      "id": 4,
+      "position": {
+        "x": -144.375,
+        "y": -236.83333333333334
+      },
+      "text": "Liquid surface checks",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 15,
+          "bold": true,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 235,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 5,
+      "position": {
+        "x": -83.125,
+        "y": 75.83333333333334
+      },
+      "text": "J. Young NMR tube",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 73,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 6,
+      "position": {
+        "x": 76.70833333333334,
+        "y": 75.83333333333334
+      },
+      "text": "Round-bottom flask",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 73,
+        "line_spacing": 1.14
+      }
+    },
+    {
+      "id": 7,
+      "position": {
+        "x": 266.875,
+        "y": 75.83333333333334
+      },
+      "text": "Rotated flask",
+      "format": {
+        "style": {
+          "family": "Arial",
+          "size_pt": 9,
+          "bold": false,
+          "color": [
+            0,
+            0,
+            0
+          ]
+        },
+        "alignment": "center",
+        "width_pt": 73,
+        "line_spacing": 1.14
+      }
+    }
+  ],
+  "arrows": [],
+  "graphics": [
+    {
+      "id": 1,
+      "kind": "piece",
+      "origin": {
+        "x": 23.333333333333336,
+        "y": -142.33333333333334
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/jy-nmr-tube@2#23b54f34fd7f95fc",
+        "params": {
+          "fill": 0.38
+        }
+      }
+    },
+    {
+      "id": 2,
+      "kind": "piece",
+      "origin": {
+        "x": 183.16666666666669,
+        "y": 1.1666666666666667
+      },
+      "axis_x": {
+        "x": 1.1666666666666667,
+        "y": 0.0
+      },
+      "axis_y": {
+        "x": 0.0,
+        "y": 1.1666666666666667
+      },
+      "piece": {
+        "definition": "reshiki/rbf-300-29@2#36e05c1e41ee0741",
+        "params": {
+          "fill": 0.35
+        }
+      }
+    },
+    {
+      "id": 3,
+      "kind": "piece",
+      "origin": {
+        "x": 373.33333333333337,
+        "y": 1.1666666666666667
+      },
+      "axis_x": {
+        "x": 1.0301055250020816,
+        "y": 0.547716823250206
+      },
+      "axis_y": {
+        "x": -0.547716823250206,
+        "y": 1.0301055250020816
+      },
+      "piece": {
+        "definition": "reshiki/rbf-300-29@2#36e05c1e41ee0741",
+        "params": {
+          "fill": 0.35
+        }
+      }
+    }
+  ],
+  "piece_definitions": [
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/jy-nmr-tube",
+      "revision": 2,
+      "family": "jy-nmr-tube",
+      "variant": {},
+      "names": {
+        "en": "J. Young NMR tube",
+        "ja": "J. Young NMR 管"
+      },
+      "category": "nmr",
+      "keywords": [
+        "jy nmr tube",
+        "nmr"
+      ],
+      "credits": {
+        "author": "ReShiki"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "id": "shape-1",
+          "path": "M-2.5 -0.01L-2.5 0L-2.5 175.5A2.5 2.5 0 0 0 2.5 175.5L2.5 0L2.5 -0.01Z"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "id": "shape-2",
+          "path": "M2.5 2L4.2 -2L4.2 -24L-4.2 -24L-4.2 -2L-2.5 2Z"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "id": "shape-3",
+          "path": "M-4.2 -14L4.2 -14.9"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "id": "shape-4",
+          "path": "M-4.2 -15.8L4.2 -16.7"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "id": "shape-5",
+          "path": "M-4.2 -17.6L4.2 -18.5"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "id": "shape-6",
+          "path": "M-4.2 -19.4L4.2 -20.3"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "id": "shape-7",
+          "path": "M-4.2 -21.2L4.2 -22.1"
+        },
+        {
+          "layer": "inner",
+          "material": "ptfe",
+          "role": "solid",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-8",
+          "path": "M-0.5 -20L0.5 -20A1.2 1.2 0 0 1 1.7 -18.8L1.7 -1.2A1.2 1.2 0 0 1 0.5 0L-0.5 0A1.2 1.2 0 0 1 -1.7 -1.2L-1.7 -18.8A1.2 1.2 0 0 1 -0.5 -20Z"
+        },
+        {
+          "layer": "body",
+          "material": "plastic",
+          "role": "solid",
+          "color": [
+            244,
+            241,
+            234
+          ],
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-9",
+          "path": "M-3.4 -38L3.4 -38A2 2 0 0 1 5.4 -36L5.4 -25A2 2 0 0 1 3.4 -23L-3.4 -23A2 2 0 0 1 -5.4 -25L-5.4 -36A2 2 0 0 1 -3.4 -38Z"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-10",
+          "path": "M-3.2 -36L-3.2 -25"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-11",
+          "path": "M-1.6 -36L-1.6 -25"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-12",
+          "path": "M0 -36L0 -25"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-13",
+          "path": "M1.6 -36L1.6 -25"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "closed"
+            ]
+          },
+          "id": "shape-14",
+          "path": "M3.2 -36L3.2 -25"
+        },
+        {
+          "layer": "inner",
+          "material": "ptfe",
+          "role": "solid",
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-16",
+          "path": "M-0.5 -22.5L0.5 -22.5A1.2 1.2 0 0 1 1.7 -21.3L1.7 -3.7A1.2 1.2 0 0 1 0.5 -2.5L-0.5 -2.5A1.2 1.2 0 0 1 -1.7 -3.7L-1.7 -21.3A1.2 1.2 0 0 1 -0.5 -22.5Z"
+        },
+        {
+          "layer": "body",
+          "material": "plastic",
+          "role": "solid",
+          "color": [
+            244,
+            241,
+            234
+          ],
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-17",
+          "path": "M-3.4 -40.5L3.4 -40.5A2 2 0 0 1 5.4 -38.5L5.4 -27.5A2 2 0 0 1 3.4 -25.5L-3.4 -25.5A2 2 0 0 1 -5.4 -27.5L-5.4 -38.5A2 2 0 0 1 -3.4 -40.5Z"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-18",
+          "path": "M-3.2 -38.5L-3.2 -27.5"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-19",
+          "path": "M-1.6 -38.5L-1.6 -27.5"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-20",
+          "path": "M0 -38.5L0 -27.5"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-21",
+          "path": "M1.6 -38.5L1.6 -27.5"
+        },
+        {
+          "layer": "body",
+          "material": "glass",
+          "role": "detail",
+          "when": {
+            "valve": [
+              "open"
+            ]
+          },
+          "id": "shape-22",
+          "path": "M3.2 -38.5L3.2 -27.5"
+        }
+      ],
+      "params": [
+        {
+          "id": "valve",
+          "names": {
+            "en": "Valve"
+          },
+          "kind": "states",
+          "default": "closed",
+          "states": [
+            {
+              "id": "closed",
+              "names": {
+                "en": "Closed"
+              }
+            },
+            {
+              "id": "open",
+              "names": {
+                "en": "Open"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "names": {
+            "en": "Sample height"
+          },
+          "kind": "fill",
+          "liquid": "body",
+          "default": 0.22727272727272727
+        },
+        {
+          "id": "liquid-color",
+          "names": {
+            "en": "Liquid color"
+          },
+          "kind": "color",
+          "liquid": "body",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "liquids": [
+        {
+          "id": "body",
+          "region": "M -1.9 1.99 L -1.9 2 L -1.9 175.5 L -1.88959 175.6986 L -1.85848 175.89503 L -1.80701 176.08713 L -1.73574 176.2728 L -1.64545 176.45 L -1.53713 176.61679 L -1.41198 176.77135 L -1.27135 176.91198 L -1.11679 177.03713 L -0.95 177.14545 L -0.7728 177.23574 L -0.58713 177.30701 L -0.39503 177.35848 L -0.1986 177.38959 L 0 177.4 L 0.1986 177.38959 L 0.39503 177.35848 L 0.58713 177.30701 L 0.7728 177.23574 L 0.95 177.14545 L 1.11679 177.03713 L 1.27135 176.91198 L 1.41198 176.77135 L 1.53713 176.61679 L 1.64545 176.45 L 1.73574 176.2728 L 1.80701 176.08713 L 1.85848 175.89503 L 1.88959 175.6986 L 1.9 175.5 L 1.9 2 L 1.9 1.99 Z"
+        }
+      ],
+      "parts": [
+        {
+          "id": "sample-mark",
+          "param": "fill",
+          "motion": {
+            "translate": [
+              0,
+              -176
+            ]
+          },
+          "handle": {
+            "at": [
+              5.4,
+              138
+            ],
+            "gesture": "drag"
+          }
+        },
+        {
+          "id": "valve-handle",
+          "param": "valve",
+          "motion": {
+            "per_state": {
+              "closed": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "open": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          },
+          "handle": {
+            "at": [
+              0,
+              -32
+            ],
+            "gesture": "toggle"
+          }
+        }
+      ]
+    },
+    {
+      "format": "reshiki-piece",
+      "format_version": 0,
+      "id": "reshiki/rbf-300-29",
+      "revision": 2,
+      "family": "rbf",
+      "variant": {
+        "volume_ml": "300",
+        "joint": "29/42"
+      },
+      "names": {
+        "en": "Round-bottom flask, 300 mL",
+        "ja": "丸底フラスコ 300 mL"
+      },
+      "category": "flask",
+      "keywords": [
+        "round-bottom",
+        "flask",
+        "丸底",
+        "ナス",
+        "フラスコ"
+      ],
+      "credits": {
+        "author": "ReShiki",
+        "license": "CC0-1.0"
+      },
+      "units": "mm",
+      "shapes": [
+        {
+          "id": "s0",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M41.53 0A41.53 41.53 0 0 1 -41.53 0A41.53 41.53 0 0 1 41.53 0Z"
+        },
+        {
+          "id": "s1",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M13 -39.04L13 -54.53L-13 -54.53L-13 -39.04Z"
+        },
+        {
+          "id": "s2",
+          "layer": "body",
+          "material": "glass",
+          "role": "glass",
+          "path": "M-13 -53.53L-13 -51.53L13 -51.53L13 -53.53Z"
+        }
+      ],
+      "joints": [
+        {
+          "id": "neck",
+          "kind": "taper",
+          "size": "29/42",
+          "gender": "F",
+          "at": [
+            0,
+            -99.528
+          ],
+          "dir": [
+            0,
+            -1
+          ],
+          "draw": "standard"
+        },
+        {
+          "id": "stir",
+          "kind": "plug",
+          "family": "stir",
+          "gender": "F",
+          "size_mm": 24,
+          "at": [
+            0,
+            38.925
+          ],
+          "dir": [
+            0,
+            -1
+          ]
+        }
+      ],
+      "holds": [
+        {
+          "id": "neck-grip",
+          "kind": "grip",
+          "from": [
+            0,
+            -41.528
+          ],
+          "to": [
+            0,
+            -53.528
+          ],
+          "diameter_mm": 26
+        }
+      ],
+      "params": [
+        {
+          "id": "fill",
+          "names": {
+            "en": "Liquid level",
+            "ja": "液面"
+          },
+          "kind": "fill",
+          "liquid": "body",
+          "default": 0
+        },
+        {
+          "id": "liquid_color",
+          "names": {
+            "en": "Liquid colour",
+            "ja": "液の色"
+          },
+          "kind": "color",
+          "liquid": "body",
+          "default": [
+            79,
+            143,
+            208
+          ]
+        }
+      ],
+      "liquids": [
+        {
+          "id": "body",
+          "region": "M 40.128 0 L 39.976 3.497 L 39.519 6.968 L 38.761 10.386 L 37.708 13.725 L 36.369 16.959 L 34.752 20.064 L 32.871 23.017 L 30.74 25.794 L 28.375 28.375 L 25.794 30.74 L 23.017 32.871 L 20.064 34.752 L 16.959 36.369 L 13.725 37.708 L 10.386 38.761 L 6.968 39.519 L 3.497 39.976 L 0 40.128 L -3.497 39.976 L -6.968 39.519 L -10.386 38.761 L -13.725 37.708 L -16.959 36.369 L -20.064 34.752 L -23.017 32.871 L -25.794 30.74 L -28.375 28.375 L -30.74 25.794 L -32.871 23.017 L -34.752 20.064 L -36.369 16.959 L -37.708 13.725 L -38.761 10.386 L -39.519 6.968 L -39.976 3.497 L -40.128 0 L -39.976 -3.497 L -39.519 -6.968 L -38.761 -10.386 L -37.708 -13.725 L -36.369 -16.959 L -34.752 -20.064 L -32.871 -23.017 L -30.74 -25.794 L -28.375 -28.375 L -25.794 -30.74 L -23.017 -32.871 L -20.064 -34.752 L -16.959 -36.369 L -13.725 -37.708 L -10.386 -38.761 L -6.968 -39.519 L -3.497 -39.976 L 0 -40.128 L 3.497 -39.976 L 6.968 -39.519 L 10.386 -38.761 L 13.725 -37.708 L 16.959 -36.369 L 20.064 -34.752 L 23.017 -32.871 L 25.794 -30.74 L 28.375 -28.375 L 30.74 -25.794 L 32.871 -23.017 L 34.752 -20.064 L 36.369 -16.959 L 37.708 -13.725 L 38.761 -10.386 L 39.519 -6.968 L 39.976 -3.497 Z",
+          "meniscus": "concave"
+        }
+      ]
+    }
+  ],
+  "seats": []
+}
