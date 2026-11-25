@@ -1,0 +1,56 @@
+
+# ReShiki conventions xtb-6.8 vs xtb 6.8.0, T = 298.15 K
+acetic_acid           18 modes  imag 0  lowest     16.39  max|Δν|  0.590 cm⁻¹  max|ΔIR|  0.778 km/mol  ΔZPVE -4.94e-06  ΔHcorr -4.43e-06  ΔGcorr -6.22e-06 Eh  pg Cs/cs
+ammonia                6 modes  imag 0  lowest   1160.85  max|Δν|  0.295 cm⁻¹  max|ΔIR|  0.211 km/mol  ΔZPVE +4.01e-07  ΔHcorr +3.77e-07  ΔGcorr +4.07e-07 Eh  pg C3v/c3v
+ammonia_planar_ts      6 modes  imag 1  lowest   -971.34  max|Δν|  0.403 cm⁻¹  max|ΔIR|  0.034 km/mol  ΔZPVE +1.10e-06  ΔHcorr +1.09e-06  ΔGcorr +1.11e-06 Eh  pg D3h/d3h
+benzene               30 modes  imag 0  lowest    368.38  max|Δν|  0.316 cm⁻¹  max|ΔIR|  9.284 km/mol  ΔZPVE -3.91e-07  ΔHcorr -5.01e-07  ΔGcorr -3.51e-07 Eh  pg D6h/d6h
+co2                    4 modes  imag 0  lowest    600.38  max|Δν|  0.226 cm⁻¹  max|ΔIR|  0.179 km/mol  ΔZPVE +1.00e-06  ΔHcorr +7.48e-07  ΔGcorr +1.12e-06 Eh  pg Dinfh/din
+ethane_eclipsed_ts    18 modes  imag 1  lowest   -293.49  max|Δν|  0.308 cm⁻¹  max|ΔIR|  1.768 km/mol  ΔZPVE -1.61e-06  ΔHcorr -1.70e-06  ΔGcorr -1.58e-06 Eh  pg D3h/d3h
+ethylene              12 modes  imag 0  lowest    841.46  max|Δν|  0.195 cm⁻¹  max|ΔIR|  1.158 km/mol  ΔZPVE -2.26e-08  ΔHcorr -1.18e-07  ΔGcorr +6.52e-09 Eh  pg D2h/d2h
+formaldehyde           6 modes  imag 0  lowest   1085.46  max|Δν|  0.354 cm⁻¹  max|ΔIR|  0.576 km/mol  ΔZPVE -4.13e-07  ΔHcorr -4.21e-07  ΔGcorr -4.12e-07 Eh  pg C2v/c2v
+hcn                    4 modes  imag 0  lowest    776.67  max|Δν|  0.072 cm⁻¹  max|ΔIR|  0.115 km/mol  ΔZPVE -3.90e-07  ΔHcorr -3.79e-07  ΔGcorr -3.94e-07 Eh  pg Cinfv/cin
+methane                9 modes  imag 0  lowest   1385.87  max|Δν|  0.134 cm⁻¹  max|ΔIR|  0.329 km/mol  ΔZPVE +3.13e-07  ΔHcorr +3.15e-07  ΔGcorr +3.12e-07 Eh  pg Td/td
+methanol              12 modes  imag 0  lowest    373.52  max|Δν|  0.288 cm⁻¹  max|ΔIR|  0.358 km/mol  ΔZPVE -1.20e-06  ΔHcorr -9.97e-07  ΔGcorr -1.38e-06 Eh  pg Cs/cs
+water                  3 modes  imag 0  lowest   1539.58  max|Δν|  0.077 cm⁻¹  max|ΔIR|  0.122 km/mol  ΔZPVE -8.69e-08  ΔHcorr -8.82e-08  ΔGcorr -8.67e-08 Eh  pg C2v/c2v
+
+# ReShiki conventions xtb-6.8 vs xtb 6.8.0, T = 500 K
+acetic_acid           18 modes  imag 0  lowest     16.39  max|Δν|  0.610 cm⁻¹  max|ΔIR|  0.788 km/mol  ΔZPVE -5.10e-06  ΔHcorr -3.88e-06  ΔGcorr -1.12e-05 Eh  pg Cs/cs
+ammonia                6 modes  imag 0  lowest   1160.85  max|Δν|  0.295 cm⁻¹  max|ΔIR|  0.211 km/mol  ΔZPVE +4.01e-07  ΔHcorr +2.67e-07  ΔGcorr +4.54e-07 Eh  pg C3v/c3v
+ammonia_planar_ts      6 modes  imag 1  lowest   -971.34  max|Δν|  0.403 cm⁻¹  max|ΔIR|  0.034 km/mol  ΔZPVE +1.10e-06  ΔHcorr +9.83e-07  ΔGcorr +1.14e-06 Eh  pg D3h/d3h
+benzene               30 modes  imag 0  lowest    368.38  max|Δν|  0.486 cm⁻¹  max|ΔIR| 12.594 km/mol  ΔZPVE -5.94e-07  ΔHcorr -1.11e-06  ΔGcorr -2.86e-07 Eh  pg D6h/d6h
+co2                    4 modes  imag 0  lowest    600.38  max|Δν|  0.126 cm⁻¹  max|ΔIR|  0.179 km/mol  ΔZPVE +5.16e-07  ΔHcorr +2.55e-07  ΔGcorr +7.58e-07 Eh  pg Dinfh/din
+ethane_eclipsed_ts    18 modes  imag 1  lowest   -293.49  max|Δν|  0.308 cm⁻¹  max|ΔIR|  1.768 km/mol  ΔZPVE -1.61e-06  ΔHcorr -1.98e-06  ΔGcorr -1.42e-06 Eh  pg D3h/d3h
+ethylene              12 modes  imag 0  lowest    841.46  max|Δν|  0.211 cm⁻¹  max|ΔIR|  1.288 km/mol  ΔZPVE -5.03e-07  ΔHcorr -6.52e-07  ΔGcorr -4.11e-07 Eh  pg D2h/d2h
+formaldehyde           6 modes  imag 0  lowest   1085.46  max|Δν|  0.394 cm⁻¹  max|ΔIR|  0.646 km/mol  ΔZPVE -5.24e-07  ΔHcorr -5.53e-07  ΔGcorr -5.11e-07 Eh  pg C2v/c2v
+hcn                    4 modes  imag 0  lowest    776.67  max|Δν|  0.072 cm⁻¹  max|ΔIR|  0.115 km/mol  ΔZPVE -3.91e-07  ΔHcorr -3.59e-07  ΔGcorr -4.11e-07 Eh  pg Cinfv/cin
+methane                9 modes  imag 0  lowest   1385.87  max|Δν|  0.134 cm⁻¹  max|ΔIR|  0.329 km/mol  ΔZPVE -3.96e-05  ΔHcorr -4.75e-03  ΔGcorr +8.51e-03 Eh  pg Td/td
+methanol              12 modes  imag 0  lowest    373.52  max|Δν|  0.288 cm⁻¹  max|ΔIR|  0.358 km/mol  ΔZPVE -1.35e-06  ΔHcorr -9.25e-07  ΔGcorr -1.98e-06 Eh  pg Cs/cs
+water                  3 modes  imag 0  lowest   1539.58  max|Δν|  0.077 cm⁻¹  max|ΔIR|  0.122 km/mol  ΔZPVE -8.69e-08  ΔHcorr -1.01e-07  ΔGcorr -8.27e-08 Eh  pg C2v/c2v
+
+# ReShiki conventions axtb vs xtb 6.8.0, T = 298.15 K
+acetic_acid           18 modes  imag 0  lowest     16.39  max|Δν|  0.603 cm⁻¹  max|ΔIR|  0.802 km/mol  ΔZPVE -6.26e-06  ΔHcorr -5.71e-06  ΔGcorr -7.56e-06 Eh  pg Cs/cs
+ammonia                6 modes  imag 0  lowest   1160.81  max|Δν|  0.265 cm⁻¹  max|ΔIR|  0.214 km/mol  ΔZPVE -5.42e-07  ΔHcorr -5.62e-07  ΔGcorr -6.64e-07 Eh  pg C3v/c3v
+ammonia_planar_ts      6 modes  imag 1  lowest   -971.31  max|Δν|  0.362 cm⁻¹  max|ΔIR|  0.038 km/mol  ΔZPVE +2.07e-07  ΔHcorr +1.97e-07  ΔGcorr +8.09e-08 Eh  pg D3h/d3h
+benzene               30 modes  imag 0  lowest    368.37  max|Δν|  0.402 cm⁻¹  max|ΔIR|  9.270 km/mol  ΔZPVE -2.67e-06  ΔHcorr -2.70e-06  ΔGcorr -2.75e-06 Eh  pg D6h/d6h
+co2                    4 modes  imag 0  lowest    600.37  max|Δν|  0.223 cm⁻¹  max|ΔIR|  0.188 km/mol  ΔZPVE +1.00e-06  ΔHcorr +7.53e-07  ΔGcorr +1.16e-06 Eh  pg Dinfh/din
+ethane_eclipsed_ts    18 modes  imag 1  lowest   -293.48  max|Δν|  0.392 cm⁻¹  max|ΔIR|  1.756 km/mol  ΔZPVE -3.63e-06  ΔHcorr -3.70e-06  ΔGcorr -3.72e-06 Eh  pg D3h/d3h
+ethylene              12 modes  imag 0  lowest    841.44  max|Δν|  0.220 cm⁻¹  max|ΔIR|  1.156 km/mol  ΔZPVE -1.34e-06  ΔHcorr -1.41e-06  ΔGcorr -1.42e-06 Eh  pg D2h/d2h
+formaldehyde           6 modes  imag 0  lowest   1085.43  max|Δν|  0.432 cm⁻¹  max|ΔIR|  0.570 km/mol  ΔZPVE -9.93e-07  ΔHcorr -9.95e-07  ΔGcorr -1.04e-06 Eh  pg C2v/c2v
+hcn                    4 modes  imag 0  lowest    776.65  max|Δν|  0.149 cm⁻¹  max|ΔIR|  0.115 km/mol  ΔZPVE -7.43e-07  ΔHcorr -7.19e-07  ΔGcorr -8.16e-07 Eh  pg Cinfv/cin
+methane                9 modes  imag 0  lowest   1385.83  max|Δν|  0.225 cm⁻¹  max|ΔIR|  0.335 km/mol  ΔZPVE -9.43e-07  ΔHcorr -9.35e-07  ΔGcorr -1.08e-06 Eh  pg Td/td
+methanol              12 modes  imag 0  lowest    373.51  max|Δν|  0.296 cm⁻¹  max|ΔIR|  0.359 km/mol  ΔZPVE -2.50e-06  ΔHcorr -2.27e-06  ΔGcorr -2.74e-06 Eh  pg Cs/cs
+water                  3 modes  imag 0  lowest   1539.54  max|Δν|  0.165 cm⁻¹  max|ΔIR|  0.121 km/mol  ΔZPVE -6.28e-07  ΔHcorr -6.29e-07  ΔGcorr -6.89e-07 Eh  pg C2v/c2v
+
+# ReShiki conventions axtb vs xtb 6.8.0, T = 500 K
+acetic_acid           18 modes  imag 0  lowest     16.39  max|Δν|  0.623 cm⁻¹  max|ΔIR|  0.812 km/mol  ΔZPVE -6.41e-06  ΔHcorr -5.09e-06  ΔGcorr -1.26e-05 Eh  pg Cs/cs
+ammonia                6 modes  imag 0  lowest   1160.81  max|Δν|  0.265 cm⁻¹  max|ΔIR|  0.214 km/mol  ΔZPVE -5.42e-07  ΔHcorr -6.47e-07  ΔGcorr -7.11e-07 Eh  pg C3v/c3v
+ammonia_planar_ts      6 modes  imag 1  lowest   -971.31  max|Δν|  0.362 cm⁻¹  max|ΔIR|  0.038 km/mol  ΔZPVE +2.08e-07  ΔHcorr +1.05e-07  ΔGcorr +2.38e-08 Eh  pg D3h/d3h
+benzene               30 modes  imag 0  lowest    368.37  max|Δν|  0.572 cm⁻¹  max|ΔIR| 12.580 km/mol  ΔZPVE -2.88e-06  ΔHcorr -3.13e-06  ΔGcorr -2.86e-06 Eh  pg D6h/d6h
+co2                    4 modes  imag 0  lowest    600.37  max|Δν|  0.123 cm⁻¹  max|ΔIR|  0.188 km/mol  ΔZPVE +5.18e-07  ΔHcorr +2.60e-07  ΔGcorr +8.16e-07 Eh  pg Dinfh/din
+ethane_eclipsed_ts    18 modes  imag 1  lowest   -293.48  max|Δν|  0.392 cm⁻¹  max|ΔIR|  1.756 km/mol  ΔZPVE -3.63e-06  ΔHcorr -3.88e-06  ΔGcorr -3.68e-06 Eh  pg D3h/d3h
+ethylene              12 modes  imag 0  lowest    841.44  max|Δν|  0.250 cm⁻¹  max|ΔIR|  1.286 km/mol  ΔZPVE -1.82e-06  ΔHcorr -1.87e-06  ΔGcorr -1.95e-06 Eh  pg D2h/d2h
+formaldehyde           6 modes  imag 0  lowest   1085.43  max|Δν|  0.472 cm⁻¹  max|ΔIR|  0.640 km/mol  ΔZPVE -1.10e-06  ΔHcorr -1.10e-06  ΔGcorr -1.18e-06 Eh  pg C2v/c2v
+hcn                    4 modes  imag 0  lowest    776.65  max|Δν|  0.149 cm⁻¹  max|ΔIR|  0.115 km/mol  ΔZPVE -7.43e-07  ΔHcorr -6.77e-07  ΔGcorr -8.95e-07 Eh  pg Cinfv/cin
+methane                9 modes  imag 0  lowest   1385.83  max|Δν|  0.225 cm⁻¹  max|ΔIR|  0.335 km/mol  ΔZPVE -4.08e-05  ΔHcorr -4.75e-03  ΔGcorr +8.50e-03 Eh  pg Td/td
+methanol              12 modes  imag 0  lowest    373.51  max|Δν|  0.296 cm⁻¹  max|ΔIR|  0.359 km/mol  ΔZPVE -2.64e-06  ΔHcorr -2.13e-06  ΔGcorr -3.41e-06 Eh  pg Cs/cs
+water                  3 modes  imag 0  lowest   1539.54  max|Δν|  0.165 cm⁻¹  max|ΔIR|  0.121 km/mol  ΔZPVE -6.28e-07  ΔHcorr -6.35e-07  ΔGcorr -7.28e-07 Eh  pg C2v/c2v
