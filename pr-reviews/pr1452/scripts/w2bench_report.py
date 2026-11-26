@@ -81,7 +81,7 @@ def overhead_record(row, info):
             "load_before": [round(x, 2) for x in row["load_before"]]}
 
 
-def conformer_record(row, info):
+def conformer_record(row, info, probes):
     mol = info[row["mol"]]
     args = row["args"]
     starts = int(args[args.index("--starts") + 1]) if "--starts" in args else 100
@@ -105,8 +105,8 @@ def conformer_record(row, info):
     if report is None:
         rec["error"] = error_of(row) or "no report"
         return rec
-    embed = report.get("embed_seconds")
     ph = report["phases"]
+    embed = statistics.median(probes[(row["mol"], starts)]) if minimizer == "MMFF94s" and probes.get((row["mol"], starts)) else None
     sampling = report["sampling_seconds"]
     rec.update(
         search_s=round(report["search_seconds"], 3),
@@ -117,7 +117,7 @@ def conformer_record(row, info):
         minimize_xtb_s=None if report["minimizing_seconds"] is None else round(report["minimizing_seconds"], 3),
         cluster_s=round((ph["first_reranking"] or ph["done"]) - ph["clustering"], 4),
         rerank_s=None if ph["first_reranking"] is None else round(ph["last_reranking"] - ph["first_reranking"], 3),
-        rank_s=round(ph["done"] - (ph["last_reranking"] or ph["clustering"]), 4),
+        rank_s=None if ph["last_reranking"] is None else round(ph["done"] - ph["last_reranking"], 4),
         valid_starts=report["starts"],
         clusters=report["clusters"],
         reranked=report["reranked"],
@@ -314,7 +314,26 @@ def main():
     for name in ("overhead", "methods", "threads"):
         for r in load(os.path.join(run_dir, f"{name}.jsonl")):
             runs.append(overhead_record(r, info) if "total_s" in r else calc_record(r, info))
-    runs += [conformer_record(r, info) for r in load(os.path.join(run_dir, "conformers.jsonl"))]
+    conf = load(os.path.join(run_dir, "conformers.jsonl"))
+    probes = collections.defaultdict(list)
+    for r in conf:
+        if "--embed-probe" in r["args"] and r.get("report"):
+            starts = r["report"]["starts_requested"]
+            probes[(r["mol"], starts)].append(r["report"]["embed_seconds"])
+    for r in conf:
+        if "--embed-probe" in r["args"]:
+            mol = info[r["mol"]]
+            rec = {"set": "conformers", "molecule": r["mol"], "atoms": mol["atoms"], "formula": mol["formula"],
+                   "method": "embedding only", "task": "conformers", "threads": 8, "repeat": r["rep"] + 1,
+                   "wall_s": round(r["wall_s"], 3), "load_before": [round(x, 2) for x in r["load_before"]]}
+            if r.get("report"):
+                rec.update(starts=r["report"]["starts_requested"], embed_s=round(r["report"]["embed_seconds"], 3),
+                           embedded=r["report"]["embed_count"])
+            else:
+                rec["error"] = error_of(r) or "no report"
+            runs.append(rec)
+        else:
+            runs.append(conformer_record(r, info, probes))
     # Thread speedup against the median 1-thread wall time of the same case.
     base = collections.defaultdict(list)
     for r in runs:

@@ -21,6 +21,13 @@ CASES = [
     ("tyr-gly-gly-phe", ["--starts", "300"], 3),
     ("ritonavir", ["--starts", "300"], 3),
     ("propranolol", ["--minimizer", "gfn2"], 3),
+    # Embedding only (no minimization, no search), in runs of their own.
+    ("propranolol", ["--embed-probe"], 3),
+    ("tyr-gly-gly-phe", ["--embed-probe"], 3),
+    ("atorvastatin", ["--embed-probe"], 3),
+    ("ritonavir", ["--embed-probe"], 3),
+    ("tyr-gly-gly-phe", ["--starts", "300", "--embed-probe"], 3),
+    ("ritonavir", ["--starts", "300", "--embed-probe"], 3),
 ]
 
 
@@ -36,8 +43,6 @@ def main():
                     waited += 3
                 load = os.getloadavg()
                 cmd = [exe, "--conformer-bench", os.path.join(mols, mol + ".smi"), *extra]
-                if "--minimizer" not in extra:
-                    cmd.append("--embed-probe")
                 start = time.perf_counter()
                 proc = subprocess.run(cmd, check=False, capture_output=True, text=True)
                 wall = time.perf_counter() - start
