@@ -134,7 +134,7 @@ def conformer_record(row, info, probes):
 # matches any rule decides (rules in this order within a frame). Names come from xctrace,
 # partly demangled, so the patterns match both forms.
 CATEGORIES = [
-    ("diagonalization", re.compile(r"tridiag|evd|eigen|GenEigSolver|sygst|diagonaliz|cholesky", re.I)),
+    ("diagonalization", re.compile(r"tridiag|::evd|3evd|eigen|GenEigSolver|sygst|diagonaliz|cholesky", re.I)),
     ("integrals", re.compile(r"integrals|overlap|multipole_moments|cgto", re.I)),
     ("electrostatics", re.compile(r"coulomb|electrostat|isotropic|aes|eeq|third_order|gamma", re.I)),
     ("exchange (g-xTB)", re.compile(r"(?<!compare_)exchange", re.I)),
@@ -144,6 +144,7 @@ CATEGORIES = [
     ("Hessian: response (CPSCF) and derivative terms", re.compile(r"response|hessian|cpscf", re.I)),
 ]
 ENGINE = re.compile(r"axtb|faer|rayon|pulp|xtb_worker")
+GEMM = re.compile(r"vfmaq|pack_generic|execute_neon|simd_load|simd_store|matmul|gemm|^dot$|^read<|^lt$|^eq<")
 IDLE = re.compile(r"swtch_pri|psynch|sched_yield|semaphore_wait", re.I)
 
 
@@ -166,7 +167,7 @@ def profile_shares(path):
         if hit is None:
             if IDLE.search(frames[-1]):
                 hit = "idle worker threads (yield/wait)"
-            elif not any("axtb" in f for f in frames):
+            elif not any("axtb" in f for f in frames) and GEMM.search(frames[-1]):
                 hit = "matrix multiply on pool threads (faer GEMM; caller not on the stack)"
             else:
                 hit = "other engine code"
@@ -302,7 +303,7 @@ def chart(runs, info, path):
         s.append(f'<rect x="{lx}" y="{H - 22}" width="12" height="12" rx="2" fill="{colors[meth]}"/>')
         s.append(f'<text x="{lx + 17}" y="{H - 12}" fill="#0b0b0b">{meth}</text>')
         lx += 110
-    s.append(f'<text x="{W - 10}" y="{H - 12}" text-anchor="end" fill="#52514e" font-size="11">Log scales. Each time includes about 60 ms to start the calculation. Ferrocene and UF6 are in the tables.</text>')
+    s.append(f'<text x="{W - 10}" y="{H - 12}" text-anchor="end" fill="#52514e" font-size="11">Log scales. Below about 0.1 s the time is mostly starting the calculation. Ferrocene and UF6 are in the tables.</text>')
     s.append("</svg>")
     open(path, "w").write("\n".join(s) + "\n")
 
@@ -359,7 +360,7 @@ def main():
         "os": next((l.split(":", 1)[1].strip() for l in meta_text.splitlines() if l.startswith("ProductVersion")), None),
         "engine": "axtb 0.2.0 @ 9d0388c9e9d81c43c0e7bba01c0ccf706a88fc91 (g-xTB 2.0.1)",
         "build": "cargo build --release --features xtb,conformer-bench (release profile, no LTO)",
-        "idle_rule": "each run starts only after other processes use under 10% of all cores over 3 s; the 1/5/15-min load averages at that moment are in each run's load_before",
+        "idle_rule": "each run starts only after other processes use at most 6% of all cores over 3 s; the 1/5/15-min load averages at that moment are in each run's load_before",
         "raw_meta": meta_text,
         "molecules": [{"name": k, **v} for k, v in sorted(info.items(), key=lambda kv: kv[1]["atoms"])],
     }

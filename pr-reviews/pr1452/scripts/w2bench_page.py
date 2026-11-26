@@ -104,7 +104,7 @@ for label, keys in [
     ("Integrals", ["integrals"]), ("Electrostatics", ["electrostatics"]), ("Dispersion", ["dispersion"]),
     ("Repulsion", ["repulsion"]),
     ("Matrix multiply on pool threads (caller not on the stack)", ["matrix multiply on pool threads (faer GEMM; caller not on the stack)"]),
-    ("Idle worker threads, other engine code", ["idle worker threads (yield/wait)", "other engine code"]),
+    ("Idle worker threads, other or unattributed engine code", ["idle worker threads (yield/wait)", "other engine code"]),
     ("Process start, command line and output", ["process start, CLI and I/O (no engine frame)"]),
 ]:
     prof_rows.append(f"| {label} | " + " | ".join(pct(sum(pr[o].get(k, 0) for k in keys)) for o in order) + " |")
@@ -119,20 +119,21 @@ take in ReShiki, measured through the same code the desktop app runs.
 ## What this means for you
 
 - **Single points are instant at every size.** Up to 196 atoms each method
-  takes 0.06 to 0.3 s, and much of that is starting the calculation (about
-  60 ms). In the engine, g-xTB costs about the same as GFN2-xTB here.
+  takes 0.06 to 0.3 s. For small molecules most of that is starting the
+  calculation (about 60 ms from the command line, 25 ms of it the worker). In
+  the engine, g-xTB costs about the same as GFN2-xTB here.
 - **Optimizations take seconds.** At about 100 atoms GFN2-xTB takes 1.8 s and
   g-xTB 4.1 s; at 196 atoms, 7 s and 21 s. g-xTB costs 2–3 times GFN2-xTB from
   about 70 atoms up.
 - **Frequencies are where g-xTB is expensive.** Its analytic Hessian costs 16
   times GFN2-xTB at about 100 atoms (10 s against 0.6 s) and 21 times at 196
-  atoms (99 s against 4.7 s, with 0.9 GB of memory). Use g-xTB for frequencies
-  when you need its accuracy for a molecule up to about 100 atoms, or are ready
-  to wait one to two minutes at 150–200 atoms.
+  atoms (99 s against 4.7 s, with 0.9 GB of memory). g-xTB frequencies are
+  quick up to about 100 atoms (10 s or less); at 150–200 atoms expect half a
+  minute to two minutes.
 - **GFN-FF is the fastest for energies and frequencies**: in the engine,
   single points are 10–50 times and Hessians 3–40 times cheaper than with
-  GFN2-xTB. Its optimizations gain less: from 74 atoms up they are 1.2–3.6
-  times faster than GFN2-xTB, and below that about as fast or slower, because
+  GFN2-xTB. Its optimizations gain less: from 74 atoms up they take 1.2–3.6
+  times less job time than GFN2-xTB, and below that about as much or more, because
   they take more steps and each step also pays for the optimizer itself.
 - **Conformer search** with the default settings (100 starts, MMFF94s, normal
   diversity, 20 re-ranked with GFN2-xTB) takes about {conf[('propranolol', 100, 'MMFF94s')]:.0f} s at 40 atoms,
@@ -140,9 +141,9 @@ take in ReShiki, measured through the same code the desktop app runs.
   {conf[('tyr-gly-gly-phe', 300, 'MMFF94s')] / conf[('tyr-gly-gly-phe', 100, 'MMFF94s')]:.1f} times as long at 58 atoms and {conf[('ritonavir', 300, 'MMFF94s')] / conf[('ritonavir', 100, 'MMFF94s')]:.1f} times as long at 98 atoms.
   Minimizing all 100 starts with GFN2-xTB instead of MMFF94s takes
   {conf[('propranolol', 100, 'GFN2-xTB')]:.0f} s at 40 atoms and keeps every cluster.
-- **Threads:** on this machine 4 threads (its performance cores) are fastest
-  for optimizations and g-xTB. 8 or 10 threads, which add efficiency cores,
-  are 7–19% slower there. GFN2-xTB frequencies gain up to 10 threads.
+- **Threads:** in the ritonavir runs (98 atoms) on this machine, 4 threads
+  were fastest for the optimization and for g-xTB; 8 or 10 threads were 7–19%
+  slower. GFN2-xTB frequencies gained up to 10 threads.
 
 ## Setup
 
@@ -153,7 +154,7 @@ take in ReShiki, measured through the same code the desktop app runs.
 | Machine | Apple M4 test machine (MacBook Air, 4 performance and 6 efficiency cores, 32 GB, no fan), macOS 27.0.1 |
 | Threads | 4 (`--threads 4`) unless a table says otherwise. The Calculate card's Auto uses up to 8. The conformer search uses its default, Auto: up to 8 one-thread xTB workers at once |
 | Repeats | 3 per case, run round-robin (every case once, then again); medians, with min–max where the spread exceeds 10% of the median. UF₆ with GFN2-xTB and GFN-FF ran once |
-| Idle check | Each run started only when other processes used under 6% of all cores over 3 s |
+| Idle check | Each run started only when other processes used at most 6% of all cores over 3 s |
 | Date | 2026-11-26 |
 
 Single points and frequencies ran through `reshiki --cli calc --task energy`
@@ -166,13 +167,13 @@ output. Peak memory is the largest resident set of the command and its
 worker. Every calculation started from the same fixed geometry (hydrogens
 added, embedded with RDKit ETKDGv3 seed 42, minimized with MMFF94s; ferrocene
 and UF₆ idealized), so the frequencies are at a geometry that is not a
-stationary point of each method: the time is about the same, but the
-frequencies are not meaningful. In the app, Optimize + Frequencies first
-optimizes with Tight convergence.
+stationary point of each method and are not meaningful; times at a minimum
+can differ. In the app, Optimize + Frequencies first optimizes with Tight
+convergence.
 
 Each method ran with its defaults: GFN2-xTB at an electronic temperature of
 300 K, g-xTB at 0 K. Swapping them (GFN2-xTB at 0 K, g-xTB at 300 K) changed
-no time by more than 6% on ritonavir.
+the single-point and optimization wall times on ritonavir by under 6%.
 
 ## Methods by size
 {tables}
@@ -195,10 +196,9 @@ min–max where it spreads more than 10%.
 | --: | --: | --: | --: | --: |
 """ + "\n".join(thread_rows) + f"""
 
-The M4 has 4 performance cores. Threads beyond 4 run on efficiency cores and
-wait for each other, so only the GFN2-xTB Hessian still gains. Optimizations
-gain little from threads at this size: each step is short, and the conformer
-search uses one thread per worker for that reason.
+The M4 has 4 performance and 6 efficiency cores. In these runs, more than 4
+threads helped only the GFN2-xTB Hessian. Optimizations gained little from
+threads at this size; the conformer search runs one thread per worker.
 
 ## Starting a calculation
 
@@ -232,14 +232,15 @@ of 3 runs; the searches differed by under {max(2, -(-max_spread * 100 // 1)):.0f
   without minimizing them; it includes setting up the force field and one
   energy per start. **MMFF94s** is the search's sampling step minus that
   median, an estimate. **GFN2-xTB re-rank** runs from the first to the last
-  re-ranked representative; ranking and deduplication after it take under
-  3 ms. When GFN2-xTB minimizes every start, clustering includes that final
-  ranking.
+  re-ranked representative; everything after it (ranking, deduplication,
+  ending the workers) takes under 3 ms. When GFN2-xTB minimizes every start,
+  the Clustering column includes that final ranking.
 - **Valid starts** are those that embedded and converged with the force field.
   For ritonavir the geometry worker made 77 of 100 starts (225 of 300), and
   51 (155) did not converge within MMFF94s's step limit, so 26 (70) remained.
   With GFN2-xTB minimizing every start, the starts are only embedded (the
-  Embedding column) and every one is kept.
+  Embedding column), all 100 converged, and one conformer per cluster (34)
+  is kept: there is no re-ranking limit.
 - **Saved file** is the `.rsk` document with the generated 3D model and the
   attached result, before the lowest conformer is applied to the model; the
   model alone is 19–49 KB.
@@ -247,8 +248,8 @@ of 3 runs; the searches differed by under {max(2, -(-max_spread * 100 // 1)):.0f
 ## Where the time goes in the engine
 
 Sampling profiles (Time Profiler) of ritonavir, 98 atoms, 4 threads. Shares
-of on-CPU samples across all threads; each sample counts toward the innermost
-engine function it is in.
+of on-CPU samples across all threads; each sample counts toward the deepest
+frame on its stack that matches a category.
 
 | Share of samples | GFN2-xTB single point | g-xTB single point | GFN2-xTB Hessian | g-xTB Hessian |
 | --- | --: | --: | --: | --: |
