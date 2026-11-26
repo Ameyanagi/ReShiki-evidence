@@ -1,0 +1,41 @@
+Thu Nov 26 12:11:01 JST 2026
+ 12:11:01  up 34 days 15:54,  5 users,  load average: 28.87, 28.42, 51.79
+ProductName:		macOS
+ProductVersion:		27.0.1
+BuildVersion:		26A434
+Apple M4
+10
+4
+6
+34359738368
+reshiki 0.17.1
+xTB: included (axtb 0.2.0, LGPL-3.0-or-later, source https://github.com/Ameyanagi/axtb/tree/9d0388c9e9d81c43c0e7bba01c0ccf706a88fc91)
+31a746dbe83b47da01f57b2534f02e96e89a659c4827a8ba6ec5e23c891b76ab  ./w2bprof
+3dc9896ef93201b992ab2afd7170a361f532d6c9395407604c8f7b8ac8d8e7a3  mols/ala-phe.smi
+26644c33377a7bc79511f7c46588bb8c8db3db67274d7d59bb72daec9caef818  mols/ala-phe.xyz
+b7cf774f2c19d6b8cc8ab94aadef55544e0e796c41585bcd84b804ea1c06b336  mols/aspirin.smi
+103576c1fddab9eec3d0efe741aeaea619e146b6468cb71382029a4d9f63dbc7  mols/aspirin.xyz
+170031c2e8e9353ae8ef92b656f162d77cc6ead40d1ede68f922a30f9398c630  mols/atorvastatin.smi
+79f11008b2305ce891b364b89c90fd8d9c3900a0bb0940a96ad0ed98fafca12e  mols/atorvastatin.xyz
+3f1fc605b1087f50395dac8ce2981a09d3019a2f37ec61cdc0df692230570636  mols/benzene.smi
+a17b459de86b8993268b7fb8b0e7fd58386ff09cf626d1fca927d210a35fe588  mols/benzene.xyz
+da0b9dc5d6c1fcea4e3f26bbee75003710a1e98767711204be56157c8ce5ad61  mols/caffeine.smi
+2c96334eee677990037d0c1e418a1cafa4272a6057f47267cc8b80302c423cb1  mols/caffeine.xyz
+09d92fde96288c88ecb976523c25788efb3bc40c60f9b81916765e1eb4b56d7f  mols/cholesterol.smi
+5ef9a2ef24df0b52d85626fe6a1f2abe4ec431910792d07de49966c05d926468  mols/cholesterol.xyz
+d65a714dcac23abbf7e805cee7b9946016f32f7b3006017bfd139278eb042202  mols/cyclosporin-a.smi
+7c7d017b5e53fd3f395a3365159545840630a9ee8cf5e311000db1f49dfbfb43  mols/cyclosporin-a.xyz
+b722c48999e9e0328ee9f9e7e290b630390f3063c48d16289addd65f4a234f17  mols/ferrocene.xyz
+6fd695d44fae5120195bb883446213ba5b566c5e663a7cbfd7d8efdbc464b312  mols/propranolol.smi
+e0b38c53450db98ec1dd891d9b1fe1366030c1470190813b1c4e4876742be66f  mols/propranolol.xyz
+97bd4165f12face7b09d15b3e3b2896a9ceca8fa60591c63f4412e09ae46a037  mols/ritonavir.smi
+83e4cde24d0b0352262b85b08acd313eb4aa2b017473bb5038bc2d985b407a94  mols/ritonavir.xyz
+863ffaa7276fcdd1506f35494e1558e54fecdba94393dc5058a1af9eabd8156a  mols/sirolimus.smi
+d9727f2c36d749cc8e74526e78db5534e3f6dd0f878a13114d54ed6364bc4839  mols/sirolimus.xyz
+7297dde88c5a5b048a6849919235a33d4164855e46be90eac7dfb78135b88c8d  mols/tyr-gly-gly-phe.smi
+49f0cf900630518f09be14b89b948c2416099cb2e563bd247dd399b37bf27246  mols/tyr-gly-gly-phe.xyz
+410b6789e585e9ea1c82e1cb8baa05eca9df7ee7c0a4f9a6a8f1664134da5702  mols/uf6.xyz
+19352677df76e156581cbb0133228534d9834664224a9c7d1fd912939d4c21a3  mols/water.smi
+ed94544fe4dcf4f61fdfdba5ab4f572db810a0b8b76f49e8648493bc872682fa  mols/water.xyz
+Thu Nov 26 13:54:00 JST 2026
+ 13:54:00  up 34 days 17:37,  5 users,  load average: 2.88, 2.93, 4.06

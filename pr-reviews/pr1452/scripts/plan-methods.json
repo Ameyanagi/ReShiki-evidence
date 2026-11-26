@@ -1,0 +1,794 @@
+[
+{
+"set": "methods",
+"mol": "water",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "water",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 1
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 1
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 1
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 1
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 1
+},
+{
+"set": "methods",
+"mol": "uf6",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 1
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "benzene",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "aspirin",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ferrocene",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "caffeine",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ala-phe",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cholesterol",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "ritonavir",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "sirolimus",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gfnff",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gfnff",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "methods",
+"mol": "cyclosporin-a",
+"method": "gfnff",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+}
+]

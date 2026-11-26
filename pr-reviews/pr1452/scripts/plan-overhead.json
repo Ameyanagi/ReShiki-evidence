@@ -1,0 +1,26 @@
+[
+{
+"set": "overhead_cli",
+"mol": "water",
+"method": "gfnff",
+"task": "energy",
+"threads": 1,
+"repeats": 10
+},
+{
+"set": "overhead_cli",
+"mol": "water",
+"method": "gfn2",
+"task": "energy",
+"threads": 1,
+"repeats": 10
+},
+{
+"set": "overhead_cli",
+"mol": "water",
+"method": "gxtb",
+"task": "energy",
+"threads": 1,
+"repeats": 10
+}
+]

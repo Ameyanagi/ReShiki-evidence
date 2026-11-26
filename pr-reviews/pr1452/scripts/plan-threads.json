@@ -1,0 +1,210 @@
+[
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 1,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 2,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 8,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 10,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "hessian",
+"threads": 1,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "hessian",
+"threads": 2,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "hessian",
+"threads": 8,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "hessian",
+"threads": 10,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "hessian",
+"threads": 1,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "hessian",
+"threads": 2,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "hessian",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "hessian",
+"threads": 8,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "hessian",
+"threads": 10,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 1,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 2,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 8,
+"repeats": 3
+},
+{
+"set": "threads",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 10,
+"repeats": 3
+},
+{
+"set": "sensitivity",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "energy",
+"threads": 4,
+"repeats": 3,
+"extra": [
+"--etemp",
+"300"
+]
+},
+{
+"set": "sensitivity",
+"mol": "ritonavir",
+"method": "gxtb",
+"task": "optimize",
+"threads": 4,
+"repeats": 3,
+"extra": [
+"--etemp",
+"300"
+]
+},
+{
+"set": "sensitivity",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "energy",
+"threads": 4,
+"repeats": 3,
+"extra": [
+"--etemp",
+"0"
+]
+},
+{
+"set": "sensitivity",
+"mol": "ritonavir",
+"method": "gfn2",
+"task": "optimize",
+"threads": 4,
+"repeats": 3,
+"extra": [
+"--etemp",
+"0"
+]
+}
+]
